@@ -1,0 +1,15 @@
+{
+  "name": "lancer-data",
+  "version": "1.8.5",
+  "description": "Data for the LANCER TTRPG",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/massif-press/lancer-data.git"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Massif Press",
+  "license": "GPL-3.0-or-later"
+}
