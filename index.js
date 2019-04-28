@@ -8,6 +8,8 @@ const data = {
   manufacturers: require('./lib/manufacturers.json'),
   mods: require('./lib/mods.json'),
   pilot_gear: require('./lib/pilot_gear.json'),
+  rules: require('./lib/rules.json'),
+  skills: require('./lib/skills.json'),
   quirks: require('./lib/quirks.json'),
   statuses: require('./lib/statuses.json'),
   systems: require('./lib/systems.json'),
