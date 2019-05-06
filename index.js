@@ -17,6 +17,7 @@ const data = {
   talents: require('./lib/talents.json'),
   translation_table: require('./lib/translation_table.json'),
   weapons: require('./lib/weapons.json'),
+  actions: require('./lib/actions.json'),
 }
 
 let licenses = []

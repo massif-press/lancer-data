@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": "amrifle",
     "name": "Anti-Material Rifle",
     "mount": "Heavy",
@@ -775,19 +776,29 @@
       "type": "range",
       "val": 8
     }],
-    "tags": [{
-        "id": "heatself",
-        "val": 2
-      },
-      {
-        "id": "reliable",
-        "val": 4
-      }
-    ],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 3,
-    "effect": "Unlike other superheavies, this weapon can be fired as part of a skirmish action with its listed profile.<br>As a quick action, you can spin up this weapon’s barrels. While this weapon’ s barrels are spinning, your mech is Slowed, but this weapon’s damage increases to 4d6+4 kinetic, it must be fired with a barrage action like a regular superheavy, and it gains Reliable 4 and 2 heat (self). You can stop the spin-up as a free action at the start of your turn.",
+    "effect": "Unlike other superheavies, this weapon can be fired as part of a skirmish action with its listed profile.<br> As a quick action, you can spin up this weapon’s barrels.",
+    "actions": [
+      {
+        "name": "Spin Up",
+        "action": "quick",
+        "type": "passive",
+        "cancel": "free",
+        "effect": "While this weapon’s barrels are spinning, your mech is Slowed, but this weapon’s damage increases to 4d6+4 kinetic, it must be fired with a barrage action like a regular superheavy, and it gains Reliable 4 and 2 heat (self). You can stop the spin-up as a free action at the start of your turn.",
+        "tags": [{
+        "id": "heatself",
+          "val": 2
+        },
+        {
+          "id": "reliable",
+          "val": 4
+        }
+        ],
+        "statuses": ["Slowed"]
+      }
+    ],
     "description": "The Leviathan AC is a massive rotary autocannon, an enclosed multi-barrel automatic weapon fed by an external reservoir, usually dorsally mounted on the chassis carrying it. At its current chambering, the Leviathan should only be fired on automatic when absolutely necessary; IPS-N is currently working on a solution to meet the cannon’s needs remotely. IPS-N recommends outfitting willing squadmates with extra reservoirs, should their chassis have room to support it.",
     "data_type": "weapon",
     "aptitude": {
@@ -1480,7 +1491,7 @@
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 3,
-    "effect": "When this weapon is fired, it chooses one or two Blast 1 areas within range to attack. The areas cannot overlap.<br>When you fire this weapon you can choose to delay the weapon’s impact.If you do, this weapon gains the ordnance tag.The areas targeted become visible to all characters, and the rockets land at the end of the next round (after all characters have acted) instead of impacting immediately, but increase their damage to 3d6.",
+    "effect": "When this weapon is fired, it chooses one or two Blast 1 areas within range to attack. The areas cannot overlap.<br>When you fire this weapon you can choose to delay the weapon’s impact. If you do, this weapon gains the ordnance tag. The areas targeted become visible to all characters, and the rockets land at the end of the next round (after all characters have acted) instead of impacting immediately, but increase their damage to 3d6.",
     "description": "Pinaka missiles are massive, two-stage missiles mounted along the spine of a mech core or carried disassembled, to be affixed and launched from a brachial mount. Pinaka missiles are adapted from ship-to ship missiles, their second stage intended to be able to re-orient in flight through jet-assisted repositioning.",
     "data_type": "weapon",
     "aptitude": {
@@ -1943,19 +1954,7 @@
         "val": 30
       }
     ],
-    "tags": [{
-        "id": "loading"
-      },
-      {
-        "id": "ordnance"
-      },
-      {
-        "id": "arcing"
-      },
-      {
-        "id": "heatself",
-        "val": 4
-      },
+    "tags": [
       {
         "id": "knockback",
         "val": 2
@@ -1968,7 +1967,48 @@
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 3,
-    "effect": "The siege cannon can be fired with two profiles:<br><b>Superheavy Cannon</b> (Siege Mode)<br>4 heat (self), Arcing, Ordnance, Loading<br>Range 30, Blast 2<br>3d6 explosive damage<br><br><b>Superheavy Cannon</b> (Direct Fire)<br>2 heat (self), Knockback 2<br>Range 20<br>3d6 explosive damage",
+    "effect": "The siege cannon can be fired with two profiles:",
+    "actions": [
+      {
+        "name": "Siege Mode",
+        "action": "free",
+        "type": "profile",
+        "tags": [
+          {
+            "id": "loading"
+          },
+          {
+            "id": "ordnance"
+          },
+          {
+            "id": "arcing"
+          },
+          {
+            "id": "heatself",
+            "val": 4
+          },
+          {
+            "id": "blast",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Direct Fire",
+        "action": "free",
+        "type": "profile",
+        "tags": [
+          {
+            "id": "heatself",
+            "val": 2
+          },
+          {
+            "id": "knockback",
+            "val": 2
+          }
+        ]
+      }
+    ],
     "description": "Siege Cannons are the Armory‘s core-squadron level artillery, a shoulder-mounted gun fed by a selfcontained loading system. Commonly mounted on rear-line mechs deployed in an artillery/ squad support role, the Siege Cannon is capable of direct fire should the necessities of dynamic combat call for it.",
     "data_type": "weapon",
     "aptitude": {
