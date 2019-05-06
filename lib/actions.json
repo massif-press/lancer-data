@@ -1,0 +1,108 @@
+[
+  {
+    "id": "action_move",
+    "name": "Move",
+    "action_type": "move",
+    "description": "Move your character up to its speed in any direction.",
+    "detail": "On their turn, characters can always move a number of spaces equal to their speed value. They can freely move through (but not end their turn in) the space of friendly targets, but treat hostile targets as obstructions. This is sometimes called a regular move to distinguish it from movement granted from systems or talents."
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  },
+  {
+    "id": "action_",
+    "name": "",
+    "action_type": "",
+    "description": "",
+    "detail": ""   
+  }
+  
+]
