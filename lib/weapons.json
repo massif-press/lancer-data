@@ -2109,7 +2109,7 @@
     "license": "ISKANDER",
     "license_level": 1,
     "effect": "",
-    "description": "A supercompact rotary pistol, short range, but and able to be integrated into hardpoints or held in a manipulator.",
+    "description": "A supercompact rotary pistol, short range, but able to be integrated into hardpoints or held in a manipulator.",
     "data_type": "weapon",
     "aptitude": {
       "melee": 1,
