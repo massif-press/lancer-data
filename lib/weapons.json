@@ -2481,7 +2481,7 @@
     "type": "Rifle",
     "damage": [{
       "type": "energy",
-      "val": "1d3"
+      "val": "1d3+1"
     }],
     "range": [{
       "type": "range",
@@ -2489,11 +2489,16 @@
     }],
     "tags": [{
       "id": "unique"
+    }, {
+      "id": "ap"
+    }, {
+      "id": "loading"
     }],
     "source": "HA",
     "license": "SUNZI",
-    "license_level": 3,
-    "effect": "On hit, the target must pass an engineering save or be teleported back 3 spaces directly away from you and slowed until the end of its next turn. If that teleport would put them inside another character’s space or a piece of terrain, the teleport fails. They must save as normal, but instead take 5 AP kinetic damage on a failed save and are not slowed.",
+    "license_level": 2,
+    "sp": 1,
+    "effect": "On hit, the target must pass an engineering save or be teleported to a free valid space in a direction of your choice up to the same number of spaces as the damage you dealt with this weapon (including bonus damage, etc, maximum 10 spaces).",
     "description": "Es una abominación. Dicen que \"es como los arados de las espadas; tú también debes aprender a defender tu hogar ”. Ptah, escupí su lógica de espada. Ni siquiera sabíamos de los arados compartidos antes de convertirlos en espadas, y éramos felices.<br>Hiciste la puerta, la abriste. No es nuestra responsabilidad cerrarla.<br>[It is an abomination. They say “it is like plowshares to swords; you too must learn to defend your home.” Ptah, I spit on their blade-law. We did not even know of plowshares before they beat them into swords, and we were happy.<br>You made the door, you swung it open — it is not our responsibility to close it.]",
     "data_type": "weapon",
     "aptitude": {
@@ -2652,6 +2657,9 @@
       "val": "1d6+2"
     }],
     "range": [{
+        "type": "threat",
+        "val": 1
+      } , {
       "type": "range",
       "val": 10
     }],
@@ -2665,7 +2673,7 @@
     "source": "",
     "license": " ",
     "license_level": "",
-    "effect": "Choose between the following attributes upon installation:<br><ul><li><b>Type:</b>Melee, Rifle, Cannon, Launcher or CQB</li><li>Range: Reach (melee) or Range 8</li><li><b>Damage:</b> 1d6+2 Kinetic, Explosive, or Energy</li></ul><br>Roll this weapon's Limited property each full repair. You can change the profile of this weapon each time you full repair.",
+    "effect": "Choose between the following attributes upon installation:<br><ul><li><b>Type:</b>Melee, Rifle, Cannon, Launcher, Nexus or CQB</li><li>Range: Threat 1 (melee) or Range 10</li><li><b>Damage:</b> 1d6+2 Kinetic, Explosive, or Energy</li></ul><br>Roll this weapon's Limited property each full repair. You can change the profile of this weapon each time you full repair.",
     "description": "Gained from the \"Engineer\" Rank 1 Talent",
     "data_type": "weapon",
     "aptitude": {
@@ -2699,7 +2707,7 @@
     "source": "",
     "license": " ",
     "license_level": "",
-    "effect": "Choose between the following attributes upon installation:<br><ul><li><b>Type:</b>Melee, Rifle, Cannon, Launcher or CQB</li><li>Range: Reach (melee) or Range 8</li><li><b>Damage:</b> 1d6+2 Kinetic, Explosive, or Energy</li></ul><br>Roll this weapon's Limited property each full repair. You can change the profile of this weapon each time you full repair.<br>On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.<br>Choose 2 of the following:<ul><li>Tweak Optics: You always fire your prototype weapon with +1 Accuracy.</li><li>Tweak Computer: Your prototype weapon gains the Smart property.</li><li>Remove Reactor Shielding: Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon(choose when you fire), but costs 2 heat to fire.</li></ul>",
+    "effect": "Choose between the following attributes upon installation:<br><ul><li><b>Type:</b>Melee, Rifle, Cannon, Launcher, Nexus or CQB</li><li>Range: Threat 1 (melee) or Range 8</li><li><b>Damage:</b> 1d6+2 Kinetic, Explosive, or Energy</li></ul><br>Roll this weapon's Limited property each full repair. You can change the profile of this weapon each time you full repair.<br>On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.<br>Choose 2 of the following:<ul><li>Tweak Optics: You always fire your prototype weapon with +1 Accuracy.</li><li>Tweak Computer: Your prototype weapon gains the Smart property.</li><li>Remove Reactor Shielding: Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon(choose when you fire), but costs 2 heat to fire.</li></ul>",
     "description": "Gained from the \"Engineer\" Rank 2 Talent",
     "data_type": "weapon",
     "aptitude": {
@@ -2732,7 +2740,7 @@
     "source": "",
     "license": " ",
     "license_level": "",
-    "effect": "Choose between the following attributes upon installation:<br><ul><li><b>Type:</b>Melee, Rifle, Cannon, Launcher or CQB</li><li>Range: Reach (melee) or Range 10</li><li><b>Damage:</b> 1d6+4 Kinetic, Explosive, or Energy</li></ul><br>Roll this weapon's Limited property each full repair. You can change the profile of this weapon each time you full repair.<br>On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.<br>Choose 2 of the following:<ul><li>Tweak Optics: You always fire your prototype weapon with +1 Accuracy.</li><li>Tweak Computer: Your prototype weapon gains the Smart property.</li><li>Remove Reactor Shielding: Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon(choose when you fire), but costs 2 heat to fire.</li></ul>",
+    "effect": "Choose between the following attributes upon installation:<br><ul><li><b>Type:</b>Melee, Rifle, Cannon, Launcher, Nexus or CQB</li><li>Range: Threat 1 (melee) or Range 10</li><li><b>Damage:</b> 1d6+4 Kinetic, Explosive, or Energy</li></ul><br>Roll this weapon's Limited property each full repair. You can change the profile of this weapon each time you full repair.<br>On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.<br>Choose 2 of the following:<ul><li>Tweak Optics: You always fire your prototype weapon with +1 Accuracy.</li><li>Tweak Computer: Your prototype weapon gains the Smart property.</li><li>Remove Reactor Shielding: Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon(choose when you fire), but costs 2 heat to fire.</li></ul>",
     "description": "Gained from the \"Engineer\" Rank 3 Talent",
     "data_type": "weapon",
     "aptitude": {

@@ -1531,7 +1531,7 @@
     "mechtype": "Dueling/Personal Defense",
     "description": "Originally commissioned and tested as a dueling mech for the House of Smoke, the ATLAS blurs the line between mech and suit of armor. The progeny of a long refinement period and utilizing the bleeding edge of reactor miniaturization tech, the mech was finally condensed down to something resembling a large, sleek hard suit, almost skin-tight at points. Though sacrificing much of the durability of a larger frame, the mech’s essential system are so closely melded with its user’s movements that it offers unparalleled agility.<br> Though originally tightly licensed for select clientele, the Atlas was introduced to the Sparri almost by mistake when a mercenary in the Long Rim won the frame in a game of kapkat. Since then, demand from the Sparri has been so strong that SSC was forced to reconsider its licensing scheme. Considered perfect warrior frames for hunting the native megafauna of Sparr, they are now widely perceived as the iconic frames of Sparri headhunters and daredevils across the Orion Arm, to the point that the Sparri invented a new martial art using the Atlas.<br> Considered heirlooms of great warriors, they are passed down through bloodlines and often repaired and modified manually. The suit’s powerful systems remember the unique movements of all that have worn it before, enabling Sparri hunters to literally call upon their ancestors in battle.",
     "mounts": [
-      "Aux/Aux", "Main"
+      "Flex", "Main"
     ],
     "stats": {
       "size": 0.5,

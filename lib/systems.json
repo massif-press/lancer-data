@@ -38,7 +38,7 @@
     "source": "GMS",
     "license": "",
     "license_level": "",
-    "effect": "You may expend a charge from this system for one of the following effects:<br><b>Frag Grenade</b> <i>(Grenade, Range 5, Blast 1):</i> Affected characters must pass an agility save or take 1d6 explosive damage, and half on a successful save <b>Explosive Mine</b> <i>(Mine, Burst 1)</i>: Affected characters must pass an agility save or take 2d6 explosive damage, and half on a successful save.",
+    "effect": "You may expend a charge from this system for one of the following effects:<br><b>Frag Grenade</b> <i>(Grenade, Range 5, Blast 1):</i> Affected characters must pass an agility save or take 1d6 explosive damage, and half on a successful save<br><b>Explosive Mine</b> <i>(Mine, Burst 1)</i>: Affected characters must pass an agility save or take 2d6 explosive damage, and half on a successful save.",
     "description": "",
     "data_type": "system",
     "aptitude": {
@@ -2746,7 +2746,7 @@
     }],
     "source": "HA",
     "license": "SUNZI",
-    "license_level": 2,
+    "license_level": 1,
     "effect": "You can spend a charge from this system for one of the following effects:<br><b>Blink Mine (Mine)</b>: Once planted in a free adjacent space, this mine arms at the start of your next turn. It activates when any character (allied or hostile) enters its space or an adjacent space, teleporting just that character to a free visible space of your choice within range 5 of the mine and Jamming them until the end of their next turn. A character can pass an engineering save to avoid the Jamming effect but is still teleported.<br><b>Warp Grenade (Grenade, Quick action, Thrown 10, Blast 4)</b>: Choose a blast 4 area in range 10 and line of sight. You can teleport any character (hostile or allied) in that area to any free valid space within the same area. Characters can pass an engineering save to avoid this effect.",
     "description": "Eso es lo que no se suena: usar el vacio contra la Ley de la Madre. Marcamos esta en nuestro historia con lagrimas, y ennegrecer la pagina.<br>[This is the thing un-thinkable: to use the nonshape against the Mother’s Law. With tears, we mark its need in our history, and then blacken the page]",
     "data_type": "system",
