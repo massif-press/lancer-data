@@ -137,5 +137,20 @@
       "ranged": 1,
       "repair": 0
     }
-  }
+  },
+    {
+      "id": "moltenwreath",
+      "name": "Molten Wreath",
+      "sp": 2,
+      "applied_to": [
+        "melee"
+      ],
+      "applied_string": "Melee",
+      "source": "IPS-N",
+      "license": "ZHENG",
+      "license_level": 2,
+      "effect": "Choose one melee weapon. After hitting a character with an attack from this weapon, your mech takes 1 heat and this weapon creates a cone 3 blast originating from your target that must be placed on the opposite side from your attack and oriented directly away from the target. If applied to a weapon that hits multiple targets, this effect only functions on the primary target. Characters caught in this blast and the main target take 2 explosive damage.",
+      "data_type": "mod",
+      "description": "Redirecting spare reactor power down cabling extending to a melee weapon was an ingenious but foolhardy innovation. The resultant weapon is so hot that on impact it vaporizes parts of its targets internal systems, creating a secondary blast cloud of debris."
+    }
 ]

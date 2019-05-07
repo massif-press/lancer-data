@@ -2638,6 +2638,309 @@
     }
   },
   {
+    "id": "tss_1",
+    "name": "Total Strength Suite I",
+    "type": "System",
+    "sp": 1,
+    "tags": [],
+    "source": "IPS-N",
+    "license": "ZHENG",
+    "license_level": 1,
+    "effect": "As a quick action, you can rip up a piece of the environment and hurl it at your enemy. Choose a character in range 5 and line of sight.That character must pass an agility save or take 1 d6 kinetic damage and be knocked back 1 space directly away from you. After taking this action, even if your target makes their save, create a size 1 piece of hard cover (10 HP, 5 evasion) in a free adjacent space to your target.<br>If you already have a piece of cover adjacent to you of size 1, you can move it as part of this action, otherwise you rip it out of the ground or environment (if there's nothing to grab nearby or you're not on the ground you can't take this action)",
+    "description": "This system-wide upgrade was the result of Xiong Xiaoli’s tweaks to her mech over the course of many years of MSMC work becoming formalized as part of a core IPS-N frame construction protocol. As a package, it comes in three stages, the first of which is a set of spinal enhancements allowing a mech to rapidly lift and move high amounts of weight without systemic damage.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "tss_2",
+    "name": "Total Strength Suite II",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+      "id": "unique"
+    }, {
+      "id": "protocol"
+    }],
+    "source": "IPS-N",
+    "license": "ZHENG",
+    "license_level": 2,
+    "effect": "At the start of your turn, you may deal 1d6 kinetic damage to a character you are grappling as a protocol",
+    "description": "The second part of Xiaoli’s enhancements, interlocking muscular-analogue plates beneath armor that greatly multiply crushing force.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "tss_3",
+    "name": "Total Strength Suite III",
+    "type": "System",
+    "sp": 3,
+    "tags": [{
+      "id": "fullaction"
+    }],
+    "source": "IPS-N",
+    "license": "ZHENG",
+    "license_level": 3,
+    "effect": "As a full action, you can end a grapple to knock your target back 5 in any direction and knock it prone (you must first be grappling your target). During this movement, it can freely pass through but not end its turn in other character's spaces. If it collides with an object or piece of terrain during its movement, it stops, takes 1d6 kinetic damage, and must pass a hull save or become stunned until the end of its next turn. All characters it passes through must pass a hull save or become knocked prone",
+    "description": "The last component of this upgrade suite gives a mech the ability to inject massive power into its locomotive systems in short bursts, for a short-lived period of incredible strength. The effect is carefully balanced and misuse can cause a mech’s internal systems to rip themselves apart.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "accelerate",
+    "name": "Accelerate",
+    "type": "System",
+    "sp": 1,
+    "tags": [{
+      "id": "unique"
+    }, {
+      "id": "quicktech"
+    }],
+    "source": "HA",
+    "license": "SUNZI",
+    "license_level": 1,
+    "effect": "As a quick action, choose two free visible spaces on the ground or the same surface within range 5 of each other. Characters that enter either space for the first time on their turn or start their turn there are pushed in a straight line as far as possible towards the other space. If they would collide with another object or character, they immediately stop moving. Grenades, deployables, or other loose objects size 1 or smaller that are thrown or deployed into one space are pushed in the same way towards the other space before activating or detonating (they activate or detonate early if they are forced to stop by another character or object). The area lasts until the start of your next turn, and characters caught in either area can pass a hull save to avoid this effect.",
+    "description": "Memo, no es suficiente saber caminar; Debes saber dónde y dónde no pisar. El lugar incorrecto, y te perderás. Es en un plano de telaraña donde construimos nuestro hogar: pise ligeramente cuando vaya.<br>[Memo, it is not enough to know how to walk; you must know where and where not to step; the incorrect spot, and you will be lost.<br>It is on a plane of gossamer that we make our home: tread lightly when you go]",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "addistort",
+    "name": "Distort",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+        "id": "unique"
+      },
+      {
+        "id": "quicktech"
+      }
+    ],
+    "source": "HA",
+    "license": "SUNZI",
+    "license_level": 2,
+    "effect": "As a quick action, you tear a hole in space, creating a blast 2 area in free visible space in sensor range. Weapons with the blast, line, or cone tags exclude the zone’s space from their area of effect. Any character or object that attempts to cross at least 1 space into the zone immediately teleports to any free adjacent space of it or its owner'choice to the zone, or as close as possible if there is no free space (characters and objects cannot occupy the same space as the zone).<br>The zone blocks line of sight. However, any character (hostile or allied) may target the zone with a ranged weapon without the line, blast, or cone tags as if making an attack against it. Don’t roll to hit the zone - instead the zone absorbs and re-targets the weapon's attack against a new target of the attacker's choice within range 10 of the zone. Make the attack as if the attack was fired from the zone instead (for purposes of line of sight, cover, etc).<br>You can only create one zone of this type at a time, and if you create a new one, the previous one disappears. It lasts until the end of the current scene, or if you destroy it with a quick action.",
+    "description": "Dicen: \"Incluso es difícil de ver en este lugar\". Decimos: \"Usted tiene razón. Es porque este lugar no te quiere aquí.”<br>[They say: “It is even difficult to see in this place.” We say: “You are correct. It is because this place does not want you here.”]",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "blinkcharges",
+    "name": "Blink Charges",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+      "id": "unique"
+    }, {
+      "id": "limited",
+      "val": 3
+    }],
+    "source": "HA",
+    "license": "SUNZI",
+    "license_level": 2,
+    "effect": "You can spend a charge from this system for one of the following effects:<br><b>Blink Mine (Mine)</b>: Once planted in a free adjacent space, this mine arms at the start of your next turn. It activates when any character (allied or hostile) enters its space or an adjacent space, teleporting just that character to a free visible space of your choice within range 5 of the mine and Jamming them until the end of their next turn. A character can pass an engineering save to avoid the Jamming effect but is still teleported.<br><b>Warp Grenade (Grenade, Quick action, Thrown 10, Blast 4)</b>: Choose a blast 4 area in range 10 and line of sight. You can teleport any character (hostile or allied) in that area to any free valid space within the same area. Characters can pass an engineering save to avoid this effect.",
+    "description": "Eso es lo que no se suena: usar el vacio contra la Ley de la Madre. Marcamos esta en nuestro historia con lagrimas, y ennegrecer la pagina.<br>[This is the thing un-thinkable: to use the nonshape against the Mother’s Law. With tears, we mark its need in our history, and then blacken the page]",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "tunneler",
+    "name": "Blinkspace Tunneler",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+      "id": "quickaction"
+    }],
+    "source": "HA",
+    "license": "SUNZI",
+    "license_level": 3,
+    "effect": "As a quick action, you can mark a free adjacent space to your mech and open up a blink tear. The tear lasts until the end of your next turn. Any character other than you (hostile or allied) that at least partly enters that space as part of any movement can teleport to a free adjacent space to your mech’s current location at the time of their move as a free action or reaction. You can only have one tear open at once, and each one created replaces the previous one",
+    "description": "MEMO(TT_CLEARANCE_01) (01200): IT’S GONNA GET REAL FUCKING DARK.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "unravel",
+    "name": "Unravel",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+      "id": "quickaction"
+    }],
+    "source": "HA",
+    "license": "SUNZI",
+    "license_level": 3,
+    "effect": "Either you or another character of your choice in your sensor range and line of sight is charged with unstable energy until the start of your next turn. Each time that character takes damage for that duration, you can teleport that character up to 3 spaces in any direction to a free valid space as a reaction. Unwilling characters can pass an engineering save to avoid this effect entirely.",
+    "description": "Dicen: \"Cuéntanos el secreto de tu larga vida, o abriremos la puerta de tu hogar a todo el mundo\".<br>Nosotros decimos: “Para vivir una larga vida, vives una larga vida. No tenemos secretos, todo lo que tenemos es el conocimiento que deseamos ocultarle. Por favor no hagas esto; tu no sabes nada.\"<br>[They say: “Tell us the secret to your long life, or we shall swing wide our door, and let those who we hold back inside your safe ground.”<br>We say: “To live a long life, you live a long life. We have no secrets, all we have is knowledge we wish to keep from you.”]",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "mgms",
+    "name": "Multi Gear Maneuver System",
+    "type": "System",
+    "sp": 1,
+    "tags": [{
+      "id": "unique"
+    }, {
+      "id": "quickaction"
+    }],
+    "source": "SSC",
+    "license": "ATLAS",
+    "license_level": 1,
+    "effect": "As a quick action, you can fire a zip line 8 spaces long that connects two free spaces you can see (the first space must be adjacent to you). The ends of the line must be attached to a surface, such as a wall or floor. It activates at the start of your next turn, granting the following benefits:<ul><li> Size 1/2 actors that are adjacent to either the start or end point of the zipline can move to the other end as a quick action. They can hop off at any point along the line if they wish.</li><li> Actors size 1 or larger that cross the line’s space for the first time on their turns or start their turn in the line's space must pass an agility save or fall prone.</li></ul> A character can tear down the zip line by passing a hull check as a quick action adjacent to the start or end point of the line, or successfully performing a melee attack against it (evasion 10). Destroying the zip line in this way does not destroy this system and it can be re-used. You can only deploy one zip line at a time (deploying a new one destroys the current one).",
+    "description": "Used by Sparri hunters to bridge the vast gaps in the ice sheet that cover their world, this system is in high demand and often used by daredevils and thrill-seekers the world over.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "jagerkunst_1",
+    "name": "Jäger Kunst I",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+      "id": "protocol"
+    }, {
+      "id": "unique"
+    }, {
+      "id": "heatself",
+      "val": 1
+    }],
+    "source": "SSC",
+    "license": "ATLAS",
+    "license_level": 2,
+    "effect": "When you activate this protocol, until the end of your current turn, each time you move adjacent to an object or piece of terrain larger than your mech, your mech moves 2 spaces in any direction as a free action, ignoring engagement and reactions (your mech wall runs, tumbles, or slides around). This effect can trigger multiple times a turn, but only once for each object or piece of terrain.",
+    "description": "Converted from earlier hardsuit-only martial arts, Jäger kunst pushes the form beyond all possible human parameters, enabling actions and motions faster than human thought. Many ATLAS suits can be printed with the suite of combat forms already enabled - though letting the mech perform them without learning them yourself is likely to leave you with a wrenched arm or broken leg.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "ricochetblades",
+    "name": "Ricochet Blades",
+    "type": "System",
+    "sp": 3,
+    "tags": [{
+      "id": "limited",
+      "val": 3
+    }],
+    "source": "SSC",
+    "license": "ATLAS",
+    "license_level": 2,
+    "effect": "As a quick action, mark a line 5 area from your mech and attack all characters within, dealing 1d3+2 kinetic damage on hit. If the line from the initial attack from this weapon hits a piece of terrain or object size 1 or larger, repeat the attack from that object in a new direction that doesn't overlap the object it ricocheted off. A character can be damaged again by this ricochet shot, but the second shot cannot benefit from bonus damage or other effects (such as forcing saves, etc).",
+    "description": "These shuriken-like, disc shaped blades are hand-finished by SSC’s Terashima blade enclave. The material is flexible enough to bounce when striking off surfaces, but sharp enough to slice bone and metal.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "jagerkunst_2",
+    "name": "Jäger Kunst II",
+    "type": "System",
+    "sp": 3,
+    "tags": [{
+      "id": "reaction"
+    }, {
+      "id": "limited",
+      "val": 3
+    }],
+    "source": "SSC",
+    "license": "ATLAS",
+    "license_level": 3,
+    "effect": "Once per round, you can perform the following reaction when you hit or are hit with a melee attack:<br><b>Fatal Clash</b>: Both you and your target roll a contested hull or agility check (each side chooses which). The loser is knocked prone, takes 1d6 kinetic damage, and is pushed 3 spaces in the direction of the winner’s choosing. The winner can then move 3 in any direction, ignoring engagement and not provoking reactions. In case of a tie, the contest immediately ends.<br>The loser of this contest can immediately force a re-roll of this contest by taking 2 AP kinetic damage if they lose. This damage cannot be prevented or reduced in any way. This contest continues until one side accepts the result or would take a point of structure damage, in which case they immediately lose.",
+    "description": "The rarest of ATLAS mechs can be printed with the residual muscular memories of Jager Kunst masters embedded in them, old Sparri and others that have dedicated lives to their martial art. SSC does not recommended using these embedded systems without proper bodily tempering.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "forgeclamps",
+    "name": "Forge Clamps",
+    "type": "System",
+    "sp": 1,
+    "tags": [],
+    "source": "HORUS",
+    "license": "KOBOLD",
+    "license_level": 1,
+    "effect": "Your mech is immune to knock back and prone while it is adjacent to a piece of terrain or hard cover size 1 or larger.",
+    "description": "Repurposed from polycrete foundry tongs, these clamps can be used to dig into the terrain, sinking pitons deep into the rock.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "seismicpulse",
+    "name": "Seismic Pulse",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+      "id": "fullaction"
+    }],
+    "source": "HORUS",
+    "license": "KOBOLD",
+    "license_level": 2,
+    "effect": "Draw a line 10 area from your mech. Actors caught in the area, allied or enemy, must pass a hull save or be knocked prone. All objects and pieces of terrain in the area take 10 AP energy damage, no roll required. If a piece of terrain or object is destroyed this way, it explodes in a burst 1 area. Actors can only be affected by one explosion but must pass an agility save or take 2d6 explosive damage, and half on a successful check.",
+    "description": "A deadly weapon, created from simple tools. The perfect catalyst for insurrection.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "purifyingcode",
+    "name": "Purifying Code",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "HORUS",
+    "license": "KOBOLD",
+    "license_level": 3,
+    "effect": "Gain the following options for invasion. Each are mutually exclusive (a target cannot be affected by both). A target is aware of their effects.<br><br>FLAW_plus</b>: On a successful invasion, this implants the target’s reactor with a memetic virus that requires proximity to clear. At the start of your next turn, if your target is not adjacent to another character (allied or enemy) or piece of terrain size 1 or larger, the virus catalyzes and they take 2d6 AP explosive damage. The effect then ends. <br><b>FLAW_minus</b>: On a successful invasion, this implants the target’s reactor with a memetic virus that reacts to proximity. At the start of your next turn, if your target is adjacent to another character or piece of terrain size 1 or larger, the virus catalyzes and it takes 2d6 AP explosive damage. The effect then ends.",
+    "description": "The key to the KOBOLD’s creation - a deceptively simple code form unlocking the reactor safety limiters in civilian mining mechs. An addendum in the code simply says, “From Dog”",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  }, {
+    "id": "immolate",
+    "name": "IMMOLATE",
+    "type": "System",
+    "sp": 2,
+    "tags": [],
+    "source": "HORUS",
+    "license": "KOBOLD",
+    "license_level": 3,
+    "effect": "Gain the following options for invasion: <br><br>Eject Slag</b>: On hit, the target’s reactor ejects burning liquid in a burst 2 area around it. The space the target physically occupies is not affected. The liquid is difficult terrain, and characters that start their turn in it or enter it for the first time on their turns must pass an engineering save or take 1d3 heat and 1d3 burn. It cools at the end of your next turn, dissipating. <br><b>Molten Puncture</b>: On hit, until the end of its next turn, for each space the target moves voluntarily, it takes 2 Burn.",
+    "description": "The Kobold p-g code is unique in that it can be injected into existing civilian mining mechs, causing them to extrude a polymer casing and re-form on the spot. The process skips printers entirely but often goes incredibly awry, with nascent KOBOLDs turning into molten slag, incinerating their would-be wielders.",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  },
+  {
     "id": "armsman1",
     "name": "Ammo Case",
     "type": "System",

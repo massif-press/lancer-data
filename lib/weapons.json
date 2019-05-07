@@ -2429,6 +2429,178 @@
     }
   },
   {
+    "id": "xaolicombatsheathe",
+    "name": "Xaoli Combat Sheathe",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3 + 2"
+    }],
+    "range": [{
+      "type": "threat",
+      "val": 1
+    }],
+    "tags": [],
+    "source": "IPS-N",
+    "license": "ZHENG",
+    "license_level": 1,
+    "effect": "When you attack with this weapon, choose one or two targets to attack, rolling separately for each (choose which one is the primary target for bonus damage or other effects).<br>You may use this weapon even while jammed.",
+    "description": "This enhancement encases a mech’s manipulators and brachial structures in a powerful reactive alloy weave, allowing it to use its fists as blunt weapons, even unarmed.",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  }, {
+    "id": "dd288",
+    "name": "D/D 288",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "threat",
+      "val": 1
+    }],
+    "tags": [],
+    "source": "IPS-N",
+    "license": "ZHENG",
+    "license_level": 3,
+    "effect": "As a quick action, you may charge this weapon. While charging it you are slowed, take 2 heat at the start of your turn, and benefit from soft cover. At the start of any turn in which your weapon is charging, the damage from this weapon becomes 3d6 explosive damage, targets struck by it are knocked back 5 spaces directly away from you, and on critical hit your target is shredded until the end of its next turn.<br> This weapon deals 30 AP explosive damage to objects or terrain on hit. If an object or piece of terrain struck by this weapon is destroyed, it explodes, dealing 1d6 kinetic damage to all adjacent characters other than you and knocking them back 1 space.<br> After hitting with this weapon, you lose this charging state and the damage reverts to normal. You can also stop charging as a free action, and you also lose the charge if you are stunned or shut down.",
+    "description": "The Xiaoli devastator/demolition weapon is legendary for its ability to breach and inflict total destruction on hardened targets. Originally rigged as a last resort by it’s operator, this fist-mounted weapon is essentially a redirection of the mechs’ core reactor. It must be primed before firing, requiring a dangerous power draw from the mechs’ systems and creating an enormous amount of emissions. The weapons’ first firing killed Xiaoli Mei and five of her opponents, and its tendency to cause enormous collateral damage and its spectacular discharge when fired earned it the moniker ‘Shā mǎ zhǎng’ or Horse Killing Palm.",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  }, {
+    "id": "warprifle",
+    "name": "Warp Rifle",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [{
+      "type": "energy",
+      "val": "1d3"
+    }],
+    "range": [{
+      "type": "range",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "unique"
+    }],
+    "source": "HA",
+    "license": "SUNZI",
+    "license_level": 3,
+    "effect": "On hit, the target must pass an engineering save or be teleported back 3 spaces directly away from you and slowed until the end of its next turn. If that teleport would put them inside another character’s space or a piece of terrain, the teleport fails. They must save as normal, but instead take 5 AP kinetic damage on a failed save and are not slowed.",
+    "description": "Es una abominación. Dicen que \"es como los arados de las espadas; tú también debes aprender a defender tu hogar ”. Ptah, escupí su lógica de espada. Ni siquiera sabíamos de los arados compartidos antes de convertirlos en espadas, y éramos felices.<br>Hiciste la puerta, la abriste. No es nuestra responsabilidad cerrarla.<br>[It is an abomination. They say “it is like plowshares to swords; you too must learn to defend your home.” Ptah, I spit on their blade-law. We did not even know of plowshares before they beat them into swords, and we were happy.<br>You made the door, you swung it open — it is not our responsibility to close it.]",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  }, {
+    "id": "kraulrifle",
+    "name": "Kraul Rifle",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "range",
+      "val": 8
+    }],
+    "tags": [{
+      "id": "inaccurate"
+    }],
+    "source": "SSC",
+    "license": "ATLAS",
+    "license_level": 1,
+    "effect": "On hit, your target is impaled by the harpoon-like projectile this weapon fires. Any time during your target’s next turn, you can reel in the line and take the boost action as a reaction to any of its actions or movement, as long as your boost moves towards that target by the most direct route possible. Your target must then pass a hull save or be knocked prone, and this effect ends. The line snaps if your target teleports",
+    "description": "Hunting the Vast, the titans of Sparr, is an incredibly profitable venture - their skins, meat, and bone can turn into months of prosperity for an ambitious raiding party. These popular long rifles, refined to SSC standards, rugged and durable, aid in dragging down the great beasts.",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  }, {
+    "id": "terashimablade",
+    "name": "Terashima Blade",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+2"
+    }],
+    "range": [{
+      "type": "threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "unique"
+    }],
+    "source": "SSC",
+    "sp": 1,
+    "license": "ATLAS",
+    "license_level": 3,
+    "effect": "While wielding this weapon, once per round when you are attacked by any ranged weapon attack, you can roll a d6 as a reaction. On a 6, the attack automatically misses, and the attacker repeats the attack against itself, dealing half damage on a hit (and any other effects).",
+    "description": "Quenched in the fire of a dying star and perfectly balanced, each of these blades bears a unique name. Quiet. Ishtar. Trolljäger. When combined with a mech’s sensors, they are rumored to be fast and durable enough to deflect weapons fire, though such a capability has not been tested.",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  }, {
+    "id": "fusionrifle",
+    "name": "Fusion Rifle",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [{
+      "type": "energy",
+      "val": "1-6"
+    }],
+    "range": [{
+      "type": "range",
+      "val": 6
+    }],
+    "tags": [],
+    "source": "HORUS",
+    "license": "KOBOLD",
+    "license_level": 1,
+    "effect": "This weapon deals damage equal to its range from the target instead of rolling for damage, up to a maximum of 6 damage.",
+    "description": "Bootstrapped from ore mining laser weaponry, this weapon’s deadly glare becomes more effective the longer distance the beam has to focus.",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  }, {
+    "id": "slagcannon",
+    "name": "Slag Cannon",
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [{
+      "type": "energy",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "range",
+      "val": 8
+    }],
+    "tags": [{
+      "id": "heatself",
+      "val": 1
+    }],
+    "source": "HORUS",
+    "license": "KOBOLD",
+    "license_level": 2,
+    "effect": "Hit or miss, after this weapon attacks a target, if your target is on the ground, place a size 1 piece of terrain in a free adjacent space next to them (10 HP, evasion 5).",
+    "description": "Dripping with molten fury, this carefully rigged weapon barely functions but bought many Barony overseers a painful death covered in boiling ore slag.",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
+  },
+  {
     "id": "fuelrod",
     "name": "Fuel Rod Gun",
     "mount": "Integrated",

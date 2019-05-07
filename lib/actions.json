@@ -4,105 +4,181 @@
     "name": "Move",
     "action_type": "move",
     "description": "Move your character up to its speed in any direction.",
-    "detail": "On their turn, characters can always move a number of spaces equal to their speed value. They can freely move through (but not end their turn in) the space of friendly targets, but treat hostile targets as obstructions. This is sometimes called a regular move to distinguish it from movement granted from systems or talents."
+    "detail": "On their turn, characters can always move a number of spaces equal to their speed value. They can freely move through (but not end their turn in) the space of friendly targets, but treat hostile targets as obstructions. This is sometimes called a <b>regular move</b> to distinguish it from movement granted from systems or talents."
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_overcharge",
+    "name": "Overcharge",
+    "action_type": "overcharge",
+    "description": "Mechs can overcharge to make an additional quick action on a turn as a free action, at the cost of heat ",
+    "detail": "<p>It is possible for skilled pilots to push their mech beyond factory specifications for a short period of time in order to gain a tactical advantage. Moments of hyperspec action won&lsquo;t tax your mech&lsquo;s systems too much, but sustained action beyond prescribed limits will take its toll.</p> <p>You may <strong>Overcharge</strong> your mech only once per turn. <strong>Overcharging</strong> incurs <strong>1 heat</strong>. The next time you overcharge before you make a full repair, this cost increases to <strong>1d3 heat</strong>. The next time, the cost increases to<strong> 1d6 heat</strong>, and thereafter to <strong>1d6+4 heat</strong>. Taking a full repair resets this counter.</p> <p>Overcharging immediately allows you to make any quick action of your choice as a free action, even one you already made this turn.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_skirmish",
+    "name": "Skirmish",
+    "action_type": "quick",
+    "description": "Attack with one weapon from your mech.",
+    "detail": "<p>When you take the skirmish action, you <strong>attack with a single weapon from your mech</strong>.</p> <p>You can also make an attack with another auxiliary weapon from the same mount. That weapon can&rsquo;t deal bonus damage. Auxiliary weapons are light and can be used to make quick, numerous attacks</p> <p>Superheavy weapons are too cumbersome to be fired with a skirmish action and must be fired as part of a barrage action.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_boost",
+    "name": "Boost",
+    "action_type": "quick",
+    "description": "Move your speed.",
+    "detail": "<p>When you take the <strong>boost</strong> action, you can move your speed. <strong>Boosting</strong> allows you to move again, in addition to taking a move action on the same turn. Certain talents and systems only activate on boosts (not regular movement).</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_ram",
+    "name": "Ram",
+    "action_type": "quick",
+    "description": "Attempt to knock down or knock back your target.",
+    "detail": "<p><strong>Ramming</strong> is a <strong>melee attack</strong> made against an adjacent target with the aim of knocking down or back an enemy mech. If your attack is successful, your target is knocked <strong>Prone</strong> and you may also knock your target back up to 1 space directly away from you.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_grapple",
+    "name": "Grapple",
+    "action_type": "quick",
+    "description": "Attempt to grab on your target, potentially immobilizing it or riding it.",
+    "detail": "<p>When you <strong>Grapple</strong>, you attempt to grab hold of an enemy mech and overpower it, disarming, subduing, or damaging it so that it cannot do the same to you. In order to perform a Grapple, choose an adjacent character and make a <strong>melee attack</strong>. On hit:</p> <ul> <li>Both parties are <strong>engaged</strong>.</li> <li>While grappled or grappling, neither party can <strong>boost</strong> or take <strong>reactions</strong>.</li> <li>The smaller party is <strong>immobilized</strong>, but moves when the larger party moves, mirroring their movement. If both parties are the same size, they can make a contested hull check when they attempt to move, counting as the larger party for their turn if they win.</li> <li>The grapple breaks if either target breaks adjacency (is knocked back for example).</li> <li>The attacker can end the grapple as a free action, and the defender can end the grapple as a quick action by winning a contested hull check.</li> <li>If there are multiple parties involved in a grapple, the same rules apply, but when counting size, count up all opponents of a side in a grapple. For example, if my all and I are both size 1 and grappling a size 2 target together, we would count our total size (2) and could attempt to drag our target around.&nbsp;</li> </ul>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_quicktech",
+    "name": "Quick Tech",
+    "action_type": "quick",
+    "description": "Perform quick electronic warfare or systems-boosting activities.",
+    "detail": "<p>The <strong>Quick Tech</strong> actions cover electronic warfare, countermeasures, and other actions that can be taken by a pilot, often aided by their mech&rsquo;s powerful computing and simulation cores. Many pilots choose NHP (non-human person) assistants or more conventional comp/con units to help them with these tasks. All mechs have access to the basic tech actions. Further tech actions can be enhanced by taking systems that upgrade them.</p> <p>Some tech actions are <strong>attacks</strong> (often called <strong>tech attacks</strong>) and benefit from generic bonuses to attack rolls. All tech actions must choose a target within <strong>Sensor Range</strong> to be effective, and roll <strong>tech attack vs. e-defense</strong>. By default, tech attack is boosted by your mech&rsquo;s systems. To use a tech action, choose a target in your sensor range (including yourself) and choose one of the following options:</p> <p><strong>Bolster</strong> <br />You use the formidable core processing power of your mech&rsquo;s systems to boost one other target&rsquo;s systems. That target can take +2 Accuracy on its next skill check or save of any kind before the end of its next turn. A mech can only benefit from bolster once at a time.</p> <p><strong> Scan</strong> <br />You can use your mech&rsquo;s powerful internal systems to deep scan your enemies. To <strong>Scan</strong>, make a <strong>tech attack</strong> against a target in your sensor range. On a successful attack, ask your GM to reveal one of the two to you:</p> <ul> <li>Your target&rsquo;s full statistics (HP, Speed, Evasion, Armor, HASE, etc), weapons, and systems</li> <li>Hidden information about the target, such as information caches it is carrying, current mission, pilot ID, etc.</li> </ul> <p>This information is only current when you receive it (for example, if the target loses HP again, your information won&rsquo;t update).</p> <p><strong>Lock On</strong> <br />Make a <strong>tech attack</strong> against a target in range. On hit, the target suffers from the Lock On condition, enabling some systems and talents. Any attacker can consume Lock On on a target when they make an attack roll that target to gain +1 Accuracy on that attack against that target.</p> <p><strong>Invade</strong><br />Make a <strong>tech attack</strong> against a target in range. On success, your target takes 1d3 heat and you may choose one of the following options:</p> <ul> <li><strong>Fragment Signal/Feed Misinformation</strong>: You feed false information, obscene messages, or phantom signals to your target&rsquo;s core computer, inflicting the <strong>Impaired</strong> Condition on your target until the end of their next turn.</li> <li><strong>Restricting Code:</strong> You attack your target&rsquo;s servos and engines, inflicting the <strong>Slowed</strong> condition on your target until the end of their next turn.</li> <li><strong>Attack Systems:</strong> You go for the throat, the core computer. Inflict an additional <strong>1d3 heat</strong> on your target</li> </ul> <p>Many pieces of mech gear give you additional options when you Invade other characters.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_hide",
+    "name": "Hide",
+    "action_type": "quick",
+    "description": "Attempt to hide.",
+    "detail": "<p>In order to perform the <strong>Hide</strong> action, you need soft or hard cover. The cover needs to be large enough to totally conceal your mech (such as a smoke cloud or building) or you won&rsquo;t be able to hide. Lack of line of sight is always sufficient, and if you&rsquo;re invisible, you can always attempt to hide.</p> <p><strong>Hiding</strong> is always successful. After you hide, you gain the <strong>hidden</strong> condition. A hidden target can&rsquo;t be directly targeted by attacks or hostile actions, but can still be hit by attacks that target an area. NPCs cannot perfectly locate a hidden target but only know their approximate location.</p> <p>Performing any attack (melee, ranged, or tech), forcing a save, taking the boost action, or taking a reaction will break hiding. You can take other actions as normal. You must end your turn in cover to keep hidden. You automatically lose hidden if you end your turn in a place where you wouldn&rsquo;t benefit from cover (ie, a mech comes around a wall and can now draw unbroken line of sight to you). You immediately lose hidden if your cover is destroyed or disappears, or if you move from cover. If you&rsquo;re hiding and invisible, you also lose hidden if you lose invisibility.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_search",
+    "name": "Search",
+    "action_type": "quick",
+    "description": "Look for a hidden target.",
+    "detail": "<p>The searching party chooses a character they suspect is hidden and makes a contested check, revealing their target on a success. The searching party needs you to be in their sensor range and makes a <strong>systems</strong> check. A hidden mech makes an <strong>agility</strong> check.</p> <p>If you&rsquo;re searching or hiding on foot as a pilot, you make a skill check (triggers can activate as normal, probably <strong>notice</strong> or <strong>act unseen and unheard</strong>) as part of this contested check.</p> <p>Once a hidden target is detected, it immediately loses the hidden condition.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_quickactivate",
+    "name": "Activate",
+    "action_type": "quick",
+    "description": "Activate a system or piece of gear that uses a quick action.",
+    "detail": "<p>Some systems or pieces of gear take a <strong>quick action</strong> to use or activate. Such systems are marked with the quick action tag. You can take the activate action any number of times a turn, but can&rsquo;t activate the same system more than once unless you do so as a free action</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_shutdown",
+    "name": "Shut Down",
+    "action_type": "quick",
+    "description": "Shut down your mech as a desperate measure, to end system attacks, regain control of AI, and cool your mech.",
+    "detail": "<p><strong>Shutting Down</strong> your mech is a risky move, though one that is sometimes necessary to prevent potentially catastrophic systemic overload or AI unshackling.</p> <p>You can shut down as a<strong> quick action</strong>. When you take the <strong>Shut Down</strong> action, your mech powers completely off and enters the <strong>Shut Down</strong> state. While <strong>Shut Down</strong>:</p> <ul> <li>Your mech is stunned. However, you can still take the <strong>Boot</strong> action to reboot your mech.</li> <li>Your mech is immune to all tech actions or attacks and can&rsquo;t benefit from friendly tech actions. Any tech effects or conditions caused by a tech action (such as lock on, etc) affecting the mech immediately end.</li> <li>Your evasion becomes 5</li> <li>Your mech immediately cools (get rid of all heat)</li> <li>Any unshackled AI you have installed are re-shackled.</li> </ul>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_selfdestruct",
+    "name": "Self Destruct",
+    "action_type": "quick",
+    "description": " As a last ditch measure, set your reactor to go critical and explode.",
+    "detail": "<p><strong>Self-destructing</strong> by overloading your reactor is a final, catastrophic play a pilot can trigger if there is no other option for them to escape, or if they deem their sacrifice necessary.</p> <p>You can initiate self destruct as quick action, causing your reactor to start melting down. At the end of your next turn, or up to two turns after (you choose), your mech will explode as though it suffered a reactor meltdown, annihilating it, killing any pilot or passenger inside, and causing a burst 2 explosion for 4d6 explosive damage around it. Characters caught in the explosion can pass an agility save to halve this damage.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_eject",
+    "name": "Eject",
+    "action_type": "quick",
+    "description": "Quickly get out of your mech",
+    "detail": "<p>If you want to <strong>Eject</strong> to dismount your mech, you can do so as a <strong>quick action</strong>, flying 6 in a direction of your choice. However, its a one-way system meant to be used in case of emergency, and leaves your mech permanently <strong>impaired</strong> until you full repair (and the eject system can&rsquo;t be used again until you take a full repair).</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_prepare",
+    "name": "Prepare",
+    "action_type": "quick",
+    "description": "Hold a quick action for a specified trigger.",
+    "detail": "<p><strong>When you prepare an action</strong>, you&rsquo;re holding in preparation for a specific time or trigger (a more advantageous shot, for example). You can only prepare a quick action, and it costs a <strong>quick action</strong> to prepare. This counts as that action&rsquo;s exact duplicate, so you can&rsquo;t, for example, skirmish and then prepare a skirmish action, or move and prepare a skirmish action with an ordnance weapon (which normally requires you fire it before doing anything else on your turn). You also can&rsquo;t take any other actions (quick, full, free, etc), reactions, or regular move on your turn after preparing an action, up until the start of your next turn or when you expend that reaction.</p> <p>Until the start of your next turn, you can take the prepared action as a reaction. You must set a trigger for this reaction phrased as a &lsquo;When X, then Y&rsquo; sentence. X must be an enemy or allied reaction, action, or movement. For example: &ldquo;When my ally moves adjacent to me, I want to throw a smoke grenade,&rdquo; or &ldquo;When an enemy moves adjacent to me, I want to ram them&rdquo;</p> <p>It is apparent to a casual observer when you are preparing an action (you are clearly taking aim, cycling up systems, etc). As mentioned above, you can&rsquo;t take reactions while you&rsquo;re holding a prepared action, but can take them normally afterwards. If you want to take a reaction and drop your prepared reaction, you can also do so. If the trigger doesn&rsquo;t activate, you lose your prepared action.</p>"
   },
   {
-    "id": "action_",
-    "name": "",
-    "action_type": "",
-    "description": "",
-    "detail": ""   
+    "id": "action_barrage",
+    "name": "Barrage",
+    "action_type": "full",
+    "description": "Attack with two weapons, or attack with a single superheavy weapon.",
+    "detail": "<p>When you take the barrage action, you can attack with <strong>two weapons</strong>, or <strong>one superheavy weapon</strong>. You can choose the same target or different targets when you make these attacks</p> <p>When you attack with a weapon, you can also attack with another auxiliary weapon in the same mount that hasn&rsquo;t been fired as part of this action. That weapon can&rsquo;t deal bonus damage.</p> <p><strong>Superheavy weapons</strong> can only be fired as part of a barrage action, as they require the full attention of your mech&rsquo;s systems.</p>"
+  },
+  {
+    "id": "action_fulltech",
+    "name": "Full Tech",
+    "action_type": "full",
+    "description": "Choose and perform two options from the tech list, or perform a full tech action.",
+    "detail": "<p>Choose and perform two options from the Quick Tech list (or choose from other systems that would take a quick tech action to use). You can repeat options.</p> <p>Alternately, use a system or tech option that takes a Full Tech action to activate.</p>"
+  },
+  {
+    "id": "action_improvattack",
+    "name": "Improvised Attack",
+    "action_type": "full",
+    "description": "Attack with a fist, rifle butt, or improvised weapon in melee.",
+    "detail": "<p>If your mech is unarmed or does not have a melee weapon, it can use an action to make an improvised attack action with a rifle butt, fist, or other improvised melee weapon against a target in melee. You may use the butt of a weapon, a slab of concrete, a length of hull plating, etc, to complete this improvised attack. How you flavor the attack is up to you!</p> <p>An improvised attack costs a full action by itself to perform, and is separate to the skirmish or barrage actions above. It counts as a<strong> melee attack</strong>. An improvised attack is a melee attack that deals 1d6 kinetic damage on hit.</p>"
+  },
+  {
+    "id": "action_stabilize",
+    "name": "Stabilize",
+    "action_type": "full",
+    "description": "Heal and cool down your mech, reload, or attempt to end conditions affecting it.",
+    "detail": "<p>During a heated battle or prolonged mission, it may become necessary to enact emergency protocols in order to purge your mech&lsquo;s systems of excess heat, to repair your chassis where you can, and/or buy your system time to eliminate hostile code.</p> <p>To that end, a character may spend a Full Action to <strong>Stabilize</strong> and do <strong>one</strong> of the following:</p> <ul> <li>Cool your mech, <strong>resetting the heat gauge</strong>.</li> <li>Spend <strong>1 Repair</strong> to refill HP to maximum.</li> </ul> <p>And <strong>one</strong> of the following:</p> <ul> <li><strong>Reload</strong> all weapons with the Loading Tag</li> <li><strong>End all Burn</strong> currently affecting your mech</li> <li>End one of the following conditions on yourself or an adjacent ally <ul> <li>Jammed</li> <li>Impaired</li> <li>Lock On</li> <li>Immobilized</li> <li>Slowed</li> </ul> </li> </ul>"
+  },
+  {
+    "id": "action_disengage",
+    "name": "Disengage",
+    "action_type": "full",
+    "description": "Move safely, avoiding reactions and engagement.",
+    "detail": "When you disengage, you attempt to extricate yourself safely from a dangerous situation, make a steady and measured retreat, or your mech’s agility is such that you can slip in and out of threat ranges faster than the enemy can strike. Until the end of your current turn, your movement ignores engagement and does not provoke reactions, such as overwatch."
+  },
+  {
+    "id": "action_fullactivate",
+    "name": "Activate",
+    "action_type": "full",
+    "description": " Activate a system or piece of gear that uses a full action",
+    "detail": "<p>Some systems or pieces of gear take a <strong>full action</strong> to use or activate. Such systems are marked with the full action tag. You can take the activate action any number of times a turn, but can&rsquo;t activate the same system more than once unless you do so as a free action</p>"
+  },
+  {
+    "id": "action_bootup",
+    "name": "Boot Up",
+    "action_type": "full",
+    "description": "Fire up your mech from Shut Down",
+    "detail": "<p>You can power up a <strong>shut down</strong> mech as a <strong>full action</strong>, ending the <strong>shut down</strong> condition on it. Mechs that are powered off must be powered on with a boot up action before becoming active. You must be piloting a mech to boot it up.</p>"
+  },
+  {
+    "id": "action_mount",
+    "name": "Mount/Dismount",
+    "action_type": "full",
+    "description": "Get in or out of your mech.",
+    "detail": "<p><strong>Mounting</strong> or <strong>Dismounting</strong> a mech is a turn of phrase commonly used by pilots. You don&lsquo;t &ldquo;get in&ldquo; or &ldquo;climb aboard&ldquo;, you <em>mount</em>. You&lsquo;re the cavalry, after all.</p> <p>It takes a <strong>full action</strong> to mount or dismount. You must be adjacent to your mech to <strong>Mount</strong> it, and when you <strong>Dismount</strong> your mech, you are placed adjacent to it. If there&rsquo;s no free space, you cannot dismount your mech.</p> <p>You can mount or dismount a willing allied mech or vehicle while on foot by taking this action, occupying their space and moving with them.</p>"
+  },
+  {
+    "id": "action_skillcheck",
+    "name": "Skill Check",
+    "action_type": "full",
+    "description": "Perform an activity with a clear goal that would take a skill check.",
+    "detail": "<p>Undertake some activity that&rsquo;s not covered by other actions but has a clear goal and would take a <strong>skill check</strong>. This is activity involved enough to take a <strong>full action</strong>, and it&rsquo;s parameters and outcomes are up to GM discretion. If it&rsquo;s something that can be done quickly it doesn&rsquo;t take an action at all.</p>"
+  },
+  {
+    "id": "action_brace",
+    "name": "Brace",
+    "action_type": "reaction",
+    "description": "Brace your mech for impact, reducing damage at the cost of your next turn’s actions.",
+    "detail": "<p>Once per round, you can choose to brace your mech&rsquo;s systems in response to incoming fire. You can choose to brace against an attack after the attack hits you and you learn what the damage is.</p> <p>If you choose to <strong>Brace</strong>, you gain resistance to all damage, heat, and burn from the triggering attack (it&rsquo;s all halved, rounding up) and all other attacks against you are made at +1 difficulty until the end of your next turn. However, the stress of bracing means until the end of your next turn you cannot take reactions and on that turn you can only make one quick action (no regular move, no full actions, no free actions, and no overcharge).</p>"
+  },
+  {
+    "id": "action_overwatch",
+    "name": "Overwatch",
+    "action_type": "reaction",
+    "description": "Attack a close-by target attempting to move.",
+    "detail": "<p>All mechs are able to perform <strong>Overwatch</strong>. Overwatch represents your mech&rsquo;s ability to control and defend the space around it from enemy incursion, whether through pilot skill, reflex, or finely tuned sub-systems. By default, a mech can make 1 overwatch reaction per round.</p> <p>If any enemy starts any movement (move, boost, etc) inside the <strong>threat</strong> of one of your weapons, you can immediately make a <strong>skirmish</strong> action as a reaction against that target using that weapon.</p> <p>Threat is 1 by default for all weapons unless listed otherwise.</p>"
+  },
+  {
+    "id": "action_free",
+    "name": "Free Action",
+    "action_type": "free",
+    "description": "Characters may perform any number of Free Actions on their turn.",
+    "detail": "<p><strong>Free Actions</strong> are actions often granted by systems, talents, gear, or overcharge. Characters may perform any number of Free Actions on their turn, but only on their turn, and only those granted to them. The most common type of Free Action is a <strong>protocol</strong>, which can be activated or deactivated only at the start of a turn</p>"
   }
-  
 ]

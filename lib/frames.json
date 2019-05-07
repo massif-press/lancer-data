@@ -1431,5 +1431,196 @@
       "melee": 2,
       "ranged": 2
     }
+  },
+  {
+    "id": "zheng",
+    "source": "IPS-N",
+    "name": "ZHENG",
+    "mechtype": "Unarmed Melee/Terrain Destruction",
+    "description": "The ZHENG is a relatively new frame in the IPS-N line and is unusual in that its creation can be attributed almost completely to a single mech operator - Xiong Xiaoli, a Mirrorsmoke mercenary operating out of the Long Rim, protecting Armory shipments of supplies to the early Dawnline shore colonies. A relative unknown before the incident, her convoy was attacked by the White Tiger pirate conglomerate and her entire company was KIA.<br>Xiaoli’s Raleigh was almost totally ripped apart in the ensuing chaos, but she managed to activate a distress beacon and attach it to her mech. Over the next forty five days she survived by scavenging the collapsing and melting wreck of the huge transport ship M.S. Say No More, managing to outsmart the fifty or so pirates searching for her by steadily modifying her mech for unarmed, CQB combat. In an tight, close environment where the ship’s decaying reactor core made combustible ranged weapons incredibly dangerous, she showed incredible efficacy and ingenuity. Xiaoli did not survive, persisting hours before the relief fleet arrived, but bought enough time that MSMC was able to position itself to both resupply the colony, fulfilling its contract, and deal a mortal blow to the Tigers, wiping the pirates out completely in the following skirmishes. Her mech was purchased by IPS-N frame development and the Zheng was introduced shortly afterwards based on her improvements.<br>Xiaoli is widely regarded as a Bodhisattva by many Long Rim colonists and nearly all MSMC mercs are familiar with the several drinking games named after her.",
+    "mounts": [
+      "Main", "Main", "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 9,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [{
+        "name": "Destructive Swings",
+        "description": "At the end of your turn, if you made at least one melee attack against another character, create a size 1 piece of terrain that grants hard cover in a free adjacent space (10 HP, 5 evasion)"
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Zheng gets +1 difficulty on all systems saves and checks"
+      }
+    ],
+    "core_system": {
+      "name": "Xiaoli-Type CQB Suite",
+      "description": "Using scavenged materials from a dying ship and surviving mostly on rations intended for colonists and an increasingly more radioactive air supply, Xiaoli was able to create modifications that gave her mech unprecedented unarmed striking power.",
+      "passive": "Once during your turn as a free action, you can move up to 3 spaces then deal 1d3 kinetic damage to any adjacent character or piece of terrain. This movement must obey engagement and does not ignore reactions.<br>If an object or piece of terrain took this damage, it instead takes 10 AP kinetic damage. If it's destroyed, it explodes, dealing 1d6 kinetic damage to all adjacent characters other than you and knocking them back 1 space.",
+      "active_name": "Xiaoli’s Ingenuity",
+      "effect": "Gain 6 charges. For the rest of this combat, you can spend a charge to take this frame's passive action again, ignoring the 1/turn limit. You can spend any number of charges a turn, then regain a charge for each unique target (character, object, or piece of terrain) you damaged with this action, up to a maximum of 6.",
+      "tags": []
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  }, {
+    "id": "sunzi",
+    "source": "HA",
+    "name": "SUNZI",
+    "mechtype": "Space Manipulation/Tactics",
+    "description": "The SUNZI is at the peak of Harrison Armory development in weapons-applicable blink technology, a FRAME that was introduced as late as 5007U to select pilots only. Like the NAPOLEON, it is a compact, highly experimental frame with very limited battlefield presence, using powerful Blackshield technology to tear and warp the physical dimensions of space momentarily. Distortions of this kind are short lived, usually (but not always) visible to the naked eye, and highly unstable. Rumors abound that the SUNZI contains stolen or corrupted Volador technology from the ancient city-ship Mothers Gather and Are Welcome, parts of the extremely advanced machinery that allows their ships to remain in blinkspace seemingly indefinitely.<br> Owners of SUNZI licenses waive their privacy rights as part of the extensive (and physically exhausting) licensing process and are often in direct contact with personal handlers from Ras Shamra’s testing forges wishing to collect data.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "armor": 1,
+      "hp": 7,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [{
+        "name": "Safe Harbor",
+        "description": "Any character other than the Sunzi that teleports always considers space adjacent to the Sunzi as valid space to teleport to, as long as the Sunzi is in range 50 from them"
+      },
+      {
+        "name": "Anchor",
+        "description": "The Sunzi cannot be teleported unwillingly"
+      },
+      {
+        "name": "Slip",
+        "description": "Once per round, the Sunzi can teleport 2 spaces as a free action."
+      }
+    ],
+    "core_system": {
+      "name": "Reality Carver",
+      "description": "MEMO(TT_CLEARANCE_01): YOU’RE GOING TO READ SOME OBTUSE SHIT HERE. I’VE TRANSCRIBED ONLY THE USEFUL PARTS OF THE VOLS SAID. REFER TO THE VISUAL FOR CORRESPONDING HAND SIGNS. REFER TO REPORTS: VESSEL-PILOT-DOORWAY",
+      "passive": "The Sunzi has a blink anchor, a deployable system that is a size 1/2 object with 5 evasion, 20 HP, and limited (3) charges. It can be deployed and activated or picked up as a quick action by any adjacent character (it’s only active when deployed). When any character teleports within line of sight of the Sunzi, it can spend a reaction and a charge to change the end point of the teleport to free adjacent space to the blink anchor instead of the teleporting character’s original target, as long as there is space for that character to safely stand (it cannot teleport a character mid-air, for example).",
+      "active_name": "Art of War",
+      "effect": "When you take this protocol, gain limited (6) charges until the rest of this scene. You can expend a charge to choose any hostile or allied character in sensor range and line of sight as a reaction to the start of their turn and teleport that character up to 5 spaces in any direction, as long as they end in a free space that they can stand on.",
+      "tags": [{
+        "id": "protocol"
+      }, {
+        "id": "reaction"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  }, {
+    "id": "atlas",
+    "source": "SSC",
+    "name": "ATLAS",
+    "mechtype": "Dueling/Personal Defense",
+    "description": "Originally commissioned and tested as a dueling mech for the House of Smoke, the ATLAS blurs the line between mech and suit of armor. The progeny of a long refinement period and utilizing the bleeding edge of reactor miniaturization tech, the mech was finally condensed down to something resembling a large, sleek hard suit, almost skin-tight at points. Though sacrificing much of the durability of a larger frame, the mech’s essential system are so closely melded with its user’s movements that it offers unparalleled agility.<br> Though originally tightly licensed for select clientele, the Atlas was introduced to the Sparri almost by mistake when a mercenary in the Long Rim won the frame in a game of kapkat. Since then, demand from the Sparri has been so strong that SSC was forced to reconsider its licensing scheme. Considered perfect warrior frames for hunting the native megafauna of Sparr, they are now widely perceived as the iconic frames of Sparri headhunters and daredevils across the Orion Arm, to the point that the Sparri invented a new martial art using the Atlas.<br> Considered heirlooms of great warriors, they are passed down through bloodlines and often repaired and modified manually. The suit’s powerful systems remember the unique movements of all that have worn it before, enabling Sparri hunters to literally call upon their ancestors in battle.",
+    "mounts": [
+      "Aux/Aux", "Main"
+    ],
+    "stats": {
+      "size": 0.5,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [{
+        "name": "Giantkiller",
+        "description": "The Atlas ignores engagement from actors larger than itself. It can share space with larger actors (even hostile ones) and move through their spaces unimpeded. While the Atlas shares space with a character, it has soft cover from all sources and resistance to all damage from that character."
+      },
+      {
+        "name": "Finishing Blow",
+        "description": "Once per round, the Atlas can deal +1d6 bonus damage with a successful melee attack against a prone target."
+      },
+      {
+        "name": "Small but Powerful",
+        "description": "The Atlas has only 3 structure and reactor stress"
+      },
+      {
+        "name": "Weak Reactor",
+        "description": "The Atlas gets +1 difficulty on engineering checks and saves"
+      }
+    ],
+    "core_system": {
+      "name": "BLOODLINE Active Assist",
+      "description": "The ATLAS extends needles into your musculature and ancillary nervous system, melding flesh, machine, and the memory of all who wore it before you.",
+      "active_name": "Final Hunt",
+      "effect": "When you take this action, until the end of the current scene:<ul><li>The Atlas's movement from any source (moves, boosts, movement from systems or talents)<br />increases by 1.</li> <li>It always benefits from soft cover, no matter where it is.</li> <li>The Atlas can hide even in the open, without requiring cover (the only way to reveal it is for an actor to search for it or it if breaks hiding the normal way - by boosting, attacking, forcing a save, or taking other actions that break hiding).</li> <li>1/round, when the Atlas makes an attack from hiding, its target must pass a hull save or be knocked prone.</li> </ul>",
+      "tags": [{
+        "id": "quickaction"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {}
+  }, {
+    "id": "kobold",
+    "source": "HORUS",
+    "name": "KOBOLD",
+    "mechtype": "Fabricator",
+    "description": "The Kobold p-g made its first appearance among Ungrateful partisans serving the House of Dust, the pattern a clever suite of hardware and software able to be applied to many kinds of mining and heavy industry mechs. The steaming, shuddering final result is an ugly affair, but contains powerful liturgicode meant to unlock its reactor. Custom built to combat Barony suppression forces, the desperate workers who built the first slapdash kobolds found their reactors and factory tools repurposed to deadly effect: able to melt and extrude raw material into a molten polymer that could be used for both barriers and bombs.",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [{
+        "name": "Mimic Carapace",
+        "description": "If the KOBOLD starts its turn adjacent to a piece of terrain or hard cover size 1 or larger it becomes invisible while it remains adjacent to that terrain or cover. This invisibility breaks if it attacks or takes damage."
+      },
+      {
+        "name": "Slag Spray",
+        "description": "Once per round as a quick action, the KOBOLD can create a size 1 piece of terrain (10 HP, evasion 5) within a free space within range 3 and line of sight of it. The semi-molten polymer grants hard cover."
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The KOBOLD gets +1 difficulty on engineering checks and saves."
+      }
+    ],
+    "core_system": {
+      "name": "Terraform",
+      "description": "Screeching and venting steam, the KOBOLD digs into the earth itself, reshaping it in its image.",
+      "active_name": "Terraform Active",
+      "effect": "The Kobold extrudes a massive amount of polymer and creates up to 10 size 1 cubes of terrain within free, open spaces within range 5 of it. These cubes can be separate or connected, and stacked up to 5 spaces high. If connected, they form a contiguous surface and can potentially block line of sight. They grant soft cover the turn they are extruded, each section is independently destructible, has evasion 5, and 10 HP. At the start of the Kobold’s next turn, they harden into hard cover and each size 1 section gains +10 HP (it keeps any damage it still had).",
+      "tags": [{
+        "id": "fullaction"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {}
   }
 ]
