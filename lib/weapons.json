@@ -765,11 +765,7 @@
     "type": "Cannon",
     "damage": [{
         "override": true,
-        "val": "1d6 (4d6+4 if spun up)"
-      },
-      {
-        "type": "kinetic",
-        "val": "4d6+4"
+        "val": "1d6 Kinetic Damage (4d6+4 if spun up)"
       }
     ],
     "range": [{
@@ -787,6 +783,10 @@
         "type": "passive",
         "cancel": "free",
         "effect": "While this weapon’s barrels are spinning, your mech is Slowed, but this weapon’s damage increases to 4d6+4 kinetic, it must be fired with a barrage action like a regular superheavy, and it gains Reliable 4 and 2 heat (self). You can stop the spin-up as a free action at the start of your turn.",
+        "damage": [{
+          "type": "kinetic",
+          "val": "4d6+4"
+        }],
         "tags": [{
         "id": "heatself",
           "val": 2
@@ -1937,44 +1937,33 @@
     "mount": "Superheavy",
     "type": "Cannon",
     "damage": [{
-        "override": true,
-        "val": "*"
-      },
-      {
-        "type": "explosive",
-        "val": "3d6"
-      }
-    ],
+      "override": true,
+      "val": "*"
+    }],
     "range": [{
-        "override": true,
-        "val": "*"
-      },
-      {
-        "type": "range",
-        "val": 30
-      }
-    ],
-    "tags": [
-      {
-        "id": "knockback",
-        "val": 2
-      },
-      {
-        "id": "heatself",
-        "val": 2
-      }
-    ],
+      "override": true,
+      "val": "*"
+    }],
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 3,
     "effect": "The siege cannon can be fired with two profiles:",
-    "actions": [
-      {
+    "actions": [{
         "name": "Siege Mode",
         "action": "free",
         "type": "profile",
-        "tags": [
-          {
+        "range": [{
+          "type": "range",
+          "val": 30
+        }, {
+          "type": "blast",
+          "val": 2
+        }],
+        "damage": [{
+          "type": "explosive",
+          "val": "3d6"
+        }],
+        "tags": [{
             "id": "loading"
           },
           {
@@ -1986,10 +1975,6 @@
           {
             "id": "heatself",
             "val": 4
-          },
-          {
-            "id": "blast",
-            "val": 2
           }
         ]
       },
@@ -1997,8 +1982,15 @@
         "name": "Direct Fire",
         "action": "free",
         "type": "profile",
-        "tags": [
-          {
+        "range": [{
+          "type": "range",
+          "val": 20
+        }],
+        "damage": [{
+          "type": "explosive",
+          "val": "3d6"
+        }],
+        "tags": [{
             "id": "heatself",
             "val": 2
           },
@@ -2009,7 +2001,7 @@
         ]
       }
     ],
-    "description": "Siege Cannons are the Armory‘s core-squadron level artillery, a shoulder-mounted gun fed by a selfcontained loading system. Commonly mounted on rear-line mechs deployed in an artillery/ squad support role, the Siege Cannon is capable of direct fire should the necessities of dynamic combat call for it.",
+    "description": "Siege Cannons are the Armory‘s core-squadron level artillery, a shoulder-mounted gun fed by a selfcontained loading system. Commonly mounted on rear-line mechs deployed in an artillery/squad support role, the Siege Cannon is capable of direct fire should the necessities of dynamic combat call for it.",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 2
