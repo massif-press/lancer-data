@@ -162,7 +162,7 @@
       "hp": 6,
       "evasion": 8,
       "edef": 8,
-      "heatcap": 10,
+      "heatcap": 6,
       "repcap":10,
       "sensor_range": 10,
       "tech_attack": 0,
