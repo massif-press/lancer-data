@@ -1622,5 +1622,49 @@
     },
     "data_type": "frame",
     "aptitude": {}
+  },
+  {
+    "id": "lich",
+    "source": "HORUS",
+    "name": "LICH",
+    "mechtype": "Time Manipulation",
+    "description": "<p>CALIGULA: So what is it? <br />DOGFRIEND_68: i wish i could fuking tell you, man, it just showed up on our omni. the whole thing in one ping. there's like a fucking thou ex or two thou exabytes in here, crashed buffer on refresh <br />CALIGULA: Gotta be a joke from Ash, she's trying to wavedown our rig again. Don't print it. <br />DOGFRIEND_68: fuck no <br />DOGFRIEND_68: do u think i have a death wish <br />CALIGULA: Yes. <br />CALIGULA: Well who's it from? Who's the author? <br />CALIGULA: Hello? <br />CALIGULA: &hellip; <br />DOGFRIEND_68: what the fuck <br />CALIGULA: Who? <br />DOGFRIEND_68: us <br />CALIGULA: us what? <br />DOGFRIEND_68: it's from us. we made it. <br />CALIGULA: Pretty sure I'd remember if I wrote a whole frame by myself. <br />DOGFRIEND_68: yeah except thats our code man <br />DOGFRIEND_68: also sysop is telling me we didn't actaully get anything inbound which means its just been here on the node somehow but thats impossible <br />DOGFRIEND_68: it's dated 15005U. <br />DOGFRIEND_68: &hellip; <br />DOGFRIEND_68: theres audio</p><p>- Transcript M.A2 (recovered) [UIB-TERMAGANT-TANGENT ROYAL]</p>",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "armor": 0,
+      "hp": 4,
+      "evasion": 8,
+      "edef": 12,
+      "heatcap": 3,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [{
+        "name": "Soul Vessel",
+        "description": "At the start of the Lich’s turn, set down a marker at it’s current location (any marker created this way replaces previous markers). Once per round, as a reaction to being hit by an attack, failing a saving throw or check, or taking damage or heat from any source (even self), the Lich can immediately become completely immune to all the damage, heat, or conditions from that effect. It then resets its position to the marker or as close as possible, counting as teleporting. The Lich can also take this reaction at the end of any turn, including its own, but if taken this way it merely resets its position. It can’t take this reaction if jammed, stunned, grappled, or unable to take reactions from some other means."
+      },
+      {
+        "name": "Immortal",
+        "description": "Once per scene, If the Lich is destroyed, in the round after it is destroyed, as a reaction to the end of any turn, it immediately returns to the location of its soul vessel, counting as teleporting, heals to full HP, clears all heat, and goes to 1 structure and stress (even if it had more remaining when it was destroyed). It may takes this reaction even though it’s destroyed, and can only take this reaction once per scene. If its pilot is dead and died the same scene, they also return to life. If it chooses not to make this reaction in that round, it remains destroyed and the pilot remains dead."
+      }
+    ],
+    "core_system": {
+      "name": "Chronostutter",
+      "description": "",
+      "active_name": "Glitch Time",
+      "effect": "Once this action is taken, for the rest of this scene, 1/round when any attack, effect, or action is made successfully against a character inside the Lich's sensor range (deals damage, inflicts a condition, etc), the lich can instantly disrupt time, interrupting that action before it fully resolves. This doesn't take a reaction and can only be made against successful effects (such as when a character is hit by an attack, fails a saving throw, etc). It has the following effect:</p> <p>The targeted character is pushed up to 3 spaces in a direction of the Lich's choice, even if it is normally immune to involuntary movement. Then the Lich places itself in one of the spaces that character originally occupied, no matter how far away it was, counting as teleporting (so it can't be made against flying characters, for example). The Lich becomes the new target of that attack, effect, or action. All damage, conditions, or effects of the action now affect the Lich, and the action must be performed as if targeting the original character. For example, if the effect was to teleport a friendly character to a space, the Lich is teleported instead to that space. If the effect was to repair the a character, the Lich is repaired instead. If the effect was to deal damage and knockback, the Lich takes the damage, using the Lich's armor, resistance, etc, and is knocked back the same direction the original character would be. If the effect was a condition or status, the Lich takes that condition or status instead.",
+      "tags": [{
+        "id": "quickaction"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {}
   }
 ]

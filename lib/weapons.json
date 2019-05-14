@@ -2596,6 +2596,32 @@
     "aptitude": {
       "melee": 1
     }
+  },{
+    "id": "unraveler",
+    "name": "Unraveler",
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [{
+      "type": "energy",
+      "val": "2d6+1"
+    }],
+    "range": [{
+      "type": "range",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "reliable",
+      "val": 2
+    }],
+    "source": "HORUS",
+    "license": "LICH",
+    "license_level": 1,
+    "effect": "If the damage from this weapon does not destroy its target or cause it to take 1 structure damage, it instead deals only its reliable damage (2).",
+    "description": "<p>&ldquo;Dark. Wet. Drink deep, and descend. The water is warm and well. It is very busy here, though you cannot see it. The swimmers are curious. Open your mouth.&rdquo;</p> <p>&mdash; Speaker 2 (M.A2.SP2) [Audio, length: 120:36][34% corruption][Dated 18593U, 01:50] [UIBTERMAGANT-TANGENT ROYAL]</p>",
+    "data_type": "weapon",
+    "aptitude": {
+      "melee": 1
+    }
   },
   {
     "id": "fuelrod",
