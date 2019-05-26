@@ -20,25 +20,4 @@ const data = {
   actions: require('./lib/actions.json'),
 }
 
-let licenses = []
-data.frames.filter(x => x.source.toUpperCase() !== 'GMS').forEach((frame) => {
-  licenses.push({
-    source: frame.source.toUpperCase(),
-    license: frame.name.toUpperCase(),
-    unlocks: [
-      [],         // level 1
-      [frame],    // level 2
-      [],         // level 3
-    ]
-  })
-})
-let items = JSON.parse(JSON.stringify(data.weapons))
-items = items.concat(data.mods, data.systems)
-items.filter(x => x.source && x.source.toUpperCase() !== 'GMS'
-  && x.source.toUpperCase() !== '').forEach((item) => {
-    const idx = licenses.findIndex((x) => x.license === item.license.toUpperCase())
-    licenses[idx].unlocks[item.license_level - 1].push(item)
-  })
-data.licenses = licenses
-
 module.exports = data

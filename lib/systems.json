@@ -323,7 +323,7 @@
     "license": "DRAKE",
     "license_level": 1,
     "effect": "As a quick action, this heavy over-arm shield can be used to protect an adjacent character from incoming fire, giving them resistance to all damage as long as they stay adjacent to you. However, your mech takes the damage that was resisted by your target (so 50% of damage goes to them, and 50% to you), before armor and reduction. The effect breaks if they break adjacency, and you must repeat this action to regain the effect.",
-    "description": "The Argonaut is an old-pattern physical shield crafted from layered ablatives and nonferrous anti-kinetic alloys. Popular among line chassis orders and Trunk Security oﬃcers, the Argonaut alone is a phalanx; in formation, it is the impenetrable wall.",
+    "description": "The Argonaut is an old-pattern physical shield crafted from layered ablatives and nonferrous anti-kinetic alloys. Popular among line chassis orders and Trunk Security officers, the Argonaut alone is a phalanx; in formation, it is the impenetrable wall.",
     "data_type": "system",
     "aptitude": {
       "support": 1,
@@ -1313,7 +1313,7 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 2,
-    "effect": "Your mech can retract its major systems to reduce its profile. You can activate this protocol at the start of your turn. While active:<br><ul><li>Rolls to find your mech while hidden are made at + 1 Diﬃculty</li><li>All ranged and tech attacks against you are made at + 1 Diﬃculty</li><li>Your mech is Slowed and cannot make ranged, melee, or tech attacks</li><li>Your mech can still take other actions as normal (hiding, activating systems, etc) can end this effect as a quick action.",
+    "effect": "Your mech can retract its major systems to reduce its profile. You can activate this protocol at the start of your turn. While active:<br><ul><li>Rolls to find your mech while hidden are made at + 1 Difficulty</li><li>All ranged and tech attacks against you are made at + 1 Difficulty</li><li>Your mech is Slowed and cannot make ranged, melee, or tech attacks</li><li>Your mech can still take other actions as normal (hiding, activating systems, etc) can end this effect as a quick action.",
     "description": "A hallmark of a well thought out mech platform is the ability for pilots to work with their technicians to adapt their stock model to the specifications of the environments they operate in. Lowering a mech’s profile removes extraneous protrusions, tunes any broadcast software, and masks heat signatures — all an effort to reduce optical and scanner signatures",
     "data_type": "system",
     "aptitude": {

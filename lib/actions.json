@@ -10,7 +10,7 @@
     "id": "action_overcharge",
     "name": "Overcharge",
     "action_type": "overcharge",
-    "description": "Mechs can overcharge to make an additional quick action on a turn as a free action, at the cost of heat ",
+    "description": "Mechs can overcharge to make an additional quick action on a turn as a free action, at the cost of heat",
     "detail": "<p>It is possible for skilled pilots to push their mech beyond factory specifications for a short period of time in order to gain a tactical advantage. Moments of hyperspec action won&lsquo;t tax your mech&lsquo;s systems too much, but sustained action beyond prescribed limits will take its toll.</p> <p>You may <strong>Overcharge</strong> your mech only once per turn. <strong>Overcharging</strong> incurs <strong>1 heat</strong>. The next time you overcharge before you make a full repair, this cost increases to <strong>1d3 heat</strong>. The next time, the cost increases to<strong> 1d6 heat</strong>, and thereafter to <strong>1d6+4 heat</strong>. Taking a full repair resets this counter.</p> <p>Overcharging immediately allows you to make any quick action of your choice as a free action, even one you already made this turn.</p>"
   },
   {
@@ -80,7 +80,7 @@
     "id": "action_selfdestruct",
     "name": "Self Destruct",
     "action_type": "quick",
-    "description": " As a last ditch measure, set your reactor to go critical and explode.",
+    "description": "As a last ditch measure, set your reactor to go critical and explode.",
     "detail": "<p><strong>Self-destructing</strong> by overloading your reactor is a final, catastrophic play a pilot can trigger if there is no other option for them to escape, or if they deem their sacrifice necessary.</p> <p>You can initiate self destruct as quick action, causing your reactor to start melting down. At the end of your next turn, or up to two turns after (you choose), your mech will explode as though it suffered a reactor meltdown, annihilating it, killing any pilot or passenger inside, and causing a burst 2 explosion for 4d6 explosive damage around it. Characters caught in the explosion can pass an agility save to halve this damage.</p>"
   },
   {

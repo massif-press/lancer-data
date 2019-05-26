@@ -8,26 +8,19 @@
   "base_pilot_edef": 10,
   "base_pilot_speed": 4,
   "minimum_pilot_skills": 4,
+  "minimum_pilot_talents": 3,
+  "trigger_bonus_per_rank": 2,
+  "max_trigger_rank": 3,
   "max_pilot_weapons": 2,
   "max_pilot_armor": 1,
   "max_pilot_gear": 3,
+  "max_frame_size": 3,
+  "max_mech_armor": 4,
+  "max_hase": 6,
   "mount_fittings": {
-    "auxiliary": [
-      "Auxiliary"
-    ],
-    "main": [
-      "Main",
-      "Auxiliary"
-    ],
-    "flex": [
-      "Main",
-      "Auxiliary"
-    ],
-    "heavy": [
-      "Superheavy",
-      "Heavy",
-      "Main",
-      "Auxiliary"
-    ]
+    "Auxiliary": ["Auxiliary"],
+    "Main": ["Main", "Auxiliary"],
+    "Flex": ["Main", "Auxiliary"],
+    "Heavy": ["Superheavy", "Heavy", "Main", "Auxiliary"]
   }
 }

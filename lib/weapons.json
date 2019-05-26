@@ -29,7 +29,7 @@
     "license": "",
     "license_level": "",
     "effect": "",
-    "description": "GMS weapons, much like their premier mech line, are reliable, galactic standards, made from interchangeable parts and built to withstand almost any conditions imaginable.<br> The GMS Type III AMR is a mech-scale sniper weapon infamous for its extremely high kill eﬃciency",
+    "description": "GMS weapons, much like their premier mech line, are reliable, galactic standards, made from interchangeable parts and built to withstand almost any conditions imaginable.<br> The GMS Type III AMR is a mech-scale sniper weapon infamous for its extremely high kill efficiency",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 1
@@ -410,7 +410,7 @@
     "license": "",
     "license_level": "",
     "effect": "",
-    "description": "GMS weapons, much like their premier mech line, are reliable, galactic standards, made from interchangeable parts and built to withstand almost any conditions imaginable.<br>The Type III line is intended for specialized or siege warfare. It includes weapons like the widely feared GMS Type III AMR, a mech-scale sniper weapon infamous for its extremely high kill eﬃciency, and the Type III “Cyclone” superheavy pulse rifle, a weapon known for its enormous rate of fire. The Cyclone is so large that its spare magazines have been reported in some incidents to have been used as effective anti-infantry blunt weapons in close combat.",
+    "description": "GMS weapons, much like their premier mech line, are reliable, galactic standards, made from interchangeable parts and built to withstand almost any conditions imaginable.<br>The Type III line is intended for specialized or siege warfare. It includes weapons like the widely feared GMS Type III AMR, a mech-scale sniper weapon infamous for its extremely high kill efficiency, and the Type III “Cyclone” superheavy pulse rifle, a weapon known for its enormous rate of fire. The Cyclone is so large that its spare magazines have been reported in some incidents to have been used as effective anti-infantry blunt weapons in close combat.",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 1
@@ -1269,7 +1269,7 @@
     "license": "DEATH'S HEAD",
     "license_level": 3,
     "effect": "",
-    "description": "A railgun is a simple, elegant weapon. With no moving parts and a magnetically-accelerated projectile, a railgun can be used at peak eﬃcacy in any combat theater and is entirely self-contained in a disposable unit. However, power draw is massive, and it is necessary for mechs mounting a railgun to be fitted with a core-charged auxiliary power pack.",
+    "description": "A railgun is a simple, elegant weapon. With no moving parts and a magnetically-accelerated projectile, a railgun can be used at peak efficacy in any combat theater and is entirely self-contained in a disposable unit. However, power draw is massive, and it is necessary for mechs mounting a railgun to be fitted with a core-charged auxiliary power pack.",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 1
@@ -2202,7 +2202,7 @@
     "source": "HA",
     "license": "SALADIN",
     "license_level": 1,
-    "effect": "The attack roll for this weapon cannot be any worse than a regular roll (it can’t suffer any diﬃculty on the final roll)",
+    "effect": "The attack roll for this weapon cannot be any worse than a regular roll (it can’t suffer any difficulty on the final roll)",
     "description": "Developed by the Armory following costly urban and naval boarding engagements in the Interest War, the Shatterhead Colony missile is now a mainstay of Armory Interdiction teams. At an optimal distance from its target(s), the Shatterhead breaks open in a burst of high-catalyst fuel, revealing a cluster of small thermobaric pellets that spread out and ignite, choking the affected area with flame. The effect overloads energy shielding and saturates cover, though only a small percent of the projectiles actually reach their target.",
     "data_type": "weapon",
     "aptitude": {
@@ -2628,9 +2628,6 @@
     "name": "Fuel Rod Gun",
     "mount": "Integrated",
     "type": "CQB",
-    "talent_item": true,
-    "talent_id": "ncavalier",
-    "talent_rank": 3,
     "damage": [{
       "type": "energy",
       "val": "1d3+1"
@@ -2667,9 +2664,6 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "talent_item": true,
-    "talent_id": "engineer",
-    "talent_rank": 1,
     "damage": [{
       "type": "variable",
       "val": "1d6+2"
@@ -2704,9 +2698,6 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "talent_item": true,
-    "talent_id": "engineer",
-    "talent_rank": 2,
     "damage": [{
       "type": "variable",
       "val": "1d6+2"
@@ -2738,9 +2729,6 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "talent_item": true,
-    "talent_id": "engineer",
-    "talent_rank": 3,
     "damage": [{
       "type": "variable",
       "val": "1d6+4"
