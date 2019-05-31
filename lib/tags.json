@@ -217,5 +217,10 @@
     "id": "sidearm",
     "name": "Sidearm",
     "description": "This weapon can be fired with a Quick Action"
+  },
+  {
+    "id": "paracausal",
+    "name": "Paracausal",
+    "description": "Damage from this weapon cannot be reduced in any way, by armor, resistance, or any other kind of damage reduction."
   }
 ]

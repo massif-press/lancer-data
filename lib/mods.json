@@ -4,22 +4,23 @@
     "name": "Nanocomposites",
     "sp": 2,
     "applied_to": [
-      "rifle", "cannon", "launcher", "cqb", "nexus", "melee"
+      "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
     ],
     "applied_string": "Any",
     "source": "HORUS",
     "license": "BALOR",
     "license_level": 2,
-    "effect": "Choose 1 weapon. If it’s a ranged weapon, you fire a swarm of nanobots instead of regular ammo. If it’s a melee weapon, the entire weapon becomes made up of nanobots. The weapon gains the Smart and Seeking properties.",
+    "effect": "Choose 1 weapon. If it’s a ranged weapon, you fire a swarm of nanobots instead of regular ammo. If it’s a Melee weapon, the entire weapon becomes made up of nanobots. The weapon gains the Smart and Seeking properties.",
     "data_type": "mod",
-    "description": "Nanocomposites take the principal of aggressive drone swarms and condenses it to a single round, coherent beam, or blade edge. For a kinetic projectile, a number of autonomous nanite maniples are packed into a shaped CONSUME/HIVE round that shatters on positive target impact. On impact (or airburst/ penetration detonation) the maniples are released and begin to eat away at surrounding tissue or superstructure. They proceed until maniple burnout or total target consumption, whichever occurs first. In flight, the maniples are able to hive-link and adjust their round’s flight somewhat to ensure positive impact — coherent beams and edged weapons operate in a similar manner."
+    "description": "Nanocomposites take the principal of aggressive drone swarms and condenses it to a single round, coherent beam, or blade edge. For a kinetic projectile, a number of autonomous nanite maniples are packed into a shaped CONSUME/HIVE round that shatters on positive target impact. On impact (or airburst/ penetration detonation) the maniples are released and begin to eat away at surrounding tissue or superstructure. They proceed until maniple burnout or total target consumption, whichever occurs first. In flight, the maniples are able to hive-link and adjust their round’s flight somewhat to ensure positive impact — coherent beams and edged weapons operate in a similar manner.",
+    "added_tags": [{"id": "smart"}, {"id": "seeking"}]
   },
   {
     "id": "para",
     "name": "Paracausal Mod",
     "sp": 4,
     "applied_to": [
-      "rifle", "cannon", "launcher", "cqb", "nexus", "melee"
+      "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
     ],
     "applied_string": "Any",
     "source": "HA",
@@ -27,14 +28,15 @@
     "license_level": 3,
     "effect": "Damage from this weapon cannot be reduced in any way, by armor, resistance, or any other kind of damage reduction.",
     "data_type": "mod",
-    "description": "Paracausal weapons are, to say it plain, difficult to describe and visualize. The first incident was recorded when paracausal ammunition was pushed to frontline soldiers during the Tian Shen civil engagements. It arrived in sealed magazines with directions to be loaded and fired as normal. There was to be no inspection of the magazines' contents, as this would “damage the payload” — frontline reports indicate that this ammunition impacts as normal on intended targets, though it seems to pierce armor and shielding at near-100% efficacy. Samples of paracausal ammunition have been flagged by Union for retrieval, and due to its development Harrison Armory is currently undergoing investigation by the Bureau; paracausal ammunition is still in use in the field, however, as shipments continue to leak to interested parties. HORUS is suspected, and a concurrent investigation is underway."
+    "description": "Paracausal weapons are, to say it plain, difficult to describe and visualize. The first incident was recorded when paracausal ammunition was pushed to frontline soldiers during the Tian Shen civil engagements. It arrived in sealed magazines with directions to be loaded and fired as normal. There was to be no inspection of the magazines' contents, as this would “damage the payload” — frontline reports indicate that this ammunition impacts as normal on intended targets, though it seems to pierce armor and shielding at near-100% efficacy. Samples of paracausal ammunition have been flagged by Union for retrieval, and due to its development Harrison Armory is currently undergoing investigation by the Bureau; paracausal ammunition is still in use in the field, however, as shipments continue to leak to interested parties. HORUS is suspected, and a concurrent investigation is underway.",
+    "added_tags": [{"id": "paracausal"}]
   },
   {
     "id": "phasing",
     "name": "Phasing Mod",
     "sp": 2,
     "applied_to": [
-      "rifle", "cannon", "launcher", "cqb", "nexus"
+      "Rifle", "Cannon", "Launcher", "CQB", "Nexus"
     ],
     "applied_string": "Any Ranged",
     "source": "HA",
@@ -49,9 +51,9 @@
     "name": "Throughbolt Rounds",
     "sp": 2,
     "applied_to": [
-      "cqb",
-      "cannon",
-      "rifle"
+      "CQB",
+      "Cannon",
+      "Rifle"
     ],
     "applied_string": "CQB, Cannon, or Rifle",
     "source": "IPS-N",
@@ -66,7 +68,7 @@
     "name": "Shock Wreathe",
     "sp": 2,
     "applied_to": [
-      "melee"
+      "Melee"
     ],
     "applied_string": "Melee",
     "source": "SSC",
@@ -74,15 +76,15 @@
     "license_level": 3,
     "effect": "This weapon gains Burn depending on its size (Aux: Burn 1, Main: Burn 2, Heavy or larger: Burn 3). If it already has Burn, this increases the burn it deals by the same amount.",
     "data_type": "mod",
-    "description": "An after-fabrication modification popular among melee-oriented pilots, the Shock Wreath applies an integrated bundle of conductive filaments to the blade, point, tip, or surface of a close combat weapon. Paired with a power source (typically in the hilt or half of a weapon, but sometimes external), the Shock Wreath adds a thermal element to the kinetic, and a distinct visual marker: their weapons are picked out in fine lines of white-hot light, shrouded in heat shimmer."
+    "description": "An after-fabrication modification popular among Melee-oriented pilots, the Shock Wreath applies an integrated bundle of conductive filaments to the blade, point, tip, or surface of a close combat weapon. Paired with a power source (typically in the hilt or half of a weapon, but sometimes external), the Shock Wreath adds a thermal element to the kinetic, and a distinct visual marker: their weapons are picked out in fine lines of white-hot light, shrouded in heat shimmer."
   },
   {
     "id": "stabilizer",
     "name": "Stabilizer Mod",
     "sp": 2,
     "applied_to": [
-      "launcher",
-      "cannon"
+      "Launcher",
+      "Cannon"
     ],
     "applied_string": "Launcher or Cannon",
     "source": "SSC",
@@ -91,7 +93,8 @@
     "effect": "The base range of this weapon increases by 5, but gains the Ordnance tag",
     "data_type": "mod",
     "description": "A stabilizer modification is a series of modifications to physical mounts and targeting software that ensures weapons will remain level, steady, and angled at max-optimum in order to ensure positive target engagement at range.",
-    "tags": [{"id":"ordnance"}]
+    "added_range": 5,
+    "added_tags": [{"id":"ordnance"}]
 
   },
   {
@@ -99,7 +102,7 @@
     "name": "Thermal Charge",
     "sp": 2,
     "applied_to": [
-      "melee"
+      "Melee"
     ],
     "applied_string": "Melee",
     "source": "IPS-N",
@@ -108,6 +111,10 @@
     "effect": "As a free action when you hit with this weapon, you may spend a charge of this system to activate the shaped charge on your weapon and deal +1d6 bonus explosive damage.",
     "data_type": "mod",
     "description": "Pilots have long made this popular modification to their pikes. Now, IPS-N is offering these pilots’ modifications as a licensed and quality-tested suite for pan-galactic printing. A pike modified with a charge -- often colloquially called a “Fire Pike”-- is a simple plasma projector integrated into war pike, tuned to project a plasma sheath over the pike’s head.",
+    "added_damage": {
+      "type": "explosive",
+      "val": "1d6"
+    },
     "tags": [{"id":"limited", "val": 3}]
   },
   {
@@ -115,7 +122,7 @@
     "name": "UNCLE-Class NHP",
     "sp": 3,
     "applied_to": [
-      "rifle", "cannon", "launcher", "cqb", "nexus", "melee"
+      "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
     ],
     "applied_string": "Any",
     "restricted_mounts": ["superheavy"],
@@ -133,7 +140,7 @@
     ],
     "data_type": "mod",
     "aptitude": {
-      "melee": 1,
+      "Melee": 1,
       "ranged": 1,
       "repair": 0
     }
@@ -143,14 +150,15 @@
       "name": "Molten Wreath",
       "sp": 2,
       "applied_to": [
-        "melee"
+        "Melee"
       ],
       "applied_string": "Melee",
       "source": "IPS-N",
       "license": "ZHENG",
       "license_level": 2,
-      "effect": "Choose one melee weapon. After hitting a character with an attack from this weapon, your mech takes 1 heat and this weapon creates a cone 3 blast originating from your target that must be placed on the opposite side from your attack and oriented directly away from the target. If applied to a weapon that hits multiple targets, this effect only functions on the primary target. Characters caught in this blast and the main target take 2 explosive damage.",
+      "effect": "After hitting a character with an attack from this weapon, your mech takes 1 heat and this weapon creates a cone 3 blast originating from your target that must be placed on the opposite side from your attack and oriented directly away from the target. If applied to a weapon that hits multiple targets, this effect only functions on the primary target. Characters caught in this blast and the main target take 2 Explosive damage.",
       "data_type": "mod",
-      "description": "Redirecting spare reactor power down cabling extending to a melee weapon was an ingenious but foolhardy innovation. The resultant weapon is so hot that on impact it vaporizes parts of its targets internal systems, creating a secondary blast cloud of debris."
+      "description": "Redirecting spare reactor power down cabling extending to a Melee weapon was an ingenious but foolhardy innovation. The resultant weapon is so hot that on impact it vaporizes parts of its targets internal systems, creating a secondary blast cloud of debris.",
+      "added_tags": [{"id":"heatself", "val": 1}]
     }
 ]
