@@ -6,7 +6,7 @@
       "id": "archaic"
     }],
     "range": [{
-      "type": "threat",
+      "type": "Threat",
       "val": 1
     }],
     "damage": [{
@@ -23,7 +23,7 @@
       "id": "sidearm"
     }],
     "range": [{
-      "type": "threat",
+      "type": "Threat",
       "val": 1
     }],
     "damage": [{
@@ -38,7 +38,7 @@
     "name": "Combat Alloy/Composite Weapon",
     "tags": [],
     "range": [{
-      "type": "threat",
+      "type": "Threat",
       "val": 1
     }],
     "damage": [{
@@ -56,7 +56,7 @@
       "id": "inaccurate"
     }],
     "range": [{
-      "type": "threat",
+      "type": "Threat",
       "val": 1
     }],
     "damage": [{
@@ -73,7 +73,7 @@
       "id": "archaic"
     }],
     "range": [{
-      "type": "range",
+      "type": "Range",
       "val": 5
     }],
     "damage": [{
@@ -91,7 +91,7 @@
       "id": "sidearm"
     }],
     "range": [{
-      "type": "range",
+      "type": "Range",
       "val": 3
     }],
     "damage": [{
@@ -107,7 +107,7 @@
     "name": "Signature Combat Weapon",
     "tags": [],
     "range": [{
-      "type": "range",
+      "type": "Range",
       "val": 5
     }],
     "damage": [{
@@ -129,7 +129,7 @@
       }
     ],
     "range": [{
-      "type": "range",
+      "type": "Range",
       "val": 10
     }],
     "damage": [{

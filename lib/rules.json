@@ -8,9 +8,11 @@
   "base_pilot_edef": 10,
   "base_pilot_speed": 4,
   "minimum_pilot_skills": 4,
+  "minimum_mech_skills": 2,
   "minimum_pilot_talents": 3,
   "trigger_bonus_per_rank": 2,
   "max_trigger_rank": 3,
+  "max_pilot_level": 12,
   "max_pilot_weapons": 2,
   "max_pilot_armor": 1,
   "max_pilot_gear": 3,
@@ -22,5 +24,6 @@
     "Main": ["Main", "Auxiliary"],
     "Flex": ["Main", "Auxiliary"],
     "Heavy": ["Superheavy", "Heavy", "Main", "Auxiliary"]
-  }
+  },
+  "overcharge": ["+1", "+1d3", "+1d6", "+1d6+4"]
 }
