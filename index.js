@@ -15,7 +15,6 @@ const data = {
   systems: require('./lib/systems.json'),
   tags: require('./lib/tags.json'),
   talents: require('./lib/talents.json'),
-  translation_table: require('./lib/translation_table.json'),
   weapons: require('./lib/weapons.json'),
   actions: require('./lib/actions.json'),
 }

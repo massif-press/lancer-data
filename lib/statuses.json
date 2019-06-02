@@ -1,16 +1,8 @@
 [
   {
-    "name": "CORE BREACH",
+    "name": "Exposed",
     "effects": [
-      "You cannot cool or lose heat",
-      "Make an overheating check each time you take heat"
-    ]
-  },
-  {
-    "name": "CRITICAL",
-    "effects": [
-      "You cannot gain HP or repair",
-      "Make a structure check each time you take damage"
+      "An exposed character takes double damage."
     ]
   },
   {
@@ -78,8 +70,7 @@
   {
     "name": "Slowed",
     "effects": [
-      "Your maximum speed becomes 2 (after all modifiers)",
-      "You cannot boost "
+      "The only movement you can make is your regular move (no movement out of turn or from talents, systems, or weapons)"
     ]
   },
   {

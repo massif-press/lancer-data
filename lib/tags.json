@@ -76,11 +76,11 @@
   {
     "id": "ordnance",
     "name": "Ordnance",
-    "description": "Ordnance weapons must be fired before taking any other action or movement on a turn other than protocols (you can still act and move normally afterwards). In addition, ordnance weapons are too cumbersome to be used against targets in engagement with your mech, and cannot be used for overwatch."
+    "description": "Ordnance weapons must be fired before taking any other action or movement on a turn other than protocols (you can still act and move normally afterwards). In addition, ordnance weapons are cumbersome. They cannot be used against targets in engagement with your mech, and cannot be used for overwatch."
   },
   {
-    "id": "overcharged",
-    "name": "Overcharged",
+    "id": "overkill",
+    "name": "Overkill",
     "description": "When attacking with this weapon, if any dice come up as ‘1’, take 1 heat, pick them up, and re-roll them. This process can repeat if you keep rolling ‘1’s."
   },  
   {
@@ -121,7 +121,7 @@
   {
     "id": "drone",
     "name": "Drone",
-    "description": "Indicates a self-propelled system with rudimentary intelligence. Some drone systems are mech systems that must be activated, others are deployable. Deployable drones, unless otherwise noted, are size ½ and have evasion 10, 10 HP, and 0 armor, and can benefit from cover and other defenses. They roll all mech skill checks with +0. If they are destroyed (when they reach 0 HP), they must be repaired (like any other system) before they can be used again, but are restored to full hp when you rest or full repair"
+    "description": "Indicates a self-propelled system with rudimentary intelligence. Drones, unless otherwise noted, are allied characters that are size ½ and have evasion 10, 10 HP, and 0 armor. They can’t take actions or move by default unless specified, and act on their owner’s turn if they do have actions or mvoement. They can benefit from cover and other defenses. They roll all mech skill checks or saves with +0. If they are destroyed (when they reach 0 HP), they must be repaired (like any other system) before they can be used again, but are restored to full hp when you rest or full repair."
   },
   {
     "id": "grenade",
@@ -222,5 +222,10 @@
     "id": "paracausal",
     "name": "Paracausal",
     "description": "Damage from this weapon cannot be reduced in any way, by armor, resistance, or any other kind of damage reduction."
+  }, 
+  {
+    "id": "dangerzone",
+    "name": "Danger Zone",
+    "description": "This system, talent, or weapon only activates when your mech has 1/2 or more of its heat gauge filled in."
   }
 ]
