@@ -1442,11 +1442,11 @@
     "type": "Launcher",
     "damage": [{
         "override": true,
-        "val": "2d6+2 Explosive x2"
+        "val": "2d6 Explosive x2"
       },
       {
         "type": "explosive",
-        "val": "4d6+4"
+        "val": "4d6"
       }
     ],
     "range": [{
