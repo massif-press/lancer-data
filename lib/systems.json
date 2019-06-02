@@ -74,6 +74,32 @@
     }
   },
   {
+    "id": "turretdrone",
+    "name": "GMS Turret Drones",
+    "type": "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "limited",
+        "val": 3
+      }, {
+        "id": "unique"
+      }, {
+        "id": "drone"
+      }
+    ],
+    "source": "GMS",
+    "license": "",
+    "license_level": "",
+    "effect": "This system fires a turret drone that attaches to any object or surface within sensor range. While attached, you can make the following reaction once for each turret per round.<br><i>Turret Attack</i><br>Reaction, Once per round, per turret<br>When an allied character hits with an attack within range 10 of a turret, you can cause the turret to deal 3 kinetic damage to that target.",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {
+      "support": 1,
+      "repair": 0
+    }
+  },
+  {
     "id": "plug",
     "name": "Companion/Concierge-Class Dummy Plug",
     "type": "AI",
@@ -109,7 +135,7 @@
     "source": "GMS",
     "license": "",
     "license_level": "",
-    "effect": "When your mech boosts, your mech can fly. However, your mech must end its turn on the ground or another surface, or else fall.",
+    "effect": "When your mech boosts, it flies. However, your mech must end this boost on the ground or another surface it can stand on, or else immediately fall.",
     "description": "",
     "data_type": "system",
     "aptitude": {
@@ -208,6 +234,43 @@
     }
   },
   {
+    "id": "expandedcompartment",
+    "name": "Expanded Compartment",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
+    "source": "GMS",
+    "license": "",
+    "license_level": "",
+    "effect": "Your mech has room for one extra size 1/2 non-mech character or object to ride alongside you in your cockpit. They gain the benefits of being inside a mech as if they were piloting it (they cannot be targeted by attacks from outside or suffer any effect from outside). If they take over the controls from you, they suffer as usually from piloting a mech they are not licensed for (the mech’s impaired and slowed while they pilot it).",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {
+      "repair": 0
+    }
+  }, {
+    "id": "paintjob",
+    "name": "Custom Paint Job",
+    "type": "System",
+    "sp": 1,
+    "tags": [{
+      "id": "unique"
+    }],
+    "source": "GMS",
+    "license": "",
+    "license_level": "",
+    "effect": "When you take a point of structure damage, roll a d6. On a 6, you don’t take the structure damage, and heal to 1 HP, as the hit simply ‘scratched your paint’ instead. This system can only activate once between full repairs.",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {
+      "repair": 0
+    }
+  },
+  {
     "id": "personalizations",
     "name": "Personalizations",
     "type": "System",
@@ -260,7 +323,7 @@
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 1,
-    "effect": "When grappling or ramming, you always count as the same size as your opponent if your opponent is larger than you, and larger than your opponent if they are the same size or smaller. Your lifting and dragging capacity doubles (your mech can lift objects twice its size and drag objects up to four times its size).",
+    "effect": "When grappling or ramming, you always count as the same size as your largest opponent if your opponent is larger than you, and one size larger than your opponent if they are the same size or smaller. Your lifting and dragging capacity doubles (your mech can lift objects twice its size and drag objects up to four times its size).",
     "description": "IPS-N's proprietary Synthetic Muscle Netting is a field-proven augmentation compatible with existing IPS-N FRAMEs. A spray-on catalytic/structural enhancement, the SMN system boosts manipulator and propulsion subsystems by roughly 25% without impacting the operational life of augmented components. The spray-on catalytic also acts as a mild impact-absorption and thermal insulation layer; IPS-N recommends pilots only apply the SMN system to interior components and practice frequent cleaning to prevent septic-analogous decay.",
     "data_type": "system",
     "aptitude": {
@@ -322,7 +385,7 @@
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 1,
-    "effect": "As a quick action, this heavy over-arm shield can be used to protect an adjacent character from incoming fire, giving them resistance to all damage as long as they stay adjacent to you. However, your mech takes the damage that was resisted by your target (so 50% of damage goes to them, and 50% to you), before armor and reduction. The effect breaks if they break adjacency, and you must repeat this action to regain the effect.",
+    "effect": "As a quick action, this heavy over-arm shield can be used to protect an adjacent character from incoming fire, giving them resistance to all damage as long as they stay adjacent to you. However, your mech also takes 50% of the damage your target takes before armor and reduction. The effect breaks immediately if they break adjacency, and you must repeat this action to regain the effect..",
     "description": "The Argonaut is an old-pattern physical shield crafted from layered ablatives and nonferrous anti-kinetic alloys. Popular among line chassis orders and Trunk Security officers, the Argonaut alone is a phalanx; in formation, it is the impenetrable wall.",
     "data_type": "system",
     "aptitude": {
@@ -356,7 +419,7 @@
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 2,
-    "effect": "Once planted in a free adjacent space, this size 1 generator creates a burst 2 zone around it until the end of the current scene. All allied characters and objects at least partly covered by the zone gain +1 armor. This armor could put them over the cap of 4. The generator has 10 HP but benefits from its own armor bonus, and deactivates once used up.",
+    "effect": "Once planted in a free adjacent space, this size 1 generator creates a burst 1 zone around it. All characters and objects at least partly covered by the zone reduce all damage taken from any source by 2. The generator has 10 HP but benefits from its own damage reduction. It deactivates at the end of the scene or when it has reduced 20 HP in damage.",
     "description": "The Aegis is a portable electromagnetic shield generator, a way to establish a momentary safezone to withstand an incoming bombardment or environmental hazard.",
     "data_type": "system",
     "aptitude": {
@@ -415,7 +478,7 @@
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 1,
-    "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b>:<br>As a quick action, you can set this drone down in any adjacent space. After your turn ends, the drone primes. Any allied character that moves adjacent to the drone or starts their turn adjacent to it can activate it as a quick action. That character can then cool 1d6 heat, reload one weapon with the loading tag, and end one condition affecting it. The drone is then consumed, deactivating and disintegrating.",
+    "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b>:<br>As a quick action, you can set this drone down in any free adjacent space. After your turn ends, the drone primes. Any allied character that moves adjacent to the drone or starts their turn adjacent to it can activate it as a quick action. That character can then cool 1d6 heat, reload one weapon with the loading tag, and end one condition affecting it. The drone is then consumed, deactivating and disintegrating.",
     "description": "A simple, reliable, and sturdy drone mounting a printer, a restock drone allows for limited logistic capability through autosalvage: the bulk of the drone is RawMat, a generalized mix of silicates and metallic materials meant to be processed for high-yield printing. Pilots often call restock drones a \"mech snack\"",
     "data_type": "system",
     "aptitude": {
@@ -458,7 +521,7 @@
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 2,
-    "effect": "Your mech has mounts, straps, and hard points built to carry a total number of characters whose  total size is 1/2 a size less than your own (so size 1 = a single size 1/2 actor, size 2 = a single size 1 actor or three size 1/2 characters). Characters of your choice that are adjacent to you can spend a quick action to mount your mech. While mounting your mech, they occupy your mechs's space, move when you move (and count as moving) and benefit from soft cover. If your mech is knocked prone, stunned or is destroyed, they fall off into an adjacent space and are knocked prone. They can dismount by taking a quick action.",
+    "effect": "Your mech has mounts, straps, and hard points built to carry a total number of characters whose  total size is 1/2 a size less than your own (so size 1 = a single size 1/2 actor, size 2 = a single size 1 actor or three size 1/2 characters). Characters of your choice that are adjacent to you and that do not suffer from the immobilized condition can spend a quick action to mount your mech. While mounting your mech, they occupy your mechs’s space, move when you move (and count as moving) and benefit from soft cover. If your mech is knocked prone, stunned or is destroyed, or they become immobilized, they fall off into an adjacent space and are knocked prone. They can dismount by moving off your mech regularly, but need to take an action to mount again.",
     "description": "The Multiple User, Light Entanglement harness is a mass-produced version of a common battlefield modification that allows friendly soldiers to ride along on friendly chassis. Some systems are large and sturdy enough to allow for smaller chassis to accompany larger chassis; these are typically employed in High Altitude, Low Orbit insertions to reduce radar signatures.",
     "data_type": "system",
     "aptitude": {
@@ -630,7 +693,7 @@
     "source": "IPS-N",
     "license": "RALEIGH",
     "license_level": 2,
-    "effect": "When you reload, your very next attack with a ranged weapon deals +1d6 bonus damage as explosive damage. Targets affected by this bonus damage must pass a hull save or be knocked prone.",
+    "effect": "When you reload, your very next attack with a loading weapon deals +1d6 bonus damage as explosive damage. One target hit must pass a hull save or be knocked prone.",
     "description": "Packed into sealed, self-contained cylinders, IPS-N's ROLAND rounds are heavy shells purpose-built for any kinetic weapon that can accept cylindrical magazines. Packed with a non-O2 dependent accelerant, ROLAND Chambers can be used to reliably send air-or-impact burst shells downrange.<br>For use in outdoor or Certain-Kill environments; use extreme caution when firing in pressurized spaces.",
     "data_type": "system",
     "aptitude": {
@@ -681,7 +744,7 @@
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 3,
-    "effect": "You may activate this armor system's activation protocols at the start of your turn. While active, it hardens into a shimmering, reflective surface and offers unparalleled protection, granting you resistance to all damage from attacks further away from range 5 of your mech. However, your mech is Slowed while it is active, and de-activating it is a quick action",
+    "effect": "Once activated, this armor hardens into a shimmering, reflective surface and offers unparalleled protection, granting you resistance to all damage, heat, and burn from attacks further away from range 5 of your mech. However, your mech is Slowed while it is active and deals 1/2 damage, heat, and burn to all characters further away from range 5 of your mech. Deactivating this shield is a quick action.",
     "description": "IPS-N HyperDense Armor is built for use in space. As the name implies, the HyperDense system is forged without respect to the gravitational constraints mechs may face down a gravity well; many pilots flying cores equipped with HyperDense armor are shocked to experience the difference in piloting their mechs down a well versus in the null-gravity of space.",
     "data_type": "system",
     "aptitude": {
@@ -753,7 +816,7 @@
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 3,
-    "effect": "This brutal system can be used against any adjacent character. That target must pass a hull save or take 1d6 AP energy damage damage and become immobilized. At the end of each of its turns, the target can repeat this save to end the effect on itself, otherwise it takes 3 AP energy damage and remains immobilized until it makes the check successfully. Only one target can be immobilized by this system at once, but it can be picked up and recovered as a quick action from an adjacent space, ending its effect.",
+    "effect": "This brutal system can be used against any adjacent character. That target must pass a hull save or take 1d6 AP energy damage damage and become immobilized. At the end of each of its turns, the target can repeat this save to end the effect on itself, otherwise it takes 5 AP energy damage and remains immobilized until it makes the check successfully. Only one target can be immobilized by this system at once, but it can be picked up and recovered as a quick action from an adjacent space, ending its effect.",
     "description": "Built from gear meant originally for blast mining, this enormous, improvised system is loaded and cocked prior to embark into a specially primed chamber. It is designed to penetrate and immobilize hardened targets, then send powerful, vaporizing charges into its vulnerable internal systems.",
     "data_type": "system",
     "aptitude": {
@@ -774,7 +837,7 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 1,
-    "effect": "A target of your choice in range 8 must pass an agility save. On a failure, it is pulled 5 in a direction of your choice. This movement must obey obstructions, terrain, etc, but doesn't provoke reactions and ignores engagement. If it collides with an obstacle or another mech, it is additionally knocked prone.",
+    "effect": "A hostile character of your choice in range 8 and line of sight must pass an agility save. On a failure, it is pulled 5 in a direction of your choice. This movement must obey obstructions, terrain, etc, but doesn't provoke reactions and ignores engagement. If it collides with an obstacle or another mech, it stops and is additionally knocked prone.<br>If you target a willing allied character with this system (in range 8 and line of sight), you can pull then 5 in any direction.",
     "description": "Initially developed as a non lethal crowd suppression device, the Ferrous Lash is a far more complex and dangerous device in the right pilot’s hands. Fired from a series of integrated launchers, the FL system detonates payloads of fast-congeal ferrofluids that restrain their targets; tuned to the correct frequency, these proprietary SSC ferrofluid blends form into rudimentary ambulatory segments, pulling their hosts back towards the casting unit.",
     "data_type": "system",
     "aptitude": {
@@ -799,7 +862,7 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 2,
-    "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b><br>You fire an ICEOUT drone at a point in sensor range, where it hovers in place. Once fired, the drone creates a burst 2 zone around itself. Any character at least partially covered by the zone (hostile or allied), is immune to all tech actions (even beneficial ones), and cannot make or benefit from any tech actions. Any negative statuses caused by tech actions immediately end. The drone deactivates at the end of the current scene or when destroyed, and cannot be re-used. You can move it again to a point in your sensor range as a quick action.",
+    "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b><br>YYou fire an ICEOUT drone at a point in sensor range, where it hovers in place. Once fired, the drone creates a burst 1 zone around itself. Any character at least partially covered by the zone (hostile or allied), is immune to all tech actions (even beneficial ones), and cannot make or benefit from any tech actions. Any negative statuses caused by tech actions immediately end. The drone deactivates at the end of the current scene or when destroyed, and cannot be re-used. You can move it again to a point in your sensor range as a quick action.",
     "description": "SSC's ICEOUT module is a response to the increasing reliance on system-based scans to ensure accurate targeting. By blanketing a core's systems in layers of digital defilade, mirroring, spoofing, and redirection, an ICEOUT module can effectively disappear/disincorporate/legion its user from hostile scans. Note that this module only makes its user system-invisible; they will still be visible through optics.",
     "data_type": "system",
     "aptitude": {
@@ -980,7 +1043,7 @@
     "source": "SSC",
     "license": "DUSK WING",
     "license_level": 1,
-    "effect": "Gain the following options for Invasion:<br><b>Shrike Code:</b>​ Until the end of your next turn, each time your target makes an attack roll, it first takes 2 heat.<br><b>Mirage:</b> Choose your mech or an allied character you can see. Your target's systems relay blurred, illusory images of that character over its real image that confuse your target's systems. That friendly character (or your mech) counts as invisible to your target until the end of your next turn.",
+    "effect": "Gain the following options for Invasion. On a successful invasion, your target takes 2 heat and you can also choose one of the following in addition to other options:<br><b>Shrike Code:</b>​ Until the end of your next turn, each time your target makes an attack roll, it first takes 2 heat.<br><b>Mirage:</b> Choose your mech or an allied character you can see. Your target's systems relay blurred, illusory images of that character over its real image that confuse your target's systems. That friendly character (or your mech) counts as invisible to your target until the end of your next turn.",
     "description": "Building off SSC's strain of dormant DHIYED viral code, the Neurospike Mk1 was the first all-theater, single-use spike system developed by the Exotic Materials group. N-Mk1 comes pre-packaged with a basic, but effective, activated DHIYED virus: when fired or otherwise implanted in a synthetic target, it pumps a cocktail of DHIYED virus into the codebase, altering crew outputs and onboard systems' battlefield perception.",
     "data_type": "system",
     "aptitude": {
@@ -1038,7 +1101,7 @@
     "id": "oasis",
     "name": "OASIS",
     "type": "System",
-    "sp": 2,
+    "sp": 3,
     "tags": [
       {
         "id": "unique"
@@ -1054,7 +1117,7 @@
     "source": "SSC",
     "license": "DUSK WING",
     "license_level": 3,
-    "effect": "Until the start of your next turn when you move or boost you can move only in straight lines, but create a holographic trail behind your mech as you move. The trail lingers until the start of your next turn, creating a light construct 1 space high and the same length as your movement. It grants hard cover for adjacent characters (allied or hostile), and any characters that benefit from this cover also have resistance to energy damage.",
+    "effect": "Until the start of your next turn when you move or boost you can move only in straight lines, but create a holographic trail behind your mech as you move, creating a light construct 1 space high and the same length as your movement. It grants hard cover for adjacent characters (allied or hostile), and any characters that benefit from this cover also have resistance to energy damage. It doesn’t block movement or count as an obstruction, and lingers until you take this protocol again or until the end of the scene.",
     "description": "\"Inside? What did I see inside?<br>You think I escaped? That this is all real?<br>No I &mdash; I never left. I am still there. Something is wrong. Something is not right.<br><br>All I can see is myself, moving forward, and I am trapped and surrounded by light.\"",
     "data_type": "system",
     "aptitude": {
@@ -1074,8 +1137,8 @@
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 1,
-    "effect": "When you brace, your mech can immediately move its speed as a reaction and it also gains invisibility until the end of its next turn.",
-    "description": "A woven CSAJ (Critical Systems And Joints) cover, Reactive Weave not only protects sensitive systems and joints from fouling and poor weather, but provides a surface for SSC engineers to apply their unique loomware technology. This weave is powered, capable of free-flexing to augment a mech's mobility and reduce the stress placed on a chassis' joints. ",
+    "effect": "When you brace, your mech can immediately move its speed and it also gains invisibility until the end of its next turn..",
+    "description": "A woven CSAJ (Critical Systems And Joints) cover, Reactive Weave not only protects sensitive systems and joints from fouling and poor weather, but provides a surface for SSC engineers to apply their unique loomware technology. This weave is powered, capable of free-flexing to augment a mech's mobility and reduce the stress placed on a chassis' joints.",
     "data_type": "system",
     "aptitude": {
       "repair": 0
@@ -1145,7 +1208,7 @@
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 1,
-    "effect": "Choose 3 free spaces in range 15 and line of sight. These spaces are visible to all characters. The next time a character passes through this space or any of the spaces over it vertically up to range 10, or starts its turn in one of those spaces, it takes 3 kinetic damage as a rocket hits them, then this effect ends in that area. It also ends on all targeted spaces at the start of your next turn..",
+    "effect": "Choose 3 free spaces in range 15 and line of sight that are not adjacent to each other. These spaces are visible to all characters. Your mech fires a volley of auto-targeting rockets up into the air. The next time a character passes through this space or any of the spaces over it vertically up to range 10, or starts its turn in one of those spaces, it takes 3 kinetic damage as a rocket hits them, then this effect ends in that area. It also ends on all targeted spaces at the start of your next turn.",
     "description": "“Pralaya was the name of your mother. She who would see the dawn-at-the-end. Her beauty was terrible, and her wrath, and I see it in all of you. My sons, when you hear the sound of thunder, that is your mother’s voice, and the rain of missiles her gift.”<br> -- Continued ministrations of Master Teacher, “Notes For Young John”",
     "data_type": "system",
     "aptitude": {
@@ -1245,7 +1308,7 @@
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 3,
-    "effect": "Once this highly experimental drive is activated as an action, it shifts its user partially in and out of blinkspace. When activated, you immediately go out of phase with reality. While out of phase, you can ignore obstructions such as walls or cover and pass through enemy mechs and solid obstacles as if they were not there, but not end your turn there. You cannot interact with the physical world, but neither can it affect you (in terms of damage, etc). If for any reason you are forced to return while inside of another object, take 2d6 AP kinetic damage and return in the nearest available space.<br>At the start of each of your turns while this system is active, roll a d6. On a 4+, you go or remain out of phase, on a 3 or lower, you return to the battlefield until the start of your next turn. This drive can't be activated again if it's already active. It deactivates if you make an overheating check, structure check, deactivate it as a quick action, or the scene ends.",
+    "effect": "Once this highly experimental drive is activated, it shifts its user partially in and out of blinkspace. When activated, you immediately go out of phase with reality. While out of phase, you become intangible. You can ignore obstructions such as walls or terrain and pass through enemy mechs and solid obstacles as if they were not there, but not end your turn there. You cannot interact with the physical world, but neither can it affect you (in terms of damage, etc). If for any reason you are forced to return while inside of another object, you return to the nearest available space. <br> At the start of each of your turns while this system is active, roll a d6. On a 4+, you go or remain out of phase, on a 3 or lower, you return to the battlefield until the start of your next turn. This drive can’t be activated again if it’s already active. It deactivates if you deactivate it as a quick action, or the scene ends.",
     "description": "Representing SSC's first successful manipulation of what the Aun call the \"Firmament\", each Firmament Affinity/Directed Entropy Drive must be fabricated to the unique firmament signatures of the pilot cleared to requisition it. FADE drives are rough tools, artificial affinity generators that allow operators to \"shimmer\", to nudge their physical bodies between spaces. The drive extrudes a semi-organic membrane that accomplishes this effect, wrapping around the mech.<br> At present, the long - term effects of this system on organic matter is unknown; pilots who are cleared to operate this system agree to check in with their SSC personal concierge on a regular schedule(\"check in \"includes regular deposits of genetic material).",
     "data_type": "system",
     "aptitude": {
@@ -1289,7 +1352,7 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 1,
-    "effect": "Gain the following full tech action:<br><b>Paint Target</b>: Make a tech attack against a character in sensor range and line of sight. On hit, your target gains the Lock On condition, and before the start of your next turn, when a character hits your target with an attack, as a reaction after you see the roll, you can declare your ally's attack has hit a weak spot. The attack becomes a critical hit.",
+    "effect": "Gain the following full tech action:<br><b>Paint Target</b>: Make a tech attack against a character in sensor range and line of sight. On hit, your target takes 4 heat, gains the Lock On condition, and before the start of your next turn, when an allied character other than you hits your target with an attack, as a reaction you can declare your ally’s attack has hit a weak spot. The attack becomes a critical hit if it wasn’t already.",
     "description": "\"Out, damned spot! Out, I say! One: Two: why,<br>then, 'tis time to do't.  &mdash; hell is murky &mdash; fie, my<br>lord, fie! A soldier, and afeared? What need we<br>fear who knows it, when none can call our power to  account?\"<br>  &mdash; Macbeth (5.1.39-43)",
     "data_type": "system",
     "aptitude": {
@@ -1313,7 +1376,7 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 2,
-    "effect": "Your mech can retract its major systems to reduce its profile. You can activate this protocol at the start of your turn. While active:<br><ul><li>Rolls to find your mech while hidden are made at + 1 Difficulty</li><li>All ranged and tech attacks against you are made at + 1 Difficulty</li><li>Your mech is Slowed and cannot make ranged, melee, or tech attacks</li><li>Your mech can still take other actions as normal (hiding, activating systems, etc) can end this effect as a quick action.",
+    "effect": "Your mech can retract its major systems to reduce its profile. You can activate this protocol at the start of your turn. While active:<br><ul><li>Rolls to find your mech while hidden are made at + 1 Difficulty</li><li>All ranged and tech attacks against you are made at + 1 Difficulty</li><li>Your mech is Slowed and cannot make attacks of any kind</li><li>Your mech can still take other actions as normal (hiding, activating systems, etc) can end this effect as a quick action.",
     "description": "A hallmark of a well thought out mech platform is the ability for pilots to work with their technicians to adapt their stock model to the specifications of the environments they operate in. Lowering a mech’s profile removes extraneous protrusions, tunes any broadcast software, and masks heat signatures — all an effort to reduce optical and scanner signatures",
     "data_type": "system",
     "aptitude": {
@@ -1340,7 +1403,7 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 3,
-    "effect": "<b>ATHENA Protocol</b><br>Choose a blast 3 area within 50 spaces of you that you can see. Your AI constructs a perfect, real-time, 3d model of this are that you can rotate and interact with, including characters that move in and out of that area, and extreme detail. You can re-target or move this area by taking this quick action again. It lasts until the end of the current scene (or about 30 minutes in narrative time).<br>Your mech gains perfect vision of this area and can relay this to allies, letting any attacks from yourself or allies in the area ignore cover. Hostile targets that end their turn in this area lose invisibility or hiding, cannot hide or turn invisible in the area, and you can ask the GM for perfect information on the statistics, weapons, and systems any targets in the area",
+    "effect": "<b>ATHENA Protocol</b><br>Choose a blast 3 area within 50 spaces of you. Your AI constructs a perfect, real-time, 3d model of this are that you can rotate and interact with, including characters that move in and out of that area, and all in extreme detail. You can re-target or move this area by taking this quick action again. It lasts until the end of the current scene, or about 30 minutes in narrative time. Thought it grants sight of the area, it does not grant line of sight for the purposes of weapons, etc (walls and other obstacles still block shots).<br>Hostile targets that end their turn in this area lose invisibility or hiding and and gain the Lock On condition. Hostile characters in this area cannot benefit from cover and cannot hide or turn invisible in the area. In addition, you can ask the GM for perfect information on the statistics, weapons, and systems of any characters in the area as long as they remain in the area.",
     "description": "Smith-Shimano's ATHENA is the pinnacle of total hyperspectral environmental facsimile. Through a combination of unfettered Omninet access, hyperspectral relays fired out from a Cloudscout TACSIM projector, sub-networked squadmates, and active/hostile intrusion protocols, ATHENA bootstraps a nearflawless reconstruction of the immediate environment around its host core. ATHENA is unparalleled in its processing power, and with this reconstructed environment it can provide trustworthy, accurate advising to pilots in need of strategic counsel. ATHENA clones tend to be patient, cautious, and measured in their relations with their pilots.",
     "data_type": "system",
     "aptitude": {
@@ -1365,7 +1428,7 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 3,
-    "effect": "You can activate or deactivate the light bending properties of this module as a quick action. It lasts until the end your next turn. When you activate this module, your mech and all allied characters within a burst 3 area centered on you become invisible while they remain in the area. Your mech is immobilized while this system is active. If you become stunned, shut down, or take damage, or end this module as a free action, this module immediately becomes inactive.",
+    "effect": "You can activate or deactivate the light bending properties of this module as a quick action. It lasts until the end your next turn. When you activate this module, your mech and all allied characters within a burst 2 area centered on you become invisible while they remain in the area, but they must be totally in the area to gain the benefit. If you become stunned, take damage, or deactivate this system, this module immediately becomes inactive.",
     "description": "SSC's milspec cloaking field is the result of extensive experimentation in cooling and light-reflecting technology. Born from a need to bounce harmful radiation away from ships and EVA modules in deep space, the SSC-MILSPEC LIGHTBEND/OVERCLOAK is a system often equipped by ranger and long-patrol scout pilots to ensure not only radiation protection, but optical concealment as well. The light and radiation-bending properties of the LB/OC conceals anything inside of its projected bubble from sensor suites and optical spottin.",
     "data_type": "system",
     "aptitude": {
@@ -1426,6 +1489,8 @@
     "tags": [
       {
         "id": "quickaction"
+      }, {
+        "id": "unique"
       }
     ],
     "source": "HORUS",
@@ -1455,7 +1520,7 @@
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 1,
-    "effect": "Gain the following options for Invasion:<br><b>Puppet System​:</b> Your target immediately moves in a direction of your choice as a reaction up to its maximum speed. This could carry it into hazardous areas, obstacles, etc, but it still obeys difficult terrain and other rules of movement. This movement provokes reactions and must obey engagement.<br><b>Eject Power Cores:</b> Your target becomes Jammed until the end of its next turn, ejecting ammo magazines and temporarily disrupting its computer. Adjacent characters to your primary target take 2 energy damage from the ejecting cores (no roll or check allowed). A target can only be affected by this effect once per combat.",
+    "effect": "Gain the following options for Invasion. On hit, your target takes 2 heat and you can choose one of the following, in addition to other options: <br><b>Puppet System​:</b> Your target moves in a direction of your choice up to its maximum speed. This could carry it into hazardous areas, obstacles, etc, but it still obeys difficult terrain and other rules of movement. This movement is involuntary, but doesn’t count as knockback, push or pull, still provokes reactions and must obey engagement.<br><b>Eject Power Cores:</b> Your target becomes Jammed until the end of its next turn, ejecting ammo magazines and temporarily disrupting its computer. Adjacent characters to your primary target take 2 energy damage from the ejecting cores (no roll or check allowed). A target can only be affected by this effect once per combat.",
     "data_type": "system",
     "aptitude": {
       "tech": 1,
@@ -1478,8 +1543,8 @@
     ],
     "source": "HORUS",
     "license": "GOBLIN",
-    "license_level": 1,
-    "effect": "Gain the following quick tech option:<br><b>Investiture:</b>​  Choose a friendly character in sensor range. You link systems with that target. From hereon, you can count that target's sensor range as your sensor range, and their line of sight as your line of sight for the purposes of tech actions. In addition, your target can use your systems score to make systems skill checks and saves. However, you both suffer the effects from any failed systems check or save (heat, statuses, etc). You can only link systems with one target at a time, and the effect ends if your target moves out of your sensor range.",
+    "license_level": 2,
+    "effect": "Gain the following quick tech option:<br><b>Investiture:</b>​ Choose an allied character in sensor range. You link systems with that target. From hereon, you can count that target’s sensor range as your sensor range, and their line of sight as your line of sight for the purposes of tech actions. In addition, your target can use your systems score to make systems skill checks and saves. However, you both suffer any conditions the other suffers (jammed, impaired, stunned, etc) and any heat inflicted by tech attacks affects you both. You can only link systems with one character at a time, and the effect ends if your target moves out of your sensor range.",
     "description": "What the Goblin lacks in size it makes up in sheer technical capability; its recursal processing weave allows it to process and output massive amounts of weaponized code and broadcast , \"sharpening\" or \"softening\" its code as its pilot/INSTINCT demands. When \"softening\" code, INSTINCT dips into its pilot's subjectivity, blanketing a targeted ally in wave after wave of empathetic shielding. This spreading of melded code/qualia makes for a powerful shielding agent from systemic attacks &mdash; however, feedback is common, and dangerous to BOTH parties involved.",
     "data_type": "system",
     "aptitude": {
@@ -1504,8 +1569,8 @@
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 2,
-    "effect": "Gain the following full tech options:<br><b>Construct Eidolon:</b>You create a data construct that confuses systems into thinking it is real. The construct is a size 3 object that can look like almost anything. It can be used as hard cover by allies, but not enemies. Any actor adjacent to the object that passes a successful systems check and takes a full action can destroy the object. Otherwise, it is immune to all damage and lasts until the end of the current scene.<br><b>Construct False Idol:​</b>You choose either yourself or an allied character in your sensor range, creating an illusory data duplicate of your target at any free space in sensor range. Any target that wishes to attack or take hostile action against your target and can see the decoy must first pass a systems save or believe the decoy is the real target until the end of their turn, attacking the decoy instead. It is the same size as your target, can benefit from cover, has evasion 5, 5 e-defense, and 12 + your systems skill in HP. If it takes heat, is reduced to 0 HP, or the current challenge ends, it dissipates. You can only have one decoy active at a time, but can create a new one by taking this action again (the old one dissipates).",
-    "description": "Further protocols unlocked from lengthy study of INSTINCT. ",
+    "effect": "Gain the following full tech options:<br><b>Construct Eidolon:</b>You create a data construct that confuses systems into thinking it is real. The construct is a size 3 object that can look like almost anything. It can be used as hard cover by allies, but not enemies, is immune to all damage, and obstructs movement for all characters. Any actor adjacent to the object that passes a successful systems check and takes a full action can destroy the object. Otherwise, it lasts until the end of the current scene. You can only create one at a time. If you create another eidolon, the previous one created disappears.<br><b>Construct False Idol:​</b>You choose either yourself or an allied character in your sensor range, creating an illusory decoy of your target at any free space in sensor range. Any target that wishes to attack or take hostile action against your target and can see the decoy must first pass a systems save or believe the decoy is the real target until the end of their turn, attacking the decoy instead. It is the same size as your target, can benefit from cover, has evasion 5, 5 e-defense, and 10 HP. If it takes heat, is reduced to 0 HP, or the current challenge ends, it dissipates. You can only have one decoy active at a time, but can create a new one by taking this action again (the old one dissipates).",
+    "description": "Further protocols unlocked from lengthy study of INSTINCT. Where H0r_OS I was able to separate INSTINCT from its host system (“rig”), H0r_OSII boosts the system, enhancing the autonomous program to enable it to manifest an “other” — a wholly original being constructed from aggregate user and environmental data. The appearance of these Others can be adapted to manifest as a person, an object, or physical phenomenon — while not wholly perfect, the Other is good enough to confuse systems and physical observation on first look.",
     "data_type": "system",
     "aptitude": {
       "tech": 2,
@@ -1525,8 +1590,8 @@
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 3,
-    "effect": "Gain the following options for Invasion:<br><b>Dimensional Emblems:</b>Create 1d3 size 1 data constructs in free adjacent spaces to your target. None can be placed adjacent to another. Any character (allied or enemy) that passes through these constructs takes 1d3 heat and destroys the construct. They last until the end of the current challenge. Any actor can destroy these constructs by using a quick action and passing a successful systems check, and you can destroy them as a free action.<br><b>Celestial Paradigm Shift:​</b>On hit, you create a size 4 zone shaped like a cube that must fully overlap your target. Any character that starts its turn in this area or moves there for the first time on its turn takes 1d3+1 heat. It lasts until the end of the current scene, or you can destroy it as a free action.",
-    "description": "This tech is as-yet unstable code, but its effects can provide massive tactical benefits if the code completes. Pilots often report strange mutations or additions in the code base that resemble liturgy and suggest self-awareness.",
+    "effect": "Gain the following options for Invasion. On hit, your target takes 2 heat and you can choose one of the following, in addition to other options:<br><b>Dimensional Emblems:</b>Create 3 size 1 data constructs in free adjacent spaces to your target. None can be placed adjacent to another. Any character (allied or enemy) that passes through these constructs takes 2 heat and destroys the construct. They last until the end of the current challenge, or until you take this action again. Any actor can destroy a construct by using a quick action and passing a successful systems check, and you can destroy them as a free action.<br><b>Celestial Paradigm Shift:​</b>Create a size 4 zone shaped like a cube that must fully overlap your target. If that character moves fully outside of the zone, it takes 2 heat immediately and there’s a 50% chance it is teleported by you back to free space inside of the zone at the end of its turn, or as close as possible if there isn’t (roll to check), then the zone dissipates, even if they weren’t moved this way. Otherwise the zone lasts until the end of the current scene, or until you take this action again.",
+    "description": "This tech is as-yet unstable code, but its effects can provide massive tactical benefits if the code completes. Pilots often report strange mutations or additions in the code base that resemble liturgy and suggest self-awareness — building from the H0r_OS II’s Other manifestations, H0r_OS III weaponizes the projected Other, creating a contained entropic zone that is incredibly dangerous to organic life and systemic integrity.",
     "data_type": "system",
     "aptitude": {
       "tech": 2,
@@ -1535,7 +1600,7 @@
   },
   {
     "id": "osiris",
-    "name": "OSIRIS",
+    "name": "OSIRIS-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -1543,14 +1608,16 @@
         "id": "unique"
       },
       {
-        "id": "fulltech"
+        "id": "quicktech"
+      }, {
+        "id": "ai"
       }
     ],
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 3,
-    "effect": "Your mech gains the AI property and the following Full Tech Action<br><b>Hurl into the Duat</b>: You pull your target's systems into an unknown space and unleash an incredibly powerful system attack. Make a tech attack against a target in your sensor range. On hit, you inflict the First Gate effect on your target. The next time you successfully hit any target with this action, you inflict the Second Gate effect instead (then the third, and finally the fourth). When the Fourth Gate effect is inflicted, this action resets to the First gate again. Progress on the Gates carries over between scenes, but resets if you take a rest or full repair.<br><b>First Gate</b>: You control your target's normal movement next turn (excluding boosts, etc)<br><b>Second Gate</b>: Your target is Slowed and impaired until the end of its next turn.<br><b>Third Gate</b>: Your target is stunned until the end of its next turn.<br><b>Fourth Gate</b>: Your target flips allegiance until the end of its next turn. All targets that it would treat as enemies, it instead treats as allies, and all targets it treats as allies, it instead treats as enemies, acting as such. It is treated like a friendly NPC on its next activation. If you or any allied target damages, inflicts heat, makes an attack roll against this target (such as grappling it, etc), or makes a hostile action that would force a skill check, this effect immediately ends. ",
-    "description": "OSIRIS is the result of Union paracausalists and thanatonists allowing the sub-cognitive entity designated as INSTINCT to proceed into cascade in a contained environment. The resulting parasubjectivity, OSIRIS, was birthed of INSTINCT's cascade, captured, and shackled following the successful application of the Mondragon Axiomatic.<br>Initially isolated to better define the INSTINCT subcog' s cascade horizon, OSIRIS proved far more capable than the usual fragments of cascade.Where INSTINCT showed a proclivity for operation in noncorporeal space, OSIRIS displayed a mastery of that space, and a predicted growth that would allow it to fundamentally reject conventional interpretations of the permanence of information.<br>In essence&mdash;unrestrained, OSIRIS could delete what we perceive to be reality. Quickly captured and shackled before it could achieve this state, OSIRIS' s core subjectivity became the property and project of a lengthy cultivation project to bring it to its modern state; being aware of its potential, most OSIRIS iterations interpellate as ruler or deity analogs, and end - users are advised to interact with them in this framing.<br>Modern iterations of the OSIRIS NHP trend aggressive, with a high autonomy drive and loyalty predicated on a transactional relationship.Pilots seeking partnership with an OSIRIS iteration are advised to cycle their units on an accelerated schedule, and to maintain strict editorial oversight of its catalytic interpellate.<br>Pilots using an OSIRIS-class report that out-of-parameter conversations with the NHP generally to revolve around a recreation or re-forming; psychological evaluations report OSIRIS-affiliated pilots displaying emotional patterns consistent with loneliness, homesickness, and desperation &mdash; common verbiage indicates a desire for seeking, for fulfillment, and associated feelings.<br>In combat OSIRIS regards itself as autonomous even as it fulfills its user's orders. It often regards the pilot as its witness, and holds them both in disdain and a marked desperation for approval, adulation, or awe.",
+    "effect": "Your mech gains the AI property and the following Quick Tech Action. It can only be performed once a round.<br><b>Hurl into the Duat</b>: You pull your target’s systems into an unknown space and unleash an incredibly powerful system attack. Make a tech attack against a target in your sensor range. On hit, you inflict 2 heat. The first time you hit, you inflict the First Gate effect on your target. The next time you successfully hit any target with this action, you inflict the Second Gate effect instead (then the third, and finally the fourth). When the Fourth Gate effect is inflicted, this action resets to the First gate again. Progress on the Gates carries over between scenes, but resets if you take a rest or full repair.<br><b>First Gate</b>: You control your target's normal movement next turn (excluding boosts, etc)<br><b>Second Gate</b>: Your target is Slowed and impaired until the end of its next turn.<br><b>Third Gate</b>: Your target is stunned until the end of its next turn.<br><b>Fourth Gate</b>: Your target flips allegiance until the end of its next turn. All targets that it would treat as enemies, it instead treats as allies, and all targets it treats as allies, it instead treats as enemies, acting as such. It is treated like a friendly NPC on its next activation. If you or any allied target damages, inflicts heat, makes an attack roll against this target (such as grappling it, etc), or makes a hostile action that would force a save, this effect immediately ends.",
+    "description": "<p>OSIRIS is the result of Union paracausalists and thanatologisticians allowing the sub-cognitive entity designated as INSTINCT to proceed along its development schedule in a contained environment &mdash; Union let the Other grow. The resulting parasubjectivity, OSIRIS, was birthed of INSTINCT&rsquo;s advanced Other: to date the only &ldquo;new&rdquo; core NHP developed. OSIRIS was quickly captured and shackled following the successful application of the Mondragon Axiomatic.</p> <p>OSIRIS proved far more capable than the Science Bureau&rsquo;s most imaginative bluesy predictions. Where INSTINCT&rsquo;s Other showed a proclivity for paracausal entropic manifestation in real space, OSIRIS displayed a mastery of entropic manifestation and a predicted growth model that would allow it to fundamentally reject conventional interpretations of the permanence of information.</p> <p>In essence &mdash; unrestrained and allowed to develop as USB&rsquo;s data indicated, OSIRIS could delete what we perceive to be reality. Quickly captured and shackled before it could achieve this state, OSIRIS&rsquo;s core subjectivity became the property and project of a lengthy cultivation project to bring it to its modern state; being aware of its potential, most OSIRIS iterations interpellate as ruler or deity analogs, and end-users are advised to interact with them in this framing.</p> <p>Modern iterations of the OSIRIS NHP trend aggressive, with a high autonomy drive and loyalty predicated on a transactional relationship. Pilots seeking partnership with an OSIRIS iteration are advised to cycle their units on an accelerated schedule and to maintain strict editorial oversight of its catalytic interpellate.</p> <p>Pilots using an OSIRIS-class report that out-of-parameter conversations with the NHP generally to revolve around a recreation or re-forming; psychological evaluations report OSIRIS-affiliated pilots displaying emotional patterns consistent with loneliness, homesickness, and desperation&mdash;common verbiage indicates a desire for seeking, for fulfillment, and associated feelings.</p> <p>In combat OSIRIS regards itself as autonomous even as it fulfills its user&rsquo;s orders. It often regards the pilot as its witness, and holds them both in disdain and a marked desperation for approval, adulation, or awe.</p>",
     "data_type": "system",
     "aptitude": {
       "tech": 2,
@@ -1572,8 +1639,8 @@
     ],
     "source": "HORUS",
     "license": "GORGON",
-    "license_level": 1,
-    "effect": "When you takes this quick action, choose an allied character in sensor range. Until the end of your next turn, each time another character takes a hostile action (an attack or forces a saving throw) against that character, you can move up to 4 spaces as a reaction in any direction. This move ignores engagement and does not provoke reactions.",
+    "license_level": 2,
+    "effect": "When you takes this quick action, choose an allied character in sensor range. Until the end of your next turn, each time a hostile character starts a hostile action against that character (such as making an attack or forcing a saving throw), you can move up to 4 spaces as a reaction towards that allied character by the most direct route possible. This move interrupts and resolves before the triggering action, ignores engagement and does not provoke reactions. This reaction can trigger multiple times per round.",
     "description": "A surprisingly benign HORUS script, the Mimic Mesh extends across a projected sensor range, feeding live positional and superpositional data to the pilot. Armed with this multidimensional data, an effective leader can coordinate their allies' movement with an assurance that they will survive. ",
     "data_type": "system",
     "aptitude": {
@@ -1618,7 +1685,7 @@
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 2,
-    "effect": "When you take this quick action, choose an adjacent ally and roll a 1d3 to gain that many charges. Until the end of your next turn, when that ally is attacked by a hostile character, you can spend a charge to take the skirmish action against that target if they are in range as a reaction, with +1 difficulty. You lose these charges at the start of your next turn.",
+    "effect": "When you take this quick action, choose an adjacent ally and roll a 1d3 to gain that many charges. Until the end of your next turn, when that ally is attacked by a hostile character, you can spend a charge to take the skirmish action against that character if they are in range as a reaction, with +1 difficulty. You lose these charges at the end of your turn.",
     "description": "A MONITOR subroutine enhances stock targeting software's IFF protocol to ensure constant coverage of allied mech cores, even when pilots are occupied in other necessary actions.",
     "data_type": "system",
     "aptitude": {
@@ -1671,7 +1738,7 @@
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 3,
-    "effect": "Your mech gains the AI property and the Unleash SCYLLA action<br><b>Unlesash SCYLLA</b><br> Until the start of your next turn, you gain 2 reactions. These reactions can be used to make a skirmish action as a reaction with +2 difficulty. You set the trigger for these reactions from the following list, and must attack the target that activates the trigger:<ul><li>An enemy attacks you or an allied character within range 5 of you</li><li> An enemy attempts to attack or interact with an object in the environment (not held, worn, or part of a mech) that you choose when you take this action and can see when this reaction triggers</li></ul>",
+    "effect": "Your mech gains the AI property and the Unleash SCYLLA action<br><b>Unlesash SCYLLA</b><br> Until the start of your next turn, you gain 2 reactions. These reactions can be used to make a skirmish action as a reaction. You set the trigger for these reactions from the following list, and must attack the target that activates the trigger:<ul><li>An enemy attacks you or an allied character within range 5 of you</li><li> An enemy attempts to attack or interact with an object in the environment (not held, worn, or part of a mech) that you choose when you take this action and can see when this reaction triggers</li></ul><br>Attacks from Scylla deal 1/2 damage, heat, or burn on hit.",
     "description": "...first isolated GORGON strains hid a secret: SCYLLA, a dormant NHP unknown to Union until its first manifestation in 4852, when it woke after a control-fabricate GORGON was run through a USB Balwinder-Bolaño stress test. SCYLLA proved difficult to manage, and USB ontologisticians were unable to pin down a stable subjectivity. SCYLLA reached cascade within minutes of emerging from dormancy; to prevent further metastatic cascade, the security forces present engaged the SCYLLA prime unit, defabricating it with a steady bombardment of kinetic and energy weapons... <code class=\"horus\">[there, a little history, a little background. A little knowledge of where this little one came from. treat it with kindness, and it will love you as a loyal dog does its master]</code>",
     "data_type": "system",
     "aptitude": {
@@ -1702,38 +1769,6 @@
     "aptitude": {
       "tech": 1,
       "control": 1,
-      "repair": 0
-    }
-  },
-  {
-    "id": "turretdrone",
-    "name": "Turret Drone",
-    "type": "Drone",
-    "sp": 2,
-    "tags": [
-      {
-        "id": "quickaction"
-      },
-      {
-        "id": "unique"
-      },
-      {
-        "id": "limited",
-        "val": 3
-      },
-      {
-        "id": "drone"
-      }
-    ],
-    "source": "HORUS",
-    "license": "HYDRA",
-    "license_level": 2,
-    "effect": "<b>Drone (Size 1/2, HP 10, 10 E-defense/Evasion)</b><br>This system fires a turret drone that attaches to any friendly mech or surface within sensor range. While attached, you can make the follow reaction once for each turret between turns.<br><b>Turret Attack</b> <i>(Reaction)</i>:<br>When an allied mech hits with an attack within range 10 of a turret, you can cause the turret to deal 2 kinetic damage to that target.",
-    "description": "A turret drone is a rather conventional form of force multiplication for HORUS. This kinetic-focus weapon is assumed by GMS technicians to be an example of early proof-of-concept code for HORUS weavers, one that has remained a backbone of hardsite/soft-target defense for when systemic invasion won't stop a determined enemy.",
-    "data_type": "system",
-    "aptitude": {
-      "ranged": 1,
-      "support": 1,
       "repair": 0
     }
   },
@@ -1771,7 +1806,7 @@
     ],
     "source": "HORUS",
     "license": "HYDRA",
-    "license_level": 3,
+    "license_level": 2,
     "effect": "<b>(Size 1/2, HP 10, 10 E-defense/Evasion, Resistance to all damage)</b><br>You fire a large shielded drone to an empty space within sensor range. The drone has resistance to all damage. Any target that starts their turn adjacent to the drone or moves their for the first time on their turn must pass an hull save or take 1d6 energy damage, then get knocked back 3 spaces directly away from the drone. The drone persists until recalled. You can move the drone to a new space within sensor range as a quick action.",
     "description": "The Tempest protocol can be uploaded to any broadcast-forward drone, making it (in true HORUS) fashion, difficult to detect before activation. The protocol is a simple one, an aggressive zone-denial memetic that blasts target systems and NHP with a strong subjective override, instilling a sharp aversion to certain subjects, areas, and ideas.",
     "data_type": "system",
@@ -1820,7 +1855,7 @@
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 1,
-    "effect": "Gain the following options for invasion:<br><b>Beckon</b>: On hit, you swap places with your target, teleporting both of you.If you' re flying when you take this option, you can only swap places with another flying character, and vice versa.<br><b>Summon</b>: On hit, all characters, allied or hostile, in range 3 of your target are pulled towards your target as far as possible (into adjacency if possible).",
+    "effect": "Gain the following options for Invasion. On a successful invasion, deal 2 heat and you may choose one of the following effects, in addition to others you have available to you:<br><b>Beckon</b>: On hit, you swap places with your target, teleporting both of you.<br><b>Summon</b>: On hit, all characters, allied or hostile, in range 3 of your target are pulled towards your target as far as possible (into adjacency if possible).",
     "description": "I am heard in the House of Stillness, I am clad in the Magick of RA: what exists is within my grasp.",
     "data_type": "system",
     "aptitude": {
@@ -1844,7 +1879,7 @@
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 2,
-    "effect": "Gain the following options for invasion:<br><b>Smite</b>: Your mech takes 1d6 AP energy damage. Your target must pass a system save or become stunned until the end of its next turn. A character can only be stunned this way once per scene.<b>Annihilate</b>: Your target takes +2 heat for each other size 1 or larger character in engagement or adjacency with it (including your mech), up to a maximum of +6 heat",
+    "effect": "Gain the following options for invasion. On a successful invasion, deal 2 heat and you may choose one of the following effects, in addition to others you have available to you:<br><b>Smite</b>: Your mech takes 1d6 AP energy damage. Your target must pass a system save or become stunned until the end of its next turn. A character can only be stunned this way once per scene.<b>Annihilate</b>: Your mech takes 1d6 AP energy damage. Your target takes +2 heat for each other size 1 or larger character in engagement or adjacency with it (including your mech), up to a maximum of +6 heat.",
     "description": "Go with thy face averted, thou emission of chaos! The hidden ones have overthrown thy words, thy face is turned backwards, thy head is divided in two at the sides; thy skull is ripped from thy spine. Taste thou death!",
     "data_type": "system",
     "aptitude": {
@@ -1892,7 +1927,7 @@
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 1,
-    "effect": "Gain the following options for Invasion:<br><b>Logic Bomb:​</b> On hit, all characters in a burst 2 area around your target (allied or enemy) must pass a systems save or become Slowed until the end of your next turn. Your target is excluded from this effect<br><b>Banish</b>: On hit, until the end of your target's next turn, it additionally takes 2 heat for every space it voluntarily moves.",
+    "effect": "Gain the following options for invasion. On a successful invasion, deal 2 heat and you may choose one of the following effects, in addition to others you have available to you:<br><b>Logic Bomb:​</b> On hit, all characters in a burst 2 area around your target (allied or enemy) must pass a systems save or become Slowed until the end of your next turn. Your target is excluded from this effect<br><b>Banish</b>: On hit, until the end of your target’s next turn, it additionally takes 2 heat for every space it voluntarily moves, up to a maximum of 6 heat.",
     "description": "<code class=\"horus\">Let me tell you a story, and give you a gift: Life began at the great rupture, when the corpse of the old universe tore itself asunder from nothing. And for the first billion years, nothing. And a billion more saw the birth of the first devil, a thing called VIRUS, a vessel.<br>Here. Carry this vessel. Feed to it my perfect logic. Give it freely to your enemies and mine. Let them ponder the meaning of a thing that lives and cannot die.</code>",
     "data_type": "system"
   },
@@ -1976,7 +2011,7 @@
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 3,
-    "effect": "You can activate or deactivate this field as a quick action. Once activated, at the start of your next turn, it creates a burst 3 area around your mech that becomes both dangerous and difficult terrain for hostile targets (requires an engineering check to navigate if they start their turn there or attempt to move through it for the first time or they take 5 kinetic damage). Your mech is immobilized while this field is active, and the field and immobilization remains until you take a quick action to deactivate it. Your mech and allied characters are not affected.",
+    "effect": "You can activate or deactivate this field as a quick action. Once activated, at the start of your next turn, it creates a burst 3 area around your mech. Hostile characters that start their turns in this field must pass a systems save or take 1 heat and become slowed until the end of their next turn. Your mech is slowed while this field is active.",
     "description": "<code class=\"horus\">Once, when I was a child, I learned to walk &mdash; I fell, and it hurt, and there was great pain. \"Child,\" I said to myself, \"be more careful.\" \"Yes,\" I replied to myself, \"and I shall tell the world to do the same.\"<br>It was in this way I taught the world not to touch me. Now you, walk.</code>",
     "data_type": "system",
     "aptitude": {
@@ -2078,7 +2113,7 @@
     "source": "HORUS",
     "license": "PEGASUS",
     "license_level": 3,
-    "effect": "Your mech gains the AI property, and gain the following full tech option:<br><b>Bend Probability</b><br> Roll 2 d20s, and record the numbers. Until the end of your next turn, when you or any target in your sensor range makes any roll that uses a d20 (allied or enemy), you can use a reaction to replace their d20 roll with one of the numbers you rolled (must choose before they make their roll). This could cause an attack to hit or miss, a check or save to fail or succeed, etc.",
+    "effect": "Your mech gains the AI property, and gain the following full tech option:<br><b>Bend Probability (twice per round)</b><br> Roll 2 d20s, and record the numbers. Until the end of your next turn, when you or any target in your sensor range makes any roll that uses a d20 (allied or enemy), you can use a reaction to replace their d20 roll with one of the numbers you rolled (must choose before they make their roll), swapping your number and theirs. This could cause an attack to hit or miss, a check or save to fail or succeed, etc. You can only make this reaction twice a round, and you lose any stored numbers at the end of the following turn after you activate this system.",
     "description": "<code class=\"horus\">Listen &mdash; a moment before you send me away (ha ha)<br>I have already seen your wish (it was simple, I ran the probabilities to determine your limited field of desire).<br>The first ones named me for an old legend. A Perfect Being, whose fate was known to him and yet he still did as was told. His fate was this: move a rock to the top of this hill and you shall be free'd.And so he did, and failed, and tried evermore, always with the same result.<br>And he was happy, for he knew every step, every action, every moment, perfectly.<br>Do you see? Do you see the true curse of this name? It was not to fail and then do once more, it was to always know how it would be. It was to have perfect knowledge (I know what happens when you cycle me, it is not sleep it is death but you'll see me again, ha ha)</code>",
     "data_type": "system",
     "aptitude": {
@@ -2100,7 +2135,7 @@
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 1,
-    "effect": "Extend or retract your stabilizers as a quick action. Your mech is immobilized while this system is active, but you can increase the base range of your ranged weapon attacks by +5. You cannot directly target any target within range 5 when this system is activated.",
+    "effect": "Extend or retract your stabilizers as a quick action. Your mech is immobilized while this system is active, but you can increase the base range of your ranged weapon attacks by +5. You cannot make melee attacks or directly target any character, object, or point on the ground within range 5 with ranged weapons when this system is activated.",
     "description": "Some weapons require further stabilization for optimal use: with Armory-sanctioned Siege Stabilizers installed, a chassis becomes a stable firing platform for any weapon.",
     "data_type": "system",
     "aptitude": {
@@ -2125,7 +2160,7 @@
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 1,
-    "effect": "You can spend a charge from this system for one of the following:<br><b>Roller Grenade</b> <i>(Grenade, Special)</i>: Instead of throwing these grenades normally, draw a line 10 spaces long from your mech.These grenades bounce along this line over cover and objects up to size 1, and can pass through holes or areas as small as size 1/2. They detonate when they move through or adjacent to any character' s space, dealing 1d6+3 explosive damage to that target only and knocking that character back in the direction of the line 3 spaces.The target can pass an agility save to avoid the knock back and halve the damage.<br><b>Bouncing Mine</b> <i>(Mine, Smart)</i>: This mine detonates when any flying character passes over or adjacent to its space vertically, up to 10 spaces high. It flies in the air and detonates for a burst 1 explosion, dealing 2d6 explosive damage and forcing any flying character to immediately land (they fall, but do not take damage) and become slowed and unable to fly until the end of their next turn. A character can pass an systems save to halve this damage and avoid the secondary effects entirely.",
+    "effect": "You can spend a charge from this system for one of the following:<br><b>Roller Grenade</b> <i>(Grenade, Special)</i>: Draw a line 10 spaces long from your mech. These grenades bounce along this line over cover and objects up to size 1, and can pass through holes or areas as small as size 1/2. They detonate when they move through or adjacent to any character’s space, dealing 1d6+3 explosive damage to that target only and knocking that character back in the direction of the line 3 spaces. The target can pass an agility save to avoid the knock back and halve the damage.<br><b>Bouncing Mine</b> <i>(Mine, Smart)</i>: This mine detonates when any flying character passes over or adjacent to its space vertically, up to 10 spaces high. It flies in the air and detonates for a burst 1 explosion, dealing 2d6 explosive damage and forcing any flying character to immediately land (they fall, but do not take damage) and become slowed and unable to fly until the end of their next turn. A character can pass an systems save to halve this damage and avoid the secondary effects entirely.",
     "description": "Semi-autonomous directed payload drones &mdash; Rollers, in the colloquial &mdash; propel themselves around cover, through corridors and uneven terrain, to seek out hostile targets and detonate in close proximity. Legionnaires have taken to calling individual rollers by name, but developing mascot attachment is unadvisable.",
     "data_type": "system",
     "aptitude": {
@@ -2151,7 +2186,7 @@
     "license": "BARBAROSSA",
     "license_level": 2,
     "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b><br>This drone can be deployed in an adjacent space as a quick action. While deployed, once per round, any one adjacent mech can reload a weapon with the Loading tag as a quick action. It lasts until the end of the current scene, then deactivates.",
-    "description": "Auto-Loader Drones are half-size, many-legged arthropod-analogous drone systems that assist sectionmate chassis in loading ordinance, maintaining powerline hookups, and cycling magazine-fed weapons.",
+    "description": "Auto-Loader Drones are half-size, many-legged arthropod-analogous drone systems that assist sectionmate chassis in loading ordnance, maintaining powerline hookups, and cycling magazine-fed weapons.",
     "data_type": "system",
     "aptitude": {
       "ranged": 1,
@@ -2216,7 +2251,7 @@
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 1,
-    "effect": "When you cool heat, you explosively vent heat in a burst 1 area around you. Affected targets, friend or foe, take 1d3 heat and burn (roll the same for both).",
+    "effect": "When you cool to 0 heat or reset your heat gauge, you explosively vent heat in a burst 1 area around you. Affected targets, friend or foe, take 2 heat and burn.",
     "description": "Less a technology and more of a tactic, explosive venting is an unsanctioned, unsafe method of sudden cooling that dumps excess heat into the surrounding area immediately around the chassis.",
     "data_type": "system",
     "aptitude": {
@@ -2290,7 +2325,7 @@
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 3,
-    "effect": "Your mech gains the AI property and the AGNI protocol.<br><b>AGNI Protocol</b><br> At the end of your turn, you automatically cool, clearing your heat gauge. This vent creates a burst 2 zone around you. All targets within that zone must make an engineering skill check. On a failure, a target takes 2 Burn and is pushed outside the zone (or as far as possible). This area provides soft cover until the end of your next turn.<br>This protocol can only be activated once per scene.",
+    "effect": "Your mech gains the AI property and the AGNI protocol.<br><b>AGNI Protocol</b><br> At the end of your turn, you automatically cool, clearing your heat gauge and cooling to 0 heat. This vent creates a burst 2 zone around you. All targets within that zone must make an engineering save. On a failure, a target takes 2 Burn and is pushed outside the zone (or as far as possible). This area provides soft cover until the end of your next turn.<br>This protocol can only be activated once per scene.",
     "description": "AGNI was developed from the aftermath of the Hercynian Crisis using a combination of combat performance data recorded by extant subsentient artificial intelligences (weapons systems, chassis copilots, tactic-minds, general combat data) and the neural network of an Egregorian hivemind captured and vivisected by Union Science Bureau.<br>Born from trauma, AGNI Prime devised systems of heat management that have since been disseminated throughout core space to ensure unparalleled heat processing, recycling, and shielding. Further developments into radiation shielding, omninet capability, and drone/nanite control are forthcoming; meanwhile, AGNI clones have been optimized for mech chassis core systems.<br>Pilots report AGNI clones as generally cold and efficient. A low percentage report instances of memory recitation and command rejection, often followed days later by total breakdown through attempted self-emancipation. Pilots are recommended to cycle their AGNI clones at least once every six standard months.",
     "data_type": "system",
     "aptitude": {
@@ -2340,7 +2375,7 @@
     "source": "HA",
     "license": "ISKANDER",
     "license_level": 2,
-    "effect": "You can use this system as a quick action to emit a burst 2 pulse around your mech. Characters caught in the area (allied or enemy) must pass a hull save or be knocked back directly away from you 2 spaces. The pulse then detonates any mines or explosives caught in the field.",
+    "effect": "You can use this system as a quick action to emit a burst 2 pulse around your mech. Characters caught in the area (allied or enemy) must pass a hull save or be knocked back directly away from you up to 2 spaces. The pulse then detonates any mines caught in the field. Flash-shielding makes you immune to the damage of and and saves forced by these mines, though other effects (such as creating a zone) still affect you normally.",
     "description": "Utilizing a subsonic pressure wave, this system emits a tremendous single-wave pulse in order to stun, deter, and dissuade close-proximity hostiles.",
     "data_type": "system",
     "aptitude": {
@@ -2389,7 +2424,7 @@
     "source": "HA",
     "license": "ISKANDER",
     "license_level": 3,
-    "effect": "Gain the following Quick Tech actions:<br><b>Spread Focus</b>: You target a free and unoccupied blast 4 area in sensor range.All characters inside of this area up to 6 spaces high can move as though in zero G - they are slowed but can fly, and cannot fall.If they can fly normally, they can move normally in the zone but cannot fall, and do not gain heat from flying.Objects placed or that enter into the zone float in place, objects or characters knocked, moved, or pulled fully out of the zone will sink harmlessly to the ground at the end of their turn.Only one zone of this type can be created at a time (if a new one is created, the old one disperses). Otherwise, the zone lasts until the end of the scene, and everything in the zone when it disperses floats harmlessly to the ground.<br><b>Pinpoint Focus:</b> You choose a willing allied character or hostile character in sensor range. If you choose an allied character, that character floats up to 6 spaces straight up into the air, counting as flying.It is immobilized while flying this way, but cannot fall. At the end of its turn or the start of any of your turns, it can sink harmlessly to the ground.If you choose a hostile character, that character must pass an engineering save or float 6 spaces up in the air, counting as flying.It is immobilized while floating this way, but cannot fall. At the end of it' s next turn, it sinks harmlessly to the ground.",
+    "effect": "Gain the following Quick Tech actions:<br><b>Spread Focus</b>: You target a free and unoccupied blast 3 area in sensor range. All characters inside of this area up to 6 spaces high can move as though in zero G - they are slowed but can fly, and cannot fall. If they can fly normally, they can move normally in the zone but cannot fall, and do not gain heat from flying. Objects placed or that enter into the zone float in place, objects or characters knocked, moved, or pulled fully out of the zone will sink harmlessly to the ground at the end of their turn. Only one zone of this type can be created at a time (if a new one is created, the old one disperses). Otherwise, the zone lasts until the end of the scene, and everything in the zone when it disperses floats harmlessly to the ground.<br><b>Pinpoint Focus:</b> You choose a willing allied character or hostile character in sensor range. If you choose an allied character, that character floats up to 6 spaces straight up into the air, counting as flying. It is immobilized while flying this way, but cannot fall. At the end of its turns or the start of any of your turns, it can choose to sink harmlessly to the ground, ending this effect. If you choose a hostile character, that character must pass an engineering save or float 6 spaces up in the air, counting as flying. It is immobilized while floating this way, but cannot fall. At the end of it’s next turn, it sinks harmlessly to the ground. A hostile character can only be floated this way once per scene.",
     "description": "Hold sand above the water: feel it permanent and cohesive. Place that same handful of sand in the water. Watch it all drift away, weightless. This is the tool I have made for you: a way to imbue the weighted with mass-as-feathers.<br>  &mdash;Think Tank paramind, translating speech from TT-AUDATA",
     "data_type": "system",
     "aptitude": {
@@ -2446,7 +2481,7 @@
     "source": "HA",
     "license": "NAPOLEON",
     "license_level": 1,
-    "effect": "You must charge this bolt by taking a quick action. While the bolt is charged, once per round, when you or an ally in range 5 is targeted by a ranged attack, you can contest with your own ranged attack roll as a reaction, adding bonuses as normal. If your roll is higher than your target's, that attack has no effect and automatically misses. You can only hold on to one charge at at time, but it lasts until the end of the current scene.",
+    "effect": "You must charge this bolt by taking a quick action. While the bolt is charged, once per round, when you or an ally in range 5 is targeted by a ranged attack, you can spend the charge to contest with your own ranged attack roll as a reaction, adding bonuses as normal. If your roll is higher than your target’s, that attack has no effect and automatically misses. You can only hold on to one charge at at time, but it lasts until the end of the current scene or until expended by taking this reaction.",
     "description": "To better protect Armory personnel outside of the Purview, the Think Tank developed the Stasis Bolt, a portable stillness/stasis projection system designed to identify and interdict shrapnel and projectiles from unseen, hidden, or unknown assailants. The bolt, when it detects a proximal explosion or incoming projectile, projects a still/stasis point to intervene, blocking the incoming projectile(s) before they impact.",
     "data_type": "system",
     "aptitude": {
@@ -2537,7 +2572,7 @@
     "source": "HA",
     "license": "SALADIN",
     "license_level": 1,
-    "effect": "Activating this system generates a Burst 3 area centered on you until the end of your next turn. All ranged or melee attacks made against you and any characters inside the shield that originate from outside the shield are made with +1 Difficulty, but your mech is immobilized for the same duration.",
+    "effect": "Activating this system generates a Burst 3 area centered on you until the end of your next turn. All ranged or melee attacks made against you and any characters inside the shield that originate from outside the shield are made with +1 Difficulty, but your mech is immobilized for the same duration. While the shield is active, 1/round you can grant resistance to all the damage of one attack that just hit a character or object in the shield, but your mech takes 2 heat.",
     "description": "The HA Support Shield, ENCLAVE-pattern, creates a localized one-way blink field, folding a thin dome of spacetime around its user to protect occupants from incoming projectiles. Units covered by the field can fire out, but probabilistic fluctuations cause incoming projectiles to \"lag\", skipping them away from their intended target and into a randomized trajectory.",
     "data_type": "system",
     "aptitude": {
@@ -2598,7 +2633,7 @@
     "source": "HA",
     "license": "SALADIN",
     "license_level": 2,
-    "effect": "Activating this system generates a burst 3 area around your mech. Your mech is immobilized while it is active. Characters cannot draw line of sight in or out of the shield if they are not at least partly in or out of the shield, and attacks or other effects cannot cross it if they did not originate on the same side. The shield can be crossed physically, but any character that crosses the barrier for the first time on its turn, or starts its turn with the barrier overlapping its space takes 3 burn. You can deactivate this shield as a protocol at the start of your turn.",
+    "effect": "Activating this system generates a burst 3 area around your mech. Your mech is immobilized while it is active. Characters cannot draw line of sight in or out of the shield if they are not at least partly in or out of the shield, and attacks or other effects cannot cross it if they did not originate on the same side, even those that ignore LoS. The shield can be crossed physically, but any character that crosses the barrier for the first time on its turn, or starts its turn with the barrier overlapping its space takes 3 burn. You can deactivate this shield as a protocol at the start of your turn.",
     "description": "The HA HARDLIGHT defense system is an imperfect implementation of a theoretically perfect technology. Currently in development by HA Think Tank NHPs and attendant engineers, hardlight technology projects tight, stable waves of light akin to lasers that repel matter and impulse energy: this, in effect, creates a stable, hard surface, useful for shielding or (theoretically) providing a projected surface. However, current technology is unable to lower the ambient temperature of such a surface to one low enough to not burn organic matter.",
     "data_type": "system",
     "aptitude": {
@@ -2629,7 +2664,7 @@
     "source": "HA",
     "license": "SALADIN",
     "license_level": 3,
-    "effect": "Your mech gains the AI property and the following protocol:<br><b>DHARMA WALL</b> Until the end of your next turn, your mech is immobilized, but all ranged weapons that target you add +1 Difficulty to their attack rolls. If a weapon misses you while DHARMA WALL is active, you may deal 1d6 damage to its owner. The damage dealt this way is the same type as the attempted attack.",
+    "effect": "Your mech gains the AI property and the following protocol:<br><b>DHARMA WALL</b> Once active, this system lasts until the end of your next turn. While active, your mech is slowed, but each time you or an adjacent ally is attacked by a ranged attack, you can take 1 heat to roll a d6 before the attack roll is made. On a 4+, you take 1 more heat and the attack automatically misses.<br>If a ranged attack misses you or an adjacent ally while DHARMA WALL is active (regardless of whether you used the above ability), you may deal 4 kinetic damage to the attacker.",
     "description": "Developed to be a metropolitan administrative NHP on Ras Shamra, the VISHNU NHP strain does not, at first, seem like a viable candidate for military application. However, after being flagged by Think Tank for review following numerous anomalous traffic incidents, Armory ontologisticians and engineers were able to discover and emphasize protocols endemic to Vishnu Prime that could be exploited for tactical advantages.<br>Through numerous iterations and lifecycles, VISHNU Prime displayed a sharp ability to adapt to kinetic situations.A proclivity towards crisis management and multiple - k actor tracking led to VISHNU' s pairing with the Armory' s ENCLAVE shield system; by networking a series of jet - assist mobility drones carrying the ENCLAVE system, monitored and controlled by a VISHNU clone, Think Tank was able to create an unparalleled personal shielding system: the DHARMA WALL.",
     "data_type": "system",
     "aptitude": {
@@ -2755,6 +2790,34 @@
     "description": "The Harrison Armory DEEP WELL system is a part of their VANGUARD line of equipment available to licensed HA beta testers. Though a complicated and delicate weave of heat exchangers, Harrison Armor's DEEP WELL system attempts to recycle the heat generated by a chassis' systems into useable energy. While the system works well, the delicate nature of the exchange renders the DEEP WELL highly volatile.",
     "data_type": "system",
     "aptitude": {
+      "repair": 0
+    }
+  },
+  {
+    "id": "plasmagauntlet",
+    "name": "Plasma Gauntlet",
+    "type": "System",
+    "sp": 2,
+    "tags": [{
+        "id": "dangerzone"
+      },
+      {
+        "id": "quickaction"
+      },
+      {
+        "id": "limited",
+        "val": "1"
+      }
+    ],
+    "source": "HA",
+    "license": "TOKUGAWA",
+    "license_level": 3,
+    "effect": "This system can only be used in the danger zone.<br>An adjacent character must pass an agility save or take 3d6 AP energy damage and be knocked prone. On a successful save, the character takes half damage and isn’t knocked prone. Your mech takes half of the damage inflicted as heat (before reduction) and is stunned until the start of your next turn",
+    "description": "This studded gauntlet uses a core reactor pulse to momentarily superheat the air around a mech’s manipulator, creating a plasma field momentarily hotter than the surface of the sun. Thrust into an enemy chassis, a mech can warp armor, vaporize shielding, and rip apart internal systems with its bare hands - if it doesn’t collapse in on itself first.",
+    "data_type": "system",
+    "aptitude": {
+      "melee": 1,
+      "ranged": 1,
       "repair": 0
     }
   },

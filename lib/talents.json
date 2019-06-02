@@ -6,7 +6,7 @@
     "ranks": [
       {
         "name": "Acrobatics",
-        "description": "Make all agility checks while flying with +1 accuracy. When any attack misses your mech while it’s flying, it can fly 2 spaces in any direction as a reaction."
+        "description": "Make all agility checks and saves while flying with +1 accuracy. When any attack misses your mech while it’s flying, it can fly 2 spaces in any direction as a reaction."
       },
       {
         "name": "Afterburners",
@@ -14,7 +14,7 @@
       },
       {
         "name": "Supersonic",
-        "description": "While your mech is flying, you may nominate a hostile or allied character in your movement range and line of sight as a quick action. At the end of that character’s turn, even if they are no longer in line of sight or movement range from you, your mech may fly to any free adjacent space to that target as a reaction, as long as there is a path to do so. This movement ignores engagement and does not provoke reactions."
+        "description": "If your mech ends its turn flying, you may nominate a hostile or allied character in your movement range and line of sight as a quick action. At the end of that character’s turn, even if they are no longer in line of sight or movement range from you, your mech may fly to any free adjacent space to that target as a reaction, as long as there is a path to do so. This movement ignores engagement and does not provoke reactions."
       }
     ]
   },
@@ -25,11 +25,11 @@
     "ranks": [
       {
         "name": "Armament",
-        "description": "You have an custom supply of ammunition that can be used with all your main ranged weapons. The ammo case is a limited (6) system that doesn’t take any SP but can be destroyed by system damage, etc. Once a turn, you can load special ammo when you fire a main weapon, expending a use of this system and choosing one of the following options (you can only load one type at once). The ammo lasts for one shot.<br><ul><li><b>Thumper</b> - The attack gains knockback 1 and deals explosive damage</li><li><b>Shock</b> - The attack deals energy damage. Any actors adjacent to the primary target take 1 AP energy damage (no attack required). The primary target doesn’t take this damage.</li><li><b>Mag</b> - The attack deals kinetic damage and gains the Arcing tag</li></ul>"
+        "description": "You have an custom supply of ammunition that can be used with all your main ranged weapons. The ammo case is a limited (6) system that doesn’t take any SP but can be destroyed by system damage, etc. Once a turn, you can load special ammo when you fire a main weapon, expending a use of this system and choosing one of the following options (you can only load one type at once). The ammo lasts for one shot.<br><ul><li><b>Thumper</b> - The attack gains knockback 1 and deals explosive damage</li><li><b>Shock</b> - TThe attack deals energy damage. Choose a target of this attack. Adjacent characters to that target take 1 AP energy damage (hit or miss).</li><li><b>Mag</b> - The attack deals kinetic damage and gains the Arcing tag</li></ul>"
       },
       {
-        "name": "Underslung",
-        "description": "Gain the following ammo types. They cost 2 charges instead of 1.<br><ul><li><b>Hellfire</b> - The attack becomes energy damage and deals any bonus damage as burn.</li><li><b>Jager</b> - The attack becomes explosive damage, gains knock back 2, and targets struck must pass a hull save or be knocked prone</li><li><b>Ripper</b> - The attack gains the AP tag and deals kinetic damage</li></ul>"
+        "name": "Expanded Portfolio",
+        "description": "Gain the following ammo types. They cost 2 charges instead of 1.<br><ul><li><b>Hellfire</b> - The attack becomes energy damage and deals any bonus damage as burn.</li><li><b>Jager</b> - The attack becomes explosive damage, gains knockback 2, and targets struck must pass a hull save or be knocked prone</li><li><b>Ripper</b> - The attack gains the AP tag and deals kinetic damage</li></ul>"
       },
       {
         "name": "Efficiency",
@@ -47,12 +47,12 @@
         "description": "When you take this talent, choose another pilot to be your bondmate. When you or your bond mate make any mech skill check or save while your mech is adjacent to theirs, both of you gain +1 Accuracy (this effect can only stack once). You can change your bondmate between missions, but only if something has changed between the two of you."
       },
       {
-        "name": "Cover me!",
-        "description": "You can use your overwatch reaction to attack any target in your threat range that attacks your bondmate after the attack resolves."
-      },
-      {
         "name": "Sundance",
         "description": "Gain the following reaction: <br><b>Intercede</b><br><i>Reaction</i><br>Once per round, when your bondmate is adjacent to you and takes damage from a source you can see, you can choose to take the damage instead."
+      },
+      {
+        "name": "Cover me!",
+        "description": "You can expend your overwatch reaction to threaten any character that attempts to attack your bondmate that you can see. That character can choose a different target or attempt to attack anyway. If they choose a different target, you expend your overwatch reaction but don’t get to use it. If they choose to attack anyway, you can immediately use your overwatch to attack them if they are in range and line of sight, dealing 1/2 damage, heat, or burn on hit. This attack resolves before the triggering attack is made."
       }
     ]
   },
@@ -67,11 +67,11 @@
       },
       {
         "name": "Sledgehammer",
-        "description": "Your improvised attack action does 2d6 kinetic damage and gains knock back 2."
+        "description": "Your improvised attack action does 2d6+2 kinetic damage and gains knock back 2."
       },
       {
         "name": "Knockout Blow",
-        "description": "Gain a Brawler Die (a d6), starting at 6. Each time you make the grapple, ram, or improvised attack action, lower the value of the die by 1, to a minimum of 1. When the value of the die is 1, you can spend it to make a knockout blow against any adjacent character as a full action. That target must pass a hull save or take 2d6 kinetic damage and become stunned until the end of its next turn. The die then resets to 6. This die persists between scenes but is lost if you rest or full repair."
+        "description": "Gain a Brawler Die (a d6), starting at 6. Each time you make the grapple, ram, or improvised attack action, lower the value of the die by 1, to a minimum of 1. When the value of the die is 1, you can spend it to make a knockout blow against any adjacent character as a full action. That target must pass a hull save or take 2d6+2 kinetic damage and become stunned until the end of its next turn. The die then resets to 6. This die persists between scenes but is lost if you rest or full repair."
       }
     ]
   },
@@ -90,7 +90,7 @@
       },
       {
         "name": "Relentless",
-        "description": "When you miss with an attack on your turn, your very next attack gains +1 accuracy."
+        "description": "When you miss with an attack, your very next attack gains +1 accuracy."
       }
     ]
   },
@@ -104,12 +104,12 @@
         "description": "At the start of your turn, you can choose to steady your aim as a protocol. If you do, you are immobilized until the start of your next turn, but gain +1 Accuracy on all your rifle attack rolls."
       },
       {
-        "name": "Watch This",
-        "description": "While steadying your aim, Once per round when you score a critical hit with a rifle, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following effects:<ul><li><b>Headshot</b>: Your target has line of sight only to adjacent spaces until the end of its next turn</li><li><b>Legshot</b>: Your target is immobilized until the end of their next turn.<li><b>Bodyshot</b>: Your target is knocked prone.</li></ul>"
-      },
-      {
         "name": "Zero In",
         "description": "Once per round while steadying your aim and making a ranged attack with a rifle, you can sacrifice an accuracy die on the attack to deal +1d6 bonus damage. Only gain this bonus damage on a critical hit."
+      },
+      {
+        "name": "Watch This",
+        "description": "While steadying your aim, Once per round when you score a critical hit with a rifle, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following effects:<ul><li><b>Headshot</b>: Your target has line of sight only to adjacent spaces until the end of its next turn</li><li><b>Legshot</b>: Your target is immobilized until the end of their next turn.<li><b>Bodyshot</b>: Your target is knocked prone.</li></ul>"
       }
     ]
   },
@@ -119,15 +119,15 @@
     "description": "In the aftermath of the terrorist attack on Tartarus Bay, an unnamed source named Barony Intelligence as the culprit. BI announced their official denial, which was never countered with hard evidence. Rumors of raw data from the attack were unsubstantiated. Public reaction -- anger, terror -- to the station’s destruction quieted.<br>Tartarus Bay’s corpse was shunted away from its stable orbit, directed towards Karrakis’ star. A month later, Karrakis’ omninet was flooded with previously suppressed footage from the attack on the station. Barony agents released the swarm into Tartarus Bay; further data dumps by Ungrateful agents indicated the existence of a secret program - Centimane. The Hundred Hands.",
     "ranks": [
       {
-        "name": "Hivemaster",
+        "name": "Ten Thousand Teeth",
         "description": "Once per round, when you critical hit a character with a nexus weapon, you may force that character to pass a systems save or become impaired and slowed until the end of its next turn."
       },
       {
         "name": "Expose Weakness",
-        "description": "When you consume Lock On as part of an attack from a drone system or nexus weapon, on hit, your target is shredded until the end of its next turn."
+        "description": "When you consume Lock On as part of an attack from a drone system or nexus weapon, on critical hit, your target is shredded until the end of its next turn."
       },
       {
-        "name": "Obliteration",
+        "name": "Tidal Suppression",
         "description": "Once per round when you critical hit a character with a nexus weapon, you can force the target to pass a systems save or suffer one of the following effects until the end of their next turn. This rank effect replaces the rank I effect of this talent.<ul><li><strong>Harrying Swarm</strong> - Your target is impaired and slowed</li><li><strong>Blinding Swarm </strong>- Your target only has line of sight to adjacent squares</li><li><strong>Virulent Swarm </strong>- Your target is Shredded. Any adjacent characters of your choice must repeat this save or also become Shredded.</li><li><strong>Restricting Swarm </strong>- Your target takes 1 Burn each time they take an action or reaction.</li></ul>"
       }
     ]
@@ -138,12 +138,12 @@
     "description": "True strength in combat doesn’t come from mastering the blade or the gun, it comes from knowing how to use both. Through time and training, you have combined melee and ranged weapons into a single deadly combination, able to handle any threat at any range.",
     "ranks": [
       {
-        "name": "CQC Training",
-        "description": "You ignore the ranged difficulty penalty for melee engagement."
-      },
-      {
         "name": "Blade Shield",
         "description": "As long as you’re in engagement with at least 1 hostile character you count as having soft cover. This bonus extends to any allies adjacent to you."
+      },
+      {
+        "name": "CQC Training",
+        "description": "You ignore the ranged difficulty penalty for melee engagement."
       },
       {
         "name": "Storm of Violence",
@@ -162,7 +162,7 @@
       },
       {
         "name": "Blademaster",
-        "description": "Once per round, when you hit with a main melee attack, you gain a blade master die. You can carry up to 3, and they last until expended or the current scene ends. You can spend them 1 to 1 for the following benefits:<br><ul><li><b>Parry</b>: As a reaction, you may gain resistance to all the damage, heat, or burn of any melee attack that just hit you.</li><li><b>Deflect</b>: As a reaction when you’re hit by a ranged attack, you may spend and roll any number of blade master dice. On any result of 5+ you gain resistance to the damage of the attack.</li><li><b>Feint</b>: Choose an adjacent character as a quick action. Until the end of your current turn, your movement ignores engagement from that character and doesn’t provoke reactions from that character.</li><li><b>Trip</b>: Choose an adjacent character as a quick action. That character must pass an agility save or fall prone, and until the end of your current turn,even if it makes this save, you may freely pass through but not end your turn in its space.</ul>"
+        "description": "Once per round, when you hit with a main melee attack, you gain a blade master die. You can carry up to 3, and they last until expended or the current scene ends. You can spend them 1 to 1 for the following benefits:<br><ul><li><b>Parry</b>: As a reaction, you may gain resistance to all the damage, heat, or burn of any melee attack that just hit you.</li><li><b>Deflect</b>: As a reaction when you’re hit by a ranged attack, you may spend and roll any number of blade master dice. On any result of 5+ you gain resistance to all the damage, heat, and burn of the attack.</li><li><b>Feint</b>: Choose an adjacent character as a quick action. Until the start of your next turn, your movement ignores engagement and doesn’t provoke reactions from that character.</li><li><b>Trip</b>: Choose an adjacent character as a quick action. That character must pass an agility save or fall prone, and until the end of your current turn,even if it makes this save, you may freely pass through but not end your turn in its space.</ul>"
       },
       {
         "name": "Unstoppable",
@@ -195,12 +195,12 @@
     "description": "Pilots are creative and driven individuals, but you're an exceptional case - some would say to the point of excess. In your spare time you've managed to scrape together just enough scrap, requisitioned materials, and workshop space to apply a little old fashioned ingenuity to your mech.",
     "ranks": [
       {
-        "name": "Spark",
+        "name": "Prototype",
         "description": "On a full repair, you can, with some trial and error, install a prototype weapon system on your mech, the specifics you may choose upon installation. You can change the profile of this weapon each time you full repair. This weapon does not take a mount to add to your mech, and counts as an integrated mount."
       },
       {
-        "name": "Updated Plans",
-        "description": "On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon. Choose 2 of the following:<ul><li><b>Tweak Optics</b>: You always fire your prototype weapon with +1 Accuracy.</li><li><b>Tweak Computer</b>: Your prototype weapon gains the Smart property.</li><li><b>Remove Reactor Shielding</b>: Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon (choose when you fire), but costs 2 heat to fire</li></ul>"
+        "name": "Revision",
+        "description": "On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon. Choose 2 of the following:<ul><li><b>Tweak Optics</b>: You always fire your prototype weapon with +1 Accuracy.</li><li><b>Tweak Computer</b>: Your prototype weapon gains the Smart property.</li><li><b>Remove Reactor Shielding</b>: A ranged prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon (choose when you fire). A melee prototype weapon can fire as a burst 1 weapon. However, your weapon costs 2 heat to fire this way.</li></ul>"
       },
       {
         "name": "Final Draft",
@@ -219,7 +219,7 @@
       },
       {
         "name": "Wide Arc Cleave",
-        "description": "The first time in a round you score a critical hit with a heavy or superheavy melee weapon, all characters of your choice in your threat take 4 bonus damage."
+        "description": "The first time in a round you score a critical hit with a heavy or superheavy melee weapon, all characters and objects of your choice in your threat other than the character or object you just critical hit take 3 kinetic damage."
       },
       {
         "name": "No Escape",
@@ -242,18 +242,18 @@
       },
       {
         "name": "To The Death",
-        "description": "When you give a character your mark, you can choose to challenge it to the death as a free action. If you do so, you and your marked target gain +3 difficulty on all attacks against any character or object other than each other until the end of the current scene or until one of you is destroyed. If your target makes any action that includes an attack roll against you, hit or miss, this effect turns ‘off’ after that action resolves until the start of your next turn. While this challenge is active, you cannot willingly make any movement that would move you further away from your marked target, your current mark now lasts until the end of the current scene or until you or your target is destroyed, and you cannot mark any new characters for the same duration."
+        "description": "When you give a character your mark, you can choose to challenge it to the death as a free action. If you do so, you and your marked target gain +3 difficulty on all attacks against any character or object other than each other until the end of the current scene or until one of you is destroyed. If your target makes any action that includes an attack roll against you, hit or miss, this effect turns ‘off’ immediately until the start of your next turn. While this challenge is active, you cannot willingly make any movement that would move you further away from your marked target, your current mark now lasts until the end of the current scene or until you or your target is destroyed, and you cannot mark any new characters for the same duration."
       }
     ]
   },
   {
     "id": "guardian",
-    "name": "Guardian",
+    "name": "Heavy Gunner",
     "description": "Behind the line, there is not much to do but wait and make ready. You clean your cannons. Make ordered rows of your shot and shell. You pack sandbags onto earthen berms. Stitch closed tears in the sheathes over your chassis’ joints.<br>It changes in an instant. Chatter over the omni. The percussive throb of the medivac lifting off from the other side of the base. Somewhere a firefight. Here is your entrance music, your call to join the fight: a desperate cry for help from a friend distant, as the enemy draws close.<br>The flight of your shells across the sky, and the trembling earth, and the dust that once was.",
     "ranks": [
       {
         "name": "Covering Fire",
-        "description": "As a quick action, you can choose a character in range 10 and in range of one of your heavy ranged weapons. That character is impaired until the start of your next turn. Once before the start of your next turn, if that target starts a move that carries it more than 1 space, it immediately ends this effect, but you can attack it as a reaction with a heavy ranged weapon with +1 difficulty. You can make this attack at any point during its movement (such as waiting until it exits cover). Only one target can be affected at once (if you use this ability again, the effect ends). The effect also immediately ends if your target damages you."
+        "description": "As a quick action, you can choose a character in range 10 and in range and line of sight of one of your heavy ranged weapons. That character is impaired until the start of your next turn. Once before the start of your next turn, if that target starts a move that carries it more than 1 space, it immediately ends this effect, but you can use your overwatch reaction to attack it with a heavy ranged weapon, dealing 1/2 damage, heat, or burn on hit. You can make this attack at any point during its movement (such as waiting until it exits cover). Only one target can be affected at once (if you use this ability again, the effect ends). The effect also immediately ends if your target damages you."
       },
       {
         "name": "Hammerbeat",
@@ -280,7 +280,7 @@
       },
       {
         "name": "I Kill With My Heart",
-        "description": "You gain a gunslinger die (a d6), that starts at 6. When you hit with an auxiliary ranged weapon, you can reduce this value of this die by 1. When the value of this die is 1, you can spend it to make your next auxiliary weapon attack roll deal +2d6 bonus damage on a hit. This attack ignores cover. After spending this die, hit or miss, it resets back to 6. This die persists between scenes but is lost if you rest or full repair."
+        "description": "You gain a gunslinger die (a d6), that starts at 6. When you hit with an auxiliary ranged weapon, you can reduce this value of this die by 1. When the value of this die is 1, you can spend it to make your next auxiliary weapon attack roll deal +2d6 bonus damage on a hit. This attack ignores cover and gains the AP tag. After spending this die, hit or miss, it resets back to 6. This die persists between scenes but is lost if you rest or full repair."
       }
     ]
   },
@@ -290,7 +290,7 @@
     "description": "You know more than most mechanics about the inner workings of a mech. To you, the beast you pilot is more than a machine: it’s a living thing, in need of the tender care of a wise and steady hand. You maintain your own house, keep your own mech in line, both on the battlefield and off. Your mechanics back at base come to you for questions, but other than that they stay away: there’s something spooky about how your beast runs.",
     "ranks": [
       {
-        "name": "Hidden Stash",
+        "name": "Unsanctioned",
         "description": "You can spend 2 repairs during a rest to replenish all (limited) use weapons and deployables by 1 use"
       },
       {
@@ -298,7 +298,7 @@
         "description": "When you stabilize, you automatically clear the impaired, jammed, immobilized, slowed, and lock on conditions on yourself."
       },
       {
-        "name": "Favors From Above",
+        "name": "Friends in High Places",
         "description": "Once per mission you can call in a supply drop during a rest. During that rest, you and any of your allies can replenish all your (limited) weapons and systems by 1 and repair 1 structure on your mech for free. You can make this special repair even if you have 0 repairs remaining."
       }
     ]
@@ -310,7 +310,7 @@
     "ranks": [
       {
         "name": "Snow_Crash",
-        "description": "When you consume Lock On as part of a tech attack, your attack deals +3 heat on hit."
+        "description": "When you consume Lock On as part of a tech attack, on hit, your target chooses whether it takes an extra 2 heat or is pushed 3 spaces in a direction of your choice."
       },
       {
         "name": "Safe_Cracker",
@@ -318,7 +318,7 @@
       },
       {
         "name": "Last Argument of Kings",
-        "description": "Gain the following full tech option:<br><b>Last Argument of Kings (Full Tech)</b>: Make a tech attack vs your target. On a successful attack, your target is implanted with a virus that causes their core reactor to suffer a minor meltdown. They immediately take Burn equal to their current heat."
+        "description": "Gain the following full tech option:<br><b>Last Argument of Kings (Full Tech)</b>:  Make a tech attack vs your target. On a successful attack, your target is implanted with a virus that causes their core reactor to suffer a minor meltdown. They immediately take Burn equal to their current heat. If your target overheats as part of this action, this effect triggers before they clear their heat gauge."
       }
     ]
   },
@@ -352,7 +352,7 @@
       },
       {
         "name": "Dummy Switch",
-        "description": "Your mech has a special reserve power mode. When it would be shut down (voluntarily or otherwise), you may instead go into reserve power mode.<br>While in reserve power mode, your evasion is 5, your mech is Slowed, and you cannot use any systems or weapons or take any actions that cause you to gain heat. Your mech is totally immune to all tech actions and attacks, but cannot take or benefit from tech actions. Weapons or systems with the Smart, Seeking, Drone, or Nexus tags cannot draw line of sight to you. In addition, any system attacks or conditions caused by tech actions currently affecting you end immediately. You can enter this mode by taking the shut down action, remain in this mode indefinitely, and can exit by taking the Boot Up full action."
+        "description": "Your mech has a special reserve power mode. When it would be shut down (voluntarily or otherwise), you may instead go into reserve power mode.<br>While in reserve power mode, your evasion is 5, your mech is Slowed and impaired, and you cannot take any actions that cause you to gain heat(such as using systems or weapons that generate heat).Your mech is totally immune to all tech actions and attacks, but cannot take or benefit from tech actions.You are immune to damage and effects from systems or weapons with the Smart, Seeking, Drone, or Nexus tags.In addition, any effects conditions caused by tech actions currently affecting you end immediately.You can enter this mode by taking the shut down quick action, remain in this mode indefinitely, and can exit by taking the Boot Up full action."
       },
       {
         "name": "Steel Assassin",
@@ -386,7 +386,7 @@
     "ranks": [
       {
         "name": "Field Commander",
-        "description": "Gain 3 leadership dice (this is a d6, set it aside from your other die). Once on your turn, you can give a command as a free action to give the die to another player character other than yourself that can communicate with you, describing a course of action. Your target can use the die as +1 Accuracy on any action that directly follows that command. Alternately, an ally can ignore your command as a free action, returning your die to you.<br>An ally can hold on to one leadership die at a time, and must use it before the end of the current scene, otherwise they lose it. You get all leadership dice back when you rest or full repair. You can’t gain leadership dice from any source if you have any leadership dice remaining in your pool (if you run out, other pilots with this talent can give you commands as normal)."
+        "description": "Gain 3 leadership dice (this is a d6, set it aside from your other die). Once on your turn, you can give a command as a free action to give the die to another player character other than yourself that can communicate with you, describing a course of action. Your target can use the die as +1 Accuracy on any action that directly follows that command. Alternately, an ally can ignore your command as a free action, returning your die to you. <br>An ally can hold on to one leadership die at a time, and must use it before the end of the current scene, otherwise they lose it.You get 1 leadership die back when you rest and all back when you full repair.You can’t gain leadership dice from any source if you have any leadership dice remaining in your pool (if you run out, other pilots with this talent can give you commands as normal)."
       },
       {
         "name": "Open Channels",
@@ -409,7 +409,7 @@
       },
       {
         "name": "Fusion Hemorrhage",
-        "description": "When you’re in the danger zone, your first attack roll that hits on your turn deals +1d6 bonus damage."
+        "description": "When you’re in the danger zone, your first attack roll that hits on your turn deals +1d6 bonus energy damage."
       },
       {
         "name": "Here, Catch!",
@@ -424,11 +424,11 @@
     "ranks": [
       {
         "name": "Jackhammer",
-        "description": "If your mech has a cannon weapon, as a quick action, you can target a size 1 section of any object (cover, deployable, building, or piece of terrain or scenery) in range. You deal 20 AP damage to that section (typically destroying it, most size 1 sections of objects have 10 HP). Any characters adjacent to the object are knocked back 1 space directly away from it."
+        "description": "If your mech has a cannon weapon, as a quick action, you can target a size 1 section of any object (cover, deployable, building, or piece of terrain or scenery) in range. You deal 20 AP damage to that section (typically destroying it, most size 1 sections of objects have 10 HP). Any characters adjacent to the object are knocked back 2 spaces directly away from it and take 2 kinetic damage."
       },
       {
         "name": "Impact",
-        "description": "Once per round when you fire a cannon weapon, you can cause all characters adjacent to you pass a hull save or be knocked back 1 space and knocked prone. Your mech is then pushed back 1 space away from the direction it fired."
+        "description": "Once per round when you fire a cannon weapon, before you make the attack roll, you can cause all characters adjacent to you pass a hull save or be knocked back 2 spaces and knocked prone. Your mech is then pushed back 1 space in any direction"
       },
       {
         "name": "Collateral Damage",
@@ -461,12 +461,12 @@
     "description": "To be all-seeing. To divide each subject of your vision from its unit or cohesion, to pull them apart like individual fibers in a vast sheet. To count them as individuals, to make human and fragile the force you face is to know how to beat them.<br>Break apart the monolith. See the grains that make the stone. Crush them all into yet smaller dust.",
     "ranks": [
       {
-        "name": "Panopticon",
-        "description": "If you didn’t move during your turn, at the end of your turn you may make a Lock On attack as a free action. In addition, when you Lock On to a target successfully, you may learn the target’s current HP, armor, speed, HASE skills, Evasion, and E-defense. This information lasts as long as lock on is maintained and can be freely shared with your party."
+        "name": "Particularize",
+        "description": "When any adjacent ally consumes Lock On to make an attack, in addition to the Accuracy bonus, you or they can roll twice for the attack, choosing either result."
       },
       {
-        "name": "Particularize",
-        "description": "When you or any adjacent ally consumes Lock On to make an attack, in addition to the Accuracy bonus, you or they can roll twice for the attack, choosing either result."
+        "name": "Panopticon",
+        "description": "If you took any tech action during your turn, at the end of your turn you may make a Lock On attack as a free action. In addition, when you Lock On to a target successfully, you may learn the target’s current HP, armor, speed, HASE skills, Evasion, and E-defense. This information lasts as long as lock on is maintained and can be freely shared with your party."
       },
       {
         "name": "Bentham/Foucault Elimination",
@@ -519,15 +519,15 @@
     "ranks": [
       {
         "name": "Servant Fragment",
-        "description": "Your mech gains a custom NHP with the AI tag (it costs 0 SP and comes with any mech you print). It can speak to you and has a personality but is not as developed as more advanced NHPs and not capable of independent through, relying on your instructions to act. It is obedient to you alone. When acting alone it follows the last direction given and defends itself but has limited initiative on its own, it cannot benefit from your talents as normal."
+        "description": "Your mech gains a custom NHP with the AI tag (it costs 0 SP and comes with any mech you print). It can speak to you and has a personality but is not as developed as more advanced NHPs and not capable of independent through, relying on your instructions to act. It is obedient to you alone. When acting alone it follows the last direction given and defends itself but has limited initiative on its own, it cannot benefit from your talents as normal. <span class='ra-quiet'>[an eager student].</span>"
       },
       {
         "name": "Student Fragment",
-        "description": "Your custom NHP becomes more advanced, capable of independent thought. It now has the ability to make complex decisions and judgements and act independently, without instruction. Once per round, while it’s installed in your mech, you can re- roll any mech skill check or save (you must choose the second result), as your AI helps you or corrects your course of action."
+        "description": "Your custom NHP becomes more advanced, capable of independent thought. It now has the ability to make complex decisions and judgements and act independently, without instruction. Once per round, while it’s installed in your mech, you can re-roll any mech skill check or save (though you must keep the re-roll), as your AI helps you or corrects your course of action.<span class='ra-quiet'>[time to wake up, child]</span>"
       },
       {
         "name": "Enlightenment",
-        "description": "Your custom AI no longer counts against the maximum number of AI on your mech, and now benefits from your talents when piloting your mech. Any AI system installed on your mech can no longer become unshackled unless you so choose. You can carry your custom AI with you when you leave your mech, either in your armor or body (via an implant). In addition, unshackled NHPs or electronic lifeforms no longer view you with indifference, but as a significant being. You can communicate with and understand them on a deeper level than most humans."
+        "description": "Your custom AI no longer counts against the maximum number of AI on your mech, and now benefits from your talents when piloting your mech. Any AI system installed on your mech can no longer become unshackled unless you so choose. You can carry your custom AI with you when you leave your mech, either as a miniaturized casket, as a flash-plug integrated into powered armor, or via a hard-port implant. So long as your companion chooses to vouch for you, other unshackled NHPs no longer view you with indifference, but as a significant being.<span class='ra-quiet'>[let’s sit a while, and think on things to come]</span>"
       }
     ]
   },

@@ -59,7 +59,7 @@
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 2,
-    "effect": "When you fire this weapon, draw a line 3 spaces long from your mech, then measure its original range from the end of this line as though the attack was fired from that position (also measure cover and line of sight from this new position for the rest of the attack). This line can easily punch through walls or other barriers. Any targets hit by this line are also hit by the attack. The attack cannot change directions after being fired.",
+    "effect": "Choose 1 CQB, cannon, or rifle weapon. When you fire this weapon, draw a line 3 spaces long from your mech, passing through terrain or other obstacles, then measure its original range from the end of this line as though the attack was fired from that position (measure cover and line of sight from this new position for the rest of the attack). The attack cannot change directions after being fired, but this line could cause an attack to easily punch through walls or other barriers. Any characters or objects hit by this line take 1d3 AP kinetic damage.",
     "data_type": "mod",
     "description": "Throughbolt Rounds are a proprietary IPS-N invention. Throughbolts are Tungsten-jacketed, uranium core rounds with projection-activated plasma sheaths. When fired, the rounds ignite and project a superheated cone of plasma before them, creating a miniature lance effect that ensures multiple-target penetration through soft and hard surfaces."
   },
@@ -119,7 +119,7 @@
   },
   {
     "id": "uncle",
-    "name": "UNCLE-Class NHP",
+    "name": "UNCLE-Class C/C",
     "sp": 3,
     "applied_to": [
       "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
@@ -130,7 +130,7 @@
     "license": "RALEIGH",
     "license_level": 3,
     "effect": "Choose 1 weapon of size heavy or smaller - The weapon and its associate systems gain an NHP that has control over that specific weapon.<br>You can attack with an UNCLE-controlled weapon once a turn as a free action, but with +2 Difficulty. UNCLE can't fire a weapon that has already been fired this turn, and if you fire a weapon with UNCLE you cannot use it until the start of your next turn.<br>UNCLE is a full AI but can't control your mech if it becomes unshackled, just the associate weapon. Instead, if UNCLE becomes unshackled, it chooses the target of this attack (and whether to make an attack or not).",
-    "description": "IPS-N's UNCLE NHP is the result of the DARKSTAR Program, an NHP think tank funded by IPS-N's Administrator Partnership. UNCLE is a pocket-AI, meant to be bound to a weapon system and assist its owner in peak-efficiency operation. UNCLE AI's are currently available only as a beta system and, as such, owners are expected to accept all pushed updates; IPS-N waives culpability for any sub-optimal performance of UNCLE systems not kept current via Omninet updater.<br>UNCLE NHPs are (perhaps unfairly) regarded as lesser compared to their compatriots and their inferiority complexes tend to display themselves as unstable personalities. ",
+    "description": "IPS-N’s UNCLE system is the result of the DARKSTAR-2 Program, a now-defunct IPS-N temporary project that sought to develop a better SMART weapon system. A combination of power draw, unstable conditioning, and frustrating single-task orientation eventually shuttered the project, but pilots lucky enough to field stable systems sweared by UNCLE’s task efficacy and parallel-track reasoning.<br>While IPS-N has moved on from producing new iterations of UNCLE, they still have a stock of QA - approved legacy systems to grant to qualified pilots, though UNCLE comp / cons still tend to display themselves as unstable personalities.",
     "tags": [{
         "id": "unique"
       },
