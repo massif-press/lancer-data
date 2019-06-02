@@ -1785,7 +1785,7 @@
     ],
     "source": "HORUS",
     "license": "HYDRA",
-    "license_level": 2,
+    "license_level": 3,
     "effect": "When you fire this weapon, you can fire it again as a protocol (a free action at the start of your turn) at the start of your next turn. This free attack can’t benefit from bonus damage.<br>When you fire this weapon (either the first time or the secondary fire effect) you can cause its area of effect to originate from any of your deployed drones in your sensor range instead of around your mech, even a different drone each time if you choose",
     "description": "A storm of bladed death, maniple-linked nanites releasing in a burst of filament-like rings so sharp they can cut at the molecular level. The visual effect is often likened to that of a glimmering, blossoming flower.",
     "data_type": "weapon",
@@ -1946,17 +1946,18 @@
     "mount": "Superheavy",
     "type": "Cannon",
     "damage": [{
-      "override": true,
-      "val": "*"
+      "type": "explosive",
+      "val": "3d6"
     }],
     "range": [{
       "override": true,
-      "val": "*"
+      "val": "Range 20 / Range 30, Blast 2"
     }],
+    "tags": [],
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 3,
-    "effect": "The siege cannon can be fired with two profiles: <b>Superheavy Cannon (Siege Mode)</b><br> 4 heat (self), Arcing, Ordnance, Loading<br> Range 30, Blast 2<br> 3d6 explosive damage<br> <br> <b>Superheavy Cannon (Direct Fire)</b><br> 2 heat (self), Knockback 2<br> Range 20<br> 3d6 explosive damage<br> ",
+    "effect": "The siege cannon can be fired with two profiles:<br><b>Superheavy Cannon (Siege Mode)</b><br> 4 heat (self), Arcing, Ordnance, Loading<br> Range 30, Blast 2<br> 3d6 explosive damage<br> <br> <b>Superheavy Cannon (Direct Fire)</b><br> 2 heat (self), Knockback 2<br> Range 20<br> 3d6 explosive damage<br> ",
     "description": "Siege Cannons are the Armory‘s core-squadron level artillery, a shoulder-mounted gun fed by a selfcontained loading system. Commonly mounted on rear-line mechs deployed in an artillery/squad support role, the Siege Cannon is capable of direct fire should the necessities of dynamic combat call for it.",
     "data_type": "weapon",
     "aptitude": {

@@ -1639,7 +1639,7 @@
     ],
     "source": "HORUS",
     "license": "GORGON",
-    "license_level": 2,
+    "license_level": 1,
     "effect": "When you takes this quick action, choose an allied character in sensor range. Until the end of your next turn, each time a hostile character starts a hostile action against that character (such as making an attack or forcing a saving throw), you can move up to 4 spaces as a reaction towards that allied character by the most direct route possible. This move interrupts and resolves before the triggering action, ignores engagement and does not provoke reactions. This reaction can trigger multiple times per round.",
     "description": "A surprisingly benign HORUS script, the Mimic Mesh extends across a projected sensor range, feeding live positional and superpositional data to the pilot. Armed with this multidimensional data, an effective leader can coordinate their allies' movement with an assurance that they will survive. ",
     "data_type": "system",
