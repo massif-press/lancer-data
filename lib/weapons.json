@@ -2330,7 +2330,7 @@
     ],
     "source": "HA",
     "license": "TOKUGAWA",
-    "license_level": 3,
+    "license_level": 2,
     "effect": "",
     "description": "The Armory's TORCH is a backbone core weapon: a heavy, two-handed, dual crescent-bladed plasma torch. The Melee weapon is powered by its wielder's reactor, connected by both powerlines and inert cabling; it can be separated into two torch-axes, and its plasma blades are capable of being tuned into new shapes. A common sight in CQB situations, the torch has of late become a status symbol among pilot officers, many preferring to carry them alongside a smaller auxiliary weapon.",
     "data_type": "weapon",
