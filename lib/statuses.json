@@ -77,7 +77,7 @@
     "name": "Stunned",
     "effects": [
       "You cannot overcharge, take free actions, reactions, move, or take any actions with your mech. A pilot in a stunned mech can still mount or dismount their mech, eject, or take actions normally.",
-      "Attackers receive +1 Accuracy to attack you",
+      "Your maximum evasion is 5",
       "You automatically fail all hull or agility saves "
     ]
   },

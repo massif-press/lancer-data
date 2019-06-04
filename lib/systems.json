@@ -1628,7 +1628,7 @@
     "id": "mimicmesh",
     "name": "Mimic Mesh",
     "type": "System",
-    "sp": 1,
+    "sp": 2,
     "tags": [
       {
         "id": "quickaction"
