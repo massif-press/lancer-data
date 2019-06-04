@@ -290,17 +290,20 @@
         "mount": "Main",
         "type": "CQB",
         "range": [
-          {"type": "range", "val": 5},
-          {"type": "threat", "val": 3}
+          {"type": "Range", "val": 5},
+          {"type": "Threat", "val": 3}
         ],
         "damage": [
           {"type": "kinetic", "val": 4}
         ],
-        "effect": "This weapon can be fired as a free action when you reload."
+        "effect": "This weapon can be fired as a free action when you reload.",
+        "tags": []
       },
       "active_name": "Thunder God",
       "effect": "You empty your M35 out and spin it up. Until the end of the current challenge, if you didn’t fire your M35 on your turn, it gains 2 more rounds in the chamber at the end your turn (you can use a d6 to track this). It starts with 0 rounds in the chamber. When you next fire the weapon, it fires all chambers, for 4 damage per chamber. The M35 has six chambers, for a maximum of 24 damage. If 4 or more chambers are fired at once, this weapon gains the AP tag and your target is Shredded on hit until the end of its next turn.",
-      "tags": [{"id": "protocol"}]
+      "tags": [{
+        "id": "protocol"
+      }]
     },
     "data_type": "frame",
     "aptitude": {
@@ -1123,7 +1126,8 @@
         "name": "Apocalypse Rail",
         "mount": "Ship-class",
         "type": "Spool Weapon",
-        "effect": "The Apocalypse Rail must be charged before it can be fired, using the <b>Charge Rail</b> CORE Power.<br>This weapon has different profiles depending on the charge on the die when you fire it. Each profile replaces the one proceeding it.<br>4 - Cannot be fired<br>3 - Range 20, Blast 2, 2d6 explosive damage. The blast cloud lingers in the area of effect, providing soft cover until the end of your next turn. Objects in the area take 20 AP explosive damage, no attack required.<br>2 - Range 25, Blast 2, 3d6 explosive damage. Characters hit by this attack are shredded and impaired until the end of their next turn. The blast cloud is a burning storm, providing soft cover until the end of your next turn and dealing 4 burn to any character that starts their turn there or moves there for the first time on their turn for the same duration. Objects and terrain in the area take 40 AP explosive damage, no attack required.<br>1 - Range 30, Blast 2, 4d6 explosive damage. Characters hit by this attack are also shredded and stunned until the end of their next turn. The impact vaporizes the ground on impact, turning it into difficult terrain for the rest of this scene. The area is soft cover for the rest of this scene, and characters that start their turn there or move there for the first time take 4 burn. Objects and terrain in the area are dealt 100 AP explosive damage, no attack required."
+        "effect": "The Apocalypse Rail must be charged before it can be fired, using the <b>Charge Rail</b> CORE Power.<br>This weapon has different profiles depending on the charge on the die when you fire it. Each profile replaces the one proceeding it.<br>4 - Cannot be fired<br>3 - Range 20, Blast 2, 2d6 explosive damage. The blast cloud lingers in the area of effect, providing soft cover until the end of your next turn. Objects in the area take 20 AP explosive damage, no attack required.<br>2 - Range 25, Blast 2, 3d6 explosive damage. Characters hit by this attack are shredded and impaired until the end of their next turn. The blast cloud is a burning storm, providing soft cover until the end of your next turn and dealing 4 burn to any character that starts their turn there or moves there for the first time on their turn for the same duration. Objects and terrain in the area take 40 AP explosive damage, no attack required.<br>1 - Range 30, Blast 2, 4d6 explosive damage. Characters hit by this attack are also shredded and stunned until the end of their next turn. The impact vaporizes the ground on impact, turning it into difficult terrain for the rest of this scene. The area is soft cover for the rest of this scene, and characters that start their turn there or move there for the first time take 4 burn. Objects and terrain in the area are dealt 100 AP explosive damage, no attack required.",
+        "tags": []
       },
       "active_name": "Charge Rail",
       "effect": "The Barbarossa starts charging the Apocalypse Rail, an incredibly powerful ship-to-ship long-spool weapon system that requires target calibration. The rail is too large and unique to work with talents, take ammunition, or be modified in any way.<br>To start charging the rail is a quick action. Set out a d6, starting at 4. At the start of each of your turns while this weapon system is charging, tick the d6 down by 1, to a minimum of 1, like a countdown. If your mech moves, even involuntarily, is stunned, jammed, or is shut down, reset the charge to 4 (this doesn't stop the charge, however - it continues to tick down at the start of your turns)<br>You can fire the rail only on your turn. If you fire the rail, it’s the only thing you can do on your turn (no other actions, no regular move, etc, not even overcharge!). Make a ranged attack against characters and objects caught in the area. The rail cannot be fired in any other way than taking this action to fire it, and it cannot be fired at any character within range 5.<br>After firing the rail, the charge resets to 4. If you end a scene without actually firing the rail, core power is not expended.",
@@ -1370,12 +1374,13 @@
         "mount": "Main",
         "type": "Cannon",
         "range": [
-          {"type": "line", "val": "4/Charge"}
+          {"type": "Line", "val": "4/Charge"}
         ],
         "damage": [
           {"type": "energy", "val": "1d6/Charge"}
         ],
-        "effect": "When your mech takes the Stabilize action in a combat scene, it stores up a charge in this weapon, up to a maximum of 4. This weapon starts with 1 charge. When it fires, it consumes all charges, then gains 1 charge. These charges persist between scenes."
+        "effect": "When your mech takes the Stabilize action in a combat scene, it stores up a charge in this weapon, up to a maximum of 4. This weapon starts with 1 charge. When it fires, it consumes all charges, then gains 1 charge. These charges persist between scenes.",
+        "tags": []
       },
       "active_name": "COREBURN Protocols",
       "effect": "Your solid core immediately gains 4 charges. In addition, for the rest of this scene, taking the stabilize action grants 2 charges instead of 1, and all cover, objects, or deployable hit by this beam are dealt 10 AP damage/charge instead of normal damage.",

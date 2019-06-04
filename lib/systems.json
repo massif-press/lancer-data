@@ -350,7 +350,7 @@
   },
   {
     "id": "sekhmet",
-    "name": "SEKHMET",
+    "name": "SEKHMET-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -2130,6 +2130,9 @@
     "tags": [
       {
         "id": "quickaction"
+      },
+      {
+        "id": "unique"
       }
     ],
     "source": "HA",
@@ -2719,7 +2722,7 @@
   },
   {
     "id": "asura",
-    "name": "ASURA",
+    "name": "ASURA-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -3279,7 +3282,7 @@
   },
   {
     "id": "didymos",
-    "name": "Didymos-class NHP",
+    "name": "DIDYMOS-Class NHP",
     "type": "System",
     "sp": 3,
     "tags": [

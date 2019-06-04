@@ -19,7 +19,7 @@
     "id": "imparm",
     "name": "Improved Armament",
     "source": "GMS",
-    "effect": "If your mech has less than 3 mounts (excluding integrated mounts), , gain an additional Flex Mount",
+    "effect": "If your mech has less than 3 mounts (excluding integrated mounts), gain an additional Flex Mount",
     "description": "Power cables are re-routed, reactor power is rationed and siphoned. The deadly is made deadlier."
   },
   {

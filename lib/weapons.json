@@ -1764,7 +1764,7 @@
   }, {
     "id": "annihilationnexus",
     "name": "Annihilation Nexus",
-    "mount": "Supereavy",
+    "mount": "Superheavy",
     "type": "Nexus",
     "damage": [{
       "type": "energy",
