@@ -1149,7 +1149,7 @@
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 3,
-    "effect": "Against characters that are prone, immobilized, shut down, or stunned, the drill gets further penetration. When attacking a character suffering from any of these conditions, each time the overcharged tag on this drill activates, it does an extra +1d6 bonus damage. This can activate indefinitely (if the new bonus die triggers overcharged by also rolling a ‘1’)",
+    "effect": "Against characters that are prone, immobilized, shut down, or stunned, the drill gets further penetration. When attacking a character suffering from any of these conditions, each time the overkill tag on this drill activates, it does an extra +1d6 bonus damage. This can activate indefinitely (if the new bonus die triggers overkill by also rolling a ‘1’)",
     "description": "The IPS-N combat drill is a brutal close combat weapon, powered by a massive catalyst pack mounted externally on a mech core. The drill is tipped with micro-plasmatic projectors designed to pre-treat the target to ensure bit purchase and facilitate drill penetration.",
     "data_type": "weapon",
     "aptitude": {
@@ -1445,8 +1445,8 @@
         "val": "2d6 Explosive x2"
       },
       {
-        "type": "explosive",
-        "val": "4d6"
+        "override": true,
+        "val": "3d6 Explosive x2"
       }
     ],
     "range": [{

@@ -1,11 +1,13 @@
 [
   {
+    "type": "Status",
     "name": "Exposed",
     "effects": [
       "An exposed character takes double damage."
     ]
   },
   {
+    "type": "Status",
     "name": "Engaged",
     "effects": [
       "While Engaged, all your ranged attacks are made with +1 Difficulty",
@@ -13,30 +15,35 @@
     ]
   },
   {
+    "type": "Status",
     "name": "Hidden",
     "effects": [
       "You cannot be targeted by hostile attacks or actions, and enemies only know your approximate location. Performing any attack, forcing a saving throw, taking reactions, or ending your turn out of cover will lose hidden. Characters can find you by taking the search action and winning a contested check."
     ]
   },
   {
+    "type": "Condition",
     "name": "Immobilized",
     "effects": [
       "Your maximum speed becomes 0. You cannot move or boost. "
     ]
   },
   {
+    "type": "Condition",
     "name": "Impaired",
     "effects": [
       "+1 Difficulty on all attacks, saves, and skill checks "
     ]
   },
   {
+    "type": "Status",
     "name": "Invisible",
     "effects": [
       "All attacks against an invisible target have a 50% chance to miss outright (check before the attack roll)."
     ]
   },
   {
+    "type": "Condition",
     "name": "Jammed",
     "effects": [
       "The only attacks a Jammed mech can make are improvised attacks, grapples, or rams",
@@ -46,12 +53,14 @@
     ]
   },
   {
+    "type": "Condition",
     "name": "Lock On",
     "effects": [
       "An attacker can consume the Lock On status on a target to gain +1 Accuracy on its next attack against that target. Lock On may also activate other talents or abilities."
     ]
   },
   {
+    "type": "Status",
     "name": "Shut Down",
     "effects": [
       "Your mech is stunned, but you can still take the Boot Up action",
@@ -62,18 +71,21 @@
     ]
   },
   {
+    "type": "Condition",
     "name": "Shredded",
     "effects": [
       "A shredded mech cannot benefit from armor or resistance "
     ]
   },
   {
+    "type": "Condition",
     "name": "Slowed",
     "effects": [
       "The only movement you can make is your regular move (no movement out of turn or from talents, systems, or weapons)"
     ]
   },
   {
+    "type": "Condition",
     "name": "Stunned",
     "effects": [
       "You cannot overcharge, take free actions, reactions, move, or take any actions with your mech. A pilot in a stunned mech can still mount or dismount their mech, eject, or take actions normally.",
@@ -82,6 +94,7 @@
     ]
   },
   {
+    "type": "Status",
     "name": "Prone",
     "effects": [
       "Attackers receive +1 Accuracy to attack prone targets",

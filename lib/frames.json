@@ -3,6 +3,7 @@
     "source": "GMS",
     "name": "EVEREST",
     "mechtype": ["Balanced"],
+    "y_pos": "25",
     "description": "Most humans don’t think to ask about the history of the water they drink, the earth they walk, or the air they breathe. And yet without water, earth, and air, there would be no place for Humanity to make their home.<br>The Everest -- officially, the General Massive Systems Standard Pattern I -- is a plainly designed chassis.<br>Most humans don’t think to ask about the history of the water they drink, the earth they walk, or the air they breathe. And yet without water, earth, and air, there would be no place for Humanity to make their home.<br>The Everest -- officially, the General Massive Systems Standard Pattern I -- is a plainly designed chassis. Simple lines. Functional grace. Sturdy bulk. Its use-name, “Everest”, comes from one of the names of the tallest mountain on Cradle. Of the surveyed, named mountains in known space, Mount Everest -- or Sagarmatha, or Chomolungma, as it has been called in Old Human tongues -- is neither the most prominent peak, nor the even the tallest in Cradle’s local star system; and yet, pilots the galaxy over learned to call their GMS-SPi’s by that ancient name. Why?<br>The sentimental answer is that the Everest is called the Everest because it is a reminder of what was once the limit of human endurance, of what once was the peak of human achievement. To summit Everest was to stand atop the world, the culmination of months -- maybe years -- of training, investment, and effort, defying death and injury upon your quest to summit.<br>The real answer is probably much less intentional. Somewhere along the line, GMS’s plain naming convention coupled with Union’s anthropocentric emphasis lead a cadet, having graduated to a full pilot, to paint EVEREST across their GMS-SPi’s flank. Maybe it was meant to be their callsign, or maybe it was meant to represent their success following grueling training, but either way the name stuck in the insular pilot culture. Other pilots adopted the name, and over five centuries it has grown to become the official-unofficial designation for all GMS-SPi chassis.<br>Veteran pilots may never return to crew an Everest after they’ve moved on to other chassis, but they’ll always remember when they reached that first summit, when they proved they were worthy of planting their own flag on at the peak of the world.<br>The Everest may not be the most specialized chassis in the galaxy, but it is the backbone of the galaxy, and humanity steps to the stars from its shoulders.",
     "mounts" : [
       "Flex", "Main", "Heavy"
@@ -45,6 +46,7 @@
     "id": "blackbeard",
     "source": "IPS-N",
     "name": "BLACKBEARD",
+    "y_pos": "23",
     "mechtype": ["Striker"],
     "description": "The IPS-N BLACKBEARD is IPS-N’s solution for an aggressive, front-facing, preemptive anti-piracy platform. The BLACKBEARD license range is built for environments where combustible kinetic weaponry is either useless, too dangerous, or would prompt unnecessary collateral damage. Its distinctive, slim frame is a evocative of its speed and reduces its radar profile, making it hard to track and harder still to hit. The BLACKBEARD platform has been split into two model lines, the IPS-N/BB-L, which is the standard production line model, and the IPS-N/BB-Sk, a prototype limited print run of BB models purpose-built to contain IPS-N’s SEKHMET NHP platform.",
     "mounts" : [
@@ -96,6 +98,7 @@
     "id": "drake",
     "source": "IPS-N",
     "name": "DRAKE",
+    "y_pos": "12",
     "mechtype": ["Defender"],
     "description": "The IPS-N DRAKE is the backbone of any proactive trade security/anti-piracy force and represents the manufacturers first foray into military-grade mechs. It is a massive frame, simian in appearance, built around a single-cast bulkhead sloped and reinforced to handle sustained incoming and outgoing fire.<br>A dense heavily armored chassis, the standard IPS-N DRAKE fleet license includes a high-velocity, high- fragment assault cannon for suppressing and overwhelming their targets, and a heavy kinetic/ablative barrier shield for defense. More advanced models feature scaled-up weaponry and armor, including the notorious multi-barrel Leviathan cannon.",
     "mounts" : [
@@ -151,6 +154,7 @@
     "id": "lancaster",
     "source": "IPS-N",
     "name": "LANCASTER",
+    "y_pos": "16",
     "mechtype": ["Support"],
     "description": "The IPS-N LANCASTER is a mil-spec variant of an older IPS-N civilian transport design, streamlined for military/operator use. The LANCASTER features multiple redundant systems and object/environment- interact projectors to facilitate pinpoint accuracy when engaging with delicate systems, damaged or intact. Commonly piloted by sapper and engineer-designate pilots in frontline support/specialist roles, LANCASTER pilots are sometimes ridiculed for piloting the old-fashioned frame. Veteran pilots know that the LANCASTER is one of the most reliable and well-made mechs out there, and is indispensable on any serious long-range mission.",
     "mounts" : [
@@ -207,6 +211,7 @@
     "source": "IPS-N",
     "name": "NELSON",
     "mechtype": ["Striker"],
+    "y_pos": "35",
     "description": "The IPS-N NELSON brings the close-quarters doctrine espoused by ISP-N to its most pure form. The NELSON is built to brawl in environments too volatile for firearms or when ordnance has been exhausted. With its functional size, the NELSON can attack fast while remaining a difficult target to track. Layers of fractal-fold BULWARK plating allows for ceramic-analogous carbon flaking, effectively nulling the impact of incoming solid-state fire by dispersing kinetic energy across a rounded hull. This null-k plating protects the pilot from impact trauma, allowing for sustained combat efficacy in high-trade scenarios.<br>The NELSON is an iconic IPS-N chassis, known across the galaxy as the frame of choice for the Albatross, the Cosmopolitan interstellar anti-piracy agency. Their distinctive white, gold, and red livery and mastery of the war pike &mdash; as well as seeming agelessness due to time dilation &mdash; has won both the Albatross and the NELSON a venerated place in Diasporan lore &mdash; and secured the Albatross an endorsement contract with IPS-N in perpetuity.",
     "mounts" : [
       "Flex", "Main/Aux"
@@ -253,6 +258,7 @@
     "id": "raleigh",
     "source": "IPS-N",
     "name": "RALEIGH",
+    "y_pos": "12.5",
     "mechtype": ["Striker"],
     "description": "The IPS-N RALEIGH, more so than any other mech in IPS-N's core line, is meant to meet any enemy, any where, in any combat scenario. The RALEIGH is an all-rounder build that trends towards the midrange. It is commonly outfitted with an auxiliary hand cannon for ranged capability, a massive hammer to deal with anything that gets close, and the iconic, chest-mounted MJOLNIR cannon.",
     "mounts" : [
@@ -315,6 +321,7 @@
     "source": "IPS-N",
     "name": "TORTUGA",
     "mechtype": ["Defender", "Striker"],
+    "y_pos": "20",
     "description": "The TORTUGA is IPS-N's short-to-medium range core-line mech. Conceived, tested, and perfected in the void of deep trade space, the TORTUGA is made to breach and clear the spinal columns of capital ships, carriers, and hostile stations. The TORTUGA is built to occupy space, filling hallways with its angular bulk. It defends just as effectively as it attacks, often used in a battering-ram role by boarding parties and ship/ stationboard marines. Conversely, the Tortuga is often employed in a defensive posture by marines seeking to repel boarding parties, often using its ablative brachial structures to shield troopers from incoming fire.",
     "mounts" : [
       "Main", "Heavy"
@@ -361,6 +368,7 @@
     "source": "IPS-N",
     "name": "VLAD",
     "mechtype": ["Controller", "Striker"],
+    "y_pos": "12.5",
     "description": "Unlike other frames, the VLAD earned its current moniker from battlefield parlance. The VLAD is the second iteration of IPS-N’s legacy YI-SUN-SHIN pattern, first made famous by Albatross pilots during their engagements with the Celestine on and above Orrery. With the wealth and quality of data generated by Albatross and Union pilots from that engagement, IPS-N produced the SUN 2 Like many other IPS-N chassis, the VLAD was converted from a proprietary line of heavy asteroid mining mechs, and many of its weapons reflect the early efforts of resourceful miners to convert their own tools into weapons to defend against piracy. Heavily armored, the VLAD is meant to take a frontline role, absorbing fire from dangerous targets in order to protect its allies while lining up the perfect shot. ",
     "mounts" : [
       "Flex", "Main", "Heavy"
@@ -406,6 +414,7 @@
     "id": "bwitch",
     "source": "SSC",
     "name": "BLACK WITCH",
+    "y_pos": "12.5",
     "mechtype": ["Controller", "Support"],
     "description": "The BLACK WITCH is the primary designate model in SSC’s newest line of mech cores meant to compete with HORUS’s dominance in the field of invasion/control cores. The BLACK WITCH is open to all pilots with the necessary SSC licensing. SSC outplanners suggest that this platform should experience greater overall use, as current SSC licenses outnumber the hypothetical maximum of HORUS licenses issued. With a slim profile, the BLACK WITCH is commonly used in SSC’s license-marketing materials, especially in its parade livery. It is a popular chassis among Baronic Major Houses, who commonly employ them as royal guards alongside their own internally produced lines.<br>The BLACK WITCH is built to withstand the stresses of combat system invasion and magnetic weaponry: it is a primary platform for engagements where the use of kinetic, ferrous projectiles and ordnance is expected.",
     "mounts" : [
@@ -452,6 +461,7 @@
     "id": "dhead",
     "source": "SSC",
     "name": "DEATH'S HEAD",
+    "y_pos": "40",
     "mechtype": ["Artillery"],
     "description": "The DEATH'S HEAD is Smith-Shimano's answer to all other long range, low splash artillery mechs. By sacrificing hull strength for stability and alacrity, the DEATH'S HEAD manages to avoid incoming fire while holding a near-perfect lock through advanced maneuvers.<br>An aggressive chassis, the Death’s Head is one of the most popular models for UN DoJ/HR and Naval field officers. The DH is a purpose-built combat chassis, with no civilian analog. In its first iteration, the Death’s Head is due for a pattern update — an update made a priority by Union in light of the ongoing escalation in Boundary Garden.",
     "mounts" : [
@@ -498,6 +508,7 @@
     "source": "SSC",
     "name": "DUSK WING",
     "mechtype": ["Controller", "Support"],
+    "y_pos": "35",
     "description": "The SSC DUSK WING is built from a legacy-inspired modification package to hazardous/hardened EVA suits; in the early days of deep space exploration, there was a need for mechanized exoskeletons that provided not only amplified capacity, but plated kinetic defense. The DUSK WING is the spiritual heir of those early deep space suits. Fast and small, the DUSK WING mounts a complement of all-theater maneuverability jets that allow for perfect (or near-perfect) flight.<br>After Dhiyed, SSC’s Exotic Materials group worked to isolate and translate strains of paracode, teleologics, and kinematics for use in chassis combat; the Dusk Wing platform performed best in trials with Dhiyedderived technologies, and has gone on to be used primarily in Constellar and VIP security details",
     "mounts" : [
       "Aux/Aux", "Flex"
@@ -549,6 +560,7 @@
     "source": "SSC",
     "name": "METALMARK",
     "mechtype": ["Striker"],
+    "y_pos": "16",
     "description": "The METALMARK is SCC's backbone-class line mech, fully equipped with SSC's proprietary design and engineering hallmarks to ensure that it is just as survivable as it is agile. The METALMARK base model reflects SSC's deep-space and long patrol heritage in its aquiline design, sturdy construction, and multiple redundant systems. All METALMARK models come standard with a SMITH CUSTOM LEATHER gimbaled pilot seat to ensure comfort on long distance ranging expeditions.",
     "mounts" : [
       "Aux/Aux", "Main", "Heavy"
@@ -595,6 +607,7 @@
     "id": "monarch",
     "source": "SSC",
     "name": "MONARCH",
+    "y_pos": "14",
     "mechtype": ["Artillery"],
     "description": "The SSC MONARCH platform is Smith-Shimano’s iconic solution for a fast, self-propelled missile/barrage battery. Able to mount ground-to-ground, ground-to-air, ground-to-space, and all-theater missile tubes and their guidance systems, the MONARCH can be adjusted to deliver any payload at any distance to any target.<br>The MONARCH’s large size often leads pilots to underestimate its agility. Its exclusive manufacturing requirements are its only impediment to total battlefield dominance. The MONARCH is commonly deployed in a fire-support role, though field tests of a less resource-taxing MICROMONARCH mid/close range system is underway.",
     "mounts" : [
@@ -641,6 +654,7 @@
     "source": "SSC",
     "name": "MOURNING CLOAK",
     "mechtype": ["Striker"],
+    "y_pos": "62",
     "description": "The SSC MOURNING CLOAK core is a new line of closer-than-CQB chassis that provide a tactical option for situations where firearms and ordnance weapons are impractical or unavailable. The MOURNING CLOAK line specializes in precision melee combat and is commonly outfitted with a complement of variable weaponry; shielded microfilament wires designed to attack vulnerable joints and external modules.<br>Built by SSC’s Exotic Materials group following relayed data from early contact scenarios in Boundary Garden, the MOURNING CLOAK features a combination of SSC’s legacy DHIYED paracode and interpreted Aunic firmament manipulation. MCs are the flagship model for SSC’s new ICONIC chassis line, and are a popular order among the Baronies and various high-manna VIP security firms..",
     "mounts" : [
       "Main/Aux", "Flex"
@@ -689,6 +703,7 @@
     "source": "SSC",
     "name": "SWALLOWTAIL",
     "mechtype": ["Support"],
+    "y_pos": "30",
     "description": "The SWALLOWTAIL platform is Smith-Shimano’s primary long range/long term scouting platform, built for rapid and sustained ranging across hostile, volatile environments. Built for long term sustainability, it can operate in unstable environs for months and adjust its operating efficiency on the fly for maximum survivability. Each FRAME has an integrated cloak and a suite of predictive choral intelligences that work with its highly developed sensor systems to rapidly simulate and predict developing tactical situations - sometimes before they even occur.",
     "mounts" : [
       "Aux/Aux", "Flex"
@@ -736,6 +751,7 @@
     "source": "HORUS",
     "name": "BALOR",
     "mechtype": ["Striker"],
+    "y_pos": "27",
     "description": "Like most all HORUS mech cores, the BALOR classification is less an indicator of a recognizable silhouette than a general classification of intended combat role. First contact with the BALOR pattern group occurred during the joint Albatross/UN DoJ-HR mission targeting The Maw, a notorious Baronic Free Company. A BALOR-rigged mech core is only stable on a larger platform, necessitating a robust frame with multiple redundancies to prevent catastrophic system failure. The BALOR’s neurologically synced hellswarm nanites form an undulating shroud that can pour out of its chassis at a moment’s notice, whipping around its form defensively until weaponized. A fully active BALOR is held together more by its magnetized nanite swarms than any physical structure, making it incredibly hardy.",
     "mounts" : [
       "Main", "Heavy"
@@ -781,6 +797,7 @@
     "id": "goblin",
     "source": "HORUS",
     "name": "GOBLIN",
+    "y_pos": "12.5",
     "mechtype": ["Controller", "Support"],
     "description": "The GOBLIN is HORUS’s legacy mech core. Its leak into the Omninet in 4900 marks the widely accepted foundation day of HORUS; since then, there has been a new core, protocol, or system released by the collective every decade. The GOBLIN is a small mech, little bigger than a hardsuit, but it packs an interesting recursive processing weave that allows for it to engage in electronic warfare well beyond theoretical parameters. GMS technicians are still, more than a hundred years after the GOBLIN’s introduction, attempting to reverse engineer the processing weave: it appears to employ technology consistent with hieroglyphic inscriptions noted on LRA.7726235-B",
     "mounts" : [
@@ -832,6 +849,7 @@
     "source": "HORUS",
     "name": "GORGON",
     "mechtype": ["Defender"],
+    "y_pos": "5",
     "description": "The GORGON is unique among HORUS mech core parameters in that the classification describes a defensive rigging of weapons and systems meant to ensure personal and allied survival. The typical GORGON mounts multiple weapon systems meant to intercept and neutralize incoming fire and is widely feared for its ability to extrude a horrifying ‘basilisk’, a projected pattern of impossible visual data so toxic to logical thought that it causes massive failure in electronic systems and can cause temporary blindness or hemorrhage in humans.",
     "mounts" : [
       "Flex", "Main", "Main"
@@ -882,6 +900,7 @@
     "source": "HORUS",
     "name": "HYDRA",
     "mechtype": ["Striker", "Controller"],
+    "y_pos": "28",
     "description": "The HYDRA is another large-format protocol classification; like other, newer HORUS mechs, the HYDRA isn’t a standardized pattern, but a title given to a mech core that meets the HYDRA specifications as designated by HORUS’s collective. This method of classification makes HORUS mechs, especially the HYDRA, particularly dangerous in the field: as there is no recognizable model-specific silhouette, adversaries won’t know what they’re facing until the first shots are fired. The HYDRA is capable of tactically dismembering itself into multiple independently controlled drones, an unnerving phenomenon utilized to deadly effect.",
     "mounts" : [
       "Main", "Heavy"
@@ -931,6 +950,7 @@
     "source": "HORUS",
     "name": "MANTICORE",
     "mechtype": ["Striker"],
+    "y_pos": "48",
     "description": "The MANTICORE pattern-group is an experiment in HORUS//COREBREAK combat doctrine. Using focused, projected electromagnetics, MANTICORE pattern-group mechs attempt to neutralize enemy cores without conventional ammunition. The MANTICORE pattern-group is a relatively new p-g on the Omninet, and its combat efficacy has prompted the rest of the Big Five to scramble for a response.<br>If anything gives away the MANTICORE pattern group, the tall spines of the lightning generator cast a clear silhouette. The spines act as heat-dispersal systems for this crude weapon, giving a path for its incredible thermal tax to bleed from the chassis after it projects a close-range arc whip. A fully charged MANTICORE is an impressive sight, wreathed in brightly glowing nets of glowing plasma that lash out at nearby targets. Even then, the system is not perfect; spines often slag under the tremendous heat &mdash; a recognizable signature of the pattern group (beyond the spines) is a chassis covered in cooling, melted metal.",
     "mounts" : [
       "Flex", "Heavy"
@@ -982,6 +1002,7 @@
     "source": "HORUS",
     "name": "MINOTAUR",
     "mechtype": ["Controller"],
+    "y_pos": "30",
     "description": "The MINOTAUR pattern-group marks HORUS‘s first expedition into pattern-grouping; prior to the MINOTAUR, HORUS released complete sets and cores with easily identifiable silhouettes. As HORUS evolved as a decentralized entity, so too did their designs. The birth of the pattern-group followed, and the first p-g released was the MINOTAUR, a p-g designed to bring all of HORUS‘s most potent invasion systems and weaponry to the field.<br>The MINOTAUR is an interdictor, a formidable FRAME meant to lock down and punish fast moving or command-level targets by overloading their systems. Union disassembly of Minotaur p-g mechs have found that they extrude an enormous amount of interior systems that take up up to five times the physical space that should be actually possible given the size of their frame.",
     "mounts" : [
       "Main/Aux"
@@ -1033,6 +1054,7 @@
     "source": "HORUS",
     "name": "PEGASUS",
     "mechtype": ["Artillery"],
+    "y_pos": "52",
     "description": "PEGASUS marks HORUS‘s concern with a need for efficient kinetic combat. By marrying the best targeting systems, subroutines, and weapon hardware, HORUS has developed a pattern-group that boasts a tremendously low IFF/TTK ratio in all theaters kinetic weaponry is viable. The PEGASUS p-g is known for mounting the Ushabti, a device classified as an unknown threat level paracausal weapon by Union law due to its complete ignorance of even the most theoretical understandings of physics.",
     "mounts" : [
       "Flex", "Flex", "Heavy"
@@ -1083,6 +1105,7 @@
     "source": "HA",
     "name": "BARBAROSSA",
     "mechtype": ["Artillery"],
+    "y_pos": "32",
     "description": "The BARBAROSSA chassis is a massive frame, built to carry the heaviest of weapons and equipment. Standing nearly forty feet tall at its highest point, the BARBAROSSA is a slow, unsubtle beast of a mech, inspiring terror in enemies and comfort in allies. The weapons it can mount are capable of going toe-to-toe with corvette and cutter class ships; indeed, due to its size and slow maneuverability, the BARBAROSSA is commonly employed in micro and zero gravity engagements where mass is less of a factor. The BARBAROSSA is rated for all theaters, and excels in ranged combat situations.",
     "mounts" : [
       "Main", "Main", "Heavy"
@@ -1143,6 +1166,7 @@
     "source": "HA",
     "name": "GENGHIS",
     "mechtype": ["Striker"],
+    "y_pos": "17",
     "description": "The GENGHIS is a unique Harrison Armory chassis, developed to fill a niche specialist role during the Hercynia crisis. Due to the unique nature of the Egregorians, a total-biome-kill system was necessary to ensure localized threat neutralization while keeping Hercynia habitable for future colonists. Thus, the GENGHIS chassis was developed. Fielding a suite of TBK systems and weapons, GENGHIS squadrons were dispatched by Union MEF-105 to identify and strike the Egregorian hives. The campaign was a success, and Hercynia is currently undergoing rehabilitation and repopulation in approved settlement areas.",
     "mounts" : [
       "Flex", "Main", "Heavy"
@@ -1188,6 +1212,7 @@
     "source": "HA",
     "name": "ISKANDER",
     "mechtype": ["Controller"],
+    "y_pos": "22",
     "description": "The ISKANDER is a specialist‘s chassis, designed to provide area-denial and breach capability to squads in which it is a member of. A bulky chassis, the ISKANDER is the forefront of the Armory’s military applications of point gravity manipulation. The Armory’s official stance on the technology is that the effects are too brief and unstable for civilian use, but they do conveniently make very effective weapons.",
     "mounts" : [
       "Flex", "Heavy"
@@ -1238,6 +1263,7 @@
     "source": "HA",
     "name": "NAPOLEON",
     "mechtype": ["Defender", "Controller"],
+    "y_pos": "21",
     "description": "Perhaps in a tongue-in-cheek nod to its namesake, the NAPOLEON is a squat silhouette when fielded next to other Harrison Armory chassis. But packed into its compact frame are marvels of Armory engineering, technology that demands the NAPOLEON be piloted only by the best and the brightest. Stasis technology is the very cutting edge of gravitic manipulation technology, only now hitting the commercial market for those with the requisite licenses. The NAPOLEON incorporates a mix of gravitic manipulation technology, proven anti-kinetic/energy shielding, and superpositional force multiplication to dominate enemies &mdash; earning its namesake through battlefield success as well as stature.",
     "mounts" : [
       "Main/Aux"
@@ -1284,6 +1310,7 @@
     "id": "saladin",
     "source": "HA",
     "name": "SALADIN",
+    "y_pos": "17",
     "mechtype": ["Defender"],
     "description": "The Saladin chassis provides a platform for pilots to mount squad-support tier shielding. Developed in response to anti-slaver engagements in the Tian Shan ring, Harrison Armory’s SALADIN chassis proved an invaluable member of Present/Persistent Danger Escort/Evac teams sent in to evacuate emancipator teams & their charges. Records from these engagements indicate that the SALADIN’s massive bulk alone was a comfort and morale boost to emancipator squads, who often referred to the chassis pattern as “Big Sal”; SALADIN pilots from that era report null balances on bar tabs when present in emancipated systems.",
     "mounts" : [
@@ -1334,6 +1361,7 @@
     "source": "HA",
     "name": "SHERMAN",
     "mechtype": ["Striker", "Artillery"],
+    "y_pos": "36",
     "description": "The SHERMAN (Mk II) is Harrison Armory‘s line-model chassis: any station, nation, world, stellar, or interstellar state that holds a fleet-tier contract with Harrison Armory fields a backbone force of localized SHERMAN cores. The SHERMAN platform is tuned to provide a rugged, versatile power plant for HA‘s main battle line energy weaponry. Next to GMS‘s EVEREST, the SHERMAN is the second most-common mech chassis in the core systems, so much so that GMS has recently made a push to include more ablative and wave-scatter defenses into its stock +1 models to deal with hostile actors fielding the SHERMAN. At present, the Mk I is in wide use, with first-contract Mk II’s only now rolling off the lines at Ras Shamra and other HA special project worlds.",
     "mounts" : [
       "Flex", "Main", "Heavy"
@@ -1396,6 +1424,7 @@
     "source": "HA",
     "name": "TOKUGAWA",
     "mechtype": ["Striker"],
+    "y_pos": "5",
     "description": "HA’s TOKUGAWA chassis is a relative newcomer on the market, popular in core systems for security and CQB/breach applications. The TOKUGAWA is a large, imposing mech, a sturdy platform from which the recommended kit can draw the necessary power it needs in order to perform within optimum parameters. Unlike other frames, the Tokugawa’s unique reactor has been designed with the ability to easily remove standard safety limitations. This in effect allows an experienced pilot to ‘overclock’ the reactor to get more power out of it, rewarding both very experienced and very foolhardy pilots with an incredible power draw for energy weaponry.",
     "mounts" : [
       "Flex", "Main", "Main"
@@ -1441,6 +1470,7 @@
     "id": "zheng",
     "source": "IPS-N",
     "name": "ZHENG",
+    "y_pos": "30",
     "mechtype": ["Striker", "Controller"],
     "description": "The ZHENG is a relatively new frame in the IPS-N line and is unusual in that its creation can be attributed almost completely to a single mech operator - Xiong Xiaoli, a Mirrorsmoke mercenary operating out of the Long Rim, protecting Armory shipments of supplies to the early Dawnline shore colonies. A relative unknown before the incident, her convoy was attacked by the White Tiger pirate conglomerate and her entire company was KIA.<br>Xiaoli’s Raleigh was almost totally ripped apart in the ensuing chaos, but she managed to activate a distress beacon and attach it to her mech. Over the next forty five days she survived by scavenging the collapsing and melting wreck of the huge transport ship M.S. Say No More, managing to outsmart the fifty or so pirates searching for her by steadily modifying her mech for unarmed, CQB combat. In an tight, close environment where the ship’s decaying reactor core made combustible ranged weapons incredibly dangerous, she showed incredible efficacy and ingenuity. Xiaoli did not survive, persisting hours before the relief fleet arrived, but bought enough time that MSMC was able to position itself to both resupply the colony, fulfilling its contract, and deal a mortal blow to the Tigers, wiping the pirates out completely in the following skirmishes. Her mech was purchased by IPS-N frame development and the Zheng was introduced shortly afterwards based on her improvements.<br>Xiaoli is widely regarded as a Bodhisattva by many Long Rim colonists and nearly all MSMC mercs are familiar with the several drinking games named after her.",
     "mounts": [
@@ -1483,6 +1513,7 @@
     "id": "sunzi",
     "source": "HA",
     "name": "SUNZI",
+    "y_pos": "25",
     "mechtype": ["Controller", "Support"],
     "description": "The SUNZI is at the peak of Harrison Armory development in weapons-applicable blink technology, a FRAME that was introduced as late as 5007U to select pilots only. Like the NAPOLEON, it is a compact, highly experimental frame with very limited battlefield presence, using powerful Blackshield technology to tear and warp the physical dimensions of space momentarily. Distortions of this kind are short lived, usually (but not always) visible to the naked eye, and highly unstable. Rumors abound that the SUNZI contains stolen or corrupted Volador technology from the ancient city-ship Mothers Gather and Are Welcome, parts of the extremely advanced machinery that allows their ships to remain in blinkspace seemingly indefinitely.<br> Owners of SUNZI licenses waive their privacy rights as part of the extensive (and physically exhausting) licensing process and are often in direct contact with personal handlers from Ras Shamra’s testing forges wishing to collect data.",
     "mounts": [
@@ -1533,6 +1564,7 @@
     "id": "atlas",
     "source": "SSC",
     "name": "ATLAS",
+    "y_pos": "25",
     "mechtype": ["Striker"],
     "description": "Originally commissioned and tested as a dueling mech for the House of Smoke, the ATLAS blurs the line between mech and suit of armor. The progeny of a long refinement period and utilizing the bleeding edge of reactor miniaturization tech, the mech was finally condensed down to something resembling a large, sleek hard suit, almost skin-tight at points. Though sacrificing much of the durability of a larger frame, the mech’s essential system are so closely melded with its user’s movements that it offers unparalleled agility.<br> Though originally tightly licensed for select clientele, the Atlas was introduced to the Sparri almost by mistake when a mercenary in the Long Rim won the frame in a game of kapkat. Since then, demand from the Sparri has been so strong that SSC was forced to reconsider its licensing scheme. Considered perfect warrior frames for hunting the native megafauna of Sparr, they are now widely perceived as the iconic frames of Sparri headhunters and daredevils across the Orion Arm, to the point that the Sparri invented a new martial art using the Atlas.<br> Considered heirlooms of great warriors, they are passed down through bloodlines and often repaired and modified manually. The suit’s powerful systems remember the unique movements of all that have worn it before, enabling Sparri hunters to literally call upon their ancestors in battle.",
     "mounts": [
@@ -1586,6 +1618,7 @@
     "id": "kobold",
     "source": "HORUS",
     "name": "KOBOLD",
+    "y_pos": "27",
     "mechtype": ["Controller", "Defender"],
     "description": "The Kobold p-g made its first appearance among Ungrateful partisans serving the House of Dust, the pattern a clever suite of hardware and software able to be applied to many kinds of mining and heavy industry mechs. The steaming, shuddering final result is an ugly affair, but contains powerful liturgicode meant to unlock its reactor. Custom built to combat Barony suppression forces, the desperate workers who built the first slapdash kobolds found their reactors and factory tools repurposed to deadly effect: able to melt and extrude raw material into a molten polymer that could be used for both barriers and bombs.",
     "mounts": [
@@ -1635,6 +1668,7 @@
     "source": "HORUS",
     "name": "LICH",
     "mechtype": ["Controller"],
+    "y_pos": "10",
     "description": "<p>CALIGULA: So what is it? <br />DOGFRIEND_68: i wish i could fuking tell you, man, it just showed up on our omni. the whole thing in one ping. there's like a fucking thou ex or two thou exabytes in here, crashed buffer on refresh <br />CALIGULA: Gotta be a joke from Ash, she's trying to wavedown our rig again. Don't print it. <br />DOGFRIEND_68: fuck no <br />DOGFRIEND_68: do u think i have a death wish <br />CALIGULA: Yes. <br />CALIGULA: Well who's it from? Who's the author? <br />CALIGULA: Hello? <br />CALIGULA: &hellip; <br />DOGFRIEND_68: what the fuck <br />CALIGULA: Who? <br />DOGFRIEND_68: us <br />CALIGULA: us what? <br />DOGFRIEND_68: it's from us. we made it. <br />CALIGULA: Pretty sure I'd remember if I wrote a whole frame by myself. <br />DOGFRIEND_68: yeah except thats our code man <br />DOGFRIEND_68: also sysop is telling me we didn't actaully get anything inbound which means its just been here on the node somehow but thats impossible <br />DOGFRIEND_68: it's dated 15005U. <br />DOGFRIEND_68: &hellip; <br />DOGFRIEND_68: theres audio</p><p>- Transcript M.A2 (recovered) [UIB-TERMAGANT-TANGENT ROYAL]</p>",
     "mounts": [
       "Main/Aux"
