@@ -1265,7 +1265,7 @@
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 2,
-    "effect": "Once per round, when your mech takes damage, you can immediately teleport up to 1d6 spaces as a reaction in a direction of your choosing (though if this teleport would put you inside an obstacle or other mech you take 5 AP kinetic damage and the teleport fails).",
+    "effect": "Once per round, when your mech takes damage, you can immediately teleport up to 1d6 spaces as a reaction in a direction of your choosing (though if this teleport would put you inside an obstacle, object, or other character, the teleport fails)",
     "description": "SSC's Exotic Materials project worked to develop the Mourning Cloak's unique gravatic power plant. For the second generation of the SSC-MC, the Exotic Materials project devised a system that allows pilots to aperture open, for a moment, the gravitic containment system, exposing a slice of naked singularity to realspace. <br> Naked singularity is difficult for organics and synthetics to perceive, being similar to the core of a black hole.The sudden exposure directed at foes (or other targets) essentially \"blanks\" the Mourning Cloak from real time. The Cloak's pilot, meanwhile, experiences roughly 10 seconds of normal subjective time, allowing them a brief window in which they can act independently of local realtime.<br>SSC does not recommend abusing this system, as the Exotic Materials group is still testing long-term exposure to local sidereal time.",
     "data_type": "system",
     "aptitude": {
