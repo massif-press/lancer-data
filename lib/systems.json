@@ -1532,7 +1532,7 @@
     "id": "metahook",
     "name": "HORUS Meta-Hook",
     "type": "Tech",
-    "sp": 1,
+    "sp": 2,
     "tags": [
       {
         "id": "unique"
