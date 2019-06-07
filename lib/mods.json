@@ -58,7 +58,7 @@
     "applied_string": "CQB, Cannon, or Rifle",
     "source": "IPS-N",
     "license": "TORTUGA",
-    "license_level": 2,
+    "license_level": 3,
     "effect": "Choose 1 CQB, cannon, or rifle weapon. When you fire this weapon, draw a line 3 spaces long from your mech, passing through terrain or other obstacles, then measure its original range from the end of this line as though the attack was fired from that position (measure cover and line of sight from this new position for the rest of the attack). The attack cannot change directions after being fired, but this line could cause an attack to easily punch through walls or other barriers. Any characters or objects hit by this line take 1d3 AP kinetic damage.",
     "data_type": "mod",
     "description": "Throughbolt Rounds are a proprietary IPS-N invention. Throughbolts are Tungsten-jacketed, uranium core rounds with projection-activated plasma sheaths. When fired, the rounds ignite and project a superheated cone of plasma before them, creating a miniature lance effect that ensures multiple-target penetration through soft and hard surfaces."

@@ -1054,7 +1054,7 @@
     }],
     "source": "IPS-N",
     "license": "TORTUGA",
-    "license_level": 3,
+    "license_level": 2,
     "effect": "On a Critical Hit with this weapon, your target must pass a hull save or become stunned until the end of its next turn.",
     "description": "Colloquially known as a ‘pilebunker', built originally from blast mining equipment, the pneumatic hammer has been refined into a widely feared weapon - a solid-core cylinder cocked and locked in place by a miniaturized gravity well. When fired, the cylinder is propelled forward by a charge of superheated plasma through a cannon-like shaft, creating enormous kinetic force. Without proper reinforcement, the power created by this weapon will literally tear its wielder's arm off.",
     "data_type": "weapon",
