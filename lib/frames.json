@@ -269,9 +269,9 @@
       "armor": 1,
       "hp": 10,
       "evasion": 8,
-      "edef": 8,
+      "edef": 7,
       "heatcap": 5,
-      "repcap": 6,
+      "repcap": 5,
       "sensor_range": 10,
       "tech_attack": -1,
       "save": 10,
@@ -441,7 +441,7 @@
       },
       {
         "name": "Mag Parry",
-        "description": "Once per you can attempt to parry any attack that deals kinetic damage against you or an adjacent ally as a reaction. Roll a d6. On a 5+, the attack is negated and automatically misses."
+        "description": "Once per round you can attempt to parry any attack that deals kinetic damage against you or an adjacent ally as a reaction. Roll a d6. On a 5+, the attack is negated and automatically misses."
       }
     ],
     "core_system": {
@@ -725,11 +725,11 @@
     "traits": [
       {
         "name": "Integrated Cloak",
-        "description": " If the Swallowtail doesn’t move during its turn, it becomes invisible at the end of its turn. This invisibility immediately breaks if it moves, takes a reaction, or starts its next turn."
+        "description": " f the Swallowtail doesn’t move during its turn, it becomes invisible at the end of its turn. This invisibility immediately breaks if it moves, takes a reaction, or starts its next turn."
       },
       {
         "name": "Prophetic Scanners",
-        "description": "Once per, when the Swallowtail inflicts Lock On, it can cause its target to also become Shredded until the start of the Swallowtail’s next turn"
+        "description": "Once per round, when the Swallowtail inflicts Lock On, it can cause its target to also become Shredded until the start of the Swallowtail’s next turn"
       }
     ],
     "core_system": {
@@ -862,7 +862,7 @@
       "edef": 12,
       "heatcap": 5,
       "repcap": 3,
-      "sensor_range": 10,
+      "sensor_range": 8,
       "tech_attack": 1,
       "save": 12,
       "speed": 4,
@@ -1226,7 +1226,7 @@
       "heatcap": 7,
       "repcap": 4,
       "sensor_range": 15,
-      "tech_attack": 0,
+      "tech_attack": 1,
       "save": 10,
       "speed": 3,
       "sp": 6
@@ -1278,7 +1278,7 @@
       "repcap": 3,
       "sensor_range": 5,
       "tech_attack": 0,
-      "save": 10,
+      "save": 11,
       "speed": 4,
       "sp": 7
     },
@@ -1439,7 +1439,7 @@
       "repcap": 4,
       "sensor_range": 10,
       "tech_attack": -1,
-      "save": 10,
+      "save": 11,
       "speed": 4,
       "sp": 6
     },

@@ -92,7 +92,7 @@
     "name": "Full Subjectivity Sync",
     "source": "SSC",
     "effect": "Your mech gains +2 evasion. You control the mech with no separation between your subjectivity and your input; a second set of physical controls are built in to a retractable panel.",
-    "description": "By creating a strong, stable, and secure biased two-way ontologic bridge, SSC has removed the need for a pilot to rely primarily on physical controls to crew their mech. With a full subjectivity sync installed, pilots in their chassis perceive the mech to be their own body, and can control it with no input lag. Dissociation remains a concern, however, and SSC engineers do not recommend extended periods of sync without proper desync and cooldown."
+    "description": "By creating a strong, stable, and secure two-way ontologic bridge, SSC has removed the need for a pilot to rely primarily on physical controls to crew their mech, though FSS systems do necessitate some methods of securing a pilot within their cockpit. With a full subjectivity sync installed, pilots in their chassis perceive the mech to be their own body, controlling it with essentially no input lag. This precise control and awareness is not without risk as a result of its marked benefits: dissociation remains a concern, and while there is no “pain” transference (physical perception is default-tuned as a “tingle” or “pressure”), SSC does recommend trauma counseling for pilots whose chassis have sustained significant damage while they were engaged in FSS."
   },
   {
     "id": "ghostweave",

@@ -25,7 +25,7 @@
     "ranks": [
       {
         "name": "Armament",
-        "description": "You have an custom supply of ammunition that can be used with all your main ranged weapons. The ammo case is a limited (6) system that doesn’t take any SP but can be destroyed by system damage, etc. Once a turn, you can load special ammo when you fire a main weapon, expending a use of this system and choosing one of the following options (you can only load one type at once). The ammo lasts for one shot.<br><ul><li><b>Thumper</b> - The attack gains knockback 1 and deals explosive damage</li><li><b>Shock</b> - TThe attack deals energy damage. Choose a target of this attack. Adjacent characters to that target take 1 AP energy damage (hit or miss).</li><li><b>Mag</b> - The attack deals kinetic damage and gains the Arcing tag</li></ul>"
+        "description": "You have an custom supply of ammunition that can be used with all your main ranged weapons. The ammo case is a limited (6) system that doesn’t take any SP but can be destroyed by system damage, etc. Once a turn, you can load special ammo when you fire a main weapon, expending a use of this system and choosing one of the following options (you can only load one type at once). The ammo lasts for one shot.<br><ul><li><b>Thumper</b> - The attack gains knockback 1 and deals explosive damage</li><li><b>Shock</b> - The attack deals energy damage. Choose a target of this attack. Adjacent characters to that target take 1 AP energy damage (hit or miss).</li><li><b>Mag</b> - The attack deals kinetic damage and gains the Arcing tag</li></ul>"
       },
       {
         "name": "Expanded Portfolio",
@@ -462,7 +462,7 @@
     "ranks": [
       {
         "name": "Particularize",
-        "description": "When any adjacent ally consumes Lock On to make an attack, in addition to the Accuracy bonus, you or they can roll twice for the attack, choosing either result."
+        "description": "When any adjacent ally consumes Lock On to make an attack, in addition to the Accuracy bonus, they can roll twice for the attack, choosing either result."
       },
       {
         "name": "Panopticon",
