@@ -3283,7 +3283,7 @@
   {
     "id": "didymos",
     "name": "DIDYMOS-Class NHP",
-    "type": "System",
+    "type": "AI",
     "sp": 3,
     "tags": [
       { "id": "ai" },
