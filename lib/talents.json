@@ -356,7 +356,7 @@
       },
       {
         "name": "Steel Assassin",
-        "description": "When you end your turn hidden, choose a character in line of sight. Your next melee or ranged attack from hiding against that character does +1d6 bonus damage for each hostile character’s turn that passes before your attack, up to a maximum of +3d6. The target is aware of this effect."
+        "description": "When you end your turn hidden, choose a character in line of sight. Your next melee or ranged attack from hiding against that character does +1d6 bonus damage for each hostile character’s turn that passes before your attack for weapon attacks and +2 heat for tech attacks, up to a maximum of +3d6 or +6 heat. The target is aware of this effect. If you lose hiding for any reason, you lose this bonus damage, and you only gain it against the chosen target."
       }
     ]
   },
