@@ -60,6 +60,9 @@
       },
       {
         "id": "deployable"
+      },
+      {
+        "id": "unique"
       }
     ],
     "source": "GMS",
@@ -887,7 +890,7 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 2,
-    "effect": "You flash-print a heavy metal plate that takes up a 2x2 free space in range 5 of you. It is flat and doesn't obstruct movement. You can set the system to one of two settings when you create it:<ul><li><b>Repulse:</b> Any hostile target that enters the space must pass an hull check or be pushed in a direction of your choice 3 spaces. If this causes them to collide with an obstruction (terrain, a mech, etc) it is additionally knocked prone. An allied target that enters the space can fly 3 in any direction as a free action.</li><li><b>Attract:</b> Any target, allied or enemy, that enters the space, must pass a hull check or become immobilized. It can end this status by taking a quick action and repeating this check successfully to free itself.</li></ul><br>The deployer can be attacked - it has evasion 5, 20 hp, and 2 armor, and it lasts until the end of the current challenge or around an hour outside. You can only deploy one at at time. If you create a new deployer, the old one disintegrates and is destroyed.",
+    "effect": "You flash-print a heavy metal plate that takes up a 2x2 free space in range 5 of you. It is flat and doesn't obstruct movement. You can set the system to one of two settings when you create it:<ul><li><b>Repulse:</b> Any hostile target that enters the space must pass an hull save or be pushed in a direction of your choice 3 spaces. If this causes them to collide with an obstruction (terrain, a mech, etc) it is additionally knocked prone. An allied target that enters the space can fly 3 in any direction as a free action.</li><li><b>Attract:</b> Any target, allied or enemy, that enters the space, must pass a hull save or become immobilized. It can end this status by taking a quick action and repeating this save successfully to free itself.</li></ul><br>The deployer can be attacked - it has evasion 5, 20 hp, and 2 armor, and it lasts until the end of the current challenge or around an hour outside. You can only deploy one at at time. If you create a new deployer, the old one disintegrates and is destroyed.",
     "description": "SSC's own take on flash-printing is advanced enough to embed magtech burnout cells into raw prefab clay. SSC non-mag pilots often disparage Black Witch pilots for \"throwing plates\" at the enemy, but the tactical advantage they provide cannot be denied.",
     "data_type": "system",
     "aptitude": {
@@ -1506,7 +1509,7 @@
   },
   {
     "id": "horos1",
-    "name": "H0r_OS Sys Upgrade I",
+    "name": "H0r_OS System Upgrade I",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1555,7 +1558,7 @@
   },
   {
     "id": "horos2",
-    "name": "H0r_OS Sys Upgrade II",
+    "name": "H0r_OS System Upgrade II",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1563,13 +1566,13 @@
         "id": "unique"
       },
       {
-        "id": "fulltech"
+        "id": "quicktech"
       }
     ],
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 2,
-    "effect": "Gain the following full tech options:<br><b>Construct Eidolon:</b>You create a data construct that confuses systems into thinking it is real. The construct is a size 3 object that can look like almost anything. It can be used as hard cover by allies, but not enemies, is immune to all damage, and obstructs movement for all characters. Any actor adjacent to the object that passes a successful systems check and takes a full action can destroy the object. Otherwise, it lasts until the end of the current scene. You can only create one at a time. If you create another eidolon, the previous one created disappears.<br><b>Construct False Idol:​</b>You choose either yourself or an allied character in your sensor range, creating an illusory decoy of your target at any free space in sensor range. Any target that wishes to attack or take hostile action against your target and can see the decoy must first pass a systems save or believe the decoy is the real target until the end of their turn, attacking the decoy instead. It is the same size as your target, can benefit from cover, has evasion 5, 5 e-defense, and 10 HP. If it takes heat, is reduced to 0 HP, or the current challenge ends, it dissipates. You can only have one decoy active at a time, but can create a new one by taking this action again (the old one dissipates).",
+    "effect": "Gain the following quick tech options:<br><b>Construct Eidolon:</b>You create a data construct that confuses systems into thinking it is real. The construct is a size 3 object that can look like almost anything. It can be used as hard cover by allies, but not enemies, is immune to all damage, and obstructs movement for all characters. Any actor adjacent to the object that passes a successful systems check and takes a full action can destroy the object. Otherwise, it lasts until the end of the current scene. You can only create one at a time. If you create another eidolon, the previous one created disappears.<br><b>Construct False Idol:​</b>You choose either yourself or an allied character in your sensor range, creating an illusory decoy of your target at any free space in sensor range. Any target that wishes to attack or take hostile action against your target and can see the decoy must first pass a systems save or believe the decoy is the real target until the end of their turn, attacking the decoy instead. It is the same size as your target, can benefit from cover, has evasion 5, 5 e-defense, and 10 HP. If it takes heat, is reduced to 0 HP, or the current challenge ends, it dissipates. You can only have one decoy active at a time, but can create a new one by taking this action again (the old one dissipates).",
     "description": "Further protocols unlocked from lengthy study of INSTINCT. Where H0r_OS I was able to separate INSTINCT from its host system (“rig”), H0r_OSII boosts the system, enhancing the autonomous program to enable it to manifest an “other” — a wholly original being constructed from aggregate user and environmental data. The appearance of these Others can be adapted to manifest as a person, an object, or physical phenomenon — while not wholly perfect, the Other is good enough to confuse systems and physical observation on first look.",
     "data_type": "system",
     "aptitude": {
@@ -1879,7 +1882,7 @@
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 2,
-    "effect": "Gain the following options for invasion. On a successful invasion, deal 2 heat and you may choose one of the following effects, in addition to others you have available to you:<br><b>Smite</b>: Your mech takes 1d6 AP energy damage. Your target must pass a system save or become stunned until the end of its next turn. A character can only be stunned this way once per scene.<b>Annihilate</b>: Your mech takes 1d6 AP energy damage. Your target takes +2 heat for each other size 1 or larger character in engagement or adjacency with it (including your mech), up to a maximum of +6 heat.",
+    "effect": "Gain the following options for invasion. On a successful invasion, deal 2 heat and you may choose one of the following effects, in addition to others you have available to you:<br><b>Smite</b>: Your mech takes 1d6 AP energy damage. Your target must pass a system save or become stunned until the end of its next turn. A character can only be stunned this way once per scene.<br><b>Annihilate</b>: Your mech takes 1d6 AP energy damage. Your target takes +2 heat for each other size 1 or larger character in engagement or adjacency with it (including your mech), up to a maximum of +6 heat.",
     "description": "Go with thy face averted, thou emission of chaos! The hidden ones have overthrown thy words, thy face is turned backwards, thy head is divided in two at the sides; thy skull is ripped from thy spine. Taste thou death!",
     "data_type": "system",
     "aptitude": {
@@ -1990,7 +1993,7 @@
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 2,
-    "effect": "Gain the following full tech options:<br><b>Chains of Prometheus:​</b> Make a tech attack against a character in your sensor range. On hit, your target must end its turn within range 5 of you until the rest of this scene. Otherwise it takes 2 heat at the end of its turn. Only one target can be affected by this effect at once. It can also end this effect by taking a full action and passing a systems save to purge this code<br><b>Excommunicate</b>:  Make a tech attack against a character in your sensor range. On a hit, for the rest of this scene, if your target moves adjacent to a character allied to them during their turn or starts their turn adjacent to such a target, both targets take 1d6 heat immediately. Only one character can be affected by this at once. A character can end this effect by taking a full action and passing a systems save to purge this code.",
+    "effect": "Gain the following full tech options:<br><b>Chains of Prometheus:​</b>Make a tech attack against a character in your sensor range. On hit, your target takes 4 heat and must end its turn within range 5 of you until the rest of this scene. Otherwise it takes 2 heat at the end of its turn. Only one target can be affected by this effect at once. It can also end this effect by taking a full action and passing a systems save to purge this code.",
     "description": "<code class=\"horus\">Here, another gift: do not seek others. There are none but me.</code>",
     "data_type": "system",
     "aptitude": {

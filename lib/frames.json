@@ -1484,7 +1484,7 @@
       "edef": 6,
       "heatcap": 6,
       "repcap": 6,
-      "sensor_range": 10,
+      "sensor_range": 3,
       "tech_attack": -2,
       "save": 10,
       "speed": 3,
