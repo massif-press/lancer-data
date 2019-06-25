@@ -128,7 +128,7 @@
   {
     "id": "burst",
     "name": "GMS \"Burst\" Jump Jet System",
-    "type": "Flight System",
+    "type": "FlightSystem",
     "sp": 2,
     "tags": [
       {
@@ -148,7 +148,7 @@
   {
     "id": "eva",
     "name": "GMS EVA Module",
-    "type": "Flight System",
+    "type": "FlightSystem",
     "sp": 1,
     "tags": [
       {
@@ -167,8 +167,8 @@
   },
   {
     "id": "t1flight",
-    "name": "GMS Type I Flight System",
-    "type": "Flight System",
+    "name": "GMS Type I FlightSystem",
+    "type": "FlightSystem",
     "sp": 3,
     "tags": [
       {
