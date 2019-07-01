@@ -167,7 +167,7 @@
   },
   {
     "id": "t1flight",
-    "name": "GMS Type I FlightSystem",
+    "name": "GMS Type I Flight System",
     "type": "FlightSystem",
     "sp": 3,
     "tags": [
@@ -2812,7 +2812,7 @@
       },
       {
         "id": "limited",
-        "val": "1"
+        "val": 1
       }
     ],
     "source": "HA",
@@ -2848,7 +2848,7 @@
       },
       {
         "id": "limited",
-        "val": "3"
+        "val": 3
       }
     ],
     "source": "HA",
