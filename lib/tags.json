@@ -1,22 +1,27 @@
-[{
+[
+  {
     "id": "blast",
     "name": "Blast ({VAL})",
-    "description": "This weapon or system affects an area with radius of {VAL} from a target point within line of sight and the specified range. Trace cover and line of sight from its origin point. Make separate attack rolls for each target caught in the area."
+    "description": "This weapon or system affects an area with radius of {VAL} from a target point within line of sight and the specified range. Trace cover and line of sight from its origin point. Make separate attack rolls for each target caught in the area.",
+    "filter_ignore": true
   },
   {
     "id": "burst",
     "name": "Burst ({VAL})",
-    "description": "This weapon or system affects an area of up to {VAL} spaces around the target making the action or attack, including the target. Trace cover from its origin point. Make separate attack rolls for each target caught in the area."
+    "description": "This weapon or system affects an area of up to {VAL} spaces around the target making the action or attack, including the target. Trace cover from its origin point. Make separate attack rolls for each target caught in the area.",
+    "filter_ignore": true
   },
   {
     "id": "cone",
     "name": "Cone ({VAL})",
-    "description": "This weapon or system affects a cone {VAL} squares wide at its longest end, and {VAL} squares long, with its short end adjacent to the attacker. Ignores cover. Make separate attack rolls for each target caught in the area."
+    "description": "This weapon or system affects a cone {VAL} squares wide at its longest end, and {VAL} squares long, with its short end adjacent to the attacker. Ignores cover. Make separate attack rolls for each target caught in the area.",
+    "filter_ignore": true
   },
   {
     "id": "line",
     "name": "Line ({VAL})",
-    "description": "This weapon or system affects a straight line {VAL} squares long. Attacks all targets in the area. Make separate attacks for each target caught in the area, but one damage roll."
+    "description": "This weapon or system affects a straight line {VAL} squares long. Attacks all targets in the area. Make separate attacks for each target caught in the area, but one damage roll.",
+    "filter_ignore": true
   },
   {
     "id": "ap",
@@ -82,7 +87,7 @@
     "id": "overkill",
     "name": "Overkill",
     "description": "When attacking with this weapon, if any dice come up as ‘1’, take 1 heat, pick them up, and re-roll them. This process can repeat if you keep rolling ‘1’s."
-  },  
+  },
   {
     "id": "seeking",
     "name": "Seeking",
@@ -206,13 +211,14 @@
   {
     "id": "range",
     "name": "Range ({VAL})",
-    "description": "This system can be activated at a range of {VAL} spaces."
-  }, 
+    "description": "This system can be activated at a range of {VAL} spaces.",
+    "filter_ignore": true
+  },
   {
     "id": "archaic",
     "name": "Archaic",
     "description": "This weapon is too old fashioned to harm mechs"
-  }, 
+  },
   {
     "id": "sidearm",
     "name": "Sidearm",
@@ -222,10 +228,22 @@
     "id": "paracausal",
     "name": "Paracausal",
     "description": "Damage from this weapon cannot be reduced in any way, by armor, resistance, or any other kind of damage reduction."
-  }, 
+  },
   {
     "id": "dangerzone",
     "name": "Danger Zone",
     "description": "This system, talent, or weapon only activates when your mech has 1/2 or more of its heat gauge filled in."
+  },
+  {
+    "id": "setmaxuses",
+    "name": "Set Max Uses",
+    "description": "Allow player to set the maximum uses for this system (HIDDEN TAG)",
+    "hidden": true
+  },
+  {
+    "id": "setdamagetype",
+    "name": "Set Damage Type",
+    "description": "Allow player to set the damage type for this system (HIDDEN TAG)",
+    "hidden": true
   }
 ]

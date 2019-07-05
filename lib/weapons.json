@@ -2599,6 +2599,9 @@
       "val": "1d6+2"
     },
     {
+      "id": "setmaxuses"
+    },
+    {
       "id": "overkill"
     }],
     "source": "",
@@ -2630,6 +2633,9 @@
       "val": "1d6+2"
     },
     {
+      "id": "setmaxuses"
+    },
+    {
       "id": "overkill"
     }],
     "source": "",
@@ -2659,7 +2665,11 @@
     "tags": [{
       "id": "limited",
       "val": "2d6"
-    }, {
+    },
+    {
+      "id": "setmaxuses"
+    },
+    {
       "id": "overkill"
     }],
     "source": "",

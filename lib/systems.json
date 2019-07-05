@@ -85,9 +85,11 @@
       {
         "id": "limited",
         "val": 3
-      }, {
+      },
+      {
         "id": "unique"
-      }, {
+      },
+      {
         "id": "drone"
       }
     ],
@@ -255,14 +257,17 @@
     "aptitude": {
       "repair": 0
     }
-  }, {
+  },
+  {
     "id": "paintjob",
     "name": "Custom Paint Job",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -1206,6 +1211,9 @@
     "tags": [
       {
         "id": "quickaction"
+      },
+      {
+        "id": "unique"
       }
     ],
     "source": "SSC",
@@ -1492,7 +1500,8 @@
     "tags": [
       {
         "id": "quickaction"
-      }, {
+      },
+      {
         "id": "unique"
       }
     ],
@@ -1612,7 +1621,8 @@
       },
       {
         "id": "quicktech"
-      }, {
+      },
+      {
         "id": "ai"
       }
     ],
@@ -2804,7 +2814,8 @@
     "name": "Plasma Gauntlet",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "dangerzone"
       },
       {
@@ -3267,11 +3278,7 @@
     "name": "Stay of Execution",
     "type": "System",
     "sp": 2,
-    "tags": [
-      { "id": "quicktech" },
-      { "id": "unique" },
-      { "id": "limited", "val": 2 }
-    ],
+    "tags": [{ "id": "quicktech" }, { "id": "unique" }, { "id": "limited", "val": 2 }],
     "source": "HORUS",
     "license": "LICH",
     "license_level": 3,
