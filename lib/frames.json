@@ -174,6 +174,10 @@
       {
         "name": "Combat Repair",
         "description": "The Lancaster can spend a full action and 4 repairs in combat to repair a destroyed mech, returning it to 1 structure and 1 HP"
+      },
+      {
+        "name": "Insulated",
+        "description": "The Lancaster is immune to Burn"
       }
     ],
     "core_system": {
@@ -785,7 +789,7 @@
       },
       {
         "name": "Reactive Code",
-        "description": "Once a round, the goblin can make any quick tech action as as reaction against any actor that successfully performs a tech action against the goblin."
+        "description": "Once a round, the goblin can make any quick tech action as as reaction against any actor that successfully performs a tech attack against the Goblin."
       },
       {
         "name": "Fragile",

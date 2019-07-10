@@ -17,6 +17,7 @@ const data = {
   talents: require('./lib/talents.json'),
   weapons: require('./lib/weapons.json'),
   actions: require('./lib/actions.json'),
+  reserves: require('./lib/reserves.json'),
 }
 
 module.exports = data

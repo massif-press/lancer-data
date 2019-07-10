@@ -743,10 +743,6 @@
       },
       {
         "id": "protocol"
-      },
-      {
-        "id": "heatself",
-        "val": 2
       }
     ],
     "source": "IPS-N",

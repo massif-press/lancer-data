@@ -27,7 +27,6 @@
     "name": "Integrated Weapon",
     "source": "GMS",
     "effect": "Your mech gains a new integrated mount with the capacity for one auxiliary weapon. This weapon can be fired 1/round as a free action when you fire any other weapon on your mech. Like other integrated mounts this weapon can’t be modified.",
-    "mounted_effect": "This mount gains capacity for an additional auxiliary weapon.",
     "description": "Excess space in your mechs chassis is filled with weaponry integrated into fists, or chest plates, capable of being fired on reflex."
   },
   {

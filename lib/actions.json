@@ -180,5 +180,68 @@
     "action_type": "free",
     "description": "Characters may perform any number of Free Actions on their turn.",
     "detail": "<p><strong>Free Actions</strong> are actions often granted by systems, talents, gear, or overcharge. Characters may perform any number of Free Actions on their turn, but only on their turn, and only those granted to them. The most common type of Free Action is a <strong>protocol</strong>, which can be activated or deactivated only at the start of a turn</p>"
+  },
+  {
+    "id": "action_poweratcost",
+    "name": "Power at a Cost",
+    "action_type": "downtime",
+    "description": "Gain rewards, opportunities, or additional resources (such as reserves).",
+    "detail": "<p> This is a really simple <strong>downtime action</strong> for gaining rewards, opportunities, or additional resources (such as reserves). You might want <strong>reserves</strong>, or something more abstract, like<strong>time</strong>, <strong>safety</strong>, <strong>information</strong>, <strong> allies, support, a base of operations, materials, shelter, food, </strong> or even something as simple as <strong>a damn pack of cigarettes</strong>. </p> <p> Name what you want. You can <strong>always</strong> get it, <strong>but</strong> the GM chooses one or two of the following and fills in details, depending on how outlandish the request is: </p> <ul> <li> It’s going to take a lot more time than they anticipated </li> <li> It’s going to be really damn risky </li> <li> You have to have to give something up or leave something behind (wealth, resources, allies) </li> <li> You’re going to piss someone or something important and powerful off to get it </li> <li> It’s going to involve going <em>wildly</em> off the plan </li> <li> You’ll need more information to proceed safely </li> <li> What you put together is going to fall apart damn soon </li> <li> You’ll need to gather more resources first (you know where to find them, however) </li> <li> You can’t <em>exactly</em> get what you want, just approximately what you want, a lesser version, or less of what you want </li> </ul> <p> You can also use the <strong>power at a cost</strong> action <strong>mid-mission</strong> for similar effects (not necessarily during downtime). The rest of the downtime actions are typically for use only in downtime, but you could adapt them mid mission if they fit. </p>"
+  },
+  {
+    "id": "action_buysometime",
+    "name": "Buy Some Time",
+    "action_type": "downtime",
+    "description": "Try and stave off some reckoning, extend your window of opportunity, or merely buy more time and breathing room for you and your group to act.",
+    "detail": "<p> You try and stave off some reckoning, extend your window of opportunity, or merely buy more time and breathing room for you and your group to act. You might be trying to dodge some heat, survive stranded in the wilderness, or cause a distraction so another plan can go off. You can use that distraction or bought time as <strong>reserves</strong> for the next mission. </p> <p> On a total result of 9 or lower, you can buy only a little time, and only if drastic measures are taken <em>right now. </em>Otherwise, whatever you're trying to stave off catches up to you. </p> <p> On a total result of 10-19, you can buy enough time, but the situation becomes precarious or desperate. Next time you get this result with the same situation, treat it as a 9 or lower. </p> <p> On a total result of 20+, you buy enough time as you need for now, until the next mission. If you've already gotten this result, it becomes a 10-19 for the same situation next time. </p>"
+  },
+  {
+    "id": "action_damndrink",
+    "name": "Get a Damn Drink",
+    "action_type": "downtime",
+    "description": "Blow off some steam, carouse, and generally get into trouble.",
+    "detail": "<p> You can only make this action where there’s a drink to actually get (in town, a station, a city, or some other populated area). It doesn’t have to be an actual drink, but you blow off some steam, carouse, and generally get into trouble. You could be doing this to make connections, collect gossip, forge a reputation, or maybe just to forget what happened on the last mission. There’s usually trouble. </p> <p> On a total result of 9 or lower, you can decide whether you had good time or not. However, you wake up in a gutter somewhere with only one of the following (choose!): </p> <ul> <li> Your dignity </li> <li> All of your possessions </li> <li> Your memory </li> </ul> <p> On a total result of 10-19, you get one of the following as <strong>reserves</strong> and lose one of the following: </p> <ul> <li> A good reputation </li> <li> A friend or connection </li> <li> A useful item or piece of information </li> <li> A convenient opportunity </li> </ul> <p> On a total result of 20+, you get two of the above and don’t lose anything </p>"
+  },
+  {
+    "id": "action_creative",
+    "name": "Get Creative",
+    "action_type": "downtime",
+    "description": "Tweak something or attempt to make something new, either a physical project, or a piece of software.",
+    "detail": "<p> You tweak something or attempt to make something new, either a physical project, or a piece of software. It doesn’t have to be something on the a gear list, but it generally can’t be something as impactful as a piece of mech gear. Once finished, you can use it as <strong>reserves.</strong> </p> <p> On a total result of 9 or lower, you don’t make any progress on your project for now. If you already got this result on the same project, treat it as a 10-19 next time. </p> <p> On a total result of 10-19, you can make progress on your project, but can’t finish it. You can finish it next time you have downtime without a roll if you get some things before then (pick 2): </p> <ul> <li> Quality materials </li> <li> Specific knowledge or techniques </li> <li> Specialized tools </li> <li> A good workspace </li> </ul> <p> On a total result of 20+, you can finish your project during this downtime. If it’s complicated, treat this result as a 10-19, but only choose 1. </p>"
+  },
+  {
+    "id": "action_focused",
+    "name": "Get Focused",
+    "action_type": "downtime",
+    "description": "Practice, learn, meditate, or call on a teacher.",
+    "detail": "<p> You focus on increasing your own skills, training, and self-improvement. You might practice, learn, meditate, or call on a teacher. Before you make this action, name one thing you’d like to learn or improve on (a skill, technique, an academic subject or language). This could be something like starship piloting, cooking, chess, boxing, history, or etiquette. It should generally be a non-combat action, a specific skill, or something personal to your character. </p> <p> The GM will give you a new trigger based on the skill you practiced at +2. For example, the trigger could be +2 when playing chess, or +2 when dancing. You can improve it by taking this downtime action again, up to a maximum of +6. </p>"
+  },
+  {
+    "id": "action_organized",
+    "name": "Get Organized",
+    "action_type": "downtime",
+    "description": "Start, run, or improve an organization, business, or other venture.",
+    "detail": "<p> You start, run, or improve an organization, business, or other venture. Describe its purpose or goal when you start it up, choosing from the following: military, scientific, academic, criminal, humanitarian, industrial, entertainment, political. Track your organization’s efficiency and influence, from 0-6. When you want to make a narrative role where your organization could help directly, you can roll your organization’s efficiency or influence like a trigger. Efficiency is how directly effective your organization is at what it does (a military organization with high efficiency would be good at combat, for example). Influence is your organization’s size, reach, wealth, and reputation. Influence be used to acquire assets, create opportunities, or sway public opinion. Efficiency can be used to perform activities related to your organization’s purpose (science, military, etc). You can use these advantages as <strong>reserves.</strong> </p> <p> The first time you make this downtime action, establish your organization at +2 efficiency or influence, and the other at +0. </p> <p> Each downtime afterwards, roll the following skill check (this doesn’t take a downtime action and you must make it each downtime). Triggers on this skill depend on the type of action you’re taking to further your organization (lead or inspire is one that is probably always going to trigger). </p> <p> On a total result of 9 or lower, your organization folds immediately unless: </p> <ul> <li> It lowers in efficiency and influence by 2, to a minimum of 0. If it’s already at 0 for both of these, you can’t choose this option. </li> <li> It takes one of the following actions: pay debts, prove worthiness, get bailed out, make an aggressive move </li> </ul> <p> On a total result of 10-19, your organization is stable. It gains +2 influence or efficiency, to a maximum of +6. </p> <p> On a total result of 20+ your organization gains +2 influence and efficiency, to a maximum of +6 </p>"
+  },
+  {
+    "id": "action_information",
+    "name": "Gather Information",
+    "action_type": "downtime",
+    "description": "Investigate, do research, follow up on a mystery, track a target, or keep an eye on something.",
+    "detail": "<p> You poke your nose around, perhaps where it doesn’t belong. You’re investigating something, doing research, following up on a mystery, tracking a target, or keeping an eye on something. You might be doing research in a library, or go undercover in an organization to learn what you can. Whatever you’re doing, you’re generally trying to gather information on a subject of your choosing. You can use this information as <strong>reserves.</strong> </p> <p> On a total result of 9 or lower, you can choose to get out now, or get what you are looking for. If you choose the latter, you get your information but it immediately gets you into trouble. </p> <p> On a total result of 10-19, you find the information you’ve looking for. However, (choose one): </p> <ul> <li> You leave clear evidence of your rummaging </li> <li> You have to dispatch someone along the way, or implicate someone innocent </li> </ul> <p> On a total result of 20+, you get your information cleanly, no complications </p>"
+  },
+  {
+    "id": "action_connected",
+    "name": "Get Connected",
+    "action_type": "downtime",
+    "description": "Make connections, call upon favors, ask for help, or drum up support for a particular course of action.",
+    "detail": "<p> You try and make connections, call upon favors, ask for help, or drum up support for a particular course of action. You need access to communications or just good old fashioned face to face conversation to take this action. You can use your connection’s resources or aid as <strong>reserves</strong> for the next mission. </p> <p> On a total result of 9 or lower, you’ve got to do a favor or make good on a promise for your connection <em>right now</em>. Otherwise, they won’t help you at all. If you take action right away, however, they’ll go along with what you want. </p> <p> On a total result of 10-19, your connection will help you, but you’ve got to do a favor or make good on a promise <em>after</em> they help you. If you don’t, treat any result as a 9 or lower next time with the same organization. </p> <p> On a total result of 20+, your connection will help you out, no strings attached. Treat this result as a 10-19 if you make it again with the same organization. </p>"
+  },
+  {
+    "id": "action_scrounge",
+    "name": "Scrounge and Barter",
+    "action_type": "downtime",
+    "description": "Try and get your hands on some gear or asset for your group.",
+    "detail": "<p> You try and get your hands on some gear or asset for your group by dredging the scrapyard, chasing down rumors, bartering in the local market, hunting around, or through good old fashioned force of will. You could try and get some better pilot gear that could help you, a vehicle, narcotics, goods, or other sundries. It’s got to be something physical that you can acquire, but doesn’t necessarily have to be on the gear list. If you get it, you can take it on the next mission as <strong>reserves.</strong> </p> <p> On a total result of 9 or lower, you can get what you’re looking for, but (choose one): </p> <ul> <li> It was stolen, probably from someone who’s looking for it </li> <li> It’s degraded, old, filthy, or malfunctioning </li> <li> Someone else has it right now and won’t give it up without force or convincing </li> </ul> <p> On a total result of 10-19, you can get what you’re looking for, as long as you trade in a little (choose 1): </p> <ul> <li> Time </li> <li> Dignity </li> <li> Reputation </li> <li> Health, comfort and wellness </li> </ul> <p> On a total result of 20+, you get what you’re looking for, no problems at all. </p>"
   }
 ]
