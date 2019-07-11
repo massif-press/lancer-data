@@ -182,6 +182,34 @@
     "detail": "<p><strong>Free Actions</strong> are actions often granted by systems, talents, gear, or overcharge. Characters may perform any number of Free Actions on their turn, but only on their turn, and only those granted to them. The most common type of Free Action is a <strong>protocol</strong>, which can be activated or deactivated only at the start of a turn</p>"
   },
   {
+    "id": "action_bombardment",
+    "name": "Reserve: Bombardment",
+    "action_type": "full",
+    "description": "Call in an artillery or orbital bombardment.",
+    "detail": "<p><strong>Tactical Reserve: Orbital Bombardment</strong><br>Full Action, range 30 within line of sight, blast 2, 3d6 explosive damage.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
+  },
+  {
+    "id": "action_deployableshield",
+    "name": "Reserve: Deployable Shield",
+    "action_type": "free",
+    "description": "Deploy a single-use shield generator.",
+    "detail": "<p><strong>Mech Reserve: Deployable Shield</strong><br>Free Action, deploy a size 1 generator that grants all allied actors in a burst 2 radius around it soft cover.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
+  },
+  {
+    "id": "action_redundantrepair",
+    "name": "Reserve: Redundant Repair",
+    "action_type": "free",
+    "description": "Stabilize as a free action.",
+    "detail": "<p><strong>Mech Reserve: Redundant Repair</strong><br>Stabilize as a Free Action.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
+  },
+  {
+    "id": "action_corebattery",
+    "name": "Reserve: CORE Battery",
+    "action_type": "free",
+    "description": "Recharge CORE Power.",
+    "detail": "<p><strong>Mech Reserve: CORE Battery</strong><br>Consume this to gain CORE power on your mech, allowing it to use its most powerful ability again (you can’t get more than 1 CORE power at a time).</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
+  },
+  {
     "id": "action_poweratcost",
     "name": "Power at a Cost",
     "action_type": "downtime",

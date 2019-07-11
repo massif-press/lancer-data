@@ -130,7 +130,7 @@
     "type": "Mech",
     "name": "Deployable Shield",
     "label": "Shield",
-    "description": "Gain a 1-use deployable shield generator, a size 1 deployable that grants all allied actors in a burst 2 radius around it soft cover",
+    "description": "Gain a single-use deployable shield generator, a size 1 deployable that grants all allied actors in a burst 2 radius around it soft cover",
     "roll_min": 9,
     "roll_max": 10
   },
