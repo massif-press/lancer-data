@@ -3,6 +3,7 @@
     "id": "reserve_access",
     "type": "Narrative",
     "name": "Access",
+    "label": "Resource",
     "description": "Gain a keycard, invite, bribes, or insider access to a particular location",
     "roll_min": 1,
     "roll_max": 2
@@ -11,6 +12,7 @@
     "id": "reserve_backing",
     "type": "Narrative",
     "name": "Backing",
+    "label": "Contact",
     "description": "Political support from someone powerful for this mission - you can invoke it as leverage",
     "roll_min": 3,
     "roll_max": 4
@@ -19,6 +21,7 @@
     "id": "reserve_supplies",
     "type": "Narrative",
     "name": "Supplies",
+    "label": "Resource",
     "description": "Cross a hazardous or hostile area without having to make a skill check",
     "roll_min": 5,
     "roll_max": 6
@@ -27,6 +30,7 @@
     "id": "reserve_disguise",
     "type": "Narrative",
     "name": "Disguise",
+    "label": "Identity",
     "description": "Prepare a disguise or cover identity, allowing you to sneak into a location uncontested",
     "roll_min": 7,
     "roll_max": 8
@@ -35,6 +39,7 @@
     "id": "reserve_diversion",
     "type": "Narrative",
     "name": "Diversion",
+    "label": "Diversion",
     "description": "Prepare or arrange for a diversion, giving you time to take action without fear of consequence",
     "roll_min": 9,
     "roll_max": 10
@@ -43,6 +48,7 @@
     "id": "reserve_blackmail",
     "type": "Narrative",
     "name": "Blackmail",
+    "label": "Target",
     "description": "Gain blackmail or sensitive information on a particular person",
     "roll_min": 11,
     "roll_max": 12
@@ -51,6 +57,7 @@
     "id": "reserve_reputation",
     "type": "Narrative",
     "name": "Reputation",
+    "label": "Status",
     "description": "Make a good name for yourself for the next mission, starting you off on a good position with everyone you meet",
     "roll_min": 13,
     "roll_max": 14
@@ -59,6 +66,7 @@
     "id": "reserve_safeharbor",
     "type": "Narrative",
     "name": "Safe Harbor",
+    "label": "Location",
     "description": "Gain a guaranteed safe location where you can convene, plan, or recuperate",
     "roll_min": 15,
     "roll_max": 16
@@ -67,6 +75,7 @@
     "id": "reserve_tracking",
     "type": "Narrative",
     "name": "Tracking",
+    "label": "Target",
     "description": "Know the location of important objects or people for this mission",
     "roll_min": 17,
     "roll_max": 18
@@ -75,6 +84,7 @@
     "id": "reserve_knowledge",
     "type": "Narrative",
     "name": "Knowledge",
+    "label": "Subject",
     "description": "Gain important knowledge of local history, customs, or culture etiquette",
     "roll_min": 19,
     "roll_max": 20
@@ -83,6 +93,7 @@
     "id": "reserve_ammo",
     "type": "Mech",
     "name": "Ammo",
+    "label": "Ammo",
     "description": "Get extra uses (+1 or +2) to a (limited) weapon or system",
     "roll_min": 1,
     "roll_max": 2
@@ -91,6 +102,7 @@
     "id": "reserve_rentedgear",
     "type": "Mech",
     "name": "Rented Gear",
+    "label": "Gear",
     "description": "Get access to a weapon or piece of mech gear you don’t normally have access to for the mission only",
     "roll_min": 3,
     "roll_max": 4
@@ -99,6 +111,7 @@
     "id": "reserve_extrarepair",
     "type": "Mech",
     "name": "Extra Repair",
+    "label": "Resource",
     "description": "Start the mission with +2 repairs on your mech",
     "roll_min": 5,
     "roll_max": 6
@@ -107,6 +120,7 @@
     "id": "reserve_corebattery",
     "type": "Mech",
     "name": "CORE Battery",
+    "label": "Battery",
     "description": "Consume this to gain CORE power on your mech, allowing it to use its most powerful ability again (you can’t get more than 1 CORE power at a time)",
     "roll_min": 7,
     "roll_max": 8
@@ -115,6 +129,7 @@
     "id": "reserve_deployableshield",
     "type": "Mech",
     "name": "Deployable Shield",
+    "label": "Shield",
     "description": "Gain a 1-use deployable shield generator, a size 1 deployable that grants all allied actors in a burst 2 radius around it soft cover",
     "roll_min": 9,
     "roll_max": 10
@@ -123,6 +138,7 @@
     "id": "reserve_redundantrepair",
     "type": "Mech",
     "name": "Redundant Repair",
+    "label": "Resource",
     "description": "Once per mission make the stabilize action as a free action",
     "roll_min": 11,
     "roll_max": 12
@@ -131,6 +147,7 @@
     "id": "reserve_sysreinforcement",
     "type": "Mech",
     "name": "Systems Reinforcement",
+    "label": "Resource",
     "description": "Get +1 accuracy to hull, agility, systems, or engineering checks, this mission only (choose one)",
     "roll_min": 13,
     "roll_max": 14
@@ -139,6 +156,7 @@
     "id": "reserve_smartammo",
     "type": "Mech",
     "name": "Smart Ammo",
+    "label": "Ammo",
     "description": "All weapons of your choice can be fired as if they had the smart tag, this mission only",
     "roll_min": 15,
     "roll_max": 16
@@ -147,6 +165,7 @@
     "id": "reserve_boostedservos",
     "type": "Mech",
     "name": "Boosted Servos",
+    "label": "Resource",
     "description": "Become immune to the slowed condition, this mission only",
     "roll_min": 17,
     "roll_max": 18
@@ -155,6 +174,7 @@
     "id": "reserve_jumpjets",
     "type": "Mech",
     "name": "Jump Jets",
+    "label": "Resource",
     "description": "Your mech can fly when it makes its regular move, this mission only, but must land after moving",
     "roll_min": 19,
     "roll_max": 20
@@ -163,6 +183,7 @@
     "id": "reserve_scouting",
     "type": "Tactical",
     "name": "Scouting",
+    "label": "Location",
     "description": "Get detailed information on the kinds of mechs and threats you will be facing soon, such as number, type, and statistics",
     "roll_min": 1,
     "roll_max": 2
@@ -171,6 +192,7 @@
     "id": "reserve_vehicle",
     "type": "Tactical",
     "name": "Vehicle",
+    "label": "Designation",
     "description": "Gain use of a transport vehicle or starship for this mission only (a tier 1 NPC with the vehicle or ship tag)",
     "roll_min": 3,
     "roll_max": 4
@@ -179,6 +201,7 @@
     "id": "reserve_reinforcements",
     "type": "Tactical",
     "name": "Reinforcements",
+    "label": "Designation",
     "description": "Call in an NPC mech ally, once per mission (choose a tier 1-3 NPC from the NPC section)",
     "roll_min": 5,
     "roll_max": 6
@@ -187,6 +210,7 @@
     "id": "reserve_envshielding",
     "type": "Tactical",
     "name": "Environmental Shielding",
+    "label": "Environment",
     "description": "Ignore a particular battlefield hazard or dangerous terrain, such as extreme heat or cold",
     "roll_min": 7,
     "roll_max": 8
@@ -195,6 +219,7 @@
     "id": "reserve_accuracy",
     "type": "Tactical",
     "name": "Accuracy",
+    "label": "Skill/Action",
     "description": "Gain +1 accuracy on a particular skill or action due to training or enhancement, this mission only",
     "roll_min": 9,
     "roll_max": 10
@@ -203,6 +228,7 @@
     "id": "reserve_bombardment",
     "type": "Tactical",
     "name": "Bombardment",
+    "label": "Resource",
     "description": "Call in an artillery or orbital bombardment once during mech combat (Full Action, range 30 within line of sight, blast 2, 3d6 explosive damage)",
     "roll_min": 11,
     "roll_max": 12
@@ -211,6 +237,7 @@
     "id": "reserve_extendedharness",
     "type": "Tactical",
     "name": "Extended Harness",
+    "label": "Resource",
     "description": "Carry an extra pilot weapon and two pieces of pilot gear into this mission",
     "roll_min": 13,
     "roll_max": 14
@@ -219,6 +246,7 @@
     "id": "reserve_ambush",
     "type": "Tactical",
     "name": "Ambush",
+    "label": "Location",
     "description": "Choose exactly where your next battle will take place, including the terrain and cover set up, etc",
     "roll_min": 15,
     "roll_max": 16
@@ -227,6 +255,7 @@
     "id": "reserve_orbitaldrop",
     "type": "Tactical",
     "name": "Orbital Drop",
+    "label": "Location",
     "description": "Start the mission dropping from orbit into a heavily fortified or hard to reach location",
     "roll_min": 17,
     "roll_max": 18
@@ -235,6 +264,7 @@
     "id": "reserve_assistant",
     "type": "Tactical",
     "name": "NHP Assistant",
+    "label": "Designation",
     "description": "Gain an NHP, controlled by the GM, that can give you advice on the current situation",
     "roll_min": 19,
     "roll_max": 20
