@@ -428,7 +428,7 @@
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 3,
-    "effect": "To activate this system, choose a clear 4x4 space adjacent to you and take a quick action. At the start of your next turn, this system unfolds into a fortified emplacement that grants hard cover to anyone within the area from all directions, as long as they are fully covered by the area. Characters inside also have resistance to damage from blast, line, and cone attacks that originate from outside the bunker.<br> The bunker is open topped and can be entered and exited at will.If attacked the bunker has evasion 5 and 40 HP.It cannot be moved or deactivated once deployed.",
+    "effect": "To activate this system, choose a clear 4x4 space adjacent to you and take a quick action. At the start of your next turn, this system unfolds into a fortified emplacement that grants hard cover to anyone within the area from all directions, as long as they are fully covered by the area. Characters inside also have resistance to damage from blast, line, and cone attacks that originate from outside the bunker.<br>The bunker is open topped and can be entered and exited at will. If attacked the bunker has evasion 5 and 40 HP. It cannot be moved or deactivated once deployed.",
     "description": "A simple deployable, the \"Portable Bunker\" is actually a series of unfolding single-use printer sheets: flatpack pouches of inert non-newtonian fluid that, when deployed, are triggered into a rigid structure capable of withstanding incredible force.",
     "data_type": "system",
     "aptitude": {
