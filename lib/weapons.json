@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "amrifle",
     "name": "Anti-Material Rifle",
     "mount": "Heavy",
@@ -750,7 +749,7 @@
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 2,
-    "effect": "Targets struck by these missiles must pass a hull save or become impaired until the end of their next turn.",
+    "effect": "A target struck by these missiles must pass a hull save or become impaired until the end of their next turn.",
     "description": "Isolate submunitions typically seeded inside of larger warheads, concussion missiles are pressure-first charges with low shatter and low incandescence -- they are meant to stun, deter, push back, and disorient, usually as part of or in preparation for a larger, more lethal attack.",
     "data_type": "weapon",
     "aptitude": {
@@ -764,10 +763,9 @@
     "mount": "Superheavy",
     "type": "Cannon",
     "damage": [{
-        "override": true,
-        "val": "1d6 Kinetic Damage (4d6+4 if spun up)"
-      }
-    ],
+      "override": true,
+      "val": "1d6 Kinetic Damage (4d6+4 if spun up)"
+    }],
     "range": [{
       "type": "Range",
       "val": 8
@@ -776,7 +774,7 @@
     "license": "DRAKE",
     "license_level": 3,
     "effect": "Unlike other superheavies, this weapon can be fired as part of a skirmish action with its listed profile.<br> As a quick action, you can spin up this weapon’s barrels. While this weapon’s barrels are spinning, your mech is Slowed, but this weapon’s damage increases to 4d6+4 kinetic, it must be fired with a barrage action like a regular superheavy, and it gains Reliable 5 and 2 heat (self). You can stop the spin-up as a free action at the start of your turn.",
-    "description": "The Leviathan AC is a massive rotary autocannon, an enclosed multi-barrel automatic weapon fed by an external reservoir, usually dorsally mounted on the chassis carrying it. At its current chambering, the Leviathan should only be fired on automatic when absolutely necessary; IPS-N is currently working on a solution to meet the cannon’s needs remotely. IPS-N recommends outfitting willing squadmates with extra reservoirs, should their chassis have room to support it.",
+    "description": "The Leviathan AC is a massive rotary autocannon, an enclosed multi-barrel automatic weapon fed by an external reservoir, usually dorsally mounted on the chassis carrying it. At its current chambering, the Leviathan should only be fired within the recommended burst timing (depending on ammunition caliber) to prevent percussive trauma to the chassis’ joints and its pilot.<br>IPS-N is currently working with partner organizations within Harrison Armory’s Think Tank on developing a solution to meet the cannon’s ammunition consumption needs remotely.",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 2
@@ -1599,7 +1597,9 @@
       "type": "Threat",
       "val": 3
     }],
-    "tags": [{"id": "smart"}],
+    "tags": [{
+      "id": "smart"
+    }],
     "source": "HORUS",
     "license": "BALOR",
     "license_level": 3,
@@ -2515,7 +2515,7 @@
     "aptitude": {
       "Melee": 1
     }
-  },{
+  }, {
     "id": "unraveler",
     "name": "Unraveler",
     "mount": "Main",
@@ -2588,22 +2588,23 @@
       "val": "1d6+2"
     }],
     "range": [{
-        "type": "Threat",
-        "val": 1
-      } , {
+      "type": "Threat",
+      "val": 1
+    }, {
       "type": "Range",
       "val": 10
     }],
     "tags": [{
-      "id": "limited",
-      "val": "1d6+2"
-    },
-    {
-      "id": "setmaxuses"
-    },
-    {
-      "id": "overkill"
-    }],
+        "id": "limited",
+        "val": "1d6+2"
+      },
+      {
+        "id": "setmaxuses"
+      },
+      {
+        "id": "overkill"
+      }
+    ],
     "source": "",
     "license": " ",
     "license_level": "",
@@ -2629,15 +2630,16 @@
       "val": 10
     }],
     "tags": [{
-      "id": "limited",
-      "val": "1d6+2"
-    },
-    {
-      "id": "setmaxuses"
-    },
-    {
-      "id": "overkill"
-    }],
+        "id": "limited",
+        "val": "1d6+2"
+      },
+      {
+        "id": "setmaxuses"
+      },
+      {
+        "id": "overkill"
+      }
+    ],
     "source": "",
     "license": " ",
     "license_level": "",
@@ -2663,15 +2665,16 @@
       "val": 10
     }],
     "tags": [{
-      "id": "limited",
-      "val": "2d6"
-    },
-    {
-      "id": "setmaxuses"
-    },
-    {
-      "id": "overkill"
-    }],
+        "id": "limited",
+        "val": "2d6"
+      },
+      {
+        "id": "setmaxuses"
+      },
+      {
+        "id": "overkill"
+      }
+    ],
     "source": "",
     "license": " ",
     "license_level": "",
