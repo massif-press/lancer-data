@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "hardpoints",
     "name": "Auto-Stabilizing Hardpoints",
     "source": "GMS",
@@ -146,7 +145,7 @@
     "id": "heldimage",
     "name": "The Lesson of The Held Image",
     "source": "HORUS",
-    "effect": "Once a round, at the start of any ally’s turn, you can make a Lock On tech attack against any character in your sensor range as a reaction to your ally’s turn starting.",
+    "effect": "Once a round, at the start of any ally’s turn, you can make a Lock On tech action against any character in your sensor range as a reaction to your ally’s turn starting.",
     "description": "Close your eyes.<br>Hold the image of your enemy in your mind. Imagine it in all light and from every angle. In your mind it has become a more perfect version of the thing in pale light.<br>Crush it in your mind and you kill the perfect thing.<br>Open your eyes."
   },
   {
