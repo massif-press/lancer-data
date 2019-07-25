@@ -365,7 +365,7 @@
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 1,
-    "effect": "As a quick action, this heavy over-arm shield can be used to protect an adjacent character from incoming fire, giving them resistance to all damage as long as they stay adjacent to you. However, your mech also takes 50% of the damage your target takes before armor and reduction. The effect breaks immediately if they break adjacency, and you must repeat this action to regain the effect..",
+    "effect": "As a quick action, this heavy over-arm shield can be used to protect an adjacent character from incoming fire, giving them resistance to all damage as long as they stay adjacent to you. However, your mech also takes 50% of the damage your target takes before armor and reduction. The effect breaks immediately if they break adjacency, and you must repeat this action to regain the effect.",
     "description": "The Argonaut is an old-pattern physical shield crafted from layered ablatives and nonferrous anti-kinetic alloys. Popular among line chassis orders and Trunk Security officers, the Argonaut alone is a phalanx; in formation, it is the impenetrable wall.",
     "data_type": "system",
     "aptitude": {
