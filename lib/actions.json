@@ -161,6 +161,22 @@
     "detail": "<p>Undertake some activity that&rsquo;s not covered by other actions but has a clear goal and would take a <strong>skill check</strong>. This is activity involved enough to take a <strong>full action</strong>, and it&rsquo;s parameters and outcomes are up to GM discretion. If it&rsquo;s something that can be done quickly it doesn&rsquo;t take an action at all.</p>"
   },
   {
+    "id": "action_fight",
+    "name": "Fight",
+    "pilot": true,
+    "action_type": "full",
+    "description": "Attack with one weapon as a pilot",
+    "detail": "<p>Make a <strong>melee</strong> or <strong>ranged</strong> attack with one weapon against a target in line of sight and range, rolling 1d20+grit. Ranged attacks suffer +1 difficulty if you’re engaged and take cover into account. </p> <p> Weapons with the sidearm tag can be fired with a quick action instead of a full action. </p>"
+  },
+  {
+    "id": "action_jockey",
+    "name": "Jockey",
+    "pilot": true,
+    "action_type": "full",
+    "description": "Attempt to attack a mech on foot as a pilot",
+    "detail": "<p> It is possible (though very foolhardy) to aggressively attack an enemy mech while on foot. To <strong>jockey</strong> a mech as a pilot, you must be adjacent to it. You must make a contested check with the mech, using GRIT (your GM could allow a trigger instead, like assault, show off, or something similar). The mech contests with hull. If you win the contest, you’re now riding the mech, sharing its space and moving when it moves. The mech you’re riding can shake you off by repeating the contest successfully as a full action, and you can jump off as part of your movement any time. </p> <p> Attempting to jockey takes a full action. The turn you successfully jockey, you can choose one of the below for free, and repeat one each turn after that you continue to jockey as a full action. </p> <p> <strong>Distract:</strong> You inflict the <strong>Impaired</strong> and<strong> Slowed</strong> condition on your target until the end of its next turn. </p> <p> <strong>Shred: </strong> Deal <strong>2</strong> <strong>heat</strong> to your target by ripping at wiring, paneling, etc </p> <p> <strong>Damage:</strong> Deal <strong>4 kinetic damage</strong> to that mech by firing or slashing at joints, hatches, etc </p>"
+  },
+  {
     "id": "action_brace",
     "name": "Brace",
     "action_type": "reaction",
@@ -184,6 +200,7 @@
   {
     "id": "action_bombardment",
     "name": "Reserve: Bombardment",
+    "reserve": true,
     "action_type": "full",
     "description": "Call in an artillery or orbital bombardment.",
     "detail": "<p><strong>Tactical Reserve: Orbital Bombardment</strong><br>Full Action, range 30 within line of sight, blast 2, 3d6 explosive damage.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
@@ -191,6 +208,7 @@
   {
     "id": "action_deployableshield",
     "name": "Reserve: Deployable Shield",
+    "reserve": true,
     "action_type": "free",
     "description": "Deploy a single-use shield generator.",
     "detail": "<p><strong>Mech Reserve: Deployable Shield</strong><br>Free Action, deploy a size 1 generator that grants all allied actors in a burst 2 radius around it soft cover.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
@@ -198,6 +216,7 @@
   {
     "id": "action_redundantrepair",
     "name": "Reserve: Redundant Repair",
+    "reserve": true,
     "action_type": "free",
     "description": "Stabilize as a free action.",
     "detail": "<p><strong>Mech Reserve: Redundant Repair</strong><br>Stabilize as a Free Action.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
@@ -205,6 +224,7 @@
   {
     "id": "action_corebattery",
     "name": "Reserve: CORE Battery",
+    "reserve": true,
     "action_type": "free",
     "description": "Recharge CORE Power.",
     "detail": "<p><strong>Mech Reserve: CORE Battery</strong><br>Consume this to gain CORE power on your mech, allowing it to use its most powerful ability again (you can’t get more than 1 CORE power at a time).</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"

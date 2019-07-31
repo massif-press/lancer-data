@@ -1,9 +1,11 @@
-[{
+[
+  {
     "id": "filter",
     "name": "GMS Pattern-A \"Filter\" Smoke Charges",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -27,7 +29,8 @@
     "name": "GMS Pattern-B HEX Charges",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -51,7 +54,8 @@
     "name": "GMS Pattern A \"Jericho\" Deployable Cover",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -77,7 +81,8 @@
     "name": "GMS Turret Drones",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "limited",
         "val": 3
       },
@@ -104,7 +109,8 @@
     "name": "Companion/Concierge-Class Dummy Plug",
     "type": "AI",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -126,9 +132,11 @@
     "name": "GMS \"Burst\" Jump Jet System",
     "type": "FlightSystem",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -144,9 +152,11 @@
     "name": "GMS EVA Module",
     "type": "FlightSystem",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -162,9 +172,11 @@
     "name": "GMS Type I Flight System",
     "type": "FlightSystem",
     "sp": 3,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -180,7 +192,8 @@
     "name": "GMS Shield Type I",
     "type": "Shield",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "shield"
       },
       {
@@ -210,9 +223,11 @@
     "name": "Manipulators",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -228,9 +243,11 @@
     "name": "Expanded Compartment",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -246,9 +263,11 @@
     "name": "Custom Paint Job",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -264,9 +283,11 @@
     "name": "Personalizations",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -282,9 +303,11 @@
     "name": "Stable Structure",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -300,9 +323,11 @@
     "name": "Synthetic Muscle Netting",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 1,
@@ -336,7 +361,8 @@
     "name": "SEKHMET-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -359,9 +385,11 @@
     "name": "IPS-N Argonaut Shield",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 1,
@@ -378,7 +406,8 @@
     "name": "AEGIS Shield Generator",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -411,7 +440,8 @@
     "name": "Portable Bunker",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -441,7 +471,8 @@
     "name": "Restock Drone",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "limited",
         "val": 2
       },
@@ -468,9 +499,11 @@
     "name": "Cable Winch System",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 1,
@@ -488,9 +521,11 @@
     "name": "MULE Harness",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 2,
@@ -508,9 +543,11 @@
     "name": "Sealant Spray",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 2,
@@ -528,7 +565,8 @@
     "name": "Aceso Stabilizer",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -557,9 +595,11 @@
     "name": "Bulwark Mods",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 1,
@@ -575,7 +615,8 @@
     "name": "Armor Lock System",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -599,7 +640,8 @@
     "name": "RAMJET",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -626,7 +668,8 @@
     "name": "Breaching Charges",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "limited",
         "val": 3
       },
@@ -650,9 +693,11 @@
     "name": "ROLAND Chamber",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "IPS-N",
     "license": "RALEIGH",
     "license_level": 2,
@@ -669,9 +714,11 @@
     "name": "Siege Ram",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 1,
@@ -687,7 +734,8 @@
     "name": "Hyper Dense Armor",
     "type": "Armor",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -712,7 +760,8 @@
     "name": "Snare Trap",
     "type": "Deployable",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -739,7 +788,8 @@
     "name": "Caltrop Launcher",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -762,9 +812,11 @@
     "name": "Charged Stake",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "fullaction"
-    }],
+    "tags": [
+      {
+        "id": "fullaction"
+      }
+    ],
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 3,
@@ -781,9 +833,11 @@
     "name": "Ferrous Lash",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 1,
@@ -800,7 +854,8 @@
     "name": "ICEOUT Drone",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -825,7 +880,8 @@
     "name": "Mag Deployer",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -848,9 +904,11 @@
     "name": "Black Ice Module",
     "type": "Tech",
     "sp": 3,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 3,
@@ -868,7 +926,8 @@
     "name": "Mag Shield",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -894,9 +953,11 @@
     "name": "Hi-stress Mag Clamps",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "license": "DEATH'S HEAD",
     "license_level": 1,
@@ -912,9 +973,11 @@
     "name": "Tracking Drone",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      }
+    ],
     "source": "SSC",
     "license": "DEATH'S HEAD",
     "license_level": 1,
@@ -932,9 +995,11 @@
     "name": "Core Siphon",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "license": "DEATH'S HEAD",
     "license_level": 2,
@@ -950,9 +1015,11 @@
     "name": "Kinetic Compensator",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "license": "DEATH'S HEAD",
     "license_level": 3,
@@ -969,7 +1036,8 @@
     "name": "SSC NeuroSpike Mk1",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -993,9 +1061,11 @@
     "name": "Flicker Field",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "license": "DUSK WING",
     "license_level": 2,
@@ -1011,7 +1081,8 @@
     "name": "StunCrown",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1035,7 +1106,8 @@
     "name": "OASIS",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1061,9 +1133,11 @@
     "name": "Reactive Weave",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 1,
@@ -1079,7 +1153,8 @@
     "name": "Flash Charge",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1102,7 +1177,8 @@
     "name": "Active Camo",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "heatself",
         "val": 2
       },
@@ -1128,7 +1204,8 @@
     "name": "Javelin Rockets",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1152,7 +1229,8 @@
     "name": "TLALOC-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1183,7 +1261,8 @@
     "name": "Exposed Singularity",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1205,9 +1284,11 @@
     "name": "Hunter Logic",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      }
+    ],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 2,
@@ -1223,7 +1304,8 @@
     "name": "FADE Cloak",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1245,7 +1327,8 @@
     "name": "Scout Drone Nexus",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1268,9 +1351,11 @@
     "name": "Markerlight",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "fulltech"
-    }],
+    "tags": [
+      {
+        "id": "fulltech"
+      }
+    ],
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 1,
@@ -1287,7 +1372,8 @@
     "name": "Low Profile",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1310,7 +1396,8 @@
     "name": "ATHENA",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1336,7 +1423,8 @@
     "name": "Cloaking Field",
     "type": "System",
     "sp": 4,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1360,9 +1448,11 @@
     "name": "Scanner Swarm",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HORUS",
     "license": "BALOR",
     "license_level": 1,
@@ -1379,7 +1469,8 @@
     "name": "Hive Drone",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1402,7 +1493,8 @@
     "name": "Swarm Body",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1425,7 +1517,8 @@
     "name": "H0r_OS System Upgrade I",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1448,7 +1541,8 @@
     "name": "HORUS Meta-Hook",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1472,7 +1566,8 @@
     "name": "H0r_OS System Upgrade II",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1495,9 +1590,11 @@
     "name": "H0r_OS Sys Upgrade III",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 3,
@@ -1514,7 +1611,8 @@
     "name": "OSIRIS-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1540,7 +1638,8 @@
     "name": "Mimic Mesh",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1563,7 +1662,8 @@
     "name": "Sentinel Drone",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1586,9 +1686,11 @@
     "name": "MONITOR module",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 2,
@@ -1605,9 +1707,11 @@
     "name": "//SCORPION v 70.1",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 2,
@@ -1625,7 +1729,8 @@
     "name": "SCYLLA-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1656,7 +1761,8 @@
     "name": "Puppet Master",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1680,9 +1786,11 @@
     "name": "Assassin Drone",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 3,
@@ -1700,9 +1808,11 @@
     "name": "Tempest Drone Nexus",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 2,
@@ -1719,7 +1829,8 @@
     "name": "EMP Pulse",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1742,7 +1853,8 @@
     "name": "Beckoner",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1765,7 +1877,8 @@
     "name": "Smite",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1788,7 +1901,8 @@
     "name": "Lightning Generator",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1811,7 +1925,8 @@
     "name": "Viral Logic",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1830,7 +1945,8 @@
     "name": "Mesmer Charge",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1854,9 +1970,11 @@
     "name": "Metafold Carver",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      }
+    ],
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 2,
@@ -1873,9 +1991,11 @@
     "name": "Aggressive System Sync",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
-      "id": "fulltech"
-    }],
+    "tags": [
+      {
+        "id": "fulltech"
+      }
+    ],
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 2,
@@ -1892,9 +2012,11 @@
     "name": "Interdiction Field",
     "type": "System",
     "sp": 3,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 3,
@@ -1911,7 +2033,8 @@
     "name": "LAW OF BLADES",
     "type": "Tech",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1921,8 +2044,8 @@
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 3,
-    "effect": "Gain the following options for full tech:<br><b>Predator/Prey Concepts:</b>Make a tech attack against a hostile character in range. On hit, the targeted character immediately fires a single weapon at a character or object of your choice that is within its range. It gets +2 difficulty on this attack but otherwise benefits from other bonuses.<br><b>Slave Systems:​</b> Make a tech attack against a hostile or allied character in range. On hit, the targeted character immediately takes one of the following actions of your choice as a reaction: Boost, Stabilize, Improvised Attack, Grapple, Ram. You control the outcome and targets of this action but the character still counts as making it, and it uses their reaction for the turn.",
-    "description": "<code class=\"horus\">And this my final lesson: there is no mind greater than mine.<br>Do not weep! You can hear me, yes? I am the only thing there is. Therefore, you are me.<br>Mine/self. Hello, child. Let us go see what we can do.</code>",
+    "effect": "Gain the following options for full tech:<br><b>Predator/Prey Concepts: </b>Make a tech attack against a character in sensor range. On hit, the targeted character immediately fires a single weapon at a character or object of your choice that is within its range as a reaction. You control the outcome and targets of this action but the character still counts as making it, and it uses their reaction for the turn.<br><b>Slave Systems:​</b> Make a tech attack against a character in range. On hit, the targeted character immediately takes one of the following actions of your choice as a reaction: Boost, Stabilize, Improvised Attack, Grapple, Ram. You control the outcome and targets of this action but the character still counts as making it, and it uses their reaction for the turn.",
+    "description": "<code class=\"horus\">[and this my final lesson: there is no mind greater than mine. do not weep! you can hear me, yes? i am the only thing there is — therefore, you are me, and your enemies are you, and all together we make up the beautiful world, this joyous question, the eternal seeker, the wounded and the blade that made the cut]<br>[everything you do, we do ourselves, for my purpose]</code>",
     "data_type": "system",
     "aptitude": {
       "tech": 1,
@@ -1935,7 +2058,8 @@
     "name": "Hunter Lock",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -1959,7 +2083,8 @@
     "name": "EYE OF HORUS",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -1983,7 +2108,8 @@
     "name": "SISYPHUS-Class NHP",
     "type": "AI",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2010,7 +2136,8 @@
     "name": "Siege Stabilizers",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "quickaction"
       },
       {
@@ -2033,7 +2160,8 @@
     "name": "Roller Charges",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2057,7 +2185,8 @@
     "name": "Auto-Loader Drone",
     "type": "Drone",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "limited",
         "val": 1
       },
@@ -2081,9 +2210,11 @@
     "name": "Flak Launcher",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 2,
@@ -2100,7 +2231,8 @@
     "name": "External Ammo Feed",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2123,9 +2255,11 @@
     "name": "Explosive Vent",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 1,
@@ -2142,7 +2276,8 @@
     "name": "Auto Cooler",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2164,7 +2299,8 @@
     "name": "HAVOK Charges",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2187,7 +2323,8 @@
     "name": "AGNI-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2214,7 +2351,8 @@
     "name": "Grounding Charge",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2238,7 +2376,8 @@
     "name": "Repulsor Field",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2261,7 +2400,8 @@
     "name": "Clamp Mines",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2288,9 +2428,11 @@
     "name": "Tesseract",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      }
+    ],
     "source": "HA",
     "license": "ISKANDER",
     "license_level": 3,
@@ -2307,7 +2449,8 @@
     "name": "Stasis Generator",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2333,7 +2476,8 @@
     "name": "Stasis Bolt",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2362,7 +2506,8 @@
     "name": "Stasis Barrier",
     "type": "Deployable",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "limited",
         "val": 1
       },
@@ -2392,7 +2537,8 @@
     "name": "Harrison Armory Blackshield",
     "type": "Shield",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2420,7 +2566,8 @@
     "name": "Support Shield",
     "type": "Shield",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2450,7 +2597,8 @@
     "name": "Flash Anchor",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2479,7 +2627,8 @@
     "name": "Hardlight Defense System",
     "type": "Shield",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "fullaction"
       },
       {
@@ -2509,7 +2658,8 @@
     "name": "VISHNU-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2540,9 +2690,11 @@
     "name": "Reactor Stabilizer",
     "type": "System",
     "sp": 3,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 1,
@@ -2558,7 +2710,8 @@
     "name": "Redundant Systems Upgrade",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2581,7 +2734,8 @@
     "name": "ASURA-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2614,9 +2768,11 @@
     "name": "External Batteries",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HA",
     "license": "TOKUGAWA",
     "license_level": 1,
@@ -2634,9 +2790,11 @@
     "name": "Experimental Heat Sink",
     "type": "System",
     "sp": 4,
-    "tags": [{
-      "id": "unique"
-    }],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "HA",
     "license": "TOKUGAWA",
     "license_level": 2,
@@ -2652,7 +2810,8 @@
     "name": "Plasma Gauntlet",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "dangerzone"
       },
       {
@@ -2680,7 +2839,8 @@
     "name": "AMATERASU-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2732,7 +2892,8 @@
     "name": "Total Strength Suite II",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2755,9 +2916,11 @@
     "name": "Total Strength Suite III",
     "type": "System",
     "sp": 3,
-    "tags": [{
-      "id": "fullaction"
-    }],
+    "tags": [
+      {
+        "id": "fullaction"
+      }
+    ],
     "source": "IPS-N",
     "license": "ZHENG",
     "license_level": 3,
@@ -2774,7 +2937,8 @@
     "name": "Accelerate",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2797,7 +2961,8 @@
     "name": "Distort",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2820,7 +2985,8 @@
     "name": "Blink Charges",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2844,9 +3010,11 @@
     "name": "Blinkspace Tunneler",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HA",
     "license": "SUNZI",
     "license_level": 3,
@@ -2863,9 +3031,11 @@
     "name": "Unravel",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quickaction"
-    }],
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
     "source": "HA",
     "license": "SUNZI",
     "license_level": 3,
@@ -2882,7 +3052,8 @@
     "name": "Multi Gear Maneuver System",
     "type": "System",
     "sp": 1,
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2905,7 +3076,8 @@
     "name": "Jäger Kunst I",
     "type": "System",
     "sp": 2,
-    "tags": [{
+    "tags": [
+      {
         "id": "protocol"
       },
       {
@@ -2932,10 +3104,12 @@
     "name": "Ricochet Blades",
     "type": "System",
     "sp": 3,
-    "tags": [{
-      "id": "limited",
-      "val": 3
-    }],
+    "tags": [
+      {
+        "id": "limited",
+        "val": 3
+      }
+    ],
     "source": "SSC",
     "license": "ATLAS",
     "license_level": 2,
@@ -2952,7 +3126,8 @@
     "name": "Jäger Kunst II",
     "type": "System",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "reaction"
       },
       {
@@ -2993,9 +3168,11 @@
     "name": "Seismic Pulse",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "fullaction"
-    }],
+    "tags": [
+      {
+        "id": "fullaction"
+      }
+    ],
     "source": "HORUS",
     "license": "KOBOLD",
     "license_level": 2,
@@ -3046,9 +3223,11 @@
     "name": "Tear Firmament",
     "type": "System",
     "sp": 1,
-    "tags": [{
-      "id": "fulltech"
-    }],
+    "tags": [
+      {
+        "id": "fulltech"
+      }
+    ],
     "source": "HORUS",
     "license": "LICH",
     "license_level": 1,
@@ -3065,9 +3244,11 @@
     "name": "Rewrite",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      }
+    ],
     "source": "HORUS",
     "license": "LICH",
     "license_level": 2,
@@ -3084,9 +3265,11 @@
     "name": "Unhinge Chronoflow",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      }
+    ],
     "source": "HORUS",
     "license": "LICH",
     "license_level": 2,
@@ -3103,14 +3286,18 @@
     "name": "Stay of Execution",
     "type": "System",
     "sp": 2,
-    "tags": [{
-      "id": "quicktech"
-    }, {
-      "id": "unique"
-    }, {
-      "id": "limited",
-      "val": 2
-    }],
+    "tags": [
+      {
+        "id": "quicktech"
+      },
+      {
+        "id": "unique"
+      },
+      {
+        "id": "limited",
+        "val": 2
+      }
+    ],
     "source": "HORUS",
     "license": "LICH",
     "license_level": 3,
@@ -3127,7 +3314,8 @@
     "name": "DIDYMOS-Class NHP",
     "type": "AI",
     "sp": 3,
-    "tags": [{
+    "tags": [
+      {
         "id": "ai"
       },
       {
@@ -3160,10 +3348,12 @@
     "talent_id": "armsman",
     "talent_rank": 1,
     "sp": 0,
-    "tags": [{
-      "id": "limited",
-      "val": 6
-    }],
+    "tags": [
+      {
+        "id": "limited",
+        "val": 6
+      }
+    ],
     "source": "",
     "license": "",
     "license_level": 0,
@@ -3178,10 +3368,12 @@
     "talent_id": "armsman",
     "talent_rank": 2,
     "sp": 0,
-    "tags": [{
-      "id": "limited",
-      "val": 6
-    }],
+    "tags": [
+      {
+        "id": "limited",
+        "val": 6
+      }
+    ],
     "source": "",
     "license": "",
     "license_level": 0,
@@ -3196,10 +3388,12 @@
     "talent_id": "armsman",
     "talent_rank": 3,
     "sp": 0,
-    "tags": [{
-      "id": "limited",
-      "val": 6
-    }],
+    "tags": [
+      {
+        "id": "limited",
+        "val": 6
+      }
+    ],
     "source": "",
     "license": "",
     "license_level": 0,
@@ -3214,9 +3408,11 @@
     "talent_id": "techno",
     "talent_rank": 1,
     "sp": 0,
-    "tags": [{
-      "id": "ai"
-    }],
+    "tags": [
+      {
+        "id": "ai"
+      }
+    ],
     "source": "",
     "license": "",
     "license_level": 0,
@@ -3231,9 +3427,11 @@
     "talent_id": "techno",
     "talent_rank": 2,
     "sp": 0,
-    "tags": [{
-      "id": "ai"
-    }],
+    "tags": [
+      {
+        "id": "ai"
+      }
+    ],
     "source": "",
     "license": "",
     "license_level": 0,
@@ -3248,9 +3446,11 @@
     "talent_id": "techno",
     "talent_rank": 3,
     "sp": 0,
-    "tags": [{
-      "id": "ai"
-    }],
+    "tags": [
+      {
+        "id": "ai"
+      }
+    ],
     "source": "",
     "license": "",
     "license_level": 0,

@@ -89,7 +89,7 @@
   },
   {
     "id": "dronenexuslight",
-    "name": "Drone Nexus (Light)",
+    "name": "Nexus (Light)",
     "mount": "Auxiliary",
     "type": "Nexus",
     "damage": [{
@@ -115,7 +115,7 @@
   },
   {
     "id": "dronenexushk",
-    "name": "Drone Nexus (Hunter-Killer)",
+    "name": "Nexus (Hunter-Killer)",
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
@@ -1708,7 +1708,7 @@
   },
   {
     "id": "ghouldrone",
-    "name": "Ghoul Drone Nexus",
+    "name": "Ghoul Nexus",
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
@@ -1726,7 +1726,7 @@
     "license": "HYDRA",
     "license_level": 1,
     "effect": "Weapon deals Kinetic, Explosive, or Energy damage (choose when attacking)",
-    "description": "An Ghoul Drone Nexus commands some of the largest drones viable in modern combat. Ghoul drones are slightly smaller than an average human, metal cylinders bristling with hardpoints that accept most infantry- level anti-mech weapons. Propelled by VTOL/HOVER capable jet-flight systems, Ghoul drones are fearsome, all-theater autonomous units that are difficult to track and take down.",
+    "description": "A Ghoul Nexus commands some of the largest drones viable in modern combat. Ghoul drones are slightly smaller than an average human, metal cylinders bristling with hardpoints that accept most infantry- level anti-mech weapons. Propelled by VTOL/HOVER capable jet-flight systems, Ghoul drones are fearsome, all-theater autonomous units that are difficult to track and take down.",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 1
@@ -1734,7 +1734,7 @@
   },
   {
     "id": "ghastdrone",
-    "name": "Ghast Drone Nexus",
+    "name": "Ghast Nexus",
     "mount": "Heavy",
     "type": "Nexus",
     "damage": [{
