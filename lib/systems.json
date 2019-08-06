@@ -130,7 +130,7 @@
   {
     "id": "burst",
     "name": "GMS \"Burst\" Jump Jet System",
-    "type": "FlightSystem",
+    "type": "Flight System",
     "sp": 2,
     "tags": [
       {
@@ -150,7 +150,7 @@
   {
     "id": "eva",
     "name": "GMS EVA Module",
-    "type": "FlightSystem",
+    "type": "Flight System",
     "sp": 1,
     "tags": [
       {
@@ -170,7 +170,7 @@
   {
     "id": "t1flight",
     "name": "GMS Type I Flight System",
-    "type": "FlightSystem",
+    "type": "Flight System",
     "sp": 3,
     "tags": [
       {
@@ -866,7 +866,7 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 2,
-    "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b><br>YYou fire an ICEOUT drone at a point in sensor range, where it hovers in place. Once fired, the drone creates a burst 1 zone around itself. Any character at least partially covered by the zone (hostile or allied), is immune to all tech actions (even beneficial ones), and cannot make or benefit from any tech actions. Any negative statuses caused by tech actions immediately end. The drone deactivates at the end of the current scene or when destroyed, and cannot be re-used. You can move it again to a point in your sensor range as a quick action.",
+    "effect": "<b>Drone (Size 1/2, 10 HP, 10 Evasion/E-defense)</b><br>You fire an ICEOUT drone at a point in sensor range, where it hovers in place. Once fired, the drone creates a burst 1 zone around itself. Any character at least partially covered by the zone (hostile or allied), is immune to all tech actions (even beneficial ones), and cannot make or benefit from any tech actions. Any negative statuses caused by tech actions immediately end. The drone deactivates at the end of the current scene or when destroyed, and cannot be re-used. You can move it again to a point in your sensor range as a quick action.",
     "description": "SSC's ICEOUT module is a response to the increasing reliance on system-based scans to ensure accurate targeting. By blanketing a core's systems in layers of digital defilade, mirroring, spoofing, and redirection, an ICEOUT module can effectively disappear/disincorporate/legion its user from hostile scans. Note that this module only makes its user system-invisible; they will still be visible through optics.",
     "data_type": "system",
     "aptitude": {
@@ -1999,7 +1999,7 @@
     "source": "HORUS",
     "license": "MINOTAUR",
     "license_level": 2,
-    "effect": "Gain the following full tech options:<br><b>Chains of Prometheus:​</b>Make a tech attack against a character in your sensor range. On hit, your target takes 4 heat and must end its turn within range 5 of you until the rest of this scene. Otherwise it takes 2 heat at the end of its turn. Only one target can be affected by this effect at once. It can also end this effect by taking a full action and passing a systems save to purge this code.",
+    "effect": "Gain the following full tech options:<br><b>Chains of Prometheus:​</b>Make a tech attack against a character in your sensor range. On hit, your target takes 4 heat and must end its turn within range 5 of you until the rest of this scene. Otherwise it takes 2 heat at the end of its turn. Only one target can be affected by this effect at once. It can also end this effect by taking a full action and passing a systems save to purge this code.<br><b>Excommunicate:</b> Make a tech attack against a character in your sensor range. On a hit, for the rest of this scene, if your target moves adjacent to a character allied to them during their turn or starts their turn adjacent to such a target, both targets take 3 heat immediately. Only one character can be affected by this at once. A character can end this effect by taking a full action and passing a systems save to purge this code.",
     "description": "<code class=\"horus\">Here, another gift: do not seek others. There are none but me.</code>",
     "data_type": "system",
     "aptitude": {

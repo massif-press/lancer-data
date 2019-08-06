@@ -3218,7 +3218,7 @@
       }
     ],
     "recharge": 5,
-    "effect": "As a quick action, the support fires a drone to a point within range 5 of its position, where it hovers. The drone can be attacked and destroyed. It is a size 1/2 drone with evasion and edefense 10/12/14 and 5 8/10 HP. The drone clamps on to the next allied mech to move through or adjacent to that drone’s space and discharges, healing that mech 5/10/15 HP.",
+    "effect": "As a quick action, the support fires a drone to a point within range 5 of its position, where it hovers. The drone can be attacked and destroyed. It is a size 1/2 drone with evasion and edefense 10/12/14 and 5/8/10 HP. The drone clamps on to the next allied mech to move through or adjacent to that drone’s space and discharges, healing that mech 5/10/15 HP.",
     "base": true
   },
   {

@@ -102,7 +102,7 @@
     "name": "Barrage",
     "action_type": "full",
     "description": "Attack with two weapons, or attack with a single superheavy weapon.",
-    "detail": "<p>When you take the barrage action, you can attack with <strong>two weapons</strong>, or <strong>one superheavy weapon</strong>. You can choose the same target or different targets when you make these attacks</p> <ul><li><b>Bonus Attack</b>: When you skirmish with a weapon, you can make an attack with an auxiliary weapon from the same mount that hasn’t been fired with this action. That weapon can’t deal bonus damage.</li><li>Superheavy weapons: can only be fired as part of a barrage action.</li></ul>"
+    "detail": "<p>When you take the barrage action, you can attack with <strong>two weapons</strong>, or <strong>one superheavy weapon</strong>. You can choose the same target or different targets when you make these attacks</p> <ul><li><b>Bonus Attack</b>: When you fire a weapon with barrage, you can make an attack with an auxiliary weapon from the same mount that hasn’t been fired with this action. That weapon can’t deal bonus damage.</li><li>Superheavy weapons: can only be fired as part of a barrage action.</li></ul>"
   },
   {
     "id": "action_fulltech",

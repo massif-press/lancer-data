@@ -1063,7 +1063,7 @@
     "name": "scout",
     "role": "support",
     "info": {
-      "flavor": "Scout doctrine calls for the active, close, and aggressive application of orbital, atmospheric, and terrestrial fire support on identified and potential enemy positions. Equipped with more-thancursory targeting systems, Scout doctrine pilots adopt an tactical/artillery commander role, operating on the ground with infantry, chassis, and other vehicles to build a map of the battlescape in order to more accurately place small arms fire, bombs, shells, missiles, beams, and kinetic kill clouds. They are not usually a threat in face-to-face combat, but the threat they represent to a combat cannot be underestimated.",
+      "flavor": "Scout doctrine calls for the active, close, and aggressive application of orbital, atmospheric, and terrestrial fire support on identified and potential enemy positions. Equipped with more-than-cursory targeting systems, Scout doctrine pilots adopt an tactical/artillery commander role, operating on the ground with infantry, chassis, and other vehicles to build a map of the battlescape in order to more accurately place small arms fire, bombs, shells, missiles, beams, and kinetic kill clouds. They are not usually a threat in face-to-face combat, but the threat they represent to a combat cannot be underestimated.",
       "tactics": "The Scout is a support that can multiply allied damage output. It does no damage by itself, but with prodigious use of its Marker Rifle and Cloaking Field, it can keep allies alive and prevent enemies from hiding. It is especially adept at dealing with Invisibility, but needs to stay close to take full advantage of this. Like many other supports, the scout is not particularly resilient on its own."
     },
     "stats": [
@@ -1582,7 +1582,7 @@
         "systems": -1,
         "engineering": -1,
         "armor": 0,
-        "speed": 10,
+        "speed": 6,
         "sensor": 10,
         "save": 15
       }
