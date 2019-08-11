@@ -3391,5 +3391,291 @@
     },
     "effect": "On hit, until the end of the Witch’s next turn, when the target gains heat, all its allies in range 5 of that target also gain the same amount of heat.",
     "base": false
+  },
+  {
+    "name": "Unique Structure Chart",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "If the monstrosity has structure (such as an Elite or Ultra), it uses the monstrosity structure chart instead of the regular one for mechs.",
+    "base": true
+  },
+  {
+    "name": "Biological",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The monstrosity has the biological tag (it's immune to tech actions and system attacks other than lock on or scan, it takes all heat as energy damage).",
+    "base": true
+  },
+  {
+    "name": "Claws",
+    "class": "monstrosity",
+    "type": "weapon",
+    "weapon_type": ["Main", "Melee"],
+    "weapon_roll": {
+      "flat": {
+        "val": 2,
+        "pertier": true
+      },
+      "accdiff": {
+        "val": 1,
+        "pertier": false
+      }
+    },
+    "weapon_range": [
+      {
+        "type": "threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "val": [6, 8, 12],
+        "type": "kinetic"
+      }
+    ],
+    "base": true
+  },
+  {
+    "name": "Acid Spittle",
+    "class": "monstrosity",
+    "type": "weapon",
+    "weapon_type": ["Main", "Range"],
+    "weapon_roll": {
+      "flat": {
+        "val": 1,
+        "pertier": true
+      }
+    },
+    "weapon_range": [
+      {
+        "type": "range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "val": [3, 4, 5],
+        "type": "energy"
+      }
+    ],
+    "effect": "A character struck by this attack is Shredded until the end of its next turn.",
+    "base": false
+  },
+  {
+    "name": "Adhesive Extrusion",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The first target damaged by the monstrosity on a turn must pass an engineering check or become Slowed until it heals any amount of hit points or until the end of the current scene.",
+    "base": false
+  },
+  {
+    "name": "Burrower",
+    "class": "monstrosity",
+    "type": "trait",
+    "action": "quick",
+    "effect": "The monstrosity can burrow into the ground as a quick action, as long as the ground beneath it is malleable enough. While burrowed, it counts as invisible, ignores all obstructions and can freely pass through all characters above ground, can take no other actions than to move, boost, or emerge as a quick action. When it emerges, it must have a free space to emerge into. It loses these benefits and all adjacent mechs must pass a hull save or be knocked prone.",
+    "base": false
+  },
+  {
+    "name": "Rampage",
+    "class": "monstrosity",
+    "type": "trait",
+    "action": "quick",
+    "recharge": 5,
+    "effect": "As a quick action, the monstrosity moves in a straight line as far as possible up to its speed, ignoring engagement, not provoking reactions, and passing freely through all character’s spaces. Any characters it passes adjacent to or over must pass an agility save or take 4/6/8 kinetic damage.",
+    "base": false
+  },
+  {
+    "name": "Corrosive Bite",
+    "class": "monstrosity",
+    "type": "trait",
+    "action": "full",
+    "recharge": 5,
+    "effect": "An adjacent character must pass a hull save. On a failed save, the target takes 4/5/6 Burn. In addition, regardless of whether it succeeds this save, it is Shredded until it regains any amount of HP.",
+    "base": false
+  },
+  {
+    "name": "Grasping Claws",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The monstrosity gets +1 Accuracy to grapple attacks, +1 Accuracy to attack targets it is grappling, and can boost and take reactions while grappling.",
+    "base": false
+  },
+  {
+    "name": "Natural Camouflage",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The Monstrosity is invisible while adjacent to any terrain or piece of cover. If it gains soft cover, it instead counts as having hard cover.",
+    "base": false
+  },
+  {
+    "name": "Regenerator",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The monstrosity heals 1/4 of its HP, rounded up, at the end of its turn. This trait does not function if the monstrosity took energy damage at any point during the round.",
+    "base": false
+  },
+  {
+    "name": "Spined",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "When the monstrosity takes damage from a melee weapon, it deals 1/2/3 AP kinetic damage to its attacker after the damage resolves.",
+    "base": false
+  },
+  {
+    "name": "Swift",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "1/round the monstrosity can make a boost action as a free action on its turn.",
+    "base": false
+  },
+  {
+    "name": "Tempered Hide",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The monstrosity has resistance to two of the following damage types: kinetic, energy, explosive damage. It loses this resistance if it is reduced to 1/2 HP or less.",
+    "base": false
+  },
+  {
+    "name": "Winged",
+    "class": "monstrosity",
+    "type": "trait",
+    "effect": "The monstrosity can fly when it moves or boosts. It doesn’t have to land.",
+    "base": false
+  },
+  {
+    "name": "Biological",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "The squad has the biological tag (it's immune to tech actions and system attacks other than lock on or scan, it takes all heat as energy damage).",
+    "base": true
+  },
+  {
+    "name": "Weak",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "Squads cannot have more than 1 structure or heat capacity. By default, they have the biological tag, so they are immune to tech actions and take energy damage when they take heat.",
+    "base": true
+  },
+  {
+    "name": "Split HP",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "Squads have a large number of members operating together. Once a certain amount of damage is done to the squad, one of the members is destroyed (indicated in the profile). Once a squad is under half HP, it loses some of its attacks to represent this.",
+    "base": true
+  },
+  {
+    "name": "Strength in Numbers",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "Squads have resistance to all damage that is not from line, blast, or cone attacks. They are immune to grapple or ram, cannot grapple or ram, and are immune to the knock back tag and the stunned condition.",
+    "base": true
+  },
+  {
+    "name": "Spread Out",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "The members of a squad all occupy the squad’s space. You don’t have to track the location of every member in the squad, they are assumed to be located roughly in the area, and use the squad’s area for purposes of targeting. Characters can end their turns in the same space as the squad and freely move through it, and the squad can end with part of its space overlapping obstacles, cover, or other characters, as long as there is at least 2 spaces free.",
+    "base": true
+  },
+  {
+    "name": "Small",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "Members of a squad can go prone, duck behind objects, etc to take cover, but mech-scale weapons are powerful enough that they don’t get the same benefit from hard cover. The squad always has soft cover, even in the open, but can’t benefit from hard cover.",
+    "base": true
+  },
+  {
+    "name": "Primary squad weapon",
+    "class": "infantry squad",
+    "type": "weapon",
+    "weapon_type": ["Main", "Rifle"],
+    "weapon_roll": {
+      "flat": {
+        "val": 2,
+        "pertier": true
+      }
+    },
+    "weapon_range": [
+      {
+        "type": "range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "val": [3, 4, 5],
+        "type": ["kinetic", "explosive", "energy"]
+      }
+    ],
+    "effect": "This weapon can be fired three times when the squad attacks. If the squad is under 1⁄2 HP, it can only be fired once.",
+    "base": true
+  },
+  {
+    "name": "Anti-mech squad weapon",
+    "class": "infantry squad",
+    "type": "weapon",
+    "weapon_type": ["Heavy", "Cannon"],
+    "tags": [
+      {
+        "id": "ap"
+      }
+    ],
+    "weapon_roll": {
+      "flat": {
+        "val": 1,
+        "pertier": true
+      }
+    },
+    "weapon_range": [
+      {
+        "type": "range",
+        "val": 20
+      }
+    ],
+    "damage": [
+      {
+        "val": [4, 5, 6],
+        "type": "explosive"
+      }
+    ],
+    "effect": "This weapon can be fired three times when the squad attacks. If the squad is under 1⁄2 HP, it can only be fired once.",
+    "base": true
+  },
+  {
+    "name": "Armored",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "The squad gains +1 armor.",
+    "base": false
+  },
+  {
+    "name": "Ambushers",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "The squad gains +2 Accuracy on all attacks and rolls on the first round of combat only, and gains +2 Accuracy to avoid being discovered while hiding.",
+    "base": false
+  },
+  {
+    "name": "Go to Ground",
+    "class": "infantry squad",
+    "type": "trait",
+    "action": "reaction",
+    "effect": "Once per round as a reaction, the squad gains resistance to all the damage from an incoming attack, but is immobilized until the end of its next turn. They must decide before the damage is rolled.",
+    "base": false
+  },
+  {
+    "name": "Rapid Insertion",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "The squad can fly when it moves or boosts.",
+    "base": false
+  },
+  {
+    "name": "Disciplined",
+    "class": "infantry squad",
+    "type": "trait",
+    "effect": "The squad doesn’t lose attacks for being under 1/2 HP.",
+    "base": false
   }
 ]
