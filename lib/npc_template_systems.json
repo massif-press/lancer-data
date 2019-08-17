@@ -436,12 +436,12 @@
     "name": "Regenerator",
     "class": "exotic",
     "type": "trait",
-    "effect": "The NPC heals 2/3/4 HP at the end of its turn. This trait does not function if the NPC took energy damage at any point during the round.",
+    "effect": "The NPC heals 1/4 of its HP at the end of its turn. This trait does not function if the NPC took energy damage at any point during the round.",
     "base": false
   },
   {
     "name": "Bounty Hunter",
-    "class": "exotic",
+    "class": "mercenary",
     "type": "trait",
     "effect": "Before combat, choose a player character that there’s a bounty out for. The mercenary gains +1 Accuracy on all attacks, checks, and saves against that character and their mech.",
     "base": false
@@ -626,7 +626,12 @@
     "class": "spacer",
     "type": "weapon",
     "weapon_type": ["Main", "Rifle"],
-    "tags": "Knockback 3",
+    "tags": [
+      {
+        "id": "knockback",
+        "val": 3
+      }
+    ],
     "weapon_roll": {
       "flat": {
         "val": 1,
