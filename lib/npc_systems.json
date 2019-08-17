@@ -3605,10 +3605,10 @@
     "damage": [
       {
         "val": [3, 4, 5],
-        "type": ["kinetic", "explosive", "energy"]
+        "type": "kinetic"
       }
     ],
-    "effect": "This weapon can be fired three times when the squad attacks. If the squad is under 1⁄2 HP, it can only be fired once.",
+    "effect": "This weapon deals either kinetic, energy, or explosive damage (choose on creation). This weapon can be fired three times when the squad attacks. If the squad is under 1⁄2 HP, it can only be fired once.",
     "base": true
   },
   {
@@ -3639,7 +3639,7 @@
         "type": "explosive"
       }
     ],
-    "effect": "This weapon can be fired three times when the squad attacks. If the squad is under 1⁄2 HP, it can only be fired once.",
+    "effect": "This weapon deals either kinetic, energy, or explosive damage (choose on creation). This weapon can be fired three times when the squad attacks. If the squad is under 1⁄2 HP, it can only be fired once.",
     "base": true
   },
   {
