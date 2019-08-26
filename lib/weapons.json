@@ -1257,7 +1257,7 @@
   },
   {
     "id": "nailgun",
-    "name": "IPS-N “Impaler” Nailgun",
+    "name": "“Impaler” Nailgun",
     "mount": "Main",
     "type": "CQB",
     "damage": [
@@ -2257,6 +2257,7 @@
     ],
     "range": [
       {
+        "type": "variable",
         "override": true,
         "val": "Range 20 / Range 30, Blast 2"
       }

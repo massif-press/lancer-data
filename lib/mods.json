@@ -3,9 +3,7 @@
     "id": "nanocomposites",
     "name": "Nanocomposites",
     "sp": 2,
-    "applied_to": [
-      "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
-    ],
+    "applied_to": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"],
     "applied_string": "Any",
     "source": "HORUS",
     "license": "BALOR",
@@ -13,15 +11,13 @@
     "effect": "Choose 1 weapon. If it’s a ranged weapon, you fire a swarm of nanobots instead of regular ammo. If it’s a Melee weapon, the entire weapon becomes made up of nanobots. The weapon gains the Smart and Seeking properties.",
     "data_type": "mod",
     "description": "Nanocomposites take the principal of aggressive drone swarms and condenses it to a single round, coherent beam, or blade edge. For a kinetic projectile, a number of autonomous nanite maniples are packed into a shaped CONSUME/HIVE round that shatters on positive target impact. On impact (or airburst/ penetration detonation) the maniples are released and begin to eat away at surrounding tissue or superstructure. They proceed until maniple burnout or total target consumption, whichever occurs first. In flight, the maniples are able to hive-link and adjust their round’s flight somewhat to ensure positive impact — coherent beams and edged weapons operate in a similar manner.",
-    "added_tags": [{"id": "smart"}, {"id": "seeking"}]
+    "added_tags": [{ "id": "smart" }, { "id": "seeking" }]
   },
   {
     "id": "para",
     "name": "Paracausal Mod",
     "sp": 4,
-    "applied_to": [
-      "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
-    ],
+    "applied_to": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"],
     "applied_string": "Any",
     "source": "HA",
     "license": "SALADIN",
@@ -29,15 +25,13 @@
     "effect": "Damage from this weapon cannot be reduced in any way, by armor, resistance, or any other kind of damage reduction.",
     "data_type": "mod",
     "description": "Paracausal weapons are, to say it plain, difficult to describe and visualize. The first incident was recorded when paracausal ammunition was pushed to frontline soldiers during the Tian Shen civil engagements. It arrived in sealed magazines with directions to be loaded and fired as normal. There was to be no inspection of the magazines' contents, as this would “damage the payload” — frontline reports indicate that this ammunition impacts as normal on intended targets, though it seems to pierce armor and shielding at near-100% efficacy. Samples of paracausal ammunition have been flagged by Union for retrieval, and due to its development Harrison Armory is currently undergoing investigation by the Bureau; paracausal ammunition is still in use in the field, however, as shipments continue to leak to interested parties. HORUS is suspected, and a concurrent investigation is underway.",
-    "added_tags": [{"id": "paracausal"}]
+    "added_tags": [{ "id": "paracausal" }]
   },
   {
     "id": "phasing",
     "name": "Phasing Mod",
     "sp": 2,
-    "applied_to": [
-      "Rifle", "Cannon", "Launcher", "CQB", "Nexus"
-    ],
+    "applied_to": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
     "applied_string": "Any Ranged",
     "source": "HA",
     "license": "NAPOLEON",
@@ -50,11 +44,7 @@
     "id": "throughbolt",
     "name": "Throughbolt Rounds",
     "sp": 2,
-    "applied_to": [
-      "CQB",
-      "Cannon",
-      "Rifle"
-    ],
+    "applied_to": ["CQB", "Cannon", "Rifle"],
     "applied_string": "CQB, Cannon, or Rifle",
     "source": "IPS-N",
     "license": "TORTUGA",
@@ -62,15 +52,13 @@
     "effect": "Choose 1 CQB, cannon, or rifle weapon. When you fire this weapon, draw a line 3 spaces long from your mech, passing through terrain or other obstacles, then measure its original range from the end of this line as though the attack was fired from that position (measure cover and line of sight from this new position for the rest of the attack). The attack cannot change directions after being fired, but this line could cause an attack to easily punch through walls or other barriers. Any characters or objects hit by this line take 1d3 AP kinetic damage.",
     "data_type": "mod",
     "description": "Throughbolt Rounds are a proprietary IPS-N anti-armor/defilade-ignorant invention: when fired, the rounds ignite and project a superheated cone of plasma before them, creating a miniature lance effect that ensures multiple-target penetration through soft and hard surfaces.",
-    "tags": [{"id":"unique"}]
+    "tags": [{ "id": "unique" }]
   },
   {
     "id": "wreathe",
     "name": "Shock Wreathe",
     "sp": 2,
-    "applied_to": [
-      "Melee"
-    ],
+    "applied_to": ["Melee"],
     "applied_string": "Melee",
     "source": "SSC",
     "license": "METALMARK",
@@ -83,10 +71,7 @@
     "id": "stabilizer",
     "name": "Stabilizer Mod",
     "sp": 2,
-    "applied_to": [
-      "Launcher",
-      "Cannon"
-    ],
+    "applied_to": ["Launcher", "Cannon"],
     "applied_string": "Launcher or Cannon",
     "source": "SSC",
     "license": "MONARCH",
@@ -94,17 +79,14 @@
     "effect": "The base range of this weapon increases by 5, but gains the Ordnance tag",
     "data_type": "mod",
     "description": "A stabilizer modification is a series of modifications to physical mounts and targeting software that ensures weapons will remain level, steady, and angled at max-optimum in order to ensure positive target engagement at range.",
-    "added_range": 5,
-    "added_tags": [{"id":"ordnance"}]
-
+    "added_range": { "type": "Range", "val": 5 },
+    "added_tags": [{ "id": "ordnance" }]
   },
   {
     "id": "thermal",
     "name": "Thermal Charge",
     "sp": 2,
-    "applied_to": [
-      "Melee"
-    ],
+    "applied_to": ["Melee"],
     "applied_string": "Melee",
     "source": "IPS-N",
     "license": "NELSON",
@@ -116,15 +98,13 @@
       "type": "explosive",
       "val": "1d6"
     },
-    "tags": [{"id":"limited", "val": 3}]
+    "tags": [{ "id": "limited", "val": 3 }]
   },
   {
     "id": "uncle",
     "name": "UNCLE-Class C/C",
     "sp": 3,
-    "applied_to": [
-      "Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"
-    ],
+    "applied_to": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus", "Melee"],
     "applied_string": "Any",
     "restricted_mounts": ["superheavy"],
     "source": "IPS-N",
@@ -132,7 +112,8 @@
     "license_level": 3,
     "effect": "Choose 1 weapon of size heavy or smaller - The weapon and its associate systems gain an NHP that has control over that specific weapon.<br>You can attack with an UNCLE-controlled weapon once a turn as a free action, but with +2 Difficulty. UNCLE can't fire a weapon that has already been fired this turn, and if you fire a weapon with UNCLE you cannot use it until the start of your next turn.<br>UNCLE is a full AI but can't control your mech if it becomes unshackled, just the associate weapon. Instead, if UNCLE becomes unshackled, it chooses the target of this attack (and whether to make an attack or not).",
     "description": "IPS-N’s UNCLE system is the result of the DARKSTAR-2 Program, a now-defunct IPS-N temporary project that sought to develop a better SMART weapon system. A combination of power draw, unstable conditioning, and frustrating single-task orientation eventually shuttered the project, but pilots lucky enough to field stable systems sweared by UNCLE’s task efficacy and parallel-track reasoning.<br>While IPS-N has moved on from producing new iterations of UNCLE, they still have a stock of QA - approved legacy systems to grant to qualified pilots, though UNCLE comp / cons still tend to display themselves as unstable personalities.",
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -146,20 +127,18 @@
       "repair": 0
     }
   },
-    {
-      "id": "moltenwreath",
-      "name": "Molten Wreath",
-      "sp": 2,
-      "applied_to": [
-        "Melee"
-      ],
-      "applied_string": "Melee",
-      "source": "IPS-N",
-      "license": "ZHENG",
-      "license_level": 2,
-      "effect": "After hitting a character with an attack from this weapon, your mech takes 1 heat and this weapon creates a cone 3 blast originating from your target that must be placed on the opposite side from your attack and oriented directly away from the target. If applied to a weapon that hits multiple targets, this effect only functions on the primary target. Characters caught in this blast and the main target take 2 Explosive damage.",
-      "data_type": "mod",
-      "description": "Redirecting spare reactor power down cabling extending to a Melee weapon was an ingenious but foolhardy innovation. The resultant weapon is so hot that on impact it vaporizes parts of its targets internal systems, creating a secondary blast cloud of debris.",
-      "added_tags": [{"id":"heatself", "val": 1}]
-    }
+  {
+    "id": "moltenwreath",
+    "name": "Molten Wreath",
+    "sp": 2,
+    "applied_to": ["Melee"],
+    "applied_string": "Melee",
+    "source": "IPS-N",
+    "license": "ZHENG",
+    "license_level": 2,
+    "effect": "After hitting a character with an attack from this weapon, your mech takes 1 heat and this weapon creates a cone 3 blast originating from your target that must be placed on the opposite side from your attack and oriented directly away from the target. If applied to a weapon that hits multiple targets, this effect only functions on the primary target. Characters caught in this blast and the main target take 2 Explosive damage.",
+    "data_type": "mod",
+    "description": "Redirecting spare reactor power down cabling extending to a Melee weapon was an ingenious but foolhardy innovation. The resultant weapon is so hot that on impact it vaporizes parts of its targets internal systems, creating a secondary blast cloud of debris.",
+    "added_tags": [{ "id": "heatself", "val": 1 }]
+  }
 ]
