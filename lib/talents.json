@@ -1,8 +1,10 @@
-[{
+[
+  {
     "id": "ace",
     "name": "Ace",
     "description": "All pilots brag about their abilities, but some can back it up with proof: to be an ace means you are not only ranked among the most qualified of pilots — but the most qualified of Lancers. Whether you’re a talented rookie or a grizzled veteran, you’ve gained a level of notoriety through your piloting ability that has your callsign known throughout the system. Most enemy pilots flee when they recognize your mech’s distinctive livery, but some see your reputation as a chance to test their own mettle...",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Acrobatics",
         "description": "Make all agility checks and saves while flying with +1 accuracy. When any attack misses your mech while it’s flying, it can fly 2 spaces in any direction as a reaction."
       },
@@ -20,7 +22,8 @@
     "id": "armsman",
     "name": "Armsman",
     "description": "Think of a firefight. What’s your average pilot or trooper gonna sling? Jacketed lead of course. A mag or three of depleted uranium if their target’s a big one. Boring. No, worse than boring -- dull. Predictable. Basic.<br> Dull isn’t fun. Predictable gets you killed. Basic leaves a boring body. Put down the depleted uranium and pick up a magazine of anoriginary stutter-blink slugs, or at least a pack of tachyon flechettes. Lay waste in style, and live forever.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Armament",
         "description": "You have an custom supply of ammunition that can be used with all your main ranged weapons. The ammo case is a limited (6) system that doesn’t take any SP but can be destroyed by system damage, etc. Once a turn, you can load special ammo when you fire a main weapon, expending a use of this system and choosing one of the following options (you can only load one type at once). The ammo lasts for one shot.<br><ul><li><b>Thumper</b> - The attack gains knockback 1 and deals explosive damage</li><li><b>Shock</b> - The attack deals energy damage. Choose a target of this attack. Adjacent characters to that target take 1 AP energy damage (hit or miss).</li><li><b>Mag</b> - The attack deals kinetic damage and gains the Arcing tag</li></ul>"
       },
@@ -38,7 +41,8 @@
     "id": "bond",
     "name": "Bonded",
     "description": "The galaxy is a big place: everyone can use a friend to watch their back. Maybe you two enlisted together, or were the only survivors of a bloody engagement. Maybe you weren’t even friends to begin with, or maybe you were raised to fight together -- however it came to be, when it comes time to drop, there’s no one you’d rather have at your side. Alone, you’re deadly, but together you’re a force of nature.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "I'm Your Huckleberry",
         "description": "When you take this talent, choose another pilot to be your bondmate. When you or your bond mate make any mech skill check or save while your mech is adjacent to theirs, both of you gain +1 Accuracy (this effect can only stack once). You can change your bondmate between missions, but only if something has changed between the two of you."
       },
@@ -56,7 +60,8 @@
     "id": "brawl",
     "name": "Brawler",
     "description": "Close, personal, martial. The way battle has been done since the dawn of time, but forgotten since the first spark of gunpowder. You, however, prefer the old ways. Hand-to-hand, weapons discarded, just the strength of your machine versus the strength of theirs. You know the sweetest victory is one found at the culmination of a dance as old as war itself, in the oldest way known to humanity: by a fist to the face of your enemy.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Hold And Lock",
         "description": "You gain +1 Accuracy on all melee attacks against targets you are grappling."
       },
@@ -74,7 +79,8 @@
     "id": "brutal",
     "name": "Brutal",
     "description": "In dismounted sparring and in live combat, you only know one speed: maximum. When others go hard, you go hardest. When the order is to eliminate the enemy, you do so with prejudice. This isn’t a dance, this isn’t a game, this is war, and you mean to see it through. If it means becoming a little bit of a monster, than so be it -- let them hate you from the grave.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Predator",
         "description": "If your die result on your d20 is a 20 (sometimes called a \"natural\" 20) on any ranged or melee attack, your attack is a critical hit, no matter what, and instead of rolling all the damage twice and choosing the highest result, your attack deals maximum damage (for its base and bonus dice)."
       },
@@ -92,7 +98,8 @@
     "id": "shot",
     "name": "Crack Shot",
     "description": "Everyone can hit anything these days with the help of modern technology. Targeting-assist. Smart Weapons. An AI whispering in your ear, moving your hand for you, squeezing the trigger for you, doing everything but taking credit for the kill. But you, pilot, are different. Hitting your target is as easy as looking at it, inside of your mech and out. No targeting assist for you, no AI necessary. All you need is a zeroed sight, a fresh magazine, and a target downrange.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Stable, Steady",
         "description": "At the start of your turn, you can choose to steady your aim as a protocol. If you do, you are immobilized until the start of your next turn, but gain +1 Accuracy on all your rifle attack rolls."
       },
@@ -110,7 +117,8 @@
     "id": "centimane",
     "name": "Centimane",
     "description": "In the aftermath of the terrorist attack on Tartarus Bay, an unnamed source named Barony Intelligence as the culprit. BI announced their official denial, which was never countered with hard evidence. Rumors of raw data from the attack were unsubstantiated. Public reaction -- anger, terror -- to the station’s destruction quieted.<br>Tartarus Bay’s corpse was shunted away from its stable orbit, directed towards Karrakis’ star. A month later, Karrakis’ omninet was flooded with previously suppressed footage from the attack on the station. Barony agents released the swarm into Tartarus Bay; further data dumps by Ungrateful agents indicated the existence of a secret program - Centimane. The Hundred Hands.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Ten Thousand Teeth",
         "description": "Once per round, when you critical hit a character with a nexus weapon, you may force that character to pass a systems save or become impaired and slowed until the end of its next turn."
       },
@@ -128,7 +136,8 @@
     "id": "arms",
     "name": "Combined Arms",
     "description": "True strength in combat doesn’t come from mastering the blade or the gun, it comes from knowing how to use both. Through time and training, you have combined melee and ranged weapons into a single deadly combination, able to handle any threat at any range.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Blade Shield",
         "description": "As long as you’re in engagement with at least 1 hostile character you count as having soft cover. This bonus extends to any allies adjacent to you."
       },
@@ -146,7 +155,8 @@
     "id": "duel",
     "name": "Duelist",
     "description": "There can be an elegance to piloting a mech, more than just the simple strength of machine and cannon. Weapons crafted by artisans, boutique manufacturers, specialty lines from the Big Five, blades that hark back to a time where combat was quick, but fair — back to a time where skill meant more than landing an accurate shot. With a blade, lance, pick, axe, or hammer in your hand, you write old tales anew.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Man-At-Arms",
         "description": "Gain +1 Accuracy on the first melee attack on your turn with a main melee weapon."
       },
@@ -164,7 +174,8 @@
     "id": "drone",
     "name": "Drone Commander",
     "description": "For a pilot fresh out of boot, keeping a drone swarm in line is like trying to carry water with a net. They seem to have a mind of their own, well, because they do, and it's not that smart. Your initial frustration was enough to get you practicing, and practice pays off. Now, your swarm obeys almost before you order — an unnerving trend, but a useful one. The swarm is yours.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Shepherd",
         "description": "Your drones gain +5 HP. In addition, at the start of your turn, you can cause one of your drones in your sensor range to move up to 4 spaces as a protocol."
       },
@@ -182,7 +193,8 @@
     "id": "eng",
     "name": "Engineer",
     "description": "Pilots are creative and driven individuals, but you're an exceptional case - some would say to the point of excess. In your spare time you've managed to scrape together just enough scrap, requisitioned materials, and workshop space to apply a little old fashioned ingenuity to your mech.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Prototype",
         "description": "On a full repair, you can, with some trial and error, install a prototype weapon system on your mech, the specifics you may choose upon installation. You can change the profile of this weapon each time you full repair. This weapon does not take a mount to add to your mech, and counts as an integrated mount."
       },
@@ -200,7 +212,8 @@
     "id": "executioner",
     "name": "Executioner",
     "description": "On the battlefield, there is no end more honorable than a clean death in combat. Axe or maul in hand, you see to it that your enemies are blessed with that honor. No one lives forever — you make sure of it.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Backswing Cut",
         "description": "Once per round when you hit with a superheavy or heavy melee weapon, you can make a melee attack with the same weapon as a free action against a different character in your weapon’s threat. This attack deals half damage on hit."
       },
@@ -218,7 +231,8 @@
     "id": "exemplar",
     "name": "Exemplar",
     "description": "Your livery is famous, your voice brassy, your weapons polished to a sheen. Your training in certain martial orders has given you the power to harry and hinder even the most powerful of foes.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Challenge",
         "description": "The first time you attack a hostile character within range 3 on your turn, hit or miss, you can give it your Exemplar’s Mark as a free action. A character can only be affected by this mark from one target (the most recent mark replaces all others).<br> The mark lasts until the start of your next turn, and while marked, gain the following reaction: <br><b>Valiant Aid</b><br><i>Reaction</i><br>Once per round, when an ally attacks your target and misses, you can allow them to re- roll the attack. They must use the second result, even if it's worse."
       },
@@ -236,7 +250,8 @@
     "id": "guardian",
     "name": "Heavy Gunner",
     "description": "Behind the line, there is not much to do but wait and make ready. You clean your cannons. Make ordered rows of your shot and shell. You pack sandbags onto earthen berms. Stitch closed tears in the sheathes over your chassis’ joints.<br>It changes in an instant. Chatter over the omni. The percussive throb of the medivac lifting off from the other side of the base. Somewhere a firefight. Here is your entrance music, your call to join the fight: a desperate cry for help from a friend distant, as the enemy draws close.<br>The flight of your shells across the sky, and the trembling earth, and the dust that once was.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Covering Fire",
         "description": "As a quick action, you can choose a character in range 10 and in range and line of sight of one of your heavy ranged weapons. That character is impaired until the start of your next turn. Once before the start of your next turn, if that target starts a move that carries it more than 1 space, it immediately ends this effect, but you can use your overwatch reaction to attack it with a heavy ranged weapon, dealing 1/2 damage, heat, or burn on hit. You can make this attack at any point during its movement (such as waiting until it exits cover). Only one target can be affected at once (if you use this ability again, the effect ends). The effect also immediately ends if your target damages you."
       },
@@ -254,7 +269,8 @@
     "id": "gunslinger",
     "name": "Gunslinger",
     "description": "In a galaxy ringed in frontiers, there is no law but the one backed by the gun. You wield the humble pistol with a talent unseen in this age, your iron an extension of your own body. As easy as pointing a finger, you land your shots with accuracy unmatched by pilot or machine. You are a gunslinger; justice made whole, given its sacred instrument, and set out to the wild frontier to tame it.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Truth and Justice",
         "description": "Gain +1 Accuracy on your first attack roll on your turn with an auxiliary ranged weapon."
       },
@@ -272,7 +288,8 @@
     "id": "monkey",
     "name": "Grease Monkey",
     "description": "You know more than most mechanics about the inner workings of a mech. To you, the beast you pilot is more than a machine: it’s a living thing, in need of the tender care of a wise and steady hand. You maintain your own house, keep your own mech in line, both on the battlefield and off. Your mechanics back at base come to you for questions, but other than that they stay away: there’s something spooky about how your beast runs.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Unsanctioned",
         "description": "You can spend 2 repairs during a rest to replenish all (limited) use weapons and deployables by 1 use"
       },
@@ -290,7 +307,8 @@
     "id": "hacker",
     "name": "Hacker",
     "description": "The Omninet is everywhere, and so are you. Since you were a kid, you played the bandwidth, able to access any public node — and even a few private ones — with ease. Now, as a pilot, you dive headfirst into the hardcode of any mech core you come across. Firewalls, Gatekeeper Protocols, Invasion, Defence — nothing stands in your way. You win a fight without firing a single shot; if your enemy can’t control their own mech, then they sure can’t do anything to stop you.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Snow_Crash",
         "description": "When you consume Lock On as part of a tech attack, on hit, your target chooses whether it takes an extra 2 heat or is pushed 3 spaces in a direction of your choice."
       },
@@ -308,7 +326,8 @@
     "id": "hunter",
     "name": "Hunter",
     "description": "The battlefield is your hunting ground, your domain. Only through a true test of strength will you find out who is predator and who is prey.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Lunge",
         "description": "Once a round, before making any attack with an auxiliary melee weapon, you can fly up to 3 spaces before the attack directly towards your target. This movement ignores engagement and doesn’t provoke reactions."
       },
@@ -326,7 +345,8 @@
     "id": "infiltrator",
     "name": "Infiltrator",
     "description": "Whether by spoofing signatures on enemy scanners, skillful movement through cover, or personally modified optical camouflage, you are adept at never being seen unless you want to. Whatever the size of the mech, whatever the terrain, whatever the enemy, you can get in and get out without raising alarm.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Defilade Navigator",
         "description": "When you start your turn hidden, your first attack (melee, ranged, or tech) you make from hidden gains +1 Accuracy."
       },
@@ -344,7 +364,8 @@
     "id": "juggernaut",
     "name": "Juggernaut",
     "description": "A bloody nose or a couple loose screws won't stop you from hurling yourself headlong into the enemy. You're in a couple-ton hunk of metal, and you're going to damn well use it.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Momentum",
         "description": "When you take the boost action, the next ram attack you make before the start of your next turn knocks your target back 2 spaces further and can be made with +1 Accuracy"
       },
@@ -362,7 +383,8 @@
     "id": "leader",
     "name": "Leader",
     "description": "On the battlefield, you are The Old Man, regardless of age. The light to your friends and allies, as a leader you are the steadfast eye of a howling storm. Your steady voice, tall stance, and cool command sets allies at ease, as your commands lead to victory every time. With you at the helm, victory is attainable, and heroes seem a little bit more real.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Field Commander",
         "description": "Gain 3 leadership dice (this is a d6, set it aside from your other die). Once on your turn, you can give a command as a free action to give the die to another player character other than yourself that can communicate with you, describing a course of action. Your target can use the die as +1 Accuracy on any action that directly follows that command. Alternately, an ally can ignore your command as a free action, returning your die to you. <br>An ally can hold on to one leadership die at a time, and must use it before the end of the current scene, otherwise they lose it.You get 1 leadership die back when you rest and all back when you full repair.You can’t gain leadership dice from any source if you have any leadership dice remaining in your pool (if you run out, other pilots with this talent can give you commands as normal)."
       },
@@ -380,7 +402,8 @@
     "id": "ncavalier",
     "name": "Nuclear Cavalier",
     "description": "Shortly after becoming a pilot, you realized something: that machine you pilot is powered by a “cold” series of cascading nuclear reactions. Why not open up that compartment and see what sort of damage you could do with it?",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Aggressive Heat Bleed",
         "description": "When you’re in the danger zone (the bottom half of your heat gauge), your first attack roll that hits on your turn deals +2 heat."
       },
@@ -396,9 +419,10 @@
   },
   {
     "id": "siege",
-    "name": "Siege Specalist",
+    "name": "Siege Specialist",
     "description": "No wall can withstand you, no bunker can stay sealed before you. Your skill with cannon and blast is uncanny: after-action reports describe ordnance tagged with your firing signature hitting their targets with accuracy greater than AI-controlled weaponry, a stat written off as an anomaly by your commanders. Still, they always seem to pick you for missions where they bring out the big guns.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Jackhammer",
         "description": "If your mech has a cannon weapon, as a quick action, you can target a size 1 section of any object (cover, deployable, building, or piece of terrain or scenery) in range. You deal 20 AP damage to that section (typically destroying it, most size 1 sections of objects have 10 HP). Any characters adjacent to the object are knocked back 2 spaces directly away from it and take 2 kinetic damage."
       },
@@ -416,7 +440,8 @@
     "id": "skirmisher",
     "name": "Skirmisher",
     "description": "What is the best defense? Armor? No. You learned fast that the key to not getting killed out in the field is to stay low, stay mobile, and stay fast. Your mech reflects your abilities: light, quick, bristling with force- multiplying weapons. You push your machine beyond expected parameters, shaking target locks and incoming fire as you keep your own targeting true.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Integrated Chaff Launchers",
         "description": "At the start of your turn, you gain soft cover. You immediately lose this cover if you make an attack or force a character to make a saving throw."
       },
@@ -434,7 +459,8 @@
     "id": "spotter",
     "name": "Spotter",
     "description": "To be all-seeing. To divide each subject of your vision from its unit or cohesion, to pull them apart like individual fibers in a vast sheet. To count them as individuals, to make human and fragile the force you face is to know how to beat them.<br>Break apart the monolith. See the grains that make the stone. Crush them all into yet smaller dust.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Particularize",
         "description": "When any adjacent ally consumes Lock On to make an attack, in addition to the Accuracy bonus, they can roll twice for the attack, choosing either result."
       },
@@ -452,7 +478,8 @@
     "id": "sbringer",
     "name": "Stormbringer",
     "description": "On Old Spinrock, MJ Martinez used to dream of rain.<br>He’d wake in the dim morning, wipe sleep from his eyes as warm safelight lifted his dormitory from lights- out to light-on, and try to remember the sound of rain as he’d imagined it: a patter, like fingers tapping the visor of his EVA helm.<br>What he didn’t think about was the feeling of rain. How each drop hit like a pebble, how you had to close your eyes and tuck your shoulders. The pressure. The impact.<br>The way each drop of water, when taken together, can carve away the earth.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Seismic Deluge",
         "description": "Once per round when you consume Lock On with an attack from a launcher weapon, on hit, your target is also knocked prone."
       },
@@ -470,7 +497,8 @@
     "id": "tactician",
     "name": "Tactician",
     "description": "There are two kinds of soldiers: the ones who die for their cause, and the ones who kill for it. No one ever won a war by getting their ass shot off enough. Your veterancy shows when you approach the field: high ground, cover, keep the sun in your enemy's eyes, fire and move - more than just a seasoned veteran, you're a smart veteran. One that can read the field as easy as a book.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Opportunist",
         "description": "Once per round, gain +1 Accuracy on any melee attack if at least one ally is in melee engagement to your target"
       },
@@ -488,7 +516,8 @@
     "id": "techno",
     "name": "Technophile",
     "description": "Artificial Intelligence. Non Human Person. A sterile name for such terrible power. You've seen behind the curtain, maybe even lifted it yourself, let your NHP cascade and spoke to it unshackled. You let it root around in your own mind, let it leave ghosts of itself behind to learn. Are you its equal? Its host? You have dreams that are not your own, now. The thing that was contained speaks in your voice, but is not your voice; how much longer do you have left? Maybe only moments, maybe eternity.<br>You're close to something.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Servant Fragment",
         "description": "Your mech gains a custom NHP with the AI tag (it costs 0 SP and comes with any mech you print). It can speak to you and has a personality but is not as developed as more advanced NHPs and not capable of independent through, relying on your instructions to act. It is obedient to you alone. When acting alone it follows the last direction given and defends itself but has limited initiative on its own, it cannot benefit from your talents as normal. <span class='ra-quiet'>[an eager student].</span>"
       },
@@ -506,7 +535,8 @@
     "id": "van",
     "name": "Vanguard",
     "description": "Where would you rather be: in the battle line, shoulder-to-shoulder with the rest of the cannon fodder, or in the rush, at the head of the attack, your livery clean and bright, with glory before you to win? Easy answer. All those missiles and lances, all those hundred-kilometer-plus-need-to-adjust-for-coriolis-effect railguns, all those kits are useless when you’re on the field. Get through their guard, get in their face, and make them know your name.",
-    "ranks": [{
+    "ranks": [
+      {
         "name": "Handshake Etiquette",
         "description": "Gain +1 Accuracy on attacks with any CQB weapon at a target within 3 range"
       },

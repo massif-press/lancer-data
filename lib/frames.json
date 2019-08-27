@@ -1261,7 +1261,7 @@
     "traits": [
       {
         "name": "Mine Deployers",
-        "description": "When When the ISKANDER uses a quick action to plant a mine (even with its assault launcher trait), it can plant up to 2 other mines in free adjacent spaces as a free action."
+        "description": "When the ISKANDER uses a quick action to plant a mine (even with its assault launcher trait), it can plant up to 2 other mines in free adjacent spaces as a free action."
       },
       {
         "name": "Skeleton Key",

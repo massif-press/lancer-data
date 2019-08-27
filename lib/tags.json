@@ -74,11 +74,6 @@
     "description": "This weapon always does {VAL} damage, even if it misses its target or rolls lower damage. It has some degree of self-correction or is simply powerful enough that even a glancing blow will cause damage."
   },
   {
-    "id": "unreliable",
-    "name": "Unreliable",
-    "description": "When attacking with this weapon, roll a d6 before you make your attack roll. If it comes up as a ‘1', the weapon jams immediately. Lose the attack, and it cannot be used until the start of your next turn."
-  },
-  {
     "id": "ordnance",
     "name": "Ordnance",
     "description": "Ordnance weapons must be fired before taking any other action or movement on a turn other than protocols (you can still act and move normally afterwards). In addition, ordnance weapons are cumbersome. They cannot be used against targets in engagement with your mech, and cannot be used for overwatch."
@@ -106,12 +101,7 @@
   {
     "id": "thrown",
     "name": "Thrown {VAL}",
-    "description": "This melee weapon can be thrown up to range {VAL}. A thrown melee weapon makes an attack against a target as if it was a ranged attack (it takes cover and line of sight into account as normal) and disarms you of that weapon. A thrown melee weapon can be retrieved as a free action by moving adjacent to it."
-  },
-  {
-    "id": "ammo",
-    "name": "Ammo",
-    "description": "Indicates a special damage type. Only one can be used per weapon at a time and can be swapped as an interaction."
+    "description": "This melee weapon can be thrown up to range {VAL}. A thrown melee weapon makes an attack against a target as if it was a melee attack (it takes cover and line of sight into account as normal) and disarms you of that weapon. A thrown melee weapon can be retrieved as a free action by moving adjacent to it."
   },
   {
     "id": "dangerzone",
