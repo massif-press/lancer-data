@@ -2086,7 +2086,7 @@
     "class": "mirage",
     "type": "trait",
     "action": "quick",
-    "effect": "Up to two allies of the Mirage’s choice can immediately teleport up to 5 spaces in any direction to their ‘real’ location. This movement does not provoke reactions and ignores engagement.",
+    "effect": "Up to two allies of the Mirage’s choice can immediately teleport up to 5 spaces in any direction to their ‘real’ location. This movement does not provoke reactions and ignores engagement. The Mirage can use this system as a reaction to any other action or movement it can see 1/round, but can only teleport one ally if used this way.",
     "base": true
   },
   {
