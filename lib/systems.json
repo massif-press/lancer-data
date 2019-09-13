@@ -1094,7 +1094,7 @@
     "license": "DUSK WING",
     "license_level": 3,
     "effect": "All hostile targets in a burst 3 area centered on your mech that can see your mech must pass an agility save or become Jammed, and a systems save or become Impaired. Both effects last until the end of their next turn. Characters in cover from you when this system is activated are not affected.",
-    "description": "The SSC StunCrown is a simple system, a ring of WHITEOUT flash lamps in hardened mounts that can be triggered to fire an overwhelming burst of light. The StunCrown is usually mounted on a short post or in a ring around a mech's cranial suite; due to the intense energies running through the flash bulbs, this system only has a limited number of uses before the lights burn ou.",
+    "description": "The SSC StunCrown is a simple system, a ring of WHITEOUT flash lamps in hardened mounts that can be triggered to fire an overwhelming burst of light. The StunCrown is usually mounted on a short post or in a ring around a mech's cranial suite; due to the intense energies running through the flash bulbs, this system only has a limited number of uses before the lights burn out.",
     "data_type": "system",
     "aptitude": {
       "control": 2,

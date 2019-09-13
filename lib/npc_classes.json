@@ -1588,5 +1588,111 @@
       }
     ],
     "size": [1]
+  },
+  {
+    "name": "monstrosity",
+    "role": "biological",
+    "info": {
+      "flavor": "Monstrosity-type enemies are massive or horrifying predatory wildlife. Generally wild, some kinds of monstrous enemies can be domesticated and trained for combat: these are in high demand in the distal and proximal reaches of the galaxy.",
+      "tactics": ""
+    },
+    "stats": [
+      {
+        "hp": 14,
+        "evade": 10,
+        "edef": 10,
+        "heatcap": 0,
+        "hull": 3,
+        "agility": 2,
+        "systems": -2,
+        "engineering": -2,
+        "armor": 1,
+        "speed": 6,
+        "sensor": 10,
+        "save": 10
+      },
+      {
+        "hp": 16,
+        "evade": 12,
+        "edef": 10,
+        "heatcap": 0,
+        "hull": 4,
+        "agility": 3,
+        "systems": -2,
+        "engineering": -2,
+        "armor": 1,
+        "speed": 7,
+        "sensor": 10,
+        "save": 12
+      },
+      {
+        "hp": 18,
+        "evade": 15,
+        "edef": 10,
+        "heatcap": 0,
+        "hull": 6,
+        "agility": 4,
+        "systems": -2,
+        "engineering": -2,
+        "armor": 1,
+        "speed": 8,
+        "sensor": 10,
+        "save": 15
+      }
+    ],
+    "size": [1, 2, 3]
+  },
+  {
+    "name": "infantry squad",
+    "role": "biological",
+    "info": {
+      "flavor": "Infantry-type enemies represent a squad-level group of human or subaltern infantry: not a single chassis like the Grunt-type, but (generally) a group of five to ten armed and armored individual soldiers. Like the Grunt, an Infantry-type enemy alone might not present a threat to a chassis, but operating as a squad with the right gear and training, infantry groups are a formidable threat.",
+      "tactics": ""
+    },
+    "stats": [
+      {
+        "hp": 10,
+        "evade": 8,
+        "edef": 8,
+        "heatcap": 0,
+        "hull": 2,
+        "agility": 2,
+        "systems": 2,
+        "engineering": 2,
+        "armor": 0,
+        "speed": 4,
+        "sensor": 5,
+        "save": 10
+      },
+      {
+        "hp": 15,
+        "evade": 8,
+        "edef": 8,
+        "heatcap": 0,
+        "hull": 4,
+        "agility": 4,
+        "systems": 4,
+        "engineering": 4,
+        "armor": 0,
+        "speed": 4,
+        "sensor": 5,
+        "save": 12
+      },
+      {
+        "hp": 20,
+        "evade": 8,
+        "edef": 8,
+        "heatcap": 0,
+        "hull": 6,
+        "agility": 6,
+        "systems": 6,
+        "engineering": 6,
+        "armor": 0,
+        "speed": 4,
+        "sensor": 5,
+        "save": 14
+      }
+    ],
+    "size": [4]
   }
 ]

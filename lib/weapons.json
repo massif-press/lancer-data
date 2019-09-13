@@ -1,17 +1,23 @@
-[{
+[
+  {
     "id": "amrifle",
     "name": "Anti-Material Rifle",
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 20
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
         "id": "ap"
       },
       {
@@ -39,18 +45,24 @@
     "name": "Assault Rifle",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "reliable",
-      "val": 2
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "reliable",
+        "val": 2
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -66,17 +78,23 @@
     "name": "Charged Blade",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+3"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "ap"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "ap"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -92,17 +110,23 @@
     "name": "Nexus (Light)",
     "mount": "Auxiliary",
     "type": "Nexus",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "smart"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "smart"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -118,17 +142,23 @@
     "name": "Nexus (Hunter-Killer)",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "smart"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "smart"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -144,17 +174,23 @@
     "name": "Heavy Machine Gun",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6+4"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
-      "id": "inaccurate"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "inaccurate"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -170,17 +206,19 @@
     "name": "Heavy Melee Weapon",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6+1"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6+1"
+      }
     ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -196,17 +234,23 @@
     "name": "Heavy Charged Blade",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6+3"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "ap"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "ap"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -222,11 +266,14 @@
     "name": "Howitzer",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [{
-      "type": "explosive",
-      "val": "2d6"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 20
       },
@@ -235,7 +282,8 @@
         "val": 2
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "arcing"
       },
       {
@@ -263,11 +311,14 @@
     "name": "Missile Rack",
     "mount": "Auxiliary",
     "type": "Launcher",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d3+1"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 10
       },
@@ -276,9 +327,11 @@
         "val": 1
       }
     ],
-    "tags": [{
-      "id": "loading"
-    }],
+    "tags": [
+      {
+        "id": "loading"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -294,11 +347,14 @@
     "name": "Mortar",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d6+1"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 15
       },
@@ -307,7 +363,8 @@
         "val": 1
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "arcing"
       },
       {
@@ -329,11 +386,14 @@
     "name": "Pistol",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 5
       },
@@ -342,9 +402,7 @@
         "val": 3
       }
     ],
-    "tags": [
-
-    ],
+    "tags": [],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -360,17 +418,23 @@
     "name": "Progressive Knife",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+1"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "overkill"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "overkill"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -386,15 +450,20 @@
     "name": "Cyclone Pulse Rifle",
     "mount": "Superheavy",
     "type": "Rifle",
-    "damage": [{
-      "type": "kinetic",
-      "val": "3d6+3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "3d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "reliable",
         "val": 5
       },
@@ -420,11 +489,14 @@
     "name": "RPG",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d6+1"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 10
       },
@@ -433,7 +505,8 @@
         "val": 2
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "loading"
       },
       {
@@ -455,11 +528,14 @@
     "name": "Shotgun",
     "mount": "Main",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 5
       },
@@ -484,17 +560,19 @@
     "name": "Tactical Melee Weapon",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+2"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+2"
+      }
     ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -510,11 +588,14 @@
     "name": "Tactical Knife",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3+1"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
         "type": "Threat",
         "val": 1
       },
@@ -523,9 +604,7 @@
         "val": 3
       }
     ],
-    "tags": [
-
-    ],
+    "tags": [],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -541,17 +620,19 @@
     "name": "Thermal Pistol",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [{
-      "type": "energy",
-      "val": 2
-    }],
-    "range": [{
-      "type": "Line",
-      "val": 5
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "energy",
+        "val": 2
+      }
     ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    "tags": [],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -567,17 +648,23 @@
     "name": "Thermal Rifle",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+2"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [{
-      "id": "ap"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "ap"
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -593,18 +680,24 @@
     "name": "Thermal Lance",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6+3"
-    }],
-    "range": [{
-      "type": "Line",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 2
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 2
+      }
+    ],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -620,18 +713,24 @@
     "name": "Chain Axe",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "reliable",
-      "val": 2
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "reliable",
+        "val": 2
+      }
+    ],
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 1,
@@ -648,18 +747,24 @@
     "name": "Nanocarbon Sword",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+4"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 2
-    }],
-    "tags": [{
-      "id": "reliable",
-      "val": 3
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "reliable",
+        "val": 3
+      }
+    ],
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 2,
@@ -676,17 +781,19 @@
     "name": "Flechette Launcher",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": 1
-    }],
-    "range": [{
-      "type": "Burst",
-      "val": 1
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 1
+      }
     ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    "tags": [],
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 2,
@@ -703,15 +810,20 @@
     "name": "Assault Cannon",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+2"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
         "id": "overkill"
       },
       {
@@ -734,18 +846,24 @@
     "name": "Concussion Missiles",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [{
-      "id": "knockback",
-      "val": 2
-    }],
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "knockback",
+        "val": 2
+      }
+    ],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 2,
@@ -762,14 +880,18 @@
     "name": "Leviathan Heavy Assault Cannon",
     "mount": "Superheavy",
     "type": "Cannon",
-    "damage": [{
-      "override": true,
-      "val": "1d6 Kinetic Damage (4d6+4 if spun up)"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
+    "damage": [
+      {
+        "override": true,
+        "val": "1d6 Kinetic Damage (4d6+4 if spun up)"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 3,
@@ -785,7 +907,8 @@
     "name": "Plasma Cutter",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [{
+    "damage": [
+      {
         "type": "energy",
         "val": 1
       },
@@ -798,14 +921,18 @@
         "val": 1
       }
     ],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 3,
@@ -821,11 +948,14 @@
     "name": "War Pike",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
         "type": "Threat",
         "val": 3
       },
@@ -834,10 +964,12 @@
         "val": 5
       }
     ],
-    "tags": [{
-      "id": "knockback",
-      "val": 1
-    }],
+    "tags": [
+      {
+        "id": "knockback",
+        "val": 1
+      }
+    ],
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 1,
@@ -854,17 +986,19 @@
     "name": "Power Knuckles",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d3+1"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d3+1"
+      }
     ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [],
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 3,
@@ -881,11 +1015,14 @@
     "name": "Hand Cannon",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 5
       },
@@ -894,7 +1031,8 @@
         "val": 3
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "loading"
       },
       {
@@ -917,7 +1055,8 @@
     "name": "Bolt Thrower",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [{
+    "damage": [
+      {
         "type": "kinetic",
         "val": "2d6"
       },
@@ -926,11 +1065,14 @@
         "val": "1d6"
       }
     ],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
         "id": "loading"
       },
       {
@@ -953,18 +1095,24 @@
     "name": "Kinetic Hammer",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6+2"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "reliable",
-      "val": 4
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "reliable",
+        "val": 4
+      }
+    ],
     "source": "IPS-N",
     "license": "RALEIGH",
     "license_level": 3,
@@ -980,11 +1128,14 @@
     "name": "Automatic Shotgun",
     "mount": "Main",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 3
       },
@@ -993,9 +1144,11 @@
         "val": 3
       }
     ],
-    "tags": [{
-      "id": "inaccurate"
-    }],
+    "tags": [
+      {
+        "id": "inaccurate"
+      }
+    ],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 1,
@@ -1011,18 +1164,24 @@
     "name": "Daisy Cutter",
     "mount": "Heavy",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "3d6"
-    }],
-    "range": [{
-      "type": "Cone",
-      "val": 7
-    }],
-    "tags": [{
-      "id": "limited",
-      "val": 2
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "3d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 7
+      }
+    ],
+    "tags": [
+      {
+        "id": "limited",
+        "val": 2
+      }
+    ],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 2,
@@ -1039,17 +1198,23 @@
     "name": "Catalytic Hammer",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3+5"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "loading"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3+5"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "loading"
+      }
+    ],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 2,
@@ -1066,14 +1231,18 @@
     "name": "Impact Lance",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 3
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
     "tags": [],
     "source": "IPS-N",
     "license": "VLAD",
@@ -1091,11 +1260,14 @@
     "name": "IPS-N “Impaler” Nailgun",
     "mount": "Main",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+1"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 5
       },
@@ -1104,10 +1276,12 @@
         "val": 3
       }
     ],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 2,
@@ -1124,7 +1298,8 @@
     "name": "Combat Drill",
     "mount": "Superheavy",
     "type": "Melee",
-    "damage": [{
+    "damage": [
+      {
         "type": "kinetic",
         "val": "3d6"
       },
@@ -1133,11 +1308,14 @@
         "val": "1d6"
       }
     ],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
         "id": "ap"
       },
       {
@@ -1159,17 +1337,19 @@
     "name": "Mag Cannon",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+1"
-    }],
-    "range": [{
-      "type": "Line",
-      "val": 8
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+1"
+      }
     ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 8
+      }
+    ],
+    "tags": [],
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 1,
@@ -1185,15 +1365,20 @@
     "name": "Vulture DMR",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+1"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "accurate"
       },
       {
@@ -1219,15 +1404,20 @@
     "name": "Railgun",
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+4"
-    }],
-    "range": [{
-      "type": "Line",
-      "val": 20
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
         "id": "ap"
       },
       {
@@ -1253,17 +1443,23 @@
     "name": "Veil Rifle",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+1"
-    }],
-    "range": [{
-      "type": "Line",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "accurate"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "accurate"
+      }
+    ],
     "source": "SSC",
     "license": "DUSK WING",
     "license_level": 1,
@@ -1280,18 +1476,24 @@
     "name": "Burst Launcher",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d3"
-    }, {
-      "type": "heat",
-      "val": "1"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d3"
+      },
+      {
+        "type": "heat",
+        "val": "1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "arcing"
       },
       {
@@ -1314,18 +1516,24 @@
     "name": "Rail Rifle",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+1"
-    }],
-    "range": [{
-      "type": "Line",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 2,
@@ -1341,7 +1549,8 @@
     "name": "Shock Knife",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [{
+    "damage": [
+      {
         "type": "energy",
         "val": 1
       },
@@ -1350,7 +1559,8 @@
         "val": 2
       }
     ],
-    "range": [{
+    "range": [
+      {
         "type": "Threat",
         "val": 1
       },
@@ -1359,10 +1569,12 @@
         "val": 5
       }
     ],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 2,
@@ -1378,17 +1590,23 @@
     "name": "Sharanga Missiles",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{
-      "type": "explosive",
-      "val": 3
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
-      "id": "arcing"
-    }],
+    "damage": [
+      {
+        "type": "explosive",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "arcing"
+      }
+    ],
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 1,
@@ -1405,15 +1623,20 @@
     "mount": "Heavy",
     "type": "Launcher",
     "sp": 1,
-    "damage": [{
-      "type": "energy",
-      "val": "1d6+3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "smart"
       },
       {
@@ -1438,7 +1661,8 @@
     "name": "Pinaka Missiles",
     "mount": "Superheavy",
     "type": "Launcher",
-    "damage": [{
+    "damage": [
+      {
         "override": true,
         "val": "2d6 Explosive x2"
       },
@@ -1447,7 +1671,8 @@
         "val": "3d6 Explosive x2"
       }
     ],
-    "range": [{
+    "range": [
+      {
         "type": "Range",
         "val": 20
       },
@@ -1456,7 +1681,8 @@
         "val": 1
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "arcing"
       },
       {
@@ -1479,17 +1705,23 @@
     "name": "Vijaya Rockets",
     "mount": "Auxiliary",
     "type": "Launcher",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [{
-      "id": "accurate"
-    }],
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "accurate"
+      }
+    ],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 1,
@@ -1505,17 +1737,23 @@
     "name": "Fold Knife",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "accurate"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "accurate"
+      }
+    ],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 1,
@@ -1531,17 +1769,23 @@
     "name": "Variable Sword",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": 3
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 2
-    }],
-    "tags": [{
-      "id": "accurate"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "accurate"
+      }
+    ],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 3,
@@ -1558,15 +1802,20 @@
     "mount": "Auxiliary",
     "type": "Rifle",
     "sp": 1,
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "arcing"
       },
       {
@@ -1589,17 +1838,23 @@
     "mount": "Heavy",
     "type": "Melee",
     "sp": 2,
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 3
-    }],
-    "tags": [{
-      "id": "smart"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "smart"
+      }
+    ],
     "source": "HORUS",
     "license": "BALOR",
     "license_level": 3,
@@ -1616,7 +1871,8 @@
     "name": "Seeker Swarm Nexus",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [{
+    "damage": [
+      {
         "type": "kinetic",
         "val": 2
       },
@@ -1625,11 +1881,14 @@
         "val": 2
       }
     ],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [{
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
         "id": "smart"
       },
       {
@@ -1651,15 +1910,20 @@
     "name": "Autopod",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "seeking"
       },
       {
@@ -1684,17 +1948,19 @@
     "name": "Vorpal Gun",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{
-      "type": "kinetic",
-      "val": "2d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "2d6"
+      }
     ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [],
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 3,
@@ -1711,17 +1977,23 @@
     "name": "Ghoul Nexus",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [{
-      "type": "variable",
-      "val": "1d3+2"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "smart"
-    }],
+    "damage": [
+      {
+        "type": "variable",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "smart"
+      }
+    ],
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 1,
@@ -1737,15 +2009,20 @@
     "name": "Ghast Nexus",
     "mount": "Heavy",
     "type": "Nexus",
-    "damage": [{
-      "type": "explosive",
-      "val": "1d6+3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
         "id": "smart"
       },
       {
@@ -1761,22 +2038,29 @@
     "aptitude": {
       "ranged": 1
     }
-  }, {
+  },
+  {
     "id": "annihilationnexus",
     "name": "Annihilation Nexus",
     "mount": "Superheavy",
     "type": "Nexus",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6+3"
-    }],
-    "range": [{
-      "type": "Burst",
-      "val": 2
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
         "id": "ap"
-      }, {
+      },
+      {
         "id": "smart"
       },
       {
@@ -1798,11 +2082,14 @@
     "name": "Catalyst Pistol",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
         "type": "Cone",
         "val": 3
       },
@@ -1811,10 +2098,12 @@
         "val": 3
       }
     ],
-    "tags": [{
-      "id": "heatself",
-      "val": 2
-    }],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 2
+      }
+    ],
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 1,
@@ -1830,18 +2119,24 @@
     "name": "Arc Projector",
     "mount": "Heavy",
     "type": "CQB",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6+1"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 2,
@@ -1858,15 +2153,20 @@
     "mount": "Main",
     "type": "Rifle",
     "sp": 2,
-    "damage": [{
-      "type": "kinetic",
-      "val": 4
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 4
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
         "id": "smart"
       },
       {
@@ -1891,18 +2191,20 @@
     "name": "Mimic Gun",
     "mount": "Heavy",
     "type": "???",
-    "damage": [{
-      "override": true,
-      "val": "??? Kinetic"
-    }],
-    "range": [{
-      "override": true,
-      "type": "Range",
-      "val": "???"
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "override": true,
+        "val": "??? Kinetic"
+      }
     ],
+    "range": [
+      {
+        "override": true,
+        "type": "Range",
+        "val": "???"
+      }
+    ],
+    "tags": [],
     "source": "HORUS",
     "license": "PEGASUS",
     "license_level": 2,
@@ -1919,17 +2221,19 @@
     "mount": "Main",
     "type": "Cannon",
     "sp": 1,
-    "damage": [{
-      "type": "kinetic",
-      "val": 3
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [
-
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 3
+      }
     ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [],
     "source": "HORUS",
     "license": "PEGASUS",
     "license_level": 3,
@@ -1945,14 +2249,18 @@
     "name": "Siege Cannon",
     "mount": "Superheavy",
     "type": "Cannon",
-    "damage": [{
-      "type": "explosive",
-      "val": "3d6"
-    }],
-    "range": [{
-      "override": true,
-      "val": "Range 20 / Range 30, Blast 2"
-    }],
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "3d6"
+      }
+    ],
+    "range": [
+      {
+        "override": true,
+        "val": "Range 20 / Range 30, Blast 2"
+      }
+    ],
     "tags": [],
     "source": "HA",
     "license": "BARBAROSSA",
@@ -1969,7 +2277,8 @@
     "name": "Flamethrower",
     "mount": "Heavy",
     "type": "CQB",
-    "damage": [{
+    "damage": [
+      {
         "type": "burn",
         "val": "4"
       },
@@ -1978,13 +2287,13 @@
         "val": "1"
       }
     ],
-    "range": [{
-      "type": "Cone",
-      "val": 5
-    }],
-    "tags": [
-
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      }
     ],
+    "tags": [],
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 1,
@@ -2000,7 +2309,8 @@
     "name": "Plasma Thrower",
     "mount": "Superheavy",
     "type": "CQB",
-    "damage": [{
+    "damage": [
+      {
         "type": "burn",
         "val": "6"
       },
@@ -2009,7 +2319,8 @@
         "val": "1d6+2"
       }
     ],
-    "range": [{
+    "range": [
+      {
         "type": "Cone",
         "val": 7
       },
@@ -2018,10 +2329,12 @@
         "val": 10
       }
     ],
-    "tags": [{
-      "id": "heatself",
-      "val": 4
-    }],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 4
+      }
+    ],
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 3,
@@ -2037,15 +2350,20 @@
     "name": "Stub Cannon",
     "mount": "Auxiliary",
     "type": "Cannon",
-    "damage": [{
-      "type": "explosive",
-      "val": "3"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 5
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "explosive",
+        "val": "3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
         "id": "limited",
         "val": 6
       },
@@ -2070,11 +2388,14 @@
     "name": "Gravity Gun",
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 8
       },
@@ -2083,9 +2404,7 @@
         "val": 3
       }
     ],
-    "tags": [
-
-    ],
+    "tags": [],
     "source": "HA",
     "license": "ISKANDER",
     "license_level": 2,
@@ -2102,11 +2421,14 @@
     "name": "Displacer",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "energy",
-      "val": "10"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "10"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 10
       },
@@ -2115,7 +2437,8 @@
         "val": 1
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "unique"
       },
       {
@@ -2145,17 +2468,23 @@
     "mount": "Main",
     "type": "Launcher",
     "sp": 1,
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+1"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 15
-    }],
-    "tags": [{
-      "id": "arcing"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "arcing"
+      }
+    ],
     "source": "HA",
     "license": "SALADIN",
     "license_level": 1,
@@ -2171,7 +2500,8 @@
     "name": "Laser Rifle (SOL Pattern)",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
+    "damage": [
+      {
         "type": "energy",
         "val": "1d6"
       },
@@ -2180,14 +2510,18 @@
         "val": 1
       }
     ],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 1,
@@ -2203,7 +2537,8 @@
     "name": "Heavy Laser",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [{
+    "damage": [
+      {
         "type": "energy",
         "val": "2d6"
       },
@@ -2212,14 +2547,18 @@
         "val": 3
       }
     ],
-    "range": [{
-      "type": "Range",
-      "val": 12
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 3
-    }],
+    "range": [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 3
+      }
+    ],
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 2,
@@ -2235,7 +2574,8 @@
     "name": "Tachyon Lance",
     "mount": "Superheavy",
     "type": "Cannon",
-    "damage": [{
+    "damage": [
+      {
         "type": "energy",
         "val": "2d6"
       },
@@ -2244,11 +2584,14 @@
         "val": 8
       }
     ],
-    "range": [{
-      "type": "Range",
-      "val": 20
-    }],
-    "tags": [{
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
         "id": "ordnance"
       },
       {
@@ -2271,11 +2614,14 @@
     "name": "Annihilator",
     "mount": "Main",
     "type": "CQB",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+2"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 5
       },
@@ -2284,7 +2630,8 @@
         "val": 3
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "ap"
       },
       {
@@ -2307,7 +2654,8 @@
     "name": "Torch",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
+    "damage": [
+      {
         "type": "energy",
         "val": "1d6"
       },
@@ -2316,11 +2664,14 @@
         "val": 3
       }
     ],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
         "id": "heatself",
         "val": 2
       },
@@ -2344,14 +2695,18 @@
     "name": "Xaoli Combat Sheathe",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d3 + 2"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d3 + 2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
     "tags": [],
     "source": "IPS-N",
     "license": "ZHENG",
@@ -2362,19 +2717,24 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "dd288",
     "name": "D/D 288",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
     "tags": [],
     "source": "IPS-N",
     "license": "ZHENG",
@@ -2385,26 +2745,35 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "warprifle",
     "name": "Warp Rifle",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+1"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "unique"
-    }, {
-      "id": "ap"
-    }, {
-      "id": "loading"
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "unique"
+      },
+      {
+        "id": "ap"
+      },
+      {
+        "id": "loading"
+      }
+    ],
     "source": "HA",
     "license": "SUNZI",
     "license_level": 2,
@@ -2415,22 +2784,29 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "kraulrifle",
     "name": "Kraul Rifle",
     "mount": "Main",
     "type": "CQB",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
-      "id": "inaccurate"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "inaccurate"
+      }
+    ],
     "source": "SSC",
     "license": "ATLAS",
     "license_level": 1,
@@ -2440,22 +2816,29 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "terashimablade",
     "name": "Terashima Blade",
     "mount": "Main",
     "type": "Melee",
-    "damage": [{
-      "type": "kinetic",
-      "val": "1d6+2"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }],
-    "tags": [{
-      "id": "unique"
-    }],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "unique"
+      }
+    ],
     "source": "SSC",
     "sp": 1,
     "license": "ATLAS",
@@ -2466,19 +2849,24 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "fusionrifle",
     "name": "Fusion Rifle",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [{
-      "type": "energy",
-      "val": "1-6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 6
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1-6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 6
+      }
+    ],
     "tags": [],
     "source": "HORUS",
     "license": "KOBOLD",
@@ -2489,23 +2877,30 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "slagcannon",
     "name": "Slag Cannon",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{
-      "type": "energy",
-      "val": "1d6"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
-      "id": "heatself",
-      "val": 1
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "heatself",
+        "val": 1
+      }
+    ],
     "source": "HORUS",
     "license": "KOBOLD",
     "license_level": 2,
@@ -2515,23 +2910,30 @@
     "aptitude": {
       "Melee": 1
     }
-  }, {
+  },
+  {
     "id": "unraveler",
     "name": "Unraveler",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{
-      "type": "energy",
-      "val": "2d6+1"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
-      "id": "reliable",
-      "val": 2
-    }],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "2d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "reliable",
+        "val": 2
+      }
+    ],
     "source": "HORUS",
     "license": "LICH",
     "license_level": 1,
@@ -2547,11 +2949,14 @@
     "name": "Fuel Rod Gun",
     "mount": "Integrated",
     "type": "CQB",
-    "damage": [{
-      "type": "energy",
-      "val": "1d3+2"
-    }],
-    "range": [{
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
         "type": "Range",
         "val": 8
       },
@@ -2560,7 +2965,8 @@
         "val": 3
       }
     ],
-    "tags": [{
+    "tags": [
+      {
         "id": "limited",
         "val": 3
       },
@@ -2583,18 +2989,24 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "damage": [{
-      "type": "variable",
-      "val": "1d6+2"
-    }],
-    "range": [{
-      "type": "Threat",
-      "val": 1
-    }, {
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "variable",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
         "id": "limited",
         "val": "1d6+2"
       },
@@ -2621,15 +3033,20 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "damage": [{
-      "type": "variable",
-      "val": "1d6+2"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "variable",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
         "id": "limited",
         "val": "1d6+2"
       },
@@ -2656,15 +3073,20 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "damage": [{
-      "type": "variable",
-      "val": "1d6+4"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 10
-    }],
-    "tags": [{
+    "damage": [
+      {
+        "type": "variable",
+        "val": "1d6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
         "id": "limited",
         "val": "2d6"
       },
@@ -2685,5 +3107,70 @@
       "ranged": 1,
       "Melee": 1
     }
+  },
+  {
+    "id": "raleigh_integrated",
+    "name": "M35",
+    "mount": "Main",
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": 4
+      }
+    ],
+    "effect": "This weapon can be fired as a free action when you reload.",
+    "tags": []
+  },
+  {
+    "id": "barbarossa_integrated",
+    "name": "Apocalypse Rail",
+    "mount": "Ship-class",
+    "type": "Spool Weapon",
+    "effect": "The Apocalypse Rail must be charged before it can be fired, using the <b>Charge Rail</b> CORE Power.<br>This weapon has different profiles depending on the charge on the die when you fire it. Each profile replaces the one proceeding it.<br>4 - Cannot be fired<br>3 - Range 20, Blast 2, 2d6 explosive damage. The blast cloud lingers in the area of effect, providing soft cover until the end of your next turn. Objects in the area take 20 AP explosive damage, no attack required.<br>2 - Range 25, Blast 2, 3d6 explosive damage. Characters hit by this attack are shredded and impaired until the end of their next turn. The blast cloud is a burning storm, providing soft cover until the end of your next turn and dealing 4 burn to any character that starts their turn there or moves there for the first time on their turn for the same duration. Objects and terrain in the area take 40 AP explosive damage, no attack required.<br>1 - Range 30, Blast 2, 4d6 explosive damage. Characters hit by this attack are also shredded and stunned until the end of their next turn. The impact vaporizes the ground on impact, turning it into difficult terrain for the rest of this scene. The area is soft cover for the rest of this scene, and characters that start their turn there or move there for the first time take 4 burn. Objects and terrain in the area are dealt 100 AP explosive damage, no attack required.",
+    "tags": []
+  },
+  {
+    "id": "sherman_integrated",
+    "name": "Zone Focus Mk IV SOLIDCORE",
+    "mount": "Main",
+    "type": "Cannon",
+    "range": [
+      {
+        "type": "Line",
+        "val": "4/Charge"
+      }
+    ],
+    "damage": [
+      {
+        "type": "energy",
+        "val": "1d6/Charge"
+      }
+    ],
+    "effect": "When your mech takes the Stabilize action in a combat scene, it stores up a charge in this weapon, up to a maximum of 4. This weapon starts with 1 charge. When it fires, it consumes all charges, then gains 1 charge. These charges persist between scenes.",
+    "tags": []
+  },
+  {
+    "id": "lancaster_integrated",
+    "name": "Latch Drone",
+    "mount": "Main",
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "effect": "Make an attack roll vs evasion 8 and target any friendly mech in range (still take cover and line of sight into account). On hit, you or your target can spend a repair to heal half your target’s HP."
   }
 ]
