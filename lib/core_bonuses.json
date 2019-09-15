@@ -110,8 +110,8 @@
     "id": "kai",
     "name": "Kai Bioplating",
     "source": "SSC",
-    "effect": "Your mech gains +1 accuracy on all agility checks. Your mech ignores difficult terrain, and when your mech makes its regular move, it can jump your full speed lengthwise and jump half your speed straight up, in any combination.",
-    "description": "Adapted from SSC home system-local fauna, Kai Bioplating adds a lamellar layer of insulated, anchored, chitinous plating over key brush-points on a mech. Essentially a cheaper, feasible version of living metal, bioplating guards sensitive systems from minor impacts that would otherwise lead to maintenance during downtime."
+    "effect": "Your mech gains +1 accuracy on all agility checks. Your mech can climb and swim at normal speed, ignores difficult terrain, and when your mech makes its regular move, it can jump your full speed lengthwise and jump half your speed straight up, in any combination.",
+    "description": "Adapted from SSC home system-local fauna, Kai Bioplating adds a lamellar layer of insulated, anchored, chitinous plating over key brush-points on a mech. Essentially a cheaper, feasible version of living metal, bioplating allows for faster movement through hard-to-navigate terrain."
   },
   {
     "id": "neurolinked",
