@@ -2697,7 +2697,7 @@
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 1,
-    "effect": "When you gain your first point of reactor stress, you can re-roll your overheating check (but must keep the second result, even if it's worse).",
+    "effect": "When you gain a point of reactor stress, you can re-roll your overheating check (but must keep the second result, even if it’s worse).",
     "description": "A necessary component of most energy-based mechs, reactor stabilizers add another layer of failsafe protocols to vent heat, manage power flow, and shunt excessive output into weapons and systems in need.",
     "data_type": "system",
     "aptitude": {
