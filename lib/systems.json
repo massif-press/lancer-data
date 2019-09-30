@@ -742,7 +742,7 @@
         "id": "shield"
       },
       {
-        "id": "protocol"
+        "id": "quickaction"
       }
     ],
     "source": "IPS-N",
@@ -2577,15 +2577,14 @@
         "id": "quickaction"
       },
       {
-        "id": "heatself",
-        "val": 2
+        "id": "reaction"
       }
     ],
     "source": "HA",
     "license": "SALADIN",
     "license_level": 1,
     "effect": "Activating this system generates a Burst 3 area centered on you until the end of your next turn. All ranged or melee attacks made against you and any characters inside the shield that originate from outside the shield are made with +1 Difficulty, but your mech is immobilized for the same duration. While the shield is active, 1/round you can grant resistance to all the damage of one attack that just hit a character or object in the shield, but your mech takes 2 heat.",
-    "description": "The HA Support Shield, ENCLAVE-pattern, creates a localized one-way blink field, folding a thin dome of spacetime around its user to protect occupants from incoming projectiles. Units covered by the field can fire out, but probabilistic fluctuations cause incoming projectiles to \"lag\", skipping them away from their intended target and into a randomized trajectory.",
+    "description": "The HA Support Shield, ENCLAVE-pattern, creates a localized one-way blink field, folding a thin dome of spacetime around its user to protect occupants from incoming projectiles. Units covered by the field can fire out, but probabilistic fluctuations cause incoming projectiles to “lag”, skipping them away from their intended target and into a randomized trajectory.",
     "data_type": "system",
     "aptitude": {
       "support": 1,
@@ -2698,7 +2697,7 @@
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 1,
-    "effect": "When you gain your first point of reactor stress, you can re-roll your overheating check (but must keep the second result, even if it's worse).",
+    "effect": "When you gain a point of reactor stress, you can re-roll your overheating check (but must keep the second result, even if it’s worse).",
     "description": "A necessary component of most energy-based mechs, reactor stabilizers add another layer of failsafe protocols to vent heat, manage power flow, and shunt excessive output into weapons and systems in need.",
     "data_type": "system",
     "aptitude": {

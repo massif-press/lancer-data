@@ -167,8 +167,8 @@
     },
     "stats": [
       {
-        "hp": 15,
-        "evade": 10,
+        "hp": 12,
+        "evade": 8,
         "edef": 6,
         "heatcap": 6,
         "hull": 3,
@@ -181,8 +181,8 @@
         "save": 10
       },
       {
-        "hp": 20,
-        "evade": 11,
+        "hp": 16,
+        "evade": 10,
         "edef": 6,
         "heatcap": 6,
         "hull": 4,
@@ -195,8 +195,8 @@
         "save": 12
       },
       {
-        "hp": 25,
-        "evade": 13,
+        "hp": 20,
+        "evade": 12,
         "edef": 6,
         "heatcap": 6,
         "hull": 6,
