@@ -25,5 +25,27 @@
     "Flex": ["Main", "Auxiliary"],
     "Heavy": ["Superheavy", "Heavy", "Main", "Auxiliary"]
   },
-  "overcharge": ["+1", "+1d3", "+1d6", "+1d6+4"]
+  "overcharge": ["+1", "+1d3", "+1d6", "+1d6+4"],
+  "skill_headers": [
+      {
+        "attr": "str",
+        "description": "use, resist, and apply direct force, physical or otherwise"
+      },
+      {
+        "attr": "dex",
+        "description": "perform skillfully and accurately under pressure"
+      },
+      {
+        "attr": "int",
+        "description": "notice details, think creatively, and prepare"
+      },
+      {
+        "attr": "cha",
+        "description": "talk, lead, change minds, make connections, and requisition resources"
+      },
+      {
+        "attr": "Custom",
+        "description": "Custom Skill Triggers"
+      }
+    ]
 }

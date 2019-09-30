@@ -4,6 +4,7 @@ const data = {
   backgrounds: require('./lib/backgrounds.json'),
   core_bonuses: require('./lib/core_bonuses.json'),
   frames: require('./lib/frames.json'),
+  glossary: require('./lib/glossary.json'),
   info: require('./lib/info.json'),
   manufacturers: require('./lib/manufacturers.json'),
   mods: require('./lib/mods.json'),
