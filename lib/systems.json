@@ -91,6 +91,9 @@
       },
       {
         "id": "drone"
+      },
+      {
+        "id": "quickaction"
       }
     ],
     "source": "GMS",
@@ -231,7 +234,7 @@
     "source": "GMS",
     "license": "",
     "license_level": "",
-    "effect": "Gain 2 extra sets of limbs. These limbs cannot be used to make attacks, but can otherwise hold and manipulate the environment and items as normal. In addition, these manipulators can interact with objects in the environment that a pilot would normally have to interact with (a pilot sized touch pad, etc) with no penalty.",
+    "effect": "Gain an extra set of limbs. These limbs cannot be used to make attacks, but can otherwise hold and manipulate the environment and items as normal. In addition, these manipulators can interact with objects in the environment that a pilot would normally have to interact with (a pilot sized touch pad, etc) with no penalty.",
     "description": "Precise interaction with the built or natural environment, soft targets, and sensitive material below rated tonnage is part of the daily routine for support-class mechs. Manipulators, haptic-padded multi-digit \"hands\", allow for such precise manipulation. ",
     "data_type": "system",
     "aptitude": {
