@@ -2335,7 +2335,7 @@
       },
       {
         "id": "limited",
-        "val": 2
+        "val": 1
       }
     ],
     "source": "HA",
