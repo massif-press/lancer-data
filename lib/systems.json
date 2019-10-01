@@ -2332,6 +2332,10 @@
       },
       {
         "id": "protocol"
+      },
+      {
+        "id": "limited",
+        "val": 2
       }
     ],
     "source": "HA",
