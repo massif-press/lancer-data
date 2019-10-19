@@ -1393,7 +1393,7 @@
   },
   {
     "id": "athena",
-    "name": "ATHENA",
+    "name": "ATHENA-class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -1401,7 +1401,7 @@
         "id": "unique"
       },
       {
-        "id": "protocol"
+        "id": "ai"
       },
       {
         "id": "quickaction"
@@ -1410,8 +1410,8 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 3,
-    "effect": "<b>ATHENA Protocol</b><br>Choose a blast 3 area within 50 spaces of you. Your AI constructs a perfect, real-time, 3d model of this are that you can rotate and interact with, including characters that move in and out of that area, and all in extreme detail. You can re-target or move this area by taking this quick action again. It lasts until the end of the current scene, or about 30 minutes in narrative time. Thought it grants sight of the area, it does not grant line of sight for the purposes of weapons, etc (walls and other obstacles still block shots).<br>Hostile targets that end their turn in this area lose invisibility or hiding and and gain the Lock On condition. Hostile characters in this area cannot benefit from cover and cannot hide or turn invisible in the area. In addition, you can ask the GM for perfect information on the statistics, weapons, and systems of any characters in the area as long as they remain in the area.",
-    "description": "Smith-Shimano's ATHENA is the pinnacle of total hyperspectral environmental facsimile. Through a combination of unfettered Omninet access, hyperspectral relays fired out from a Cloudscout TACSIM projector, sub-networked squadmates, and active/hostile intrusion protocols, ATHENA bootstraps a nearflawless reconstruction of the immediate environment around its host core. ATHENA is unparalleled in its processing power, and with this reconstructed environment it can provide trustworthy, accurate advising to pilots in need of strategic counsel. ATHENA clones tend to be patient, cautious, and measured in their relations with their pilots.",
+    "effect": "Your mech gains the AI property and gains the ATHENA protocol:<br><b>ATHENA Protocol</b>Choose a blast 3 area within 50 spaces of you. Your AI constructs a perfect, real-time, 3d model of this are that you can rotate and interact with, including characters that move in and out of that area, and all in extreme detail. You can re-target or move this area by taking this quick action again. It lasts until the end of the current scene, or about 30 minutes in narrative time. Thought it grants sight of the area, it does not grant line of sight for the purposes of weapons, etc (walls and other obstacles still block shots). <br>Hostile targets that end their turn in this area lose invisibility or hiding and and gain the Lock On condition. Hostile characters in this area cannot benefit from cover and cannot hide or turn invisible in the area. In addition, you can ask the GM for perfect information on the statistics, weapons, and systems of any characters in the area as long as they remain in the area.",
+    "description": "Smith-Shimano’s ATHENA is the pinnacle of total hyperspectral environmental facsimile. Through a combination of unfettered Omninet access, hyperspectral relays fired out from a Cloudscout TACSIM projector, sub-networked squadmates, and active/hostile intrusion protocols, ATHENA bootstraps a nearflawless reconstruction of the immediate environment around its host core. ATHENA is unparalleled in its processing power, and with this reconstructed environment it can provide trustworthy, accurate advising to pilots in need of strategic counsel. <br>ATHENA clones tend to be patient, cautious, and measured in their relations with their pilots.",
     "data_type": "system",
     "aptitude": {
       "support": 2,
@@ -2342,7 +2342,7 @@
     "license": "GENGHIS",
     "license_level": 3,
     "effect": "Your mech gains the AI property and the AGNI protocol.<br><b>AGNI Protocol</b><br> At the end of your turn, you automatically cool, clearing your heat gauge and cooling to 0 heat. This vent creates a burst 2 zone around you. All targets within that zone must make an engineering save. On a failure, a target takes 2 Burn and is pushed outside the zone (or as far as possible). This area provides soft cover until the end of your next turn.<br>This protocol can only be activated once per scene.",
-    "description": "AGNI was developed from the aftermath of the Hercynian Crisis using a combination of combat performance data recorded by extant subsentient artificial intelligences (weapons systems, chassis copilots, tactic-minds, general combat data) and the neural network of an Egregorian hivemind captured and vivisected by Union Science Bureau.<br>Born from trauma, AGNI Prime devised systems of heat management that have since been disseminated throughout core space to ensure unparalleled heat processing, recycling, and shielding. Further developments into radiation shielding, omninet capability, and drone/nanite control are forthcoming; meanwhile, AGNI clones have been optimized for mech chassis core systems.<br>Pilots report AGNI clones as generally cold and efficient. A low percentage report instances of memory recitation and command rejection, often followed days later by total breakdown through attempted self-emancipation. Pilots are recommended to cycle their AGNI clones at least once every six standard months.",
+    "description": "AGNI was developed during the Hercynian Crisis using a combination of combat performance data recorded by extant subsentient artificial intelligences (weapons systems, chassis copilots, tactic-minds, general combat data) and the modeled neural network of an Egregorian overmind captured and vivisected by Union Science Bureau.<br>AGNI Prime was used to devise systems of heat management that have since been disseminated throughout core space to ensure unparalleled heat processing, recycling, and shielding. Further developments into radiation shielding, omninet capability, and drone/nanite control are forthcoming; meanwhile, AGNI clones have been optimized for mech chassis core systems. <br>Pilots report AGNI clones as generally cold and efficient. A low percentage report instances of memory recitation and command rejection, often followed days later by total breakdown through attempted selfemancipation. Pilots are recommended to cycle their AGNI clones at least once every six standard months. ",
     "data_type": "system",
     "aptitude": {
       "support": 1,
