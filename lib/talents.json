@@ -432,7 +432,7 @@
       },
       {
         "name": "Collateral Damage",
-        "description": "Once per round, when you critical hit a character with a cannon weapon, you can cause a secondary explosion of debris to burst from that character. All characters adjacent to your target, but not your primary target, take 3 explosive damage"
+        "description": "1/round, when you critically hit a character or object with a cannon attack, you can cause a huge explosion of secondary munitions to erupt from that character. This creates a burst 2 area around the target. Affected characters can either choose to drop prone to avoid the effect as a reaction, or take 2 explosive damage and be knocked back 2 spaces away from the center of the attack."
       }
     ]
   },
