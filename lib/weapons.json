@@ -3158,7 +3158,11 @@
       }
     ],
     "effect": "When your mech takes the Stabilize action in a combat scene, it stores up a charge in this weapon, up to a maximum of 4. This weapon starts with 1 charge. When it fires, it consumes all charges, then gains 1 charge. These charges persist between scenes.",
-    "tags": []
+    "tags": [
+      {
+        "id": "ordnance"
+      }
+    ]
   },
   {
     "id": "lancaster_integrated",
