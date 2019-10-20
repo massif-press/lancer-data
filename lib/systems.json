@@ -3344,6 +3344,97 @@
     }
   },
   {
+    "id": "pinning",
+    "name": "Pinning",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "quickaction"
+      }
+    ],
+    "source": "SSC",
+    "license": "WHITE WITCH",
+    "license_level": 1,
+    "effect": "Your mech and one character in range 3 and line of sight are immobilized. On any subsequent turn, you can end this effect as a free action, or your target can end it by damaging you or by passing a hull save as a quick action.",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "id": "sympatheticshield",
+    "name": "Sympathetic Shield",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "quickaction"
+      },
+      {
+        "id": "overshield"
+      },
+      {
+        "id": "shield"
+      },
+      {
+        "id": "limited",
+        "val": 3
+      }
+    ],
+    "source": "SSC",
+    "license": "WHITE WITCH",
+    "license_level": 2,
+    "effect": "You project a shield of resonant ferrofluid over an allied character in range 5. Until the end of your next turn, that character gains overshield 8, but any damage dealt to this overshield before reductions of any kind also transfers to you as if the attacker had also damaged you, no matter how far away you are.",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "id": "camusimplant",
+    "name": "Camus Implant",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "quickaction"
+      },
+      {
+        "id": "shield"
+      },
+      {
+        "id": "reaction"
+      }
+    ],
+    "source": "SSC",
+    "license": "WHITE WITCH",
+    "license_level": 2,
+    "effect": "Your mech is capable of projecting a spot magnetic force of incredible power. You can prime this system as a quick action. Once primed, once before the start of your next turn as a reaction when an ally within range 3 and line of sight of you is targeted by an attack or other effect that deals at least partly kinetic or explosive damage, you can cause the attack or effect to instead target your mech.",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
+    "id": "ferrospikebarrier",
+    "name": "Ferrospike Barrier",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "fullaction"
+      },
+      {
+        "id": "deployable"
+      }
+    ],
+    "source": "SSC",
+    "license": "WHITE WITCH",
+    "license_level": 3,
+    "effect": "You project a size 2 spray of liquid metal in a free adjacent space that rapidly hardens into wicked spines. The barrier can be used for hard cover by any character, and the first time in a round any character is knocked back into the barrier, that character takes 1d6 AP kinetic damage. You can only have one barrier deployed at a time, if a new one is deployed, the other dissolves.",
+    "description": "",
+    "data_type": "system",
+    "aptitude": {}
+  },
+  {
     "id": "armsman1",
     "name": "Ammo Case",
     "type": "System",

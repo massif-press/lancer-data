@@ -1743,5 +1743,56 @@
     },
     "data_type": "frame",
     "aptitude": {}
+  },
+  {
+    "id": "wwitch",
+    "source": "SSC",
+    "name": "WHITE WITCH",
+    "y_pos": "12.5",
+    "mechtype": ["Defender"],
+    "description": "Using the same proprietary magnetic manipulation technology as its cousin, the White Witch is a top of the line LUX frame focused more on personal defense capability than area control. The White Witch is able to rapidly pull metal from the environment to feed a layer of liquid metal armor, a fluid shell that hardens on impact to offer unparalleled defense.",
+    "mounts": ["Flex", "Heavy"],
+    "stats": {
+      "size": 2,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Rooted",
+        "description": "While this mech is immobilized, it has resistance to kinetic damage. It can immobilize itself until the end of its next turn as a quick action."
+      },
+      {
+        "name": "Harden",
+        "description": "When this mech braces, it gains overshield 5."
+      },
+      {
+        "name": "Guardian",
+        "description": "Adjacent allied characters can use this mech as hard cover."
+      }
+    ],
+    "core_system": {
+      "name": "FERROREACTIVE SHELL",
+      "description": "A magnetic field generator takes the same technology as other projected magnetic defenses and makes them portable separate from a mech core. When activated, the mag field generator creates a projected magnetic bubble that traps all incoming ferrous projectiles; the strength of the field is so great that it can even draw mechs to its center. When the field is canceled or the solid-state battery burns out (by design), the field detonates through sudden catastrophic reversal, launching all captured projectiles out from its center.",
+      "passive": "Each time this mech takes damage from a source owned by a hostile character, increase it’s armor by 1 for the rest of this scene, up to a maximum increase of 6 (you can use a die to track this).",
+      "active_name": "Hyperactive mode",
+      "effect": "Once this protocol is active, each time your ferroreactive armor activates, it sheds debris in an burst 1 explosion around your mech, dealing 2 kinetic damage to all characters and objects within. At the end of your turn, if your armor is 6 or higher, your shell shatters, dealing 3d6 kinetic damage to all characters in a burst 1 explosion around your mech. Characters caught in this explosion must pass a hull save or be knocked prone, your mech is Exposed until the start of your next turn, and reset your ferroreactive armor to 0. This effect lasts until the end of this scene.",
+      "tags": [
+        {
+          "id": "protocol"
+        }
+      ]
+    },
+    "data_type": "frame",
+    "aptitude": {}
   }
 ]

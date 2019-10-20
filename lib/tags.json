@@ -169,6 +169,11 @@
     "description": "Indicates the system is an energy shield of some kind"
   },
   {
+    "id": "overshield",
+    "name": "Overshield ",
+    "description": "Overshield is hp that disappears at the end of a scene or when a condition is specified. You only have the highest value of overshield applied, it does not stack and you must choose which to keep. For example, if something gives you overshield 5 and you gain another effect that gives you over shield 7, you would gain overshield 7. Damage taken goes to over shield first, then HP. Overshield can push you past maximum hp and is not healing. It cannot benefit from healing but otherwise benefits normally from anything that would affect hp (reduction, armor, etc)."
+  },
+  {
     "id": "unique",
     "name": "Unique",
     "description": "indicates that a weapon or system cannot be duplicated. You can only install it once per mech."

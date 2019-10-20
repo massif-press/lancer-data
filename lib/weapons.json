@@ -2945,6 +2945,58 @@
     }
   },
   {
+    "id": "ferrofluidlance",
+    "name": "Ferrofluid Lance",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [],
+    "source": "SSC",
+    "license": "WHITE WITCH",
+    "license_level": "1",
+    "effect": "One character struck by this weapon must make a hull save. On a failed save, both you and the target are immobilized. At the end of each of its turns, the target can repeat the save, freeing both of you on success. As a quick action on your turn, you can break this immobilization effect on both of you to whip your target away, knocking them back 4 spaces in any direction. Otherwise you both remain immobilized.",
+    "description": "Placeholder.",
+    "data_type": "weapon",
+    "aptitude": {}
+  },
+  {
+    "id": "resonancecannon",
+    "name": "Resonance Cannon",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "damage": [
+      {
+        "type": "kinetic",
+        "val": "[armor]"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [],
+    "source": "SSC",
+    "license": "WHITE WITCH",
+    "license_level": "3",
+    "effect": "This weapon picks up and stores damage taken by your mechs’ armor as a kinetic charge. It deals base damage equal to your current armor. 1/round when you take damage from an source owned by a hostile character, you may choose to store a charge in this weapon. The weapon deals 1d6 kinetic damage per charge, up to a maximum of 3 charges. If you have 2 or more charges, your mech is immobilized until it fires this weapon. If it has 3 charges, it additionally gains knockback 3.",
+    "description": "Placeholder.",
+    "data_type": "weapon",
+    "aptitude": {}
+  },
+  {
     "id": "fuelrod",
     "name": "Fuel Rod Gun",
     "mount": "Integrated",
