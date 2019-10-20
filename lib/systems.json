@@ -3344,8 +3344,8 @@
     }
   },
   {
-    "id": "pinning",
-    "name": "Pinning",
+    "id": "pinningspire",
+    "name": "Pinning Spire",
     "type": "System",
     "sp": 2,
     "tags": [
