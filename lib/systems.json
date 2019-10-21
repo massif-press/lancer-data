@@ -3357,7 +3357,7 @@
     "license": "WHITE WITCH",
     "license_level": 1,
     "effect": "Your mech and one character in range 3 and line of sight are immobilized. On any subsequent turn, you can end this effect as a free action, or your target can end it by damaging you or by passing a hull save as a quick action.",
-    "description": "",
+    "description": "“We call it ‘demand-compliance tethering’. Though, that makes it sound as if they have a choice to resist.”",
     "data_type": "system",
     "aptitude": {}
   },
@@ -3384,17 +3384,20 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 2,
-    "effect": "You project a shield of resonant ferrofluid over an allied character in range 5. Until the end of your next turn, that character gains overshield 8, but any damage dealt to this overshield before reductions of any kind also transfers to you as if the attacker had also damaged you, no matter how far away you are.",
-    "description": "",
+    "effect": "You project a shield of resonant ferrofluid over an allied character in range 5. That character gains overshield 8, but any damage dealt to this overshield before reductions of any kind also transfers to you as if the attacker had also damaged you, no matter how far away you are.",
+    "description": "“Soon enough we realized that shaping weapons from molecules and particles wasn’t enough to justify the conical mag as a system worth platforming. We needed to find a way to make it... more. More visual, tactile, concrete, imposing, thrilling — we needed to sell the next step in realspace control! So with some tuning and, regrettably, input from Visual, we figured out how to define the White Witch: as the most terrifying, alien thing you’ve ever fucking seen.”",
     "data_type": "system",
     "aptitude": {}
   },
   {
-    "id": "camusimplant",
-    "name": "Camus Implant",
+    "id": "camussrazor",
+    "name": "Camus's Razor",
     "type": "System",
     "sp": 2,
     "tags": [
+      {
+        "id": "unique"
+      },
       {
         "id": "quickaction"
       },
@@ -3408,8 +3411,8 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 2,
-    "effect": "Your mech is capable of projecting a spot magnetic force of incredible power. You can prime this system as a quick action. Once primed, once before the start of your next turn as a reaction when an ally within range 3 and line of sight of you is targeted by an attack or other effect that deals at least partly kinetic or explosive damage, you can cause the attack or effect to instead target your mech.",
-    "description": "",
+    "effect": "Your mech is capable of projecting a spot magnetic force of incredible power. You can prime this system as a quick action. Once primed, once before the start of your next turn as a reaction when an ally within range 3 and line of sight of you is targeted by an attack or other effect that deals at least partly kinetic or explosive damage, before the attack is made you can cause the attack or effect to instead target your mech. This attack or effect transfers no matter if the original could hit you or not (such as a melee attack).",
+    "description": "“Manipulating the world around the platform doesn’t end at rearranging the natural/built environment. This was the line that many on the team were afraid to cross, the question we had all asked ourselves once we bracketed the platform: what happens when we apply it to a person? What does existence mean when it can be ended with a thought?”",
     "data_type": "system",
     "aptitude": {}
   },
@@ -3429,8 +3432,8 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 3,
-    "effect": "You project a size 2 spray of liquid metal in a free adjacent space that rapidly hardens into wicked spines. The barrier can be used for hard cover by any character, and the first time in a round any character is knocked back into the barrier, that character takes 1d6 AP kinetic damage. You can only have one barrier deployed at a time, if a new one is deployed, the other dissolves.",
-    "description": "",
+    "effect": "You project a size 2, 20 HP spray of liquid metal in a free adjacent space that rapidly hardens into wicked spines. The barrier is a solid object that can be used for hard cover by any character, and the first time in a round any character is knocked back into the barrier, that character takes 1d6 AP kinetic damage. You can only have one barrier deployed at a time, if a new one is deployed, the other dissolves.",
+    "description": "“Again and again the meatheads over at Visual asked us to ‘help them sell’ the platform. What else could we do? We handed them a power that gods of death and war had coveted since Cain cracked a rock over Abel’s head, and they told us, ‘if we can’t see it, we can’t sell it.’ So we mucked around and made another diadematic little wonder for them, the F-Barrier. It’s brilliant. Of course it is. We’re Exotic Materials, brilliance is easy.”",
     "data_type": "system",
     "aptitude": {}
   },

@@ -171,7 +171,7 @@
   {
     "id": "overshield",
     "name": "Overshield ",
-    "description": "Overshield is hp that disappears at the end of a scene or when a condition is specified. You only have the highest value of overshield applied, it does not stack and you must choose which to keep. For example, if something gives you overshield 5 and you gain another effect that gives you over shield 7, you would gain overshield 7. Damage taken goes to over shield first, then HP. Overshield can push you past maximum hp and is not healing. It cannot benefit from healing but otherwise benefits normally from anything that would affect hp (reduction, armor, etc)."
+    "description": "Overshield is hp that disappears at the end of a scene or when a condition is specified. You only have the highest value of overshield applied, it does not stack and you must choose which to keep. For example, if you already have overshield 5 and you gain another effect gives you overshield 7, you would replace overshield 5 with overshield 7, not add them together. Damage taken goes to over shield first, then HP. Overshield can push you past maximum hp and is not healing. It cannot benefit from healing but otherwise benefits normally from anything that would affect hp (reduction, armor, etc)."
   },
   {
     "id": "unique",

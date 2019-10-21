@@ -2945,8 +2945,8 @@
     }
   },
   {
-    "id": "ferrofluidlance",
-    "name": "Ferrofluid Lance",
+    "id": "coherentsubatomicneedle",
+    "name": "Coherent Subatomic Needle",
     "mount": "Main",
     "type": "Melee",
     "damage": [
@@ -2965,14 +2965,14 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 1,
-    "effect": "One character struck by this weapon must make a hull save. On a failed save, both you and the target are immobilized. At the end of each of its turns, the target can repeat the save, freeing both of you on success. As a quick action on your turn, you can break this immobilization effect on both of you to whip your target away, knocking them back 4 spaces in any direction. Otherwise you both remain immobilized.",
-    "description": "",
+    "effect": "1/round you may force a character struck by this weapon must make a hull save. On a failed save, both you and the target are immobilized. At the end of each of its turns, the target can repeat the save, freeing both of you on success. As a quick action on your turn, you can break this immobilization effect on both of you to whip your target away, knocking them back 4 spaces in any direction. Otherwise you both remain immobilized.",
+    "description": "“To say we can pull this needle from ‘thin air’ is the best-fit phrase, but it’s not accurate. Not entirely. There’s no such thing as thin air, not in the way one means it when they use that phrase. ‘Agreeable Atomic Space’ — that’s what ‘thin air’ really is. A place where one could — if one could — coalesce utility from useless particulate mass with a thought. With a snap of our finger. Here, watch this —“",
     "data_type": "weapon",
     "aptitude": {}
   },
   {
-    "id": "resonancecannon",
-    "name": "Resonance Cannon",
+    "id": "retortloop",
+    "name": "Retort Loop",
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [
@@ -2991,8 +2991,8 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 3,
-    "effect": "This weapon picks up and stores damage taken by your mechs’ armor as a kinetic charge. It deals base damage equal to your current armor. 1/round when you take damage from an source owned by a hostile character, you may choose to store a charge in this weapon. The weapon deals 1d6 kinetic damage per charge, up to a maximum of 3 charges. If you have 2 or more charges, your mech is immobilized until it fires this weapon. If it has 3 charges, it additionally gains knockback 3.",
-    "description": "",
+    "effect": "This weapon picks up and stores damage taken by your mechs’ armor as a kinetic charge. It deals base damage equal to your current armor. 1/round when you take damage from an source owned by a hostile character, you may choose to store a charge in this weapon. When fired, the weapon deals an additional 1d6 kinetic damage per charge, up to a maximum of 3 charges. It only expends charges on hit. If you have 3 charges, your mech is immobilized until it fires this weapon, but it additionally gains knock back 3.",
+    "description": "“Ultimately, I have to return to the core of what we made, the code we cracked when we finally figured out NO/EM. From a simple prompt, we created a terrible engine. I am more proud of what we did than anything I’ve ever worked on before, but it should never see the light of day. Working with Visual convinced me of this: it’s their job to translate our work to sales, and they could not. If the translator cannot understand the text... then who are they to re-write it? Who is the reader to attempt to access it? I conclude my summary with this: mothball the platform. There are less terrible paths we can walk.",
     "data_type": "weapon",
     "aptitude": {}
   },
