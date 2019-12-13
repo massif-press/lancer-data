@@ -1,0 +1,32 @@
+[
+    {
+    "id": "npcc_ace",
+		"name": "ace",
+		"role": "striker",
+		"info": {
+			"flavor": "The first person to embody the “Ace” archetype was Aisling Jensen, an auxiliary pilot active during the liberation of Verdana. Knights of the chassis and sky, Aces like Aisling throw their mechs into battle with high-speed strafing runs, agile maneuvers, and reckless feats of daring. Cocky and self-assured, Aces relish a good duel.",
+			"tactics": "Aces are very fast and reactive strikers that can use EVASIVE MANEUVERS to mitigate dangerous or high- damage attacks. EVASIVE MANEUVERS is most effective against heavy weapons. Their SEEKING weapons ignore cover and don’t require line of sight, allowing them to deal consistent damage. Relatively low HP makes Aces vulnerable to sustained damage, and they are relatively weak against tech attacks."
+		},
+		"stats": {
+			"armor": [0, 0, 0],
+			"hp": [10, 12, 14],
+			"evade": [12, 15, 18],
+			"edef": [8, 8, 8],
+			"heatcap": [8, 8, 8],
+			"speed": [5, 6, 7],
+			"sensor": [10, 10, 10],
+			"save": [10, 12, 14],
+			"hull": [-2, -2, -2],
+			"agility": [3, 4, 6],
+			"systems": [1, 2, 3],
+			"engineering": [0, 1, 1],
+      "size": [1, 1, 1]
+    },
+    "base_features": [
+      "npcf_ssc_flightsystem", "npcf_missilelauncher", "npcf_barrelroll"
+    ],
+    "optional_features": [
+      "npcf_bombingbay", "npcf_strafe", "npcf_missileswarm", "npcf_rapidresponse", "npcf_chafflaunchers"
+    ]
+	}
+]
