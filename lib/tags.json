@@ -183,6 +183,11 @@
     "name": "AI",
     "description": "Your mech gains the AI property. You may cede control of your mech to the AI at the start of your turn. You can only ever install one system with the AI tag unless you have a talent, feature, or piece of gear that says otherwise."
   },
+    {
+    "id": "bonus_ai",
+    "name": "AI",
+    "description": "Your mech gains the AI property. You may cede control of your mech to the AI at the start of your turn. You can only ever install one system with the AI tag unless you have a talent, feature, or piece of gear that says otherwise."
+  },
   {
     "id": "fullaction",
     "name": "Full Action",

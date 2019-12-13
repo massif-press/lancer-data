@@ -1,4 +1,58 @@
 [
+    {
+    "name": "Armored",
+    "class": "generic",
+    "type": "trait",
+    "effect": "This character gains +1 armor, up to a maximum of +4",
+    "hide_on_card": true,
+    "base": false,
+    "stat_bonuses": { "armor": 1 }
+  },
+
+  {
+    "name": "Boosted Reactor",
+    "class": "generic",
+    "type": "trait",
+    "effect": "This character gains +2 heat capacity.",
+    "hide_on_card": true,
+    "base": false,
+    "stat_bonuses": { "heatcap": 2 }
+  },
+
+  {
+    "name": "Jump Jets",
+    "class": "generic",
+    "type": "system",
+    "effect": "This character can Fly when it boosts, but must land after moving.",
+    "base": false
+  },
+
+  {
+    "name": "Reinforced",
+    "class": "generic",
+    "type": "trait",
+    "effect": "This character gains +5 HP",
+    "hide_on_card": true,
+    "base": false,
+    "stat_bonuses": { "hp": 5 }
+  },
+
+  {
+    "name": "SSC Core Flight System",
+    "class": "generic",
+    "type": "system",
+    "effect": "This character can Fly when it moves or boosts",
+    "base": false
+  },
+
+  {
+    "name": "Tactical Cloak",
+    "class": "generic",
+    "action": "quick",
+    "type": "system",
+    "effect": "This mech becomes invisible. If it takes damage or is stunned or shut down, it loses this invisibility.",
+    "base": false
+  },
   {
     "name": "Berserker",
     "class": "ultra",
@@ -23,7 +77,8 @@
     "class": "ultra",
     "type": "trait",
     "effect": "The Ultra gains +4 evasion, up to a maximum of 20, but reduce its structure to 3.",
-    "base": false
+    "base": false,
+    "stat_bonuses": { "structure": -1 }
   },
   {
     "name": "Extra Deadly",
@@ -36,7 +91,7 @@
     "name": "Fortress",
     "class": "ultra",
     "type": "trait",
-    "effect": "Tech attacks against the Ultra are made at +3 difficulty and it makes all systems saves at +3 accuracy).",
+    "effect": "Tech attacks against the Ultra are made at +3 difficulty and it makes all systems saves at +3 accuracy.",
     "base": false
   },
   {
@@ -50,7 +105,7 @@
     "name": "Limitless",
     "class": "ultra",
     "type": "trait",
-    "effect": "The Ultra can use overcharge. It’s cost for overcharging is always 1d6 heat.",
+    "effect": "The Ultra can use overcharge. Its cost for overcharging is always 1d6 heat.",
     "base": false
   },
   {
@@ -71,28 +126,29 @@
     "name": "Superior Construction",
     "class": "ultra",
     "type": "trait",
-    "effect": "The ultra has resistance to one of the following damage types: kinetic, energy, explosive. It cannot gain resistance to more than 2 (from this trait or any other systems). Reduce its structure to 3.",
-    "base": false
+    "effect": "The Ultra has resistance to one of the following damage types: kinetic, energy, explosive. It cannot gain resistance to more than 2 (from this trait or any other systems). It loses its +5 bonus HP.",
+    "base": false,
+    "stat_bonuses": { "hp": -5 }
   },
   {
     "name": "Superior Frame",
     "class": "ultra",
     "type": "trait",
-    "effect": "The ultra is immune to the Slowed, Shredded, and immobilized conditions",
+    "effect": "The Uultra is immune to the Slowed, Shredded, and immobilized conditions",
     "base": false
   },
   {
     "name": "Superior Targeting",
     "class": "ultra",
     "type": "trait",
-    "effect": "The ultra ignores cover when making ranged attacks.",
+    "effect": "The Ultra ignores cover when making ranged attacks.",
     "base": false
   },
   {
     "name": "Supreme Maintenance",
     "class": "ultra",
     "type": "trait",
-    "effect": "The ultra is immune to the Jammed condition, can reload one weapon with the loading property as a free action on its turn, and can repair a destroyed weapon or system with a quick action on its turn.",
+    "effect": "The Ultra is immune to the Jammed condition, can reload one weapon with the loading property as a free action on its turn, and can repair a destroyed weapon or system with a quick action on its turn.",
     "base": false
   },
   {
@@ -106,14 +162,14 @@
     "name": "ARGUS armor",
     "class": "ultra",
     "type": "system",
-    "effect": "The ultra’s armor increases to 6. Each time it rolls a structure or overheating check, reduce its armor by 2, to a minimum of 0.",
+    "effect": "The Ultra’s armor increases to 6. Each time it rolls a structure or overheating check, reduce its armor by 2, to a minimum of 0.",
     "base": false
   },
   {
     "name": "Siege Shield",
     "class": "ultra",
     "type": "system",
-    "effect": "The ultra has resistance to all damage that originates further away than range 5 of its space.",
+    "effect": "The Ultra has resistance to all damage that originates further away than range 5 of its space.",
     "base": false
   },
   {
@@ -123,8 +179,8 @@
     "weapon_type": ["Heavy", "CQB"],
     "weapon_roll": {
       "flat": {
-        "val": 0,
-        "pertier": false
+        "val": 2,
+        "pertier": true
       }
     },
     "weapon_range": [
@@ -201,8 +257,9 @@
     "name": "SSC Silvershielding",
     "class": "ultra",
     "type": "system",
-    "effect": "The Ultra is permanently invisible. Reduce its structure to 2.",
-    "base": false
+    "effect": "The Ultra is permanently invisible. It loses its +5 bonus HP.",
+    "base": false,
+    "stat_bonuses": { "hp": -5 }
   },
   {
     "name": "SSC Ex Hover Propulsion",
