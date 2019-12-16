@@ -20,7 +20,7 @@ const data = {
   actions: require('./lib/actions.json'),
   reserves: require('./lib/reserves.json'),
   npc_classes: require('./lib/npc_classes.json'),
-  npc_generic_systems: require('./lib/npc_generic_systems.json'),
+  // npc_generic_systems: require('./lib/npc_generic_systems.json'),
   npc_systems: require('./lib/npc_systems.json'),
   npc_template_systems: require('./lib/npc_template_systems.json'),
 }
