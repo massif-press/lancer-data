@@ -14,34 +14,27 @@
       "type": "threat",
       "val": 5
     },
-    "effects": [
-      {
-      "type": "on_hit",
-      "effect": "Target must pass a HULL save or be pulled directly to the Pirate and automatically GRAPPLED."
-      }
-    ]
+    "on_hit": "Target must pass a HULL save or be pulled directly to the Pirate and automatically GRAPPLED.",
+    "effect": ""
   },
-    {
+  {
+    "id": "npcf_leadthecharge",
+    "name": "Lead The Charge",
+    "type": "Reaction",
+    "trigger": "A hostile character within line of sight moves",
+    "effect": "The Ultra can BOOST. This reaction can be used any number of times a round"
+  },
+  {
     "id": "npcf_splinterrounds",
     "name": "Splinter Rounds",
     "type": "Trait",
-    "effects": [
-      {
-      "type": "none",
-      "effect": "The Pirate deals +3 bonus damage on critical hits."
-      }
-    ]
+    "effect": "The Pirate deals +3 bonus damage on critical hits."
   },
   {
     "id": "npcf_corewormrockets",
     "name": "Coreworm Rockets",
     "type": "System",
-    "effects": [
-      {
-      "type": "none",
-      "effect": "1d3 miniature drones attach themselves to a character within line of sight and �10 and begin drilling into their target’s cockpit. In 1d3+2 rounds, if any coreworms are still attached, they reach the cockpit and savage the pilot, reducing them to 0 HP. <br>The target knows how many rounds it will take for the drones to bore though, and how many are attached. The target and allied characters adjacent to them can remove one drone at a time with a successful SYSTEMS or ENGINEERING check as a quick action. Additionally, if the target is SHUT DOWN, the coreworms are confused and their timer pauses."
-      }
-    ],
+      "effect": "1d3 miniature drones attach themselves to a character within line of sight and �10 and begin drilling into their target’s cockpit. In 1d3+2 rounds, if any coreworms are still attached, they reach the cockpit and savage the pilot, reducing them to 0 HP. <br>The target knows how many rounds it will take for the drones to bore though, and how many are attached. The target and allied characters adjacent to them can remove one drone at a time with a successful SYSTEMS or ENGINEERING check as a quick action. Additionally, if the target is SHUT DOWN, the coreworms are confused and their timer pauses.",
     "tags": [
       {
         "id": "limited",
