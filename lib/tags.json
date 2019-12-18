@@ -232,5 +232,48 @@
     "name": "SIDEARM",
     "description": "This weapon can be used to FIGHT as a quick action instead of a full action.",
     "filter_ignore": false
+  },
+  {
+    "id": "tg_quick_tech",
+    "name": "Quick Tech",
+    "description": "This tech can be used as a Quick Tech Action"
+  },
+  {
+    "id": "tg_fulltech",
+    "name": "Full Tech",
+    "description": "This tech can be used as a Full Tech Action"
+  },
+  {
+    "id": "tg_range",
+    "name": "Range ({VAL})",
+    "description": "This system can be activated at a range of {VAL} spaces.",
+    "filter_ignore": true
+  },
+  {
+    "id": "tg_modded",
+    "name": "Modded",
+    "description": "This weapon has been equipped with a weapon mod."
+  },
+  {
+    "id": "tg_resistance",
+    "name": "Resistance",
+    "description": "Reduce all damage from a source you have resistance to by half"
+  },
+  {
+    "id": "tg_bonus_ai",
+    "name": "AI",
+    "description": "Your mech gains the AI property. You may cede control of your mech to the AI at the start of your turn. You can only ever install one system with the AI tag unless you have a talent, feature, or piece of gear that says otherwise."
+  },
+  {
+    "id": "tg_set_max_uses",
+    "name": "Set Max Uses",
+    "description": "Allow player to set the maximum uses for this system (HIDDEN TAG)",
+    "hidden": true
+  },
+  {
+    "id": "tg_set_damage_type",
+    "name": "Set Damage Type",
+    "description": "Allow player to set the damage type for this system (HIDDEN TAG)",
+    "hidden": true
   }
 ]
