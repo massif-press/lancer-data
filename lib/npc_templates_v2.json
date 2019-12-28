@@ -9,8 +9,6 @@
     "optional_features": [
       "npcf_leadthecharge", "npcf_drainsystems"
     ],
-    "stat_bonus": {
-      "hp": 5
-    }
+    "power": 250
   }
 ]

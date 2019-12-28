@@ -28,6 +28,7 @@
     ],
     "optional_features": [
       "npcf_corewormrockets", "npcf_weaknessanalyzer"
-    ]
+		],
+		"power": 125
 	}
 ]
