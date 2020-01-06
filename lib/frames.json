@@ -1137,7 +1137,16 @@
       "passive_effect": "1/round, when you take heat, deal 2 AP energy damage to a character within RANGE 3."
     },
     "data_type": "frame",
-    "aptitude": {}
+    "aptitude": {},
+    "counters": [
+      {
+        "id": "ctr_charged_exoskeleton",
+        "name": "CHARGE DIE",
+        "default_value": 1,
+        "min": 1,
+        "max": 6
+      }
+    ]
   },
   {
     "id": "mf_minotaur",

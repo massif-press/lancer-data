@@ -4,16 +4,16 @@
     "name": "AUTO-STABILIZING HARDPOINTS",
     "source": "GMS",
     "effect": "Choose one mount. Weapons attached to this mount gain +1 ACCURACY.",
-    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 ACCURACY.",
-    "description": "Using the best in shock-absorption and steadytech, you can retain accuracy across longer, sustained periods of fire."
+    "description": "Using the best in shock-absorption and steadytech, you can retain accuracy across longer, sustained periods of fire.",
+    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 ACCURACY."
   },
   {
     "id": "cb_overpower_caliber",
     "name": "OVERPOWER CALIBER",
     "source": "GMS",
     "effect": "Choose one weapon. 1/round, when you hit with an attack, you can cause it to deal +1d6 bonus damage.",
-    "mounted_effect": "One weapon equipped to this mount deals +1d6 bonus damage 1/round on hit.",
-    "description": "Instead of the standardized option, you requisition multiple racks of \"hot\" ammunition - same-bore slugs, with a higher-grade of accelerant."
+    "description": "Instead of the standardized option, you requisition multiple racks of \"hot\" ammunition - same-bore slugs, with a higher-grade of accelerant.",
+    "mounted_effect": "One weapon equipped to this mount deals +1d6 bonus damage 1/round on hit."
   },
   {
     "id": "cb_improved_armament",
@@ -34,8 +34,8 @@
     "name": "MOUNT RETROFITTING",
     "source": "GMS",
     "effect": "Replace one mount with a main/aux mount.",
-    "mounted_effect": "This mount has been replaced with a Main/Aux Mount.",
-    "description": "By re-fabricating certain components and hardpoints on your chassis for more efficient distribution, you can increase your mech's firepower."
+    "description": "By re-fabricating certain components and hardpoints on your chassis for more efficient distribution, you can increase your mech's firepower.",
+    "mounted_effect": "This mount has been replaced with a Main/Aux Mount."
   },
   {
     "id": "cb_universal_compatibility",

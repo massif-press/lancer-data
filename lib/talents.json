@@ -149,6 +149,15 @@
         "name": "UNSTOPPABLE",
         "description": "1/round, when you hit with a melee attack on your turn, you may spend a BLADEMASTER DIE to immediately GRAPPLE or RAM them as a free action after the attack has been resolved."
       }
+    ],
+    "counters": [
+      {
+        "id": "ctr_duelist",
+        "name": "BLADEMASTER DICE",
+        "default_value": 0,
+        "min": 0,
+        "max": 3
+      }
     ]
   },
   {
@@ -243,6 +252,15 @@
       {
         "name": "I KILL WITH MY HEART",
         "description": "You gain a GUNSLINGER DIE, 1d6 starting at 6. Each time you hit with an auxiliary ranged weapon, reduce the value of the GUNSLINGER DIE by 1. When the GUNSLINGER DIE reaches 1, you may reset it to 6 to give +2d6 bonus damage and AP to your next attack with an auxiliary ranged weapon. This attack also ignores cover. The value of your GUNSLINGER DIE persists between scenes but resets to 6 when you rest or perform a FULL REPAIR."
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_gunslinger",
+        "name": "GUNSLINGER DIE",
+        "default_value": 6,
+        "min": 1,
+        "max": 6
       }
     ]
   },
@@ -542,7 +560,7 @@
       },
       {
         "name": "EXPANDED PORTFOLIO",
-        "description": "Your AMMO CASE gains new ammunition types, each of which costs two charges rather than one:<br>- HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<br>- J\u00ef\u00bf\u00bdger (2 charges): The attack deals explosive damage, gains KNOCKBACK 2, and one character it hits - your choice - must succeed on a HULL save or be knocked PRONE.<br>- SABOT (2 charges): The attack deals kinetic damage and gains AP."
+        "description": "Your AMMO CASE gains new ammunition types, each of which costs two charges rather than one:<br>- HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<br>- J\ufffdger (2 charges): The attack deals explosive damage, gains KNOCKBACK 2, and one character it hits - your choice - must succeed on a HULL save or be knocked PRONE.<br>- SABOT (2 charges): The attack deals kinetic damage and gains AP."
       },
       {
         "name": "EFFICIENCY",
