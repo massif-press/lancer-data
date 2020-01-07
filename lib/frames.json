@@ -44,9 +44,6 @@
       "active_effect": "For the rest of this scene, you gain +1 ACCURACY on all attacks, checks, and saves; additionally, 1/turn, you can BOOST as a free action.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -102,9 +99,6 @@
       "active_name": "OMNI-HARPOON",
       "active_effect": "This system fires grappling harpoons at any number of targets within RANGE 5 and line of sight. Affected characters must succeed on a HULL save or take 2d6 kinetic damage and be knocked PRONE, then pulled adjacent to you, or as close as possible. They become IMMOBILIZED until the end of their next turn. On a success, they take half damage and are otherwise unaffected.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -166,9 +160,6 @@
       "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (LINE 2, SIZE 1) unfold from your mech, drawn in any direction. These cover sections have IMMUNITY to all damage.<br>Additionally, the following effects apply while active:<br>- You become IMMOBILIZED.<br>- You benefit from hard cover, even in the open, and gain IMMUNITY to KNOCKBACK, PRONE, and all involuntary movement.<br>- When you BRACE, you may take a full action on your next turn instead of just a quick action.<br>- Any character that gains hard cover from you or your cover sections gains IMMUNITY to KNOCKBACK, PRONE, and all involuntary movement, and gains the benefits of BLAST PLATING.<br>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -222,9 +213,6 @@
       "active_name": "SUPERCHARGER",
       "active_effect": "Your LATCH DRONE clamps onto an allied mech within its RANGE. For the rest of the scene you take 1 heat at the start of each of your turns, but your target gains +1 ACCURACY on all attacks, checks, and saves, and IMMUNITY to the IMPAIRED, JAMMED, SLOWED, SHREDDED, and IMMOBILIZED conditions from characters other than itself. This effect ends if either character becomes STUNNED.<br>While this system is active, you cannot use the LATCH DRONE for any other purpose.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -280,9 +268,6 @@
       "active_effect": "For the rest of the scene, Skirmisher allows you to move 4 spaces at a time instead of 1 space.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -334,9 +319,6 @@
       "active_name": "THUNDER GOD",
       "active_effect": "You start to spin your M35 MJOLNIR up, beginning with no chambered rounds. For the rest of the scene, you load two rounds into chambers at the end of any turn during which you haven't fire the M35 MJOLNIR. It can hold a maximum of six rounds.<br>When you fire the M35 MJOLNIR, all chambers fire simultaneously, dealing 4 kinetic damage per loaded round. If you fire four or more rounds at once, the attack gains AP and, on a hit, your target becomes SHREDDED until the end of their next turn.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -393,9 +375,6 @@
       "active_effect": "For the rest of this scene:<br>- if you have less than THREAT 3 with a ranged weapon, it increases to 3<br>- 1/round, you may take an additional OVERWATCH<br>- any character you hit with OVERWATCH becomes IMMOBILIZED until the end of their next turn.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -449,9 +428,6 @@
       "active_effect": "For the rest of this scene, you gain RESISTANCE to all damage originating within RANGE 3, and Shrike Armor deals 3 AP kinetic damage instead of 1.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -503,9 +479,6 @@
       "active_effect": "This system projects a BLAST 3 magnetic field with at least one space adjacent to you, causing the following effects until the end of your next turn:<br>- The affected area is difficult terrain.<br>- Ranged attacks that deal kinetic or explosive damage can't enter or leave the affected area - projectiles stop at the edge, doing no damage. Record each attack stopped this way.<br>- Mechs and other characters made at least partly of metal that start their turn in the affected area or enter it for the first time in a round must succeed on a HULL save or be pulled as close to the center as possible and become IMMOBILIZED.<br>When the effect ends, any ranged attacks that were stopped resume their trajectory - toward the center of the affected area. The GM rolls attacks against each character within, gaining +1 per blocked attack (to a maximum of +6). On hit, these attacks deal 1d6 kinetic damage per blocked attack (to a maximum of 6d6).",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_full_action"
         }
       ]
@@ -556,9 +529,6 @@
       "active_name": "NEURAL SHUNT",
       "active_effect": "For the rest of this scene, you gain the following action:<br>MARK FOR DEATH<br>Full Action<br>Choose a character further than RANGE 5 and within RANGE 30 to focus on: while focusing, you become IMMOBILIZED and can't take reactions, but you deal +3d6 bonus damage on ranged critical hits against them, as long as they aren't in cover or within RANGE 5.<br>You may only focus on one character at a time. As a protocol, you may cease focusing on a target.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -616,9 +586,6 @@
       "active_effect": "For the rest of the scene, whenever you start a unique movement during your turn (e.g., a standard move, BOOST, or movement granted by talents or systems), you leave a holographic imprint of yourself behind in the space from which you started. These are illusory objects the same SIZE as you that have IMMUNITY to all damage and effects and don't count as obstructions.<br>When hostile characters start their turn in, move through, or move adjacent to the space occupied by a hologram, it detonates. They must succeed on an AGILITY save or take 1d6 energy damage. On a success, they take half damage.<br>You may instantly teleport to the location of any hologram within RANGE 50 as a quick action. When you do so, all extant holograms detonate - creating BURST 1 explosions with the same effect as above - and you may not create any new holograms until the start of your next turn.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -670,9 +637,6 @@
       "active_name": "TACTICAL CLOAK",
       "active_effect": "You are INVISIBLE for the rest of the scene.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -726,9 +690,6 @@
       "active_effect": "Choose any number of characters within RANGE 50: your targets must succeed on AGILITY saves or take 1d6+4 explosive damage. On a success, they take half damage. These self-guiding missiles can reach any target as long as there is a path to do so.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_full_action"
         }
       ]
@@ -779,9 +740,6 @@
       "active_name": "STABILIZE SINGULARITY",
       "active_effect": "For the rest of the scene, you teleport when you BOOST or make a standard move.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -835,9 +793,6 @@
       "active_name": "PROPHETIC INTERJECTION",
       "active_effect": "Gain the following reaction for the rest of the scene:<br>TACTICAL SIMULATION<br>Reaction<br>1/round, when an allied character within line of sight takes damage from another character within line of sight, roll 1d6: on 4+, the attack was actually a simulation predicted by your processor - your allied target gains RESISTANCE to all damage dealt by the attack and may teleport up to 3 spaces, representing their \"true\" location. On 3 or less, there's a glitch - your allied target doesn't gain RESISTANCE, but can teleport up to 6 spaces.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -895,9 +850,6 @@
       "active_effect": "Your swarm nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<br>- You and adjacent allied characters gain soft cover.<br>- SCOURING SWARM deals 4 kinetic damage, instead of 2.<br>- REGENERATION restores 1/2 of your total HP, instead of 1/4.<br>- If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining IMMUNITY to all damage until the end of the current turn.<br>- You become SHREDDED and cannot clear this condition for the duration.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ]
@@ -952,9 +904,6 @@
       "active_name": "SYMBIOSIS",
       "active_effect": "Your mech retracts its major systems and attaches itself to another mech, becoming more like a vestigial blister than a separate entity. The host must be an allied and willing mech not already hosting another Goblin, larger than and adjacent to you. While attached, you occupy their space, move with them, and benefit from hard cover, but can still be attacked and targeted separately. You also take any conditions and heat taken by your host.<br>Your host may use your SYSTEMS, E-DEFENSE, and TECH ATTACK instead of their own. Additionally, from the beginning of the next round, you no longer take your own turns; instead, you can take two quick actions or one full action at any point during your host's turn. You can't OVERCHARGE or move, but may still take reactions and free actions normally. Your host's turn counts as your turn for the purpose of effects that refer to the start or end of a character's turn.<br>This effect lasts either for the rest of the scene, until you detach as a quick action, or until you or your host becomes STUNNED. When the effect ends, you don't take a turn until the next round.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -1012,9 +961,6 @@
       "active_effect": "You projects a horrifying basilisk, a visual data-pattern that is incredibly harmful to NHPs and electronic systems, and hard to look at even for humans. For the rest of the scene, hostile characters must succeed on a SYSTEMS save before attacking you or any allied characters within RANGE 3 of you. On a failure, they become STUNNED until the end of their next turn. Each character can only be STUNNED by this effect once per scene.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_quick_action"
         }
       ]
@@ -1066,9 +1012,6 @@
       "active_name": "FULL DEPLOYMENT",
       "active_effect": "All four OROCHI drones are deployed to separate points within SENSORS; they remain active for the rest of the scene. You may recall or redeploy any number of them at a time.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -1126,9 +1069,6 @@
       "active_name": "DESTRUCTION OF THE TEMPLE OF THE ENEMIES OF RA",
       "active_effect": "Your mech crackles with energy: gain RESISTANCE to heat for the rest of this scene and a CHARGE DIE - 1d6, starting at 1. Whenever you take heat or energy damage, even from yourself, increase the value of the CHARGE DIE by 1. When the CHARGE DIE reaches 6, the absorbed energy discharges in a BURST 2 inferno. Characters within the affected area must succeed on an ENGINEERING save or take 6d6 AP energy damage. On a success, they take half damage. Objects in the affected area are automatically hit. Once discharged, this effect ends.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -1195,9 +1135,6 @@
       "active_effect": "Choose a character within SENSORS: they become STUNNED as you hurl their systems into a metaphysical information trap that is so tangled they can do nothing but try and escape. At the end of their next turn, they can make a SYSTEMS save with +3 DIFFICULTY. On a success, they clear STUNNED. This save can be repeated at the end of each of their turns, gaining +1 ACCURACY each time until successful.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_full_action"
         }
       ],
@@ -1251,9 +1188,6 @@
       "active_name": "UNLEASH USHABTI",
       "active_effect": "For the rest of this scene, you can use the USHABTI OMNIGUN 3/round, instead of 1/round.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
@@ -1317,15 +1251,21 @@
       "active_effect": "When activated, you start charging the Barbarossa's APOCALYPSE RAIL, an incredibly powerful ship-to-ship long-spool weapon system that requires target calibration. Gain an APOCALYPSE DIE, 1d6 starting at 4. At the start of each of your turns, lower the value of the APOCALYPSE DIE by 1, to a minimum of 1. If you move (even involuntarily) or become STUNNED or JAMMED, the APOCALYPSE DIE resets to 4 and then continues to count down as usual.<br>If the value of the Apocalypse Die is 1-3, you can attack on your turn with the APOCALYPSE RAIL as a full action, but can't move or take any other actions on the same turn. The APOCALYPSE RAIL is a ranged weapon with a BLAST 2 area and a profile determined by the current value of the APOCALYPSE DIE:<br>- 3 (Range 20, 2d6 explosive): Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn.<br>- 2 (Range 25, 3d6 explosive): Objects and terrain in the area automatically take 40 AP explosive damage, and characters become SHREDDED and IMPAIRED until the end of their next turn on hit. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn.<br>- 1 (Range 30, 4d6 explosive): Objects and terrain in the area automatically take 100 AP explosive damage, and characters become SHREDDED and STUNNED until the end of their next turn on hit. The ground in the affected area is vaporized on impact: for the rest of the scene, it is difficult terrain, characters within the affected area receive soft cover, and characters that start their turn with the area or move there for the first time in a round take 4 burn.<br>The APOCALYPSE RAIL cannot be fired at targets within RANGE 5.<br>After an attack with the APOCALYPSE RAIL, the APOCALYPSE DIE resets to 4. If you reach the end of the scene without using it, you regain 1 CP.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_quick_action"
         }
       ]
     },
     "data_type": "frame",
-    "aptitude": {}
+    "aptitude": {},
+    "counters": [
+      {
+        "id": "ctr_apocalypse_rail",
+        "name": "APOCALYPSE DIE",
+        "default_value": 4,
+        "min": 1,
+        "max": 4
+      }
+    ]
   },
   {
     "id": "mf_genghis",
@@ -1371,9 +1311,6 @@
       "active_name": "EXPOSE POWER CELLS",
       "active_effect": "The next time you exceed your HEAT CAP this scene, instead of overheating you clear all heat and vent a BURST 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as INVISIBLE to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -1430,9 +1367,6 @@
       "active_effect": "This system fires an enormous, expanding cloud of micromines across the whole battlefield, affecting all hostile characters within RANGE 50. For the rest of the scene, when hostile characters make any movement other than their standard move (including involuntary movement), they take 3 AP explosive damage. This effect can trigger any number of times, but only 1/round for each character.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_quick_action"
         }
       ]
@@ -1483,9 +1417,6 @@
       "active_name": "ACTIVATE AEGIS",
       "active_effect": "A shimmering, utterly black field quickly envelops your mech, covering it like a second skin. For the rest of the scene, you:<br>- reduce all damage to 1, except for damage that ignores reduction<br>- gain IMMUNITY to all tech actions, including beneficial ones, and any current tech effects or conditions on you end<br>- can only use systems with the SHIELD tag - any others immediately deactivate<br>- can't take quick actions, full actions, or reactions, except for standard moves, GRAPPLE, RAM, IMPROVISED ATTACK, ACTIVATE (SHIELD systems only), SKILL CHECK, and BOOST<br>- can't OVERCHARGE<br>- can't use comms to talk to other characters (as sound doesn't exit the shield)<br>You can still receive statuses and heat, and be involuntarily moved. You can otherwise interact normally with the world, including picking up and dragging items, and so on.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -1540,9 +1471,6 @@
       "active_name": "TACHYON SHIELD",
       "active_effect": "This system projects an accelerated-tachyon shield over an allied character within SENSORS. You may choose a new target as a quick action. Gain the following reaction for the rest of the scene:<br>DEFENSIVE PULSE<br>Reaction<br>1/round, when your target is attacked, you can empower their tachyon shield: they gain RESISTANCE to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and RANGE from your target instead of from the attacker.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_quick_action"
         }
@@ -1601,9 +1529,6 @@
       "active_effect": "Your ZF4 SOLIDCORE immediately gains 3 CHARGES, to a maximum of 4; additionally, for the rest of this scene, STABILIZE generates 2 CHARGES instead of 1, and all terrain, objects, and deployables take 10 AP energy damage per charge on hit.",
       "tags": [
         {
-          "id": "tg_active"
-        },
-        {
           "id": "tg_protocol"
         }
       ],
@@ -1612,7 +1537,16 @@
       }
     },
     "data_type": "frame",
-    "aptitude": {}
+    "aptitude": {},
+    "counters": [
+      {
+        "id": "ctr_zf4_solidcore",
+        "name": "ZF4 CHARGES",
+        "default_value": 1,
+        "min": 1,
+        "max": 4
+      }
+    ]
   },
   {
     "id": "mf_tokugawa",
@@ -1658,9 +1592,6 @@
       "active_name": "RADIANCE",
       "active_effect": "For the rest of this scene, weapons that deal any energy damage gain +5 RANGE if they are ranged or +2 THREAT if they are melee.<br>If you activate OVERCLOCK, it stacks with these bonuses for a total increase of +10 RANGE and +3 THREAT.",
       "tags": [
-        {
-          "id": "tg_active"
-        },
         {
           "id": "tg_protocol"
         }
