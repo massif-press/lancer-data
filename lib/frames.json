@@ -1253,7 +1253,10 @@
         {
           "id": "tg_quick_action"
         }
-      ]
+      ],
+      "integrated": {
+        "id": "mw_barbarossa_integrated"
+      }
     },
     "data_type": "frame",
     "aptitude": {},
