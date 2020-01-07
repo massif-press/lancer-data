@@ -6,7 +6,7 @@
     "ranks": [
       {
         "name": "ACROBATICS",
-        "description": "While flying, you get the following benefits:<br>- You make all AGILITY checks and saves with +1 ACCURACY.<br>- Any time an attack misses you, you may fly up to 2 spaces in any direction as a reaction."
+        "description": "While flying, you get the following benefits:<li>You make all AGILITY checks and saves with +1 ACCURACY.<li>Any time an attack misses you, you may fly up to 2 spaces in any direction as a reaction."
       },
       {
         "name": "AFTERBURNERS",
@@ -25,11 +25,11 @@
     "ranks": [
       {
         "name": "I'M YOUR HUCKLEBERRY",
-        "description": "When you take this talent, choose another pilot (hopefully a PC, but NPCs are fine if your GM allows it) to be your BONDMATE. Any mech skill checks and saves either character makes while you are adjacent gains +1 ACCURACY. If both characters have this talent, this increases to +2 ACCURACY, but additional characters with this talent can't increase it any further. Between missions, you can replace your BONDMATE with a new one, but only if your relationship with them has changed."
+        "description": "When you take this talent, choose another pilot (hopefully a PC, but NPCs are fine if your GM allows it) to be your BONDMATE. Any mech skill checks and saves either character makes while you are adjacent gains +1 ACCURACY. If both characters have this talent, this increases to +2 ACCURACY, but additional characters with this talent can't increase it any further.<br>Between missions, you can replace your BONDMATE with a new one, but only if your relationship with them has changed."
       },
       {
         "name": "SUNDANCE",
-        "description": "Gain the following reaction: SUNDANCE Reaction 1/round, when you are adjacent to your BONDMATE (pilot or mech) and they take damage from a source within your line of sight, you may take the damage instead."
+        "description": "Gain the following reaction:<br>SUNDANCE<br>Reaction<br>1/round, when you are adjacent to your BONDMATE (pilot or mech) and they take damage from a source within your line of sight, you may take the damage instead."
       },
       {
         "name": "COVER ME!",
@@ -52,7 +52,16 @@
       },
       {
         "name": "KNOCKOUT BLOW",
-        "description": "Gain a BRAWLER DIE, 1d6 starting at 6. Each time you GRAPPLE, RAM, or make an IMPROVISED ATTACK, lower the value of the BRAWLER DIE by 1. When the BRAWLER DIE reaches 1, you may reset it to 6 and, as make a knockout blow against an adjacent character as a full action. They must succeed on a HULL save, or take 2d6+2 kinetic damage and become STUNNED until the end of their next turn. The value of your BRAWLER DIE persists between scenes, but it resets to 6 when you rest or perform a FULL REPAIR."
+        "description": "Gain a BRAWLER DIE, 1d6 starting at 6. Each time you GRAPPLE, RAM, or make an IMPROVISED ATTACK, lower the value of the BRAWLER DIE by 1.<br>When the BRAWLER DIE reaches 1, you may reset it to 6 and, as make a knockout blow against an adjacent character as a full action. They must succeed on a HULL save, or take 2d6+2 kinetic damage and become STUNNED until the end of their next turn.<br>The value of your BRAWLER DIE persists between scenes, but it resets to 6 when you rest or perform a FULL REPAIR."
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_brawler",
+        "name": "BRAWLER DIE",
+        "default_value": 6,
+        "min": 1,
+        "max": 6
       }
     ]
   },
@@ -90,7 +99,7 @@
       },
       {
         "name": "WATCH THIS",
-        "description": "1/round, when you perform a critical hit with a RIFLE while using ZERO IN, your target must succeed on a HULL save or you may choose an additional effect for your attack:<br>- HEADSHOT: They only have line of sight to adjacent spaces until the end of their next turn.<br>- LEG SHOT: They become IMMOBILIZED until the end of their next turn.<br>- BODY SHOT: They are knocked PRONE."
+        "description": "1/round, when you perform a critical hit with a RIFLE while using ZERO IN, your target must succeed on a HULL save or you may choose an additional effect for your attack:<li>HEADSHOT: They only have line of sight to adjacent spaces until the end of their next turn.<li>LEG SHOT: They become IMMOBILIZED until the end of their next turn.<li>BODY SHOT: They are knocked PRONE."
       }
     ]
   },
@@ -109,7 +118,7 @@
       },
       {
         "name": "TIDAL SUPPRESSION",
-        "description": "This replaces TEN THOUSAND TEETH. 1/round, when you perform a critical hit with a NEXUS, your target must succeed on a SYSTEMS save or you may choose an additional effect for your attack that lasts until the end of their next turn:<br>- HARRYING SWARM: They become IMPAIRED and SLOWED.<br>- BLINDING SWARM: They only have line of sight to adjacent squares.<br>- VIRULENT SWARM: They become SHREDDED. Any characters of your choice adjacent to them must also make a SYSTEMS save or become SHREDDED.<br>- RESTRICTING SWARM: They take 1 burn each time they take an action or reaction."
+        "description": "This replaces TEN THOUSAND TEETH.<br>1/round, when you perform a critical hit with a NEXUS, your target must succeed on a SYSTEMS save or you may choose an additional effect for your attack that lasts until the end of their next turn:<li>HARRYING SWARM: They become IMPAIRED and SLOWED.<li>BLINDING SWARM: They only have line of sight to adjacent squares.<li>VIRULENT SWARM: They become SHREDDED. Any characters of your choice adjacent to them must also make a SYSTEMS save or become SHREDDED.<li>RESTRICTING SWARM: They take 1 burn each time they take an action or reaction."
       }
     ]
   },
@@ -143,7 +152,7 @@
       },
       {
         "name": "BLADEMASTER",
-        "description": "1/round, when you hit with a MAIN MELEE weapon, you gain 1 BLADEMASTER DIE - a d6 - up to a maximum of 3 BLADEMASTER DICE. They last until expended or the current scene ends. You can expend BLADEMASTER DICE 1-to-1 for the following:<br>- PARRY: As a reaction when you're hit by a melee attack, you gain RESISTANCE to all damage, heat, and burn dealt by the attack.<br>- DEFLECT: As a reaction when you're hit by a ranged attack, you may roll any number of BLADEMASTER DICE, expending them: if you roll a 5+ on any of these dice, you gain RESISTANCE to all damage, heat, and burn dealt by the attack.<br>- FEINT: As a free action, choose an adjacent character: when moving, you ignore engagement and don't provoke reactions from your target until the start of your next turn.<br>- TRIP: As a quick action, choose an adjacent character: they must succeed on an AGILITY save or fall PRONE. Whatever the result, you may freely pass through their space until the end of your current turn, although you can't end your turn in their space."
+        "description": "1/round, when you hit with a MAIN MELEE weapon, you gain 1 BLADEMASTER DIE - a d6 - up to a maximum of 3 BLADEMASTER DICE. They last until expended or the current scene ends. You can expend BLADEMASTER DICE 1-to-1 for the following:<li>PARRY: As a reaction when you're hit by a melee attack, you gain RESISTANCE to all damage, heat, and burn dealt by the attack.<li>DEFLECT: As a reaction when you're hit by a ranged attack, you may roll any number of BLADEMASTER DICE, expending them: if you roll a 5+ on any of these dice, you gain RESISTANCE to all damage, heat, and burn dealt by the attack.<li>FEINT: As a free action, choose an adjacent character: when moving, you ignore engagement and don't provoke reactions from your target until the start of your next turn.<li>TRIP: As a quick action, choose an adjacent character: they must succeed on an AGILITY save or fall PRONE. Whatever the result, you may freely pass through their space until the end of your current turn, although you can't end your turn in their space."
       },
       {
         "name": "UNSTOPPABLE",
@@ -167,7 +176,7 @@
     "ranks": [
       {
         "name": "SHEPHERD",
-        "description": "Your systems with the DRONE tag gain +5 HP and you gain the following protocol: SHEPHERD Protocol You may move one drone that you control and that is within SENSORS up to 4 spaces."
+        "description": "Your systems with the DRONE tag gain +5 HP and you gain the following protocol:<br>SHEPHERD<br>Protocol<br>You may move one drone that you control and that is within SENSORS up to 4 spaces."
       },
       {
         "name": "ENERGIZED SWAM",
@@ -186,11 +195,11 @@
     "ranks": [
       {
         "name": "PROTOTYPE",
-        "description": "When you perform a FULL REPAIR, you can, with some trial and error, install a prototype weapon system on your mech. You may choose characteristics for your prototype weapon based on the following profile each time you perform a FULL REPAIR, rerolling 1d6+2 to determine LIMITED each time: PROTOTYPE WEAPON Main [Melee, CQB, Rifle, Cannon, Launcher, Nexus], Limited [1d6+2], Overkill T: 1 or R: 10\tD: 1d6+2 kinetic, explosive, or energy This weapon is an experimental prototype, customized according to your specific requirements. When you install it, or during a FULL REPAIR, you may choose a new weapon type, damage type, and either THREAT 1 or RANGE 10. Additionally, each time you perform a FULL REPAIR, reroll 1d6+2 to determine this weapon's LIMITED uses. This weapon counts as an integrated mount and does not require a mount."
+        "description": "When you perform a FULL REPAIR, you can, with some trial and error, install a prototype weapon system on your mech. You may choose characteristics for your prototype weapon based on the following profile each time you perform a FULL REPAIR, rerolling 1d6+2 to determine LIMITED each time:<br>PROTOTYPE WEAPON<br>Main [Melee, CQB, Rifle, Cannon, Launcher, Nexus], Limited [1d6+2], Overkill<br>T: 1 or R: 10\tD: 1d6+2 kinetic, explosive, or energy<br>This weapon is an experimental prototype, customized according to your specific requirements. When you install it, or during a FULL REPAIR, you may choose a new weapon type, damage type, and either THREAT 1 or RANGE 10. Additionally, each time you perform a FULL REPAIR, reroll 1d6+2 to determine this weapon's LIMITED uses.<br>This weapon counts as an integrated mount and does not require a mount."
       },
       {
         "name": "REVISION",
-        "description": "You can tweak the essential components of your prototype weapon in order to increase its effectiveness. When you perform a FULL REPAIR, choose two:<br>- TWEAKED OPTICS: Your prototype weapon gains +1 ACCURACY on attacks.<br>- TWEAKED COMPUTER: Your prototype weapon is SMART.<br>- STRIPPED REACTOR SHIELDING: Each time you attack with your prototype weapon, you may choose - at the cost of 2 heat - to attack with one of the following options, depending on its weapon type:<br>- RANGED WEAPON: CONE 2, LINE 5, OR BLAST 1.<br>- MELEE WEAPON: BURST 1."
+        "description": "You can tweak the essential components of your prototype weapon in order to increase its effectiveness. When you perform a FULL REPAIR, choose two:<li>TWEAKED OPTICS: Your prototype weapon gains +1 ACCURACY on attacks.<li>TWEAKED COMPUTER: Your prototype weapon is SMART.<li>STRIPPED REACTOR SHIELDING: Each time you attack with your prototype weapon, you may choose - at the cost of 2 heat - to attack with one of the following options, depending on its weapon type:<li>RANGED WEAPON: CONE 2, LINE 5, OR BLAST 1.<li>MELEE WEAPON: BURST 1."
       },
       {
         "name": "FINAL DRAFT",
@@ -224,7 +233,7 @@
     "ranks": [
       {
         "name": "HONORABLE CHALLENGE",
-        "description": "The first time on your turn that you attack a character within RANGE 3, hit or miss, you may give them the EXEMPLAR'S MARK as a free action. Characters can only have one EXEMPLAR'S MARK at a time - new marks from any character replace existing marks. The character has the EXEMPLAR'S MARK until the start of your next turn, and while they have it, you gain the following reaction: VALIANT AID Reaction 1/round, when an allied character attacks the character with your MARK and misses, you may allow them to reroll the attack. They must use the second result, even if it's worse."
+        "description": "The first time on your turn that you attack a character within RANGE 3, hit or miss, you may give them the EXEMPLAR'S MARK as a free action. Characters can only have one EXEMPLAR'S MARK at a time - new marks from any character replace existing marks.<br>The character has the EXEMPLAR'S MARK until the start of your next turn, and while they have it, you gain the following reaction:<br>VALIANT AID<br>Reaction<br>1/round, when an allied character attacks the character with your MARK and misses, you may allow them to reroll the attack. They must use the second result, even if it's worse."
       },
       {
         "name": "PUNISHMENT",
@@ -232,7 +241,7 @@
       },
       {
         "name": "TO THE DEATH",
-        "description": "As a free action when you mark a character, you may challenge them in a duel to the death: you and the character with your MARK receive +3 DIFFICULTY on attacks against characters or objects other than each other until either the end of the current scene or one of your mechs are destroyed. If they take any action that includes an attack roll against you, hit or miss, this effect ceases for them until the start of your next turn. While TO THE DEATH is active, you cannot voluntarily move away from the character with your MARK; additionally, your MARK lasts either until the end of the current scene or one of your mechs are destroyed, and you cannot MARK any new characters."
+        "description": "As a free action when you mark a character, you may challenge them in a duel to the death: you and the character with your MARK receive +3 DIFFICULTY on attacks against characters or objects other than each other until either the end of the current scene or one of your mechs are destroyed. If they take any action that includes an attack roll against you, hit or miss, this effect ceases for them until the start of your next turn.<br>While TO THE DEATH is active, you cannot voluntarily move away from the character with your MARK; additionally, your MARK lasts either until the end of the current scene or one of your mechs are destroyed, and you cannot MARK any new characters."
       }
     ]
   },
@@ -247,7 +256,7 @@
       },
       {
         "name": "FROM THE HIP",
-        "description": "Gain the following reaction: RETURN FIRE Reaction. 1/round 1/round, when a character hits you with a ranged attack, you may immediately attack them with a single AUXILIARY ranged weapon if they are within RANGE."
+        "description": "Gain the following reaction:<br>RETURN FIRE<br>Reaction. 1/round<br>1/round, when a character hits you with a ranged attack, you may immediately attack them with a single AUXILIARY ranged weapon if they are within RANGE."
       },
       {
         "name": "I KILL WITH MY HEART",
@@ -294,11 +303,11 @@
       },
       {
         "name": "SAFE_CRACKER",
-        "description": "Gain the following options for INVADE:<br>- INVASION: JAM COCKPIT: Characters may not MOUNT or DISMOUNT your target until the cockpit is fixed with a successful ENGINEERING check as a full action.<br>- INVASION: DISABLE LIFE-SUPPORT: Your target receives +1 DIFFICULTY on all saves until the life-support system is rebooted with a successful SYSTEMS check as a quick action.<br>- INVASION: HACK./SLASH: Your target cannot benefit from or take QUICK OR FULL TECH actions until the mech is either SHUT DOWN or its core computer is rebooted with a successful SYSTEMS check as a quick action."
+        "description": "Gain the following options for INVADE:<li>INVASION: JAM COCKPIT: Characters may not MOUNT or DISMOUNT your target until the cockpit is fixed with a successful ENGINEERING check as a full action.<li>INVASION: DISABLE LIFE-SUPPORT: Your target receives +1 DIFFICULTY on all saves until the life-support system is rebooted with a successful SYSTEMS check as a quick action.<li>INVASION: HACK./SLASH: Your target cannot benefit from or take QUICK OR FULL TECH actions until the mech is either SHUT DOWN or its core computer is rebooted with a successful SYSTEMS check as a quick action."
       },
       {
         "name": "LAST ARGUMENT OF KINGS",
-        "description": "Gain the following FULL TECH option:<br>- LAST ARGUMENT OF KINGS: Make a tech attack against a target within SENSORS and line of sight. On a success, you implant a virus that triggers a minor meltdown in your target's reactor: they immediately take burn equal to their current heat. If this action causes your target to overheat, it resolves before they reset their HEAT CAP."
+        "description": "Gain the following FULL TECH option:<li>LAST ARGUMENT OF KINGS: Make a tech attack against a target within SENSORS and line of sight. On a success, you implant a virus that triggers a minor meltdown in your target's reactor: they immediately take burn equal to their current heat. If this action causes your target to overheat, it resolves before they reset their HEAT CAP."
       }
     ]
   },
@@ -309,7 +318,7 @@
     "ranks": [
       {
         "name": "COVERING FIRE",
-        "description": "As a quick action, choose a character within RANGE and line of sight of one of your HEAVY ranged weapons, and within 10 spaces: they become IMPAIRED until the start of your next turn. For the duration, if your target moves more than 1 space, they clear IMPAIRED, but you may attack them as a reaction with a HEAVY ranged weapon for half damage, heat, or burn, then this effect ends. You can make this attack at any point during their movement (e.g., waiting until they exit cover). COVERING FIRE can only affect one character at a time - subsequent uses replace previous ones - and it immediately ends if your target damages you."
+        "description": "As a quick action, choose a character within RANGE and line of sight of one of your HEAVY ranged weapons, and within 10 spaces: they become IMPAIRED until the start of your next turn. For the duration, if your target moves more than 1 space, they clear IMPAIRED, but you may attack them as a reaction with a HEAVY ranged weapon for half damage, heat, or burn, then this effect ends. You can make this attack at any point during their movement (e.g., waiting until they exit cover).<br>COVERING FIRE can only affect one character at a time - subsequent uses replace previous ones - and it immediately ends if your target damages you."
       },
       {
         "name": "HAMMERBEAT",
@@ -347,7 +356,7 @@
     "ranks": [
       {
         "name": "PROWL",
-        "description": "During your turn, gain the following benefits:<br>- Entering line of sight of hostile characters or moving out of cover does not stop you from being HIDDEN.<br>- You can pass freely through - but not end your turn in - spaces occupied by hostile characters.<br>- You can HIDE even in plain sight of enemies. These effects immediately end when your turn ends (so you lose HIDDEN if you're still in line of sight or out of cover at that time)."
+        "description": "During your turn, gain the following benefits:<li>Entering line of sight of hostile characters or moving out of cover does not stop you from being HIDDEN.<li>You can pass freely through - but not end your turn in - spaces occupied by hostile characters.<li>You can HIDE even in plain sight of enemies.<br>These effects immediately end when your turn ends (so you lose HIDDEN if you're still in line of sight or out of cover at that time)."
       },
       {
         "name": "AMBUSH",
@@ -374,7 +383,7 @@
       },
       {
         "name": "UNSTOPPABLE FORCE",
-        "description": "1/round, when you BOOST, you may supercharge your mech's servos. Move your maximum speed in a straight line, take 1d3+3 heat, and gain the following benefits:<br>- You can freely pass through characters the same SIZE as your mech or smaller; any characters passed through must succeed on a HULL save or be knocked PRONE.<br>- Any terrain, walls, or other stationary obstructions you attempt to pass through receive 20 AP kinetic damage. If that is enough to destroy them, you pass through; otherwise, your movement ends.<br>- You ignore difficult terrain.<br>- Your movement ignores engagement and doesn't provoke reactions."
+        "description": "1/round, when you BOOST, you may supercharge your mech's servos. Move your maximum speed in a straight line, take 1d3+3 heat, and gain the following benefits:<li>You can freely pass through characters the same SIZE as your mech or smaller; any characters passed through must succeed on a HULL save or be knocked PRONE.<li>Any terrain, walls, or other stationary obstructions you attempt to pass through receive 20 AP kinetic damage. If that is enough to destroy them, you pass through; otherwise, your movement ends.<li>You ignore difficult terrain.<li>Your movement ignores engagement and doesn't provoke reactions."
       }
     ]
   },
@@ -385,7 +394,7 @@
     "ranks": [
       {
         "name": "FIELD COMMANDER",
-        "description": "Gain 3 LEADERSHIP DICE, which are d6s: 1/your turn, as a free action, you may give an order to an allied PC you can communicate with, describing a course of action, and give them a LEADERSHIP DIE. They may either expend the LEADERSHIP DIE to gain +1 ACCURACY on any action that directly follows from that order, or they may return it to you as a free action. Allies can have 1 LEADERSHIP DIE at a time, which lasts until used or until the end of the current scene. You can't use LEADERSHIP DICE from other characters as long as you have any remaining. If you have none, you regain 1 LEADERSHIP DIE when you rest or regain all when you perform a FULL REPAIR. LEADERSHIP DICE are consumed when expended."
+        "description": "Gain 3 LEADERSHIP DICE, which are d6s: 1/your turn, as a free action, you may give an order to an allied PC you can communicate with, describing a course of action, and give them a LEADERSHIP DIE. They may either expend the LEADERSHIP DIE to gain +1 ACCURACY on any action that directly follows from that order, or they may return it to you as a free action. Allies can have 1 LEADERSHIP DIE at a time, which lasts until used or until the end of the current scene.<br>You can't use LEADERSHIP DICE from other characters as long as you have any remaining. If you have none, you regain 1 LEADERSHIP DIE when you rest or regain all when you perform a FULL REPAIR. LEADERSHIP DICE are consumed when expended."
       },
       {
         "name": "OPEN CHANNELS",
@@ -394,6 +403,15 @@
       {
         "name": "INSPIRING PRESENCE",
         "description": "Gain 6 LEADERSHIP DICE instead of 5. Allies that have your LEADERSHIP DICE can expend them to reduce damage by -1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack."
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_leader",
+        "name": "LEADERSHIP DICE",
+        "default_value": 0,
+        "min": 0,
+        "max": 6
       }
     ]
   },
@@ -412,7 +430,7 @@
       },
       {
         "name": "HERE, CATCH!",
-        "description": "You've modified your mech to launch its superheated fuel rods at enemies. Gain the following weapon as an integrated mount: FUEL ROD GUN Main CQB, Limited 3, Unique T: 3 \tR: 3\tD: 1d3+2 energy When you attack with this weapon, clear 4 heat."
+        "description": "You've modified your mech to launch its superheated fuel rods at enemies. Gain the following weapon as an integrated mount:<br>FUEL ROD GUN<br>Main CQB, Limited 3, Unique<br>T: 3 \tR: 3\tD: 1d3+2 energy<br>When you attack with this weapon, clear 4 heat."
       }
     ]
   },
@@ -484,11 +502,20 @@
       },
       {
         "name": "STORMBENDING",
-        "description": "You have customized your mech with auxiliary concussive missile systems. 1/round, when you hit a character or object with a LAUNCHER, you can choose one of the following effects:<br>- LIGHTNING: You fire a concentrated blast of missiles at that character. They must succeed on a HULL save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.<br>- THUNDER: You fire a spray of missiles at a BURST 2 area around that target. Characters in the area must succeed on an AGILITY save or be knocked back by 1 space, away from the target. The primary target is unaffected."
+        "description": "You have customized your mech with auxiliary concussive missile systems. 1/round, when you hit a character or object with a LAUNCHER, you can choose one of the following effects:<li>LIGHTNING: You fire a concentrated blast of missiles at that character. They must succeed on a HULL save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.<li>THUNDER: You fire a spray of missiles at a BURST 2 area around that target. Characters in the area must succeed on an AGILITY save or be knocked back by 1 space, away from the target. The primary target is unaffected."
       },
       {
         "name": "TORRENT",
         "description": "Gain a TORRENT DIE, 1d6 starting at 6. Whenever you use STORMBENDING, lower the value of the TORRENT DIE by 1, to a minimum of 1. When the TORRENT DIE reaches 1, you may reset it to 6 and make a massive attack as a full action, targeting a character within line of sight and RANGE 15: they must succeed on an AGILITY save or take 2d6 explosive damage, become STUNNED, and be knocked PRONE. On a success, they take half damage and are knocked PRONE but not STUNNED. The value of your TORRENT DIE persists between scenes, but resets when you rest or perform a FULL REPAIR."
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_stormbringer",
+        "name": "TORRENT DIE",
+        "default_value": 6,
+        "min": 1,
+        "max": 6
       }
     ]
   },
@@ -507,7 +534,7 @@
       },
       {
         "name": "OVERLAPPING FIRE",
-        "description": "Gain the following reaction: FLANK Reaction, 1/round 1/round, when a character who doesn't have cover from your position is successfully attacked by an allied character, it triggers your OVERWATCH reaction, but deals half damage on hit."
+        "description": "Gain the following reaction:<br>FLANK<br>Reaction, 1/round<br>1/round, when a character who doesn't have cover from your position is successfully attacked by an allied character, it triggers your OVERWATCH reaction, but deals half damage on hit."
       }
     ]
   },
@@ -518,15 +545,15 @@
     "ranks": [
       {
         "name": "SERVANT FRAGMENT",
-        "description": "You have developed a custom NHP. This NHP can speak to you and has a personality, but they are less advanced than most NHPs and are incapable of independent thought, relying on you for direction. When acting alone, they will follow the last direction given and defend themself as needed; however, they have limited initiative and don't benefit from your talents. Your mech gains the following system: SERVANT-CLASS NHP 0 SP, Unique, AI [an eager student] Your mech gains the AI tag."
+        "description": "You have developed a custom NHP. This NHP can speak to you and has a personality, but they are less advanced than most NHPs and are incapable of independent thought, relying on you for direction. When acting alone, they will follow the last direction given and defend themself as needed; however, they have limited initiative and don't benefit from your talents.<br>Your mech gains the following system:<br>SERVANT-CLASS NHP<br>0 SP, Unique, AI<br>[an eager student]<br>Your mech gains the AI tag."
       },
       {
         "name": "STUDENT FRAGMENT",
-        "description": "Your custom NHP has developed further, and is now capable of independent thought. It can make complex decisions and judgments and act independently, without instruction. Replace your mech's SERVANT-CLASS NHP with the following system: STUDENT-CLASS NHP 0 SP, Unique, AI [time to wake up, child] Your mech gains the AI tag. 1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it's worse."
+        "description": "Your custom NHP has developed further, and is now capable of independent thought. It can make complex decisions and judgments and act independently, without instruction. Replace your mech's SERVANT-CLASS NHP with the following system:<br>STUDENT-CLASS NHP<br>0 SP, Unique, AI<br>[time to wake up, child]<br>Your mech gains the AI tag.<br>1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it's worse."
       },
       {
         "name": "ENLIGHTENMENT",
-        "description": "Gain the following benefits:<br>- AIs installed in your mech cannot enter cascade unless you so choose to let them go.<br>- So long as your custom NHP vouches for you, NHPs that are cascading or unshackled no longer view you with indifference. You are significant to them in a way few others are.<br>- Replace your mech's STUDENT-CLASS NHP with the following system: ENLIGHTENMENT-CLASS NHP 0 SP, Unique, AI [let's sit a while, and think on things to come] Your mech gains the AI tag; however, this NHP doesn't count toward the number of AIs you may have installed at once. This NHP benefits from your talents when piloting your mech. Additionally, you may carry them with you outside of your mech, either as a miniaturized casket, a hardsuit-integrated flash plug, or with a hard-port implant. 1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it's worse."
+        "description": "Gain the following benefits:<li>AIs installed in your mech cannot enter cascade unless you so choose to let them go.<li>So long as your custom NHP vouches for you, NHPs that are cascading or unshackled no longer view you with indifference. You are significant to them in a way few others are.<li>Replace your mech's STUDENT-CLASS NHP with the following system:<br>ENLIGHTENMENT-CLASS NHP<br>0 SP, Unique, AI<br>[let's sit a while, and think on things to come]<br>Your mech gains the AI tag; however, this NHP doesn't count toward the number of AIs you may have installed at once.<br>This NHP benefits from your talents when piloting your mech. Additionally, you may carry them with you outside of your mech, either as a miniaturized casket, a hardsuit-integrated flash plug, or with a hard-port implant.<br>1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it's worse."
       }
     ]
   },
@@ -556,11 +583,11 @@
     "ranks": [
       {
         "name": "ARMAMENT",
-        "description": "You carry a supply of custom ammunition that can be used with all your main ranged weapons. Gain the following system: AMMO CASE 0 SP, Limited 6 1/turn, when you attack and hit with a MAIN ranged weapon, you may expend a charge to apply one of the following effects to your attack:<br>- THUMPER (1 charge): The attack deals explosive damage and gains KNOCKBACK 1.<br>- SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; characters adjacent to them take 1 AP energy damage, hit or miss.<br>- MAG (1 charge): The attack deals kinetic damage and gains ARCING."
+        "description": "You carry a supply of custom ammunition that can be used with all your main ranged weapons. Gain the following system:<br>AMMO CASE<br>0 SP, Limited 6<br>1/turn, when you attack and hit with a MAIN ranged weapon, you may expend a charge to apply one of the following effects to your attack:<li>THUMPER (1 charge): The attack deals explosive damage and gains KNOCKBACK 1.<li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; characters adjacent to them take 1 AP energy damage, hit or miss.<li>MAG (1 charge): The attack deals kinetic damage and gains ARCING."
       },
       {
         "name": "EXPANDED PORTFOLIO",
-        "description": "Your AMMO CASE gains new ammunition types, each of which costs two charges rather than one:<br>- HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<br>- J\ufffdger (2 charges): The attack deals explosive damage, gains KNOCKBACK 2, and one character it hits - your choice - must succeed on a HULL save or be knocked PRONE.<br>- SABOT (2 charges): The attack deals kinetic damage and gains AP."
+        "description": "Your AMMO CASE gains new ammunition types, each of which costs two charges rather than one:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<li>J\ufffdger (2 charges): The attack deals explosive damage, gains KNOCKBACK 2, and one character it hits - your choice - must succeed on a HULL save or be knocked PRONE.<li>SABOT (2 charges): The attack deals kinetic damage and gains AP."
       },
       {
         "name": "EFFICIENCY",
