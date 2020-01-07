@@ -48,7 +48,7 @@
     "filter_ignore": false
   },
   {
-    "id": "tg_armor-piercing_ap",
+    "id": "tg_ap",
     "name": "ARMOR-PIERCING (AP)",
     "description": "Damage dealt by this weapon ignores ARMOR.",
     "filter_ignore": false

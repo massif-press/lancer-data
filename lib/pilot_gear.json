@@ -46,7 +46,7 @@
     ]
   },
   {
-    "id": "pg_light_ac",
+    "id": "pg_light_a_c",
     "name": "Light A/C",
     "type": "weapon",
     "description": "LIGHT A/C weapons might be knives, bayonets, punching daggers, and short swords.",
@@ -69,7 +69,7 @@
     ]
   },
   {
-    "id": "pg_medium_ac",
+    "id": "pg_medium_a_c",
     "name": "Medium A/C",
     "type": "weapon",
     "description": "MEDIUM A/C weapons are typically swords, officer's sabers, and trench axes.",
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "id": "pg_heavy_ac",
+    "id": "pg_heavy_a_c",
     "name": "Heavy A/C",
     "type": "weapon",
     "description": "HEAVY A/C weapons are designed with the augmented strength of hardsuits in mind and include war hammers, mallets, rams, pikes, and heavy two-handed assault swords.",
