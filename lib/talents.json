@@ -587,7 +587,7 @@
       },
       {
         "name": "EXPANDED PORTFOLIO",
-        "description": "Your AMMO CASE gains new ammunition types, each of which costs two charges rather than one:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<li>J\ufffdger (2 charges): The attack deals explosive damage, gains KNOCKBACK 2, and one character it hits - your choice - must succeed on a HULL save or be knocked PRONE.<li>SABOT (2 charges): The attack deals kinetic damage and gains AP."
+        "description": "Your AMMO CASE gains new ammunition types, each of which costs two charges rather than one:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<li>J\u00e4ger (2 charges): The attack deals explosive damage, gains KNOCKBACK 2, and one character it hits - your choice - must succeed on a HULL save or be knocked PRONE.<li>SABOT (2 charges): The attack deals kinetic damage and gains AP."
       },
       {
         "name": "EFFICIENCY",

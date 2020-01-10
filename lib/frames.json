@@ -1029,7 +1029,7 @@
     "mechtype": [
       "Striker"
     ],
-    "y_pos": "48",
+    "y_pos": "49",
     "description": "The Universal Threat Assessment Manual identifies the Manticore pattern group as \"an experiment in HORUS's 'corebreak' combat doctrine.\" The Manticore PG specializes in using focused, projected electromagnetics to neutralize enemy reactor cores without conventional ammunition, while also fielding a compliment of coherent-beam energy weapons. A fully charged Manticore is an impressive sight, wreathed in brightly glowing nets of plasma that lash out at nearby targets.<br>If anything gives away a Manticore-PG mech, it is the tall spines protruding from the PG's signature lightning generator. The spines act as heat-dispersal systems for this crude weapon, providing a channel for the incredible amount of heat it generates to bleed from the mech's body following projection of a close-range arc whip. This system isn't a perfect heat-dispersal mechanism, and as a result Manticores can often be identified by a chassis covered in cooling, melted metal.<br>The Manticore has only recently appeared on the omninet, and its combat efficacy has prompted other galactic manufacturers to scramble for a response. Analysis of after-action reports from pilots who have engaged this pattern group in the field note a significant uptick in certain omninet noise-to-signal ratios: anoriginary recitations of passages from the Old Humanity Book of the Dead, jigsaw corruptions of ancient works of apocalyptic art, and other eschatological renderings, all of which point toward a nascent psychological warfare tactic.",
     "mounts": [
       "Flex",
@@ -1174,7 +1174,7 @@
     },
     "traits": [
       {
-        "name": "\ufffd%:?EXTR!UDE GUN",
+        "name": "\u00bf%:?EXTR!UDE GUN",
         "description": "GUN: GUN"
       },
       {
