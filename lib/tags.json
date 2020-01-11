@@ -239,7 +239,7 @@
     "description": "This tech can be used as a Quick Tech Action"
   },
   {
-    "id": "tg_fulltech",
+    "id": "tg_full_tech",
     "name": "Full Tech",
     "description": "This tech can be used as a Full Tech Action"
   },
