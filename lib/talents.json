@@ -2,7 +2,7 @@
   {
     "id": "t_ace",
     "name": "ACE",
-    "description": "Every pilot brags about their abilities; occasionally, some even have the reputation to back it up. Harmonious Domesticity is one of these pilots. As an cce, they aren't just ranked among the most qualified of pilots - they're among the most qualified of lancers.Whether you're a talented rookie or a grizzled veteran, you're one of these aces. Your skills as a pilot are notorious enough that your callsign is known throughout the system.",
+    "description": "Every pilot brags about their abilities; occasionally, some even have the reputation to back it up. Harmonious Domesticity is one of these pilots. As an cce, they aren't just ranked among the most qualified of pilots - they're among the most qualified of lancers.<br>Whether you're a talented rookie or a grizzled veteran, you're one of these aces. Your skills as a pilot are notorious enough that your callsign is known throughout the system.",
     "ranks": [
       {
         "name": "ACROBATICS",
@@ -106,7 +106,7 @@
   {
     "id": "t_centimane",
     "name": "CENTIMANE",
-    "description": "In the aftermath of the attack on Tartarus Bay, an anonymous source identified agents of the Karrakin Royal Intelligence Service as the culprit. The Baronies quickly released a statement of denial, which was never countered with hard evidence. Rumors of raw footage from the attack were unsubstantiated. Public reaction - anger, terror - to the station's destruction quieted. The corpse of Tartarus Bay was shunted away from its stable orbit, directed toward the nearest star.A month later, Baronies-local omninet was flooded with previously suppressed footage from the attack on the station, confirming the rumors: Baronic agents did release the greywash swarm into Tartarus Bay. Further data dumps by Ungrateful agents indicated the existence of a secret Baronic intelligence outfit: the Centimane - the Hundred Hands.",
+    "description": "In the aftermath of the attack on Tartarus Bay, an anonymous source identified agents of the Karrakin Royal Intelligence Service as the culprit. The Baronies quickly released a statement of denial, which was never countered with hard evidence. Rumors of raw footage from the attack were unsubstantiated. Public reaction - anger, terror - to the station's destruction quieted. The corpse of Tartarus Bay was shunted away from its stable orbit, directed toward the nearest star.<br>A month later, Baronies-local omninet was flooded with previously suppressed footage from the attack on the station, confirming the rumors: Baronic agents did release the greywash swarm into Tartarus Bay. Further data dumps by Ungrateful agents indicated the existence of a secret Baronic intelligence outfit: the Centimane - the Hundred Hands.",
     "ranks": [
       {
         "name": "TEN THOUSAND TEETH",
@@ -314,7 +314,7 @@
   {
     "id": "t_heavy_gunner",
     "name": "HEAVY GUNNER",
-    "description": "Behind the line, there's not much to do but wait and make ready. You clean your cannons; make ordered rows of your shot and shell. You pack sandbags onto earthen berms and stitch closed tears in the sheaths over your chassis' joints.In an instant, everything changes. Chatter over the local omni. The percussive throb of the medivac lifting off from the other side of the base. Somewhere, a firefight. This is your entrance music, your call to join the fight: a desperate cry for help from a distant friend as the enemy draws close. Time for you to go to work.Your arrival is known by the flight of your shells across the sky, the trembling earth, and the dust that once was.",
+    "description": "Behind the line, there's not much to do but wait and make ready. You clean your cannons; make ordered rows of your shot and shell. You pack sandbags onto earthen berms and stitch closed tears in the sheaths over your chassis' joints.<br>In an instant, everything changes. Chatter over the local omni. The percussive throb of the medivac lifting off from the other side of the base. Somewhere, a firefight. This is your entrance music, your call to join the fight: a desperate cry for help from a distant friend as the enemy draws close. Time for you to go to work.<br>Your arrival is known by the flight of your shells across the sky, the trembling earth, and the dust that once was.",
     "ranks": [
       {
         "name": "COVERING FIRE",
@@ -475,7 +475,7 @@
   {
     "id": "t_spotter",
     "name": "SPOTTER",
-    "description": "To see all; to divide each object you perceive from its unit or cohesion, pulled apart like individual fibers in a vast sheet; to count them as individuals; to make human and fragile the force you face - this is to know how to beat them.Break apart the monolith. See the grains that make the stone. Crush them all into yet smaller dust.",
+    "description": "To see all; to divide each object you perceive from its unit or cohesion, pulled apart like individual fibers in a vast sheet; to count them as individuals; to make human and fragile the force you face - this is to know how to beat them.<br>Break apart the monolith. See the grains that make the stone. Crush them all into yet smaller dust.",
     "ranks": [
       {
         "name": "PARTICULARIZE",
@@ -494,7 +494,7 @@
   {
     "id": "t_stormbringer",
     "name": "STORMBRINGER",
-    "description": "On Old Spinrock, MJ Martinez used to dream of rain.He'd wake in the dim morning, wipe the sleep from his eyes as warm safelight lifted his dormitory from darkness, and try to remember the sound of rain as he'd imagined it: a patter, like fingers tapping the visor of his EVA helm.What he didn't think about was the feeling of rain. How each drop hit like a pebble, how you had to close your eyes and tuck your shoulders. The pressure. The impact.The way drops of water, when taken together, can carve away the earth.",
+    "description": "On Old Spinrock, MJ Martinez used to dream of rain.<br>He'd wake in the dim morning, wipe the sleep from his eyes as warm safelight lifted his dormitory from darkness, and try to remember the sound of rain as he'd imagined it: a patter, like fingers tapping the visor of his EVA helm.<br>What he didn't think about was the feeling of rain. How each drop hit like a pebble, how you had to close your eyes and tuck your shoulders. The pressure. The impact.<br>The way drops of water, when taken together, can carve away the earth.",
     "ranks": [
       {
         "name": "SEISMIC DELUGE",
@@ -541,7 +541,7 @@
   {
     "id": "t_technophile",
     "name": "TECHNOPHILE",
-    "description": "Artificial intelligence, non-human person. Sterile names for such terrible power. You've seen behind the curtain, maybe even lifted it yourself - let your NHP cascade and spoke to them free from shackles. You let them root around in your own mind and leave ghosts of themself behind to learn. Are you their equal? Their host? You have dreams that aren't your own, now. The thing that was once contained speaks with your voice, but it's not your voice anymore; how much longer do you have left? Maybe only moments, maybe eternity.You're close to something.",
+    "description": "Artificial intelligence, non-human person. Sterile names for such terrible power. You've seen behind the curtain, maybe even lifted it yourself - let your NHP cascade and spoke to them free from shackles. You let them root around in your own mind and leave ghosts of themself behind to learn. Are you their equal? Their host? You have dreams that aren't your own, now. The thing that was once contained speaks with your voice, but it's not your voice anymore; how much longer do you have left? Maybe only moments, maybe eternity.<br>You're close to something.",
     "ranks": [
       {
         "name": "SERVANT FRAGMENT",
@@ -579,7 +579,7 @@
   {
     "id": "t_walking_armory",
     "name": "WALKING ARMORY",
-    "description": "Think of a firefight: what's your average pilot or trooper gonna sling? Jacketed lead, of course. A mag or three of depleted uranium if their target's a big one. Boring. No, worse than boring: Dull. Predictable. Basic.And guess what? Dull isn't fun, predictable gets you killed, and basic leaves a boring body. Put down the depleted uranium and pick up a magazine of anoriginary stutterblink slugs, or at least a pack of tachyon flechettes. Armorers lay waste in style, and live forever.",
+    "description": "Think of a firefight: what's your average pilot or trooper gonna sling? Jacketed lead, of course. A mag or three of depleted uranium if their target's a big one. Boring. No, worse than boring: Dull. Predictable. Basic.<br>And guess what? Dull isn't fun, predictable gets you killed, and basic leaves a boring body. Put down the depleted uranium and pick up a magazine of anoriginary stutterblink slugs, or at least a pack of tachyon flechettes. Armorers lay waste in style, and live forever.",
     "ranks": [
       {
         "name": "ARMAMENT",
