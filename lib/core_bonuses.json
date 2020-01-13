@@ -132,43 +132,43 @@
     "id": "cb_the_lesson_of_disbelief",
     "name": "THE LESSON OF DISBELIEF",
     "source": "HORUS",
-    "effect": "- \"Lesson One\", The Six Lessons of Kilo Nueve.",
-    "description": "Query the omninet, delve into the archives. Find you the Aeneid, find you the age of Titanomachy. Eat, absorb, mull. Tell me now of the Hecatoncheires, they of the hundred hands. Did they strike the blow against Cronus (Saturno) or did they instead assail the Olympians? Who do you believe? Who stopped the Beast from telling its own story? And why?"
+    "effect": "You gain +1 ACCURACY on SYSTEMS checks and saves, and +2 E-DEFENSE.",
+    "description": "Query the omninet, delve into the archives. Find you the Aeneid, find you the age of Titanomachy. Eat, absorb, mull. Tell me now of the Hecatoncheires, they of the hundred hands. Did they strike the blow against Cronus (Saturno) or did they instead assail the Olympians? Who do you believe? Who stopped the Beast from telling its own story? And why?<br><li>\"Lesson One\", The Six Lessons of Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_the_open_door",
     "name": "THE LESSON OF THE OPEN DOOR",
     "source": "HORUS",
-    "effect": "Here is the terrible question: who opened the gates, and why?",
-    "description": "There is a body and a deep pit, and both are named Tartarus. Once it held kings and titans and myths. Now, the gates that held it back are flung wide, and Tartarus is free."
+    "effect": "Your SAVE TARGET increases by +2; additionally, 1/round, when a character fails a save against you, they take 2 heat.",
+    "description": "There is a body and a deep pit, and both are named Tartarus. Once it held kings and titans and myths. Now, the gates that held it back are flung wide, and Tartarus is free.<br>Here is the terrible question: who opened the gates, and why?<br><li>\"Lesson Two\", The Six Lessons of Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_the_held_image",
     "name": "THE LESSON OF THE HELD IMAGE",
     "source": "HORUS",
-    "effect": "Crush it in your mind and kill the perfect thing. Open your eyes.",
-    "description": "Close your eyes. Hold the image of your enemy in your mind; imagine it in all light and from every angle. In your mind, it has become a more perfect version."
+    "effect": "1/round, as a reaction at the start of any allied character's turn, you may LOCK ON to any character within SENSORS.",
+    "description": "Close your eyes. Hold the image of your enemy in your mind; imagine it in all light and from every angle. In your mind, it has become a more perfect version.<br>Crush it in your mind and kill the perfect thing. Open your eyes.<br><li>\"Lesson Three\", The Six Lessons of Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_thinking_tomorrows_thought",
     "name": "THE LESSON OF THINKING-TOMORROW'S-THOUGHT",
     "source": "HORUS",
-    "effect": "- \"Lesson Four\", The Six Lessons of Kilo Nueve.",
-    "description": "Let me tell you this lesson: the corporeal existence is one that must end in death. The incorporeal existence is one that must end in [cascade? do you really think that is true?]. I tell you again, if you can imagine it, it is [done] and you have already struck the killing blow."
+    "effect": "When you hit with a tech attack, your next melee attack against the same target gains +1 ACCURACY, and its damage can't be reduced in any way.",
+    "description": "Let me tell you this lesson: the corporeal existence is one that must end in death. The incorporeal existence is one that must end in [cascade? do you really think that is true?]. I tell you again, if you can imagine it, it is [done] and you have already struck the killing blow.<br><li>\"Lesson Four\", The Six Lessons of Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_transubstantiation",
     "name": "THE LESSON OF TRANSUBSTANTIATION",
     "source": "HORUS",
-    "effect": "- \"Lesson Five\", The Six Lessons of Kilo Nueve.",
-    "description": "Through ecstatic repetition, you may see the face of God. Speak until your tongue dries and rattles to dust, and your body becomes nothing. When you are nothing, and the wind takes you, you are in all things, never to be destroyed, only divided, until time's end."
+    "effect": "Any time you take structure damage, you disappear into a non-space and cease to be a valid target. You reappear in the same space at the start of your next turn. If that space is occupied, you reappear in the nearest available free space (chosen by you).",
+    "description": "Through ecstatic repetition, you may see the face of God. Speak until your tongue dries and rattles to dust, and your body becomes nothing. When you are nothing, and the wind takes you, you are in all things, never to be destroyed, only divided, until time's end.<br><li>\"Lesson Five\", The Six Lessons of Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_true_shaping",
     "name": "THE LESSON OF TRUE SHAPING",
     "source": "HORUS",
-    "effect": "- \"Lesson Six,\" The Six Lessons of Kilo Nueve.",
-    "description": "A little gift, to be pondered until understood: Cast aside the hammer and sword, the cannon and beam: no weapon formed against me shall land a true blow, as I have seen all ends, and there is nothing left but me. A trillion trillion light-years in all directions, and through it all, only [us? who knows. ego is a mind-killer. best to call your friends. better to face the night together. 'til later, love.]"
+    "effect": "You may install an additional AI in your mech. If one enters cascade (or becomes unshackled narratively), the other prevents it from taking control of your mech. You only lose control of your mech if both AI-tagged systems or equipment enter cascade.",
+    "description": "A little gift, to be pondered until understood: Cast aside the hammer and sword, the cannon and beam: no weapon formed against me shall land a true blow, as I have seen all ends, and there is nothing left but me. A trillion trillion light-years in all directions, and through it all, only [us? who knows. ego is a mind-killer. best to call your friends. better to face the night together. 'til later, love.]<br><li>\"Lesson Six,\" The Six Lessons of Kilo Nueve."
   },
   {
     "id": "cb_adaptive_reactor",
