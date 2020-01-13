@@ -91,7 +91,7 @@
     "source": "GMS",
     "license": "",
     "license_level": "",
-    "effect": "Expend a charge for one of the following effects:<br>- SMOKE GRENADE (Grenade, Range 5, Blast 2): All characters and objects within the blast area benefit from soft cover until the end of your next turn, at which point the smoke disperses.<br>- SMOKE MINE (Mine, Burst 3): This mine detonates when any allied character moves over or adjacent to it. All characters and objects within the affected area benefit from soft cover until the end of the detonating character's next turn, at which point the smoke disperses.",
+    "effect": "Expend a charge for one of the following effects:<br><li>SMOKE GRENADE (Grenade, Range 5, Blast 2): All characters and objects within the blast area benefit from soft cover until the end of your next turn, at which point the smoke disperses.<br><li>SMOKE MINE (Mine, Burst 3): This mine detonates when any allied character moves over or adjacent to it. All characters and objects within the affected area benefit from soft cover until the end of the detonating character's next turn, at which point the smoke disperses.",
     "description": "",
     "data_type": "system",
     "aptitude": {}
@@ -137,7 +137,7 @@
     "source": "GMS",
     "license": "",
     "license_level": "",
-    "effect": "Expend a charge for one of the following effects:<br>- FRAG GRENADE (Grenade, Range 5, Blast 1): All characters within the affected area must succeed on an AGILITY save or take 1d6 explosive damage. On a success, they take half damage.<br>- EXPLOSIVE MINE (Mine, Burst 1): When this mine detonates, all characters within the affected area must succeed on an AGILITY save or take 2d6 explosive damage. On a success, they take half damage.",
+    "effect": "Expend a charge for one of the following effects:<br><li>FRAG GRENADE (Grenade, Range 5, Blast 1): All characters within the affected area must succeed on an AGILITY save or take 1d6 explosive damage. On a success, they take half damage.<br><li>EXPLOSIVE MINE (Mine, Burst 1): When this mine detonates, all characters within the affected area must succeed on an AGILITY save or take 2d6 explosive damage. On a success, they take half damage.",
     "description": "",
     "data_type": "system",
     "aptitude": {}
@@ -2641,14 +2641,14 @@
     "sp": 0,
     "tags": [
       {
-        "id": "limited",
+        "id": "tg_limited",
         "val": 6
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<br><li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.<br><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.<br><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage. ",
+    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.</li><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.</li><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage.</li>",
     "description": "Gained from the <i>Walking Armory: Rank I</i> pilot talent."
   },
   {
@@ -2661,14 +2661,14 @@
     "sp": 0,
     "tags": [
       {
-        "id": "limited",
+        "id": "tg_limited",
         "val": 6
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<br><li> THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.<br><li> SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.<br><li> MAG (1 charge): The attack gains ARCING and deals kinetic damage. </li><br>You can expend two charges for the following ammo types:<br><li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<br><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals explosive damage, and one character hit by the attack \u2013 your choice \u2013 must succeed on a HULL save or be knocked PRONE.<br><li>SABOT (2 charges): The attack gains AP and deals kinetic damage.",
+    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.</li><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.</li><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage.</li><br>You can expend two charges for the following ammo types:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.</li><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals explosive damage, and one character hit by the attack \u2013 your choice \u2013 must succeed on a HULL save or be knocked PRONE.</li><li>SABOT (2 charges): The attack gains AP and deals kinetic damage.</li>",
     "description": "Gained from the <i>Walking Armory: Rank II</i> pilot talent."
   },
   {
@@ -2681,14 +2681,14 @@
     "sp": 0,
     "tags": [
       {
-        "id": "limited",
+        "id": "tg_limited",
         "val": 6
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<br><li> THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.<br><li> SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.<br><li> MAG (1 charge): The attack gains ARCING and deals kinetic damage. </li><br>You can expend two charges for the following ammo types:<br><li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.<br><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals explosive damage, and one character hit by the attack \u2013 your choice \u2013 must succeed on a HULL save or be knocked PRONE.<br><li>SABOT (2 charges): The attack gains AP and deals kinetic damage.<br>If you perform a critical hit using ammunition from your AMMO CASE, you don\u2019t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.</li><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.</li><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage.</li><br>You can expend two charges for the following ammo types:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.</li><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals explosive damage, and one character hit by the attack \u2013 your choice \u2013 must succeed on a HULL save or be knocked PRONE.</li><li>SABOT (2 charges): The attack gains AP and deals kinetic damage.</li><br>If you perform a critical hit using ammunition from your AMMO CASE, you don\u2019t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
     "description": "Gained from the <i>Walking Armory: Rank III</i> pilot talent."
   }
 ]
