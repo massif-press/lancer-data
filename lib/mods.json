@@ -4,9 +4,9 @@
     "name": "THERMAL CHARGE",
     "sp": 2,
     "applied_to": [
-      "MELEE"
+      "melee"
     ],
-    "applied_string": "MELEE",
+    "applied_string": "melee",
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 2,
@@ -33,12 +33,12 @@
     "name": "UNCLE-CLASS COMP/CON",
     "sp": 3,
     "applied_to": [
-      "MELEE",
-      "CQB",
-      "RIFLE",
-      "LAUNCHER",
-      "CANNON",
-      "NEXUS"
+      "melee",
+      "cqb",
+      "rifle",
+      "launcher",
+      "cannon",
+      "nexus"
     ],
     "applied_string": "Any",
     "source": "IPS-N",
@@ -68,11 +68,11 @@
     "name": "THROUGHBOLT ROUNDS",
     "sp": 2,
     "applied_to": [
-      "CQB",
-      "CANNON",
-      "RIFLE"
+      "cqb",
+      "cannon",
+      "rifle"
     ],
-    "applied_string": "CQB, CANNON, or RIFLE",
+    "applied_string": "cqb, cannon, or rifle",
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 3,
@@ -94,9 +94,9 @@
     "name": "SHOCK WREATH",
     "sp": 2,
     "applied_to": [
-      "MELEE"
+      "melee"
     ],
-    "applied_string": "MELEE",
+    "applied_string": "melee",
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 3,
@@ -115,10 +115,10 @@
     "name": "STABILIZER MOD",
     "sp": 2,
     "applied_to": [
-      "LAUNCHER",
-      "CANNON"
+      "launcher",
+      "cannon"
     ],
-    "applied_string": "LAUNCHER or CANNON",
+    "applied_string": "launcher or cannon",
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 2,
@@ -146,12 +146,12 @@
     "name": "NANOCOMPOSITE ADAPTATION",
     "sp": 2,
     "applied_to": [
-      "MELEE",
-      "CQB",
-      "RIFLE",
-      "LAUNCHER",
-      "CANNON",
-      "NEXUS"
+      "melee",
+      "cqb",
+      "rifle",
+      "launcher",
+      "cannon",
+      "nexus"
     ],
     "applied_string": "Any",
     "source": "HORUS",
@@ -180,12 +180,12 @@
     "name": "PHASE-READY MOD",
     "sp": 2,
     "applied_to": [
-      "MELEE",
-      "CQB",
-      "RIFLE",
-      "LAUNCHER",
-      "CANNON",
-      "NEXUS"
+      "melee",
+      "cqb",
+      "rifle",
+      "launcher",
+      "cannon",
+      "nexus"
     ],
     "applied_string": "Any",
     "source": "HA",
@@ -206,12 +206,12 @@
     "name": "PARACAUSAL MOD",
     "sp": 4,
     "applied_to": [
-      "MELEE",
-      "CQB",
-      "RIFLE",
-      "LAUNCHER",
-      "CANNON",
-      "NEXUS"
+      "melee",
+      "cqb",
+      "rifle",
+      "launcher",
+      "cannon",
+      "nexus"
     ],
     "applied_string": "Any",
     "source": "HA",
