@@ -1,214 +1,215 @@
-[{
-    "id": "hardpoints",
-    "name": "Auto-Stabilizing Hardpoints",
+[
+  {
+    "id": "cb_auto_stabilizing_hardpoints",
+    "name": "AUTO-STABILIZING HARDPOINTS",
     "source": "GMS",
-    "effect": "Choose 1 mount on your mech. Attacks made with weapons from this mount can be made with +1 Accuracy.",
-    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 Accuracy.",
-    "description": "Rigging up the best in shock absorption, your mech’s weapons become vastly more accurate."
+    "effect": "Choose one mount. Weapons attached to this mount gain +1 ACCURACY.",
+    "description": "Using the best in shock-absorption and steadytech, you can retain accuracy across longer, sustained periods of fire.",
+    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 ACCURACY."
   },
   {
-    "id": "burnout",
-    "name": "BURNOUT Insulation",
+    "id": "cb_overpower_caliber",
+    "name": "OVERPOWER CALIBER",
     "source": "GMS",
-    "effect": "Choose 1 weapon on your mech. It deals +1d6 bonus damage on hit.",
-    "mounted_effect": "One weapon equipped to this mount deals +1d6 bonus damage on hit.",
-    "description": "Thermal insulation and dispersal plating ensures you can pump more power into your mech’s weapon systems, giving it the edge and the bite that it needs."
+    "effect": "Choose one weapon. 1/round, when you hit with an attack, you can cause it to deal +1d6 bonus damage.",
+    "description": "Instead of the standardized option, you requisition multiple racks of \"hot\" ammunition - same-bore slugs, with a higher-grade of accelerant.",
+    "mounted_effect": "One weapon equipped to this mount deals +1d6 bonus damage 1/round on hit."
   },
   {
-    "id": "imparm",
-    "name": "Improved Armament",
+    "id": "cb_improved_armament",
+    "name": "IMPROVED ARMAMENT",
     "source": "GMS",
-    "effect": "If your mech has less than 3 mounts (excluding integrated mounts), gain an additional Flex Mount",
-    "description": "Power cables are re-routed, reactor power is rationed and siphoned. The deadly is made deadlier."
+    "effect": "If your mech has fewer than three mounts (excluding integrated mounts), it gains an additional flexible mount.",
+    "description": "By rerouting power and strengthening systems, you can mount additional weapons beyond the factory recommendations."
   },
   {
-    "id": "intweapon",
-    "name": "Integrated Weapon",
+    "id": "cb_integrated_weapon",
+    "name": "INTEGRATED WEAPON",
     "source": "GMS",
-    "effect": "Your mech gains a new integrated mount with the capacity for one auxiliary weapon. This weapon can be fired 1/round as a free action when you fire any other weapon on your mech. Like other integrated mounts this weapon can’t be modified.",
-    "description": "Excess space in your mechs chassis is filled with weaponry integrated into fists, or chest plates, capable of being fired on reflex."
+    "effect": "Your mech gains a new integrated mount with capacity for one AUXILIARY weapon. This weapon can be fired 1/round as a free action when you fire any other weapon on your mech. It can't be modified.",
+    "description": "The empty spaces in your mech's chassis - inside fists, chest plates, anywhere there's room - are filled with integrated weapons, ready to fire on reflex."
   },
   {
-    "id": "retrofit",
-    "name": "Mount Retrofitting",
+    "id": "cb_mount_retrofitting",
+    "name": "MOUNT RETROFITTING",
     "source": "GMS",
-    "effect": "Replace one of your mech’s mounts with a Main/Aux Mount.",
-    "mounted_effect": "This mount has been replaced with a Main/Aux Mount.",
-    "description": "You conserve and upgrade, increasing the firepower you can mount on your mech."
+    "effect": "Replace one mount with a main/aux mount.",
+    "description": "By re-fabricating certain components and hardpoints on your chassis for more efficient distribution, you can increase your mech's firepower.",
+    "mounted_effect": "This mount has been replaced with a Main/Aux Mount."
   },
   {
-    "id": "caps",
-    "name": "Reserve Capacitors",
+    "id": "cb_universal_compatibility",
+    "name": "UNIVERSAL COMPATIBILITY",
     "source": "GMS",
-    "effect": "When you spend core power to activate a CORE system, you can also repair your mech’s HP to full and cool all heat as a free action, then roll a 1d20. On a 20, regain 1 core power.",
-    "description": "Certain materials give a CORE capacitor a small chance of retaining a charge, even after activation."
+    "effect": "Any time you activate a CORE SYSTEM, you may also take a free action to restore all HP, cool all HEAT, and roll 1d20: on 20+, regain 1 CP.",
+    "description": "The Everest is everywhere: so are the parts you need for a field repair."
   },
   {
-    "id": "briareos",
-    "name": "BRIAREOS Frame Reinforcement",
+    "id": "cb_briareos_frame",
+    "name": "BRIAREOS FRAME",
     "source": "IPS-N",
-    "description": "The BRIAREOS is the newest development in IPS-N’s line of near-fail frame upgrades, templates designed to maximize what pilots can get out of frames before the need for a reprint or catastrophic failure. BRIAREOS fabricates a frame that is superlight, woven throughout with Goliath Weave meshing, to increase the resilience of all inorganic components.",
-    "effect": "Your mech has resistance to all damage when it has 1 or less points of structure remaining. When it’s reduced to 0 HP, it is not destroyed, but instead makes a structure check each time it takes damage and cannot regain HP. When you take a rest or full repair, it can be repaired normally."
+    "effect": "As long as your mech has no more than 1 STRUCTURE, you gain RESISTANCE to all damage. When it's reduced to 0 HP and 0 STRUCTURE, it is not destroyed: instead, you must make a structure damage check each time it takes damage. While in this state, your mech cannot regain HP until you rest or perform a FULL REPAIR, at which point your mech can be repaired normally.",
+    "description": "The Briareos is the newest release in IPS-N's line of near-fail frame upgrades: templates designed to maximize a mech's usability before catastrophic failure or the need for a reprint. The Briareos template increases the resilience of inorganic components by supplementing the structure with a superlight frame featuring interwoven layers of IPS-N's iconic Goliath Weave meshing."
   },
   {
-    "id": "fomorian",
-    "name": "FOMORIAN Frame Reinforcement",
+    "id": "cb_fomorian_frame",
+    "name": "FOMORIAN FRAME",
     "source": "IPS-N",
-    "effect": "Your mech goes up in size to the next increment (½ > 1 > 2 > 3), up to size 3 maximum and cannot be knocked prone, pulled, or knocked back by targets smaller than itself (as part of a grapple, for example).",
-    "description": "The FOMORIAN is an up-scaled version of the stock IPS-N template, following guidelines suggested by long-haul Cosmopolitans in need of robust micro/macro-impact protection, as well as additional brachial/manipulator needs. "
+    "effect": "Increase your mech's SIZE by one increment (e.g., from 1/2 to 1, 1 to 2, or 2 to 3) up to a maximum of 3 SIZE. You can't be knocked PRONE, pulled, or knocked back by smaller characters, regardless of what system or weapon causes the effect.",
+    "description": "The Fomorian is an upscaled version of IPS-N's stock template that has been adapted to meet the needs of long-haul Cosmopolitans looking for enhanced stability and robust impact protection, both micro- and macro-level."
   },
   {
-    "id": "gyges",
-    "name": "GYGES Frame Reinforcement",
+    "id": "cb_gyges_frame",
+    "name": "GYGES FRAME",
     "source": "IPS-N",
-    "effect": "Your mech gains +1 accuracy on all hull checks and saves and +1 threat with all melee weapons.",
-    "description": "Gyges is a frame upgrade built for combat, with finely tuned stabilizers and a robust suite of targeting software and hardware included at-fabrication."
+    "effect": "You gain +1 ACCURACY on all HULL checks and saves and +1 THREAT with all melee weapons.",
+    "description": "A mech built on the Gyges template is designed for combat - enhanced with finely tuned stabilizers and a robust suite of targeting software and hardware."
   },
   {
-    "id": "frame",
-    "name": "Reinforced Frame",
+    "id": "cb_reinforced_frame",
+    "name": "REINFORCED FRAME",
     "source": "IPS-N",
-    "effect": "Your mech gains +5 HP",
-    "description": "The addition of redundant shock-absorption systems increases the survivability of a pilot in combat, flight, and kinetic situations."
+    "effect": "You gain +5 HP.",
+    "description": "The addition of redundant shock-absorption systems increases the survivability of pilots in combat, flight, and industrial situations."
   },
   {
-    "id": "plating",
-    "name": "Sloped Plating",
+    "id": "cb_sloped_plating",
+    "name": "SLOPED PLATING",
     "source": "IPS-N",
-    "effect": "Your mech gains +1 armor, up to the maximum (+4).",
-    "description": "A simple, common enough option among pilots with the necessary licensing, IPS-N's armor integration fabrication reduces the plating coverage gaps in stock systems by a significant percentage."
+    "effect": "You gain +1 ARMOR, up to the maximum (+4).",
+    "description": "A common choice among pilots with the right licenses, IPS-N's integrated-armor fabrication reduces gaps in external coverage by a significant percentage."
   },
   {
-    "id": "titanomachy",
-    "name": "Titanomachy Mesh",
+    "id": "cb_titanomachy_mesh",
+    "name": "TITANOMACHY MESH",
     "source": "IPS-N",
-    "effect": "Once per round when you successfully ram or grapple a mech, you can make an additional ram or grapple action as a free action. When you knock targets back with a melee attack, you knock them back 1 additional space.",
-    "description": "A doubled overlay of Goliath Weave, fabricated in identified stress points, as well as beefed-up specifications, dramatically improve the baseline functionality of this mech."
+    "effect": "1/round, when you successfully RAM or GRAPPLE a mech, you can RAM or GRAPPLE again as a free action. Additionally, when you knock targets back with melee attacks, you knock them back an additional 1 space.",
+    "description": "A doubled overlay of Goliath Weave at key stress points and beefed-up specifications across the board dramatically improve the baseline functionality of any mech."
   },
   {
-    "id": "fssync",
-    "name": "Full Subjectivity Sync",
+    "id": "cb_all_theater_movement_suite",
+    "name": "ALL-THEATER MOVEMENT SUITE",
     "source": "SSC",
-    "effect": "Your mech gains +2 evasion. You control the mech with no separation between your subjectivity and your input; a second set of physical controls are built in to a retractable panel.",
-    "description": "By creating a strong, stable, and secure two-way ontologic bridge, SSC has removed the need for a pilot to rely primarily on physical controls to crew their mech, though FSS systems do necessitate some methods of securing a pilot within their cockpit. With a full subjectivity sync installed, pilots in their chassis perceive the mech to be their own body, controlling it with essentially no input lag. This precise control and awareness is not without risk as a result of its marked benefits: dissociation remains a concern, and while there is no “pain” transference (physical perception is default-tuned as a “tingle” or “pressure”), SSC does recommend trauma counseling for pilots whose chassis have sustained significant damage while they were engaged in FSS."
+    "effect": "You can fly when you BOOST or make a standard move; however, you take 1 heat at the end of each of your turns in which you fly this way.",
+    "description": "A popular modification, ATMS adds powerful pulse jets that dramatically improve mech mobility in all theaters."
   },
   {
-    "id": "ghostweave",
-    "name": "Ghostweave",
+    "id": "cb_full_subjectivity_sync",
+    "name": "FULL SUBJECTIVITY SYNC",
     "source": "SSC",
-    "effect": "Your mech is invisible during your turn (from the start until the end of your turn). If you do nothing on your turn except move, hide, or boost (no other actions), keep this invisibility until the start of your next turn. It breaks immediately if you take a reaction.",
-    "description": "A scaling up of the same systems found in SSC's Mythimna panoply, Ghostweave is the name of a proprietary applique that licensed pilots use to better camouflage their mechs to any environment."
+    "effect": "You gain +2 EVASION.",
+    "description": "By creating a strong, stable, and secure two-way ontologic bridge - the full subjectivity sync - SSC has removed the need for pilots to rely on physical controls, although pilots must still be secured within the cockpit. With full subjectivity sync, pilots perceive their mech as though it is their own body, controlling it with almost no input lag; however, this level of precision and awareness is not without risk. The high likelihood of pilot dissociation is an ongoing concern, and while there is no transference of pain (physical sensations are interpreted as tingling feelings or pressure), the manual does recommend trauma counseling for pilots whose mechs have sustained significant damage while synced."
   },
   {
-    "id": "nerveweave",
-    "name": "Integrated Nerveweave",
+    "id": "cb_ghostweave",
+    "name": "GHOSTWEAVE",
     "source": "SSC",
-    "effect": "Your mech gains +2 speed when boosting.",
-    "description": "Like the pilot-tier system, integrated nerveweave relies on dual technologies to grant a pilot total battlefield alacrity. Mech-tier integrated nerveweave assures a pilot will never be left behind."
+    "effect": "During your turn, you are INVISIBLE. If you take no actions on your turn other than your standard move, HIDE, and BOOST, you remain INVISIBLE until the start of your next turn. You immediately cease to be INVISIBLE when you take a reaction.",
+    "description": "An upscaled version of the same systems found in SSC's Mythimna Panoply, Ghostweave is a proprietary appliqu\ufffd used to enhance mech camouflage in all environments."
   },
   {
-    "id": "kai",
-    "name": "Kai Bioplating",
+    "id": "cb_integrated_nerveweave",
+    "name": "INTEGRATED NERVEWEAVE",
     "source": "SSC",
-    "effect": "Your mech gains +1 accuracy on all agility checks. Your mech can climb and swim at normal speed, ignores difficult terrain, and when your mech makes its regular move, it can jump your full speed lengthwise and jump half your speed straight up, in any combination.",
-    "description": "Adapted from SSC home system-local fauna, Kai Bioplating adds a lamellar layer of insulated, anchored, chitinous plating over key brush-points on a mech. Essentially a cheaper, feasible version of living metal, bioplating allows for faster movement through hard-to-navigate terrain."
+    "effect": "You may move an additional 2 spaces when you BOOST.",
+    "description": "Integrated nerveweave combines several technologies to grant total battlefield alacrity, assuring pilots are never left behind."
   },
   {
-    "id": "neurolinked",
-    "name": "Neuro-linked Targeting",
+    "id": "cb_kai_bioplating",
+    "name": "KAI BIOPLATING",
     "source": "SSC",
-    "effect": "All ranged weapons your mech mounts gain +3 range.",
-    "description": "To further shrink the information gap between pilots and the machines the crew, SSC developed a stable, non-invasive, limited-transfer ontologic bridging system that all pilots of sufficient license could use. Neurolinked targeting is a common “ability” employed by pilots who use this system, a simple protocol that brings them closer to feeling rather than thinking -- a more natural expression of pilot ability."
+    "effect": "You gain +1 ACCURACY on all AGILITY checks and saves; additionally, you climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full SPEED and upwards up to half your SPEED (in any combination).",
+    "description": "Adapted from fauna local to SSC's home system, Kai Bioplating adds a lamellar layer of insulated, anchored, and chitinous plating over key brush-points on a mech. Essentially a cheaper, more feasible alternative to living metal, bioplating allows for faster movement through hard-to-navigate terrain."
   },
   {
-    "id": "sscatms",
-    "name": "SSC All-Theatre Movement Suit",
+    "id": "cb_neurolink_targeting",
+    "name": "NEUROLINK TARGETING",
     "source": "SSC",
-    "effect": "Your mech can fly when it moves or boosts. Generate 1 heat at the end of any of your turns where it flies.",
-    "description": "A popular SSC modification, the AT-MS adds a stock system of short-cycle impulse drives that dramatically improve a chassis' mobility."
+    "effect": "Your ranged weapons gain +3 RANGE.",
+    "description": "To further reduce the information gap between pilot and machine and complement its full subjectivity sync technology, SSC developed neurolinking, a stable, non-invasive, and limited-transfer ontologic bridge. Neurolink targeting is a simple enhancement that helps pilots feel - as opposed to thinking - when engaged in ranged combat, allowing for a more natural expression of pilot ability."
   },
   {
-    "id": "disbelief",
-    "name": "The Lesson of Disbelief",
+    "id": "cb_the_lesson_of_disbelief",
+    "name": "THE LESSON OF DISBELIEF",
     "source": "HORUS",
-    "effect": "Gain +1 Accuracy on all systems checks and saves and +2 E-Defense.",
-    "description": "Query the omninet, delve into the archives. Find you the Aeneid, find you the Titanomachy. Eat, absorb, mull. Tell me now of the Hecatoncheires, they of the hundred hands. Did they strike the blow against CRONUS (SATURNO), or did they assail the OLYMPIANS? Who do you believe? Why could they not tell their own story?"
+    "effect": "You gain +1 ACCURACY on SYSTEMS checks and saves, and +2 E-DEFENSE.",
+    "description": "Query the omninet, delve into the archives. Find you the Aeneid, find you the age of Titanomachy. Eat, absorb, mull. Tell me now of the Hecatoncheires, they of the hundred hands. Did they strike the blow against Cronus (Saturno) or did they instead assail the Olympians? Who do you believe? Who stopped the Beast from telling its own story? And why?<br><li>\"Lesson One\", The Six Lessons of Kilo Nueve."
   },
   {
-    "id": "opendoor",
-    "name": "The Lesson of The Open Door",
+    "id": "cb_the_lesson_of_the_open_door",
+    "name": "THE LESSON OF THE OPEN DOOR",
     "source": "HORUS",
-    "effect": "Your save target increases by 2. Once per round, when a character fails a save against an effect you cause, it also takes 2 heat.",
-    "description": "There is a body and a deep pit and its name is TARTARUS and once it held KINGS and TITANS and MYTHS. Its gates are flung wide, and its horrors are free. Here is the terrible question: Who opened it?"
+    "effect": "Your SAVE TARGET increases by +2; additionally, 1/round, when a character fails a save against you, they take 2 heat.",
+    "description": "There is a body and a deep pit, and both are named Tartarus. Once it held kings and titans and myths. Now, the gates that held it back are flung wide, and Tartarus is free.<br>Here is the terrible question: who opened the gates, and why?<br><li>\"Lesson Two\", The Six Lessons of Kilo Nueve."
   },
   {
-    "id": "heldimage",
-    "name": "The Lesson of The Held Image",
+    "id": "cb_the_lesson_of_the_held_image",
+    "name": "THE LESSON OF THE HELD IMAGE",
     "source": "HORUS",
-    "effect": "Once a round, at the start of any ally’s turn, you can make a Lock On tech action against any character in your sensor range as a reaction to your ally’s turn starting.",
-    "description": "Close your eyes.<br>Hold the image of your enemy in your mind. Imagine it in all light and from every angle. In your mind it has become a more perfect version of the thing in pale light.<br>Crush it in your mind and you kill the perfect thing.<br>Open your eyes."
+    "effect": "1/round, as a reaction at the start of any allied character's turn, you may LOCK ON to any character within SENSORS.",
+    "description": "Close your eyes. Hold the image of your enemy in your mind; imagine it in all light and from every angle. In your mind, it has become a more perfect version.<br>Crush it in your mind and kill the perfect thing. Open your eyes.<br><li>\"Lesson Three\", The Six Lessons of Kilo Nueve."
   },
   {
-    "id": "transub",
-    "name": "The Lesson of Transubstantiation",
+    "id": "cb_the_lesson_of_thinking_tomorrows_thought",
+    "name": "THE LESSON OF THINKING-TOMORROW'S-THOUGHT",
     "source": "HORUS",
-    "effect": "When your mech loses a point of structure, it disappears from the battlefield, no longer becoming a valid target. It returns at the start of your next turn in the same space. If that space is occupied, it returns in the nearest available free space to its original position (chosen by you).",
-    "description": "Through ecstatic repetition you may see the face of god. Speak until your tongue dried and rattles to dust, until your body becomes nothing. When you are nothing, you are in all things, body and mind, always."
+    "effect": "When you hit with a tech attack, your next melee attack against the same target gains +1 ACCURACY, and its damage can't be reduced in any way.",
+    "description": "Let me tell you this lesson: the corporeal existence is one that must end in death. The incorporeal existence is one that must end in [cascade? do you really think that is true?]. I tell you again, if you can imagine it, it is [done] and you have already struck the killing blow.<br><li>\"Lesson Four\", The Six Lessons of Kilo Nueve."
   },
   {
-    "id": "ttt",
-    "name": "The Lesson of Thinking-Tomorrow's-Thought",
+    "id": "cb_the_lesson_of_transubstantiation",
+    "name": "THE LESSON OF TRANSUBSTANTIATION",
     "source": "HORUS",
-    "effect": "When you successfully hit a character with a tech attack, your next melee attack against them gains +1 Accuracy and damage from this attack cannot be reduced in any way (from armor, resistance, etc).",
-    "description": "Let me tell you this lesson: the corporeal existence is one that must end in death; the incorporeal existence is one that must end in [cascade? do you really think that is true?]. I tell you again, if you can imagine it, it is [done] and you have already struck the killing blow."
+    "effect": "Any time you take structure damage, you disappear into a non-space and cease to be a valid target. You reappear in the same space at the start of your next turn. If that space is occupied, you reappear in the nearest available free space (chosen by you).",
+    "description": "Through ecstatic repetition, you may see the face of God. Speak until your tongue dries and rattles to dust, and your body becomes nothing. When you are nothing, and the wind takes you, you are in all things, never to be destroyed, only divided, until time's end.<br><li>\"Lesson Five\", The Six Lessons of Kilo Nueve."
   },
   {
-    "id": "shaping",
-    "name": "The Lesson of Shaping",
+    "id": "cb_the_lesson_of_true_shaping",
+    "name": "THE LESSON OF TRUE SHAPING",
     "source": "HORUS",
-    "effect": "You can now install an extra system with the AI tag in your mech (up to 2 by default). If one becomes unshackled, the other gains control automatically.",
-    "description": "A little gift, to be pondered until understood: cast aside the hammer and sword, the cannon and laser. No weapon formed against me shall prosper. I have seen all ends, and there is nothing but me left. A trillion trillion light years in all directions, and through it all, only [us? who knows. ego is a mind killer. best to call your friends, better to face the night together. till later.]"
+    "effect": "You may install an additional AI in your mech. If one enters cascade (or becomes unshackled narratively), the other prevents it from taking control of your mech. You only lose control of your mech if both AI-tagged systems or equipment enter cascade.",
+    "description": "A little gift, to be pondered until understood: Cast aside the hammer and sword, the cannon and beam: no weapon formed against me shall land a true blow, as I have seen all ends, and there is nothing left but me. A trillion trillion light-years in all directions, and through it all, only [us? who knows. ego is a mind-killer. best to call your friends. better to face the night together. 'til later, love.]<br><li>\"Lesson Six,\" The Six Lessons of Kilo Nueve."
   },
   {
-    "id": "sculpted",
-    "name": "Armory Sculpted",
+    "id": "cb_adaptive_reactor",
+    "name": "ADAPTIVE REACTOR",
     "source": "HA",
-    "effect": "Your mech takes +1 Accuracy to all engineering checks and saves. When it overcharges, it gains soft cover until the start of its next turn.",
-    "description": "Rather than simply queuing a stock chassis like any other pilot, you've used your reputation, contacts, or status in the Armory's hierarchy to requisition a chassis that is designed, tested, and tuned by a master fabricator."
+    "effect": "When you STABILIZE and choose to cool your mech, you may spend 2 REPAIRS to clear 1 stress damage.",
+    "description": "All Armory frames are designed with multiple failsafe systems, but VIP clients and high-tier citizenry have access to a special catalog. With dozens of options for over-engineering reactors, it's easy to make sure a mech can keep running indefinitely."
   },
   {
-    "id": "heatfall",
-    "name": "HEATFALL coolant system",
+    "id": "cb_armory_sculpted_chassis",
+    "name": "ARMORY-SCULPTED CHASSIS",
     "source": "HA",
-    "effect": "The heat cost for overcharging your mech never exceeds 1d6.",
-    "description": "The HEATFALL system comes packaged with a stable COLDCORE power core of Armory make; when paired together, this suite makes for an incredibly low-tax powerplant."
+    "effect": "You gain +1 ACCURACY on all ENGINEERING checks and saves. When you OVERCHARGE, you gain soft cover until the start of your next turn.",
+    "description": "Anyone can print a stock mech chassis, relying on a section of generic code to keep them alive. The discerning pilot, on the other hand, accepts only the best: a frame designed, tested, and tuned by one of the Armory's master fabricators."
   },
   {
-    "id": "ammofeeds",
-    "name": "Integrated Ammo Feeds",
+    "id": "cb_heatfall_coolant_system",
+    "name": "HEATFALL COOLANT SYSTEM",
     "source": "HA",
-    "effect": "Your mech gains +2 uses to all limited systems or deployables",
-    "description": "By streamlining and better integrating all automated ordnance loading modules, your chassis' time-to- target minimums are greatly improved. As an added bonus, your overall carrying capacity has been increased, allowing you to field more ordnance than design specifications suggest."
+    "effect": "Your cost for OVERCHARGE never goes past 1d6.",
+    "description": "The Heatfall Coolant System comes packaged with a stabilized reactor core; paired together, this combo is guaranteed to keep a mech cool in nearly any environment."
   },
   {
-    "id": "adaptive",
-    "name": "Adaptive Reactor",
+    "id": "cb_integrated_ammo_feeds",
+    "name": "INTEGRATED AMMO FEEDS",
     "source": "HA",
-    "effect": "You can now spend 3 repairs as part of a Stabilize action in combat to repair 1 reactor stress when you choose to cool your mech.",
-    "description": "All Armory chassis are engineered to have multiple failsafe systems: yours has been over-engineered to make SURE you won’t go down fast."
+    "effect": "All LIMITED systems and weapons gain an additional two charges.",
+    "description": "By streamlining and integrating all automated ordnance-loading modules, Harrison Armory specialists can greatly enhance mechs' time-to-target minimums. As an added bonus, these upgrades usually result in increased carrying capacity, allowing pilots to field more ordnance than design specifications suggest."
   },
   {
-    "id": "stasis",
-    "name": "Stasis Shielding",
+    "id": "cb_stasis_shielding",
+    "name": "STASIS SHIELDING",
     "source": "HA",
-    "effect": "When your mech overheats and gains reactor stress, it becomes resistant to all damage until the start of your next turn.",
-    "description": "A Think-Tank exercise in extending stasis beyond the capabilities of civilian utility, stasis shielding is a cutting edge Armory system that identifies critical systems and blankets them in HOLDFAST stasis lock, preventing further degradation for a limited period of time until repairs can be made."
+    "effect": "Whenever you take stress damage, you gain RESISTANCE to all damage until the start of your next turn.",
+    "description": "A Think Tank exercise in extending stasis beyond the capabilities of civilian utility, Harrison Armory's stasis shielding actively identifies critically stressed inorganic systems and blankets them in unmodulated \"Holdfast\" stasis, preventing further degradation for a limited period of time until repairs can be made."
   },
   {
-    "id": "superior",
-    "name": "Superior By Design",
+    "id": "cb_superior_by_design",
+    "name": "SUPERIOR BY DESIGN",
     "source": "HA",
-    "effect": "Your mech is immune to the impaired condition and gains +2 heat capacity",
-    "description": "Even the entry-level Armory chassis are designed to be better than the competition. By flexing the sheer amount of resources they have at their disposal, the Armory can out design and out produce other smaller, boutique engineers and fabricators. Where there is resistance, the answer is simple: buy them out, or stamp them out. You, pilot, benefit from this -- so why worry?"
+    "effect": "You gain IMMUNITY to IMPAIRED and gain +2 HEAT CAP.",
+    "description": "Even the Armory's entry-level frames aim to outperform the competition. Thanks to the incredible resources they have at their disposal, Harrison Armory can out-design and out-produce almost any smaller, boutique engineer or fabricator. Where resistance is found, the answer is simple: buy them out, or stamp them out. The Armory's valued customers benefit from this philosophy of \"Superior by Design\", so why should they worry?"
   }
 ]
