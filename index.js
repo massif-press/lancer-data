@@ -21,7 +21,7 @@ const data = {
   reserves: require('./lib/reserves.json'),
   npc_classes: require('./lib/npc_classes_v2.json'),
   npc_features: require('./lib/npc_features_v2.json'),
-  npc_templates: require('./lib/npc_templatesv2.json'),
+  npc_templates: require('./lib/npc_templates_v2.json'),
   // npc_generic_systems: require('./lib/npc_generic_systems.json'),
   // npc_template_systems: require('./lib/npc_template_systems.json'),
 }
