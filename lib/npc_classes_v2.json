@@ -20,13 +20,15 @@
 			"agility": [3, 4, 6],
 			"systems": [1, 2, 3],
 			"engineering": [0, 1, 1],
-      "size": [1, 1, 1]
+      "size": [1, 1, 1],
+      "activations": [1, 1, 1]
     },
     "base_features": [
-      "npcf_ssc_flightsystem", "npcf_missilelauncher", "npcf_barrelroll"
+      "npcf_splinterrounds"
     ],
     "optional_features": [
-      "npcf_bombingbay", "npcf_strafe", "npcf_missileswarm", "npcf_rapidresponse", "npcf_chafflaunchers"
-    ]
+      "npcf_corewormrockets", "npcf_weaknessanalyzer"
+		],
+		"power": 125
 	}
 ]

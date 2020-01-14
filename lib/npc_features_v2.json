@@ -1,0 +1,118 @@
+[
+  {
+    "id": "npcf_boardingleash",
+    "name": "Boarding Leash",
+    "origin": {
+      "type": "Class",
+      "name": "Ace",
+      "base": true
+    },
+    "type": "Weapon",
+    "weapon_type": "Heavy Melee",
+    "damage": {
+      "type": "kinetic",
+      "damage": [5, 7, 9],
+      "accuracy": [1, 2, 3],
+      "advantage": [1, 1, 1]
+    },
+    "range": [{
+      "type": "threat",
+      "val": 5
+    }],
+    "on_hit": "Target must pass a HULL save or be pulled directly to the Pirate and automatically GRAPPLED.",
+    "effect": "",
+    "tags": []
+  },
+  {
+    "id": "npcf_leadthecharge",
+    "name": "Lead The Charge",
+    "origin": {
+      "type": "Template",
+      "name": "Pirate",
+      "base": false
+    },
+    "type": "Reaction",
+    "trigger": "A hostile character within line of sight moves",
+    "effect": "The Ultra can BOOST. This reaction can be used any number of times a round"
+  },
+  {
+    "id": "npcf_splinterrounds",
+    "name": "Splinter Rounds",
+        "origin": {
+      "type": "Template",
+      "name": "Pirate",
+      "base": true
+    },
+    "type": "Trait",
+    "effect": "The Pirate deals +3 bonus damage on critical hits.",
+    "locked": false
+  },
+  {
+    "id": "npcf_corewormrockets",
+    "name": "Coreworm Rockets",
+        "origin": {
+      "type": "Template",
+      "name": "Pirate",
+      "base": false
+    },
+    "type": "System",
+    "effect": "1d3 miniature drones attach themselves to a character within line of sight and range 10 and begin drilling into their target’s cockpit. In 1d3+2 rounds, if any coreworms are still attached, they reach the cockpit and savage the pilot, reducing them to 0 HP. <br>The target knows how many rounds it will take for the drones to bore though, and how many are attached. The target and allied characters adjacent to them can remove one drone at a time with a successful SYSTEMS or ENGINEERING check as a quick action. Additionally, if the target is SHUT DOWN, the coreworms are confused and their timer pauses.",
+    "tags": [
+      {
+        "id": "limited",
+        "val": 1
+      },
+      {
+        "id": "fullaction"
+      }
+    ]
+  },
+   {
+    "id": "npcf_weaknessanalyzer",
+    "name": "Weakness Analyzer",
+        "origin": {
+      "type": "Class",
+      "name": "Ace",
+      "base": false
+    },
+    "type": "System",
+    "effect": "When the Specter starts the turn HIDDEN, their next attack (while HIDDEN) gains {+1/+2/+3} Accuracy and deals +1d6 Kinetic Damage on a critical hit.",
+    "tags": []
+  }, 
+  {
+    "id": "npcf_drainsystems",
+    "name": "Drain Systems",
+        "origin": {
+      "type": "Class",
+      "name": "Ace",
+      "base": false
+    },
+    "type": "Tech",
+    "tech_type": "Full",
+    "accuracy": [2, 4, 6],
+    "effect": "The Specter makes a tech attack against an adjacent character. On a success, the target becomes STUNNED. This effect lasts until a character other than the Specter starts their turn adjacent to the target or moves adjacent to the target.",
+    "tags": [
+      {
+        "id": "limited",
+        "val": 1
+      },
+      {
+        "id": "fullaction"
+      }
+    ]
+  }, 
+  {
+    "id": "npcf_bonushp",
+    "name": "Bonus HP",
+        "origin": {
+      "type": "Template",
+      "name": "RPV",
+      "base": true
+    },
+    "type": "Trait",
+    "effect": "The RPV gains +5 HP – it can ignore damage that would blow through the cockpit and kill a human",
+    "bonus": {
+      "hp": 5
+    }
+  }
+]
