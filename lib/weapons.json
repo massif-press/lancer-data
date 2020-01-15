@@ -1521,8 +1521,8 @@
   {
     "id": "mw_gandiva_missiles",
     "name": "GANDIVA MISSILES",
-    "mount": "1",
-    "type": "SP",
+    "mount": "Heavy",
+    "type": "Launcher",
     "damage": [
       {
         "type": "energy",
@@ -1536,9 +1536,6 @@
       }
     ],
     "tags": [
-      {
-        "id": "tg_heavy_launcher"
-      },
       {
         "id": "tg_accurate"
       },
@@ -1555,7 +1552,8 @@
     "effect": "",
     "description": "Gandiva missiles are a reliable mainstay from Smith-Shimano's BELLA CIAO line. Like the heavier Pinaka, the Gandiva is equipped with jet-assisted midflight repositioning systems, enhancing target navigation in rapidly changing battlefield environments. The Gandiva's delivery platform is administered by a hivemind comp/con drone AI, giving it the capacity to learn from each right-of-launch experience.",
     "data_type": "weapon",
-    "aptitude": {}
+    "aptitude": {},
+    "sp": 1
   },
   {
     "id": "mw_pinaka_missiles",
@@ -1688,8 +1686,8 @@
   {
     "id": "mw_oracle_lmg_i",
     "name": "ORACLE LMG-I",
-    "mount": "1",
-    "type": "SP",
+    "mount": "Auxiliary",
+    "type": "Rifle",
     "damage": [
       {
         "type": "kinetic",
@@ -1704,9 +1702,6 @@
     ],
     "tags": [
       {
-        "id": "tg_auxiliary_rifle"
-      },
-      {
         "id": "tg_accurate"
       },
       {
@@ -1719,7 +1714,8 @@
     "effect": "",
     "description": "The Oracle Indirect Light Machine Gun (designated O/LMG-I) packs a subsentient, high-volume DOWNPOUR static quad-barrel system into a single cylinder typically installed on the dorsal panel of a chassis. Paired with a firing system, the Oracle is capable of directing persistent defilade-ignorant kinetic fire at targets.",
     "data_type": "weapon",
-    "aptitude": {}
+    "aptitude": {},
+    "sp": 1
   },
   {
     "id": "mw_nanobot_whip",
@@ -2310,8 +2306,8 @@
   {
     "id": "mw_shatterhead_colony_missiles",
     "name": "SHATTERHEAD COLONY MISSILES",
-    "mount": "1",
-    "type": "SP",
+    "mount": "Main",
+    "type": "Launcher",
     "damage": [
       {
         "type": "energy",
@@ -2326,9 +2322,6 @@
     ],
     "tags": [
       {
-        "id": "tg_main_launcher"
-      },
-      {
         "id": "tg_arcing"
       }
     ],
@@ -2338,7 +2331,8 @@
     "effect": "The final attack roll for this weapon can never be affected by DIFFICULTY.",
     "description": "Developed following costly urban and naval boarding engagements in the Interest War, Shatterhead Colony Missiles are now a standard part of the arsenal fielded by Armory interdiction teams. When they reach an optimal distance, Shatterheads break open in a burst of high-catalyst fuel to reveal a cluster of small thermobaric pellets that spread out and ignite, choking the affected area with flame. The effect overloads energy shielding and saturates cover, though only a small percent of the projectiles actually reach their target.",
     "data_type": "weapon",
-    "aptitude": {}
+    "aptitude": {},
+    "sp": 1
   },
   {
     "id": "mw_sol_pattern_laser_rifle",
