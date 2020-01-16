@@ -3,7 +3,7 @@
     "id": "pg_archaic_melee",
     "name": "Archaic Melee",
     "type": "weapon",
-    "description": "These weapons were made using pre-Union alloys and technology, and might be anything from industrial-era steel swords through to stone axes. While they remain widely used on some worlds, archaic weapons used by pilots are usually relics, heirlooms, or ceremonial weapons. ARCHAIC weapons are too simple to harm mechs.",
+    "description": "These weapons were made using pre-Union alloys and technology, and might be anything from industrial-era steel swords through to stone axes. While they remain widely used on some worlds, archaic weapons used by pilots are usually relics, heirlooms, or ceremonial weapons.",
     "tags": [
       {
         "id": "tg_archaic"
@@ -26,7 +26,7 @@
     "id": "pg_archaic_ranged",
     "name": "Archaic Ranged",
     "type": "weapon",
-    "description": "These weapons are pre-modern devices like muskets and bows, all of which are still used in some societies. ARCHAIC weapons are too simple to harm mechs.",
+    "description": "These weapons are pre-modern devices like muskets and bows, all of which are still used in some societies.",
     "tags": [
       {
         "id": "tg_archaic"
@@ -49,7 +49,7 @@
     "id": "pg_light_a_c",
     "name": "Light A/C",
     "type": "weapon",
-    "description": "LIGHT A/C weapons might be knives, bayonets, punching daggers, and short swords.",
+    "description": "Light A/C weapons might be knives, bayonets, punching daggers, and short swords.",
     "tags": [
       {
         "id": "tg_sidearm"
@@ -72,7 +72,7 @@
     "id": "pg_medium_a_c",
     "name": "Medium A/C",
     "type": "weapon",
-    "description": "MEDIUM A/C weapons are typically swords, officer's sabers, and trench axes.",
+    "description": "Medium A/C weapons are typically swords, officer\u2019s sabers, and trench axes.",
     "tags": [],
     "range": [
       {
@@ -91,7 +91,7 @@
     "id": "pg_heavy_a_c",
     "name": "Heavy A/C",
     "type": "weapon",
-    "description": "HEAVY A/C weapons are designed with the augmented strength of hardsuits in mind and include war hammers, mallets, rams, pikes, and heavy two-handed assault swords.",
+    "description": "Heavy weapons are designed with the augmented strength of hardsuits in mind and include war hammers, mallets, rams, pikes, and heavy two-handed assault swords.",
     "tags": [
       {
         "id": "tg_inaccurate"
@@ -114,7 +114,7 @@
     "id": "pg_light_signature",
     "name": "Light Signature",
     "type": "weapon",
-    "description": "LIGHT signature weapons might be oversized revolvers, braces of pistols, and submachine guns.",
+    "description": "Light signature weapons might be oversized revolvers, braces of pistols, and submachine guns.",
     "tags": [
       {
         "id": "tg_sidearm"
@@ -132,13 +132,13 @@
         "val": 1
       }
     ],
-    "effect": "Player selects damage type at item creation."
+    "effect": "When a signature weapon is acquired, choose its damage type \u2013 Explosive, Energy, or Kinetic."
   },
   {
     "id": "pg_medium_signature",
     "name": "Medium Signature",
     "type": "weapon",
-    "description": "MEDIUM signature weapons are assault rifles, shotguns, pack-fed lasers, disruption guns.",
+    "description": "Medium signature weapons are assault rifles, shotguns, pack-fed lasers, or disruption guns.",
     "tags": [],
     "range": [
       {
@@ -152,13 +152,13 @@
         "val": 2
       }
     ],
-    "effect": "Player selects damage type at item creation."
+    "effect": "When a signature weapon is acquired, choose its damage type \u2013 Explosive, Energy, or Kinetic."
   },
   {
     "id": "pg_heavy_signature",
     "name": "Heavy Signature",
     "type": "weapon",
-    "description": "HEAVY signature weapons are missile tubes, heavy lasers, light machine gun, or exotic rifles.",
+    "description": "Heavy signature weapons are missile tubes, heavy lasers, light machine gun, or exotic rifles.",
     "tags": [
       {
         "id": "tg_ordnance"
@@ -179,7 +179,7 @@
         "val": 4
       }
     ],
-    "effect": "Player selects damage type at item creation."
+    "effect": "When a signature weapon is acquired, choose its damage type \u2013 Explosive, Energy, or Kinetic."
   },
   {
     "id": "pg_light_hardsuit",
@@ -201,7 +201,7 @@
     "id": "pg_assault_hardsuit",
     "name": "Assault Hardsuit",
     "type": "armor",
-    "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user's strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
+    "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user\u2019s strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
     "tags": [
       {
         "id": "tg_personal_armor"
@@ -217,7 +217,7 @@
     "id": "pg_heavy_hardsuit",
     "name": "Heavy Hardsuit",
     "type": "armor",
-    "description": "The heaviest hardsuits. They are always powered and up-armored with thick, composite armor. Heavy hardsuits often feature integrated weapons, powerful mobility suites, and - by augmenting their user's strength - allow their user to field much heavier weapons than normal infantry can typically carry. Heavy hardsuits are in decline now that half-size chassis are popular, but they are still common among private militaries and middle-tier Diasporan armed forces.",
+    "description": "The heaviest hardsuits. They are always powered and up-armored with thick, composite armor. Heavy hardsuits often feature integrated weapons, powerful mobility suites, and \u2013 by augmenting their user\u2019s strength \u2013 allow their user to field much heavier weapons than normal infantry can typically carry. Heavy hardsuits are in decline now that half-size chassis are popular, but they are still common among private militaries and middle-tier Diasporan armed forces.",
     "tags": [
       {
         "id": "tg_personal_armor"
@@ -233,10 +233,13 @@
     "id": "pg_mobility_hardsuit",
     "name": "Mobility Hardsuit",
     "type": "armor",
-    "description": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or BOOST. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
+    "description": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
     "tags": [
       {
         "id": "tg_personal_armor"
+      },
+      {
+        "id": "tg_flight"
       }
     ],
     "hp_bonus": 0,
@@ -249,10 +252,13 @@
     "id": "pg_stealth_hardsuit",
     "name": "Stealth Hardsuit",
     "type": "armor",
-    "description": "As a quick action, pilots wearing stealth hardsuits can become INVISIBLE. They cease to be INVISIBLE if they take any damage.",
+    "description": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
     "tags": [
       {
         "id": "tg_personal_armor"
+      },
+      {
+        "id": "tg_invisibility"
       }
     ],
     "hp_bonus": 0,
@@ -263,9 +269,9 @@
   },
   {
     "id": "pg_corrective",
-    "name": "CORRECTIVE",
+    "name": "Corrective",
     "type": "gear",
-    "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.<br>Expend a charge to apply correctives to DOWN AND OUT pilots, immediately bringing them back to consciousness at 1 HP.",
+    "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.<br>Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP.",
     "tags": [
       {
         "id": "tg_gear"
@@ -282,9 +288,9 @@
   },
   {
     "id": "pg_frag_grenades",
-    "name": "FRAG GRENADES",
+    "name": "Frag Grenades",
     "type": "gear",
-    "description": "Expend a charge for the following effect:<br><li>FRAG GRENADE (Grenade, Range 5, Blast 1): Affected characters must succeed on an AGILITY save or take 2 explosive damage.",
+    "description": "Expend a charge for the following effect:<li>Frag Grenade (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.",
     "tags": [
       {
         "id": "tg_gear"
@@ -298,9 +304,9 @@
   },
   {
     "id": "pg_patch",
-    "name": "PATCH",
+    "name": "Patch",
     "type": "gear",
-    "description": "\"Patch\" is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.<br>Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on DOWN AND OUT pilots.",
+    "description": "\u201cPatch\u201d is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.<br>Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
     "tags": [
       {
         "id": "tg_gear"
@@ -317,9 +323,9 @@
   },
   {
     "id": "pg_stims",
-    "name": "STIMS",
+    "name": "Stims",
     "type": "gear",
-    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot's suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<br><li>KICK: Keeps a pilot awake and alert for up to 30 hours.<br><li>FREEZE: Keep a pilot calm and emotionally stable; deadens fear and other strong reactions.<br><li>JUICE: Heightens senses and alertness, reduces fatigue, and shortens reaction times. Juice occasionally provokes rage in some users.",
+    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot\u2019s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<li>Kick: Keeps a pilot awake and alert for up to 30 hours.<li>Freeze: Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.<li>Juice: Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.",
     "tags": [
       {
         "id": "tg_gear"
@@ -335,10 +341,10 @@
     "uses": 3
   },
   {
-    "id": "pg_thermal_charge",
-    "name": "THERMAL CHARGE",
+    "id": "pg_thermite_charge",
+    "name": "Thermite Charge",
     "type": "gear",
-    "description": "Expend a charge for the following effect:<br><li>THERMAL CHARGE (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an ENGINEERING save or take 3 AP energy damage. Thermal charges automatically hit objects, dealing 10 AP energy damage.",
+    "description": "Expend a charge for the following effect:<li>Thermite Charge (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.Miscellaneous Gear",
     "tags": [
       {
         "id": "tg_gear"
@@ -355,9 +361,9 @@
   },
   {
     "id": "pg_antiphoton_visor",
-    "name": "ANTIPHOTON VISOR",
+    "name": "Antiphoton Visor",
     "type": "gear",
-    "description": "Designed to protect the wearer's eyes from intense bursts of light, antiphoton visors are commonly found among breach teams and solar-forward operators. They are effective against flash weapons, intense UV light, and incidental charges from energy weapons.",
+    "description": "Designed to protect the wearer\u2019s eyes from intense bursts of light, antiphoton visors are commonly found among breach teams and solar-forward operators. They are effective against flash weapons, intense UV light, and incidental charges from energy weapons.",
     "tags": [
       {
         "id": "tg_gear"
@@ -366,7 +372,7 @@
   },
   {
     "id": "pg_camo_cloth",
-    "name": "CAMO CLOTH",
+    "name": "Camo Cloth",
     "type": "gear",
     "description": "A square of reactive material that slowly shifts to reflect the surrounding environment, enough to cover a human comfortably. The transition takes about 10 seconds and makes anything hidden underneath very difficult to spot.",
     "tags": [
@@ -377,9 +383,9 @@
   },
   {
     "id": "pg_dataplating",
-    "name": "DATAPLATING",
+    "name": "Dataplating",
     "type": "gear",
-    "description": "Dataplating is a general term for comm-linked jewelry, subdermal netting, wearable jaw, brow, or maxillary plates, etc, that allows sub-vocal communication, persistent heads-up displays, and persistent augmented reality while not wearing a helm. Dataplates can quickly translate nearly all languages, and allow their wearers to communicate with each other all but silently.",
+    "description": "Dataplating is a general term for any comm-linked jewelry, subdermal netting, wearable jaw, brow, or maxillary plates, etc., that allows subvocal communication and persistent heads-up and augmented reality displays without wearing a helm. Dataplates can quickly translate nearly any language, and allow users to communicate with each other all but silently.",
     "tags": [
       {
         "id": "tg_gear"
@@ -388,9 +394,9 @@
   },
   {
     "id": "pg_extra_rations",
-    "name": "EXTRA RATIONS",
+    "name": "Extra Rations",
     "type": "gear",
-    "description": "Pilot rations aren't much better than their nautical forerunners - both are variants on hardtack and nutrient paste. Pilots often carry a stash of extra food, or luxuries like chocolate, coffee, alcohol, or preserved goods from their homeworld. These rations can be used to barter or boost morale.",
+    "description": "Pilot rations aren\u2019t much better than their nautical forerunners \u2013 both are variants on hardtack and nutrient paste. Pilots often carry a stash of extra food, or luxuries like chocolate, coffee, alcohol, or preserved goods from their homeworld. These rations can be used to barter or boost morale.",
     "tags": [
       {
         "id": "tg_gear"
@@ -399,9 +405,9 @@
   },
   {
     "id": "pg_flexsuit",
-    "name": "FLEXSUIT",
+    "name": "Flexsuit",
     "type": "gear",
-    "description": "A strong base-layer suit that recycles water, generates nutrients, and adapts very rapidly to hostile environs, maintaining a stable condition and extending survivability. Flexsuit wearers can go for roughly a week without eating or drink thanks to the ambrosia paste generated by their suit before its systems are depleted; however, they don't prevent feelings of hunger. Removing the suit for a day or two is enough to replenish its reserves. Flexsuits also maintain a steady temperature within acceptable parameters.",
+    "description": "A strong base-layer suit that recycles water, generates nutrients, and adapts very rapidly to hostile environs, maintaining a stable condition and extending survivability. Flexsuit wearers can go for roughly a week without eating or drink thanks to the ambrosia paste generated by their suit before its systems are depleted; however, they don\u2019t prevent feelings of hunger. Removing the suit for a day or two is enough to replenish its reserves. Flexsuits also maintain a steady temperature within acceptable parameters.",
     "tags": [
       {
         "id": "tg_gear"
@@ -410,9 +416,9 @@
   },
   {
     "id": "pg_handheld_printer",
-    "name": "HANDHELD PRINTER",
+    "name": "Handheld Printer",
     "type": "gear",
-    "description": "A miniaturized version of Union's full-scale printers, handheld printers can be used to make simple objects out of flexible and durable plastic - as long as you have the right pattern chip.",
+    "description": "A miniaturized version of Union\u2019s full-scale printers, handheld printers can be used to make simple objects out of flexible and durable plastic \u2013 as long as you have the right pattern chip.",
     "tags": [
       {
         "id": "tg_gear"
@@ -420,10 +426,10 @@
     ]
   },
   {
-    "id": "pg_subjectivity-enhancement_suite",
-    "name": "SUBJECTIVITY-ENHANCEMENT SUITE",
+    "id": "pg_subjectivity_enhancement_suite",
+    "name": "Subjectivity-Enhancement Suite",
     "type": "gear",
-    "description": "A subjectivity-enhancement suite is a set of cybernetic implants allowing users to hack systems without a rig. Users of these suites blend the organic with the synthetic, gaining the ability to extrude implanted universal-plug cables from within their body to make hardline connections with terminals. When plugged in, users can access a comprehensive, fully interactive alternate-reality interface with direct omninet access, making navigating - or hacking - local and networked systems as easy as wishing it so (of course, you must be careful: by opening up your mind to the digital, you may face dangers other, less enhanced people are ignorant of).",
+    "description": "A subjectivity-enhancement suite is a set of cybernetic implants allowing users to hack systems without a rig. Users of these suites blend the organic with the synthetic, gaining the ability to extrude implanted universal-plug cables from within their body to make hardline connections with terminals. When plugged in, users can access a comprehensive, fully interactive alternate-reality interface with direct omninet access, making navigating \u2013 or hacking \u2013 local and networked systems as easy as wishing it so (of course, you must be careful: by opening up your mind to the digital, you may face dangers other, less enhanced people are ignorant of).",
     "tags": [
       {
         "id": "tg_gear"
@@ -432,9 +438,9 @@
   },
   {
     "id": "pg_infoskin",
-    "name": "INFOSKIN",
+    "name": "Infoskin",
     "type": "gear",
-    "description": "A reactive, synthetic polymer with advanced qualities, infoskin bonds quickly to real skin and hair. Once applied, it responds to electronic signals delivered by linked software, rapidly changing its color and texture - even contorting and distorting its form - allowing wearers to make minor changes to their appearance. With infoskin, it's a simple matter to alter facial features, hair color, or makeup patterns.",
+    "description": "A reactive, synthetic polymer with advanced qualities, infoskin bonds quickly to real skin and hair. Once applied, it responds to electronic signals delivered by linked software, rapidly changing its color and texture \u2013 even contorting and distorting its form \u2013 allowing wearers to make minor changes to their appearance. With infoskin, it\u2019s a simple matter to alter facial features, hair color, or makeup patterns.",
     "tags": [
       {
         "id": "tg_gear"
@@ -443,7 +449,7 @@
   },
   {
     "id": "pg_mag_clamps",
-    "name": "MAG CLAMPS",
+    "name": "Mag-Clamps",
     "type": "gear",
     "description": "These clamps attach easily to any metal surface, enhancing maneuverability in zero-g environments or when repairing mechs. They can be carried or fitted to boots.",
     "tags": [
@@ -454,7 +460,7 @@
   },
   {
     "id": "pg_nanite_spray",
-    "name": "NANITE SPRAY",
+    "name": "Nanite Spray",
     "type": "gear",
     "description": "A spray paint that can be applied to any surface. Nanite spray is invisible to the naked eye but able to transmit simple messages or small data packets when scanned.",
     "tags": [
@@ -465,9 +471,9 @@
   },
   {
     "id": "pg_omnihook",
-    "name": "OMNIHOOK",
+    "name": "Omnihook",
     "type": "gear",
-    "description": "A portable - if bulky - omninet terminal that allows for communication, data transfer, and limited hot-spotting. Omnihooks are extremely valuable, although most mech squads have at least one. Tuning an omnihook requires a high level of skill, so they are usually mounted or carried by designated operators.",
+    "description": "A portable \u2013 if bulky \u2013 omninet terminal that allows for communication, data transfer, and limited hot-spotting. Omnihooks are extremely valuable, although most mech squads have at least one. Tuning an omnihook requires a high level of skill, so they are usually mounted or carried by designated operators.",
     "tags": [
       {
         "id": "tg_gear"
@@ -476,9 +482,9 @@
   },
   {
     "id": "pg_personal_drone",
-    "name": "PERSONAL DRONE",
+    "name": "Personal Drone",
     "type": "gear",
-    "description": "Small, non-combat drones are a common sight in the field. They're fairly noisy but can fly about half a mile with good maneuverability before losing signal, relaying audio and visual information as they go.",
+    "description": "Small, non-combat drones are a common sight in the field. They\u2019re fairly noisy but can fly about half a mile with good maneuverability before losing signal, relaying audio and visual information as they go.",
     "tags": [
       {
         "id": "tg_gear"
@@ -487,9 +493,9 @@
   },
   {
     "id": "pg_prosocollar",
-    "name": "PROSOCOLLAR",
+    "name": "Prosocollar",
     "type": "gear",
-    "description": "A collar-like device that fits snugly around its wearer's neck, projecting a holographic image over their face and head. Prosocollars can change their wearer's voice and scramble or change their appearance. The projection won't stand up to close inspection, but it can easily fool electronic systems and distant observers.",
+    "description": "A collar-like device that fits snugly around its wearer\u2019s neck, projecting a holographic image over their face and head. Prosocollars can change their wearer\u2019s voice and scramble or change their appearance. The projection won\u2019t stand up to close inspection, but it can easily fool electronic systems and distant observers.",
     "tags": [
       {
         "id": "tg_gear"
@@ -498,7 +504,7 @@
   },
   {
     "id": "pg_smart_scope",
-    "name": "SMART SCOPE",
+    "name": "Smart Scope",
     "type": "gear",
     "description": "A powerful electronic scope that provides high-resolution magnification up to two miles, and automatically adjusts its reticle for wind, gravity, and pressure. Smart scopes can project their field of vision and all data to the HUD of any networked user. They can also pair with other thermal, optical, or simulated-vision devices to further enhance targeting.",
     "tags": [
@@ -509,9 +515,9 @@
   },
   {
     "id": "pg_sleeping_bag",
-    "name": "SLEEPING BAG",
+    "name": "Sleeping Bag",
     "type": "gear",
-    "description": "Coming in a variety of sizes, sleeping bags are a field necessity. They're designed to fold out from a hardsuit, fit within a mech's cockpit, resist fire and changes in temperature, and - when necessary - seal against vacuum.<br>You can climb into your sleeping bag, gaining IMMUNITY to burn, protection against vacuum, and enough air to last an hour; however, while in the sleeping bag you are STUNNED and can't take actions other than to exit the bag as a full action.",
+    "description": "Coming in a variety of sizes, sleeping bags are a field necessity. They\u2019re designed to fold out from a hardsuit, fit within a mech\u2019s cockpit, resist fire and changes in temperature, and \u2013 when necessary \u2013 seal against vacuum.<br>You can climb into your sleeping bag, gaining Immunity to burn, protection against vacuum, and enough air to last an hour; however, while in the sleeping bag you are Stunned and can\u2019t take actions other than to exit the bag as a full action.",
     "tags": [
       {
         "id": "tg_gear"
@@ -523,9 +529,9 @@
   },
   {
     "id": "pg_ssc_sylph_undersuit",
-    "name": "SSC SYLPH UNDERSUIT",
+    "name": "SSC Sylph Undersuit",
     "type": "gear",
-    "description": "Discovered on Acrimea IV, a biome cultivar world controlled by Smith-Shimano Corpro (SSC), the sylph is an organic lifeform that can seemingly survive in nearly any environment. Using breeding-analogous methods defined by established bioengineering doctrines, SSC developed the sylph undersuit - sterile, living sylphs grown as envelopes and fitted to their owners. The sylph bonds to its wearer, forming a symbiotic relationship: the sylph is sustained by the host's waste products, in return protecting the host from a range of hostile environmental factors.<br>These semi-biological, skin-tight undersuits can be worn for extended periods. They are translucent, semi-liquid, and able to be stored when not in use, confirming to whatever container they are placed in. They clean the host's body, aid natural healing processes, and eliminate waste. As desired, segments can become opaque, change color, or take on a new texture. Sylph undersuits can cover the host's head, sealing against vacuum, providing protection against radiation, and filtering air or liquids, even providing the ability to breathe water for a limited time.",
+    "description": "Discovered on Acrimea IV, a biome cultivar world controlled by Smith-Shimano Corpro (SSC), the sylph is an organic lifeform that can seemingly survive in nearly any environment. Using breeding-analogous methods defined by established bioengineering doctrines, SSC developed the sylph undersuit \u2013 sterile, living sylphs grown as envelopes and fitted to their owners. The sylph bonds to its wearer, forming a symbiotic relationship: the sylph is sustained by the host\u2019s waste products, in return protecting the host from a range of hostile environmental factors.<br>These semi-biological, skin-tight undersuits can be worn for extended periods. They are translucent, semi-liquid, and able to be stored when not in use, conforming to whatever container they are placed in. They clean the host\u2019s body, aid natural healing processes, and eliminate waste. As desired, segments can become opaque, change color, or take on a new texture. Sylph undersuits can cover the host\u2019s head, sealing against vacuum, providing protection against radiation, and filtering air or liquids, even providing the ability to breathe water for a limited time.",
     "tags": [
       {
         "id": "tg_gear"
@@ -534,7 +540,7 @@
   },
   {
     "id": "pg_sound_system",
-    "name": "SOUND SYSTEM",
+    "name": "Sound System",
     "type": "gear",
     "description": "Though their tactical utility is questionable, many pilots set up internal speaker systems in their cockpits. This gives them a clear line to their compatriots during combat, along with the ability to play music.",
     "tags": [
@@ -545,7 +551,7 @@
   },
   {
     "id": "pg_tertiary_arm",
-    "name": "TERTIARY ARM",
+    "name": "Tertiary Arm",
     "type": "gear",
     "description": "A powered third arm mounted on a bracket on the hardsuit. Tertiary arms are powered and controlled using the same neural bridge processes that allow hardsuits to respond to user input. They can be equipped with manipulators to allow for fine motor control, weapons to enhance combat efficacy, or specialty tools.",
     "tags": [
@@ -556,9 +562,9 @@
   },
   {
     "id": "pg_wilderness_survival_kit",
-    "name": "WILDERNESS SURVIVAL KIT",
+    "name": "Wilderness Survival Kit",
     "type": "gear",
-    "description": "Contains many essentials for surviving in hostile environments: a rebreather, water filters, hardsuit patches, backup thermals, a bivouac kit, and so on.",
+    "description": "This kit contains many essentials for surviving in hostile environments: a rebreather, water filters, hardsuit patches, backup thermals, a bivouac kit, and so on.",
     "tags": [
       {
         "id": "tg_gear"
