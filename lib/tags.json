@@ -2,13 +2,13 @@
   {
     "id": "tg_burn",
     "name": "BURN {VAL}",
-    "description": "On a hit, this weapon deals {VAL} burn to its target. They immediately take that much burn damage, ignoring ARMOR, then mark {VAL} burn on their sheet, adding it to any existing burn. At the end of their turn, characters with marked burn make an ENGINEERING check. On a success, they clear all marked burn; on a failure, they take damage equal to their total marked burn.",
+    "description": "On a hit, this weapon deals {VAL} Burn to its target. They immediately take that much burn damage, ignoring Armor, then mark {VAL} Burn on their sheet, adding it to any existing Burn. At the end of their turn, characters with marked burn make an Engineering check. On a success, they clear all marked burn; on a failure, they take damage equal to their total marked burn.",
     "filter_ignore": false
   },
   {
     "id": "tg_heat_target",
     "name": "HEAT {VAL} (TARGET)",
-    "description": "On a hit, this weapon or system deals {VAL} heat to its target.",
+    "description": "On a hit, this weapon or system deals {VAL} Heat to its target.",
     "filter_ignore": false
   },
   {
@@ -20,175 +20,187 @@
   {
     "id": "tg_cone",
     "name": "CONE {VAL}",
-    "description": "Attacks made with this weapon affect characters within a cone, {VAL} spaces long and {VAL} spaces wide at its furthest point. The cone begins at 1 space wide.",
+    "description": "Attacks made with this weapon affect  characters within a cone, {VAL} spaces long and {VAL} spaces wide at its furthest point. The cone begins 1 space wide.",
     "filter_ignore": true
   },
   {
     "id": "tg_blast",
     "name": "BLAST {VAL}",
-    "description": "Attacks made with this weapon affect characters within a radius of {VAL} spaces, drawn from a point within RANGE and line of sight. Cover and line of sight are calculated based on the center of the blast, rather than the attacker's position.",
+    "description": "Attacks made with this weapon affect characters within a radius of {VAL} spaces, drawn from a point within Range and line of sight. Cover and line of sight are calculated based on the center of the blast, rather than the attacker\u2019s position.",
     "filter_ignore": true
   },
   {
     "id": "tg_burst",
     "name": "BURST {VAL}",
-    "description": "Attacks made with this weapon affect characters within a radius of {VAL} spaces, centered on but not including the space occupied by the user (or target). The attacker is not affected by the attack unless specified. Cover and line of sight are calculated from the character. If a BURST effect is ongoing, it moves with the character at its center.",
+    "description": "Attacks made with this weapon affect characters within a radius of {VAL} spaces, centered on and including the space occupied by the user (or target). If the Burst is an attack, the user or target is not affected by the attack unless specified. Cover and line of sight are calculated from the character. If a Burst effect is ongoing, it moves with the character at its center.Other Weapon Tags",
     "filter_ignore": true
   },
   {
     "id": "tg_accurate",
     "name": "ACCURATE",
-    "description": "Attacks made with this weapon receive +1 ACCURACY.",
+    "description": "Attacks made with this weapon receive +1 Accuracy.",
     "filter_ignore": false
   },
   {
     "id": "tg_arcing",
     "name": "ARCING",
-    "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don't require line of sight, as long as it's possible to trace a path to the target; however, they are still affected by cover.",
+    "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don\u2019t require line of sight, as long as it\u2019s possible to trace a path to the target; however, they are still affected by cover.",
     "filter_ignore": false
   },
   {
     "id": "tg_ap",
     "name": "ARMOR-PIERCING (AP)",
-    "description": "Damage dealt by this weapon ignores ARMOR.",
+    "description": "Damage dealt by this weapon ignores Armor.",
     "filter_ignore": false
   },
   {
     "id": "tg_inaccurate",
     "name": "INACCURATE",
-    "description": "Attacks made with this weapon receive +1 DIFFICULTY.",
+    "description": "Attacks made with this weapon receive +1 Difficulty.",
     "filter_ignore": false
   },
   {
     "id": "tg_knockback",
     "name": "KNOCKBACK {VAL}",
-    "description": "On a hit, this weapon knocks its target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a BLAST). Multiple KNOCKBACK effects stack with each other. This means that an attack made with a KNOCKBACK 1 weapon and a talent that grants KNOCKBACK 1 counts as having KNOCKBACK 2.",
+    "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
     "filter_ignore": false
   },
   {
     "id": "tg_loading",
     "name": "LOADING",
-    "description": "This weapon must be reloaded after each use. Mechs can reload with STABILIZE and some systems.",
+    "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems.",
     "filter_ignore": false
   },
   {
     "id": "tg_ordnance",
     "name": "ORDNANCE",
-    "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting PROTOCOLS. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can't be used against targets in engagement with the user's mech, and cannot be used for OVERWATCH.",
+    "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can\u2019t be used against targets in engagement with the user\u2019s mech, and cannot be used for Overwatch.",
     "filter_ignore": false
   },
   {
     "id": "tg_overkill",
     "name": "OVERKILL",
-    "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 heat and are then rerolled. Additional 1s continue to trigger this effect.",
+    "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect.",
     "filter_ignore": false
   },
   {
     "id": "tg_overshield",
     "name": "OVERSHIELD",
-    "description": "This system provides HP that disappears at the end of the scene or when a specified condition is met. The user only retains the highest value of OVERSHIELD applied - it does not stack. For example, if a system provides OVERSHIELD 5 and the user gains another effect that provides OVERSHIELD 7, they would gain OVERSHIELD 7. Damage is dealt to OVERSHIELD first, then HP. OVERSHIELD can push a character past their maximum HP. It can't benefit from healing but otherwise benefits normally from anything that would affect HP and damage (i.e., reduction, ARMOR, etc).",
+    "description": "This system provides HP that disappears at the end of the scene or when a specified condition is met. The user only retains the highest value of Overshield applied \u2013 it does not stack. For example, if a system provides Overshield 5 and the user gains another effect that provides Overshield 7, they would gain Overshield 7. Damage is dealt to Overshield first, then HP. Overshield can push a character past their maximum HP. It can\u2019t benefit from healing but otherwise benefits normally from anything that would affect HP and damage (i.e., reduction, armor, etc).",
     "filter_ignore": false
   },
   {
     "id": "tg_reliable",
     "name": "RELIABLE {VAL}",
-    "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. RELIABLE damage inherits other tags (such as AP) and the base damage type but not tags that require a hit, such as KNOCKBACK.",
+    "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
     "filter_ignore": false
   },
   {
     "id": "tg_seeking",
     "name": "SEEKING",
-    "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it's possible to draw a path to its target, this weapon ignores cover and doesn't require line of sight.",
+    "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it\u2019s possible to draw a path to its target, this weapon ignores cover and doesn\u2019t require line of sight.",
     "filter_ignore": false
   },
   {
     "id": "tg_smart",
     "name": "SMART",
-    "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can't simply be dodged - they must be scrambled or jammed. Because of this, all attacks with this weapon - including melee and ranged attacks - use the target's E-DEFENSE instead of EVASION. Targets with no E-DEFENSE count as having 8 E-DEFENSE.",
+    "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can\u2019t simply be dodged \u2013 they must be scrambled or jammed. Because of this, all attacks with this weapon \u2013 including melee and ranged attacks \u2013 use the target\u2019s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense.",
     "filter_ignore": false
   },
   {
     "id": "tg_threat",
     "name": "THREAT {VAL}",
-    "description": "This weapon can be used to make OVERWATCH attacks within {VAL} spaces. If it's a melee weapon, it can be used to make melee attacks within {VAL} spaces.",
+    "description": "This weapon can be used to make Overwatch attacks within {VAL} spaces. If it\u2019s a melee weapon, it can be used to make melee attacks within {VAL} spaces.",
     "filter_ignore": false
   },
   {
     "id": "tg_thrown",
     "name": "THROWN {VAL}",
-    "description": "This melee weapon can be thrown at targets within {VAL} SPACES. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+    "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+    "filter_ignore": false
+  },
+  {
+    "id": "tg_turn",
+    "name": "{VAL}/TURN",
+    "description": "This system, trait, or reaction can be used {VAL} number of times in any given turn.",
+    "filter_ignore": false
+  },
+  {
+    "id": "tg_round",
+    "name": "{VAL}/ROUND",
+    "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user\u2019s turn and the start of their next turn.",
     "filter_ignore": false
   },
   {
     "id": "tg_ai",
     "name": "AI",
-    "description": "A mech can only have one system with this tag installed at a time. A mech with this tag has an NHP or comp/con unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI as a protocol, or take control back. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can't take actions or reactions with it until the start of their next turn. AIs can't benefit from talents, and have a small chance of cascading when they take structure damage or stress damage. See page [XX] for more information on AIs and cascades.",
+    "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can\u2019t take actions or reactions with it until the start of their next turn. AIs can\u2019t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage.",
     "filter_ignore": false
   },
   {
     "id": "tg_danger_zone",
     "name": "DANGER ZONE",
-    "description": "This system, talent, or weapon can only be used if the user is in the DANGER ZONE (heat equal to at least half of their HEAT CAP).",
+    "description": "This system, talent, or weapon can only be used if the user is in the Danger Zone (Heat equal to at least half of their Heat Cap).",
     "filter_ignore": false
   },
   {
     "id": "tg_deployable",
     "name": "DEPLOYABLE",
-    "description": "This system is an object that can be deployed on the field. Unless otherwise specified, it can be deployed in an adjacent, free and valid space as a quick action, and has 5 EVASION and 10 HP per SIZE.",
+    "description": "This system is an object that can be deployed on the field. Unless otherwise specified, it can be deployed in an adjacent, free and valid space as a quick action, and has 5 Evasion and 10 HP per Size.",
     "filter_ignore": false
   },
   {
     "id": "tg_drone",
     "name": "DRONE",
-    "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, DRONES are SIZE 1/2 characters that are allied to the user and have 10 EVASION, 5 HP, and 0 ARMOR. To be used they must be deployed to a free, valid space within SENSORS and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, DRONES can't take actions or move; if they do have actions or movement, they act on their user's turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a DRONE reaches 0 HP, it is destroyed and must be repaired before it can be used again - like any system. As long as a DRONE hasn't been destroyed, it is restored to full HP when the user rests or performs a FULL REPAIR. Deployed DRONES persist for the rest of the scene, until destroyed, or until otherwise specified.",
+    "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can\u2019t take actions or move; if they do have actions or movement, they act on their user\u2019s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again \u2013 like any system. As long as a Drone  hasn\u2019t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones  persist for the rest of the scene, until destroyed, or until otherwise specified.",
     "filter_ignore": false
   },
   {
     "id": "tg_full_action",
     "name": "FULL ACTION",
-    "description": "This system requires a full action to ACTIVATE.",
+    "description": "This system requires a full action to Activate.",
     "filter_ignore": false
   },
   {
     "id": "tg_grenade",
     "name": "GRENADE",
-    "description": "As a quick action, this explosive or other device can be thrown to a space within the specified RANGE and line of sight.",
+    "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range and line of sight.",
     "filter_ignore": false
   },
   {
     "id": "tg_heat_self",
     "name": "HEAT {VAL} (SELF)",
-    "description": "Immediately after using this weapon or system, the user takes {VAL} heat.",
+    "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
     "filter_ignore": false
   },
   {
     "id": "tg_limited",
     "name": "LIMITED {VAL}",
-    "description": "This weapon or system can only be used {VAL} times before it requires a FULL REPAIR. Some LIMITED systems, like GRENADES, describe these uses as \"charges\". To use the system, the user expends a charge.",
+    "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as \u201ccharges\u201d. To use the system, the user expends a charge.",
     "filter_ignore": false
   },
   {
     "id": "tg_mine",
     "name": "MINE",
-    "description": "As a quick action, this device can be planted in an adjacent, free and valid space on any surface, but not adjacent to any other mines. Upon deployment, it arms at the end of the deploying character's turn - unless otherwise specified - and is triggered when any character enters an adjacent space. Characters leaving an adjacent space will not trigger a mine. Once triggered, a mine creates a BURST attack starting from the space in which it was placed. Mines within a character's SENSORS can be detected by making a successful SYSTEMS check as a quick action, otherwise they are HIDDEN and can't be targeted. Detected mines can be disarmed from adjacent spaces by making a successful SYSTEMS check as a quick action; the attempt takes place before the mine detonates, and on a failure, the mine detonates as normal.",
+    "description": "As a quick action, this device can be planted in an adjacent, free and valid space on any surface, but not adjacent to any other mines. Upon deployment, it arms at the end of the deploying character\u2019s turn and \u2013 unless otherwise specified \u2013 is triggered when any character enters an adjacent space. Characters leaving an adjacent space will not trigger a mine. Once triggered, a mine creates a Burst attack starting from the space in which it was placed. Mines within a character\u2019s Sensors can be detected by making a successful Systems check as a quick action, otherwise they are Hidden and can\u2019t be targeted. Detected mines can be disarmed from adjacent spaces by making a successful Systems check as a quick action; the attempt takes place before the mine detonates, and on a failure, the mine detonates as normal.",
     "filter_ignore": false
   },
   {
     "id": "tg_mod",
     "name": "MOD",
-    "description": "This modification can be applied to a weapon. Each weapon can only have one MOD, and cannot have more than one of the same MOD. MODS are applied when the user builds their mech or during a FULL REPAIR.",
+    "description": "This modification can be applied to a weapon. Each weapon can only have one Mod, and cannot have more than one of the same Mod. Mods are applied when the user builds their mech or during a Full Repair.",
     "filter_ignore": false
   },
   {
     "id": "tg_protocol",
     "name": "PROTOCOL",
-    "description": "This system can be activated as a free action, at the start of the user's turn only. Another action might be needed to deactivate it.",
+    "description": "This system can be activated as a free action, but only at the start of the user\u2019s turn. Another action might be needed to deactivate it.",
     "filter_ignore": false
   },
   {
     "id": "tg_quick_action",
     "name": "QUICK ACTION",
-    "description": "This system requires a quick action to ACTIVATE.",
+    "description": "This system requires a quick action to Activate.",
     "filter_ignore": false
   },
   {
@@ -206,19 +218,19 @@
   {
     "id": "tg_unique",
     "name": "UNIQUE",
-    "description": "This weapon or system cannot be duplicated - each character can only have one copy of it installed at a time.",
+    "description": "This weapon or system cannot be duplicated \u2013 each character can only have one copy of it installed at a time.",
     "filter_ignore": false
   },
   {
     "id": "tg_archaic",
     "name": "ARCHAIC",
-    "description": "This weapon is old-fashioned and can't harm mechs.",
+    "description": "This weapon is old-fashioned and can\u2019t harm mechs.",
     "filter_ignore": false
   },
   {
     "id": "tg_personal_armor",
     "name": "PERSONAL ARMOR",
-    "description": "This gear offers protection in combat, but it is obvious to observers and usually can't be hidden. Only one piece of PERSONAL ARMOR can be worn at a time. Putting on PERSONAL ARMOR takes 10-20 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they're expecting to go into a warzone.",
+    "description": "This gear offers protection in combat, but it is obvious to observers and usually can\u2019t be hidden. Only one piece of Personal Armor can be worn at a time. Putting on Personal Armor takes 10\u201320 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they\u2019re expecting to go into a warzone.",
     "filter_ignore": false
   },
   {
@@ -230,7 +242,7 @@
   {
     "id": "tg_sidearm",
     "name": "SIDEARM",
-    "description": "This weapon can be used to FIGHT as a quick action instead of a full action.",
+    "description": "This weapon can be used to Fight as a quick action instead of a full action.",
     "filter_ignore": false
   },
   {
@@ -262,7 +274,7 @@
   {
     "id": "tg_bonus_ai",
     "name": "AI",
-    "description": "Your mech gains the AI property. You may cede control of your mech to the AI at the start of your turn. You can only ever install one system with the AI tag unless you have a talent, feature, or piece of gear that says otherwise."
+    "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can\u2019t take actions or reactions with it until the start of their next turn. AIs can\u2019t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
   },
   {
     "id": "tg_set_max_uses",
