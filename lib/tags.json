@@ -271,10 +271,10 @@
     "name": "Resistance",
     "description": "Reduce all damage from a source you have resistance to by half"
   },
-    {
+  {
     "id": "tg_recharge",
     "name": "Recharge",
-    "description": "Once this system or weapon has been used, it can’t be used again until it is recharged. At the start of this NPC's turn, roll 1d6: if the result is equal to or greater {VAL}, the equipment can be used again. Only one roll is required for each NPC, even if an NPC has multiple Recharge systems or weapons. If this NPC has two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both."
+    "description": "Once this system or weapon has been used, it can\u2019t be used again until it is recharged. At the start of this NPC's turn, roll 1d6: if the result is equal to or greater {VAL}, the equipment can be used again. Only one roll is required for each NPC, even if an NPC has multiple Recharge systems or weapons. If this NPC has two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both."
   },
   {
     "id": "tg_bonus_ai",
