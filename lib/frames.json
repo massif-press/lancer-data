@@ -2,7 +2,7 @@
   {
     "id": "mf_standard_pattern_i_everest",
     "source": "GMS",
-    "name": "Standard Pattern I Everest",
+    "name": "STANDARD PATTERN I EVEREST",
     "mechtype": [
       "Balanced"
     ],
@@ -438,7 +438,7 @@
   {
     "id": "mf_black_witch",
     "source": "SSC",
-    "name": "Black Witch",
+    "name": "BLACK WITCH",
     "mechtype": [
       "Controller",
       "Support"
@@ -489,7 +489,7 @@
   {
     "id": "mf_deaths_head",
     "source": "SSC",
-    "name": "Death\u2019s Head",
+    "name": "DEATH\u2019S HEAD",
     "mechtype": [
       "Artillery"
     ],
@@ -540,7 +540,7 @@
   {
     "id": "mf_dusk_wing",
     "source": "SSC",
-    "name": "Dusk Wing",
+    "name": "DUSK WING",
     "mechtype": [
       "Controller",
       "Support"
@@ -596,7 +596,7 @@
   {
     "id": "mf_metalmark",
     "source": "SSC",
-    "name": "Metalmark",
+    "name": "METALMARK",
     "mechtype": [
       "Striker"
     ],
@@ -648,7 +648,7 @@
   {
     "id": "mf_monarch",
     "source": "SSC",
-    "name": "Monarch",
+    "name": "MONARCH",
     "mechtype": [
       "Artillery"
     ],
@@ -700,7 +700,7 @@
   {
     "id": "mf_mourning_cloak",
     "source": "SSC",
-    "name": "Mourning Cloak",
+    "name": "MOURNING CLOAK",
     "mechtype": [
       "Striker"
     ],
@@ -753,7 +753,7 @@
   {
     "id": "mf_swallowtail",
     "source": "SSC",
-    "name": "Swallowtail",
+    "name": "SWALLOWTAIL",
     "mechtype": [
       "Support"
     ],
@@ -1201,7 +1201,7 @@
   {
     "id": "mf_barbarossa",
     "source": "HA",
-    "name": "Barbarossa",
+    "name": "BARBAROSSA",
     "mechtype": [
       "Artillery"
     ],
@@ -1273,7 +1273,7 @@
   {
     "id": "mf_genghis",
     "source": "HA",
-    "name": "Genghis",
+    "name": "GENGHIS",
     "mechtype": [
       "Striker"
     ],
@@ -1325,7 +1325,7 @@
   {
     "id": "mf_iskander",
     "source": "HA",
-    "name": "Iskander",
+    "name": "ISKANDER",
     "mechtype": [
       "Controller"
     ],
@@ -1380,7 +1380,7 @@
   {
     "id": "mf_napoleon",
     "source": "HA",
-    "name": "Napoleon",
+    "name": "NAPOLEON",
     "mechtype": [
       "Defender",
       "Controller"
@@ -1431,7 +1431,7 @@
   {
     "id": "mf_saladin",
     "source": "HA",
-    "name": "Saladin",
+    "name": "SALADIN",
     "mechtype": [
       "Defender"
     ],
@@ -1485,7 +1485,7 @@
   {
     "id": "mf_sherman",
     "source": "HA",
-    "name": "Sherman",
+    "name": "SHERMAN",
     "mechtype": [
       "Striker",
       "Artillery"
@@ -1554,7 +1554,7 @@
   {
     "id": "mf_tokugawa",
     "source": "HA",
-    "name": "Tokugawa",
+    "name": "TOKUGAWA",
     "mechtype": [
       "Striker"
     ],
