@@ -247,38 +247,38 @@
   },
   {
     "id": "tg_invade",
-    "name": "Invade",
+    "name": "INVADE",
     "description": "This system provides additional options for the Invade Quick Tech Action."
   },
   {
     "id": "tg_quick_tech",
-    "name": "Quick Tech",
+    "name": "QUICK TECH",
     "description": "This tech can be used as a Quick Tech Action"
   },
   {
     "id": "tg_full_tech",
-    "name": "Full Tech",
+    "name": "FULL TECH",
     "description": "This tech can be used as a Full Tech Action"
   },
   {
     "id": "tg_range",
-    "name": "Range ({VAL})",
+    "name": "RANGE ({VAL})",
     "description": "This system can be activated at a range of {VAL} spaces.",
     "filter_ignore": true
   },
   {
     "id": "tg_modded",
-    "name": "Modded",
+    "name": "MODDED",
     "description": "This weapon has been equipped with a weapon mod."
   },
   {
     "id": "tg_resistance",
-    "name": "Resistance",
+    "name": "RESISTANCE",
     "description": "Reduce all damage from a source you have resistance to by half"
   },
   {
     "id": "tg_recharge",
-    "name": "Recharge",
+    "name": "RECHARGE",
     "description": "Once this system or weapon has been used, it can’t be used again until it is recharged. At the start of this NPC's turn, roll 1d6: if the result is equal to or greater {VAL}, the equipment can be used again. Only one roll is required for each NPC, even if an NPC has multiple Recharge systems or weapons. If this NPC has two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both."
   },
   {
@@ -288,13 +288,13 @@
   },
   {
     "id": "tg_set_max_uses",
-    "name": "Set Max Uses",
+    "name": "SET MAX USES",
     "description": "Allow player to set the maximum uses for this system (HIDDEN TAG)",
     "hidden": true
   },
   {
     "id": "tg_set_damage_type",
-    "name": "Set Damage Type",
+    "name": "SET DAMAGE TYPE",
     "description": "Allow player to set the damage type for this system (HIDDEN TAG)",
     "hidden": true
   }

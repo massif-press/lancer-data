@@ -2649,13 +2649,17 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "Your custom NHP has developed further, and is now capable of independent thought. It can make complex decisions and judgments and act independently, without instruction.<br>Your mech gains the AI tag.<br>1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it’s worse.",
-    "description": "<span class='ra-quiet'>[time to wake up, child]</span><b>Gained from the <i>Technophile: Rank II</i> pilot talent."
+    "effect": "Your mech gains the AI tag.<br>Your custom NHP has developed further, and is now capable of independent thought. It can make complex decisions and judgments and act independently, without instruction.<br>1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it’s worse.",
+    "description": "<span class='ra-quiet'>[time to wake up, child]</span><br>Gained from the <i>Technophile: Rank II</i> pilot talent."
   },
   {
     "id": "ms_technophile_3",
@@ -2671,6 +2675,10 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
       }
     ],
     "source": "",
@@ -2691,12 +2699,16 @@
       {
         "id": "tg_limited",
         "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.</li><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.</li><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage.</li>",
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:</li><li>Thumper (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li>Shock (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li>Mag (1 charge): The attack gains Arcing and deals Kinetic damage.</li>",
     "description": "Gained from the <i>Walking Armory: Rank I</i> pilot talent."
   },
   {
@@ -2711,12 +2723,16 @@
       {
         "id": "tg_limited",
         "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.</li><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.</li><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage.</li><br>You can expend two charges for the following ammo types:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.</li><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals explosive damage, and one character hit by the attack – your choice – must succeed on a HULL save or be knocked PRONE.</li><li>SABOT (2 charges): The attack gains AP and deals kinetic damage.</li>",
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:</li><li>Thumper (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li>Shock (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li>Mag (1 charge): The attack gains Arcing and deals Kinetic damage.</li><li>Hellfire (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li>Jager (2 charges): The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li>Sabot (2 charges): The attack gains AP and deals Kinetic damage.</li>",
     "description": "Gained from the <i>Walking Armory: Rank II</i> pilot talent."
   },
   {
@@ -2731,12 +2747,16 @@
       {
         "id": "tg_limited",
         "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
       }
     ],
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a MAIN ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<li>THUMPER (1 charge): The attack gains KNOCKBACK 1 and deals explosive damage.</li><li>SHOCK (1 charge): The attack deals energy damage. Choose one character targeted by your attack; adjacent characters take 1 energy AP, whether the result is a hit or miss.</li><li>MAG (1 charge): The attack gains ARCING and deals kinetic damage.</li><br>You can expend two charges for the following ammo types:<li>HELLFIRE (2 charges): The attack deals energy damage and deals any bonus damage as burn.</li><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals explosive damage, and one character hit by the attack – your choice – must succeed on a HULL save or be knocked PRONE.</li><li>SABOT (2 charges): The attack gains AP and deals kinetic damage.</li><br>If you perform a critical hit using ammunition from your AMMO CASE, you don’t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:</li><li>Thumper (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li>Shock (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li>Mag (1 charge): The attack gains Arcing and deals Kinetic damage.</li><li>Hellfire (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li>Jager (2 charges): The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li>Sabot (2 charges): The attack gains AP and deals Kinetic damage.</li>If you perform a critical hit using ammunition from your Ammo Case, you don’t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
     "description": "Gained from the <i>Walking Armory: Rank III</i> pilot talent."
   }
 ]
