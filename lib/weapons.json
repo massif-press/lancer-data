@@ -2192,7 +2192,7 @@
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 3,
-    "effect": "Can be fired as Cone 7 <i>or</i> Line 10<br>After firing this weapon, white-hot flames continue to burn in 3 free spaces of your choice within the affected area, lasting for the rest of the scene. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage.",
+    "effect": "Can be fired as Cone 7 <i>or</i> Line 10<br>On Attack: White-hot flames continue to burn in 3 free spaces of your choice within the affected area, lasting for the rest of the scene. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage.",
     "description": "The plasma thrower emerged too late in the Hercynian Crisis to see widespread use in the field. The scarce data gathered from the MEF squadrons that used it suggest that plasma throwers would have had a tremendous impact on the outcomes of several major battles that occurred during the bloodiest phase of the Crisis.",
     "data_type": "weapon",
     "aptitude": {}
@@ -2238,6 +2238,10 @@
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [
+      {
+        "type": "energy",
+        "val": "1d6"
+      },
       {
         "type": "energy",
         "val": "1d6"
@@ -2597,7 +2601,7 @@
     "source": "",
     "license": " ",
     "license_level": "",
-    "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a FULL REPAIR, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a FULL REPAIR, reroll 1d6+2 to determine this weapon’s LIMITED uses.",
+    "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a Full Repair, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a Full Repair, reroll 1d6+2 to determine this weapon’s Limited uses.",
     "description": "Gained from the \"Engineer\" Rank 1 Talent",
     "data_type": "weapon",
     "aptitude": {
@@ -2641,7 +2645,7 @@
     "source": "",
     "license": " ",
     "license_level": "",
-    "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a FULL REPAIR, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a FULL REPAIR, reroll 1d6+2 to determine this weapon’s LIMITED uses and choose two of the following:<br><li>TWEAKED OPTICS: Your prototype weapon always gains +1 ACCURACY on attacks.<li>TWEAKED COMPUTER: Your prototype weapon is SMART.<li>STRIPPED REACTOR SHIELDING: Each time you attack with your prototype weapon, you may choose – at the cost of 2 heat – to attack with one of the following options, depending on its weapon type:<ul><li>RANGED WEAPON: CONE 3, LINE 5, or [BLAST 1, RANGE 10].</li><li>MELEE WEAPON: BURST 1.</li></ul>",
+    "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a Full Repair, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a Full Repair, reroll 1d6+2 to determine this weapon’s Limited uses and choose two:<ul><li>Tweaked Optics: Your prototype weapon always gains +1 Accuracy on attacks.</li><li>Tweaked Computer: Your prototype weapon is Smart.</li><li>Stripped reactor shielding: Each time you attack with your prototype weapon, you may choose – at the cost of 2 Heat – to attack with one of the following options, depending on its weapon type:</li><ul><li>Ranged weapon: Cone 3, Line 5, or [Blast 1, Range 10].</li><li>Melee weapon: Burst 1.</li></ul></ul>",
     "description": "Gained from the \"Engineer\" Rank 2 Talent",
     "data_type": "weapon",
     "aptitude": {
@@ -2685,13 +2689,26 @@
     "source": "",
     "license": " ",
     "license_level": "",
-    "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a FULL REPAIR, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a FULL REPAIR, reroll 2d6 to determine this weapon’s LIMITED uses and choose two of the following:<br><li>TWEAKED OPTICS: Your prototype weapon always gains +1 ACCURACY on attacks.<li>TWEAKED COMPUTER: Your prototype weapon is SMART.<li>STRIPPED REACTOR SHIELDING: Each time you attack with your prototype weapon, you may choose – at the cost of 2 heat – to attack with one of the following options, depending on its weapon type:<ul><li>RANGED WEAPON: CONE 3, LINE 5, or [BLAST 1, RANGE 10].</li><li>MELEE WEAPON: BURST 1.</li></ul>",
+    "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a Full Repair, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a Full Repair, reroll 1d6+2 to determine this weapon’s Limited uses and choose two:<ul><li>Tweaked Optics: Your prototype weapon always gains +1 Accuracy on attacks.</li><li>Tweaked Computer: Your prototype weapon is Smart.</li><li>Stripped reactor shielding: Each time you attack with your prototype weapon, you may choose – at the cost of 2 Heat – to attack with one of the following options, depending on its weapon type:</li><ul><li>Ranged weapon: Cone 3, Line 5, or [Blast 1, Range 10].</li><li>Melee weapon: Burst 1.</li></ul></ul>",
     "description": "Gained from the \"Engineer\" Rank 3 Talent",
     "data_type": "weapon",
     "aptitude": {
       "ranged": 1,
       "Melee": 1
     }
+  },
+  {
+    "id": "mw_lancaster_integrated",
+    "name": "Latch Drone",
+    "mount": "Main",
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "effect": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP."
   },
   {
     "id": "mw_raleigh_integrated",
@@ -2722,7 +2739,7 @@
     "name": "Apocalypse Rail",
     "mount": "Ship-class",
     "type": "Spool Weapon",
-    "effect": "The Apocalypse Rail must be charged before it can be fired, using the <b>Charge Rail</b> CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it.<br><b>4.</b> Cannot be fired<br><b>3. [RANGE 20, BLAST 2, 2d6 explosive]</b> Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn.<br><b>2. [RANGE 25, BLAST 2, 3d6 explosive]</b> Objects and terrain in the area automatically take 40 AP explosive damage, and on hit characters become SHREDDED and IMPAIRED until the end of their next turn. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn.<br><b>1. [RANGE 30, BLAST 2, 4d6 explosive]</b> Objects and terrain in the area automatically take 100 AP explosive damage, and characters become SHREDDED and STUNNED until the end of their next turn on hit. The ground in the affected area is vaporized on impact: for the rest of the scene, it is difficult terrain, characters within the affected area receive soft cover, and characters that start their turn with the area or move there for the first time in a round take 4 burn.<br>The APOCALYPSE RAIL cannot be fired at targets within RANGE 5.",
+    "effect": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it.<br>4. Cannot be fired<br>3.  [range 20, 2d6 explosive damage] Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn.<br>2.  [range 25, 3d6 explosive] Objects and terrain in the area automatically take 40 AP explosive damage, and on hit characters become Shredded and Impaired until the end of their next turn. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn.<br>1.  [range 30, 4d6 explosive damage] Objects and terrain in the area automatically take 100 AP explosive damage, and characters become Shredded and Stunned until the end of their next turn on hit. The ground in the affected area is vaporized on impact: for the rest of the scene, it is difficult terrain, characters within the affected area receive soft cover, and characters that start their turn with the area or move there for the first time in a round take 4 burn.<br>The Apocalypse Rail cannot be fired at targets within range 5.",
     "tags": []
   },
   {
@@ -2742,20 +2759,11 @@
         "val": "1d6/Charge"
       }
     ],
-    "effect": "This weapon’s profile is determined by the number of CHARGES it carries. It begins with 1 CHARGE, dealing 1d6 energy damage with Line 4. Each time you STABILIZE, you gain an additional 1 CHARGE, up to a maximum of 4. The ZF4 gains an additional +4 Line and +1d6 energy damage for each charge, and resets to 1 CHARGE after each attack. CHARGES persist between scenes, but are lost during a full repair.",
-    "tags": []
-  },
-  {
-    "id": "mw_lancaster_integrated",
-    "name": "Latch Drone",
-    "mount": "Main",
-    "type": "Launcher",
-    "range": [
+    "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair.",
+    "tags": [
       {
-        "type": "Range",
-        "val": 8
+        "id": "tg_ordnance"
       }
-    ],
-    "effect": "This weapon can’t make normal attacks. Instead, choose an allied mech within RANGE and line of sight and make a ranged attack against EVASION 8. On a hit, either you or your target may spend 1 REPAIR to restore half your target’s HP."
+    ]
   }
 ]
