@@ -736,7 +736,7 @@
     ],
     "core_system": {
       "name": "EX Slipstream Module",
-      "description": "Open only to highly licensed pilots, the EX Slipstream program is a uniquely SSC innovation. The Ex Slipstream module itself is a miniaturized near-lightspeed drive capable of transporting the user through blinkspace with acceptable accuracy. The technology is temperamental, at best: nothing smaller than a mech can survive the stress of exposed blink travel, and the experience is traumatic to both the user and anyone in close proximity.<br>---",
+      "description": "Open only to highly licensed pilots, the EX Slipstream program is a uniquely SSC innovation. The Ex Slipstream module itself is a miniaturized near-lightspeed drive capable of transporting the user through blinkspace with acceptable accuracy. The technology is temperamental, at best: nothing smaller than a mech can survive the stress of exposed blink travel, and the experience is traumatic to both the user and anyone in close proximity.",
       "active_name": "Stabilize Singularity",
       "active_effect": "For the rest of the scene, you teleport when you Boost or make a standard move.",
       "tags": [
@@ -1184,7 +1184,7 @@
     ],
     "core_system": {
       "name": "Ushabti Omnigun",
-      "description": "“– funny thing. See, right now, this weapon technically doesn’t even exist. You’re shooting them with a gun that isn’t real, and yet it is! Don’t worry about it. RA’s like that. Just, here, know that because it exists at some point, we’ve made it. That’s causality, and causality is a –\"<br>---",
+      "description": "“– funny thing. See, right now, this weapon technically doesn’t even exist. You’re shooting them with a gun that isn’t real, and yet it is! Don’t worry about it. RA’s like that. Just, here, know that because it exists at some point, we’ve made it. That’s causality, and causality is a –\"",
       "active_name": "Unshackle Ushabti",
       "active_effect": "For the rest of this scene, you can use the Ushabti Omnigun 3/round, instead of 1/round.",
       "tags": [
@@ -1591,7 +1591,7 @@
     ],
     "core_system": {
       "name": "Superheated Reactor Feed",
-      "description": "Pilots of a certain breed thrive at the very edge of catastrophe, risking either glorious success or utter failure in each moment. These daredevils are familiar with the howl of critical heat warnings – the warbling siren song of destruction and superheated reactor feeds. Tokugawa pilots are notorious for supercharging their weapons with excess energy, pushing their heat gauge to the max. Harnessing the Tokugawa’s unique reactor, these pilots churn out damage and make no friends in the engineering bay – assuming they don’t melt into a ball of slag before they make it back from the line.<br>---",
+      "description": "Pilots of a certain breed thrive at the very edge of catastrophe, risking either glorious success or utter failure in each moment. These daredevils are familiar with the howl of critical heat warnings – the warbling siren song of destruction and superheated reactor feeds. Tokugawa pilots are notorious for supercharging their weapons with excess energy, pushing their heat gauge to the max. Harnessing the Tokugawa’s unique reactor, these pilots churn out damage and make no friends in the engineering bay – assuming they don’t melt into a ball of slag before they make it back from the line.",
       "active_name": "Radiance",
       "active_effect": "For the rest of this scene, weapons that deal any energy gain +5range if they are ranged or +2 threat if they are melee.<br>While you’re Exposed, Limit Break stacks with these bonuses for a total increase of +10 range and +3 threat.",
       "tags": [
