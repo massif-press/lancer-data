@@ -1,60 +1,86 @@
 [
   {
-    "name": "Armor",
-    "description": "The amount of damage you reduce all incoming sources of kinetic, energy, or explosive damage by. For mechs, armor cannot go higher than 4"
+    "name": "ARMOR",
+    "description": "All kinetic, energy, and explosive damage is reduced by an amount equal to a character’s ARMOR. Mechs can’t have more than 4 ARMOR."
   },
   {
-    "name": "Electronic Defense",
-    "description": "The number that most electronic warfare attacks must beat to be successful"
+    "name": "BONUS DAMAGE",
+    "description": "Extra damage – kinetic, energy or explosive– that is added onto melee or ranged attacks. Attacks that target more than one character only deal half bonus damage."
   },
   {
-    "name": "Evasion",
-    "description": "The number that most melee and ranged attacks must beat in order to hit with an attack"
+    "name": "CHARACTER",
+    "description": "A player character (PC), non-player character, (NPC), or any other entity capable of acting (or reacting) independently, such as DRONES."
   },
   {
-    "name": "Grit",
-    "description": "1/2 your level. Added to melee and ranged attacks, system points, and hp"
+    "name": "DAMAGE",
+    "description": "Damage taken is subtracted from HP, and is either kinetic, explosive, energy, or burn."
   },
   {
-    "name": "Heat Capacity",
-    "description": "The amount of heat your mech can take before any more heat will cause it to make an overheating check."
+    "name": "E-DEFENSE",
+    "description": "The statistic used to defend against tech attacks."
   },
   {
-    "name": "Hit Points (HP)",
-    "description": "The amount of damage you can take as a pilot before going down and out, and the amount of damage a mech can take before it takes 1 point of structure damage."
+    "name": "EVASION",
+    "description": "The statistic used to defend against most melee and ranged attacks."
   },
   {
-    "name": "Range",
-    "description": "The range of your ranged attack, measured from yourself. Depends on weapon"
+    "name": "GRIT",
+    "description": "Half of a character’s LL (rounded up), representing their experience in combat. GRIT provides bonuses to some rolls and traits."
   },
   {
-    "name": "Repair Cap",
-    "description": "The maximum number of repairs to your mech you can make per mission"
+    "name": "HEAT",
+    "description": "Heat taken by a target represents harm to internal systems and reactor shielding. It fills in HEAT CAP."
   },
   {
-    "name": "Resistance",
-    "description": "Resistance to damage or a type of damage means it is reduced by half, rounded up, after armor is applied. You can only have resistance to damage once (it doesn&rsquo;t stack multiple times)"
+    "name": "HEAT CAP",
+    "description": "The amount of heat a mech can take before it is at risk of overheating."
   },
   {
-    "name": "Structure",
-    "description": "When a character with structure goes to 0 HP, it makes a structure check, then takes 1 structure damage. When a target runs out of structure, it either goes into the CRITICAL state (player mechs) or is destroyed outright."
+    "name": "HIT POINTS (HP)",
+    "description": "The amount of damage a pilot can receive before going DOWN AND OUT, and the amount of damage a mech can receive before it takes structure damage."
   },
   {
-    "name": "Stress",
-    "description": "When a character that can take stress overheats, it takes 1 stress then makes an overheating check."
-  },
-  { "name": "Tech Attack", "description": "Electronic Warfare attacks, modified by your systems" },
-  {
-    "name": "Threat",
-    "description": "The range of your melee and overwatch attacks with certain weapons, measured from yourself. Base threat for all weapons is 1, but it may be greater depending on the weapon."
+    "name": "IMMUNITY",
+    "description": "Characters with IMMUNITY ignore all damage and effects from whatever they are immune to."
   },
   {
-    "name": "Sensor Range",
-    "description": "The range in which you can make electronic warfare attacks, lock on, and use some systems. If a character is in your sensor range, you know about its existence unless it is hidden."
+    "name": "RANGE",
+    "description": "The maximum range at which a weapon can be used for ranged attacks, measured from the attacking character."
   },
   {
-    "name": "Size",
-    "description": "The area that a character controls, rounded up for determining space. For example, a size 2 mech is an area 2 spaces on each side approximately 2 spaces high. Does not necessarily represent exact physical size."
+    "name": "REPAIR CAP",
+    "description": "The number of times a mech can be repaired per mission."
   },
-  { "name": "Speed", "description": "How far your mech moves when it moves (in spaces)" }
+  {
+    "name": "RESISTANCE",
+    "description": "Characters with RESISTANCE reduce damage, heat, or a type of damage, by half, after ARMOR has been applied. RESISTANCE to the same type of damage does not stack."
+  },
+  {
+    "name": "STRESS",
+    "description": "All PC mechs (and some NPCs) have a certain amount of STRESS – generally 4 STRESS for PCs. This is the amount of stress damage they can take before they suffer a reactor meltdown. When mechs exceed their HEAT CAP, they take 1 stress damage and make an overheating check."
+  },
+  {
+    "name": "STRUCTURE",
+    "description": "All PC mechs (and some NPCs) have a certain amount of STRUCTURE – generally 4 STRUCTURE for PCs. This is the amount of structure damage they can take before they are destroyed. When mechs reach 0 HP, they take 1 structure damage and make a structure check."
+  },
+  {
+    "name": "SENSORS",
+    "description": "The maximum range at which you can detect other characters, make tech attacks, LOCK ON, and use some systems."
+  },
+  {
+    "name": "SIZE",
+    "description": "The number of spaces that are occupied or controlled by a character or object. For example, SIZE 2 mechs occupy an area 2 spaces on each side and 2 spaces high. SIZE doesn’t necessarily represent precise physical dimensions."
+  },
+  {
+    "name": "SPEED",
+    "description": "The number of spaces a character can move with a standard move or BOOST."
+  },
+  {
+    "name": "TECH ATTACK",
+    "description": "The statistic used to make tech attacks and to take most tech actions."
+  },
+  {
+    "name": "THREAT",
+    "description": "The maximum range at which melee and overwatch attacks can be made with certain weapons, measured from the attacking character. All weapons have THREAT 1 unless specified otherwise."
+  }
 ]
