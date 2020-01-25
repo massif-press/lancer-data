@@ -226,7 +226,7 @@
     "source": "GMS",
     "license": "",
     "license_level": "",
-    "effect": "Nominate a character within line of sight: all ranged or melee attacks that they make against you or that you make against them gain +2 Difficultyficulty until the start of your next turn.",
+    "effect": "Nominate a character within line of sight: all ranged or melee attacks that they make against you or that you make against them gain +2 Difficulty until the start of your next turn.",
     "description": "The GMS Type-3 Projected Shield traps and denies incoming projectiles by projecting an aggressive, superpositional anti-ballistic barrier.",
     "data_type": "system",
     "aptitude": {}
