@@ -1,6 +1,6 @@
 [
   {
-    "id": "act_corebattery",
+    "id": "act_core_battery",
     "name": "Reserve: CORE Battery",
     "reserve": true,
     "action_type": "free",
@@ -8,7 +8,7 @@
     "detail": "<p><strong>Mech Reserve: CORE Battery</strong><br>Consume this to gain CORE power on your mech, allowing it to use its most powerful ability again (you can’t get more than 1 CORE power at a time).</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
   },
   {
-    "id": "act_redundantrepair",
+    "id": "act_redundant_repair",
     "name": "Reserve: Redundant Repair",
     "reserve": true,
     "action_type": "free",
@@ -16,12 +16,12 @@
     "detail": "<p><strong>Mech Reserve: Redundant Repair</strong><br>Stabilize as a Free Action.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
   },
   {
-    "id": "act_deployableshield",
+    "id": "act_deployable_shield",
     "name": "Reserve: Deployable Shield",
     "reserve": true,
     "action_type": "free",
     "description": "Deploy a single-use shield generator.",
-    "detail": "<p><strong>Mech Reserve: Deployable Shield</strong><br>Free Action, deploy a size 1 generator that grants all allied actors in a burst 2 radius around it soft cover.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
+    "detail": "<p><strong>Mech Reserve: Deployable Shield</strong><br>Free Action, deploy a a SIZE 1 deployable that grants soft cover to all friendly characters in a BURST 2 radius.</p><p>This may only be used once per mission, and the reserve is consumed after use.</p>"
   },
   {
     "id": "act_bombardment",
