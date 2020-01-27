@@ -2557,7 +2557,10 @@
     ],
     "source": "",
     "license": "",
-    "license_level": "",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "t_nuclear_cavalier",
+    "talent_rank": 3,
     "effect": "On Attack: Clear 4 heat.",
     "description": "Gained from the \"Nuclear Cavalier\" Rank 3 Talent",
     "data_type": "weapon",
@@ -2592,15 +2595,21 @@
         "val": "1d6+2"
       },
       {
+        "id": "tg_overkill"
+      },
+      {
         "id": "tg_set_max_uses"
       },
       {
-        "id": "tg_overkill"
+        "id": "tg_set_damage_type"
       }
     ],
     "source": "",
-    "license": " ",
-    "license_level": "",
+    "license": "",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "t_engineer",
+    "talent_rank": 1,
     "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a Full Repair, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a Full Repair, reroll 1d6+2 to determine this weapon’s Limited uses.",
     "description": "Gained from the \"Engineer\" Rank 1 Talent",
     "data_type": "weapon",
@@ -2636,15 +2645,21 @@
         "val": "1d6+2"
       },
       {
+        "id": "tg_overkill"
+      },
+      {
         "id": "tg_set_max_uses"
       },
       {
-        "id": "tg_overkill"
+        "id": "tg_set_damage_type"
       }
     ],
     "source": "",
-    "license": " ",
-    "license_level": "",
+    "license": "",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "t_engineer",
+    "talent_rank": 2,
     "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a Full Repair, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a Full Repair, reroll 1d6+2 to determine this weapon’s Limited uses and choose two:<ul><li>Tweaked Optics: Your prototype weapon always gains +1 Accuracy on attacks.</li><li>Tweaked Computer: Your prototype weapon is Smart.</li><li>Stripped reactor shielding: Each time you attack with your prototype weapon, you may choose – at the cost of 2 Heat – to attack with one of the following options, depending on its weapon type:</li><ul><li>Ranged weapon: Cone 3, Line 5, or [Blast 1, Range 10].</li><li>Melee weapon: Burst 1.</li></ul></ul>",
     "description": "Gained from the \"Engineer\" Rank 2 Talent",
     "data_type": "weapon",
@@ -2680,15 +2695,21 @@
         "val": "2d6"
       },
       {
+        "id": "tg_overkill"
+      },
+      {
         "id": "tg_set_max_uses"
       },
       {
-        "id": "tg_overkill"
+        "id": "tg_set_damage_type"
       }
     ],
     "source": "",
-    "license": " ",
-    "license_level": "",
+    "license": "",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "t_engineer",
+    "talent_rank": 3,
     "effect": "This weapon is an experimental prototype, customized according to your specific requirements.<br>When you install it, or during a Full Repair, you may choose a new weapon type, damage type, and either Threat 1 (melee) or Range 10 (all other types). Additionally, each time you perform a Full Repair, reroll 1d6+2 to determine this weapon’s Limited uses and choose two:<ul><li>Tweaked Optics: Your prototype weapon always gains +1 Accuracy on attacks.</li><li>Tweaked Computer: Your prototype weapon is Smart.</li><li>Stripped reactor shielding: Each time you attack with your prototype weapon, you may choose – at the cost of 2 Heat – to attack with one of the following options, depending on its weapon type:</li><ul><li>Ranged weapon: Cone 3, Line 5, or [Blast 1, Range 10].</li><li>Melee weapon: Burst 1.</li></ul></ul>",
     "description": "Gained from the \"Engineer\" Rank 3 Talent",
     "data_type": "weapon",

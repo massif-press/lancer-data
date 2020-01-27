@@ -1,219 +1,219 @@
-[ 
-   { 
-      "id":"reserve_skill",
-      "type":"Narrative",
-      "name":"Skill",
-      "label":"Resource",
-      "description":"Gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action "
-   },
-   { 
-      "id":"reserve_access",
-      "type":"Narrative",
-      "name":"Access",
-      "label":"Resource",
-      "description":"Gain a keycard, invite, bribes, or insider access to a particular location"
-   },
-   { 
-      "id":"reserve_backing",
-      "type":"Narrative",
-      "name":"Backing",
-      "label":"Contact",
-      "description":"Political support from someone powerful for this mission - you can invoke it as leverage"
-   },
-   { 
-      "id":"reserve_supplies",
-      "type":"Narrative",
-      "name":"Supplies",
-      "label":"Resource",
-      "description":"Cross a hazardous or hostile area without having to make a skill check"
-   },
-   { 
-      "id":"reserve_disguise",
-      "type":"Narrative",
-      "name":"Disguise",
-      "label":"Identity",
-      "description":"Prepare a disguise or cover identity, allowing you to sneak into a location uncontested"
-   },
-   { 
-      "id":"reserve_diversion",
-      "type":"Narrative",
-      "name":"Diversion",
-      "label":"Diversion",
-      "description":"Prepare or arrange for a diversion, giving you time to take action without fear of consequence"
-   },
-   { 
-      "id":"reserve_blackmail",
-      "type":"Narrative",
-      "name":"Blackmail",
-      "label":"Target",
-      "description":"Gain blackmail or sensitive information on a particular person"
-   },
-   { 
-      "id":"reserve_reputation",
-      "type":"Narrative",
-      "name":"Reputation",
-      "label":"Status",
-      "description":"Make a good name for yourself for the next mission, starting you off on a good position with everyone you meet"
-   },
-   { 
-      "id":"reserve_safeharbor",
-      "type":"Narrative",
-      "name":"Safe Harbor",
-      "label":"Location",
-      "description":"Gain a guaranteed safe location where you can convene, plan, or recuperate"
-   },
-   { 
-      "id":"reserve_tracking",
-      "type":"Narrative",
-      "name":"Tracking",
-      "label":"Target",
-      "description":"Know the location of important objects or people for this mission"
-   },
-   { 
-      "id":"reserve_knowledge",
-      "type":"Narrative",
-      "name":"Knowledge",
-      "label":"Subject",
-      "description":"Gain important knowledge of local history, customs, or culture etiquette"
-   },
-   { 
-      "id":"reserve_ammo",
-      "type":"Mech",
-      "name":"Ammo",
-      "label":"Ammo",
-      "description":"Get extra uses (+1 or +2) to a (limited) weapon or system"
-   },
-   { 
-      "id":"reserve_rentedgear",
-      "type":"Mech",
-      "name":"Rented Gear",
-      "label":"Gear",
-      "description":"Get access to a weapon or piece of mech gear you don’t normally have access to for the mission only"
-   },
-   { 
-      "id":"reserve_extrarepair",
-      "type":"Mech",
-      "name":"Extra Repair",
-      "label":"Resource",
-      "description":"Start the mission with +2 repairs on your mech"
-   },
-   { 
-      "id":"reserve_corebattery",
-      "type":"Mech",
-      "name":"CORE Battery",
-      "label":"Battery",
-      "description":"Consume this to gain CORE power on your mech, allowing it to use its most powerful ability again (you can’t get more than 1 CORE power at a time)"
-   },
-   { 
-      "id":"reserve_deployableshield",
-      "type":"Mech",
-      "name":"Deployable Shield",
-      "label":"Shield",
-      "description":"Gain a single-use deployable shield generator, a size 1 deployable that grants all allied actors in a burst 2 radius around it soft cover"
-   },
-   { 
-      "id":"reserve_redundantrepair",
-      "type":"Mech",
-      "name":"Redundant Repair",
-      "label":"Resource",
-      "description":"Once per mission make the stabilize action as a free action"
-   },
-   { 
-      "id":"reserve_sysreinforcement",
-      "type":"Mech",
-      "name":"Systems Reinforcement",
-      "label":"Resource",
-      "description":"Get +1 accuracy to hull, agility, systems, or engineering checks, this mission only (choose one)"
-   },
-   { 
-      "id":"reserve_smartammo",
-      "type":"Mech",
-      "name":"Smart Ammo",
-      "label":"Ammo",
-      "description":"All weapons of your choice can be fired as if they had the smart tag, this mission only"
-   },
-   { 
-      "id":"reserve_boostedservos",
-      "type":"Mech",
-      "name":"Boosted Servos",
-      "label":"Resource",
-      "description":"Become immune to the slowed condition, this mission only"
-   },
-   { 
-      "id":"reserve_jumpjets",
-      "type":"Mech",
-      "name":"Jump Jets",
-      "label":"Resource",
-      "description":"Your mech can fly when it makes its regular move, this mission only, but must land after moving"
-   },
-   { 
-      "id":"reserve_scouting",
-      "type":"Tactical",
-      "name":"Scouting",
-      "label":"Location",
-      "description":"Get detailed information on the kinds of mechs and threats you will be facing soon, such as number, type, and statistics"
-   },
-   { 
-      "id":"reserve_vehicle",
-      "type":"Tactical",
-      "name":"Vehicle",
-      "label":"Designation",
-      "description":"Gain use of a transport vehicle or starship for this mission only (a tier 1 NPC with the vehicle or ship tag)"
-   },
-   { 
-      "id":"reserve_reinforcements",
-      "type":"Tactical",
-      "name":"Reinforcements",
-      "label":"Designation",
-      "description":"Call in an NPC mech ally, once per mission (choose a tier 1-3 NPC from the NPC section)"
-   },
-   { 
-      "id":"reserve_envshielding",
-      "type":"Tactical",
-      "name":"Environmental Shielding",
-      "label":"Environment",
-      "description":"Ignore a particular battlefield hazard or dangerous terrain, such as extreme heat or cold"
-   },
-   { 
-      "id":"reserve_accuracy",
-      "type":"Tactical",
-      "name":"Accuracy",
-      "label":"Skill/Action",
-      "description":"Gain +1 accuracy on a particular skill or action due to training or enhancement, this mission only"
-   },
-   { 
-      "id":"reserve_bombardment",
-      "type":"Tactical",
-      "name":"Bombardment",
-      "label":"Resource",
-      "description":"Call in an artillery or orbital bombardment once during mech combat (Full Action, range 3 within line of sight, blast 2, 3d6 explosive damage)"
-   },
-   { 
-      "id":"reserve_extendedharness",
-      "type":"Tactical",
-      "name":"Extended Harness",
-      "label":"Resource",
-      "description":"Carry an extra pilot weapon and two pieces of pilot gear into this mission"
-   },
-   { 
-      "id":"reserve_ambush",
-      "type":"Tactical",
-      "name":"Ambush",
-      "label":"Location",
-      "description":"Choose exactly where your next battle will take place, including the terrain and cover set up, etc"
-   },
-   { 
-      "id":"reserve_orbitaldrop",
-      "type":"Tactical",
-      "name":"Orbital Drop",
-      "label":"Location",
-      "description":"Start the mission dropping from orbit into a heavily fortified or hard to reach location"
-   },
-   { 
-      "id":"reserve_assistant",
-      "type":"Tactical",
-      "name":"NHP Assistant",
-      "label":"Designation",
-      "description":"Gain an NHP, controlled by the GM, that can give you advice on the current situation"
-   }
+[
+  {
+    "id": "reserve_skill",
+    "name": "Skill",
+    "type": "RESOURCES",
+    "label": "Resource",
+    "description": "Gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action."
+  },
+  {
+    "id": "reserve_access",
+    "name": "Access",
+    "type": "Resources",
+    "label": "Resource",
+    "description": "A keycard, invite, bribes or insider access to a particular location."
+  },
+  {
+    "id": "reserve_backing",
+    "name": "Backing",
+    "type": "Resources",
+    "label": "Contact",
+    "description": "Useful leverage through political support from a powerful figure."
+  },
+  {
+    "id": "reserve_supplies",
+    "name": "Supplies",
+    "type": "Resources",
+    "label": "Resource",
+    "description": "Gear allowing easy crossing of a hazardous or hostile area."
+  },
+  {
+    "id": "reserve_disguise",
+    "name": "Disguise",
+    "type": "Resources",
+    "label": "Identity",
+    "description": "An effective disguise or cover identity, allowing uncontested access to a location."
+  },
+  {
+    "id": "reserve_diversion",
+    "name": "Diversion",
+    "type": "Resources",
+    "label": "Diversion",
+    "description": "A distraction that provides time to take action without fear of consequence."
+  },
+  {
+    "id": "reserve_blackmail",
+    "name": "Blackmail",
+    "type": "Resources",
+    "label": "Target",
+    "description": "Blackmail materials or sensitive information concerning a particular person."
+  },
+  {
+    "id": "reserve_reputation",
+    "name": "Reputation",
+    "type": "Resources",
+    "label": "Status",
+    "description": "A good name in the mission area, prompting good first impressions with the locals."
+  },
+  {
+    "id": "reserve_safe_harbor",
+    "name": "Safe Harbor",
+    "type": "Resources",
+    "label": "Location",
+    "description": "Guaranteed safety for meeting, planning, or recuperating."
+  },
+  {
+    "id": "reserve_tracking",
+    "name": "Tracking",
+    "type": "Resources",
+    "label": "Target",
+    "description": "Details on the location of important objects or people."
+  },
+  {
+    "id": "reserve_knowledge",
+    "name": "Knowledge",
+    "type": "Resources",
+    "label": "Subject",
+    "description": "An understanding of local history, customs, culture, or etiquette."
+  },
+  {
+    "id": "reserve_ammo",
+    "name": "Ammo",
+    "type": "Mech",
+    "label": "Ammo",
+    "description": "Extra uses (+1 or +2) of a LIMITED weapon or system."
+  },
+  {
+    "id": "reserve_rented_gear",
+    "name": "Rented gear",
+    "type": "Mech",
+    "label": "Gear",
+    "description": "Temporary access to a new weapon or piece of mech gear."
+  },
+  {
+    "id": "reserve_extra_repairs",
+    "name": "Extra repairs",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "Supplies that give a mech +2 REPAIR CAP."
+  },
+  {
+    "id": "reserve_core_battery",
+    "name": "CORE battery",
+    "type": "Mech",
+    "label": "Battery",
+    "description": "An extra battery that allows a second use of a mech’s CORE SYSTEM."
+  },
+  {
+    "id": "reserve_deployable_shield",
+    "name": "Deployable shield",
+    "type": "Mech",
+    "label": "Shield",
+    "description": "A single-use deployable shield generator – a SIZE 1 deployable that grants soft cover to all friendly characters in a BURST 2 radius."
+  },
+  {
+    "id": "reserve_redundant_repair",
+    "name": "Redundant repair",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "The ability to STABILIZE as a free action once per mission."
+  },
+  {
+    "id": "reserve_systems_reinforcement",
+    "name": "Systems reinforcement",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
+  },
+  {
+    "id": "reserve_smart_ammo",
+    "name": "Smart ammo",
+    "type": "Mech",
+    "label": "Ammo",
+    "description": "All weapons of your choice can be fired as if they are SMART."
+  },
+  {
+    "id": "reserve_boosted_servos",
+    "name": "Boosted servos",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "IMMUNITY to the SLOWED condition."
+  },
+  {
+    "id": "reserve_jump_jets",
+    "name": "Jump jets",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "During this mission your mech can FLY when moving, but must end movement on land."
+  },
+  {
+    "id": "reserve_scouting",
+    "name": "Scouting",
+    "type": "Tactical",
+    "label": "Location",
+    "description": "Detailed information on the kinds of mechs and threats you will face on the mission, such as number, type, and statistics."
+  },
+  {
+    "id": "reserve_vehicle",
+    "name": "Vehicle",
+    "type": "Tactical",
+    "label": "Designation",
+    "description": "Use of a transport vehicle or starship (e.g., a TIER 1 NPC with the VEHICLE or SHIP template."
+  },
+  {
+    "id": "reserve_reinforcements",
+    "name": "Reinforcements",
+    "type": "Tactical",
+    "label": "Designation",
+    "description": "The ability to call in a friendly NPC mech of any Tier, once per mission."
+  },
+  {
+    "id": "reserve_environmental_shielding",
+    "name": "Environmental shielding",
+    "type": "Tactical",
+    "label": "Environment",
+    "description": "Equipment that allows you to ignore a particular battlefield hazard or dangerous terrain, such as extreme heat or cold."
+  },
+  {
+    "id": "reserve_accuracy",
+    "name": "Accuracy",
+    "type": "Tactical",
+    "label": "Skill/Action",
+    "description": "Training or enhancement that provides +1 ACCURACY to a particular mech skill or action for the duration of this mission."
+  },
+  {
+    "id": "reserve_bombardment",
+    "name": "Bombardment",
+    "type": "Tactical",
+    "label": "Resource",
+    "description": "The ability to call in artillery or orbital bombardment once during mech combat (full action, RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage)."
+  },
+  {
+    "id": "reserve_extended_harness",
+    "name": "Extended Harness",
+    "type": "Tactical",
+    "label": "Resource",
+    "description": "A custom harness that allows you to carry an extra pilot weapon and two extra pieces of pilot gear for the duration of this mission."
+  },
+  {
+    "id": "reserve_ambush",
+    "name": "Ambush",
+    "type": "Tactical",
+    "label": "Location",
+    "description": "Intel that allows you to choose exactly where your next battle will take place, including the layout of terrain and cover."
+  },
+  {
+    "id": "reserve_orbital_drop",
+    "name": "Orbital Drop",
+    "type": "Tactical",
+    "label": "Location",
+    "description": "The ability to start the mission by dropping from orbit into a heavily fortified or hard to reach location."
+  },
+  {
+    "id": "reserve_nhp_assistant",
+    "name": "NHP Assistant",
+    "type": "Tactical",
+    "label": "Designation",
+    "description": "A non-human person (NHP) – an advanced artificial intelligence – controlled by the GM, that can give you advice on the current situation."
+  }
 ]
