@@ -156,6 +156,12 @@
     "filter_ignore": false
   },
   {
+    "id": "tg_free_action",
+    "name": "FREE ACTION",
+    "description": "Characters can take free actions at any point during their turn, and they don’t count toward the number of quick or full actions they take. They can also be used to take actions more than once per turn.",
+    "filter_ignore": true
+  },
+  {
     "id": "tg_full_action",
     "name": "FULL ACTION",
     "description": "This system requires a full action to Activate.",
@@ -279,12 +285,14 @@
   {
     "id": "tg_recharge",
     "name": "RECHARGE",
-    "description": "Once this system or weapon has been used, it can’t be used again until it is recharged. At the start of this NPC's turn, roll 1d6: if the result is equal to or greater {VAL}, the equipment can be used again. Only one roll is required for each NPC, even if an NPC has multiple Recharge systems or weapons. If this NPC has two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both."
+    "description": "Once this system or weapon has been used, it can’t be used again until it is recharged. At the start of this NPC's turn, roll 1d6: if the result is equal to or greater {VAL}, the equipment can be used again. Only one roll is required for each NPC, even if an NPC has multiple Recharge systems or weapons. If this NPC has two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both.",
+    "filter_ignore": true
   },
   {
     "id": "tg_bonus_ai",
     "name": "AI",
-    "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+    "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage.",
+    "filter_ignore": true
   },
   {
     "id": "tg_set_max_uses",
