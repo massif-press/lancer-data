@@ -156,12 +156,6 @@
     "filter_ignore": false
   },
   {
-    "id": "tg_free_action",
-    "name": "FREE ACTION",
-    "description": "Characters can take free actions at any point during their turn, and they don’t count toward the number of quick or full actions they take. They can also be used to take actions more than once per turn.",
-    "filter_ignore": true
-  },
-  {
     "id": "tg_full_action",
     "name": "FULL ACTION",
     "description": "This system requires a full action to Activate.",
@@ -265,6 +259,12 @@
     "id": "tg_full_tech",
     "name": "FULL TECH",
     "description": "This tech can be used as a Full Tech Action"
+  },
+  {
+    "id": "tg_free_action",
+    "name": "FREE ACTION",
+    "description": "Characters can take free actions at any point during their turn, and they don’t count toward the number of quick or full actions they take. They can also be used to take actions more than once per turn.",
+    "filter_ignore": true
   },
   {
     "id": "tg_range",

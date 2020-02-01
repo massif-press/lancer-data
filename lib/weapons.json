@@ -2237,16 +2237,7 @@
     "name": "GRAVITY GUN",
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6"
-      },
-      {
-        "type": "energy",
-        "val": "1d6"
-      }
-    ],
+    "damage": [],
     "range": [
       {
         "type": "Range",
