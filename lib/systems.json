@@ -486,7 +486,7 @@
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 2,
-    "effect": "This sealant can be sprayed on characters or free spaces within range 5 and line of sight. It has different effects depending on the target:<li>Hostile Characters Your target must succeed on an Agility save or they become Slowed until the end of their next turn and clear all burn.<li>Allied Characters: Your target clears all burn but they become Slowed until the end of their next turn.<li>Free Space: Any fires within blast1 are extinguished and the area becomes difficult terrain for the rest of the scene.",
+    "effect": "This sealant can be sprayed on characters or free spaces within range 5 and line of sight. It has different effects depending on the target:<li>Hostile Characters Your target must succeed on an Agility save or they become Slowed until the end of their next turn and clear all burn.<li>Allied Characters: Your target clears all burn but they become Slowed until the end of their next turn.<li>Free Space: Any fires within blast 1 are extinguished and the area becomes difficult terrain for the rest of the scene.",
     "description": "For fire suppression and fast, temporary seals in punctured starship bulkheads, IPS-N offers a range of single-use, single objective nanites – “whitewash”. This sealant spray can also be used to restrain noncompliant actors when the correct spray heads and catalytic formulations are installed to the applicator.",
     "data_type": "system",
     "aptitude": {}
@@ -1026,7 +1026,7 @@
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 1,
-    "effect": "Expend a charge for one of the following effects:<li>Flash Grenade (Grenade, range5, blast3): Until the end of your next turn, this grenade creates a zone of blinding light and sparks. While characters other than you are at least partly inside the area, they can’t draw line of sight out of the area. Characters fully outside of the area or that exit the area are unaffected unless they move into it.<li>Flash Mine (Mine, burst1): This mine detonates when a character moves adjacent to or over it. Characters within the affected area must succeed on an Agility save or they only have line of sight to adjacent spaces until the end of their next turn.",
+    "effect": "Expend a charge for one of the following effects:<li>Flash Grenade (Grenade, range 5, blast 3): Until the end of your next turn, this grenade creates a zone of blinding light and sparks. While characters other than you are at least partly inside the area, they can’t draw line of sight out of the area. Characters fully outside of the area or that exit the area are unaffected unless they move into it.<li>Flash Mine (Mine, burst 1): This mine detonates when a character moves adjacent to or over it. Characters within the affected area must succeed on an Agility save or they only have line of sight to adjacent spaces until the end of their next turn.",
     "description": "Produced by Smith-Shimano’s BELLA CIAO workshop, Flash Charges are popular advantage multipliers, their flash bright enough to destabilize visible-light optics, laser communications, and infra-red sensor suites.",
     "data_type": "system",
     "aptitude": {}
