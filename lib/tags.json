@@ -284,7 +284,7 @@
   },
   {
     "id": "tg_recharge",
-    "name": "RECHARGE {{VAL}}",
+    "name": "RECHARGE {VAL}+",
     "description": "Once this system or weapon has been used, it can’t be used again until it is recharged. At the start of this NPC's turn, roll 1d6: if the result is equal to or greater {VAL}, the equipment can be used again. Only one roll is required for each NPC, even if an NPC has multiple Recharge systems or weapons. If this NPC has two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both.",
     "filter_ignore": true
   },
