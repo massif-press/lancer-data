@@ -1312,7 +1312,7 @@
       "name": "TBK Sustain Suite",
       "description": "To better manage the Genghis’s tremendous power demands and rapidly accelerate heat dispersion, the Think Tank developed a suite of power-management mechanisms. After extensive field testing, pilots discovered that the TBK Sustain Suite can be used as both a heat sink and an area-denial weapon.",
       "active_name": "Expose Power Cells",
-      "active_effect": "The next time you exceed your Heat Cap this scene, you instead clear all heat and vent a burst3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
+      "active_effect": "The next time you exceed your Heat Cap this scene, you instead clear all heat and vent a burst 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
       "tags": [
         {
           "id": "tg_quick_action"
