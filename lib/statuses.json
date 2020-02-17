@@ -1,8 +1,8 @@
 [
   {
-    "name": "DANGER ZONE (MECHS ONLY)",
+    "name": "DANGER ZONE",
     "type": "Status",
-    "effects": "Characters are in the DANGER ZONE when half or more of their heat is filled in. They’re smoking hot, which enables some attacks, talents, and effects."
+    "effects": "(MECHS ONLY)<br>Characters are in the DANGER ZONE when half or more of their heat is filled in. They’re smoking hot, which enables some attacks, talents, and effects."
   },
   {
     "name": "DOWN AND OUT (PILOTS ONLY)",
@@ -15,9 +15,9 @@
     "effects": "If a character moves adjacent to a hostile character, they both gain the ENGAGED status for as long as they remain adjacent to one another. Ranged attacks made by an ENGAGED character receive +1 difficulty. Additionally, characters that become ENGAGED by targets of equal or greater SIZE during the course of a movement stop moving immediately and lose any unused movement."
   },
   {
-    "name": "EXPOSED (MECHS ONLY)",
+    "name": "EXPOSED",
     "type": "Status",
-    "effects": "Characters become EXPOSED when they’re dealing with runaway heat buildup – their armor is weakened by overheating, their vents are open, and their weapons are spinning down, providing plenty of weak points. All kinetic, explosive or energy damage taken by EXPOSED characters is doubled, before applying any reductions. A mech can clear EXPOSED by taking the STABILIZE action."
+    "effects": "(MECHS ONLY)<br>Characters become EXPOSED when they’re dealing with runaway heat buildup – their armor is weakened by overheating, their vents are open, and their weapons are spinning down, providing plenty of weak points. All kinetic, explosive or energy damage taken by EXPOSED characters is doubled, before applying any reductions. A mech can clear EXPOSED by taking the STABILIZE action."
   },
   {
     "name": "HIDDEN",
@@ -35,9 +35,9 @@
     "effects": "Attacks against PRONE targets receive +1 accuracy.<br>Additionally, PRONE characters are SLOWED and count as moving in difficult terrain. Characters can remove PRONE by standing up instead of taking their standard move, unless they’re IMMOBILIZED. Standing up doesn’t count as movement, so doesn’t trigger OVERWATCH or other effects."
   },
   {
-    "name": "SHUT DOWN (MECHS ONLY)",
+    "name": "SHUT DOWN",
     "type": "Status",
-    "effects": "When a mech is SHUT DOWN:<br>• all heat is cleared and the EXPOSED status is removed;<br>• any cascading NHPs are stabilised and no longer cascading;<br>• any statuses and conditions affecting the mech caused by tech actions, such as LOCK ON, immediately end.<br>SHUT DOWN mechs have IMMUNITY to all tech actions and attacks, including any from allied characters.<br>While SHUT DOWN, mechs are STUNNED indefinitely. Nothing can prevent this condition, and it remains until the mech ceases to be SHUT DOWN."
+    "effects": "(MECHS ONLY)<br>When a mech is SHUT DOWN:<br>• all heat is cleared and the EXPOSED status is removed;<br>• any cascading NHPs are stabilised and no longer cascading;<br>• any statuses and conditions affecting the mech caused by tech actions, such as LOCK ON, immediately end.<br>SHUT DOWN mechs have IMMUNITY to all tech actions and attacks, including any from allied characters.<br>While SHUT DOWN, mechs are STUNNED indefinitely. Nothing can prevent this condition, and it remains until the mech ceases to be SHUT DOWN."
   },
   {
     "name": "IMMOBILIZED",
