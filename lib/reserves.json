@@ -2,7 +2,7 @@
   {
     "id": "reserve_skill",
     "name": "Skill",
-    "type": "RESOURCES",
+    "type": "Resources",
     "label": "Resource",
     "description": "Gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action."
   },
