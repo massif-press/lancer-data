@@ -28,6 +28,9 @@
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_indestructible"
       }
     ],
     "source": "GMS",
@@ -445,6 +448,9 @@
       },
       {
         "id": "tg_quick_action"
+      },
+      {
+        "id": "tg_drone"
       }
     ],
     "source": "IPS-N",
@@ -766,6 +772,9 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_drone"
       }
     ],
     "source": "SSC",

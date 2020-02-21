@@ -294,6 +294,12 @@
     "description": "This ability can be used any number of times per round.",
     "filter_ignore": true
   },
+    {
+    "id": "tg_indestructible",
+    "name": "INDESTRUCTIBLE",
+    "description": "This equipment cannot be marked as Destroyed",
+    "filter_ignore": true
+  },
   {
     "id": "tg_bonus_ai",
     "name": "AI",
@@ -303,13 +309,19 @@
   {
     "id": "tg_set_max_uses",
     "name": "SET MAX USES",
-    "description": "Allow player to set the maximum uses for this system (HIDDEN TAG)",
+    "description": "Allow player to set the maximum uses for this equipment (HIDDEN TAG)",
     "hidden": true
   },
   {
     "id": "tg_set_damage_type",
     "name": "SET DAMAGE TYPE",
-    "description": "Allow player to set the damage type for this system (HIDDEN TAG)",
+    "description": "Allow player to set the damage type for this equipment (HIDDEN TAG)",
+    "hidden": true
+  },
+  {
+    "id": "tg_set_damage_value",
+    "name": "SET DAMAGE VALUE",
+    "description": "Allow player to set the damage value for this equipment (HIDDEN TAG)",
     "hidden": true
   }
 ]
