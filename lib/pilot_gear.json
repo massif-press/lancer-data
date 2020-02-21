@@ -118,6 +118,9 @@
     "tags": [
       {
         "id": "tg_sidearm"
+      },
+      {
+        "id": "tg_set_damage_type"
       }
     ],
     "range": [
@@ -139,7 +142,11 @@
     "name": "MEDIUM SIGNATURE",
     "type": "weapon",
     "description": "Medium signature weapons are assault rifles, shotguns, pack-fed lasers, or disruption guns.",
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_set_damage_type"
+      }
+    ],
     "range": [
       {
         "type": "Range",
@@ -165,6 +172,9 @@
       },
       {
         "id": "tg_loading"
+      },
+      {
+        "id": "tg_set_damage_type"
       }
     ],
     "range": [
