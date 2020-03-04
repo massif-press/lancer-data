@@ -294,10 +294,28 @@
     "description": "This ability can be used any number of times per round.",
     "filter_ignore": true
   },
-    {
+  {
     "id": "tg_indestructible",
     "name": "INDESTRUCTIBLE",
     "description": "This equipment cannot be marked as Destroyed",
+    "filter_ignore": true
+  },
+  {
+    "id": "tg_invulnerable",
+    "name": "INVULNERABLE",
+    "description": "This equipment is immune to all damage.",
+    "filter_ignore": true
+  },
+  {
+    "id": "tg_invisible",
+    "name": "INVISIBLE",
+    "description": "This unit is Invisible",
+    "filter_ignore": true
+  },
+  {
+    "id": "tg_resistall",
+    "name": "RESISTANCE (ALL)",
+    "description": "This unit has Resistance to all damage types",
     "filter_ignore": true
   },
   {

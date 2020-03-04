@@ -1,23 +1,17 @@
-[
-  {
+[{
     "id": "mw_anti_materiel_rifle",
     "name": "ANTI-MATERIEL RIFLE",
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 20
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 20
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -34,7 +28,7 @@
     "license": "",
     "license_level": "",
     "effect": "",
-    "description": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
+    "description": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive” style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
     "data_type": "weapon",
     "aptitude": {}
   },
@@ -43,24 +37,18 @@
     "name": "ASSAULT RIFLE",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": 2
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_reliable",
+      "val": 2
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -74,23 +62,17 @@
     "name": "CHARGED BLADE",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_ap"
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+3"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_ap"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -104,20 +86,15 @@
     "name": "CYCLONE PULSE RIFLE",
     "mount": "Superheavy",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "3d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "3d6+3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -141,23 +118,17 @@
     "name": "HEAVY CHARGED BLADE",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_ap"
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d6+3"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_ap"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -171,23 +142,17 @@
     "name": "HEAVY MACHINE GUN",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6+4"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_inaccurate"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6+4"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 8
+    }],
+    "tags": [{
+      "id": "tg_inaccurate"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -201,18 +166,14 @@
     "name": "HEAVY MELEE WEAPON",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6+1"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
     "tags": [],
     "source": "GMS",
     "license": "",
@@ -227,14 +188,11 @@
     "name": "HOWITZER",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "2d6"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": "2d6"
+    }],
+    "range": [{
         "type": "Range",
         "val": 20
       },
@@ -243,8 +201,7 @@
         "val": 2
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_arcing"
       },
       {
@@ -270,14 +227,11 @@
     "name": "MISSILE RACK",
     "mount": "Auxiliary",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": "1d3+1"
+    }],
+    "range": [{
         "type": "Range",
         "val": 10
       },
@@ -286,11 +240,9 @@
         "val": 1
       }
     ],
-    "tags": [
-      {
-        "id": "tg_loading"
-      }
-    ],
+    "tags": [{
+      "id": "tg_loading"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -304,14 +256,11 @@
     "name": "MORTAR",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d6+1"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": "1d6+1"
+    }],
+    "range": [{
         "type": "Range",
         "val": 15
       },
@@ -320,8 +269,7 @@
         "val": 1
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_arcing"
       },
       {
@@ -341,23 +289,17 @@
     "name": "NEXUS (HUNTER-KILLER)",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_smart"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_smart"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -371,23 +313,17 @@
     "name": "NEXUS (LIGHT)",
     "mount": "Auxiliary",
     "type": "Nexus",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_smart"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_smart"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -401,14 +337,11 @@
     "name": "PISTOL",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3"
+    }],
+    "range": [{
         "type": "Range",
         "val": 5
       },
@@ -417,12 +350,10 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": 1
-      }
-    ],
+    "tags": [{
+      "id": "tg_reliable",
+      "val": 1
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -436,23 +367,17 @@
     "name": "SEGMENT KNIFE",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_overkill"
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+1"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_overkill"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -466,14 +391,11 @@
     "name": "ROCKET-PROPELLED GRENADE",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d6+1"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": "1d6+1"
+    }],
+    "range": [{
         "type": "Range",
         "val": 10
       },
@@ -482,8 +404,7 @@
         "val": 2
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_loading"
       },
       {
@@ -503,14 +424,11 @@
     "name": "SHOTGUN",
     "mount": "Main",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
         "type": "Range",
         "val": 5
       },
@@ -533,24 +451,18 @@
     "name": "TACTICAL KNIFE",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_thrown",
-        "val": 3
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3+1"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_thrown",
+      "val": 3
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -564,18 +476,14 @@
     "name": "TACTICAL MELEE WEAPON",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+2"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
     "tags": [],
     "source": "GMS",
     "license": "",
@@ -590,24 +498,18 @@
     "name": "THERMAL LANCE",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d6+3"
+    }],
+    "range": [{
+      "type": "Line",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 2
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -621,18 +523,14 @@
     "name": "THERMAL PISTOL",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "energy",
-        "val": 2
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 5
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": 2
+    }],
+    "range": [{
+      "type": "Line",
+      "val": 5
+    }],
     "tags": [],
     "source": "GMS",
     "license": "",
@@ -647,23 +545,17 @@
     "name": "THERMAL RIFLE",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_ap"
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+2"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "tags": [{
+      "id": "tg_ap"
+    }],
     "source": "GMS",
     "license": "",
     "license_level": "",
@@ -677,28 +569,25 @@
     "name": "CHAIN AXE",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": 2
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_reliable",
+      "val": 2
+    }],
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 1,
-    "effect": "On Critical Hit: Your target becomes Shredded until the end of the current turn.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "Your target becomes Shredded until the end of the current turn."
+    },
     "description": "A simple tactical-scale version of a logging tool, IPS-N’s chain axe is a serrated chainblade run off core power. The axe’s teeth are tungsten-tipped, hardened to chew through both hard and soft targets. Chain axes are effective weapons and utility tools that are often used by boarding parties to breach reinforced bulkheads.",
     "data_type": "weapon",
     "aptitude": {}
@@ -708,18 +597,14 @@
     "name": "BRISTLECROWN FLECHETTE LAUNCHER",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 1
-      }
-    ],
-    "range": [
-      {
-        "type": "Burst",
-        "val": 1
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": 1
+    }],
+    "range": [{
+      "type": "Burst",
+      "val": 1
+    }],
     "tags": [],
     "source": "IPS-N",
     "license": "BLACKBEARD",
@@ -734,24 +619,18 @@
     "name": "NANOCARBON SWORD",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+4"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 2
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": 3
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+4"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 2
+    }],
+    "tags": [{
+      "id": "tg_reliable",
+      "val": 3
+    }],
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 2,
@@ -765,20 +644,15 @@
     "name": "ASSAULT CANNON",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+2"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 8
+    }],
+    "tags": [{
         "id": "tg_overkill"
       },
       {
@@ -799,28 +673,25 @@
     "name": "CONCUSSION MISSILES",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_knockback",
-        "val": 2
-      }
-    ],
+    "damage": [{
+      "type": "explosive",
+      "val": "1d3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "tags": [{
+      "id": "tg_knockback",
+      "val": 2
+    }],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 2,
-    "effect": "On Hit: The target must succeed on a Hull save or become Impaired until the end of their next turn.",
+    "effect": {
+      "effect_type": "Offensive",
+      "hit": "The target must succeed on a Hull save or become Impaired until the end of their next turn."
+    },
     "description": "Concussion missiles are fitted with overpressure-generating charges with low shatter and low incandescence – they’re meant to stun, deter, push back, and disorient, usually in tandem with a larger, more lethal attack.",
     "data_type": "weapon",
     "aptitude": {}
@@ -830,23 +701,37 @@
     "name": "LEVIATHAN HEAVY ASSAULT CANNON",
     "mount": "Superheavy",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 8
+    }],
     "tags": [],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 3,
-    "effect": "Unlike other Superheavy weapons, the Leviathan can be used with Skirmish.<br>You can spin up this weapon’s barrels as a quick action. While spinning, it gains Reliable 5 and 2 heat (Self), and its damage increases to 4d6+4 kinetic; however, you become Slowed and can no longer use the Leviathan with Skirmish.<br>You can cease this effect as a protocol.",
+    "effect": {
+      "detail": "Unlike other Superheavy weapons, the Leviathan can be used with Skirmish. You can spin up this weapon’s barrels as a quick action.",
+      "abilities": [{
+          "effect_type": "Profile",
+        "name": "Spun Up",
+        "damage": [{
+          "type": "kinetic",
+          "val": "4d6+4"
+        }],
+        "detail": "While spinning, you are Slowed and can no longer use the Leviathan with Skirmish.<br>You can cease this effect as a protocol.",
+        "tags": [{
+          "id": "tg_reliable",
+          "val": 5
+        }, {
+          "id": "tg_heat_self",
+          "val": 2
+        }]
+      }]
+    },
     "description": "The Leviathan Heavy Assault Cannon (HAC) is a massive, multi-barrel rotary cannon fed by an external reservoir, usually dorsally mounted on the chassis carrying it. Unmodified, the Leviathan should only be fired within the recommended burst timing specifications to prevent percussive trauma to joints and pilots.<br>In partnership with Harrison Armory’s Think Tank, IPS-N is currently investigating remote solutions for the cannon’s ammunition consumption demands.",
     "data_type": "weapon",
     "aptitude": {}
@@ -856,8 +741,7 @@
     "name": "CUTTER MKII PLASMA TORCH",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": 1
       },
@@ -870,18 +754,14 @@
         "val": 1
       }
     ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      }
-    ],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 1
+    }],
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 3,
@@ -895,20 +775,15 @@
     "name": "WAR PIKE",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 3
+    }],
+    "tags": [{
         "id": "tg_knockback",
         "val": 1
       },
@@ -930,23 +805,22 @@
     "name": "POWER KNUCKLES",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
+    "damage": [{
+      "type": "explosive",
+      "val": "1d3+1"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
     "tags": [],
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 3,
-    "effect": "On Critical Hit: Your target must succeed on a Hull save or be knocked Prone.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "Your target must succeed on a Hull save or be knocked Prone."
+    },
     "description": "IPS-N’s line of power knuckles are another popular purchase for pilots who prefer to fight up close. Taking the form of anything from shaped studs to hyperdense knuckles, or a series of magnetically accelerated micro-rams, power knuckles amplify the already incredible hitting power of a mech.",
     "data_type": "weapon",
     "aptitude": {}
@@ -956,14 +830,11 @@
     "name": "HAND CANNON",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6"
+    }],
+    "range": [{
         "type": "Range",
         "val": 5
       },
@@ -972,8 +843,7 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_loading"
       },
       {
@@ -994,8 +864,7 @@
     "name": "BOLT THROWER",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [
-      {
+    "damage": [{
         "type": "kinetic",
         "val": "2d6"
       },
@@ -1004,14 +873,11 @@
         "val": "1d6"
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Range",
+      "val": 8
+    }],
+    "tags": [{
         "id": "tg_loading"
       },
       {
@@ -1032,24 +898,18 @@
     "name": "KINETIC HAMMER",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": 4
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6+2"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_reliable",
+      "val": 4
+    }],
     "source": "IPS-N",
     "license": "RALEIGH",
     "license_level": 3,
@@ -1063,14 +923,11 @@
     "name": "DECK-SWEEPER AUTOMATIC SHOTGUN",
     "mount": "Main",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6"
+    }],
+    "range": [{
         "type": "Range",
         "val": 3
       },
@@ -1079,11 +936,9 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
-        "id": "tg_inaccurate"
-      }
-    ],
+    "tags": [{
+      "id": "tg_inaccurate"
+    }],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 1,
@@ -1097,28 +952,25 @@
     "name": "DAISY CUTTER",
     "mount": "Heavy",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "3d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Cone",
-        "val": 7
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 2
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "3d6"
+    }],
+    "range": [{
+      "type": "Cone",
+      "val": 7
+    }],
+    "tags": [{
+      "id": "tg_limited",
+      "val": 2
+    }],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 2,
-    "effect": "On Attack: Creates a cloud of smoke and detritus in the attack cone, providing soft cover in the affected area that lasts until the end of your next turn.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "Creates a cloud of smoke and detritus in the attack cone, providing soft cover in the affected area that lasts until the end of your next turn."
+    },
     "description": "The Daisy Cutter is an effective weapon – if outdated – that’s still favored by many marine pilots. Essentially, it’s a massive shotgun; the pilot loads a charge into the gun’s breech, drops a packed sabot down the barrel, aims, and fires a hellfire cloud of flechette darts, bearings, and ignited magnesium strips, guaranteed to clear any deck on which it’s been fired.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1128,27 +980,24 @@
     "name": "CATALYTIC HAMMER",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d3+5"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_loading"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3+5"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_loading"
+    }],
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 2,
-    "effect": "On Critical Hit: Your target must succeed on a Hull save or become Stunned until the end of their next turn.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "Your target must succeed on a Hull save or become Stunned until the end of their next turn."
+    },
     "description": "Modified originally from blast-mining equipment, the catalytic hammer (colloquially, the “pilebunker”) has since been refined into a formidable melee weapon. When fired, a charge propels the hammer – a solid cylinder with a spike on one end – through a short barrel, impacting with enormous kinetic force. Standard hammer heads are smooth to allow for easy extraction from targets, but they can be detached and replaced if retrieval is impossible. Any installation of a catalytic hammer necessitates superstructure reinforcement to allow for sufficient energy dispersal.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1158,23 +1007,22 @@
     "name": "IMPACT LANCE",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d6"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 3
+    }],
     "tags": [],
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 1,
-    "effect": "On Attack: You also attack all characters in a Line between you and your target. You take 1 heat for each target past the first.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "You also attack all characters in a Line between you and your target. You take 1 heat for each target past the first."
+    },
     "description": "The impact lance is a mil-spec variant of a common mining tool: the single-use chemical survey laser. IPS-N’s military variant mounts a series of impact lances on a mech’s brachial or thoracic carriages, leaving its manipulators free to field other weapons and systems. It can be wired directly into a chassis’ core, or charged with disposable chemical batteries.<br>The lance array fires for a microsecond, burning through its stored charge to produce an intense burst of light that stabs out in a tight, pulsed beam capable of searing through meters of hardened bulkhead.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1184,14 +1032,11 @@
     "name": "IMPALER NAILGUN",
     "mount": "Main",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+1"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+1"
+    }],
+    "range": [{
         "type": "Range",
         "val": 5
       },
@@ -1200,16 +1045,17 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      }
-    ],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 1
+    }],
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 2,
-    "effect": "On Hit: Targets must succeed on a Hull save or become Immobilized until the end of their next turn.",
+    "effect": {
+      "effect_type": "Offensive",
+      "hit": "Targets must succeed on a Hull save or become Immobilized until the end of their next turn."
+    },
     "description": "The Impaler’s noncombustible, sabot-jacketed two-stage macroflechettes can pierce even the heaviest armor. Once catapulted from its launcher, the sabot disengages on approach to its target and triggers a second stage – internal propulsion drives the macroflechette forward with incredible velocity. Over-penetration is certain against soft targets; IPS-N advises firing this weapon only when the area behind the target is clear of allies or noncombatants.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1219,8 +1065,7 @@
     "name": "COMBAT DRILL",
     "mount": "Superheavy",
     "type": "Melee",
-    "damage": [
-      {
+    "damage": [{
         "type": "kinetic",
         "val": "3d6"
       },
@@ -1229,14 +1074,11 @@
         "val": "1d6"
       }
     ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
         "id": "tg_ap"
       },
       {
@@ -1256,23 +1098,22 @@
     "name": "MAGNETIC CANNON",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 8
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+1"
+    }],
+    "range": [{
+      "type": "Line",
+      "val": 8
+    }],
     "tags": [],
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 1,
-    "effect": "On Hit: All characters within the affected area must succeed on a Hull save or be pulled 1d3+1 spaces toward you, or as close as possible.",
+    "effect": {
+      "effect_type": "Offensive",
+      "hit": "All characters within the affected area must succeed on a Hull save or be pulled 1d3+1 spaces toward you, or as close as possible."
+    },
     "description": "SSC’s magnetic cannon is a first from the Exotic Materials Group: an aperture-focused electromagnetic projection beam that uses intense pulses of magnetic energy to disrupt and damage hardware. Targets caught in the beam of a magnetic cannon suffer additional damage to their software as massive systemic stress is inflicted on sensitive components.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1282,20 +1123,15 @@
     "name": "VULTURE DMR",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+1"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -1319,20 +1155,15 @@
     "name": "RAILGUN",
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+4"
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 20
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+4"
+    }],
+    "range": [{
+      "type": "Line",
+      "val": 20
+    }],
+    "tags": [{
         "id": "tg_ap"
       },
       {
@@ -1356,23 +1187,17 @@
     "name": "VEIL RIFLE",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_accurate"
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+1"
+    }],
+    "range": [{
+      "type": "Line",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_accurate"
+    }],
     "source": "SSC",
     "license": "DUSK WING",
     "license_level": 1,
@@ -1386,8 +1211,7 @@
     "name": "BURST LAUNCHER",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [
-      {
+    "damage": [{
         "type": "explosive",
         "val": "1d3"
       },
@@ -1396,14 +1220,11 @@
         "val": 1
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -1413,7 +1234,10 @@
     "source": "SSC",
     "license": "DUSK WING",
     "license_level": 2,
-    "effect": "On Critical Hit: Target becomes Impaired until the end of their next turn.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "Target becomes Impaired until the end of their next turn."
+    },
     "description": "“Yes, they could die. We killed many of them – blew them away with burst launchers and cannons. I don’t think they mattered to it. Not like insects; not like that… there’s still a use for insects: as food, as necessary components in an ecosystem. Their deaths slowed us, but it didn’t command them to slow us. Even when we breached the last chamber and saw it, I don’t even think it recognized we were there.”",
     "data_type": "weapon",
     "aptitude": {}
@@ -1423,24 +1247,18 @@
     "name": "RAIL RIFLE",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d6+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d6+1"
+    }],
+    "range": [{
+      "type": "Line",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 1
+    }],
     "source": "SSC",
     "license": "METALMARK",
     "license_level": 2,
@@ -1454,8 +1272,7 @@
     "name": "SHOCK KNIFE",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": 1
       },
@@ -1464,14 +1281,11 @@
         "val": 2
       }
     ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
         "id": "tg_thrown",
         "val": 5
       },
@@ -1493,23 +1307,17 @@
     "name": "SHARANGA MISSILES",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": 3
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_arcing"
-      }
-    ],
+    "damage": [{
+      "type": "explosive",
+      "val": 3
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
+      "id": "tg_arcing"
+    }],
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 1,
@@ -1523,20 +1331,15 @@
     "name": "GANDIVA MISSILES",
     "mount": "Heavy",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "energy",
+      "val": "1d6+3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -1560,14 +1363,11 @@
     "name": "PINAKA MISSILES",
     "mount": "Superheavy",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "2d6"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": "2d6"
+    }],
+    "range": [{
         "type": "Range",
         "val": 20
       },
@@ -1576,8 +1376,7 @@
         "val": 1
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_arcing"
       },
       {
@@ -1598,27 +1397,24 @@
     "name": "FOLD KNIFE",
     "mount": "Auxiliary",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_accurate"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
+      "id": "tg_accurate"
+    }],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 1,
-    "effect": "On Critical Hit: You may teleport 2 spaces in any direction after the attack resolves.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "You may teleport 2 spaces in any direction after the attack resolves."
+    },
     "description": ">//[Am I alone here?]<br>>//[[No. There is only an absence of you. It is very busy here, but you cannot see it]]<br>— DHIYED fragment tablet 1.3",
     "data_type": "weapon",
     "aptitude": {}
@@ -1628,23 +1424,17 @@
     "name": "VIJAYA ROCKETS",
     "mount": "Auxiliary",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_accurate"
-      }
-    ],
+    "damage": [{
+      "type": "explosive",
+      "val": "1d3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "tags": [{
+      "id": "tg_accurate"
+    }],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 1,
@@ -1658,27 +1448,24 @@
     "name": "VARIABLE SWORD",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 3
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 2
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_accurate"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": 3
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 2
+    }],
+    "tags": [{
+      "id": "tg_accurate"
+    }],
     "source": "SSC",
     "license": "MOURNING CLOAK",
     "license_level": 3,
-    "effect": "On Critical Hit: Deal +1d6 bonus damage.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "Deal +1d6 bonus damage."
+    },
     "description": "The variable sword is a Smith-Shimano hallmark: a length of razor-sharp molecular wire attached to a handle and locked in place by a magnetic field, variable swords are invisible to the naked eye until they cut into their target. Designed in the early days of interstellar travel, variable swords were meant to allow for the precise gathering of samples, while also reducing the overall burden on a mech’s core.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1688,20 +1475,15 @@
     "name": "ORACLE LMG-I",
     "mount": "Auxiliary",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": "1d3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -1722,27 +1504,24 @@
     "name": "NANOBOT WHIP",
     "mount": "Heavy",
     "type": "Melee",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_smart"
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 3
+    }],
+    "tags": [{
+      "id": "tg_smart"
+    }],
     "source": "HORUS",
     "license": "BALOR",
     "license_level": 3,
-    "effect": "On Critical Hit: Pull your target to a free space adjacent to you, or as close as possible.",
+    "effect": {
+      "effect_type": "Offensive",
+      "critical": "Pull your target to a free space adjacent to you, or as close as possible."
+    },
     "description": "Using swarm-coding and legion directives, HORUS collectivists created a framework to organize a swarm of nanites into a whip-like weapon. Nanobot whips can retract into their base blister for stowing, detach in melee combat to restrain nearby enemies, and return to their base unit when summoned.",
     "data_type": "weapon",
     "aptitude": {},
@@ -1753,8 +1532,7 @@
     "name": "SWARM/HIVE NANITES",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [
-      {
+    "damage": [{
         "type": "kinetic",
         "val": 2
       },
@@ -1763,14 +1541,11 @@
         "val": 2
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "tags": [{
         "id": "tg_smart"
       },
       {
@@ -1790,20 +1565,15 @@
     "name": "AUTOPOD",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 3
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": 3
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_seeking"
       },
       {
@@ -1816,7 +1586,17 @@
     "source": "HORUS",
     "license": "GOBLIN",
     "license_level": 1,
-    "effect": "Instead of using any kind of trigger mechanism, this weapon automatically scans for target locks, firing spinning, razor-sharp disks upon successful IDs. Gain the Autonomous Assault reaction, which is the only way you can attack with the Autopod:<br>Autonomous Assault<br>Reaction, 1/round<br>Trigger: Another character attacks a target within range 15 of you and consumes Lock On.<br>Effect: You may automatically hit their target with the Autopod.",
+    "effect": {
+      "effect_type": "Offensive",
+      "detail": "Instead of using any kind of trigger mechanism, this weapon automatically scans for target locks, firing spinning, razor-sharp disks upon successful IDs. Gain the Autonomous Assault reaction, which is the only way you can attack with the Autopod",
+      "abilities": [{
+        "name": "Autonomous Assault",
+        "effect_type": "Reaction",
+        "frequency": "1/round",
+        "trigger": "Another character attacks a target within range 15 of you and consumes Lock On",
+        "detail": "You may automatically hit their target with the Autopod."
+      }]
+    },
     "description": "The autopod is a small antipersonnel weapon apparently devised by HORUS communocyphers to continue offensive action in the event of its operator’s death. Each unit is, in theory, governed by a spur of INSTINCT’s protomind. No new models have been encountered since DHIYED, and all extant versions of the Autopod are to be considered extremely dangerous as the INSTINCT code powering their onboard protominds is likely to have corrupted further since their creation.",
     "data_type": "weapon",
     "aptitude": {},
@@ -1827,23 +1607,29 @@
     "name": "VORPAL GUN",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "2d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": "2d6"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
     "tags": [],
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 3,
-    "effect": "Gain the Snicker-Snack reaction, which is the only way you can attack with this weapon.<br>Snicker-Snack<br>Reaction, 1/round<br>Trigger: A hostile character within Range of the Vorpal Gun and line of sight deals damage to an allied character.<br>Effect: You may make an attack against the hostile character with the Vorpal Gun.",
+    "effect": {
+      "effect_type": "Offensive",
+      "detail": "Gain the Snicker-Snack reaction, which is the only way you can attack with this weapon.",
+      "abilities": [{
+        "name": "Snicker-Snack",
+        "effect_type": "Reaction",
+        "frequency": "1/round",
+        "trigger": "A hostile character within Range of the Vorpal Gun and line of sight deals damage to an allied character.",
+        "detail": "You may make an attack against the hostile character with the Vorpal Gun."
+      }]
+    },
     "description": "DO NOT STARE DIRECTLY INTO THE APERTURE.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1853,27 +1639,24 @@
     "name": "GHOUL NEXUS",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [
-      {
-        "type": "variable",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_smart"
-      }
-    ],
+    "damage": [{
+      "type": "variable",
+      "val": "1d3+2"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 10
+    }],
+    "tags": [{
+      "id": "tg_smart"
+    }],
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 1,
-    "effect": "On Attack: Choose this weapon’s damage type.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "Choose this weapon’s damage type."
+    },
     "description": "Ghoul nexuses command some of the largest viable drones in modern combat. These drones are slightly smaller than an average human—metal cylinders bristling with hardpoints suitable for most infantry-level anti-mech weapons. Propelled by VTOL/hover-capable jet systems, Ghoul drones are fearsome, all-theater autonomous units that are difficult to track and take down.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1883,20 +1666,15 @@
     "name": "GHAST NEXUS",
     "mount": "Heavy",
     "type": "Nexus",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "1d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": "1d6+3"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 10
+    }],
+    "tags": [{
         "id": "tg_drone"
       },
       {
@@ -1906,7 +1684,20 @@
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 2,
-    "effect": "This weapon may be used to attack as normal, or deployed as a Drone with the following profile:<br>Ghast Nexus (Size 1/2, HP 5, Armor 2, Evasion 10, E-Defense 10, Tags: Drone)<br>This Ghast nexus can be deployed to a free space within Sensors and line of sight as a free action, where it becomes a stationary, hovering Drone. Once deployed, you may still use it for Skirmish and Barrage attacks as though it is still a weapon, but with line of sight and Range traced from its location.<br>You may recall or redeploy the Ghast nexus as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired.",
+    "effect": {
+      "effect_type": "Offensive",
+      "detail": "This weapon may be used to attack as normal, or deployed as a Drone",
+      "abilities": [{
+        "name": "Ghast Nexus",
+        "effect_type": "Drone",
+        "size": 0.5,
+        "hp": 5,
+        "armor": 2,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "This Ghast nexus can be deployed to a free space within Sensors and line of sight as a free action, where it becomes a stationary, hovering Drone. Once deployed, you may still use it for Skirmish and Barrage attacks as though it is still a weapon, but with line of sight and Range traced from its location.<br>You may recall or redeploy the Ghast nexus as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired."
+      }]
+    },
     "description": "The Ghast is an up-armored, up-armed version of the smaller Ghoul drone; Ghast drones boast an upgraded flight system capable of wielding mech-tier weapons within optimum parameters, and can operate independently from their host chassis or as an integrated weapon. In Hydras, Ghast drones generally act as thoracic segments, providing armor to core systems: powerplant, cockpit, NHP caskets, etc.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1916,20 +1707,15 @@
     "name": "ANNIHILATION NEXUS",
     "mount": "Superheavy",
     "type": "Nexus",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6+3"
-      }
-    ],
-    "range": [
-      {
-        "type": "Burst",
-        "val": 2
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "energy",
+      "val": "1d6+3"
+    }],
+    "range": [{
+      "type": "Burst",
+      "val": 2
+    }],
+    "tags": [{
         "id": "tg_ap"
       },
       {
@@ -1939,7 +1725,10 @@
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 3,
-    "effect": "On Attack: You can make a second attack with this weapon at the start of your next turn as a protocol. This secondary attack can’t deal bonus damage, and doesn't trigger additional secondary attacks.<br>You may center this weapon’s attack on either yourself or any of your Drones within Sensors.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "You can make a second attack with this weapon at the start of your next turn as a protocol. This secondary attack can’t deal bonus damage, and doesn't trigger additional secondary attacks.<br>You may center this weapon’s attack on either yourself or any of your Drones within Sensors."
+    },
     "description": "“A storm of bladed death” – nanites organized into maniples, released from a chassis’ onboard nexuses or single-use firing tubes in a burst of filament rings so sharp they slice away at their targets on the molecular level. The visual effect of a maniple being launched is often compared to tinsel being fired through atmosphere.",
     "data_type": "weapon",
     "aptitude": {}
@@ -1949,14 +1738,11 @@
     "name": "CATALYST PISTOL",
     "mount": "Auxiliary",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "energy",
+      "val": "1d3"
+    }],
+    "range": [{
         "type": "Cone",
         "val": 3
       },
@@ -1965,12 +1751,10 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 2
+    }],
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 1,
@@ -1984,28 +1768,25 @@
     "name": "ARC PROJECTOR",
     "mount": "Heavy",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d6+1"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 1
+    }],
     "source": "HORUS",
     "license": "MANTICORE",
     "license_level": 2,
-    "effect": "On Hit: You may also make a secondary attack against a different character within range 3 of the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat, and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon.",
+    "effect": {
+      "effect_type": "Offensive",
+      "hit": "You may also make a secondary attack against a different character within range 3 of the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat, and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon."
+    },
     "description": "“Fire be upon thee, APEP! Thy flesh is seared from thy bones; The Lord of the Duat will never enable thy shade to rise again!”",
     "data_type": "weapon",
     "aptitude": {}
@@ -2015,20 +1796,15 @@
     "name": "SMARTGUN",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 4
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "kinetic",
+      "val": 4
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
         "id": "tg_accurate"
       },
       {
@@ -2052,19 +1828,15 @@
     "name": "MIMIC GUN",
     "mount": "Heavy",
     "type": "???",
-    "damage": [
-      {
-        "override": true,
-        "val": "??? kinetic"
-      }
-    ],
-    "range": [
-      {
-        "override": true,
-        "type": "Range",
-        "val": "???"
-      }
-    ],
+    "damage": [{
+      "override": true,
+      "val": "??? kinetic"
+    }],
+    "range": [{
+      "override": true,
+      "type": "Range",
+      "val": "???"
+    }],
     "tags": [],
     "source": "HORUS",
     "license": "PEGASUS",
@@ -2079,18 +1851,14 @@
     "name": "AUTOGUN",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 3
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": 3
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
     "tags": [],
     "source": "HORUS",
     "license": "PEGASUS",
@@ -2106,24 +1874,73 @@
     "name": "SIEGE CANNON",
     "mount": "Superheavy",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": "3d6"
-      }
-    ],
-    "range": [
-      {
-        "type": "variable",
-        "override": true,
-        "val": "Range 20 / Range 30, Blast 2"
-      }
-    ],
+    "damage": [{
+      "type": "explosive",
+      "val": "3d6"
+    }],
+    "range": [{
+      "type": "variable",
+      "override": true,
+      "val": "Range 20 / Range 30, Blast 2"
+    }],
     "tags": [],
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 3,
-    "effect": "Siege: [range 30][blast 2][3d6 explosive damage]<br>Arcing, Ordnance, Loading, 4 heat (Self)<br>Direct Fire: [range 20][3d6 explosive]<br>Knockback 2, 2 heat (Self)<br>On Attack: Choose to fire in either siege mode or direct fire mode.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "Choose to fire in either siege mode or direct fire mode.",
+      "abilities": [{
+          "effect_type": "Profile",
+          "name": "Siege",
+          "range": [{
+            "type": "Range",
+            "val": 30
+          }, {
+            "type": "Blast",
+            "val": 2
+          }],
+          "damage": [{
+            "type": "explosive",
+            "val": "3d6"
+          }],
+          "tags": [{
+              "id": "tg_arcing"
+            },
+            {
+              "id": "tg_ordnance"
+            },
+            {
+              "id": "tg_loading"
+            },
+            {
+              "id": "tg_heat_self",
+              "val": 4
+            }
+          ]
+        },
+        {
+          "name": "Direct Fire",
+          "range": [{
+            "type": "Range",
+            "val": 20
+          }],
+          "damage": [{
+            "type": "explosive",
+            "val": "3d6"
+          }],
+          "tags": [{
+              "id": "tg_heat_self",
+              "val": 2
+            },
+            {
+              "id": "tg_knockback",
+              "val": 2
+            }
+          ]
+        }
+      ]
+    },
     "description": "The siege cannon is the Armory’s quintessential artillery piece: a howitzer cannon fed by an automated loading system. Typically mounted on long-range mechs deployed in artillery or squad-support roles, siege cannons are capable of both indirect and direct fire as the situation demands with variable ammunition options.",
     "data_type": "weapon",
     "aptitude": {}
@@ -2133,8 +1950,7 @@
     "name": "KRAKATOA THERMOBARIC FLAMETHROWER",
     "mount": "Heavy",
     "type": "CQB",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": 1
       },
@@ -2143,12 +1959,10 @@
         "val": 4
       }
     ],
-    "range": [
-      {
-        "type": "Cone",
-        "val": 5
-      }
-    ],
+    "range": [{
+      "type": "Cone",
+      "val": 5
+    }],
     "tags": [],
     "source": "HA",
     "license": "GENGHIS",
@@ -2163,8 +1977,7 @@
     "name": "PLASMA THROWER",
     "mount": "Superheavy",
     "type": "CQB",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": "1d6+2"
       },
@@ -2173,8 +1986,7 @@
         "val": 6
       }
     ],
-    "range": [
-      {
+    "range": [{
         "type": "Cone",
         "val": 7
       },
@@ -2183,16 +1995,18 @@
         "val": 10
       }
     ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 4
-      }
-    ],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 4
+    }],
     "source": "HA",
     "license": "GENGHIS",
     "license_level": 3,
-    "effect": "Can be fired as Cone 7 <i>or</i> Line 10<br>On Attack: White-hot flames continue to burn in 3 free spaces of your choice within the affected area, lasting for the rest of the scene. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage.",
+    "effect": {
+      "effect_type": "Offensive",
+      "detail": "Can be fired as Cone 7 <i>or</i> Line 10",
+      "attack": "White-hot flames continue to burn in 3 free spaces of your choice within the affected area, lasting for the rest of the scene. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage."
+    },
     "description": "The plasma thrower emerged too late in the Hercynian Crisis to see widespread use in the field. The scarce data gathered from the MEF squadrons that used it suggest that plasma throwers would have had a tremendous impact on the outcomes of several major battles that occurred during the bloodiest phase of the Crisis.",
     "data_type": "weapon",
     "aptitude": {}
@@ -2202,20 +2016,15 @@
     "name": "STUB CANNON",
     "mount": "Auxiliary",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "explosive",
-        "val": 3
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "tags": [
-      {
+    "damage": [{
+      "type": "explosive",
+      "val": 3
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "tags": [{
         "id": "tg_limited",
         "val": 6
       },
@@ -2238,8 +2047,7 @@
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [],
-    "range": [
-      {
+    "range": [{
         "type": "Range",
         "val": 8
       },
@@ -2252,7 +2060,10 @@
     "source": "HA",
     "license": "ISKANDER",
     "license_level": 2,
-    "effect": "On Attack: Characters within the affected area must succeed on a Hull save or take 1d6 energy damage and be pulled as close to the center of the blast as possible. This weapon cannot be modified or benefit from core bonuses.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "Characters within the affected area must succeed on a Hull save or take 1d6 energy damage and be pulled as close to the center of the blast as possible. This weapon cannot be modified or benefit from core bonuses."
+    },
     "description": "“The complex negotiations of gravity and time, shattered in an instant by a machine that can pluck waves like a player strums the strings of a guitar.<br>We’ve weaponized the force that holds all things in its embrace. What could go wrong?”",
     "data_type": "weapon",
     "aptitude": {}
@@ -2262,14 +2073,11 @@
     "name": "DISPLACER",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
-        "type": "energy",
-        "val": 10
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "energy",
+      "val": 10
+    }],
+    "range": [{
         "type": "Range",
         "val": 10
       },
@@ -2278,8 +2086,7 @@
         "val": 1
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_ap"
       },
       {
@@ -2306,23 +2113,17 @@
     "name": "SHATTERHEAD COLONY MISSILES",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 15
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_arcing"
-      }
-    ],
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+1"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 15
+    }],
+    "tags": [{
+      "id": "tg_arcing"
+    }],
     "source": "HA",
     "license": "SALADIN",
     "license_level": 1,
@@ -2337,8 +2138,7 @@
     "name": "SOL-PATTERN LASER RIFLE",
     "mount": "Main",
     "type": "Rifle",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": "1d6"
       },
@@ -2347,18 +2147,14 @@
         "val": 1
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      }
-    ],
+    "range": [{
+      "type": "Range",
+      "val": 8
+    }],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 1
+    }],
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 1,
@@ -2372,8 +2168,7 @@
     "name": "ANDROMEDA-PATTERN HEAVY LASER RIFLE",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": "2d6"
       },
@@ -2382,18 +2177,14 @@
         "val": 3
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 12
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 3
-      }
-    ],
+    "range": [{
+      "type": "Range",
+      "val": 12
+    }],
+    "tags": [{
+      "id": "tg_heat_self",
+      "val": 3
+    }],
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 2,
@@ -2407,8 +2198,7 @@
     "name": "TACHYON LANCE",
     "mount": "Superheavy",
     "type": "Cannon",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": "2d6"
       },
@@ -2417,14 +2207,11 @@
         "val": 8
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 20
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Range",
+      "val": 20
+    }],
+    "tags": [{
         "id": "tg_ordnance"
       },
       {
@@ -2435,7 +2222,10 @@
     "source": "HA",
     "license": "SHERMAN",
     "license_level": 3,
-    "effect": "On Attack: If you’re in the Danger Zone, create a cone 3 backblast of burning plasma in the opposite direction to the attack. Characters within the affected area must succeed on an Engineering save or take 4 burn and 2 heat. Until the start of your next turn, the affected area provides soft cover.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "If you’re in the Danger Zone, create a cone 3 backblast of burning plasma in the opposite direction to the attack. Characters within the affected area must succeed on an Engineering save or take 4 burn and 2 heat. Until the start of your next turn, the affected area provides soft cover."
+    },
     "description": "Tachyon lances are the weaponized results of joint IPS-N and Harrison Armory experiments into faster-than-light travel. Rendered obsolete by subsequent developments in blinkspace travel (and the difficulty of ensuring corporeal passenger survival), the Armory’s tachyon accelerators were mothballed until Think Tank engineers realized their potential application as weapons. Tachyon lances project tachyon particles – essentially subatomic localized objects – faster than light toward their targets. These particles are impossible to perceive optically, and because they travel faster than light, can’t be seen or evaded. Although the particles are tiny, they travel with colossal speed and energy. The damage a tachyon lance deals to its target – should it hit – is unparalleled.",
     "data_type": "weapon",
     "aptitude": {}
@@ -2445,14 +2235,11 @@
     "name": "ANNIHILATOR",
     "mount": "Main",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+2"
+    }],
+    "range": [{
         "type": "Range",
         "val": 5
       },
@@ -2461,8 +2248,7 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_ap"
       },
       {
@@ -2473,7 +2259,10 @@
     "source": "HA",
     "license": "TOKUGAWA",
     "license_level": 1,
-    "effect": "On Hit: Make a secondary attack against all characters within burst 1 of the target. These attacks can’t deal bonus damage, and don’t trigger the Annihilator’s heat cost or secondary attacks.",
+    "effect": {
+      "effect_type": "Offensive",
+      "hit": "Make a secondary attack against all characters within burst 1 of the target. These attacks can’t deal bonus damage, and don’t trigger the Annihilator’s heat cost or secondary attacks."
+    },
     "description": "Harrison Armory is known to employ somewhat unconventional development methods: tactical solutions are theorized and designed in the field as often as they are in the lab, with the former often outperforming the latter. The Annihilator’s name comes from pilots’ slang for a jury-rigged weapon first improvised in the Bradbury Rebellion, when desperate resistance pilots found a way to shunt the incredible waste heat from their reactors into a directed blast.",
     "data_type": "weapon",
     "aptitude": {}
@@ -2483,8 +2272,7 @@
     "name": "TORCH",
     "mount": "Main",
     "type": "Melee",
-    "damage": [
-      {
+    "damage": [{
         "type": "energy",
         "val": "1d6"
       },
@@ -2493,14 +2281,11 @@
         "val": 3
       }
     ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "tags": [
-      {
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "tags": [{
         "id": "tg_overkill"
       },
       {
@@ -2521,14 +2306,11 @@
     "name": "Fuel Rod Gun",
     "mount": "Integrated",
     "type": "CQB",
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "energy",
+      "val": "1d3+2"
+    }],
+    "range": [{
         "type": "Range",
         "val": 3
       },
@@ -2537,8 +2319,7 @@
         "val": 3
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_limited",
         "val": 3
       },
@@ -2552,7 +2333,10 @@
     "talent_item": true,
     "talent_id": "t_nuclear_cavalier",
     "talent_rank": 3,
-    "effect": "On Attack: Clear 4 heat.",
+    "effect": {
+      "effect_type": "Offensive",
+      "attack": "Clear 4 heat."
+    },
     "description": "Gained from the \"Nuclear Cavalier\" Rank 3 Talent",
     "data_type": "weapon",
     "aptitude": {
@@ -2564,14 +2348,11 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "damage": [
-      {
-        "type": "variable",
-        "val": "1d6+2"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "variable",
+      "val": "1d6+2"
+    }],
+    "range": [{
         "type": "Threat",
         "val": 1
       },
@@ -2580,8 +2361,7 @@
         "val": 10
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_limited",
         "val": "1d6+2"
       },
@@ -2614,14 +2394,11 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "damage": [
-      {
-        "type": "variable",
-        "val": "1d6+2"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "variable",
+      "val": "1d6+2"
+    }],
+    "range": [{
         "type": "Threat",
         "val": 1
       },
@@ -2630,8 +2407,7 @@
         "val": 10
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_limited",
         "val": "1d6+2"
       },
@@ -2664,14 +2440,11 @@
     "name": "Prototype Weapon",
     "mount": "Integrated",
     "type": "Special",
-    "damage": [
-      {
-        "type": "variable",
-        "val": "1d6+4"
-      }
-    ],
-    "range": [
-      {
+    "damage": [{
+      "type": "variable",
+      "val": "1d6+4"
+    }],
+    "range": [{
         "type": "Threat",
         "val": 1
       },
@@ -2680,8 +2453,7 @@
         "val": 10
       }
     ],
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_limited",
         "val": "2d6"
       },
@@ -2714,12 +2486,10 @@
     "name": "Latch Drone",
     "mount": "Main",
     "type": "Launcher",
-    "range": [
-      {
-        "type": "Range",
-        "val": 8
-      }
-    ],
+    "range": [{
+      "type": "Range",
+      "val": 8
+    }],
     "effect": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP."
   },
   {
@@ -2727,8 +2497,7 @@
     "name": "M35 Mjolnir",
     "mount": "Main",
     "type": "CQB",
-    "range": [
-      {
+    "range": [{
         "type": "Range",
         "val": 5
       },
@@ -2737,12 +2506,10 @@
         "val": 3
       }
     ],
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 4
-      }
-    ],
+    "damage": [{
+      "type": "kinetic",
+      "val": 4
+    }],
     "effect": "1/round, when you reload any weapon, this weapon can be fired as a free action.",
     "tags": []
   },
@@ -2751,7 +2518,54 @@
     "name": "Apocalypse Rail",
     "mount": "Ship-class",
     "type": "Spool Weapon",
-    "effect": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it.<br>4. Cannot be fired<br>3.  [range 20, 2d6 explosive damage] Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn.<br>2.  [range 25, 3d6 explosive] Objects and terrain in the area automatically take 40 AP explosive damage, and on hit characters become Shredded and Impaired until the end of their next turn. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn.<br>1.  [range 30, 4d6 explosive damage] Objects and terrain in the area automatically take 100 AP explosive damage, and characters become Shredded and Stunned until the end of their next turn on hit. The ground in the affected area is vaporized on impact: for the rest of the scene, it is difficult terrain, characters within the affected area receive soft cover, and characters that start their turn with the area or move there for the first time in a round take 4 burn.<br>The Apocalypse Rail cannot be fired at targets within range 5.",
+    "effect": {
+      "detail": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it. The Apocalypse Rail cannot be fired at targets within range 5.",
+      "abilities": [{
+          "effect_type": "Profile",
+          "name": "4",
+          "detail": "Cannot Be Fired"
+        },
+        {
+          "effect_type": "Profile",
+          "name": "3",
+          "range": [{
+            "type": "Range",
+            "val": 20
+          }],
+          "damage": [{
+            "type": "explosive",
+            "val": "2d6"
+          }],
+          "detail": "Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn."
+        },
+        {
+          "effect_type": "Profile",
+          "name": "2",
+          "range": [{
+            "type": "Range",
+            "val": 25
+          }],
+          "damage": [{
+            "type": "explosive",
+            "val": "3d6"
+          }],
+          "detail": "Objects and terrain in the area automatically take 40 AP explosive damage, and on hit characters become Shredded and Impaired until the end of their next turn. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn."
+        },
+        {
+          "effect_type": "Profile",
+          "name": "1",
+          "range": [{
+            "type": "Range",
+            "val": 30
+          }],
+          "damage": [{
+            "type": "explosive",
+            "val": "4d6"
+          }],
+          "detail": "Objects and terrain in the area automatically take 100 AP explosive damage, and characters become Shredded and Stunned until the end of their next turn on hit. The ground in the affected area is vaporized on impact: for the rest of the scene, it is difficult terrain, characters within the affected area receive soft cover, and characters that start their turn with the area or move there for the first time in a round take 4 burn."
+        }
+      ]
+    },
     "tags": []
   },
   {
@@ -2759,23 +2573,17 @@
     "name": "ZF4 SOLIDCORE",
     "mount": "Main",
     "type": "Cannon",
-    "range": [
-      {
-        "type": "Line",
-        "val": "4/Charge"
-      }
-    ],
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6/Charge"
-      }
-    ],
+    "range": [{
+      "type": "Line",
+      "val": "4/Charge"
+    }],
+    "damage": [{
+      "type": "energy",
+      "val": "1d6/Charge"
+    }],
     "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair.",
-    "tags": [
-      {
-        "id": "tg_ordnance"
-      }
-    ]
+    "tags": [{
+      "id": "tg_ordnance"
+    }]
   }
 ]
