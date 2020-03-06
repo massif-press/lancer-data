@@ -716,7 +716,7 @@
     "effect": {
       "detail": "Unlike other Superheavy weapons, the Leviathan can be used with Skirmish. You can spin up this weapon’s barrels as a quick action.",
       "abilities": [{
-          "effect_type": "Profile",
+        "effect_type": "Profile",
         "name": "Spun Up",
         "damage": [{
           "type": "kinetic",
@@ -1649,7 +1649,10 @@
     }],
     "tags": [{
       "id": "tg_smart"
-    }],
+    },
+  {
+    "id": "tg_set_damage_type"
+  }],
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 1,
@@ -1920,6 +1923,7 @@
           ]
         },
         {
+          "effect_type": "Profile",
           "name": "Direct Fire",
           "range": [{
             "type": "Range",
