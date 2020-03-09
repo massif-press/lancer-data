@@ -714,6 +714,7 @@
     "license": "DRAKE",
     "license_level": 3,
     "effect": {
+      "effect_type": "Offensive",
       "detail": "Unlike other Superheavy weapons, the Leviathan can be used with Skirmish. You can spin up this weapon’s barrels as a quick action.",
       "abilities": [{
         "effect_type": "Profile",
@@ -2523,6 +2524,7 @@
     "mount": "Ship-class",
     "type": "Spool Weapon",
     "effect": {
+      "effect_type": "Offensive",
       "detail": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it. The Apocalypse Rail cannot be fired at targets within range 5.",
       "abilities": [{
           "effect_type": "Profile",
