@@ -2309,7 +2309,7 @@
   {
     "id": "mw_fuel_rod_gun",
     "name": "Fuel Rod Gun",
-    "mount": "Integrated",
+    "mount": "Main",
     "type": "CQB",
     "damage": [{
       "type": "energy",
@@ -2351,7 +2351,7 @@
   {
     "id": "mw_prototype_1",
     "name": "Prototype Weapon",
-    "mount": "Integrated",
+    "mount": "Main",
     "type": "Special",
     "damage": [{
       "type": "variable",
@@ -2397,7 +2397,7 @@
   {
     "id": "mw_prototype_2",
     "name": "Prototype Weapon",
-    "mount": "Integrated",
+    "mount": "Main",
     "type": "Special",
     "damage": [{
       "type": "variable",
@@ -2443,7 +2443,7 @@
   {
     "id": "mw_prototype_3",
     "name": "Prototype Weapon",
-    "mount": "Integrated",
+    "mount": "Main",
     "type": "Special",
     "damage": [{
       "type": "variable",
