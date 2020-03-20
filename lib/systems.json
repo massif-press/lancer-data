@@ -1527,7 +1527,7 @@
     "license_level": 3,
     "effect": {
       "effect_type": "AI",
-      "detail": "Your mech gains the AI tag and the TLALOC Protocol.",
+      "detail": "Your mech gains the AI tag and the ATHENA Protocol.",
       "abilities": [{
         "name": "Simulacrum",
         "effect_type": "Basic",
