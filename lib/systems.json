@@ -3029,7 +3029,7 @@
       "effect_type": "Reaction",
       "frequency": "1/round",
       "trigger": "You or an allied character in Sensors and line of sight is pushed, pulled, knocked back or knocked Prone.",
-      "detail": "Grant the attack’s target Resistance to all damage from this attack",
+      "detail": "The movement or status is prevented, and the target gains Immunity to all the above effects until the start of their next turn.",
       "tags": [{
         "id": "tg_heat_self",
         "val": 2
