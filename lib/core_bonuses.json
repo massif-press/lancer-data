@@ -63,7 +63,7 @@
     "name": "GYGES FRAME",
     "source": "IPS-N",
     "effect": "You gain +1 Accuracy on all Hull checks and saves and +1 Threat with all melee weapons.",
-    "description": "A mech built on the Gyges template is designed for combat – onhanced with finely tuned stabilizers and a robust suite of targeting software and hardware."
+    "description": "A mech built on the Gyges template is designed for combat – enhanced with finely tuned stabilizers and a robust suite of targeting software and hardware."
   },
   {
     "id": "cb_reinforced_frame",

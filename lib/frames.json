@@ -49,6 +49,13 @@
       ]
     },
     "data_type": "frame",
+    "other_art": [
+      {"tag": "Mech", "src": "pre_assault_pixel.png"},
+      {"tag": "Mech", "src": "pre_hacker_pixel.png"},
+      {"tag": "Mech", "src": "pre_sniper_pixel.png"},
+      {"tag": "Mech", "src": "pre_support_pixel.png"},
+      {"tag": "Mech", "src": "pre_vanguard_pixel.png"}
+    ],
     "aptitude": {}
   },
   {
