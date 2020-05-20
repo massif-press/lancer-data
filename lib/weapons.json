@@ -2523,6 +2523,16 @@
     "name": "Apocalypse Rail",
     "mount": "Ship-class",
     "type": "Spool Weapon",
+    "damage": [{
+      "type": "explosive",
+      "override": true,
+      "val": "2d6 / 3d6 / 4d6"
+    }],
+    "range": [{
+      "type": "variable",
+      "override": true,
+      "val": "Range 20 / 25 / 30, Blast 2"
+    }],
     "effect": {
       "effect_type": "Offensive",
       "detail": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it. The Apocalypse Rail cannot be fired at targets within range 5.<br> After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4.",

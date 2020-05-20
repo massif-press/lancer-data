@@ -387,6 +387,9 @@
       ]
     },
     "data_type": "frame",
+        "other_art": [
+      {"tag": "Mech", "src": "alt_hortuga.png"}
+        ],
     "aptitude": {}
   },
   {
@@ -439,7 +442,10 @@
         }
       ]
     },
-    "data_type": "frame",
+        "data_type": "frame",
+        "other_art": [
+      {"tag": "Mech", "src": "alt_agonist.png"}
+        ],
     "aptitude": {}
   },
   {
@@ -541,7 +547,10 @@
         }
       ]
     },
-    "data_type": "frame",
+            "data_type": "frame",
+        "other_art": [
+      {"tag": "Mech", "src": "alt_hercules.png"}
+        ],
     "aptitude": {}
   },
   {
@@ -1326,7 +1335,7 @@
         }
       ]
     },
-    "data_type": "frame",
+    "data_type": "frame",  
     "aptitude": {}
   },
   {
@@ -1547,6 +1556,9 @@
       }
     },
     "data_type": "frame",
+    "other_art": [
+      {"tag": "Mech", "src": "alt_sherman_old.png"}
+        ],      
     "aptitude": {},
     "counters": [
       {
