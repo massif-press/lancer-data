@@ -632,7 +632,7 @@
     "effect": {
       "effect_type": "Basic",
       "activation": "Quick",
-      "detail": "Expend a charge to fire this small, self-arming system onto an allied mech within range 5. They gain Overshield equal to your Grit+4. While they have this Overshield they gain Immunity to Impaired and Jammed."
+      "detail": "Expend a charge to fire this small, self-arming system onto an allied mech within range 5. They gain Overshield equal to your Grit +4. While they have this Overshield they gain Immunity to Impaired and Jammed."
     },
     "description": "The IPS-N Aceso Stabilizer is a useful triage measure for any scoring and minor mechanical damage that is sustained in the course of combat engagement or negative environmental interaction. Thanks to its negligible processor demand, Aceso Stabilizers can even be controlled by comp/con units – this allows the pilot to concentrate on complex repairs or immediate threat neutralization.",
     "data_type": "system",
@@ -2638,8 +2638,8 @@
           "name": "HAVOK Mine",
           "charge_type": "Mine",
           "range": [{
-            "type": "Burst",
-            "val": 1
+            "type": "Line",
+            "val": 5
           }],
           "detail": "When a character moves over or adjacent to this mine, it detonates with a focused explosion in a line 5 path in the direction of the character who triggered it. Characters within the affected area must succeed on an Agility save or take 4 burn. On a success, they take 2 burn."
         }
