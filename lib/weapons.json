@@ -2495,6 +2495,7 @@
       "type": "Range",
       "val": 8
     }],
+    "tags": [],
     "effect": "This weapon can’t make normal attacks. Instead, choose an allied mech within Range and line of sight and make a ranged attack against Evasion 8. On a hit, either you or your target may spend 1 Repair to restore half your target’s HP."
   },
   {
