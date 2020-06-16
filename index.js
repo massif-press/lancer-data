@@ -9,6 +9,7 @@ const data = {
   glossary: require('./lib/glossary.json'),
   info: require('./lib/info.json'),
   manufacturers: require('./lib/manufacturers.json'),
+  factions: require('./lib/factions.json'),
   mods: require('./lib/mods.json'),
   npc_classes: [],
   npc_features: [],
