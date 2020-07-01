@@ -348,7 +348,7 @@
     "id": "pg_thermite_charge",
     "name": "THERMITE CHARGE",
     "type": "gear",
-    "description": "Expend a charge for the following effect:<li>Thermite Charge (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.<br>Miscellaneous Gear",
+    "description": "Expend a charge for the following effect:<li>Thermite Charge (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
     "tags": [
       {
         "id": "tg_gear"
