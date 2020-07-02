@@ -157,7 +157,7 @@
       },
       {
         "name": "Guardian",
-        "description": "Allied characters can use the Drake for hard cover."
+        "description": "Adjacent allied characters can use the Drake for hard cover."
       }
     ],
     "core_system": {
@@ -265,7 +265,7 @@
       },
       {
         "name": "Skirmisher",
-        "description": "After attacking, the Nelson can move 1 space in any direction as a free action as long as it isn’t Immobilized or Slowed. This movement ignores engagement and doesn’t provoke reactions."
+        "description": "After attacking, the Nelson can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions."
       }
     ],
     "core_system": {
@@ -372,7 +372,7 @@
       },
       {
         "name": "Guardian",
-        "description": "Allied characters can use the Tortuga for hard cover."
+        "description": "Adjacent allied characters can use the Tortuga for hard cover."
       }
     ],
     "core_system": {
@@ -967,7 +967,7 @@
       },
       {
         "name": "GUARDIAN",
-        "description": "Allied characters may use the Gorgon for hard cover."
+        "description": "Adjacent allied characters may use the Gorgon for hard cover."
       }
     ],
     "core_system": {
@@ -1253,7 +1253,7 @@
       },
       {
         "name": "Colossus",
-        "description": "Allied characters can use the Barbarossa for hard cover."
+        "description": "Adjacent allied characters can use the Barbarossa for hard cover."
       },
       {
         "name": "Slow",
@@ -1477,7 +1477,7 @@
       },
       {
         "name": "Guardian",
-        "description": "Allied characters can use the Saladin for hard cover."
+        "description": "Adjacent allied characters can use the Saladin for hard cover."
       },
       {
         "name": "Warp Shield",
