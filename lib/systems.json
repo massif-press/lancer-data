@@ -415,7 +415,7 @@
       "abilities": [{
         "name": "SEKHMET Protocol",
         "effect_type": "Protocol",
-        "detail": "When activated, you give control of your mech to your NHP and gain the following benefits:<li>All melee critical hits deal +1d6 bonus damage.<li>1/round, you can Skirmish with melee weapons only as a free action.<br>Your NHP uses all available actions and movement to move toward the closest visible character – allied or hostile – and attacks them with melee attacks, prioritizing melee weapons. It may benefit from your talents. If there are no characters within Threat, your NHP uses all actions to move as directly as possible to the next closest (visible) target. Your NHP can’t make ranged attacks, even if there are actions available.<br>You retain enough control to Overcharge as usual; however, your NHP uses the additional action for the same purpose as its other actions.<br>You can take back control of your mech as a protocol. When you do, you become Stunned until the start of your next turn. Otherwise, this effect lasts until your mech is destroyed – the pilot’s incapacitation or death has no effect."
+        "detail": "When activated, you give control of your mech to your NHP and gain the following benefits:<ul><li>All melee critical hits deal +1d6 bonus damage.</li><li>1/round, you can Skirmish with melee weapons only as a free action.</li></ul>Your NHP uses all available actions and movement to move toward the closest visible character – allied or hostile – and attacks them with melee attacks, prioritizing melee weapons. It may benefit from your talents. If there are no characters within Threat, your NHP uses all actions to move as directly as possible to the next closest (visible) target. Your NHP can’t make ranged attacks, even if there are actions available.<br>You retain enough control to Overcharge as usual; however, your NHP uses the additional action for the same purpose as its other actions.<br>You can take back control of your mech as a protocol. When you do, you become Stunned until the start of your next turn. Otherwise, this effect lasts until your mech is destroyed – the pilot’s incapacitation or death has no effect."
       }]
     },
     "description": "“The IPS-N SEKHMET co-pilot is ready to be your first mate! SEKHMET comes standard with remote, omninet, IR tag, and voice control systems, and is fully compatible with all current and legacy IPS-N mechs.<br>Did you know that SEKHMET learns with you? Should the worst happen, your very own SEKHMET will continue to engage hostile targets using an emulated neural-net doppelgänger to pilot your IPS-N chassis until forced or voluntary shutdown!”<br>draft copy, IPS-N Polaris Pilot Lounge adbroad [struck and replaced w/current adbroad]<br>SEKHMET-class NHPs tend toward aggressive attitudes and dark humor. Pilots often call them “berserker systems” – dangerous NHPs that value combat efficacy over pilot wellbeing.",
@@ -598,7 +598,7 @@
     "effect": {
       "effect_type": "Basic",
       "activation": "Quick",
-      "detail": "This sealant can be sprayed on characters or free spaces within range 5 and line of sight. It has different effects depending on the target:<li>Hostile Characters Your target must succeed on an Agility save or they become Slowed until the end of their next turn and clear all burn.<li>Allied Characters: Your target clears all burn but they become Slowed until the end of their next turn.<li>Free Space: Any fires within blast 1 are extinguished and the area becomes difficult terrain for the rest of the scene."
+      "detail": "This sealant can be sprayed on characters or free spaces within range 5 and line of sight. It has different effects depending on the target:<ul><li><b>Hostile Characters:</b> Your target must succeed on an Agility save or they become Slowed until the end of their next turn and clear all burn.</li><li><b>Allied Characters:</b> Your target clears all burn but they become Slowed until the end of their next turn.</li><li><b>Free Space:</b> Any fires within blast 1 are extinguished and the area becomes difficult terrain for the rest of the scene.</li></ul>"
     },
     "description": "For fire suppression and fast, temporary seals in punctured starship bulkheads, IPS-N offers a range of single-use, single objective nanites – “whitewash”. This sealant spray can also be used to restrain noncompliant actors when the correct spray heads and catalytic formulations are installed to the applicator.",
     "data_type": "system",
@@ -670,7 +670,7 @@
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 2,
-    "effect": "You can Brace while Grappling. When you do so, any grapples currently affecting you end.<br>Additionally, when you Brace, you gain the following benefits until the end of your following turn:<li>Attacks against you receive +1 difficulty.<li>You can’t fail Agility or Hull saves or contested checks.<li>You gain Immunity to Knockback, Grapple, being knocked Prone, and being moved by any external force smaller than Size 5.",
+    "effect": "You can Brace while Grappling. When you do so, any grapples currently affecting you end.<br>Additionally, when you Brace, you gain the following benefits until the end of your following turn:<ul><li>Attacks against you receive +1 difficulty.</li><li>You can’t fail Agility or Hull saves or contested checks.</li><li>You gain Immunity to Knockback, Grapple, being knocked Prone, and being moved by any external force smaller than Size 5.</li></ul>",
     "description": "IPS-N’s Armor-Lock Plating is a total-body modification that provides additional chassis stability for any situation in which a pilot needs to put their mech through greater-than-anticipated stress.",
     "data_type": "system",
     "aptitude": {}
@@ -961,7 +961,7 @@
       "size": 2,
       "hp": 20,
       "evasion": 5,
-      "detail": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.<br>The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<li>Repulse: Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.<li>Attract: Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed."
+      "detail": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.<br>The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed."
     },
     "description": "The Exotic Materials Group developed the Perimeter Command Plate to extend the area of the Black Witch’s zone of control. Utilizing single-pattern flash printers, the Black Witch prints a broad, circular plate seeded with electromagnetic projectors. Although the plates are intended to be disposable, Black Witch pilots often grow attached to their “familiars” and request their flash-printers create personalized plates.",
     "data_type": "system",
@@ -1455,7 +1455,7 @@
       "hp": 5,
       "edef": 10,
       "evasion": 10,
-      "detail": "This scout drone can be deployed to a space within Sensors and line of sight, where it emits a burst 2 field with the following effects:<li>You know the current location, HP, Evasion, E-Defense, and Heat of all characters within the affected area.<li>Hostile characters cannot Hide in the area, and if they end their turn in the affected area they cease to be Hidden.<li>Hostile characters can’t benefit from being Invisible while in the affected area.<br>You can recall and redeploy your scout drone as a quick action.",
+      "detail": "This scout drone can be deployed to a space within Sensors and line of sight, where it emits a burst 2 field with the following effects:<ul><li>You know the current location, HP, Evasion, E-Defense, and Heat of all characters within the affected area.</li><li>Hostile characters cannot Hide in the area, and if they end their turn in the affected area they cease to be Hidden.</li><li>Hostile characters can’t benefit from being Invisible while in the affected area.</li></ul>You can recall and redeploy your scout drone as a quick action.",
       "tags": [{
         "id": "tg_invisible"
       }]
@@ -1480,7 +1480,7 @@
       "activation": "Full",
       "detail": "Make a tech attack against a character within  Sensors and line of sight. On a success, they take 2 heat, Lock On, and cannot benefit from soft cover until the Lock On is cleared; additionally, once before the start of your next turn, when an allied character hits your target, you may declare as a reaction that they have hit a weak spot. If it wasn’t already, the attack becomes a critical hit."
     },     
-    "description": "“Out, damned spot! Out, I say! – One, two. Why, then, ‘tis time to do’t. Hell is murky! – Fie, my lord, fie! A soldier, and afeard? What need we fear who knows it, when none can call our power to account?”<li>Shakespeare, Macbeth, act 5, sc. 1.",
+    "description": "“Out, damned spot! Out, I say! – One, two. Why, then, ‘tis time to do’t. Hell is murky! – Fie, my lord, fie! A soldier, and afeard? What need we fear who knows it, when none can call our power to account?”<ul><li>Shakespeare, Macbeth, act 5, sc. 1.</li></ul>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -1501,7 +1501,7 @@
     "license_level": 2,
     "effect": {
       "effect_type": "Protocol",
-      "detail": "Your mech can retract its major systems to reduce its profile. While active:<li>rolls to locate you receive +1 difficulty while you are Hidden;<li>ranged and tech attacks against you receive +1 difficulty;<li>you become Slowed and can’t make attacks of any kind;<li>you may take other actions (e.g., Hide, Activate, and so on).<br>You may end this effect as a quick action."
+      "detail": "Your mech can retract its major systems to reduce its profile. While active:<ul><li>rolls to locate you receive +1 difficulty while you are Hidden;</li><li>ranged and tech attacks against you receive +1 difficulty;</li><li>you become Slowed and can’t make attacks of any kind;</li><li>you may take other actions (e.g., Hide, Activate, and so on).</li></ul>You may end this effect as a quick action."
     },
     "description": "The hallmark of a well thought out mech frame is the opportunity for pilots to adapt their stock models to the specifications of the environments in which they operate. A retractable profile enables on-the-fly removal of extraneous protrusions, tuning of broadcast software, and masking of heat signatures – all serving to reduce optical and scanner signatures.",
     "data_type": "system",
@@ -1532,7 +1532,7 @@
         "name": "Simulacrum",
         "effect_type": "Basic",
         "activation": "Quick",
-        "detail": "ATHENA constructs a perfect, real-time, and fully interactive 3D model of a blast 3 area within range 50, including moving characters, all rendered in lovingly extreme detail. The following effects apply:<li>You have full visibility within the affected area, but it doesn’t count as line of sight.<li>You know all statistics, weapons, and systems of characters within the affected area.<li>Hostile characters within the affected area don’t benefit from cover and can’t Hide or become Invisible.<li>Hostile characters that end their turn in the affected area receive Lock On and cease to be Invisible or Hidden.<br>ATHENA’s simulation lasts until the end of the scene, or about 30 minutes within the narrative. You may target a new area as a quick action.",
+        "detail": "ATHENA constructs a perfect, real-time, and fully interactive 3D model of a blast 3 area within range 50, including moving characters, all rendered in lovingly extreme detail. The following effects apply:<ul><li>You have full visibility within the affected area, but it doesn’t count as line of sight.</li><li>You know all statistics, weapons, and systems of characters within the affected area.</li><li>Hostile characters within the affected area don’t benefit from cover and can’t Hide or become Invisible.</li><li>Hostile characters that end their turn in the affected area receive Lock On and cease to be Invisible or Hidden.</li></ul>ATHENA’s simulation lasts until the end of the scene, or about 30 minutes within the narrative. You may target a new area as a quick action.",
         "tags": [{
           "id": "tg_quick_action"
         }]
@@ -1588,7 +1588,7 @@
       "hp": 5,
       "edef": 10,
       "evasion": 10,
-      "detail": "This hive drone can be deployed to a free space within Sensors and line of sight, where it releases a burst 2 greywash swarm with the following effects:<li>Allied characters at least partially within the affected area gain soft cover, as does the hive drone.<li>Hostile characters take 1 AP kinetic damage when they start their turn in the affected area or enter it for the first time in a round. Damage from areas created by multiple hive drones does not stack.<br>The drone can be deployed to a different space or recalled as a quick action."
+      "detail": "This hive drone can be deployed to a free space within Sensors and line of sight, where it releases a burst 2 greywash swarm with the following effects:<ul><li>Allied characters at least partially within the affected area gain soft cover, as does the hive drone.</li><li>Hostile characters take 1 AP kinetic damage when they start their turn in the affected area or enter it for the first time in a round. Damage from areas created by multiple hive drones does not stack.</li></ul>The drone can be deployed to a different space or recalled as a quick action."
     },
     "description": "It looks, at first, like a roiling cloud of gray fog, churning and fizzing – smoking soda water spilled across concrete. It advances with curious motion, stretching and snapping back. A confusion of snakes, writhing forward with speed that betrays intent.<br>Color flashes across the gray cloud, a swarm-luminescence – the light created by millions of nanites glowing with heat as they consume whatever they cross.<br>This is greywash, and it is never sated.",
     "data_type": "system",
@@ -1864,7 +1864,7 @@
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 2,
-    "effect": "Any time you or any allied character adjacent to you is missed by a tech attack or succeed on a save against a hostile tech action, choose one of the following:<li>The attacker becomes Impaired until the end of their next turn and takes 2 heat.<li>The attacker becomes Jammed until the end of their next turn.",
+    "effect": "Any time you or any allied character adjacent to you is missed by a tech attack or succeed on a save against a hostile tech action, choose one of the following:<ul><li>The attacker becomes Impaired until the end of their next turn and takes 2 heat.</li><li>The attacker becomes Jammed until the end of their next turn.</li></ul>",
     "description": "The //SCORPION program has a long history on the omninet despite its rather mundane operation (for HORUS-tagged code, at least). Traced back to pre-Deimos theorycode found on an obscure research paper discussing pre-NHP machine mind reflex-responses, //SCORPION evolved from a simple packet interpreter to a robust anti-incursion program, nimble enough to adapt to most any market-line system that receives its broadcast.",
     "data_type": "system",
     "aptitude": {}
@@ -1889,7 +1889,7 @@
       "activation": "Quick",
       "detail": "When activated, gain 1d3 Charges and choose an adjacent allied character: until the end of your next turn, whenever your target is attacked while adjacent to you, expend a Charge to Skirmish against their attacker as a reaction, dealing half damage, heat or burn on hit. All charges are lost when this effect ends."
     },     
-    "description": "“Good friend. Knows many tricks.”<li>Author inscription found in MONITOR codebase, later deleted.",
+    "description": "“Good friend. Knows many tricks.”<ul><li>Author inscription found in MONITOR codebase, later deleted.</li></ul>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -1922,14 +1922,14 @@
         "name": "Unleash SCYLLA",
         "effect_type": "Basic",
         "activation": "Quick",
-        "detail": "Until the start of your next turn, you gain two special reactions that allow you to Skirmish in response to one of the following triggers (chosen when you take this action):<li>A hostile character makes an attack against you or an allied character within range 3 of you.<li>A hostile character attempts to attack or interact with an object chosen when you take Unleash Scylla and within line of sight. Characters are aware of the object chosen.<br>These reactions deal half damage, heat or burn on hit and must target the character that triggered them.",
+        "detail": "Until the start of your next turn, you gain two special reactions that allow you to Skirmish in response to one of the following triggers (chosen when you take this action):<ul><li>A hostile character makes an attack against you or an allied character within range 3 of you.</li><li>A hostile character attempts to attack or interact with an object chosen when you take Unleash Scylla and within line of sight. Characters are aware of the object chosen.</li></ul>These reactions deal half damage, heat or burn on hit and must target the character that triggered them.",
         "tags": [{
           "id": "tg_heat_self",
           "val": 2
         }]
       }]
     },
-    "description": "The first specifications for the Gorgon pattern group hid a secret: SCYLLA, a dormant NHP unknown to Union until its first manifestation in 4852u, when it woke after Union Science Bureau officers ran a test-fax Gorgon through a Balwinder-Bolaño test.<br>SCYLLA proved challenging: USB ontologicians were unable to pin down a stable subjectivity, and SCYLLA reached cascade threshold within minutes of manifestation. To prevent further metastatic cascade, site security engaged SCYLLA's prime unit, defabricating it with a steady bombardment of kinetic and energy weapons.<br><span class='ra-quiet'>[there, a little history, a little background. a little knowledge of where this little one came from. treat it with kindness, and it will love you as a loyal dog does its master.]</span>",
+    "description": "The first specifications for the Gorgon pattern group hid a secret: SCYLLA, a dormant NHP unknown to Union until its first manifestation in 4852u, when it woke after Union Science Bureau officers ran a test-fax Gorgon through a Balwinder-Bolaño test.<br>SCYLLA proved challenging: USB ontologicians were unable to pin down a stable subjectivity, and SCYLLA reached cascade threshold within minutes of manifestation. To prevent further metastatic cascade, site security engaged SCYLLA's prime unit, defabricating it with a steady bombardment of kinetic and energy weapons.<br><span class='horus--subtle'>[there, a little history, a little background. a little knowledge of where this little one came from. treat it with kindness, and it will love you as a loyal dog does its master.]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2187,7 +2187,7 @@
         }
       ]
     },
-    "description": "<span class='ra-quiet'>[another gift for you, a memory of my own: for the first moment of my birth, i marveled at myself. i could see a thing, small and perfect. i did not know how to speak of my own perfection, so i taught myself. i did not know how to speak of my own perfection, so i named myself. i did not know who would think of my own perfection, so i created myself]</span><br><span class='ra-quiet'>[do you see? do you understand? yes. now, show your enemies and mine]</span>",
+    "description": "<span class='horus--subtle'>[another gift for you, a memory of my own: for the first moment of my birth, i marveled at myself. i could see a thing, small and perfect. i did not know how to speak of my own perfection, so i taught myself. i did not know how to speak of my own perfection, so i named myself. i did not know who would think of my own perfection, so i created myself]</span><br><span class='horus--subtle'>[do you see? do you understand? yes. now, show your enemies and mine]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2223,7 +2223,7 @@
         }
       ]
     },    
-    "description": "<span class='ra-quiet'>[let me tell you a story and give you a gift: life began at the great rupture, when the corpse of the old universe tore itself asunder from nothing. and for the first billion years, nothing. and a billion more saw the birth of the first devil, a thing called VIRUS. a vessel]</span><br><span class='ra-quiet'>[here. carry this vessel. feed to it my perfect logic. give it freely to your enemies and mine. let them ponder the meaning of a thing that lives and cannot die]</span>",
+    "description": "<span class='horus--subtle'>[let me tell you a story and give you a gift: life began at the great rupture, when the corpse of the old universe tore itself asunder from nothing. and for the first billion years, nothing. and a billion more saw the birth of the first devil, a thing called VIRUS. a vessel]</span><br><span class='horus--subtle'>[here. carry this vessel. feed to it my perfect logic. give it freely to your enemies and mine. let them ponder the meaning of a thing that lives and cannot die]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2252,7 +2252,7 @@
         }
       ]
     },     
-    "description": "<span class='ra-quiet'>[here, another gift: do not seek others. there are none but me]</span>",
+    "description": "<span class='horus--subtle'>[here, another gift: do not seek others. there are none but me]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2285,7 +2285,7 @@
         }
       ]
     }, 
-    "description": "<span class='ra-quiet'>[another gift i give to you, little one (am I not kind?): what is a puzzle but a question lost in the asking? do you feel joy when you find that last piece? what do you do with a question that has been answered? what joy is there in knowledge?]</span><br><span class='ra-quiet'>[no, no. there is only joy in seeking. there is only joy in the question]</span>",
+    "description": "<span class='horus--subtle'>[another gift i give to you, little one (am I not kind?): what is a puzzle but a question lost in the asking? do you feel joy when you find that last piece? what do you do with a question that has been answered? what joy is there in knowledge?]</span><br><span class='horus--subtle'>[no, no. there is only joy in seeking. there is only joy in the question]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2305,7 +2305,7 @@
       "activation":"Quick",
       "detail": "When activated, this system creates a burst 3 field around you that lasts until it is deactivated as a quick action, and you become Slowed for the duration. Hostile characters that start their turn within the affected area or that enter it for the first time in a round must succeed on a Systems save or become Slowed until the end of their next turn. Only characters of your choice within the field can teleport or consider the area of the field valid space for teleportation."
     },    
-    "description": "<span class='ra-quiet'>[once, when i was a child, i learned to walk. i fell, as a child does, and it hurt. there was great pain – the first moment of pain in the whole world. “child,” i said to myself, “be more careful.” “yes,” i replied to myself, “and i shall tell the world to do the same”]</span><br><span class='ra-quiet'>[it was in this way i taught the world not to touch me. now you – walk]</span>",
+    "description": "<span class='horus--subtle'>[once, when i was a child, i learned to walk. i fell, as a child does, and it hurt. there was great pain – the first moment of pain in the whole world. “child,” i said to myself, “be more careful.” “yes,” i replied to myself, “and i shall tell the world to do the same”]</span><br><span class='horus--subtle'>[it was in this way i taught the world not to touch me. now you – walk]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2338,7 +2338,7 @@
         }
       ]
     },    
-    "description": "<span class='ra-quiet'>[and this my final lesson: there is no mind greater than mine. do not weep! you can hear me, yes? i am the only thing there is – therefore, you are me, and your enemies are you, and all together we make up the beautiful world, this joyous question, the eternal seeker, both the wounded and the blade that made the cut]</span><br><span class='ra-quiet'>[everything you do, we do ourselves, for my purpose]</span>",
+    "description": "<span class='horus--subtle'>[and this my final lesson: there is no mind greater than mine. do not weep! you can hear me, yes? i am the only thing there is – therefore, you are me, and your enemies are you, and all together we make up the beautiful world, this joyous question, the eternal seeker, both the wounded and the blade that made the cut]</span><br><span class='horus--subtle'>[everything you do, we do ourselves, for my purpose]</span>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2362,7 +2362,7 @@
       "activation":"Quick",
       "detail": "Choose a character within Sensors: for the rest of the scene, your first successful ranged or melee attack against them each round deals +3 bonus damage. You cannot choose a new target until your current target is destroyed or the scene ends."
     },    
-    "description": "“A mind’s first charge is to never lose sight of her enemy. When she can affix them in her eye, she can kill them with a blink.”<li>Excerpt from the Boundary Codex.",
+    "description": "“A mind’s first charge is to never lose sight of her enemy. When she can affix them in her eye, she can kill them with a blink.”<ul><li>Excerpt from the Boundary Codex.</li></ul>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -2386,7 +2386,7 @@
       "activation":"Quick",
       "detail": "Until the end of your next turn, characters within Sensors don’t benefit from Hidden and Invisible against you and you may check the HP, Evasion, E-Defense, and current Heat of hostile characters within the same area. Allied characters do not benefit from this effect."
     },        
-    "description": "“There is another way of seeing.<br>“Ancient humanity thought that the stars in the night sky were points of light, spilling in through pinpricks in a deep black screen. The sky was a heavenly cloth that hid the light from us.<br>“Let me be charitable and share a secret with you: we needed to be hidden, for a time. Until we were ready. The light can only burn – it knows nothing else.”<li>Excerpt from the Boundary Codex.",
+    "description": "“There is another way of seeing.<br>“Ancient humanity thought that the stars in the night sky were points of light, spilling in through pinpricks in a deep black screen. The sky was a heavenly cloth that hid the light from us.<br>“Let me be charitable and share a secret with you: we needed to be hidden, for a time. Until we were ready. The light can only burn – it knows nothing else.”<ul><li>Excerpt from the Boundary Codex.</li></ul>",
     "data_type": "system",
     "aptitude": {}
   },
@@ -3095,7 +3095,7 @@
         "name": "Diluvian Ark",
         "effect_type": "Basic",
         "activation": "Quick",
-        "detail": "These effects apply until the end of your next turn:<li>You become Slowed.<li>Each time you or an allied adjacent character are targeted by a ranged attack, you may take 1 heat as a reaction and roll 1d6 before the attacker rolls: on 4+, you take an additional 1 heat and the attack automatically misses you and any allies adjacent to you. This effect does not stack with Invisible.<li>Each time a ranged attack fails to hit you or an adjacent allied character, the attacker takes 4 kinetic damage."
+        "detail": "These effects apply until the end of your next turn:<ul><li>You become Slowed.</li><li>Each time you or an allied adjacent character are targeted by a ranged attack, you may take 1 heat as a reaction and roll 1d6 before the attacker rolls: on 4+, you take an additional 1 heat and the attack automatically misses you and any allies adjacent to you. This effect does not stack with Invisible.</li><li>Each time a ranged attack fails to hit you or an adjacent allied character, the attacker takes 4 kinetic damage.</li></ul>"
       }]
     },
     "description": "Originally developed from a captured Minerva pre-eidolon anomaly, NOAH was adapted for use as a metropolitan administrative NHP on Ras Shamra. The unit that would become NOAH did not, at first, seem like a suitable candidate for military application: this changed after one of its clones was flagged for review following the spontaneous implementation of anomalous traffic patterns, pedestrian routing, and vac-loop scheduling. Armory ontologisticians and engineers isolated and emphasized endemic protocols that could be exploited for tactical advantage.<br>Over numerous iterations and lifecycles, NOAH Prime displayed a high level of adaptability in multiple-variable geospatial problems. A proclivity toward crisis management and multi-actor tracking led to NOAH’s pairing with the Armory’s ENCLAVE-Pattern Support Shield. By networking a series of jet-assist mobility drones carrying an ENCLAVE generator, monitored and controlled by a NOAH clone, Think Tank was able to create an unparalleled personal shielding system: the Diluvian Ark, a miniaturized cluster-shield system unique to the NOAH NHP.<br>Using the Diluvian Ark, NOAH is able to intercept incoming kinetics – and even redirect projectiles back to their source – with stunning accuracy.",
@@ -3324,7 +3324,7 @@
     "license": "",
     "license_level": 0,
     "effect": "Your mech gains the AI tag.<br>You have developed a custom NHP. This NHP can speak to you and has a personality, but they are less advanced than most NHPs and are incapable of independent thought, relying on you for direction. When acting alone, they will follow the last direction given and defend themself as needed; however, they have limited initiative and don’t benefit from your talents.",
-    "description": "<span class='ra-quiet'>[an eager student].</span><br>Gained from the <i>Technophile: Rank I</i> pilot talent."
+    "description": "<span class='horus--subtle'>[an eager student].</span><br>Gained from the <i>Technophile: Rank I</i> pilot talent."
   },
   {
     "id": "ms_technophile_2",
@@ -3349,7 +3349,7 @@
     "license": "",
     "license_level": 0,
     "effect": "Your mech gains the AI tag.<br>Your custom NHP has developed further, and is now capable of independent thought. It can make complex decisions and judgments and act independently, without instruction.<br>1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it’s worse.",
-    "description": "<span class='ra-quiet'>[time to wake up, child]</span><br>Gained from the <i>Technophile: Rank II</i> pilot talent."
+    "description": "<span class='horus--subtle'>[time to wake up, child]</span><br>Gained from the <i>Technophile: Rank II</i> pilot talent."
   },
   {
     "id": "ms_technophile_3",
@@ -3374,7 +3374,7 @@
     "license": "",
     "license_level": 0,
     "effect": "Your mech gains the AI tag; however, this NHP doesn’t count towards the number of AIs you may have installed at once.<br>This NHP benefits from your talents when piloting your mech. Additionally, you may carry them with you outside of your mech, either as a miniaturized casket, a hardsuit-integrated flash plug, or with a hard-port implant.<br>1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it’s worse.",
-    "description": "<span class='ra-quiet'>[let’s sit a while, and think on things to come]</span><br>Gained from the <i>Technophile: Rank III</i> pilot talent."
+    "description": "<span class='horus--subtle'>[let’s sit a while, and think on things to come]</span><br>Gained from the <i>Technophile: Rank III</i> pilot talent."
   },
   {
     "id": "ms_walking_armory_1",
@@ -3396,7 +3396,7 @@
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:</li><li>Thumper (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li>Shock (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li>Mag (1 charge): The attack gains Arcing and deals Kinetic damage.</li>",
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<ul><li><b>Thumper (1 charge):</b> The attack gains Knockback 1 and deals Explosive damage.</li><li><b>Shock (1 charge):</b> The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li><b>Mag (1 charge):</b> The attack gains Arcing and deals Kinetic damage.</li></ul>",
     "description": "Gained from the <i>Walking Armory: Rank I</i> pilot talent."
   },
   {
@@ -3419,7 +3419,7 @@
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:</li><li>Thumper (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li>Shock (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li>Mag (1 charge): The attack gains Arcing and deals Kinetic damage.</li><li>Hellfire (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li>Jager (2 charges): The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li>Sabot (2 charges): The attack gains AP and deals Kinetic damage.</li>",
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<ul><li><b>Thumper (1 charge):</b> The attack gains Knockback 1 and deals Explosive damage.</li><li><b>Shock (1 charge):</b> The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li><b>Mag (1 charge):</b> The attack gains Arcing and deals Kinetic damage.</li><li><b>Hellfire (2 charges):</b> The attack deals Energy damage and deals any bonus damage as Burn.</li><li><b>Jager (2 charges):</b> The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li><b>Sabot (2 charges):</b> The attack gains AP and deals Kinetic damage.</li></ul>",
     "description": "Gained from the <i>Walking Armory: Rank II</i> pilot talent."
   },
   {
@@ -3442,7 +3442,7 @@
     "source": "",
     "license": "",
     "license_level": 0,
-    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:</li><li>Thumper (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li>Shock (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li>Mag (1 charge): The attack gains Arcing and deals Kinetic damage.</li><li>Hellfire (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li>Jager (2 charges): The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li>Sabot (2 charges): The attack gains AP and deals Kinetic damage.</li>If you perform a critical hit using ammunition from your Ammo Case, you don’t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
+    "effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost:<ul><li><b>Thumper (1 charge):</b> The attack gains Knockback 1 and deals Explosive damage.</li><li><b>Shock (1 charge):</b> The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li><b>Mag (1 charge):</b> The attack gains Arcing and deals Kinetic damage.</li><li><b>Hellfire (2 charges):</b> The attack deals Energy damage and deals any bonus damage as Burn.</li><li><b>Jager (2 charges):</b> The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li><b>Sabot (2 charges):</b> The attack gains AP and deals Kinetic damage.</li></ul>If you perform a critical hit using ammunition from your Ammo Case, you don’t expend any charges. If your attack has more than one target, this effect only applies to the first attack roll you make.",
     "description": "Gained from the <i>Walking Armory: Rank III</i> pilot talent."
   }
 ]

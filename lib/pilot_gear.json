@@ -294,7 +294,7 @@
     "id": "pg_frag_grenades",
     "name": "FRAG GRENADES",
     "type": "gear",
-    "description": "Expend a charge for the following effect:<li>Frag Grenade (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.",
+    "description": "Expend a charge for the following effect:<ul><li><b>Frag Grenade</b> (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.</li></ul>",
     "tags": [
       {
         "id": "tg_gear"
@@ -329,7 +329,7 @@
     "id": "pg_stims",
     "name": "STIMS",
     "type": "gear",
-    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<li>Kick: Keeps a pilot awake and alert for up to 30 hours.<li>Freeze: Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.<li>Juice: Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.",
+    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
     "tags": [
       {
         "id": "tg_gear"
@@ -348,7 +348,7 @@
     "id": "pg_thermite_charge",
     "name": "THERMITE CHARGE",
     "type": "gear",
-    "description": "Expend a charge for the following effect:<li>Thermite Charge (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
+    "description": "Expend a charge for the following effect:<ul><li><b>Thermite Charge</b> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.</li></ul>",
     "tags": [
       {
         "id": "tg_gear"
