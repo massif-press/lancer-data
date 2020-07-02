@@ -157,14 +157,14 @@
       },
       {
         "name": "Guardian",
-        "description": "Allied characters can use the Drake for hard cover."
+        "description": "Adjacent allied characters can use the Drake for hard cover."
       }
     ],
     "core_system": {
       "name": "FORTRESS",
       "description": "",
       "active_name": "Fortress Protocol",
-      "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:<li>You become Immobilized.<li>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.<li>When you Brace, you may take a full action on your next turn instead of just a quick action.<li>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.<br>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
+      "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:<ul><li>You become Immobilized.</li><li>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</li><li>When you Brace, you may take a full action on your next turn instead of just a quick action.</li><li>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</li></ul>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
       "tags": [
         {
           "id": "tg_protocol"
@@ -265,7 +265,7 @@
       },
       {
         "name": "Skirmisher",
-        "description": "After attacking, the Nelson can move 1 space in any direction as a free action as long as it isn’t Immobilized or Slowed. This movement ignores engagement and doesn’t provoke reactions."
+        "description": "After attacking, the Nelson can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions."
       }
     ],
     "core_system": {
@@ -372,14 +372,14 @@
       },
       {
         "name": "Guardian",
-        "description": "Allied characters can use the Tortuga for hard cover."
+        "description": "Adjacent allied characters can use the Tortuga for hard cover."
       }
     ],
     "core_system": {
       "name": "WATCHDOG co-pilot",
       "description": "IPS-N security teams are no strangers to the dangers of ship-to-ship or ship-to-station boarding actions. Tight corridors, unstable gravity, dark environments, hard vacuum, and the potential dual threat of both organic and inorganic opposition make boarding actions some of the most statistically deadly engagement – according to IPS-N’s internal metrics, even the winning side should expect at least 30% casualties.Hoping to lessen the cognitive burden on pilots and any NHPs or comp/cons installed in their chassis, IPS-N developed the WATCHDOG co-pilot. The WATCHDOG is a simple subsentient partition: a flash-homunculus of aggregated intelligence generated from thousands of after-action reports from boarding actions, debriefings, and volunteer donors. Not an NHP, nor even a comp/con, the WATCHDOG is a robust tactical program similar to a smart weapon. That said, its ability to operate without cycling presents certain advantages: namely, these co-pilots have some capacity to learn and make best-guess predictions based on analysis of their pilots. WATCHDOGs tend to have plain personalities – to whatever extend they can be said to have one – and are a favorite of pilots looking for a no-nonsense attitude and crisp, efficient counsel.<br>The WATCHDOG system is currently under review by a joint USB/UDoJ-HR commission, but there has been no formal stay on production yet issued.",
       "active_name": "Hyper-Reflex Mode",
-      "active_effect": "For the rest of this scene:<li>If you have less than threat 3 with a ranged weapon, it increases to 3.<li>1/round, you may take an additional Overwatch reaction.<li>Any character you hit with Overwatch becomes Immobilized until the end of their next turn.",
+      "active_effect": "For the rest of this scene:<ul><li>If you have less than threat 3 with a ranged weapon, it increases to 3.</li><li>1/round, you may take an additional Overwatch reaction.</li><li>Any character you hit with Overwatch becomes Immobilized until the end of their next turn.</li></ul>",
       "tags": [
         {
           "id": "tg_protocol"
@@ -489,7 +489,7 @@
       "name": "Magnetic Field Projector",
       "description": "Magnetic field generators are a portable and field-deployable variation on typical magnetic defense technologies. When activated, they create a magnetic bubble that traps all incoming ferrous projectiles. The strength of the field is so great that it can even draw mechs to its center. When the field is dispersed or its solid-state battery burns out – a feature, not a flaw – the field undergoes a sudden catastrophic implosion, drawing all captured projectiles to a point at the center of the bubble.",
       "active_name": "Mag Field",
-      "active_effect": "This system projects a blast 3 magnetic field with at least one space adjacent to you, causing the following effects until the end of your next turn:<li>The affected area is difficult terrain.<li>Ranged attacks that deal kinetic or explosive can’t enter or leave the affected area – projectiles stop at the edge, doing no damage. Record each attack stopped this way.<li>Mechs and other characters made at least partly of metal that start their turn in the affected area or enter it for the first time in a round must succeed on a Hull save or be pulled as close to the center as possible and become Immobilized.<br>When the effect ends, any ranged attacks that were stopped resume their trajectory – toward the center of the affected area. The GM rolls attacks against each character within, gaining +1 per blocked attack (to a maximum of +6). On hit, these attacks deal 1d6 kinetic damage per blocked attack (to a maximum of 6d6 kinetic damage).",
+      "active_effect": "This system projects a blast 3 magnetic field with at least one space adjacent to you, causing the following effects until the end of your next turn:<ul><li>The affected area is difficult terrain.</li><li>Ranged attacks that deal kinetic or explosive can’t enter or leave the affected area – projectiles stop at the edge, doing no damage. Record each attack stopped this way.</li><li>Mechs and other characters made at least partly of metal that start their turn in the affected area or enter it for the first time in a round must succeed on a Hull save or be pulled as close to the center as possible and become Immobilized.</li></ul>When the effect ends, any ranged attacks that were stopped resume their trajectory – toward the center of the affected area. The GM rolls attacks against each character within, gaining +1 per blocked attack (to a maximum of +6). On hit, these attacks deal 1d6 kinetic damage per blocked attack (to a maximum of 6d6 kinetic damage).",
       "tags": [
         {
           "id": "tg_full_action"
@@ -863,7 +863,7 @@
       "name": "Hellswarm",
       "description": "In a moment, with aught but desire, the pilot of a Balor may quick-print a cloak comprised of countless minuscule drones: a hellswarm cloak – living shield and fluid-dynamic knife, cutting and guarding, in one shimmering wave. They become Hivemaster, and their will is obeyed by millions.",
       "active_name": "Hive Frenzy",
-      "active_effect": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<li>You and adjacent allies gain soft cover.<li>Scouring Swarm deals 4 kinetic, instead of 2.<li>Regeneration restores 1/2 of your total HP, instead of 1/4.<li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.<li>You become Shredded and cannot clear this condition for the duration.",
+      "active_effect": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<ul><li>You and adjacent allies gain soft cover.</li><li>Scouring Swarm deals 4 kinetic, instead of 2.</li><li>Regeneration restores 1/2 of your total HP, instead of 1/4.</li><li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.</li><li>You become Shredded and cannot clear this condition for the duration.</li></ul>",
       "tags": [
         {
           "id": "tg_protocol"
@@ -967,7 +967,7 @@
       },
       {
         "name": "GUARDIAN",
-        "description": "Allied characters may use the Gorgon for hard cover."
+        "description": "Adjacent allied characters may use the Gorgon for hard cover."
       }
     ],
     "core_system": {
@@ -1033,7 +1033,7 @@
         }
       ],
       "passive_name": "OROCHI Drones",
-      "passive_effect": "Orochi Drone (Size 1/2, [5+Grit] HP, Evasion/E-Defense [see below], Tags: Drone)<br>Your mech contains powerful, integrated drone companions. At creation, choose a single Drone to accompany you from the following:<li>Guardian Drone: This drone projects a shield. Ranged attacks against adjacent allied characters receive +1 difficulty.<li>Snare Drone: As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make an Agility save. On a failure, they become Immobilized. They only cease to be Immobilized when the drone is destroyed or no longer adjacent, or they succeed on an Agility save as a quick action.<li>Shredder Drone: As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Hull save. On a failure, they take 1 kinetic damage and become Shredded until the end of their next turn.<li>Hunter Drone: As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Systems save. On a failure, they receive Lock On.<br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action.<br>When you rest or perform a Full Repair, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."
+      "passive_effect": "<b>Orochi Drone</b> (Size 1/2, [5+Grit] HP, Evasion/E-Defense [see below], Tags: Drone)<br>Your mech contains powerful, integrated drone companions. At creation, choose a single Drone to accompany you from the following:<ul><li><b>Guardian Drone:</b> This drone projects a shield. Ranged attacks against adjacent allied characters receive +1 difficulty.</li><li><b>Snare Drone:</b> As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make an Agility save. On a failure, they become Immobilized. They only cease to be Immobilized when the drone is destroyed or no longer adjacent, or they succeed on an Agility save as a quick action.</li><li><b>Shredder Drone:</b> As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Hull save. On a failure, they take 1 kinetic damage and become Shredded until the end of their next turn.</li><li><b>Hunter Drone:</b> As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Systems save. On a failure, they receive Lock On.</li></ul>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action.<br>When you rest or perform a Full Repair, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."
     },
     "data_type": "frame",
     "aptitude": {}
@@ -1253,7 +1253,7 @@
       },
       {
         "name": "Colossus",
-        "description": "Allied characters can use the Barbarossa for hard cover."
+        "description": "Adjacent allied characters can use the Barbarossa for hard cover."
       },
       {
         "name": "Slow",
@@ -1434,7 +1434,7 @@
       "name": "Trueblack Aegis",
       "description": "The Trueblack Aegis is a breakthrough in personal shielding developed by the Armory’s Think Tank. Like the Armory’s other NHP-derived technologies, the Aegis is a “black-box” technology: its code and inner workings are highly confidential, and it can typically only be requisitioned by pilots of high rank or standing within Harrison Armory. Some Cosmopolitan pilots have described the appearance of the Aegis as similar to the void – or blindness – they see when looking into blinkspace. It’s safe to assume the device harnesses unstable blinkfield technology to manifest a thin blinkspace bubble within defined parameters. The blinkfield can only maintain coherence for a brief moment but can be flickered on and off to create a total blinkspace dome.",
       "active_name": "Activate Aegis",
-      "active_effect": "A shimmering, utterly black field quickly envelops your mech, covering it like a second skin. For the rest of the scene, you:<li>reduce all damage to 1, except for damage that ignores reduction;<li>gain Immunity to all tech actions, including beneficial ones, and any current tech effects or conditions on you end;<li>can only use systems with the Shield tag – any others immediately deactivate (systems that do not require activation are unaffected);<li>can’t take quick actions, full actions, or reactions, except for standard moves, Grapple, Ram, Improvised Attack, Activate (Shield systems only), Skill Check, and Boost;<li>can’t Overcharge;<li>can’t use comms to talk to other characters (as sound doesn’t exit the shield).<br>You can still receive statuses and heat, and can be affected by involuntary movement. You can otherwise interact normally with the world, including picking up and dragging items, and so on.",
+      "active_effect": "A shimmering, utterly black field quickly envelops your mech, covering it like a second skin. For the rest of the scene, you:<ul><li>reduce all damage to 1, except for damage that ignores reduction;</li><li>gain Immunity to all tech actions, including beneficial ones, and any current tech effects or conditions on you end;</li><li>can only use systems with the Shield tag – any others immediately deactivate (systems that do not require activation are unaffected);</li><li>can’t take quick actions, full actions, or reactions, except for standard moves, Grapple, Ram, Improvised Attack, Activate (Shield systems only), Skill Check, and Boost;</li><li>can’t Overchage;</li><li>can’t use comms to talk to other characters (as sound doesn’t exit the shield).</li></ul>You can still receive statuses and Heat, and can be affected by involuntary movement. You can otherwise interact normally with the world, including picking up and dragging items, and so on.",
       "tags": [
         {
           "id": "tg_quick_action"
@@ -1477,7 +1477,7 @@
       },
       {
         "name": "Guardian",
-        "description": "Allied characters can use the Saladin for hard cover."
+        "description": "Adjacent allied characters can use the Saladin for hard cover."
       },
       {
         "name": "Warp Shield",

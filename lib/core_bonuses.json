@@ -90,7 +90,7 @@
     "id": "cb_all_theater_movement_suite",
     "name": "ALL-THEATER MOVEMENT SUITE",
     "source": "SSC",
-    "effect": "You can fly when you Boost or make a standard move; however, you take 1 heat at the end of each of your turns in which you fly this way.",
+    "effect": "You may choose to count any and all of your movement as flying; however, you take 1 Heat at the end of each of your turns in which you fly this way.",
     "description": "A popular modification, ATMS adds powerful pulse jets that dramatically improve mech mobility in all theaters."
   },
   {
