@@ -286,7 +286,7 @@
       },
       {
         "name": "MACHINE BOND",
-        "description": "When you Stabilize, you clear Impaired, Jammed, Immobilized, Slowed, and Lock On."
+        "description": "When you STABILIZE, you clear all IMPAIRED, JAMMED, IMMOBILIZED, SLOWED, and LOCK ON conditions that weren’t caused by your own systems, talents, etc."
       },
       {
         "name": "FRIENDS IN HIGH PLACES",
