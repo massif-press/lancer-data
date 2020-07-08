@@ -1,10 +1,38 @@
 [
   {
     "id": "reserve_skill",
-    "name": "Skill",
-    "type": "Resources",
-    "label": "Resource",
-    "description": "Gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action."
+    "name": "Skill Point",
+    "type": "Bonuses",
+    "label": "Bonus",
+    "description": "Add a Skill Point to gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action."
+  },
+  {
+    "id": "reserve_mechskill",
+    "name": "Mech Skill Point",
+    "type": "Bonuses",
+    "label": "Bonus",
+    "description": "Add a Mech Skill Point to add to your Pilot's HULL, AGILITY, SYSTEMS, or ENGINEERING rating."
+  },
+  {
+    "id": "reserve_talent",
+    "name": "Talent Point",
+    "type": "Bonuses",
+    "label": "Bonus",
+    "description": "Add a Talent Point to gain or improve a Pilot Talent."
+  },
+  {
+    "id": "reserve_license",
+    "name": "License Point",
+    "type": "Bonuses",
+    "label": "Bonus",
+    "description": "Add a License Point to advance or unlock a new License."
+  },
+  {
+    "id": "reserve_corebonus",
+    "name": "Extra CORE Bonus",
+    "type": "Bonuses",
+    "label": "Bonus",
+    "description": "Add an additional CORE Bonus."
   },
   {
     "id": "reserve_access",
