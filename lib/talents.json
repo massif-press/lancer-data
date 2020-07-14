@@ -44,7 +44,13 @@
     "ranks": [
       {
         "name": "HOLD AND LOCK",
-        "description": "You gain +1 Accuracy on all melee attacks against targets you are Grappling."
+        "description": "You gain +1 Accuracy on all melee attacks against targets you are Grappling.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["any"],
+          "detail": "Gain +1 Accuracy on all melee made with this weapon against targets you are Grappling."
+        }
       },
       {
         "name": "SLEDGEHAMMER",
@@ -73,15 +79,33 @@
     "ranks": [
       {
         "name": "PREDATOR",
-        "description": "When you roll a 20 on a die for any attack (sometimes called a ‘natural 20’) and critical hit, you deal the maximum possible damage and bonus damage."
+        "description": "When you roll a 20 on a die for any attack (sometimes called a ‘natural 20’) and critical hit, you deal the maximum possible damage and bonus damage.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "Deal the maximum possible damage on a critical hit."
+        }
       },
       {
         "name": "CULL THE HERD",
-        "description": "Your critical hits gain Knockback 1."
+        "description": "Your critical hits gain Knockback 1.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "Inflict Knockback 1 on a critical hit."
+        }
       },
       {
         "name": "RELENTLESS",
-        "description": "When you make an attack roll and miss, your next attack roll gains +1 Accuracy. This effect stacks and persists until you hit."
+        "description": "When you make an attack roll and miss, your next attack roll gains +1 Accuracy. This effect stacks and persists until you hit.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "On a and miss, your next attack roll gains +1 Accuracy. This effect stacks and persists until you hit."
+        }
       }
     ]
   },
@@ -92,15 +116,33 @@
     "ranks": [
       {
         "name": "STABLE, STEADY",
-        "description": "As a protocol, you may steady your aim. If you do, you become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with Rifles."
+        "description": "As a protocol, you may steady your aim. If you do, you become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with Rifles.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Rifle"],
+          "sizes": ["any"],
+          "detail": "As a protocol, you may steady your aim. If you do, you become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with this weapon."
+        }
       },
       {
         "name": "ZERO IN",
-        "description": "1/round, while steadying your aim and making a ranged attack with a Rifle, you can attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit."
+        "description": "1/round, while steadying your aim and making a ranged attack with a Rifle, you can attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Rifle"],
+          "sizes": ["any"],
+          "detail": "1/round, while steadying your aim and making a ranged attack with this weapon, you can attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit"
+        }
       },
       {
         "name": "WATCH THIS",
-        "description": "1/round, when you perform a critical hit with a Rifle while steadying your aim, your target must pass a Hull save or you may choose an additional effect for your attack:<ul><li><b>Headshot:</b> They only have line of sight to adjacent spaces until the end of their next turn.</li><li><b>Leg shot:</b> They become Immobilized until the end of their next turn.</li><li><b>Body shot:</b> They are knocked Prone.</li></ul>"
+        "description": "1/round, when you perform a critical hit with a Rifle while steadying your aim, your target must pass a Hull save or you may choose an additional effect for your attack:<ul><li><b>Headshot:</b> They only have line of sight to adjacent spaces until the end of their next turn.</li><li><b>Leg shot:</b> They become Immobilized until the end of their next turn.</li><li><b>Body shot:</b> They are knocked Prone.</li></ul>",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Rifle"],
+          "sizes": ["any"],
+          "detail": "1/round, when you perform a critical hit with this weapon while steadying your aim, your target must pass a Hull save or you may choose an additional effect for your attack:<ul><li><b>Headshot:</b> They only have line of sight to adjacent spaces until the end of their next turn.</li><li><b>Leg shot:</b> They become Immobilized until the end of their next turn.</li><li><b>Body shot:</b> They are knocked Prone.</li></ul>"
+        }
       }
     ]
   },
@@ -111,15 +153,33 @@
     "ranks": [
       {
         "name": "TEN THOUSAND TEETH",
-        "description": "1/round, when you perform a critical hit with a Nexus, your target must pass a Systems save or become Impaired and Slowed until the end of their next turn."
+        "description": "1/round, when you perform a critical hit with a Nexus, your target must pass a Systems save or become Impaired and Slowed until the end of their next turn.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Nexus"],
+          "sizes": ["any"],
+          "detail": "1/round, when you perform a critical hit with this weapon, your target must pass a Systems save or become Impaired and Slowed until the end of their next turn."
+        }
       },
       {
         "name": "EXPOSE WEAKNESS",
-        "description": "When you consume Lock On as part of an attack with a Nexus or Drone and perform a critical hit, your target becomes Shredded until the start of your next turn."
+        "description": "When you consume Lock On as part of an attack with a Nexus or Drone and perform a critical hit, your target becomes Shredded until the start of your next turn.",
+        "synergy": {
+          "locations": ["weapon", "system"],
+          "types": ["Nexus", "Drone"],
+          "sizes": ["any"],
+          "detail": "When you consume Lock On as part of an attack with this weapon and perform a critical hit, your target becomes Shredded until the start of your next turn."
+        }
       },
       {
         "name": "TIDAL SUPPRESSION",
-        "description": "This replaces Ten Thousand Teeth.<br>1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or you may choose an additional effect for your attack that lasts until the end of their next turn:<ul><li><b>Harrying Swarm:</b> They become Impaired and Slowed.</li><li><b>Blinding Swarm:</b> They only have line of sight to adjacent squares.</li><li><b>Virulent Swarm:</b> They become Shredded. Any adjacent characters of your choice must also make a Systems save or become Shredded.</li><li><b>Restricting Swarm:</b> They take 1 Burn each time they take an action or reaction.</li></ul>"
+        "description": "This replaces Ten Thousand Teeth.<br>1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or you may choose an additional effect for your attack that lasts until the end of their next turn:<ul><li><b>Harrying Swarm:</b> They become Impaired and Slowed.</li><li><b>Blinding Swarm:</b> They only have line of sight to adjacent squares.</li><li><b>Virulent Swarm:</b> They become Shredded. Any adjacent characters of your choice must also make a Systems save or become Shredded.</li><li><b>Restricting Swarm:</b> They take 1 Burn each time they take an action or reaction.</li></ul>",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Nexus"],
+          "sizes": ["any"],
+          "detail": "This replaces Ten Thousand Teeth.<br>1/round, when you perform a critical hit with this weapon, your target must succeed on a Systems save or you may choose an additional effect for your attack that lasts until the end of their next turn:<ul><li><b>Harrying Swarm:</b> They become Impaired and Slowed.</li><li><b>Blinding Swarm:</b> They only have line of sight to adjacent squares.</li><li><b>Virulent Swarm:</b> They become Shredded. Any adjacent characters of your choice must also make a Systems save or become Shredded.</li><li><b>Restricting Swarm:</b> They take 1 Burn each time they take an action or reaction.</li></ul>"
+        }
       }
     ]
   },
@@ -138,7 +198,13 @@
       },
       {
         "name": "STORM OF VIOLENCE",
-        "description": "Whenever you hit a character with a melee attack, you gain +1 Accuracy on your next ranged attack against them; and, whenever you hit a character with a ranged attack, you gain +1 Accuracy on your next melee attack against them. This effect doesn’t stack."
+        "description": "Whenever you hit a character with a melee attack, you gain +1 Accuracy on your next ranged attack against them; and, whenever you hit a character with a ranged attack, you gain +1 Accuracy on your next melee attack against them. This effect doesn’t stack.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "Whenever you hit a character with a melee attack, you gain +1 Accuracy on your next ranged attack against them; and, whenever you hit a character with a ranged attack, you gain +1 Accuracy on your next melee attack against them. This effect doesn’t stack."
+        }
       }
     ]
   },
@@ -149,15 +215,33 @@
     "ranks": [
       {
         "name": "PARTISAN",
-        "description": "Gain +1 Accuracy on the first melee attack you make with a Main Melee weapon on your turn."
+        "description": "Gain +1 Accuracy on the first melee attack you make with a Main Melee weapon on your turn.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["Main"],
+          "detail": "Gain +1 Accuracy on the first melee attack you make with a Main Melee weapon on your turn."
+        }
       },
       {
         "name": "BLADEMASTER",
-        "description": "1/round, when you hit with a Main Melee weapon, you gain 1 Blademaster Die – a d6 – up to a maximum of 3 Blademaster Die. They last until expended or the current scene ends. You can expend Blademaster Dice 1-for-1 for the following:<ul><li><b>Parry:</b> As a reaction when you’re hit by a melee attack, you gain Resistance to all damage, heat, and burn dealt by the attack.</li><li><b>Deflect:</b> As a reaction when you’re hit by a ranged attack, you may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack.</li><li><b>Feint:</b> As a free action, choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn.</li><li><b>Trip:</b> As a quick action, choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space.</li></ul>"
+        "description": "1/round, when you hit with a Main Melee weapon, you gain 1 Blademaster Die – a d6 – up to a maximum of 3 Blademaster Die. They last until expended or the current scene ends. You can expend Blademaster Dice 1-for-1 for the following:<ul><li><b>Parry:</b> As a reaction when you’re hit by a melee attack, you gain Resistance to all damage, heat, and burn dealt by the attack.</li><li><b>Deflect:</b> As a reaction when you’re hit by a ranged attack, you may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack.</li><li><b>Feint:</b> As a free action, choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn.</li><li><b>Trip:</b> As a quick action, choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space.</li></ul>",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["Main"],
+          "detail": "1/round, when you hit with a Main Melee weapon, gain 1 Blademaster Die."
+        }
       },
       {
         "name": "UNSTOPPABLE",
-        "description": "1/round, when you hit with a melee attack on your turn, you may spend a Blademaster Die to immediately Grapple or Ram your target as a free action after the attack has been resolved."
+        "description": "1/round, when you hit with a melee attack on your turn, you may spend a Blademaster Die to immediately Grapple or Ram your target as a free action after the attack has been resolved.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["any"],
+          "detail": "1/round, when you hit with this weapon on your turn, you may spend a Blademaster Die to immediately Grapple or Ram your target as a free action after the attack has been resolved."
+        }
       }
     ],
     "counters": [
@@ -177,15 +261,33 @@
     "ranks": [
       {
         "name": "SHEPHERD",
-        "description": "Your Drone systems gain +5 HP. As a protocol, you may move one Drone that you control and that is within Sensors up to 4 spaces."
+        "description": "Your Drone systems gain +5 HP. As a protocol, you may move one Drone that you control and that is within Sensors up to 4 spaces.",
+        "synergy": {
+          "locations": ["system"],
+          "types": ["Drone"],
+          "sizes": ["any"],
+          "detail": "This Drone system gains +5 HP. As a protocol, you may move one this drone up to 4 spaces if it is within Sensors."
+        }
       },
       {
         "name": "ENERGIZED SWARM",
-        "description": "1/round, when you make an attack that consumes the Lock On condition, your Drones immediately emit a vicious pulse of energy. All characters of your choice within Burst 1 areas centered on each of your drones take 1d6 Energy damage. Each character can only be affected by the pulse from one drone, even if the areas overlap."
+        "description": "1/round, when you make an attack that consumes the Lock On condition, your Drones immediately emit a vicious pulse of energy. All characters of your choice within Burst 1 areas centered on each of your drones take 1d6 Energy damage. Each character can only be affected by the pulse from one drone, even if the areas overlap.",
+        "synergy": {
+          "locations": ["system"],
+          "types": ["Drone"],
+          "sizes": ["any"],
+          "detail": "1/round, when you make an attack that consumes the Lock On condition, your Drones immediately emit a vicious pulse of energy. All characters of your choice within Burst 1 areas centered on each of your drones take 1d6 Energy damage. Each character can only be affected by the pulse from one drone, even if the areas overlap."
+        }
       },
       {
         "name": "INVIGORATE",
-        "description": "As a quick action, you may send a pulse of energy to an allied character (including Drones) within Range 3, drawing a Line to them. You may extend the pulse from your target to another allied character, extending the Line to them, as long as they are within Range 3, and you may continue extending the pulse (and Line) like this as long as you don’t target the same character twice. Allied characters who are used as pulse targets or are in the Line’s path gain 4 Overshield; hostile characters in the Line’s path take 2 Energy damage instead."
+        "description": "As a quick action, you may send a pulse of energy to an allied character (including Drones) within Range 3, drawing a Line to them. You may extend the pulse from your target to another allied character, extending the Line to them, as long as they are within Range 3, and you may continue extending the pulse (and Line) like this as long as you don’t target the same character twice. Allied characters who are used as pulse targets or are in the Line’s path gain 4 Overshield; hostile characters in the Line’s path take 2 Energy damage instead.",
+        "synergy": {
+          "locations": ["system"],
+          "types": ["Drone"],
+          "sizes": ["any"],
+          "detail": "As a quick action, you may send a pulse of energy to an allied character (including Drones) within Range 3, drawing a Line to them. You may extend the pulse from your target to another allied character, extending the Line to them, as long as they are within Range 3, and you may continue extending the pulse (and Line) like this as long as you don’t target the same character twice. Allied characters who are used as pulse targets or are in the Line’s path gain 4 Overshield; hostile characters in the Line’s path take 2 Energy damage instead."
+        }
       }
     ]
   },
@@ -215,15 +317,33 @@
     "ranks": [
       {
         "name": "BACKSWING CUT",
-        "description": "1/round, when you hit with a Heavy or Superheavy melee weapon, you can make another melee attack with the same weapon as a free action against a different character within Threat and line of sight. This attack deals half damage, if successful."
+        "description": "1/round, when you hit with a Heavy or Superheavy melee weapon, you can make another melee attack with the same weapon as a free action against a different character within Threat and line of sight. This attack deals half damage, if successful.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["Heavy", "Superheavy"],
+          "detail": "1/round, when you hit with this weapon, you can make another melee attack with this same weapon as a free action against a different character within Threat and line of sight. This attack deals half damage, if successful."
+        }
       },
       {
         "name": "WIDE ARC CLEAVE",
-        "description": "The first time in a round that you perform a critical hit with a Heavy or Superheavy melee weapon, you deal 3 Kinetic damage to all characters and objects of your choice within Threat, other than the one you just attacked."
+        "description": "The first time in a round that you perform a critical hit with a Heavy or Superheavy melee weapon, you deal 3 Kinetic damage to all characters and objects of your choice within Threat, other than the one you just attacked.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["Heavy", "Superheavy"],
+          "detail": "The first time in a round that you perform a critical hit with this or any other equipped Heavy or Superheavy melee weapon, you deal 3 Kinetic damage to all characters and objects of your choice within Threat, other than the one you just attacked."
+        }
       },
       {
         "name": "NO ESCAPE",
-        "description": "1/round, when you miss with a melee attack, you reroll it against a different target within Threat and line of sight."
+        "description": "1/round, when you miss with a melee attack, you reroll it against a different target within Threat and line of sight.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["any"],
+          "detail": "1/round, when you miss with a melee attack, you reroll it against a different target within Threat and line of sight."
+        }
       }
     ]
   },
@@ -253,7 +373,13 @@
     "ranks": [
       {
         "name": "OPENING ARGUMENT",
-        "description": "Gain +1 Accuracy on the first attack roll you make with an Auxiliary ranged weapon on your turn."
+        "description": "Gain +1 Accuracy on the first attack roll you make with an Auxiliary ranged weapon on your turn.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "sizes": ["Auxiliary"],
+          "detail": "Gain +1 Accuracy on the first attack roll you make with an Auxiliary ranged weapon on your turn."
+        }
       },
       {
         "name": "FROM THE HIP",
@@ -261,7 +387,13 @@
       },
       {
         "name": "I KILL WITH MY HEART",
-        "description": "You gain a Gunslinger Die, 1d6 starting at 6. Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair."
+        "description": "You gain a Gunslinger Die, 1d6 starting at 6. Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "sizes": ["Auxiliary"],
+          "detail": "Each time you hit with an this weapon, reduce the value of the Gunslinger Die by 1"
+        }
       }
     ],
     "counters": [
@@ -339,15 +471,33 @@
     "ranks": [
       {
         "name": "LUNGE",
-        "description": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly toward a character before the attack. This movement ignores engagement and doesn’t provoke reactions."
+        "description": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly towards the targeted character before the attack. This movement ignores engagement and doesn’t provoke reactions.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["Auxiliary"],
+          "detail": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly towards the targeted character before the attack. This movement ignores engagement and doesn’t provoke reactions."
+        }
       },
       {
         "name": "KNIFE JUGGLER",
-        "description": "All your Auxiliary melee weapons gain Thrown 5, if they don’t have this property already – if they already have Thrown, it increases to Thrown 5. At the end of your turn, all weapons you have thrown this turn automatically return to you."
+        "description": "All your Auxiliary melee weapons gain Thrown 5, if they don’t have this property already – if they already have Thrown, it increases to Thrown 5. At the end of your turn, all weapons you have thrown this turn automatically return to you.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["Auxiliary"],
+          "detail": "This weapon gains Thrown 5 and will return to you at the end if your turn if thrown."
+        }
       },
       {
         "name": "DISDAINFUL BLADE",
-        "description": "1/round, when you hit a character with a melee attack, you may also throw an Auxiliary melee weapon as an attack against any character within Range as a free action. This attack can’t deal bonus damage."
+        "description": "1/round, when you hit a character with a melee attack, you may also throw an Auxiliary melee weapon as an attack against any character within Range as a free action. This attack can’t deal bonus damage.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["any"],
+          "detail": "1/round, when you hit a character with a melee attack, you may also throw an Auxiliary melee weapon as an attack against any character within Range as a free action. This attack can’t deal bonus damage."
+        }
       }
     ]
   },
@@ -424,11 +574,23 @@
     "ranks": [
       {
         "name": "AGGRESSIVE HEAT BLEED",
-        "description": "The first attack roll you make on your turn while in the Danger Zone deals +2 Heat on a hit. If you enter the Danger Zone during your turn, this talent takes effect on your next attack."
+        "description": "The first attack roll you make on your turn while in the Danger Zone deals +2 Heat on a hit. If you enter the Danger Zone during your turn, this talent takes effect on your next attack.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "The first attack roll you make on your turn while in the Danger Zone deals +2 Heat on a hit. If you enter the Danger Zone during your turn, this talent takes effect on your next attack."
+        }
       },
       {
         "name": "FUSION HEMORRHAGE",
-        "description": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit."
+        "description": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit."
+        }
       },
       {
         "name": "HERE, CATCH!",
@@ -447,11 +609,23 @@
       },
       {
         "name": "IMPACT",
-        "description": "1/round, before rolling an attack with a Cannon, all characters adjacent to you must succeed on a Hull save or be knocked back by 1 space and knocked Prone. You are then pushed 1 space in any direction."
+        "description": "1/round, before rolling an attack with a Cannon, all characters adjacent to you must succeed on a Hull save or be knocked back by 1 space and knocked Prone. You are then pushed 1 space in any direction.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Cannon"],
+          "sizes": ["any"],
+          "detail": "1/round, before rolling an attack with a Cannon, all characters adjacent to you must succeed on a Hull save or be knocked back by 1 space and knocked Prone. You are then pushed 1 space in any direction."
+        }
       },
       {
         "name": "COLLATERAL DAMAGE",
-        "description": "1/round, when you perform a critical hit on a character or object with a Cannon, you may choose to cause an explosion of secondary munitions, causing a Burst 2 explosion around your target. Characters within the affected area must either drop Prone as a reaction, or take 2 Explosive damage and be knocked back by 2 spaces from the center of the attack."
+        "description": "1/round, when you perform a critical hit on a character or object with a Cannon, you may choose to cause an explosion of secondary munitions, causing a Burst 2 explosion around your target. Characters within the affected area must either drop Prone as a reaction, or take 2 Explosive damage and be knocked back by 2 spaces from the center of the attack.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Cannon"],
+          "sizes": ["any"],
+          "detail": "1/round, when you perform a critical hit on a character or object with a Cannon, you may choose to cause an explosion of secondary munitions, causing a Burst 2 explosion around your target. Characters within the affected area must either drop Prone as a reaction, or take 2 Explosive damage and be knocked back by 2 spaces from the center of the attack"
+        }
       }
     ]
   },
@@ -466,7 +640,13 @@
       },
       {
         "name": "LOCKBREAKER",
-        "description": "Before or after you Skirmish (including as a reaction, e.g. from Overwatch), you may move 2 spaces. This movement ignores engagement and doesn’t provoke reactions."
+        "description": "Before or after you Skirmish (including as a reaction, e.g. from Overwatch), you may move 2 spaces. This movement ignores engagement and doesn’t provoke reactions.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["any"],
+          "sizes": ["any"],
+          "detail": "Before or after you Skirmish (including as a reaction, e.g. from Overwatch), you may move 2 spaces. This movement ignores engagement and doesn’t provoke reactions."
+        }
       },
       {
         "name": "WEAVE",
@@ -500,15 +680,33 @@
     "ranks": [
       {
         "name": "SEISMIC DELUGE",
-        "description": "1/round, when you successfully attack with a Launcher and consume Lock On, you may also knock your target Prone."
+        "description": "1/round, when you successfully attack with a Launcher and consume Lock On, you may also knock your target Prone.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Launcher"],
+          "sizes": ["any"],
+          "detail": "1/round, when you successfully attack with a Launcher and consume Lock On, you may also knock your target Prone."
+        }
       },
       {
         "name": "STORMBENDING",
-        "description": "You have customized your mech with auxiliary concussive missile systems. 1/round, when you hit a character or object with a Launcher, you can choose one of the following effects:<ul><li><b>Lightning:</b> You fire a concentrated blast of missiles at that character. They must succeed on a Hull save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.</li><li><b>Thunder:</b> You fire a spray of missiles at a Burst 2 area around that target. Characters in the area must succeed on an Agility save or be knocked back by 1 space, away from the target. The primary target is unaffected.</li></ul>"
+        "description": "You have customized your mech with auxiliary concussive missile systems. 1/round, when you hit a character or object with a Launcher, you can choose one of the following effects:<ul><li><b>Lightning:</b> You fire a concentrated blast of missiles at that character. They must succeed on a Hull save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.</li><li><b>Thunder:</b> You fire a spray of missiles at a Burst 2 area around that target. Characters in the area must succeed on an Agility save or be knocked back by 1 space, away from the target. The primary target is unaffected.</li></ul>",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Launcher"],
+          "sizes": ["any"],
+          "detail": "1/round, when you hit a character or object with a Launcher, you can choose one of the following effects:<ul><li><b>Lightning:</b> You fire a concentrated blast of missiles at that character. They must succeed on a Hull save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.</li><li><b>Thunder:</b> You fire a spray of missiles at a Burst 2 area around that target. Characters in the area must succeed on an Agility save or be knocked back by 1 space, away from the target. The primary target is unaffected.</li></ul>"
+        }
       },
       {
         "name": "TORRENT",
-        "description": "Gain a Torrent Die, 1d6 starting at 6. Whenever you use Stormbending, lower the value of the Torrent Die by 1, to a minimum of 1.<br>When the Torrent Die reaches 1, you may reset it to 6 and make a massive attack as a full action, targeting a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>The value of your Torrent Die persists between scenes, but it resets when you rest or perform a Full Repair."
+        "description": "Gain a Torrent Die, 1d6 starting at 6. Whenever you use Stormbending, lower the value of the Torrent Die by 1, to a minimum of 1.<br>When the Torrent Die reaches 1, you may reset it to 6 and make a massive attack as a full action, targeting a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>The value of your Torrent Die persists between scenes, but it resets when you rest or perform a Full Repair.",
+      "synergy": {
+        "locations": ["weapon"],
+        "types": ["Launcher"],
+        "sizes": ["any"],
+        "detail": "Whenever you use Stormbending, lower the value of the Torrent Die by 1."
+      }
       }
     ],
     "counters": [
@@ -529,11 +727,23 @@
     "ranks": [
       {
         "name": "OPPORTUNIST",
-        "description": "1/round, gain +1 Accuracy on any melee attack if at least one allied character is Engaged with your target."
+        "description": "1/round, gain +1 Accuracy on any melee attack if at least one allied character is Engaged with your target.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Melee"],
+          "sizes": ["any"],
+          "detail": "1/round, gain +1 Accuracy on any melee attack if at least one allied character is Engaged with your target"
+        }
       },
       {
         "name": "SOLAR BACKDROP",
-        "description": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target."
+        "description": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["Ranged"],
+          "sizes": ["any"],
+          "detail": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target.t"
+        }
       },
       {
         "name": "OVERLAPPING FIRE",
@@ -567,15 +777,33 @@
     "ranks": [
       {
         "name": "HANDSHAKE ETIQUETTE",
-        "description": "Gain +1 Accuracy when using CQB weapons to attack targets within Range 3."
+        "description": "Gain +1 Accuracy when using CQB weapons to attack targets within Range 3.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["CQB"],
+          "sizes": ["any"],
+          "detail": "Gain +1 Accuracy with this weapon when attacking targets within Range 3"
+        }
       },
       {
         "name": "SEE-THROUGH SEEKER",
-        "description": "You’ve modified your sensors and ammo to punch through, disregard, or otherwise ignore cover at close range. As long as you have line of sight, you ignore both soft and hard cover when using CQB weapons to attack targets within Range 3."
+        "description": "You’ve modified your sensors and ammo to punch through, disregard, or otherwise ignore cover at close range. As long as you have line of sight, you ignore both soft and hard cover when using CQB weapons to attack targets within Range 3.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["CQB"],
+          "sizes": ["any"],
+          "detail": "As long as you have line of sight, ignore both soft and hard cover when using this weapon to attack targets within Range 3"
+        }
       },
       {
         "name": "SEMPER VIGILO",
-        "description": "You may attack with Overwatch using CQB weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there."
+        "description": "You may attack with Overwatch using CQB weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there.",
+        "synergy": {
+          "locations": ["weapon"],
+          "types": ["CQB"],
+          "sizes": ["any"],
+          "detail": "You may attack with Overwatch using this weapon when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there."
+        }
       }
     ]
   },
