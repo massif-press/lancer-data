@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "cb_auto_stabilizing_hardpoints",
     "name": "AUTO-STABILIZING HARDPOINTS",
     "source": "GMS",
@@ -56,49 +55,81 @@
     "name": "FOMORIAN FRAME",
     "source": "IPS-N",
     "effect": "Increase your mech’s Size by one increment (e.g., from 1/2 to 1, 1 to 2, or 2 to 3) up to a maximum of 3 Size. You can’t be knocked Prone, pulled, or knocked back by smaller characters, regardless of what system or weapon causes the effect.",
-    "description": "The Fomorian is an upscaled version of IPS-N’s stock template that has been adapted to meet the needs of long-haul Cosmopolitans looking for enhanced stability and robust impact protection, both micro- and macro-level."
+    "description": "The Fomorian is an upscaled version of IPS-N’s stock template that has been adapted to meet the needs of long-haul Cosmopolitans looking for enhanced stability and robust impact protection, both micro- and macro-level.",
+    "bonuses": [{
+      "id": "add_size",
+      "val": 1
+    }]
   },
   {
     "id": "cb_gyges_frame",
     "name": "GYGES FRAME",
     "source": "IPS-N",
     "effect": "You gain +1 Accuracy on all Hull checks and saves and +1 Threat with all melee weapons.",
-    "description": "A mech built on the Gyges template is designed for combat – enhanced with finely tuned stabilizers and a robust suite of targeting software and hardware."
+    "description": "A mech built on the Gyges template is designed for combat – enhanced with finely tuned stabilizers and a robust suite of targeting software and hardware.",
+    "bonuses": [{
+      "id": "threat",
+      "val": 1
+    }],
+    "synergies": [{
+      "locations": ["hase"],
+      "detail": "+1 Accuracy on all Hull checks and saves"
+    }]
   },
   {
     "id": "cb_reinforced_frame",
     "name": "REINFORCED FRAME",
     "source": "IPS-N",
     "effect": "You gain +5 HP.",
-    "description": "The addition of redundant shock-absorption systems increases the survivability of pilots in combat, flight, and industrial situations."
+    "description": "The addition of redundant shock-absorption systems increases the survivability of pilots in combat, flight, and industrial situations.",
+    "bonuses": [{
+      "id": "hp",
+      "val": 5
+    }]
   },
   {
     "id": "cb_sloped_plating",
     "name": "SLOPED PLATING",
     "source": "IPS-N",
     "effect": "You gain +1 Armor, up to the maximum (+4).",
-    "description": "A common choice among pilots with the right licenses, IPS-N’s integrated-armor fabrication reduces gaps in external coverage by a significant percentage."
+    "description": "A common choice among pilots with the right licenses, IPS-N’s integrated-armor fabrication reduces gaps in external coverage by a significant percentage.",
+    "bonuses": [{
+      "id": "armor",
+      "val": 5
+    }]
   },
   {
     "id": "cb_titanomachy_mesh",
     "name": "TITANOMACHY MESH",
     "source": "IPS-N",
     "effect": "1/round, when you successfully Ram or Grapple a mech, you can Ram or Grapple again as a free action. Additionally, when you knock targets back with melee attacks, you knock them back 1 additional space.",
-    "description": "A double overlay of Goliath Weave at key stress points and beefed-up specifications across the board greatly improve the baseline functionality of any mech."
+    "description": "A double overlay of Goliath Weave at key stress points and beefed-up specifications across the board greatly improve the baseline functionality of any mech.",
+    "synergies": [{
+      "locations": ["ram", "grapple"],
+      "detail": "1/round, when you successfully Ram or Grapple a mech, you can Ram or Grapple again as a free action."
+    }]
   },
   {
     "id": "cb_all_theater_movement_suite",
     "name": "ALL-THEATER MOVEMENT SUITE",
     "source": "SSC",
     "effect": "You may choose to count any and all of your movement as flying; however, you take 1 Heat at the end of each of your turns in which you fly this way.",
-    "description": "A popular modification, ATMS adds powerful pulse jets that dramatically improve mech mobility in all theaters."
+    "description": "A popular modification, ATMS adds powerful pulse jets that dramatically improve mech mobility in all theaters.",
+    "synergies": [{
+      "locations": ["move"],
+      "detail": "You may choose to count any and all of your movement as flying; however, you take 1 Heat at the end of each of your turns in which you fly this way."
+    }]
   },
   {
     "id": "cb_full_subjectivity_sync",
     "name": "FULL SUBJECTIVITY SYNC",
     "source": "SSC",
     "effect": "You gain +2 Evasion.",
-    "description": "By creating a stable, two-way ontologic bridge, SSC has removed the need for pilots to rely on physical controls alone to pilot their mech. Using a full subjectivity sync, pilots perceive their mech as their own body and control it via neural impulse; somatosensory feedback is translated to the pilot as well, so caution is advised despite nociception-dampening defaults built-in to the system."
+    "description": "By creating a stable, two-way ontologic bridge, SSC has removed the need for pilots to rely on physical controls alone to pilot their mech. Using a full subjectivity sync, pilots perceive their mech as their own body and control it via neural impulse; somatosensory feedback is translated to the pilot as well, so caution is advised despite nociception-dampening defaults built-in to the system.",
+    "bonuses": [{
+      "id": "evasion",
+      "val": 2
+    }]
   },
   {
     "id": "cb_ghostweave",
@@ -112,49 +143,90 @@
     "name": "INTEGRATED NERVEWEAVE",
     "source": "SSC",
     "effect": "You may move an additional 2 spaces when you Boost.",
-    "description": "Integrated nerveweave combines several technologies to grant total battlefield alacrity, assuring pilots are never left behind."
+    "description": "Integrated nerveweave combines several technologies to grant total battlefield alacrity, assuring pilots are never left behind.",
+    "synergies": [{
+      "locations": ["move", "boost"],
+      "detail": "You may move an additional 2 spaces when you Boost."
+    }]
   },
   {
     "id": "cb_kai_bioplating",
     "name": "KAI BIOPLATING",
     "source": "SSC",
-    "effect": "You gain +1 accuracy on all Agility checks and saves; additionally, you climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full Speed and upwards up to half your Speed  (in any combination).",
-    "description": "Adapted from fauna local to SSC’s home system, Kai Bioplating adds a lamellar layer of insulated, anchored, and chitinous plating over key brush-points on a mech. Essentially a cheaper, more feasible alternative to living metal, bioplating allows for faster movement through hard-to-navigate terrain."
+    "effect": "You gain +1 Accuracy on all Agility checks and saves; additionally, you climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full Speed and upwards up to half your Speed  (in any combination).",
+    "description": "Adapted from fauna local to SSC’s home system, Kai Bioplating adds a lamellar layer of insulated, anchored, and chitinous plating over key brush-points on a mech. Essentially a cheaper, more feasible alternative to living metal, bioplating allows for faster movement through hard-to-navigate terrain.",
+    "synergies": [{
+      "locations": ["hase"],
+      "detail": "+1 Accuracy on all Agility checks and saves"
+    }, {
+      "locations": ["move"],
+      "detail": "You climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full Speed and upwards up to half your Speed  (in any combination)."
+    }]
   },
   {
     "id": "cb_neurolink_targeting",
     "name": "NEUROLINK TARGETING",
     "source": "SSC",
     "effect": "Your ranged weapons gain +3 Range.",
-    "description": "To further reduce the information gap between pilot and machine and complement its full subjectivity sync technology, SSC developed neurolinking, a stable, non-invasive, and limited-transfer ontologic bridge. Neurolink targeting is a simple enhancement that helps pilots feel – as opposed to thinking – when engaged in ranged combat, allowing for a more natural expression of pilot ability."
+    "description": "To further reduce the information gap between pilot and machine and complement its full subjectivity sync technology, SSC developed neurolinking, a stable, non-invasive, and limited-transfer ontologic bridge. Neurolink targeting is a simple enhancement that helps pilots feel – as opposed to thinking – when engaged in ranged combat, allowing for a more natural expression of pilot ability.",
+    "bonuses": [{
+      "id": "range",
+      "val": 3
+    }]
   },
   {
     "id": "cb_the_lesson_of_disbelief",
     "name": "THE LESSON OF DISBELIEF",
     "source": "HORUS",
     "effect": "You gain +1 accuracy on Systems checks and saves, and +2 E-Defense.",
-    "description": "Query the omninet, delve into the archives. Find you the Aeneid, find you the age of Titanomachy. Eat, absorb, mull. Tell me now of the Hecatoncheires, they of the hundred hands. Did they strike the blow against Cronus – Saturno – or did they instead assail the Olympians? Who do you believe? Who stopped the Beast from telling its own story? And why? – “Lesson One”, The Six Lessons of Kilo Nueve."
+    "description": "Query the omninet, delve into the archives. Find you the Aeneid, find you the age of Titanomachy. Eat, absorb, mull. Tell me now of the Hecatoncheires, they of the hundred hands. Did they strike the blow against Cronus – Saturno – or did they instead assail the Olympians? Who do you believe? Who stopped the Beast from telling its own story? And why? – “Lesson One”, The Six Lessons of Kilo Nueve.",
+    "bonuses": [{
+      "id": "edef",
+      "val": 2
+    }],
+    "synergies": [{
+        "locations": ["hase"],
+        "detail": "+1 Accuracy on on Systems checks and saves"
+      }
+    ]
   },
   {
     "id": "cb_the_lesson_of_the_open_door",
     "name": "THE LESSON OF THE OPEN DOOR",
     "source": "HORUS",
     "effect": "Your Save Target increases by +2; additionally, 1/round, when a character fails a save against you, they take 2 heat.",
-    "description": "There is a body and a deep pit, and both are named Tartarus. Once it held kings and titans and myths. Now, the gates that held it back are flung wide, and Tartarus is free. Here is the terrible question: who opened it, and why? – “Lesson Two”, The Six Lessons of Kilo Nueve."
+    "description": "There is a body and a deep pit, and both are named Tartarus. Once it held kings and titans and myths. Now, the gates that held it back are flung wide, and Tartarus is free. Here is the terrible question: who opened it, and why? – “Lesson Two”, The Six Lessons of Kilo Nueve.",
+    "bonuses": [{
+      "id": "save",
+      "val": 2
+    }]
   },
   {
     "id": "cb_the_lesson_of_the_held_image",
     "name": "THE LESSON OF THE HELD IMAGE",
     "source": "HORUS",
     "effect": "1/round, as a reaction at the start of any allied character’s turn, you may make a Lock On tech action against any character within line of sight and Sensors.",
-    "description": "Close your eyes. Hold the image of your enemy in your mind; imagine it in all light and from every angle. In your mind, it has become a more perfect version. Crush it in your mind and kill the perfect thing. Open your eyes. – “Lesson Three”, The Six Lessons of Kilo Nueve."
+    "description": "Close your eyes. Hold the image of your enemy in your mind; imagine it in all light and from every angle. In your mind, it has become a more perfect version. Crush it in your mind and kill the perfect thing. Open your eyes. – “Lesson Three”, The Six Lessons of Kilo Nueve.",
+    "actions": [
+      {
+        "name": "Lesson of the Held Image",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "Any allied character starts their turn",
+        "detail": "Make a Lock On tech action against any character within line of sight and Sensors."
+      }
+    ]
   },
   {
     "id": "cb_the_lesson_of_thinking_tomorrows_thought",
     "name": "THE LESSON OF THINKING-TOMORROW’S-THOUGHT",
     "source": "HORUS",
     "effect": "When you hit with a tech attack, your next melee attack against the same target gains +1 accuracy, and its damage can’t be reduced in any way.",
-    "description": "Let me tell you this lesson: the corporeal existence is one that must end in death. The incorporeal existence is one that [must] end in [cascade? do you really think that is true?]. I tell you again, if you can imagine it, it is [done] and you have already struck the killing blow. – “Lesson Four”, The Six Lessons of Kilo Nueve."
+    "description": "Let me tell you this lesson: the corporeal existence is one that must end in death. The incorporeal existence is one that [must] end in [cascade? do you really think that is true?]. I tell you again, if you can imagine it, it is [done] and you have already struck the killing blow. – “Lesson Four”, The Six Lessons of Kilo Nueve.",
+    "synergies": [{
+      "locations": ["tech_attack"],
+      "detail": "When you hit with a tech attack, your next melee attack against the same target gains +1 accuracy, and its damage can’t be reduced in any way."
+    }]
   },
   {
     "id": "cb_the_lesson_of_transubstantiation",
@@ -168,35 +240,61 @@
     "name": "THE LESSON OF SHAPING",
     "source": "HORUS",
     "effect": "You may install an additional AI in your mech. If one enters cascade (or becomes unshackled narratively), the other prevents it from taking control of your mech. You only lose control of your mech if both AI-tagged systems or equipment enter cascade.",
-    "description": "A little gift, to be pondered until understood: Cast aside the hammer and sword, the cannon and beam. No weapon formed against me shall land a true blow, as I have seen all ends, and there is nothing left but me. A trillion trillion light-years in all directions, and through it all, only [us? who knows. ego is a mind-killer. best to call your friends. better to face the night together. ‘til later, love.] – “Lesson Six”, The Six Lessons of Kilo Nueve."
+    "description": "A little gift, to be pondered until understood: Cast aside the hammer and sword, the cannon and beam. No weapon formed against me shall land a true blow, as I have seen all ends, and there is nothing left but me. A trillion trillion light-years in all directions, and through it all, only [us? who knows. ego is a mind-killer. best to call your friends. better to face the night together. ‘til later, love.] – “Lesson Six”, The Six Lessons of Kilo Nueve.",
+    "bonuses": [
+      {
+        "id": "ai_cap",
+        "val": 1
+      }
+    ]
   },
   {
     "id": "cb_adaptive_reactor",
     "name": "ADAPTIVE REACTOR",
     "source": "HA",
     "effect": "When you Stabilize and choose to cool your mech, you may spend 2 Repairs to clear 1 stress damage.",
-    "description": "All Armory frames are designed with multiple failsafe systems, but VIP clients and high-tier citizenry have access to a special catalog. With dozens of options for over-engineering reactors, it’s easy to make sure a mech can keep running indefinitely."
+    "description": "All Armory frames are designed with multiple failsafe systems, but VIP clients and high-tier citizenry have access to a special catalog. With dozens of options for over-engineering reactors, it’s easy to make sure a mech can keep running indefinitely.",
+    "bonuses": [{
+      "id": "cheap_stress",
+      "val": true
+    }]
   },
   {
     "id": "cb_armory_sculpted_chassis",
     "name": "ARMORY-SCULPTED CHASSIS",
     "source": "HA",
     "effect": "You gain +1 accuracy on all Engineering checks and saves. When you Overcharge, you gain soft cover until the start of your next turn.",
-    "description": "Anyone can print a stock mech chassis, relying on a section of generic code to keep them alive. The discerning pilot, on the other hand, accepts only the best: a frame designed, tested, and tuned by one of the Armory’s master fabricators."
+    "description": "Anyone can print a stock mech chassis, relying on a section of generic code to keep them alive. The discerning pilot, on the other hand, accepts only the best: a frame designed, tested, and tuned by one of the Armory’s master fabricators.",
+    "synergies": [{
+      "locations": ["hase"],
+      "detail": "Gain +1 Accuracy on all Engineering checks and saves."
+    }, {
+      "locations": ["overcharge"],
+      "detail": "Gain soft cover until the start of your next turn."
+    }
+  ]
   },
   {
     "id": "cb_heatfall_coolant_system",
     "name": "HEATFALL COOLANT SYSTEM",
     "source": "HA",
     "effect": "Your cost for Overcharge never goes past 1d6 heat.",
-    "description": "The Heatfall Coolant System comes packaged with a stabilized reactor core; paired together, this combo is guaranteed to keep a mech cool in nearly any environment."
+    "description": "The Heatfall Coolant System comes packaged with a stabilized reactor core; paired together, this combo is guaranteed to keep a mech cool in nearly any environment.",
+    "bonuses": [{
+      "id": "overcharge",
+      "val": ["+1", "+1d3", "+1d6", "+1d6"]
+    }]
   },
   {
     "id": "cb_integrated_ammo_feeds",
     "name": "INTEGRATED AMMO FEEDS",
     "source": "HA",
     "effect": "All Limited systems and weapons gain an additional two charges.",
-    "description": "By streamlining and integrating all automated ordnance-loading modules, Harrison Armory specialists can greatly enhance mechs’ time-to-target minimums. As an added bonus, these upgrades usually result in increased carrying capacity, allowing pilots to field more ordnance than design specifications suggest."
+    "description": "By streamlining and integrating all automated ordnance-loading modules, Harrison Armory specialists can greatly enhance mechs’ time-to-target minimums. As an added bonus, these upgrades usually result in increased carrying capacity, allowing pilots to field more ordnance than design specifications suggest.",
+    "bonuses": [{
+      "id": "limited_bonus",
+      "val": 2
+    }]
   },
   {
     "id": "cb_stasis_shielding",
@@ -210,6 +308,10 @@
     "name": "SUPERIOR BY DESIGN",
     "source": "HA",
     "effect": "You gain Immunity to Impaired and gain +2 Heat Cap.",
-    "description": "Even the Armory’s entry-level frames aim to outperform the competition. Thanks to the incredible resources they have at their disposal, Harrison Armory can out-design and out-produce almost any smaller, boutique engineer or fabricator. Where resistance is found, the answer is simple: buy them out, or stamp them out. The Armory’s valued customers benefit from this philosophy of “Superior by Design”, so why should they worry?"
+    "description": "Even the Armory’s entry-level frames aim to outperform the competition. Thanks to the incredible resources they have at their disposal, Harrison Armory can out-design and out-produce almost any smaller, boutique engineer or fabricator. Where resistance is found, the answer is simple: buy them out, or stamp them out. The Armory’s valued customers benefit from this philosophy of “Superior by Design”, so why should they worry?",
+    "bonuses": [{
+      "id": "heatcap",
+      "val": 2
+    }]
   }
 ]
