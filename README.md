@@ -92,6 +92,8 @@ TBD
   "mounts": MountType[],
   "stats": {
     "size": number, // see note below
+    "structure": number,
+    "stress": number,
     "armor": number,
     "hp": number,
     "evasion": number,
@@ -118,7 +120,7 @@ Frame sizes can be any integer or **0.5**, which will be correctly rendered as 1
 {
   "name": string,
   "description": string, // v-html
-  "use"?: 'Round' | 'Scene' | 'Encounter' | 'Mission',
+  "use"?: 'Turn' | 'Next Turn' | 'Round' | 'Next Round' | 'Scene' | 'Encounter' | 'Mission',
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[]
   "synergies"?: ISynergyData[]
@@ -134,17 +136,20 @@ Including a `use` value will give it a button in the Player Active Mode that wil
 ```ts
 {
   "name": string,
+  "description": string, // v-html
   "active_name": string,
   "active_effect": string, // v-html
   "activation": ActivationType,
   "deactivation"?: ActivationType,
-  "use"?: 'Round' | 'Next Round' | 'Scene' | 'Encounter',
+  "use"?: 'Round' | 'Next Round' | 'Scene' | 'Encounter' | 'Mission',
   "active_actions": IActionData[],
   "active_bonuses": IBonusData[],
   "active_synergies": ISynergyData[],
   "passive_name"?: string,
   "passive_effect"?: string, // v-html, 
   "passive_actions"?: IActionData[],
+  "passive_bonuses"?: IActionData[],
+  "passive_synergies": ISynergyData[],
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
@@ -156,7 +161,7 @@ The `use` value in the CORE System data relates to how long the `active_effect` 
 
 `active_actions`, `active_bonuses, and `active_synergies` are only available from when the CORE System is activated (action type dictated by the `activation` value) until it is deactivated (`deactivation` action type) or the `use` condition is met, as described above. 
 
-`passive_actions`, on the other hand, persist as if they were granted by normally installed systems.
+`passive_actions`, `passive_bonuses`, and `passive_synergies`, on the other hand, persist as if they were granted by normally installed systems.
 
 ## IArtLocation
 ```ts
@@ -224,20 +229,20 @@ Weapon mods are handled seperately in C/C than in Lancer (where they're just tag
   "id": string,
   "name": string,
   "sp": number,
+  "source": string, // Manufacturer ID
+  "license": string, // Frame Name
+  "license_level": number, // set to 0 to be available to all Pilots
+  "effect": string, // v-html
+  "tags": ITagData[], // tags related to the mod itself
   "allowed_types"?: WeaponType[], // weapon types the mod CAN be applied to
   "allowed_sizes"?: WeaponSize[], // weapon sizes the mod CAN be applied to
   "allowed_mounts"?: MountType[], // weapon mount types the mod CAN be applied to
   "restricted_types"?: WeaponType[], // weapon types the mod CAN NOT be applied to
   "restricted_sizes"?: WeaponSize[], // weapon sizes the mod CAN NOT be applied to
   "restricted_mounts"?: MountType[], // weapon mount types the mod CAN NOT be applied to
-  "source": string, // Manufacturer ID
-  "license": string, // Frame Name
-  "license_level": number, // set to 0 to be available to all Pilots
-  "effect": string, // v-html
-  "tags": ITagData[], // tags related to the mod itself
-  "added_tags": ITagData[] // tags propogated to the weapon the mod is installed on
-  "added_damage": IDamageData[] // damage added to the weapon the mod is installed on, see note
-  "added_range": IRangeData[] // damage added to the weapon the mod is installed on, see note
+  "added_tags"?: ITagData[] // tags propogated to the weapon the mod is installed on
+  "added_damage"?: IDamageData[] // damage added to the weapon the mod is installed on, see note
+  "added_range"?: IRangeData[] // damage added to the weapon the mod is installed on, see note
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent weapon
   "synergies"?: ISynergyData[],
@@ -252,7 +257,7 @@ For `added_damage` and `added_range`, Damage and Range types that are found on t
 Any combination of allowed/restricted values can be used to narrow a mod's application range. Omitting an "allowed" will allow everything in that field (as if every type/size were added to the array). Eg. a mod with no `allowed_types`, `allowed_sizes`, or `allowed_mounts` will be allowed on any weapon.
 In any case, `restricted` values take precedence over `allowed` values. A mod that both allows and restricts Superheavy Weapons will ultimately restrict installation on Superheavies.
 
-## System Mods (Experimental)
+## System Mods (Experimental) (system_mods.json)
 This is currently unsupported in the LANCER Core Book (or any Massif material at the time of this writing), but is available for use in homebrew development. 
 
 ```ts
@@ -511,13 +516,13 @@ IRankData contains the synergies, actions, and talent items granted through rank
 {
   "name": string,
   "description": string, // v-html
+  "exclusive": boolean // see below 
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[]
   "synergies"?: ISynergyData[]
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
-  "exclusive": boolean // see below 
 }
 ```
 
@@ -842,6 +847,13 @@ COMP/CON will determine if the item is a Weapon or System. Weapons will be added
 It is possible to "chain" equipment through `integrated` arrays, and is therefore possible to loop infinitely, which will cause the app to crash. Keep this in mind when building LCPs.
 
 # Bonuses
+```ts
+{
+  "id": string,
+  "val": string | number
+}
+```
+
 Bonuses are collected and added **to the pilot**, meaning that they will persist as long as the item granting the bonus is equipped or active. The definition of "active" can change based on item type:
 
 |Item|Active State Condition
@@ -914,6 +926,16 @@ Bonuses are collected and added **to the pilot**, meaning that they will persist
 |`deployable_save`|Add save to all deployed Drones and Deployables|integer
 |`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
 
+## Special Values
+Any `integer` type bonus can be replaced with one of the following special value strings surrounded in brackets (eg. `"{ll}"`):
+
+|ID|Value|
+|---|----|
+|`ll`|Pilot License Level
+|`grit`|Pilot Grit
+
+additionally, strings will be evaluated as an expression, then rounded up to the nearest integer, so `"2 + {ll}"` or `({grit}/2) + 1` are both valid expressions.
+
 # Ammo
 Currently used only for Walking Armory in the LANCER Core Book, it's genericised for use in homebrew LCPs. Ammo arrays populate a list of ammunition selections on every equipped weapon of the specified type
 
@@ -934,16 +956,6 @@ Currently used only for Walking Armory in the LANCER Core Book, it's genericised
 Like mods, omitting an allowed value will apply the ammo element to all weapons of that type/size. Restrictions overrule allowances.
 
 if `cost` is omitted the value is automatically set to `1`.
-
-## Special Values
-Any `integer` type bonus can be replaced with one of the following special value strings surrounded in brackets (eg. `"{ll}"`):
-
-|ID|Value|
-|---|----|
-|`ll`|Pilot License Level
-|`grit`|Pilot Grit
-
-additionally, strings will be evaluated as an expression, then rounded up to the nearest integer, so `"2 + {ll}"` or `({grit}/2) + 1` are both valid expressions.
 
 ## DieRoll
 Overcharge takes a `DieRoll` array. This is currently not evaluated, but may be in the future. This array must include one or more strings of either an integer or a die roll: 

@@ -15,6 +15,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 10,
       "evasion": 8,
@@ -50,7 +52,15 @@
       "active_name": "Power Up",
       "active_effect": "For the rest of this scene, you gain +1 Accuracy on all attacks, checks, and saves; additionally, 1/turn, you can Boost as a free action.",
       "use": "Scene",
-      "activation": "Protocol"
+      "activation": "Protocol",
+      "active_synergies": [{
+        "locations":["active_effects", "boost"],
+        "detail": "1/turn, you can Boost as a free action."
+      }, {
+        "locations": ["hull", "agility","systems","engineering"],
+        "detail": "Gain +1 Accuracy on all attacks, checks, and saves."
+      }
+    ]
     },
     "other_art": [{
         "tag": "Mech",
@@ -91,6 +101,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 12,
       "evasion": 8,
@@ -259,6 +271,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 8,
       "evasion": 11,
@@ -310,6 +324,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 10,
       "evasion": 8,
@@ -412,6 +428,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 2,
       "hp": 8,
       "evasion": 8,
@@ -463,6 +481,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 6,
       "evasion": 10,
@@ -516,6 +536,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 8,
       "evasion": 10,
@@ -653,6 +675,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 8,
       "evasion": 10,
@@ -761,6 +785,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 8,
       "evasion": 12,
@@ -824,6 +850,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 6,
       "evasion": 10,
@@ -1051,6 +1079,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 8,
       "evasion": 7,
@@ -1141,6 +1171,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 2,
       "hp": 8,
       "evasion": 6,
@@ -1200,6 +1232,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 12,
       "evasion": 8,
@@ -1253,6 +1287,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 8,
       "evasion": 8,
@@ -1370,6 +1406,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 3,
       "hp": 6,
       "evasion": 6,
@@ -1580,6 +1618,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 10,
       "evasion": 7,
@@ -1649,6 +1689,8 @@
     ],
     "stats": {
       "size": 1,
+      "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 8,
       "evasion": 8,
