@@ -2,7 +2,7 @@
     "id": "mf_standard_pattern_i_everest",
     "license_level": 0,
     "source": "GMS",
-    "name": "STANDARD PATTERN I EVEREST",
+    "name": "EVEREST",
     "mechtype": [
       "Balanced"
     ],
@@ -983,7 +983,7 @@
       },
       {
         "name": "REACTIVE CODE",
-        "description": "1/round, when the Goblin is hit by a tech attack, the Goblin may take any Quick Tech option against the attacker as a reaction.",
+        "description": "Gain the Reactive Code reaction.",
         "actions": [{
           "name": "Reactive Code",
           "activation": "Reaction",

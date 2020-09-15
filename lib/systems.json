@@ -73,10 +73,9 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
-    "actions": {
-      "effect_type": "Charge",
-      "charges": [{
+    "actions": [{
         "name": "Smoke Grenade",
+        "activation": "Quick",
         "detail": "Throw a Smoke Grenade within Range 5. All characters and objects within a Blast 2 area benefit from soft cover until the end of your next turn, at which point the smoke disperses."
       }],
       "deployables": [{
@@ -88,7 +87,6 @@
         }],
         "detail": "This mine detonates when any allied character moves over or adjacent to it. All characters and objects within a Burst 3 area benefit from soft cover until the end of the detonating character’s next turn, at which point the smoke disperses."
       }]
-    }
   },
   {
     "id": "ms_pattern_a_jericho_deployable_cover",
@@ -102,15 +100,19 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
-    "effect": {
-      "effect_type": "Deployable",
-      "activation": "Quick",
-      "count": 2,
+    "deployables": [{
+      "name": "Jericho Deployable Cover",
+      "type": "Deployable",
       "size": 1,
       "hp": 10,
       "evasion": 5,
-      "detail": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections."
-    }
+      "detail": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
+      "actions": [{
+        "name": "Pick Up Jericho Deployable Cover",
+        "activation": "Full",
+        "detail": "Pick up the Jericho Deployable Cover Deployable"
+      }]
+    }]
   },
   {
     "id": "ms_pattern_b_hex_charges",
@@ -135,6 +137,7 @@
     }],
     "deployables": [{
       "name": "Explosive Mine",
+      "type": "Mine",
       "activation": "Quick",
       "detail": "All characters within a Burst 1 area must pass an Agility save or take 2d6 Explosive damage. On a success, they take half damage."
     }]
@@ -332,15 +335,11 @@
     "source": "IPS-N",
     "license": "BLACKBEARD",
     "license_level": 3,
-    "effect": {
-      "effect_type": "AI",
-      "detail": "Your mech gains the AI tag and the SEKHMET Protocol",
       "actions": [{
         "name": "SEKHMET Protocol",
         "activation": "Protocol",
         "detail": "When activated, you give control of your mech to your NHP and gain the following benefits:<ul><li>All melee critical hits deal +1d6 bonus damage.</li><li>1/round, you can Skirmish with melee weapons only as a free action.</li></ul>Your NHP uses all available actions and movement to move toward the closest visible character – allied or hostile – and attacks them with melee attacks, prioritizing melee weapons. It may benefit from your talents. If there are no characters within Threat, your NHP uses all actions to move as directly as possible to the next closest (visible) target. Your NHP can’t make ranged attacks, even if there are actions available.<br>You retain enough control to Overcharge as usual; however, your NHP uses the additional action for the same purpose as its other actions.<br>You can take back control of your mech as a protocol. When you do, you become Stunned until the start of your next turn. Otherwise, this effect lasts until your mech is destroyed – the pilot’s incapacitation or death has no effect."
-      }]
-    },
+      }],
     "description": "“The IPS-N SEKHMET co-pilot is ready to be your first mate! SEKHMET comes standard with remote, omninet, IR tag, and voice control systems, and is fully compatible with all current and legacy IPS-N mechs.<br>Did you know that SEKHMET learns with you? Should the worst happen, your very own SEKHMET will continue to engage hostile targets using an emulated neural-net doppelgänger to pilot your IPS-N chassis until forced or voluntary shutdown!”<br>draft copy, IPS-N Polaris Pilot Lounge adbroad [struck and replaced w/current adbroad]<br>SEKHMET-class NHPs tend toward aggressive attitudes and dark humor. Pilots often call them “berserker systems” – dangerous NHPs that value combat efficacy over pilot wellbeing."
   },
   {
@@ -582,10 +581,10 @@
     "source": "IPS-N",
     "license": "NELSON",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Protocol",
+    "actions": [{
+      "activation": "Protocol",
       "detail": "Until the start of your next turn, you can move +2 spaces when you Boost and your melee attacks (including Ram, Grapple, and so on) gain Knockback 2.<br>When you move during this time, you must move your full Speed in a straight line; however, you can stop if you would collide with an obstruction or hostile character, and you can change direction between separate movements (for example, standard moves, Boost, etc)."
-    },
+    }],
     "description": "There’s a threshold that veteran Nelson pilots know well: the point of endless momentum. You get moving fast enough in the right atmosphere and the air itself feeds into auxiliary ports on the chassis, screaming out like a demon’s almighty howl. The point of endless momentum is a giant’s hand on your chest and a god’s chariot under your feet. Makes you feel like you can outrun light itself, as long as you don’t pass out first."
   },
   {
@@ -759,7 +758,7 @@
     "license_level": 2,
     "effect": "Expend a charge to deploy an ICEOUT drone to a free space within Sensors and line of sight, where it hovers in place and generates a burst 1 field.",
     "deployables": [{
-      "effect_type": "Drone",
+      "type": "Drone",
       "activation": "Quick",
       "size": 0.5,
       "hp": 5,
@@ -826,10 +825,10 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 3,
-    "actions": {
+    "actions": [{
       "activation": "Quick",
       "detail": "This system creates a line 4 forcefield, 4 spaces high – with at least 1 space adjacent to you – that is an obstruction for mechs and characters made at least partly of metal. It lasts for the rest of the scene and if a new one is placed, the old one deactivates.<br>The forcefield doesn’t block line of sight, but it provides soft cover. Characters gain Resistance to kinetic and explosive damage while benefiting from this cover."
-    },
+    }],
     "description": "SSC’s magnetic shield takes the same technology as their proprietary magnetic buckler and applies it to a massive field-projection system."
   },
   {
@@ -982,7 +981,7 @@
     "license": "DUSK WING",
     "license_level": 3,
     "actions": [{
-      "effect_type": "Protocol",
+      "activation": "Protocol",
       "detail": "Until the start of your next turn, you can only move in straight lines; however, you create a holographic trail behind you as you move, creating a light barrier made of contiguous sections the same Size as your mech (Size 1 for Size 0.5 Mechs) in each space you move through. This barrier grants hard cover to adjacent characters, and characters that benefit from this cover also gain Resistance to energy.<br>The barrier doesn’t count as an obstruction and has Immunity to all damage. Characters may freely pass through it but not end their turns inside it, and any character that would be involuntarily moved inside the barrier stops moving if they would end their movement inside it. It lasts for the rest of the scene or until you next use this system."
     }],
     "description": "“Inside? What did I see inside? You think I escaped? That this is all real? No, I– I never left. I’m still there. Something is wrong. Something is not right.”"
@@ -1089,15 +1088,11 @@
     "source": "SSC",
     "license": "MONARCH",
     "license_level": 3,
-    "effect": {
-      "effect_type": "AI",
-      "detail": "Your mech gains the AI tag and the TLALOC Protocol.",
       "actions": [{
         "name": "TLALOC Protocol",
         "activation": "Protocol",
         "detail": "Your NHP can rapidly fire and retarget your weapons – far faster than thought. You become Immobilized until the start of your next turn; however, during this time, you may reroll each missed melee or ranged attack roll once, choosing a new target within the attack’s Range. If the attack was part of an area of effect, it must target a character in the same area. Any given target can't be hit more than once as part of the same action."
-      }]
-    },
+      }],
     "description": "TLALOC-Class NHPs provide advanced multi-system targeting and co-pilot functions, taking over subroutine control to ensure persistent lock-on and engagement. With TLALOC installed and operational, a pilot can trust that their back is always covered, and every possible advantage exploited.<br>TLALOC clones are often stereotyped as hasty and impetuous, and they are well-known for having superiority complexes. Despite this, they are some of the most stable NHP clones. Leading subjectivity theorists suggest that the wide portfolio of control and sense of domination given to TLALOC units encourages a sense of contentment with their work and subjectivity parameters – as a result, they have a much longer cascade window. Thus far, this theory is consistently reproducible across all TLALOC units, although there is no similar correlation among other mil-spec NHP lines."
   },
   {
@@ -1539,7 +1534,6 @@
     "license_level": 3,
     "actions": [{
       "name": "Unleash SCYLLA",
-      "effect_type": "Basic",
       "activation": "Quick",
       "detail": "Until the start of your next turn, you gain two special reactions that allow you to Skirmish in response to one of the following triggers (chosen when you take this action):<ul><li>A hostile character makes an attack against you or an allied character within range 3 of you.</li><li>A hostile character attempts to attack or interact with an object chosen when you take Unleash Scylla and within line of sight. Characters are aware of the object chosen.</li></ul>These reactions deal half damage, heat or burn on hit and must target the character that triggered them.",
       "tags": [{
@@ -1548,7 +1542,7 @@
       }]
     }, {
       "name": "Unleash SCYLLA Reaction",
-      "effect_type": "Reaction",
+      "activation": "Reaction",
       "frequency": "2/round",
       "init": "",
       "trigger": "One of the following, chosen when the Unleash SCYLLA action is taken:<ul><li>A hostile character makes an attack against you or an allied character within range 3 of you.</li><li>A hostile character attempts to attack or interact with an object chosen when you take Unleash Scylla and within line of sight. Characters are aware of the object chosen.</li></ul>",
@@ -2202,6 +2196,7 @@
     "license": "ISKANDER",
     "license_level": 3,
     "actions": [{
+      "name": "Deploy Clamp Bombs",
       "activation": "Quick",
       "detail": "Expend a charge to fire a cluster of miniature bombs at a character within Sensors. They must succeed on an Engineering save, or the bombs clamp on. At the end of their next turn, the bombs detonate, dealing 1d6+3 AP explosive damage. All characters adjacent to your target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn."
     }],
@@ -2256,7 +2251,7 @@
       },
       {
         "name": "Interdiction Point",
-        "effect_type": "Reaction",
+        "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "You or an allied character within range 5 are targeted by a ranged attack.",
         "detail": "Make a contested ranged attack roll: if you win the contested roll, the attack automatically misses. The Stasis Bolt loses its charge."
@@ -2518,7 +2513,7 @@
     "license_level": 3,
     "actions": [{
       "name": "ASURA Protocol",
-      "effect_type": "Protocol",
+      "activation": "Protocol",
       "detail": "1/scene, expend a charge to take two additional quick actions or one additional full action this turn. These actions must obey restrictions on duplicate actions."
     }],
     "description": "ASURA was born from the Armory’s Think Tank thought-war games, an autonomous response to repeated failures during forlorn hope scenarios. ASURA manifested in the systems of simulated mechs as a recode of HORUS’s PUPPETMASTER virus, hijacking friendly mechs and forcing them to act far beyond human capacity—at such speed and intensity that the g-force would kill organic pilots with the sudden amplified mass of their own bodies.<br>While these results were initially deemed a failure by Think Tank NHPs and engineers, it was enough to justify further study on ASURA. Personality and parasentience code was injected into the initial anomalous PUPPETMASTER strain, and first contact handled by Think Tank NHPs. Further societal acclimation and conditioning were fast tracked, giving Armory engineers the first iteration of ASURA after a decade of study, recoding, and reeducation. ASURA, as they exist now, is a scaled-back version of that initial manifestation: while retaining some of their initial impetuousness, ASURA clones now recognize the need to keep their pilot alive and will operate within parameters set by their pilot’s medical and psychological tolerances."
@@ -2581,7 +2576,7 @@
     "license_level": 3,
     "actions": [{
       "name": "LUCIFER Protocol",
-      "effect_type": "Protocol",
+      "activation": "Protocol",
       "detail": "Expend a charge to give your next ranged or melee attack this turn bonus damage on hit equal to your current heat after activating this protocol, as long as the weapon deals any energy."
     }],
     "description": "LUCIFER came to the Think Tank’s attention after their repeated victories in thought-war games. LUCIFER clones are characterized by their brash, enthusiastic personality, often expressing frustration with timid pilots. This bombastic personality hides a calculating, brilliant tactical mind that feeds constant information to pilots – often faster than they can process it.<br>LUCIFER’s combat doctrine demands action, appearing to less daring pilots as a chaotic blend of reckless maneuvering and aggressive offense that keeps defenders beleaguered and unable to respond. Pilots looking to partner with LUCIFER clones should be aware that this attack style is likely to leave them vulnerable to counterattack, and also that these NHPs enjoy what they call “good-natured ribbing”."

@@ -95,7 +95,7 @@
     "description": "A common choice among pilots with the right licenses, IPS-N’s integrated-armor fabrication reduces gaps in external coverage by a significant percentage.",
     "bonuses": [{
       "id": "armor",
-      "val": 5
+      "val": 1
     }]
   },
   {

@@ -1692,7 +1692,6 @@
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 3,
-    "on_attack": "Choose to fire in either siege mode or direct fire mode.",
     "profiles": [{
         "name": "Siege Mode",
         "range": [{
@@ -1706,7 +1705,8 @@
           "type": "explosive",
           "val": "3d6"
         }],
-        "tags": [{
+    "on_attack": "Choose to fire in either siege mode or direct fire mode.",
+    "tags": [{
             "id": "tg_arcing"
           },
           {
@@ -1731,7 +1731,8 @@
           "type": "explosive",
           "val": "3d6"
         }],
-        "tags": [{
+    "on_attack": "Choose to fire in either siege mode or direct fire mode.",
+    "tags": [{
             "id": "tg_heat_self",
             "val": 2
           },
@@ -2254,11 +2255,20 @@
     "type": "Spool Weapon",
     "effect": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it. The Apocalypse Rail cannot be fired at targets within range 5.<br> After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4.",
     "profiles": [{
-        "name": "4",
+        "name": "Charge Rail: 4",
+    "damage": [{
+      "override": true,
+      "val": "N/A"
+    }],
+    "range": [{
+      "override": true,
+      "type": "Range",
+      "val": "N/A"
+    }],
         "effect": "Cannot Be Fired"
       },
       {
-        "name": "3",
+        "name": "Charge Rail: 3",
         "range": [{
             "type": "Range",
             "val": 20
@@ -2275,7 +2285,7 @@
         "effect": "Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn."
       },
       {
-        "name": "2",
+        "name": "Charge Rail: 2",
         "range": [{
             "type": "Range",
             "val": 25
@@ -2292,7 +2302,7 @@
         "effect": "Objects and terrain in the area automatically take 40 AP explosive damage, and on hit characters become Shredded and Impaired until the end of their next turn. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn."
       },
       {
-        "name": "1",
+        "name": "Charge Rail: 1",
         "range": [{
             "type": "Range",
             "val": 30
