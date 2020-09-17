@@ -54,7 +54,6 @@
     "name": "MEDIUM A/C",
     "type": "Weapon",
     "description": "Medium A/C weapons are typically swords, officer’s sabers, and trench axes.",
-    "tags": [],
     "range": [{
       "type": "Threat",
       "val": 1

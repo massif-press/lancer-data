@@ -110,7 +110,7 @@
       "actions": [{
         "name": "Pick Up Jericho Deployable Cover",
         "activation": "Full",
-        "detail": "Pick up the Jericho Deployable Cover Deployable"
+        "detail": "Pick up the Jericho Deployable Cover"
       }]
     }]
   },
@@ -376,7 +376,8 @@
     "license": "DRAKE",
     "license_level": 2,
     "deployables": [{
-      "type": "Shield Generator",
+      "type": "Deployable",
+      "Name": "Aegis Shield Generator",
       "activation": "Quick",
       "cost": 1,
       "size": 1,
@@ -415,6 +416,7 @@
     "effect": "Expend a charge to deploy a portable bunker to a free, adjacent area 4 by 4 area. At the start of your next turn, it unfolds into a fortified emplacement.",
     "deployables": [{
       "type": "Deployable",
+      "name": "Portable Bunker",
       "activation": "Quick",
       "cost": 1,
       "size": 4,
@@ -456,6 +458,7 @@
     "effect": "Expend a charge to deploy a restock drone to any free, adjacent space, where it primes at the end of your turn.",
     "deployables": [{
       "type": "Drone",
+      "name": "Restock Drone",
       "activation": "Quick",
       "size": 0.5,
       "hp": 5,
@@ -686,6 +689,7 @@
     "effect": "Expend a charge to deploy a Webjaw snare to a free, adjacent space, where it arms at the end of your turn.",
     "deployables": [{
       "type": "Deployable",
+      "name": "Webjaw Snare",
       "activation": "Quick",
       "size": 1,
       "hp": 10,
@@ -759,6 +763,7 @@
     "effect": "Expend a charge to deploy an ICEOUT drone to a free space within Sensors and line of sight, where it hovers in place and generates a burst 1 field.",
     "deployables": [{
       "type": "Drone",
+      "name": "ICEOUT Drone",
       "activation": "Quick",
       "size": 0.5,
       "hp": 5,
@@ -787,6 +792,7 @@
     "license_level": 2,
     "effect": {
       "type": "Deployable",
+      "name": "Perimeter Command Plate",
       "activation": "Quick",
       "count": 1,
       "size": 2,
@@ -1173,6 +1179,7 @@
     "license_level": 1,
     "deployables": [{
       "type": "Drone",
+      "name": "Lotus Projector",
       "size": 0.5,
       "hp": 5,
       "edef": 10,
@@ -1269,6 +1276,7 @@
     "license_level": 1,
     "deployables": [{
       "type": "Drone",
+      "name": "Hive Drone",
       "size": 0.5,
       "hp": 5,
       "edef": 10,
@@ -1464,6 +1472,7 @@
     "license_level": 1,
     "deployables": [{
       "type": "Drone",
+      "name": "Sentinel Drone",
       "size": 0.5,
       "hp": 5,
       "edef": 10,
@@ -1585,6 +1594,7 @@
     "license_level": 2,
     "deployables": [{
       "type": "Drone",
+      "name": "Tempest Drone",
       "size": 0.5,
       "hp": 5,
       "edef": 10,
@@ -1608,6 +1618,7 @@
     "license_level": 3,
     "deployables": [{
       "type": "Drone",
+      "name": "Assassin Drone",
       "size": 0.5,
       "hp": 5,
       "edef": 10,
@@ -1993,6 +2004,7 @@
     "license_level": 2,
     "deployables": [{
       "type": "Drone",
+      "name": "Autoloader Drone",
       "size": 0.5,
       "hp": 5,
       "edef": 10,
@@ -2196,7 +2208,7 @@
     "license": "ISKANDER",
     "license_level": 3,
     "actions": [{
-      "name": "Deploy Clamp Bombs",
+      "name": "Launch Clamp Bombs",
       "activation": "Quick",
       "detail": "Expend a charge to fire a cluster of miniature bombs at a character within Sensors. They must succeed on an Engineering save, or the bombs clamp on. At the end of their next turn, the bombs detonate, dealing 1d6+3 AP explosive damage. All characters adjacent to your target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn."
     }],
@@ -2301,6 +2313,7 @@
     "license_level": 2,
     "deployables": [{
       "type": "Deployable",
+      "name": "Stasis Barrier",
       "activation": "Quick",
       "deactivation": "Quick",
       "detail": "Expend a charge to activate this stasis barrier, generating a line 4 barrier 4 spaces high in free spaces with at least one space adjacent to you. It counts as an obstruction and provides soft cover, but doesn’t block line of sight.<br>When an attack is made against a character that benefits from this barrier’s soft cover, roll 1d6: on 4+, the attack is consumed by the barrier and has no effect whatsoever. The barrier lasts for the rest of the scene, or until you deactivate it as a quick action. This effect does not stack with Invisible.",
@@ -2659,9 +2672,7 @@
     "talent_id": "t_technophile",
     "talent_rank": 3,
     "sp": 0,
-    "tags": [{
-        "id": "tg_bonus_ai"
-      },
+    "tags": [
       {
         "id": "tg_unique"
       },

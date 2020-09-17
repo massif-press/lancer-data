@@ -1,7 +1,7 @@
 [{
     "id": "reserve_skill",
     "name": "Skill Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
     "description": "Add a Skill Point to gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action.",
     "bonuses": [{
@@ -12,7 +12,7 @@
   {
     "id": "reserve_mechskill",
     "name": "Mech Skill Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
     "description": "Add a Mech Skill Point to add to your Pilot's HULL, AGILITY, SYSTEMS, or ENGINEERING rating.",
     "bonuses": [{
@@ -23,7 +23,7 @@
   {
     "id": "reserve_talent",
     "name": "Talent Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
     "description": "Add a Talent Point to gain or improve a Pilot Talent.",
     "bonuses": [{
@@ -34,7 +34,7 @@
   {
     "id": "reserve_license",
     "name": "License Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
     "description": "Add a License Point to advance or unlock a new License.",
     "bonuses": [{
@@ -45,7 +45,7 @@
   {
     "id": "reserve_corebonus",
     "name": "Extra CORE Bonus",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
     "description": "Add an additional CORE Bonus.",
     "bonuses": [{
@@ -56,70 +56,70 @@
   {
     "id": "reserve_access",
     "name": "Access",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Resource",
     "description": "A keycard, invite, bribes or insider access to a particular location."
   },
   {
     "id": "reserve_backing",
     "name": "Backing",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Contact",
     "description": "Useful leverage through political support from a powerful figure."
   },
   {
     "id": "reserve_supplies",
     "name": "Supplies",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Resource",
     "description": "Gear allowing easy crossing of a hazardous or hostile area."
   },
   {
     "id": "reserve_disguise",
     "name": "Disguise",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Identity",
     "description": "An effective disguise or cover identity, allowing uncontested access to a location."
   },
   {
     "id": "reserve_diversion",
     "name": "Diversion",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Diversion",
     "description": "A distraction that provides time to take action without fear of consequence."
   },
   {
     "id": "reserve_blackmail",
     "name": "Blackmail",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Target",
     "description": "Blackmail materials or sensitive information concerning a particular person."
   },
   {
     "id": "reserve_reputation",
     "name": "Reputation",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Status",
     "description": "A good name in the mission area, prompting good first impressions with the locals."
   },
   {
     "id": "reserve_safe_harbor",
     "name": "Safe Harbor",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Location",
     "description": "Guaranteed safety for meeting, planning, or recuperating."
   },
   {
     "id": "reserve_tracking",
     "name": "Tracking",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Target",
     "description": "Details on the location of important objects or people."
   },
   {
     "id": "reserve_knowledge",
     "name": "Knowledge",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Subject",
     "description": "An understanding of local history, customs, culture, or etiquette."
   },

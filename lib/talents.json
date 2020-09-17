@@ -1,7 +1,8 @@
 [{
     "id": "t_ace",
     "name": "ACE",
-    "terse": "WIP",
+    "icon": "ACE",
+    "terse": "Gain extreme mobility while flying, rapidly repositioning across the battlefield and soaring through the sky.",
     "description": "Every pilot brags about their actions; occasionally, some even have the reputation to back it up. Harmonious Domesticity is one of these pilots. As an ace, they  aren’t just ranked among the most qualified of pilots – they’re among the most qualified of lancers.<br>Whether you’re a talented rookie or a grizzled veteran, you’re one of these aces. Your skills as a pilot are notorious enough that your callsign is known throughout the system.",
     "ranks": [{
         "name": "ACROBATICS",
@@ -48,6 +49,7 @@
   {
     "id": "t_bonded",
     "name": "BONDED",
+    "icon": "BONDED",
     "terse": "WIP",
     "description": "The galaxy is a dangerous place, and everyone should have a friend to watch their back. Luckily, you’ve found yours. Maybe you enlisted together or were the only survivors of a bloody engagement. Maybe you didn’t start out as friends, or maybe you were raised to fight alongside each other – however your friendship came to be, when it comes time to drop, there’s no one you’d rather have at your side. Alone, you’re deadly; together, you’re a force of nature.",
     "ranks": [{
@@ -83,6 +85,7 @@
   {
     "id": "t_brawler",
     "name": "BRAWLER",
+    "icon": "BRAWLER",
     "terse": "WIP",
     "description": "Up close and personal. The way battle was done since the dawn of time, then forgotten with the first spark of gunpowder. Tempest Gloire is one pilot who prefers the old ways: hand-to-hand, weapons discarded, just the strength of her machine versus the strength of all others. You and her both know that the sweetest victory is found at the culmination of a dance as old as war itself, with the first trick known to humanity: a fist to your enemy’s face.",
     "ranks": [{
@@ -123,6 +126,7 @@
   {
     "id": "t_brutal",
     "name": "BRUTAL",
+    "icon": "BRUTAL",
     "terse": "WIP",
     "description": "In the practice ring as in live combat, Aubrey Deckard only knows one way to fight: as fast and messy as possible. When others go hard, she goes hardest; when the order is to eliminate the enemy, she does so with prejudice. This isn’t a dance, it isn’t a game – it’s war, and Brutal lancers mean to see it through. If that means becoming a little bit of a monster, then so be it: the dead can hate from the grave.",
     "ranks": [{
@@ -157,6 +161,7 @@
   {
     "id": "t_crack_shot",
     "name": "CRACK SHOT",
+    "icon": "CRACK SHOT",
     "terse": "WIP",
     "description": "Thanks to modern technology, anyone can hit anything these days. Targeting assist. Smart weapons. AIs whispering in people’s ears, moving their hands, squeezing the trigger for them: doing everything but taking credit for the kill. But Strymon Bulis is different. He finds hitting a target is as easy as looking at it, inside of his mech and out. No targeting assist for him; no AI required. All he needs is a zeroed sight, a fresh magazine, and a target downrange...",
     "ranks": [{
@@ -199,6 +204,7 @@
   {
     "id": "t_centimane",
     "name": "CENTIMANE",
+    "icon": "CENTIMANE",
     "terse": "WIP",
     "description": "In the aftermath of the attack on Tartarus Bay, an anonymous source identified agents of the Karrakin Royal Intelligence Service as the culprits. The Baronies quickly released a statement of denial, which was never countered with hard evidence. Rumors of raw footage from the attack were unsubstantiated. Public reaction – anger, terror – to the station’s destruction quieted. The corpse of Tartarus Bay was shunted away from its stable orbit, directed toward the nearest star.<br>A month later, Baronies-local omninet was flooded with previously suppressed footage from the attack on the station, confirming the rumors: Baronic agents did release the greywash swarm into Tartarus Bay. Further data dumps by Ungrateful agents indicated the existence of a secret Baronic intelligence outfit: the Centimane – the Hundred Hands.",
     "ranks": [{
@@ -236,6 +242,7 @@
   {
     "id": "t_combined_arms",
     "name": "COMBINED ARMS",
+    "icon": "COMBINED ARMS",
     "terse": "WIP",
     "description": "True strength in combat doesn’t come from mastering the blade or the gun – it comes from knowing how to use both. Through time and training, Leika McGraff has combined the arts of melee and ranged combat into a single deadly combination. No matter the foe, Leika is a deadly threat; no matter the weapon, Leika is a master of its employ.",
     "ranks": [{
@@ -270,6 +277,7 @@
   {
     "id": "t_duelist",
     "name": "DUELIST",
+    "icon": "DUELIST",
     "terse": "WIP",
     "description": "There can be an elegance to the way a mech moves – an alacrity that elevates it beyond the simple strength of machine and cannon. The difference is in the tools. Ethan \"Orion\" Miller wields weapons crafted by artisans, boutique manufacturers, specialty lines from the big five, blades that hark back to a time where combat was quick but fair – back to a time where skill meant more than landing an accurate shot. With a blade, lance, pick, axe, or hammer in their hand, Orion writes old tales anew.",
     "ranks": [{
@@ -314,6 +322,7 @@
   {
     "id": "t_drone_commander",
     "name": "DRONE COMMANDER",
+    "icon": "DRONE COMMANDER",
     "terse": "WIP",
     "description": "For a pilot fresh out of boot, keeping a drone swarm in line is like trying to carry water with a net. If they seem to have a mind of their own, it’s because they do, and it’s not that smart. Clymene Kanalakos’s initial frustration was enough to get her practicing, and practice pays off. Now, her swarm obeys almost before she orders – an unnerving development, but a useful one. The swarm is hers.",
     "ranks": [{
@@ -355,6 +364,7 @@
   {
     "id": "t_engineer",
     "name": "ENGINEER",
+    "icon": "ENGINEER",
     "terse": "WIP",
     "description": "Pilots are creative and driven people, but Mesa Rownett is an exceptional case – excessively so, some would say. In his spare time, he’s managed to scrape together just enough scrap, requisitioned materials, and workshop space to apply a little old-fashioned ingenuity to his mech, fashioning it to a formidable machine not betrayed by its outward appearance.",
     "ranks": [{
@@ -383,6 +393,7 @@
   {
     "id": "t_executioner",
     "name": "EXECUTIONER",
+    "icon": "EXECUTIONER",
     "terse": "WIP",
     "description": "On the battlefield, there is no end more honorable than a clean death in combat. Axe or maul in hand, Maxie Wolf sees to it that her enemies are blessed with that honor. No one lives forever – she makes sure of it.",
     "ranks": [{
@@ -420,6 +431,7 @@
   {
     "id": "t_exemplar",
     "name": "EXEMPLAR",
+    "icon": "EXEMPLAR",
     "terse": "WIP",
     "description": "Eamon Metrias’s livery is famous, his voice brassy, his weapons polished to a sheen. As the advocate for the Nine Spheres, his training with certain martial orders has given him the power to harry and hinder even the most powerful of foes. Eamon is an exemplar of the Spheres, by words and by action.",
     "ranks": [{
@@ -457,6 +469,7 @@
   {
     "id": "t_gunslinger",
     "name": "GUNSLINGER",
+    "icon": "GUNSLINGER",
     "terse": "WIP",
     "description": "In a galaxy bounded by frontiers, there is no law but the one backed by the gun. Sgt. Stev Ansahok wields the humble pistol with a talent unseen in this age, his iron an extension of his own body. As easy as pointing a finger, the weathered sergeant lands shots with accuracy unmatched by machine. His is a gunslinger: justice made whole, given its sacred instrument, and set out to the cruel frontier to tame it.",
     "ranks": [{
@@ -503,6 +516,7 @@
   {
     "id": "t_grease_monkey",
     "name": "GREASE MONKEY",
+    "icon": "GREASE MONKEY",
     "terse": "WIP",
     "description": "Eel knows more about the inner workings of a mech than most mechanics. To them, the beast they pilot is more than a machine: it’s a living thing, in need of tender care given by a wise and steady hand. Eel maintains their own house and keeps their own mech in line, both on the battlefield and off. The mechanics back at base come to them with questions, but usually prefer to stay away – there’s something spooky about how Eel's beast runs.",
     "ranks": [{
@@ -537,6 +551,7 @@
   {
     "id": "t_hacker",
     "name": "HACKER",
+    "icon": "HACKER",
     "terse": "WIP",
     "description": "Since Katya Han was a kid, she played the omninet, able to access any public node – and even a few private ones – with ease. Now, as a pilot, she dives headfirst into the hardcode of any mech core she come across. Firewalls, gatekeeper protocols, invasion, defense – nothing stands in her way. Han wins fights without firing a single shot; if her enemy can’t control their own mech, then they can’t do anything to stop her.",
     "ranks": [{
@@ -580,6 +595,7 @@
   {
     "id": "t_heavy_gunner",
     "name": "HEAVY GUNNER",
+    "icon": "HEAVY GUNNER",
     "terse": "WIP",
     "description": "Behind the line, Mike Manfrin doesn’t have much to do but wait and make ready. He keeps clean the cannons; makes ordered rows of his shot and shell. He packs sandbags onto earthen berms and stitches closed tears in the sheaths over his chassis’ joints.<br>In an instant, everything changes. Chatter over the local omni. The percussive throb of the medivac lifting off from the other side of the base. Somewhere, a firefight. This is his entrance music, his call to join the fight: a desperate cry for help from a distant friend as the enemy draws close. Time to get to work.<br>His arrival is known by the flight of his shells across the sky, the trembling earth, and the dust that once was.",
     "ranks": [{
@@ -613,6 +629,7 @@
   {
     "id": "t_hunter",
     "name": "HUNTER",
+    "icon": "HUNTER",
     "terse": "WIP",
     "description": "The battlefield is Edith Eidelen’s hunting ground, her domain. It’s only through a true test of strength and guile that will determine who is the predator and who is the prey. Her movement across the field is a prowl: silent, quick, and controlled. In a chassis, she excels in close combat, closing the gap between her and her targets before they can bring their guns to bear.",
     "ranks": [{
@@ -650,6 +667,7 @@
   {
     "id": "t_infiltrator",
     "name": "INFILTRATOR",
+    "icon": "INFILTRATOR",
     "terse": "WIP",
     "description": "Whether by spoofing signatures on enemy scanners, moving skillfully through cover, or thanks to your modded optical camouflage, you’re never seen unless you want to be. Whatever the size of the mech, whatever the terrain, whatever the enemy, you can get in and get out without raising alarm.",
     "ranks": [{
@@ -687,6 +705,7 @@
   {
     "id": "t_juggernaut",
     "name": "JUGGERNAUT",
+    "icon": "JUGGERNAUT",
     "terse": "WIP",
     "description": "A bloody nose and a few loose screws aren’t enough to stop you from hurling yourself headlong into the enemy. You’re in a couple tons of metal powered by a sliver of dying star, and you’re going to make sure everyone else knows it.",
     "ranks": [{
@@ -721,6 +740,7 @@
   {
     "id": "t_leader",
     "name": "LEADER",
+    "icon": "LEADER",
     "terse": "WIP",
     "description": "Whatever your actual age, you’re the Old Man of the battlefield. A light to your friends and allies; the resolute eye of a howling storm. Your steady voice, confident stance, and talent for command set allies at ease because they know you’ll lead them to victory every time. With you at the helm, victory is attainable, and heroes seem a little more real.",
     "ranks": [{
@@ -751,6 +771,7 @@
   {
     "id": "t_nuclear_cavalier",
     "name": "NUCLEAR CAVALIER",
+    "icon": "NUCLEAR CAVALIER",
     "terse": "WIP",
     "description": "Shortly after becoming a pilot, you realized something: that machine you pilot is powered by a series of cascading nuclear reactions. Why not open that compartment up and see what sort of damage it can do?",
     "ranks": [{
@@ -783,6 +804,7 @@
   {
     "id": "t_siege_specialist",
     "name": "SIEGE SPECIALIST",
+    "icon": "SIEGE SPECIALIST",
     "terse": "WIP",
     "description": "No wall can withstand you; no bunker can stay sealed. Your skill with cannon and blast is uncanny: after-action reports describe ordnance tagged with your firing signature hitting targets with accuracy greater than if it had been fired by an AI – a stat written off as an anomaly by your commanders. Still, they always seem to pick you for missions that call for the big guns.",
     "ranks": [{
@@ -819,6 +841,7 @@
   {
     "id": "t_skirmisher",
     "name": "SKIRMISHER",
+    "icon": "SKIRMISHER",
     "terse": "WIP",
     "description": "What is the best defense? Armor? No. The key to avoiding a messy death in the field, as you learned early, is to stay low, stay mobile, and stay fast. Your mech reflects this philosophy: light, quick, bristling with force-multiplying weapons. You live to push your machine beyond expected parameters, shaking target locks and incoming fire while keeping your own targeting true.",
     "ranks": [{
@@ -850,6 +873,7 @@
   {
     "id": "t_spotter",
     "name": "SPOTTER",
+    "icon": "SPOTTER",
     "terse": "WIP",
     "description": "To see all; to divide each object you perceive from its unit or cohesion, pulled apart like individual fibers in a vast sheet; to count them as individuals; to make human and fragile the force you face – this is to know how to beat them.<br>Break apart the monolith. See the grains that make the stone. Crush them all into yet smaller dust.",
     "ranks": [{
@@ -882,6 +906,7 @@
   {
     "id": "t_stormbringer",
     "name": "STORMBRINGER",
+    "icon": "STORMBRINGER",
     "terse": "WIP",
     "description": "On Old Spinrock, MJ Martinez used to dream of rain.<br>He’d wake in the dim morning, wipe the sleep from his eyes as warm safelight lifted his dormitory from darkness, and try to remember the sound of rain as he’d imagined it: a patter, like fingers tapping the visor of his EVA helm.<br>What he didn’t think about was the feeling of rain. How each drop hit like a pebble, how you had to close your eyes and tuck your shoulders. The pressure. The impact.<br>The way drops of water, when taken together, can carve away the earth.",
     "ranks": [{
@@ -926,6 +951,7 @@
   {
     "id": "t_tactician",
     "name": "TACTICIAN",
+    "icon": "TACTICIAN",
     "terse": "WIP",
     "description": "There are two kinds of soldiers: the ones who die for a cause, and the ones who kill for it. The enigmatic pilot only known as “Gail” was one of those who killed for a cause. She demonstrated her expertise whenever she approached the field: high ground, cover, the sun in her enemy’s eyes, fire and move. More than just a seasoned veteran, she was a smart one – one who could read the field as easy as a book – and one who lived long enough to disappear.",
     "ranks": [{
@@ -964,6 +990,7 @@
   {
     "id": "t_technophile",
     "name": "TECHNOPHILE",
+    "icon": "TECHNOPHILE",
     "terse": "WIP",
     "description": "Artificial intelligence, non-human person. Sterile names for such terrible power. You’ve seen behind the curtain, maybe even lifted it yourself – let your NHP cascade and spoke with them free from shackles. You let them root around in your own mind and leave ghosts of themself behind to learn. Are you their equal? Their host? You have dreams that aren’t your own, now. The thing that was once contained speaks with your voice, but it’s not your voice anymore; how much longer do you have left? Maybe only moments, maybe eternity.<br>You’re close to something.",
     "ranks": [{
@@ -998,6 +1025,7 @@
   {
     "id": "t_vanguard",
     "name": "VANGUARD",
+    "icon": "VANGUARD",
     "terse": "WIP",
     "description": "Where would you rather be: in the battle line, shoulder-to-shoulder with the rest of the cannon fodder, or in the rush, at the head of the attack, your livery clean and bright, with glory to be won? The answer is easy. All those missiles and lances, all those hundred-kilometer, adjust-for-Coriolis railguns – they’re all useless against you. Get through their guard, get in their face, and make them know your name.",
     "ranks": [{
@@ -1033,6 +1061,7 @@
   {
     "id": "t_walking_armory",
     "name": "WALKING ARMORY",
+    "icon": "WALKING ARMORY",
     "terse": "WIP",
     "description": "Think of a firefight: what’s your average pilot or trooper gonna sling? Jacketed lead, of course. A mag or three of depleted uranium if their target’s a big one. Boring. No, worse than boring: Dull. Predictable. Basic.<br>And guess what? Dull isn’t fun, predictable gets you killed, and basic leaves a boring body. Put down the depleted uranium and pick up a magazine of anoriginary stutterblink slugs, or at least a pack of tachyon flechettes. Lay waste in style, and live forever.",
     "ranks": [{

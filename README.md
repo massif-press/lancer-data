@@ -236,10 +236,8 @@ Weapon mods are handled seperately in C/C than in Lancer (where they're just tag
   "tags": ITagData[], // tags related to the mod itself
   "allowed_types"?: WeaponType[], // weapon types the mod CAN be applied to
   "allowed_sizes"?: WeaponSize[], // weapon sizes the mod CAN be applied to
-  "allowed_mounts"?: MountType[], // weapon mount types the mod CAN be applied to
   "restricted_types"?: WeaponType[], // weapon types the mod CAN NOT be applied to
   "restricted_sizes"?: WeaponSize[], // weapon sizes the mod CAN NOT be applied to
-  "restricted_mounts"?: MountType[], // weapon mount types the mod CAN NOT be applied to
   "added_tags"?: ITagData[] // tags propogated to the weapon the mod is installed on
   "added_damage"?: IDamageData[] // damage added to the weapon the mod is installed on, see note
   "added_range"?: IRangeData[] // damage added to the weapon the mod is installed on, see note
@@ -254,7 +252,7 @@ Weapon mods are handled seperately in C/C than in Lancer (where they're just tag
 
 For `added_damage` and `added_range`, Damage and Range types that are found on the base weapon will be summed (eg 1d6 and 2d6 kinetic damage will sum to 3d6 kinetic), and new types will be appended (eg 1d6 explosive and 2d6 kinetic damage will result in "1d6 Explosive Damage, 2d6 Kinetic Damage")
 
-Any combination of allowed/restricted values can be used to narrow a mod's application range. Omitting an "allowed" will allow everything in that field (as if every type/size were added to the array). Eg. a mod with no `allowed_types`, `allowed_sizes`, or `allowed_mounts` will be allowed on any weapon.
+Any combination of allowed/restricted values can be used to narrow a mod's application range. Omitting an "allowed" will allow everything in that field (as if every type/size were added to the array). Eg. a mod with no `allowed_types` or `allowed_sizes` will be allowed on any weapon.
 In any case, `restricted` values take precedence over `allowed` values. A mod that both allows and restricts Superheavy Weapons will ultimately restrict installation on Superheavies.
 
 ## System Mods (Experimental) (system_mods.json)
@@ -496,7 +494,7 @@ The talent object collects the general detail about a Pilot Talent and serves as
 {
   "id": string,
   "name": string,
-  "icon": string // Must be .svg
+  "icon": string // Used internally
   "icon_url": string // Must be .svg
   "terse": string, // terse text used in short descriptions. The fewer characters the better
   "description": string, // v-html

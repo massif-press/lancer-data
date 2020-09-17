@@ -50,7 +50,7 @@
         "id": "tg_ai"
       }
     ],
-    "restricted_mounts": [
+    "restricted_sizes": [
       "superheavy"
     ]
   },

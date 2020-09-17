@@ -73,14 +73,18 @@
     "name": "Invade",
     "activation": "Invade",
     "terse": "Mount a direct electronic attack against a target",
-    "detail": "When you INVADE, you mount a direct electronic attack against a target. To INVADE, make a tech attack against a character within SENSORS and line of sight. On a success, your target takes 2 heat and you choose one of the INVASION options available to you. FRAGMENT SIGNAL is available to all characters, and additional options are granted by certain systems and equipment with the INVADE tag.  You can also INVADE willing allied characters to create certain effects. If your target is willing and allied, you are automatically successful, it doesn’t count as an attack, and your target doesn’t take any heat."
+    "detail": "When you INVADE, you mount a direct electronic attack against a target. To INVADE, make a tech attack against a character within SENSORS and line of sight. On a success, your target takes 2 heat and you choose one of the INVASION options available to you. FRAGMENT SIGNAL is available to all characters, and additional options are granted by certain systems and equipment with the INVADE tag.  You can also INVADE willing allied characters to create certain effects. If your target is willing and allied, you are automatically successful, it doesn’t count as an attack, and your target doesn’t take any heat.",
+    "sub_actions": [
+      {
+        "id": "act_inv_fragment_signal",
+        "name": "Fragment Signal",
+    "activation": "Invade",
+    "terse": "IMPAIR and SLOW a character until the end of their next turn.",
+        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn."
+      }
+    ]
   },
   {
-    "id": "act_inv_fragment_signal",
-    "name": "Fragment Signal",
-    "terse": "IMPAIR and SLOW a character until the end of their next turn.",
-    "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn."
-  }, {
     "id": "act_hide",
     "name": "HIDE",
     "activation": "Quick",

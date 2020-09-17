@@ -282,12 +282,6 @@
     "filter_ignore": true
   },
   {
-    "id": "tg_bonus_ai",
-    "name": "AI",
-    "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage.",
-    "filter_ignore": true
-  },
-  {
     "id": "tg_set_max_uses",
     "name": "SET MAX USES",
     "description": "Allow player to set the maximum uses for this equipment (HIDDEN TAG)",
