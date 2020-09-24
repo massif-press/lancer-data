@@ -138,6 +138,10 @@
     "deployables": [{
       "name": "Explosive Mine",
       "type": "Mine",
+          "range": [{
+            "type": "Burst",
+            "val": 1
+          }],
       "activation": "Quick",
       "detail": "All characters within a Burst 1 area must pass an Agility save or take 2d6 Explosive damage. On a success, they take half damage."
     }]
@@ -898,7 +902,7 @@
     "effect": "When you miss with a ranged attack roll, your next ranged attack roll gains +1 accuracy.",
     "synergies": [{
       "locations": ["weapon"],
-      "types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+      "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
       "detail": "When you miss with a ranged attack roll, your next ranged attack roll gains +1 accuracy."
     }],
     "description": "Kinetic compensators are popular enhancements, providing a subsurface framework of electronically modulated gyroscopes and hydraulic compensators that work in concert to absorb and disperse recoil caused by firing heavy weapons."
@@ -1015,6 +1019,10 @@
     "deployables": [{
       "name": "Flash Mine",
       "type": "Mine",
+          "range": [{
+            "type": "Burst",
+            "val": 1
+          }],
       "detail": "This mine detonates in a Burst 1 area when a character moves adjacent to or over it. Characters within the affected area must succeed on an Agility save or they only have line of sight to adjacent spaces until the end of their next turn."
     }],
     "description": "Produced by Smith-Shimano’s BELLA CIAO workshop, Flash Charges are popular advantage multipliers, their flash bright enough to destabilize visible-light optics, laser communications, and infra-red sensor suites."
@@ -1544,11 +1552,7 @@
     "actions": [{
       "name": "Unleash SCYLLA",
       "activation": "Quick",
-      "detail": "Until the start of your next turn, you gain two special reactions that allow you to Skirmish in response to one of the following triggers (chosen when you take this action):<ul><li>A hostile character makes an attack against you or an allied character within range 3 of you.</li><li>A hostile character attempts to attack or interact with an object chosen when you take Unleash Scylla and within line of sight. Characters are aware of the object chosen.</li></ul>These reactions deal half damage, heat or burn on hit and must target the character that triggered them.",
-      "tags": [{
-        "id": "tg_heat_self",
-        "val": 2
-      }]
+      "detail": "Until the start of your next turn, you gain two special reactions that allow you to Skirmish in response to one of the following triggers (chosen when you take this action):<ul><li>A hostile character makes an attack against you or an allied character within range 3 of you.</li><li>A hostile character attempts to attack or interact with an object chosen when you take Unleash Scylla and within line of sight. Characters are aware of the object chosen.</li></ul>These reactions deal half damage, heat or burn on hit and must target the character that triggered them."
     }, {
       "name": "Unleash SCYLLA Reaction",
       "activation": "Reaction",
@@ -2541,13 +2545,17 @@
     "source": "HA",
     "license": "TOKUGAWA",
     "license_level": 1,
-    "effect": "Weapons that deal any energy gain +5 range if they are ranged or +1 threat if they are melee. When you take any structure damage, this system is destroyed and you take 1d6 AP explosive damage from the explosion. This damage can’t be prevented or reduced in any way.",
+    "effect": "Weapons that deal any energy gain +5 RANGE if they are ranged or +1 THREAT if they are melee. When you take any structure damage, this system is destroyed and you take 1d6 AP explosive damage from the explosion. This damage can’t be prevented or reduced in any way.",
     "bonuses": [{
-      "id": "threat_energy",
-      "val": 1
+          "id": "range",
+          "damage_types": ["Energy"],
+          "range_types": ["Threat"],
+          "val": 1
     }, {
-      "id": "range_energy",
-      "val": 5
+          "id": "range",
+          "damage_types": ["Energy"],
+          "range_types": ["Range"],
+          "val": 5
     }],
     "description": "External batteries are by no means unique; however, according to Harrison Armory marketing, POWERALL cells are the longest-lasting, fastest cycling, and highest capacity solid-state cells available. A side-effect of their high capacity is a proportionate increase in volatility, but pilots must agree to absolve Harrison Armory of any liability prior to receiving print authorization."
   },

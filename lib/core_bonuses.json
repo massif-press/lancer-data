@@ -57,7 +57,7 @@
     "effect": "Increase your mech’s Size by one increment (e.g., from 1/2 to 1, 1 to 2, or 2 to 3) up to a maximum of 3 Size. You can’t be knocked Prone, pulled, or knocked back by smaller characters, regardless of what system or weapon causes the effect.",
     "description": "The Fomorian is an upscaled version of IPS-N’s stock template that has been adapted to meet the needs of long-haul Cosmopolitans looking for enhanced stability and robust impact protection, both micro- and macro-level.",
     "bonuses": [{
-      "id": "add_size",
+      "id": "size",
       "val": 1
     }]
   },
@@ -68,11 +68,12 @@
     "effect": "You gain +1 Accuracy on all Hull checks and saves and +1 Threat with all melee weapons.",
     "description": "A mech built on the Gyges template is designed for combat – enhanced with finely tuned stabilizers and a robust suite of targeting software and hardware.",
     "bonuses": [{
-      "id": "threat",
-      "val": 1
+          "id": "range",
+          "range_types": ["Threat"],
+          "val": 1
     }],
     "synergies": [{
-      "locations": ["hase"],
+      "locations": ["hull"],
       "detail": "+1 Accuracy on all Hull checks and saves"
     }]
   },
@@ -156,7 +157,7 @@
     "effect": "You gain +1 Accuracy on all Agility checks and saves; additionally, you climb and swim at normal speed, ignore difficult terrain, and when making a standard move, can jump horizontally up to your full Speed and upwards up to half your Speed  (in any combination).",
     "description": "Adapted from fauna local to SSC’s home system, Kai Bioplating adds a lamellar layer of insulated, anchored, and chitinous plating over key brush-points on a mech. Essentially a cheaper, more feasible alternative to living metal, bioplating allows for faster movement through hard-to-navigate terrain.",
     "synergies": [{
-      "locations": ["hase"],
+      "locations": ["agility"],
       "detail": "+1 Accuracy on all Agility checks and saves"
     }, {
       "locations": ["move"],
@@ -171,6 +172,7 @@
     "description": "To further reduce the information gap between pilot and machine and complement its full subjectivity sync technology, SSC developed neurolinking, a stable, non-invasive, and limited-transfer ontologic bridge. Neurolink targeting is a simple enhancement that helps pilots feel – as opposed to thinking – when engaged in ranged combat, allowing for a more natural expression of pilot ability.",
     "bonuses": [{
       "id": "range",
+      "range_types": ["Range"],
       "val": 3
     }]
   },
@@ -185,7 +187,7 @@
       "val": 2
     }],
     "synergies": [{
-        "locations": ["hase"],
+        "locations": ["systems"],
         "detail": "+1 Accuracy on on Systems checks and saves"
       }
     ]
@@ -266,7 +268,7 @@
     "effect": "You gain +1 accuracy on all Engineering checks and saves. When you Overcharge, you gain soft cover until the start of your next turn.",
     "description": "Anyone can print a stock mech chassis, relying on a section of generic code to keep them alive. The discerning pilot, on the other hand, accepts only the best: a frame designed, tested, and tuned by one of the Armory’s master fabricators.",
     "synergies": [{
-      "locations": ["hase"],
+      "locations": ["engineering"],
       "detail": "Gain +1 Accuracy on all Engineering checks and saves."
     }, {
       "locations": ["overcharge"],

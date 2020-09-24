@@ -255,7 +255,7 @@ For `added_damage` and `added_range`, Damage and Range types that are found on t
 Any combination of allowed/restricted values can be used to narrow a mod's application range. Omitting an "allowed" will allow everything in that field (as if every type/size were added to the array). Eg. a mod with no `allowed_types` or `allowed_sizes` will be allowed on any weapon.
 In any case, `restricted` values take precedence over `allowed` values. A mod that both allows and restricts Superheavy Weapons will ultimately restrict installation on Superheavies.
 
-## System Mods (Experimental) (system_mods.json)
+## System Mods (Experimental -- NOT YET IMPLEMENTED) (system_mods.json)
 This is currently unsupported in the LANCER Core Book (or any Massif material at the time of this writing), but is available for use in homebrew development. 
 
 ```ts
@@ -776,44 +776,47 @@ Synergies are used to convey hint text regarding talent rank or equipment intera
 "synergies": ISynergyData[]
 ```
 
-The `ISynergyData` object contains two mandatory and two optional fields: The first two - location and detail - are mandatory and contain the display location for the synergy hint (see below) and the text (`detail`) of the synergy hint. The second two (`types` and `sizes`) are optional filters for displaying synergies on weapons, and take `WeaponType` and `WeaponSize` enum values, respectively. Omitting these fields on weapons will cause them to be set to `any` -- useful if you are looking for a synergy hint on eg. a Melee weapon of any size, or a Superheavy weapon of any type.
+The `ISynergyData` object contains two mandatory and three optional fields. Location and detail - are mandatory and contain the display location for the synergy hint (see below) and the text (`detail`) of the synergy hint. `weapon_types` and `weapon_sizes` are optional filters for displaying synergies on weapons, and take `WeaponType` and `WeaponSize` enum values, respectively. Omitting these fields on weapons will cause them to be set to `any` -- useful if you are looking for a synergy hint on eg. a Melee weapon of any size, or a Superheavy weapon of any type.
+Similarly `system_types` will filter system synergy hints to a specific type (eg. `Drone`) and will appear on all Systems if ommitted (set to `any`).
+
 
 ```ts
 {
   "locations": string[] // see below,
   "detail": string // v-html
-  "types"?: WeaponType[]
-  "sizes"?: WeaponSize[]
+  "weapon_types"?: WeaponType[]
+  "system_types"?: SystemType[]
+  "weapon_sizes"?: WeaponSize[]
 }
 ```
 
 ## Synergy Locations
 The following is a list of currently implemented synergy hint locations and their ID strings. To appear, a synergy must take at least one of these location IDs:
 
-|ID|Location|
-|--|--------|
-|active_effects|The Active Effects panel near the top of the Active Mode view
-|rest|A panel near the top of the Active Mode:Rest view
-|weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
-|system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
-|move|Within the Move menu/move Action tab
-|boost|Boost Action modal
-|other|Other Action tab
-|ram|Ram Action modal
-|grapple|Grapple Action modal
-|tech_attack|Tech Attack Action modal
-|overcharge|Overcharge Action modal
-|skill_check|Skill Check Action modal
-|overwatch|Overwatch Action modal
-|improvised_attack|Improvised Attack Action modal
-|disengage|Disengage Action modal
-|stabilize|Stabilize Action modal
-|tech|Quick and Full Tech Attack modals
-|lock_on|Lock On Action modal
-|hull|mouseover tooltip for HULL stat
-|agility|mouseover tooltip for AGILITY stat
-|systems|mouseover tooltip for SYSTEMS stat
-|engineering|mouseover tooltip for ENGINEERING stat
+Implemented|ID|Location|
+|--|--|--------|
+-|active_effects|The Active Effects panel near the top of the Active Mode view
+-|rest|A panel near the top of the Active Mode:Rest view
+X|weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
+X|system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
+-|move|Within the Move menu/move Action tab
+-|boost|Boost Action modal
+-|other|Other Action tab
+-|ram|Ram Action modal
+-|grapple|Grapple Action modal
+-|tech_attack|Tech Attack Action modal
+-|overcharge|Overcharge Action modal
+-|skill_check|Skill Check Action modal
+-|overwatch|Overwatch Action modal
+-|improvised_attack|Improvised Attack Action modal
+-|disengage|Disengage Action modal
+-|stabilize|Stabilize Action modal
+-|tech|Quick and Full Tech Attack modals
+-|lock_on|Lock On Action modal
+X|hull|mouseover tooltip for HULL stat
+X|agility|mouseover tooltip for AGILITY stat
+X|systems|mouseover tooltip for SYSTEMS stat
+X|engineering|mouseover tooltip for ENGINEERING stat
 
 # Counters (ICounterData)
 Counters are tick/clock/track managers available on the Pilot Active mode under the COUNTERS heading. Pilots can create, edit, and delete custom counters, but adding one to an item will generate an automatic, permanent counter that will always be available if the prerequisites are met (item is equipped, talent is unlocked, etc.)
@@ -849,6 +852,10 @@ It is possible to "chain" equipment through `integrated` arrays, and is therefor
 {
   "id": string,
   "val": string | number
+  "damage_types"?: DamageType[]
+  "range_types"?: RangeType[]
+  "weapon_types"?: WeaponType[]
+  "weapon_sizes"?: WeaponSize[]
 }
 ```
 
@@ -867,62 +874,59 @@ Bonuses are collected and added **to the pilot**, meaning that they will persist
 |Weapon Profile|Active only when the profile is selected and the weapon is not destroyed
 |Deployable|Deployable has been deployed
 
+The optional type and size parameters will restrict any weapon-related bonus to those values. If no values are supplied, it will be treated as `all`. These filters are **exclusive** meaning that an item must satisfy all conditions to receive the bonus. For example, a Bonus that included an `Explosive` damage type and a `Launcher` weapon type would only apply to Launchers that dealt Explosive damage. To create eg. a system that increases the damage of all explosive weapons *and* all ranged weapons, two Bonus objects should be used.
 
-|ID|Detail|Values|
-|--|------|------|
-|`skill_point`|Add Pilot Skill Trigger point|integer
-|`mech_skill_point`|Add Mech Skill (HASE) point|integer
-|`talent_point`|Add Pilot Talent point|integer
-|`license_point`|Add Pilot License point|integer
-|`cb_point`|Add Pilot CORE Bonus point|integer
-|`pilot_gear`|Add Pilot Gear capacity|integer
-|`threat`|Add threat (all melee weapons)|integer
-|`threat_kinetic`|Add threat (kinetic melee weapons only)|integer
-|`threat_explosive`|Add threat (explosive melee weapons only)|integer
-|`threat_energy`|Add threat (energy melee weapons only)|integer
-|`threat_burn`|Add threat (burn melee weapons only)|integer
-|`range`|Add Range (all ranged weapons)|integer
-|`range_kinetic`|Add range (kinetic melee weapons only)|integer
-|`range_explosive`|Add range (explosive melee weapons only)|integer
-|`range_energy`|Add range (energy melee weapons only)|integer
-|`range_burn`|Add range (burn melee weapons only)|integer
-|`hp`|Add Mech HP|integer
-|`armor`|Add Mech Armor|integer
-|`structure`|Add Mech Structure|integer
-|`stress`|Add Mech Reactor Stress|integer
-|`heatcap`|Add Mech Heat Capacity|integer
-|`repcap`|Add Mech Repair Capacity|integer
-|`core_power`|Add Mech CORE Power|integer
-|`speed`|Add Mech Speed|integer
-|`evasion`|Add Mech Evasion|integer
-|`edef`|Add Mech E-Defense|integer
-|`sensor`|Add Mech Sensor Range|integer
-|`tech_attack`|Add Mech Tech Attack|integer
-|`save`|Add Mech Save|integer
-|`sp`|Add Mech SP|integer
-|`size`|Add Mech Size|integer
-|`ai_cap`|Add AI Capacity|integer
-|`cheap_struct`|Half cost for Structure repairs|boolean
-|`cheap_stress`|Half cost for Reactor Stress repairs|boolean
-|`overcharge`|Overcharge Track|DieRoll[]
-|`limited_bonus`|Add Limited equipment uses|integer
-|`pilot_hp`|Add Pilot HP|integer
-|`pilot_armor`|Add Pilot Armor|integer
-|`pilot_evasion`|Add Pilot Evasion|integer
-|`pilot_edef`|Add Pilot E-Defense|integer
-|`pilot_speed`|Add Pilot Speed|integer
-|`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
-|`deployable_size`|Add size to all deployed Drones and Deployables|integer
-|`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
-|`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
-|`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
-|`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
-|`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
-|`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
-|`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
-|`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
-|`deployable_save`|Add save to all deployed Drones and Deployables|integer
-|`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
+Implemented|ID|Detail|Values|
+|--|--|------|------|
+X|`skill_point`|Add Pilot Skill Trigger point|integer
+X|`mech_skill_point`|Add Mech Skill (HASE) point|integer
+X|`talent_point`|Add Pilot Talent point|integer
+X|`license_point`|Add Pilot License point|integer
+X|`cb_point`|Add Pilot CORE Bonus point|integer
+X|`range`|Add Range (including Threat) to weapons|integer
+-|`damage`|Add Damage to weapons|integer
+X|`hp`|Add Mech HP|integer
+X|`armor`|Add Mech Armor|integer
+X|`structure`|Add Mech Structure|integer
+X|`stress`|Add Mech Reactor Stress|integer
+X|`heatcap`|Add Mech Heat Capacity|integer
+X|`repcap`|Add Mech Repair Capacity|integer
+-|`core_power`|Add Mech CORE Power|integer
+X|`speed`|Add Mech Speed|integer
+X|`evasion`|Add Mech Evasion|integer
+X|`edef`|Add Mech E-Defense|integer
+X|`sensor`|Add Mech Sensor Range|integer
+X|`attack`|Add Mech Attack Bonus|integer
+X|`tech_attack`|Add Mech Tech Attack|integer
+X|`grapple`|Add Mech Grapple Value|integer
+X|`ram`|Add Mech Ram Value|integer
+X|`save`|Add Mech Save|integer
+X|`sp`|Add Mech SP|integer
+X|`size`|Add Mech Size|integer
+X|`ai_cap`|Add AI Capacity|integer
+-|`cheap_struct`|Half cost for Structure repairs|boolean
+-|`cheap_stress`|Half cost for Reactor Stress repairs|boolean
+-|`overcharge`|Overcharge Track|DieRoll[]
+X|`limited_bonus`|Add Limited equipment uses|integer
+X|`pilot_hp`|Add Pilot HP|integer
+X|`pilot_armor`|Add Pilot Armor|integer
+X|`pilot_evasion`|Add Pilot Evasion|integer
+X|`pilot_edef`|Add Pilot E-Defense|integer
+X|`pilot_speed`|Add Pilot Speed|integer
+-|`pilot_gear_cap`|Add Pilot Gear capacity|integer
+-|`pilot_weapon_cap`|Add Pilot Weapon capacity|integer
+-|`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
+-|`deployable_size`|Add size to all deployed Drones and Deployables|integer
+-|`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
+-|`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
+-|`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
+-|`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
+-|`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
+-|`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
+-|`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
+-|`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
+-|`deployable_save`|Add save to all deployed Drones and Deployables|integer
+-|`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
 
 ## Special Values
 Any `integer` type bonus can be replaced with one of the following special value strings surrounded in brackets (eg. `"{ll}"`):

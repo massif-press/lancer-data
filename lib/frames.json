@@ -157,6 +157,8 @@
     ],
     "stats": {
       "size": 2,
+      "structure": 4,
+      "stress": 4,
       "armor": 3,
       "hp": 8,
       "evasion": 6,
@@ -213,7 +215,8 @@
       "Main/Aux"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 6,
       "evasion": 8,
@@ -375,7 +378,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 2,
       "hp": 8,
       "evasion": 6,
@@ -559,8 +563,8 @@
         "description": "The Death’s Head gains an additional +1 to all ranged attack rolls.",
         "synergies": [{
           "locations": ["weapon"],
-          "types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
-          "sizes": ["any"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "weapon_sizes": ["any"],
           "detail": "The Death’s Head gains an additional +1 to all ranged attack rolls."
         }]
       }
@@ -606,7 +610,8 @@
       "Flex"
     ],
     "stats": {
-      "size": 0.5,
+      "size": 0.5, "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 6,
       "evasion": 12,
@@ -727,7 +732,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 8,
       "evasion": 8,
@@ -745,8 +751,8 @@
         "description": "1/round, on a critical hit with any ranged weapon, the Monarch may deal 3 explosive to a different character of your choice within range 15 and line of sight.",
         "synergies": [{
           "locations": ["weapon"],
-          "types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
-          "sizes": ["any"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "weapon_sizes": ["any"],
           "detail": "1/round, on a critical hit with any ranged weapon, the Monarch may deal 3 explosive to a different character of your choice within range 15 and line of sight."
         }]
       },
@@ -755,8 +761,8 @@
         "description": "The Monarch can use a Launcher weapon to attack a character with the Lock On condition as if its weapon had Seeking, but must consume the Lock On during the attack. When it does so, the attack’s damage cannot be reduced in any way.",
         "synergies": [{
           "locations": ["weapon"],
-          "types": ["Launcher"],
-          "sizes": ["any"],
+          "weapon_types": ["Launcher"],
+          "weapon_sizes": ["any"],
           "detail": "The Monarch can use a Launcher weapon to attack a character with the Lock On condition as if its weapon had Seeking, but must consume the Lock On during the attack. When it does so, the attack’s damage cannot be reduced in any way."
         }]
       }
@@ -804,8 +810,8 @@
         "description": "1/round, the Mourning Cloak may deal +1d6 bonus damage on hit with a melee attack if its target has no adjacent characters, or if the Mourning Cloak is the only character adjacent to the target.",
         "synergies": [{
           "locations": ["weapon"],
-          "types": ["Melee"],
-          "sizes": ["any"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["any"],
           "detail": "1/round, the Mourning Cloak may deal +1d6 bonus damage on hit with a melee attack if its target has no adjacent characters, or if the Mourning Cloak is the only character adjacent to the target."
         }]
       },
@@ -910,7 +916,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 12,
       "evasion": 6,
@@ -960,7 +967,8 @@
       "Flex"
     ],
     "stats": {
-      "size": 0.5,
+      "size": 0.5, "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 6,
       "evasion": 10,
@@ -1027,7 +1035,8 @@
       "Main"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 0,
       "hp": 12,
       "evasion": 8,
@@ -1337,7 +1346,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 3,
+      "size": 3, "structure": 4,
+      "stress": 4,
       "armor": 2,
       "hp": 10,
       "evasion": 6,
@@ -1452,7 +1462,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 8,
       "evasion": 8,
@@ -1504,7 +1515,8 @@
       "Main/Aux"
     ],
     "stats": {
-      "size": 0.5,
+      "size": 0.5, "structure": 4,
+      "stress": 4,
       "armor": 2,
       "hp": 6,
       "evasion": 8,
@@ -1553,7 +1565,8 @@
       "Flex"
     ],
     "stats": {
-      "size": 2,
+      "size": 2, "structure": 4,
+      "stress": 4,
       "armor": 1,
       "hp": 12,
       "evasion": 6,
@@ -1636,7 +1649,7 @@
         "name": "Superior Reactor",
         "description": "The Sherman gains +1 accuracy on Engineering checks and saves.",
         "synergies": [{
-          "locations": ["hull", "skill_check"],
+          "locations": ["engineering", "skill_check"],
           "detail": "The Sherman gains +1 accuracy on Engineering checks and saves."
         }]
       },
@@ -1724,10 +1737,14 @@
       "active_bonuses": [
         {
           "id": "range",
+          "damage_types": ["Energy"],
+          "range_types": ["Range"],
           "val": 5
         },
         {
-          "id": "thread",
+          "id": "range",
+          "damage_types": ["Energy"],
+          "range_types": ["Threat"],
           "val": 2
         }
       ]
