@@ -1612,7 +1612,7 @@
       "name": "Superheated Reactor Feed",
       "description": "Pilots of a certain breed thrive at the very edge of catastrophe, risking either glorious success or utter failure in each moment. These daredevils are familiar with the howl of critical heat warnings – the warbling siren song of destruction and superheated reactor feeds. Tokugawa pilots are notorious for supercharging their weapons with excess energy, pushing their heat gauge to the max. Harnessing the Tokugawa’s unique reactor, these pilots churn out damage and make no friends in the engineering bay – assuming they don’t melt into a ball of slag before they make it back from the line.",
       "active_name": "Radiance",
-      "active_effect": "For the rest of this scene, weapons that deal any energy gain +5range if they are ranged or +2 threat if they are melee.<br>While you’re Exposed, Limit Break stacks with these bonuses for a total increase of +10 range and +3 threat.",
+      "active_effect": "For the rest of this scene, weapons that deal any energy gain +5 range if they are ranged or +2 threat if they are melee.<br>While you’re Exposed, Limit Break stacks with these bonuses for a total increase of +10 range and +3 threat.",
       "tags": [
         {
           "id": "tg_protocol"
