@@ -456,7 +456,7 @@
       },
       {
         "name": "HAMMERBEAT",
-        "description": "If you successfully hit with the attack granted by Covering Fire, your target is Immobilized until the end of their next turn."
+	"description": "If you successfully hit your Covering Fire target with the attack reaction granted by that talent, your target is Immobilized until the end of their next turn."
       },
       {
         "name": "BRACKETING FIRE",
