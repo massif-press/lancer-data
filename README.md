@@ -8,6 +8,23 @@ Content packs must follow the same folder and naming conventions as the `lib` fo
 
 If this document is insufficient, please use the core data files in the `lib` folder as reference. If you have a further question or suggestion, please contact me in #comp-con or #comp-con-homebrew in the LANCER Discord.
 
+## JSON
+Editing or creating COMP/CON homebrew requires a working knowledge of JavaScript Object Notation, or JSON. Information about JSON structure and writing JSON is outside the scope of this document, but the Mozilla MDN web docs contain excellent resources on the subject: https://www.json.org/json-en.html
+
+### Schema Notation
+In this document, data object properties are notated with name and type. Many COMP/CON data objects allow, but do not require, certain properties, and may be safely omitted. These are marked below with a `?`
+
+Example notation:
+```ts
+{
+  "required_property": string,
+  "required_sub_object": IObject,
+  "optional_enum"?: EnumeratedType
+  "optional_property"?: number
+}
+```
+Omitting one or both of the optional properties would allow C/C to correctly parse this object. Omitting any of the required properties would cause C/C to fail to load the LCP correctly.
+
 ## Item IDs
 COMP/CON, whenever it can, references item data by ID. This means two very important things:
 
@@ -23,6 +40,8 @@ Interfaces are denoted with an `I`- (and usually -`Data`), such as in `IActionDa
 
 # Actions (actions.json)
 Actions in `actions.json` define the basic actions every player has access to in Active Mode (for both Combat and Downtime).
+
+At this time, base actions are not extensible.
 
 ```ts
 {
@@ -506,8 +525,6 @@ Use `icon_url`  if you're adding new Talents in an LCP, otherwise the talent wil
 Currently, only Talents with three (and exaclty three) ranks have been tested. More or less *should* work properly, but there's always the chance it breaks something. If this is the case with your LCP, please open a ticket.
 
 ## IRankData
-TODO: Move counter on to rank item, remove counter level
-
 IRankData contains the synergies, actions, and talent items granted through ranks in the talent:
 
 ```ts
@@ -582,12 +599,15 @@ Actions encompass any distinct move a player can make -- mostly this will be sys
   "activation": ActivationType,
   "detail": string, // v-html
   "cost"?: number
+  "pilot"?: boolean
 }
 ```
 
 If not given a `name` field, the Item Action button will be titled "Activate ITEM NAME"
 
 `cost` will deduct its value from the parent system's limited item uses, if it is a limited-tagged item. If `cost` is omitted and the item is limited, `cost` will be automatically set to `1`
+
+`pilot` actions will only be available in Active Mode when a character is UNMOUNTED
 
 ### Protocols
 Protocols are distinct from Free Actions only in that C/C will collect them seperately for the purposes of checking if they're the first used action(s) on a turn.
@@ -799,8 +819,17 @@ Implemented|ID|Location|
 -|rest|A panel near the top of the Active Mode:Rest view
 X|weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
 X|system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
--|move|Within the Move menu/move Action tab
--|boost|Boost Action modal
+-|move|Next to the move pip bar, also within the Move menu/move Action tab
+-|boost|Next to the Boost button, within the Boost Action modal
+X|structure|Next to the structure pip tracker in the Active Mode: Combat view
+X|armor|Next to the armor pip tracker in the Active Mode: Combat view
+X|hp|Next to the HP pip tracker in the Active Mode: Combat view
+X|overshield|Next to the overshield pip tracker in the Active Mode: Combat view
+X|stress|Next to the reactor stress pip tracker in the Active Mode: Combat view
+X|heat|Next to the heat pip tracker in the Active Mode: Combat view
+X|repair|Next to the repair capacity pip tracker in the Active Mode: Combat view
+X|core_power|Next to the CORE power pip tracker in the Active Mode: Combat view
+X|overcharge|Next to the overcharge pip tracker in the Active Mode: Combat view
 -|other|Other Action tab
 -|ram|Ram Action modal
 -|grapple|Grapple Action modal
@@ -808,8 +837,9 @@ X|system|The body of the equipped system item panel in a loadout, as well as in 
 -|overcharge|Overcharge Action modal
 -|skill_check|Skill Check Action modal
 -|overwatch|Overwatch Action modal
--|improvised_attack|Improvised Attack Action modal
--|disengage|Disengage Action modal
+X|improvised_attack|Improvised Attack Action modal
+X|disengage|Disengage Action modal
+X|dismount|Dismount Action modal
 -|stabilize|Stabilize Action modal
 -|tech|Quick and Full Tech Attack modals
 -|lock_on|Lock On Action modal
@@ -869,7 +899,7 @@ Bonuses are collected and added **to the pilot**, meaning that they will persist
 |Mod|Mod is equipped to equipment that is not destroyed
 |Pilot Gear|Always active
 |Reserve|Always active until reserve is used or deleted
-|System|Always active unless system is destroyed
+|System|Always active unless system is destroyed or in cascade
 |Weapon|Always active unless weapon is destroyed
 |Weapon Profile|Active only when the profile is selected and the weapon is not destroyed
 |Deployable|Deployable has been deployed
@@ -884,7 +914,7 @@ X|`talent_point`|Add Pilot Talent point|integer
 X|`license_point`|Add Pilot License point|integer
 X|`cb_point`|Add Pilot CORE Bonus point|integer
 X|`range`|Add Range (including Threat) to weapons|integer
--|`damage`|Add Damage to weapons|integer
+X|`damage`|Add Damage to weapons|integer
 X|`hp`|Add Mech HP|integer
 X|`armor`|Add Mech Armor|integer
 X|`structure`|Add Mech Structure|integer

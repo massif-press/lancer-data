@@ -1104,7 +1104,7 @@
     },
     "traits": [{
         "name": "SYSTEM LINK",
-        "description": "The Hydra’s Deployables and Drones gain +5 HP.",
+        "description": "When deployed, the Hydra’s Deployables and Drones gain +5 HP.",
         "bonuses": [{
           "id": "deployable_hp",
           "val": 5

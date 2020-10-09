@@ -95,7 +95,7 @@
           "locations": ["weapon"],
           "weapon_types": ["Melee"],
           "weapon_sizes": ["any"],
-          "detail": "Gain +1 Accuracy on all melee made with this weapon against targets you are Grappling."
+          "detail": "Gain +1 Accuracy on all melee attacks against targets you are Grappling."
         }]
       },
       {
@@ -135,7 +135,7 @@
         "synergies": [{
           "locations": ["weapon"],
 
-          "detail": "Deal the maximum possible damage on a critical hit."
+          "detail": "Deal the maximum possible damage when you make an attack roll of 20 and make a critical hit."
         }]
       },
       {

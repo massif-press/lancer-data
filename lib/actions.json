@@ -43,7 +43,7 @@
   {
     "id": "act_quick_tech",
     "name": "QUICK TECH",
-    "activation": "Quick Tech",
+    "activation": "Quick",
     "terse": "Perform quick electronic warfare or systems-boosting activities.",
     "detail": "When you use QUICK TECH, you engage in electronic warfare, countermeasures, and other technical actions, often aided by a mech’s powerful computing and simulation cores.<br>Each time you take this action, you choose an option from the QUICK TECH list. All mechs have access to these options, but some systems enhance them or make new options available.<br>Unlike other quick actions, QUICK TECH can be taken more than once per turn; however, a different option must be chosen every time, unless specified otherwise or granted as a free action."
   },
@@ -100,7 +100,7 @@
   },
   {
     "id": "act_activate_quick",
-    "name": "ACTIVATE",
+    "name": "QUICK ACTIVATION",
     "activation": "Quick",
     "terse": "Activate a system or piece of gear that uses a quick action.",
     "detail": "When you ACTIVATE, you use a system or piece of gear that requires either a quick or full action. These systems have the QUICK ACTION or FULL ACTION tags. You can ACTIVATE any number of times a turn but can’t ACTIVATE the same system more than once unless you can do so as a free action."
@@ -121,10 +121,10 @@
   },
   {
     "id": "act_self_destruct",
-    "name": "SELF-DESTRUCT",
+    "name": "SELF DESTRUCT",
     "activation": "Quick",
     "terse": "As a last ditch measure, set your reactor to go critical and explode.",
-    "detail": "When you SELF-DESTRUCT, you overload your mech’s reactor in a final, catastrophic play if there’s no other option for escape or you deem your sacrifice necessary.<br>You can SELF-DESTRUCT as a quick action, initiating a reactor meltdown. At the end of your next turn, or at the end of one of your turns within the following two rounds (your choice), your mech explodes as though it suffered a reactor meltdown. The explosion annihilates your mech, killing anyone inside and causing a BURST 2 explosion that deals 4d6 explosive damage. Characters caught in the explosion that succeed on an AGILITY save take half of this damage."
+    "detail": "When you SELF DESTRUCT, you overload your mech’s reactor in a final, catastrophic play if there’s no other option for escape or you deem your sacrifice necessary.<br>You can SELF DESTRUCT as a quick action, initiating a reactor meltdown. At the end of your next turn, or at the end of one of your turns within the following two rounds (your choice), your mech explodes as though it suffered a reactor meltdown. The explosion annihilates your mech, killing anyone inside and causing a BURST 2 explosion that deals 4d6 explosive damage. Characters caught in the explosion that succeed on an AGILITY save take half of this damage."
   },
   {
     "id": "act_shut_down",
@@ -151,7 +151,7 @@
   {
     "id": "act_full_tech",
     "name": "FULL TECH",
-    "activation": "Full Tech",
+    "activation": "Full",
     "terse": "Choose and perform two options from the tech list, or perform a full tech action.",
     "detail": "When you use FULL TECH, you perform multiple tech actions or a single, more complex action.<br>To use FULL TECH, choose two QUICK TECH options or a single system or tech option that requires FULL TECH to activate. If you choose two QUICK TECH options, you can choose the same option multiple times."
   },
@@ -178,7 +178,7 @@
   },
   {
     "id": "act_activate_full",
-    "name": "ACTIVATE",
+    "name": "FULL ACTIVATION",
     "activation": "Full",
     "terse": "Activate a system or piece of gear that uses a full action.",
     "detail": "When you ACTIVATE, you use a system or piece of gear that requires either a quick or full action. These systems have the QUICK ACTION or FULL ACTION tags. You can ACTIVATE any number of times a turn but can’t ACTIVATE the same system more than once unless you can do so as a free action."
@@ -191,11 +191,19 @@
     "detail": "You can BOOT UP a mech that you are piloting as a full action, clearing SHUT DOWN and restoring your mech to a powered state."
   },
   {
-    "id": "act_mount_dismount",
-    "name": "MOUNT/DISMOUNT",
+    "id": "act_mount",
+    "name": "MOUNT",
     "activation": "Full",
-    "terse": "Get in or out of your mech.",
-    "detail": "When you MOUNT or DISMOUNT, you climb onto or off of a mech. Mounting and dismounting are the preferred terms among most pilots. You don’t “get in” or “climb aboard” – you mount. You’re the cavalry, after all.<br>You can MOUNT or DISMOUNT as a full action. You must be adjacent your mech to MOUNT. Likewise, when you DISMOUNT, you are placed in an adjacent space – if there are no free spaces, you cannot DISMOUNT.<br>Additionally, you can also MOUNT or DISMOUNT willing allied mechs or vehicles. When you do so, move into the same space and then move with them."
+    "terse": "Get in to your mech.",
+    "pilot": true,
+    "detail": "When you MOUNT, you climb onto a mech. Mounting is the preferred term among most pilots. You don’t “get in” or “climb aboard” – you mount. You’re the cavalry, after all.<br>You can MOUNT as a full action. You must be adjacent your mech to MOUNT. <br>Additionally, you can also MOUNT willing allied mechs or vehicles. When you do so, move into the same space and then move with them."
+  },
+  {
+    "id": "act_dismount",
+    "name": "DISMOUNT",
+    "activation": "Full",
+    "terse": "Get out of your mech.",
+    "detail": "When you DISMOUNT, you climb off of a mech. Dismounting is the preferred term among most pilots.<br>You can DISMOUNT as a full action. When you DISMOUNT, you are placed in an adjacent space – if there are no free spaces, you cannot DISMOUNT.<br>Additionally, you can also DISMOUNT willing allied mechs or vehicles you have MOUNTED."
   },
   {
     "id": "act_skill_check",
