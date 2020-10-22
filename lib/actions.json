@@ -3,14 +3,17 @@
     "name": "Move",
     "activation": "Move",
     "terse": "Move your character up to its speed in any direction.",
-    "detail": "On their turn, characters can always move spaces equal to their SPEED, in addition to any other actions. This is called a standard move to distinguish it from movement granted by systems or talents.<br>A character only counts as moving if they move 1 or more spaces.<br>Characters can move into any adjacent space, even diagonally, as long as the space isn’t occupied by an obstruction (and is one that they would be able to move in – characters can't move straight up unless they can fly, for example). There are several factors that can affect movement, which are detailed here."
+    "detail": "On their turn, characters can always move spaces equal to their SPEED, in addition to any other actions. This is called a standard move to distinguish it from movement granted by systems or talents.<br>A character only counts as moving if they move 1 or more spaces.<br>Characters can move into any adjacent space, even diagonally, as long as the space isn’t occupied by an obstruction (and is one that they would be able to move in – characters can't move straight up unless they can fly, for example). There are several factors that can affect movement, which are detailed here.",
+    "hide_active": true
   },
   {
     "id": "act_overcharge",
     "name": "OVERCHARGE",
     "activation": "Overcharge",
     "terse": "Mechs can overcharge to make an additional quick action on a turn as a free action, at the cost of heat.",
-    "detail": "When you OVERCHARGE, you briefly push your mech beyond factory specifications for a tactical advantage. Moments of intense action won’t tax your mech’s systems too much, but sustained action beyond prescribed limits takes a toll.<br>Once per turn, you can OVERCHARGE your mech, allowing you to make any quick action as a free action – even actions you have already taken this turn.<br>The first time you OVERCHARGE, take 1 heat.<br>The second time you OVERCHARGE, take 1d3 heat.<br>The third time, take 1d6 heat, and each time thereafter take 1d6+4 heat.<br>A FULL REPAIR resets this counter."
+    "detail": "When you OVERCHARGE, you briefly push your mech beyond factory specifications for a tactical advantage. Moments of intense action won’t tax your mech’s systems too much, but sustained action beyond prescribed limits takes a toll.<br>Once per turn, you can OVERCHARGE your mech, allowing you to make any quick action as a free action – even actions you have already taken this turn.<br>The first time you OVERCHARGE, take 1 heat.<br>The second time you OVERCHARGE, take 1d3 heat.<br>The third time, take 1d6 heat, and each time thereafter take 1d6+4 heat.<br>A FULL REPAIR resets this counter.",
+    "synergy_locations": ["overcharge"],
+    "log": ["REACTOR LIMITER DISABLED. CORE TEMPERATURES RISING."]
   },
   {
     "id": "act_skirmish",
@@ -23,50 +26,62 @@
     "id": "act_boost",
     "name": "BOOST",
     "activation": "Quick",
-    "terse": "Move your speed.",
-    "detail": "When you BOOST, you move at least 1 space, up to your SPEED. This allows you to make an extra movement, on top of your standard move. Certain talents and systems can only be used when you BOOST, not when you make a standard move."
+    "terse": "Take an extra movement up to your SPEED.",
+    "detail": "When you BOOST, you move at least 1 space, up to your SPEED. This allows you to make an extra movement, on top of your standard move. Certain talents and systems can only be used when you BOOST, not when you make a standard move.",
+    "synergy_locations": ["boost"],
+    "log": ["POWER REDIRECTED."]
   },
   {
     "id": "act_ram",
     "name": "RAM",
     "activation": "Quick",
     "terse": "Attempt to knock down or knock back your target.",
-    "detail": "When you RAM, you make a melee attack with the aim of knocking a target down or back.<br>To RAM, make a melee attack against an adjacent character the same SIZE or smaller than you. On a success, your target is knocked PRONE and you may also choose to knock them back by one space, directly away from you."
+    "detail": "When you RAM, you make a melee attack with the aim of knocking a target down or back.<br>To RAM, make a melee attack against an adjacent character the same SIZE or smaller than you. On a success, your target is knocked PRONE and you may also choose to knock them back by one space, directly away from you.",
+    "synergy_locations": ["ram"],
+    "log": ["MANUVER CONFIRMED.", "WARNING: PROXIMITY.", "WARNING: COLLISION IMMINENT"]
   },
   {
     "id": "act_grapple",
     "name": "GRAPPLE",
     "activation": "Quick",
     "terse": "Attempt to grab on your target, potentially immobilizing it or riding it.",
-    "detail": "When you GRAPPLE, you try to grab hold of a target and overpower them – disarming, subduing, or damaging them so they can’t do the same to you.<br>To GRAPPLE, choose an adjacent character and make a melee attack. On a hit:<br>• both characters become ENGAGED;<br>• neither character can BOOST or take reactions for the duration of the grapple;<br>• the smaller character becomes IMMOBILIZED but moves when the larger party moves, mirroring their movement. If both parties are the same SIZE, either can make contested HULL checks at the start of their turn: the winner counts as larger than the loser until this contest is repeated.<br>A GRAPPLE ends when:<br>• either character breaks adjacency, such as if they are knocked back by another effect;<br>• the attacker chooses to end the grapple as a free action;<br>• The defender breaks free by succeeding on a contested HULL check as a quick action.<br>If a GRAPPLE involves more than two characters, the same rules apply, but when counting SIZE, add together the SIZE of all characters on each side. For example, if two SIZE 1 allied characters are grappling a single SIZE 2 enemy, the allied characters count as a combined SIZE 2 and can try to drag their foe around."
+    "detail": "When you GRAPPLE, you try to grab hold of a target and overpower them – disarming, subduing, or damaging them so they can’t do the same to you.<br>To GRAPPLE, choose an adjacent character and make a melee attack. On a hit:<br>• both characters become ENGAGED;<br>• neither character can BOOST or take reactions for the duration of the grapple;<br>• the smaller character becomes IMMOBILIZED but moves when the larger party moves, mirroring their movement. If both parties are the same SIZE, either can make contested HULL checks at the start of their turn: the winner counts as larger than the loser until this contest is repeated.<br>A GRAPPLE ends when:<br>• either character breaks adjacency, such as if they are knocked back by another effect;<br>• the attacker chooses to end the grapple as a free action;<br>• The defender breaks free by succeeding on a contested HULL check as a quick action.<br>If a GRAPPLE involves more than two characters, the same rules apply, but when counting SIZE, add together the SIZE of all characters on each side. For example, if two SIZE 1 allied characters are grappling a single SIZE 2 enemy, the allied characters count as a combined SIZE 2 and can try to drag their foe around.",
+    "synergy_locations": ["grapple"]
   },
   {
     "id": "act_quick_tech",
     "name": "QUICK TECH",
     "activation": "Quick",
     "terse": "Perform quick electronic warfare or systems-boosting activities.",
-    "detail": "When you use QUICK TECH, you engage in electronic warfare, countermeasures, and other technical actions, often aided by a mech’s powerful computing and simulation cores.<br>Each time you take this action, you choose an option from the QUICK TECH list. All mechs have access to these options, but some systems enhance them or make new options available.<br>Unlike other quick actions, QUICK TECH can be taken more than once per turn; however, a different option must be chosen every time, unless specified otherwise or granted as a free action."
+    "detail": "When you use QUICK TECH, you engage in electronic warfare, countermeasures, and other technical actions, often aided by a mech’s powerful computing and simulation cores.<br>Each time you take this action, you choose an option from the QUICK TECH list. All mechs have access to these options, but some systems enhance them or make new options available.<br>Unlike other quick actions, QUICK TECH can be taken more than once per turn; however, a different option must be chosen every time, unless specified otherwise or granted as a free action.",
+    "synergy_locations": ["quick_tech"]
   },
   {
     "id": "act_bolster",
     "name": "Bolster",
     "activation": "Quick Tech",
     "terse": "Enhance another character’s systems.",
-    "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems.<br>To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time."
+    "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems.<br>To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time.",
+    "synergy_locations": ["bolster"],
+    "log": ["UPLINK ESTABLISHED.", "PARALLELIZING COMBAT ALGORITHMS"]
   },
   {
     "id": "act_scan",
     "name": "Scan",
     "activation": "Quick Tech",
     "terse": "Perform a deep scan on an enemy",
-    "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy.<br>To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly:<br>• Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on).<br>• One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on.<br>• Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech.<br>Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update."
-  },
+    "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy.<br>To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly:<br>• Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on).<br>• One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on.<br>• Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech.<br>Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update.",
+    "synergy_locations": ["scan"],
+    "log": ["ESTABLISHING TARGET LOCK.", "LOCK CONFIRMED. FIRING SOLUTIONS CALCULATED."]
+    },
   {
     "id": "act_lockon",
     "name": "Lock On",
     "activation": "Quick Tech",
     "terse": "Digitally mark a target",
-    "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points.<br>To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition. Any character making an attack against a character with LOCK ON may choose to gain +1 Accuracy on that attack and then clear the LOCK ON condition after that attack resolves. This is called consuming LOCK ON."
+    "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points.<br>To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition. Any character making an attack against a character with LOCK ON may choose to gain +1 Accuracy on that attack and then clear the LOCK ON condition after that attack resolves. This is called consuming LOCK ON.",
+    "synergy_locations": ["lock_on"],
+    "log": ["ESTABLISHING TARGET LOCK.", "LOCK CONFIRMED. FIRING SOLUTIONS CALCULATED."]
   },
   {
     "id": "act_invade",
@@ -80,7 +95,8 @@
         "name": "Fragment Signal",
     "activation": "Invade",
     "terse": "IMPAIR and SLOW a character until the end of their next turn.",
-        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn."
+        "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.",
+        "log": ["SYSTEM INVASION SUCCESSFUL. UPLINK ESTABLISHED", "SIGNAL FRAGMENTATION IN PROGRESS."]
       }
     ]
   },
@@ -88,15 +104,18 @@
     "id": "act_hide",
     "name": "HIDE",
     "activation": "Quick",
-    "terse": "Attempt to hide.",
-    "detail": "When you HIDE, you obscure the position of your mech in order to reposition, avoid incoming fire, repair, or ambush.<br>To HIDE, you must not be ENGAGED and you must either be outside of any enemies’ line of sight, obscured by sufficient cover, or invisible. If you HIDE while meeting one of these criteria, you gain the HIDDEN status.<br>Hard cover is sufficient to HIDE as long as it is large enough to totally conceal you, but soft cover is only sufficient if you are completely inside an area or zone that grants soft cover – many systems and talents that grant soft cover or plain old obscurement just don’t provide enough to hide behind!<br>If you are INVISIBLE, you can always HIDE, regardless of cover, unless you’re ENGAGED.<br>The exact location of HIDDEN targets cannot be identified and they cannot be targeted directly by attacks or hostile actions, but they can still be hit by attacks that affect an area. Although NPCs cannot perfectly locate a HIDDEN character, they might still know an approximate location. Thus, an NPC could flush an area with a flamethrower even if they don’t know exactly where a HIDDEN player is lurking.<br>Additionally, other characters ignore engagement with you while you are HIDDEN – it’s assumed you’re trying to stay stealthy.<br>You cease to be HIDDEN if you make an attack (melee, ranged, or tech) or if your mech takes a hostile action (such as forcing a target to make a save). Using BOOST or taking reactions with your mech also causes you to lose HIDDEN. Other actions can be taken as normal.<br>You also immediately lose HIDDEN if your cover disap‐ pears or is destroyed, or if you lose cover due to line of sight (e.g., if a mech jumps over a wall and can now draw unbroken line of sight to you). If you’re hiding while INVISIBLE, you lose HIDDEN when you cease to be INVISIBLE unless you are in cover."
+    "terse": "Obscure the position of your mech, becoming HIDDEN and unable to be identified, precisely located, or be targeted directly by attacks or hostile actions",
+    "detail": "When you HIDE, you obscure the position of your mech in order to reposition, avoid incoming fire, repair, or ambush.<br>To HIDE, you must not be ENGAGED and you must either be outside of any enemies’ line of sight, obscured by sufficient cover, or invisible. If you HIDE while meeting one of these criteria, you gain the HIDDEN status.<br>Hard cover is sufficient to HIDE as long as it is large enough to totally conceal you, but soft cover is only sufficient if you are completely inside an area or zone that grants soft cover – many systems and talents that grant soft cover or plain old obscurement just don’t provide enough to hide behind!<br>If you are INVISIBLE, you can always HIDE, regardless of cover, unless you’re ENGAGED.<br>The exact location of HIDDEN targets cannot be identified and they cannot be targeted directly by attacks or hostile actions, but they can still be hit by attacks that affect an area. Although NPCs cannot perfectly locate a HIDDEN character, they might still know an approximate location. Thus, an NPC could flush an area with a flamethrower even if they don’t know exactly where a HIDDEN player is lurking.<br>Additionally, other characters ignore engagement with you while you are HIDDEN – it’s assumed you’re trying to stay stealthy.<br>You cease to be HIDDEN if you make an attack (melee, ranged, or tech) or if your mech takes a hostile action (such as forcing a target to make a save). Using BOOST or taking reactions with your mech also causes you to lose HIDDEN. Other actions can be taken as normal.<br>You also immediately lose HIDDEN if your cover disappears or is destroyed, or if you lose cover due to line of sight (e.g., if a mech jumps over a wall and can now draw unbroken line of sight to you). If you’re hiding while INVISIBLE, you lose HIDDEN when you cease to be INVISIBLE unless you are in cover.",
+    "synergy_locations":["hide"],
+    "log": ["SENSOR SIGNATURE OBSCURED. COMMS IN TIGHTBEAM ONLY. SIGHTLINES CLEAR."]
   },
   {
     "id": "act_search",
     "name": "SEARCH",
     "activation": "Quick",
     "terse": "Look for a hidden target.",
-    "detail": "When you SEARCH, you attempt to identify hidden characters. To SEARCH in a mech, choose a character within your SENSORS that you suspect is HIDDEN and make a contested SYSTEMS check against their AGILITY.<br>To SEARCH as a pilot on foot, make a contested skill check, adding bonuses from triggers as normal. This can be used to reveal characters within RANGE 5.<br>Once a HIDDEN character has been found using SEARCH, they immediately lose HIDDEN and can be located again by any character."
+    "detail": "When you SEARCH, you attempt to identify hidden characters. To SEARCH in a mech, choose a character within your SENSORS that you suspect is HIDDEN and make a contested SYSTEMS check against their AGILITY.<br>To SEARCH as a pilot on foot, make a contested skill check, adding bonuses from triggers as normal. This can be used to reveal characters within RANGE 5.<br>Once a HIDDEN character has been found using SEARCH, they immediately lose HIDDEN and can be located again by any character.",
+    "synergy_locations": ["search"]
   },
   {
     "id": "act_activate_quick",
@@ -109,29 +128,36 @@
     "id": "act_eject",
     "name": "EJECT",
     "activation": "Quick",
-    "terse": "Quickly get out of your mech.",
-    "detail": "You can also EJECT as a quick action, flying 6 spaces in the direction of your choice; however, this is a single-use system for emergency use only – it leaves your mech IMPAIRED. Your mech remains IMPAIRED and you cannot EJECT again until your next FULL REPAIR."
+    "terse": "Eject from your mech, flying 6 spaces in the direction of your choice.",
+    "detail": "You can also EJECT as a quick action, flying 6 spaces in the direction of your choice; however, this is a single-use system for emergency use only – it leaves your mech IMPAIRED. Your mech remains IMPAIRED and you cannot EJECT again until your next FULL REPAIR.",
+    "synergy_locations": ["eject"],
+    "log": ["SAFETY PROTOCOLS DISABLED. MANUAL CONTROL MODE SUSPENDED. EXPLOSIVE BOLTS PRIMED.", "GOOD LUCK, PILOT."]
   },
   {
     "id": "act_prepare",
     "name": "PREPARE",
     "activation": "Quick",
-    "terse": "Hold a quick action for a specified trigger.",
-    "detail": "When you PREPARE, you get ready to take an action at a specific time or when a specific condition is met (a more advantageous shot, for example).<br>As a quick action, you can PREPARE any other quick action and specify a trigger. Until the start of your next turn, when it is triggered, you can take this action as a reaction.<br>The trigger for your prepared action must be phrased as “When X, then Y,” where X is a reaction, action or move taken by a hostile or allied character and Y is your action. For example, “when an allied character moves adjacent to me, I want to throw a smoke grenade,” or “when a hostile character moves adjacent to me, I want to ram them”.<br>Your preparation counts as taking the action, so it follows all usual restrictions on that action and on taking multiple actions. You can’t, for example, SKIRMISH and then prepare to SKIRMISH again; you also can’t move and then PREPARE to SKIRMISH with an ORDNANCE weapon, which normally needs to be fired before moving or doing anything else on your turn. Additionally, after you PREPARE an action, you can’t move or take any other actions or reactions until the start of your next turn or until your action has been triggered, whichever comes first.<br>Although you can’t take reactions while holding a prepared action, you can take them normally after it has been triggered. You can also drop your prepared action, allowing you to take reactions as usual. If the trigger condition isn’t met, you lose your prepared action.<br>When you PREPARE, it is visible to casual observers (e.g., you clearly take aim or cycle up systems)."
+    "terse": "Ready a quick action for a specified trigger. Until the start of your next turn, when it is triggered, you can take your prepared action as a reaction.Your preparation counts as taking the action, so it follows all usual restrictions on that action and on taking multiple actions.",
+    "detail": "When you PREPARE, you get ready to take an action at a specific time or when a specific condition is met (a more advantageous shot, for example).<br>As a quick action, you can PREPARE any other quick action and specify a trigger. Until the start of your next turn, when it is triggered, you can take this action as a reaction.<br>The trigger for your prepared action must be phrased as “When X, then Y,” where X is a reaction, action or move taken by a hostile or allied character and Y is your action. For example, “when an allied character moves adjacent to me, I want to throw a smoke grenade,” or “when a hostile character moves adjacent to me, I want to ram them”.<br>Your preparation counts as taking the action, so it follows all usual restrictions on that action and on taking multiple actions. You can’t, for example, SKIRMISH and then prepare to SKIRMISH again; you also can’t move and then PREPARE to SKIRMISH with an ORDNANCE weapon, which normally needs to be fired before moving or doing anything else on your turn. Additionally, after you PREPARE an action, you can’t move or take any other actions or reactions until the start of your next turn or until your action has been triggered, whichever comes first.<br>Although you can’t take reactions while holding a prepared action, you can take them normally after it has been triggered. You can also drop your prepared action, allowing you to take reactions as usual. If the trigger condition isn’t met, you lose your prepared action.<br>When you PREPARE, it is visible to casual observers (e.g., you clearly take aim or cycle up systems).",
+    "synergy_locations": ["prepare"],
+    "log": ["COMMAND QUEUED, STANDING BY."]
   },
   {
     "id": "act_self_destruct",
     "name": "SELF DESTRUCT",
     "activation": "Quick",
     "terse": "As a last ditch measure, set your reactor to go critical and explode.",
-    "detail": "When you SELF DESTRUCT, you overload your mech’s reactor in a final, catastrophic play if there’s no other option for escape or you deem your sacrifice necessary.<br>You can SELF DESTRUCT as a quick action, initiating a reactor meltdown. At the end of your next turn, or at the end of one of your turns within the following two rounds (your choice), your mech explodes as though it suffered a reactor meltdown. The explosion annihilates your mech, killing anyone inside and causing a BURST 2 explosion that deals 4d6 explosive damage. Characters caught in the explosion that succeed on an AGILITY save take half of this damage."
+    "detail": "When you SELF DESTRUCT, you overload your mech’s reactor in a final, catastrophic play if there’s no other option for escape or you deem your sacrifice necessary.<br>You can SELF DESTRUCT as a quick action, initiating a reactor meltdown. At the end of your next turn, or at the end of one of your turns within the following two rounds (your choice), your mech explodes as though it suffered a reactor meltdown. The explosion annihilates your mech, killing anyone inside and causing a BURST 2 explosion that deals 4d6 explosive damage. Characters caught in the explosion that succeed on an AGILITY save take half of this damage.",
+    "synergy_locations": ["self_destruct"]
   },
   {
     "id": "act_shut_down",
     "name": "SHUT DOWN",
     "activation": "Quick",
-    "terse": "Shut down your mech as a desperate measure, to end system attacks, regain control of AI, and cool your mech.",
-    "detail": "When you SHUT DOWN, your mech powers completely off and enters a rest state. It’s always risky to do in the field, but it’s sometimes necessary to prevent a catastrophic systems overload or an NHP cascading.<br>You can SHUT DOWN your mech as a quick action. Your mech takes the SHUT DOWN status, with these effects:<br>• all heat is cleared, as is EXPOSED;<br>• any cascading NHPs return to a normal state;<br>• any statuses or conditions affecting the mech caused by tech actions, such as LOCK ON, immediately end;<br>• the mech gains IMMUNITY to all tech actions and attacks, including any from allied characters;<br>• the mech is STUNNED indefinitely. Nothing can prevent this condition, and it remains until the mech ceases to be SHUT DOWN.<br>The only way to remove the SHUT DOWN status is to BOOT UP the mech."
+    "terse": "Shut down your mech as a desperate measure, to end system attacks, regain control of AI, and cool your mech. The mech is STUNNED until rebooted via the BOOT UP action.",
+    "detail": "When you SHUT DOWN, your mech powers completely off and enters a rest state. It’s always risky to do in the field, but it’s sometimes necessary to prevent a catastrophic systems overload or an NHP cascading.<br>You can SHUT DOWN your mech as a quick action. Your mech takes the SHUT DOWN status, with these effects:<br>• all heat is cleared, as is EXPOSED;<br>• any cascading NHPs return to a normal state;<br>• any statuses or conditions affecting the mech caused by tech actions, such as LOCK ON, immediately end;<br>• the mech gains IMMUNITY to all tech actions and attacks, including any from allied characters;<br>• the mech is STUNNED indefinitely. Nothing can prevent this condition, and it remains until the mech ceases to be SHUT DOWN.<br>The only way to remove the SHUT DOWN status is to BOOT UP the mech.",
+    "synergy_locations": ["shut_down"],
+    "log": ["ALERT: EMERGENCY SHUTDOWN", "STOPPING GMS/VCTRL.MANUAL", "KILLING ALL REMAINING PROCESSES", "LOGGING RESOLVER STATE", ">://cc.main.term", ">://"]
   },
   {
     "id": "act_reload",
@@ -139,57 +165,67 @@
     "activation": "Quick",
     "terse": "Reload one weapon as a pilot.",
     "detail": "When you RELOAD, you reload one Pilot Weapon with the LOADING tag, making it usable again.",
-    "pilot": true
+    "pilot": true,
+    "synergy_locations": ["reload"]
   },
   {
     "id": "act_barrage",
     "name": "BARRAGE",
     "activation": "Full",
     "terse": "Attack with two weapons, or attack with a single superheavy weapon.",
-    "detail": "When you BARRAGE, you attack with two weapons, or with one SUPERHEAVY weapon.<br>To BARRAGE, choose your weapons and either one target or different targets – within range – then make an attack with each weapon.<br>• In addition to your primary attacks, you may also attack with an AUXILIARY weapon on each mount that was fired, so long as the AUXILIARY weapon hasn’t yet been fired this action. These AUXILIARY weapons don’t deal bonus damage.<br>• SUPERHEAVY weapons can only be fired as part of a BARRAGE."
+    "detail": "When you BARRAGE, you attack with two weapons, or with one SUPERHEAVY weapon.<br>To BARRAGE, choose your weapons and either one target or different targets – within range – then make an attack with each weapon.<br>• In addition to your primary attacks, you may also attack with an AUXILIARY weapon on each mount that was fired, so long as the AUXILIARY weapon hasn’t yet been fired this action. These AUXILIARY weapons don’t deal bonus damage.<br>• SUPERHEAVY weapons can only be fired as part of a BARRAGE.",
+    "synergy_locations": ["barrage"]
   },
   {
     "id": "act_full_tech",
     "name": "FULL TECH",
     "activation": "Full",
     "terse": "Choose and perform two options from the tech list, or perform a full tech action.",
-    "detail": "When you use FULL TECH, you perform multiple tech actions or a single, more complex action.<br>To use FULL TECH, choose two QUICK TECH options or a single system or tech option that requires FULL TECH to activate. If you choose two QUICK TECH options, you can choose the same option multiple times."
+    "detail": "When you use FULL TECH, you perform multiple tech actions or a single, more complex action.<br>To use FULL TECH, choose two QUICK TECH options or a single system or tech option that requires FULL TECH to activate. If you choose two QUICK TECH options, you can choose the same option multiple times.",
+    "synergy_locations": ["full_tech"]
   },
   {
     "id": "act_stabilize",
     "name": "STABILIZE",
     "activation": "Full",
     "terse": "Heal and cool down your mech, reload, or attempt to end conditions affecting it.",
-    "detail": "When you STABILIZE, you enact emergency protocols to purge your mech’s systems of excess heat, repair your chassis where you can, or eliminate hostile code.<br>To STABILIZE, choose one of the following:<br>• Cool your mech, clearing all heat and EXPOSED.<br>• Mark 1 REPAIR to restore all HP.<br>Additionally, choose one of the following:<br>• Reload all LOADING weapons.<br>• Clear any burn currently affecting your mech.<br>• Clear a condition that wasn’t caused by one of your own systems, talents, etc.<br>• Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc."
+    "detail": "When you STABILIZE, you enact emergency protocols to purge your mech’s systems of excess heat, repair your chassis where you can, or eliminate hostile code.<br>To STABILIZE, choose one of the following:<br>• Cool your mech, clearing all heat and EXPOSED.<br>• Mark 1 REPAIR to restore all HP.<br>Additionally, choose one of the following:<br>• Reload all LOADING weapons.<br>• Clear any burn currently affecting your mech.<br>• Clear a condition that wasn’t caused by one of your own systems, talents, etc.<br>• Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc.",
+    "synergy_locations": ["stabilize"]
   },
   {
     "id": "act_disengage",
     "name": "DISENGAGE",
     "activation": "Full",
-    "terse": "Move safely, avoiding reactions and engagement.",
-    "detail": "When you DISENGAGE, you attempt to extricate yourself safely from a dangerous situation, make a steady and measured retreat, or rely on your mech’s agility to slip in and out of threat ranges faster than an enemy can strike.<br>Until the end of your current turn, you ignore engagement and your movement does not provoke reactions."
+    "terse": "Disengage safely from a dangerous situation. Until the end of your current turn, you ignore engagement and your movement does not provoke reactions.",
+    "detail": "When you DISENGAGE, you attempt to extricate yourself safely from a dangerous situation, make a steady and measured retreat, or rely on your mech’s agility to slip in and out of threat ranges faster than an enemy can strike.<br>Until the end of your current turn, you ignore engagement and your movement does not provoke reactions.",
+    "synergy_locations": ["disengage"],
+    "log": ["DISENGAGE SUCCESSFUL. NEW EXTRICATION VECTORS AVAILABLE."]
   },
   {
     "id": "act_improvised_attack",
     "name": "IMPROVISED ATTACK",
     "activation": "Full",
     "terse": "Attack with a fist, rifle butt, or improvised weapon in melee.",
-    "detail": "When you make an IMPROVISED ATTACK, you attack with a rifle butt, fist, or another improvised melee weapon. You can use anything from the butt of a weapon to a slab of concrete or a length of hull plating – the flavor of the attack is up to you!<br>To make an IMPROVISED ATTACK, make a melee attack against an adjacent target. On a success, they take 1d6 kinetic damage."
+    "detail": "When you make an IMPROVISED ATTACK, you attack with a rifle butt, fist, or another improvised melee weapon. You can use anything from the butt of a weapon to a slab of concrete or a length of hull plating – the flavor of the attack is up to you!<br>To make an IMPROVISED ATTACK, make a melee attack against an adjacent target. On a success, they take 1d6 kinetic damage.",
+    "synergy_locations": ["improvised_attack"]
   },
   {
     "id": "act_activate_full",
     "name": "FULL ACTIVATION",
     "activation": "Full",
     "terse": "Activate a system or piece of gear that uses a full action.",
-    "detail": "When you ACTIVATE, you use a system or piece of gear that requires either a quick or full action. These systems have the QUICK ACTION or FULL ACTION tags. You can ACTIVATE any number of times a turn but can’t ACTIVATE the same system more than once unless you can do so as a free action."
+    "detail": "When you ACTIVATE, you use a system or piece of gear that requires either a quick or full action. These systems have the QUICK ACTION or FULL ACTION tags. You can ACTIVATE any number of times a turn but can’t ACTIVATE the same system more than once unless you can do so as a free action.",
+    "synergy_locations": ["full_activation"]
   },
   {
     "id": "act_boot_up",
     "name": "BOOT UP",
     "activation": "Full",
     "terse": "Fire up your mech from Shut Down.",
-    "detail": "You can BOOT UP a mech that you are piloting as a full action, clearing SHUT DOWN and restoring your mech to a powered state."
-  },
+    "detail": "You can BOOT UP a mech that you are piloting as a full action, clearing SHUT DOWN and restoring your mech to a powered state.",
+    "synergy_locations": ["boot_up"],
+    "log": ["COMPANION/CONCIERGE UNIT INITIALIZING", "GMS COMP/CON Unit Mk XI Rev 11.4.1c", "5016.8.22 General Massive Systems // Please Operate Responsibly", "RESTORING PROCESSES AT ret.n@142::ACCORD-6", "INTERFACE ONLINE. REBOOT SUCCESSFUL."]
+    },
   {
     "id": "act_mount",
     "name": "MOUNT",
@@ -203,14 +239,17 @@
     "name": "DISMOUNT",
     "activation": "Full",
     "terse": "Get out of your mech.",
-    "detail": "When you DISMOUNT, you climb off of a mech. Dismounting is the preferred term among most pilots.<br>You can DISMOUNT as a full action. When you DISMOUNT, you are placed in an adjacent space – if there are no free spaces, you cannot DISMOUNT.<br>Additionally, you can also DISMOUNT willing allied mechs or vehicles you have MOUNTED."
+    "detail": "When you DISMOUNT, you climb off of a mech. Dismounting is the preferred term among most pilots.<br>You can DISMOUNT as a full action. When you DISMOUNT, you are placed in an adjacent space – if there are no free spaces, you cannot DISMOUNT.<br>Additionally, you can also DISMOUNT willing allied mechs or vehicles you have MOUNTED.",
+    "synergy_locations": ["dismount"],
+    "log": ["LOCKS DISENGAGED. MANUAL CONTROL MODE SUSPENDED."]
   },
   {
     "id": "act_skill_check",
     "name": "SKILL CHECK",
     "activation": "Full",
     "terse": "Perform an activity with a clear goal that would take a skill check.",
-    "detail": "When you make a SKILL CHECK, you undertake an activity that isn’t covered by other actions but has a clear goal and is sufficiently complex to require a roll. The parameters and outcomes of SKILL CHECKS are up to the GM, but they must be involved enough to require a full action. If you want to do something that can be done quickly, no action is required.<br>Examples of SKILL CHECKS:<br>• Bruja, on foot, wants to open a locked door. The GM asks her to make a SKILL CHECK and decides that Bruja can get a bonus from her ‘Hack or Fix’ trigger.<br>• Pan wants to jump a crevasse in his mech that’s wider than he can normally manage. The GM decides to allow him to try it with AGILITY.<br>• Zaid wants to lift a heavy boulder with his mech, to clear a passage. The GM decides this is probably a full action and requires a SKILL CHECK with HULL."
+    "detail": "When you make a SKILL CHECK, you undertake an activity that isn’t covered by other actions but has a clear goal and is sufficiently complex to require a roll. The parameters and outcomes of SKILL CHECKS are up to the GM, but they must be involved enough to require a full action. If you want to do something that can be done quickly, no action is required.<br>Examples of SKILL CHECKS:<br>• Bruja, on foot, wants to open a locked door. The GM asks her to make a SKILL CHECK and decides that Bruja can get a bonus from her ‘Hack or Fix’ trigger.<br>• Pan wants to jump a crevasse in his mech that’s wider than he can normally manage. The GM decides to allow him to try it with AGILITY.<br>• Zaid wants to lift a heavy boulder with his mech, to clear a passage. The GM decides this is probably a full action and requires a SKILL CHECK with HULL.",
+    "synergy_locations": ["skill_check"]
   },
   {
     "id": "act_fight",
@@ -247,7 +286,7 @@
     "name": "FREE ACTION",
     "activation": "Free",
     "terse": "Characters may perform any number of Free Actions on their turn.",
-    "detail": "Free actions are often granted by systems, talents, gear, or OVERCHARGE. Characters may perform any number of free actions on their turn, but only on their turn, and only those granted to them. Free actions can always be used to make duplicate actions.<br>The most common type of free action is a PROTOCOL, which is granted by gear or systems and can be activ‐ ated or deactivated only at the start of a turn. Each Protocol can only be taken once per turn."
+    "detail": "Free actions are often granted by systems, talents, gear, or OVERCHARGE. Characters may perform any number of free actions on their turn, but only on their turn, and only those granted to them. Free actions can always be used to make duplicate actions.<br>The most common type of free action is a PROTOCOL, which is granted by gear or systems and can be activated or deactivated only at the start of a turn. Each Protocol can only be taken once per turn."
   },
   {
     "id": "act_buy_some_time",

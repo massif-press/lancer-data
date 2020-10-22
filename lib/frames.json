@@ -967,7 +967,8 @@
       "Flex"
     ],
     "stats": {
-      "size": 0.5, "structure": 4,
+      "size": 0.5, 
+      "structure": 4,
       "stress": 4,
       "armor": 0,
       "hp": 6,

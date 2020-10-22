@@ -41,8 +41,6 @@ Interfaces are denoted with an `I`- (and usually -`Data`), such as in `IActionDa
 # Actions (actions.json)
 Actions in `actions.json` define the basic actions every player has access to in Active Mode (for both Combat and Downtime).
 
-At this time, base actions are not extensible.
-
 ```ts
 {
   "id": string,
@@ -51,10 +49,16 @@ At this time, base actions are not extensible.
   "terse": string, // terse text used in the action menu. The fewer characters the better.
   "detail": string, // v-html
   "pilot": boolean
+  "synergy_locations"?: string[]
+  "log"?: string[]
 }
 ```
 
 Actions marked with `pilot` are only available when the character is UNMOUNTED.
+
+`synergy_locations` will cause Synergies to be collected and displayed for that location on the action's Active Mode action panel, eg. by adding the synergy location `'ram'` to an action, synergies that would display on the Ram Quick Action panel will *also* show up on your action. 
+
+`log` is an optional string array of flavor text that will be shown when a player commits an action. If omitted, it will only display `ACTIVATION CONFIRMED.`
 
 # Backgrounds (backgrounds.json)
 ```ts
@@ -600,6 +604,8 @@ Actions encompass any distinct move a player can make -- mostly this will be sys
   "detail": string, // v-html
   "cost"?: number
   "pilot"?: boolean
+  "synergy_locations"?: string[]
+  "log"?: string[]  
 }
 ```
 
@@ -608,6 +614,11 @@ If not given a `name` field, the Item Action button will be titled "Activate ITE
 `cost` will deduct its value from the parent system's limited item uses, if it is a limited-tagged item. If `cost` is omitted and the item is limited, `cost` will be automatically set to `1`
 
 `pilot` actions will only be available in Active Mode when a character is UNMOUNTED
+
+`synergy_locations` will cause Synergies to be collected and displayed for that location on the item's generated Active Mode action panel, eg. by adding the synergy location `'ram'` to an action, synergies that would display on the Ram Quick Action panel will *also* show up on your action. 
+
+`log` is an optional string array of flavor text that will be shown when a player commits an action. If omitted, it will only display `ACTIVATION CONFIRMED.`
+
 
 ### Protocols
 Protocols are distinct from Free Actions only in that C/C will collect them seperately for the purposes of checking if they're the first used action(s) on a turn.
@@ -835,7 +846,7 @@ X|overcharge|Next to the overcharge pip tracker in the Active Mode: Combat view
 -|grapple|Grapple Action modal
 -|tech_attack|Tech Attack Action modal
 -|overcharge|Overcharge Action modal
--|skill_check|Skill Check Action modal
+X|skill_check|Skill Check Action modal
 -|overwatch|Overwatch Action modal
 X|improvised_attack|Improvised Attack Action modal
 X|disengage|Disengage Action modal

@@ -57,7 +57,7 @@
         "description": "When you take this talent, choose another pilot (hopefully a PC, but NPCs are fine if your GM allows it) to be your Bondmate. Any mech skill checks and saves either character makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy, but additional characters with this talent can’t increase it any further.<br>Between missions, you can replace your Bondmate with a new one, but only if your relationship with them has changed.",
         "synergies": [{
           "locations": ["skill_check, active_effects"],
-          "detail": "Any mech skill checks and saves either you or your Bondmakte makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy."
+          "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy."
         }]
       },
       {
