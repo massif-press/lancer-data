@@ -48,13 +48,18 @@ Actions in `actions.json` define the basic actions every player has access to in
   "action_type"?: ActivationType,
   "terse": string, // terse text used in the action menu. The fewer characters the better.
   "detail": string, // v-html
-  "pilot": boolean
+  "pilot"?: boolean
+  "mech"?: boolean
   "synergy_locations"?: string[]
   "log"?: string[]
 }
 ```
 
-Actions marked with `pilot` are only available when the character is UNMOUNTED.
+Actions marked with `pilot` are available when the character is UNMOUNTED.
+
+Actions marked with `mech` are available when the character is MOUNTED.
+
+Actions marked with neither `mech` nor `pilot` are defaulted to `mech` only.
 
 `synergy_locations` will cause Synergies to be collected and displayed for that location on the action's Active Mode action panel, eg. by adding the synergy location `'ram'` to an action, synergies that would display on the Ram Quick Action panel will *also* show up on your action. 
 
@@ -830,6 +835,8 @@ Implemented|ID|Location|
 -|rest|A panel near the top of the Active Mode:Rest view
 X|weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
 X|system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
+-|deployable|Deployment action for deployable, deployable panel body
+-|drone|Deployment action for drone, drone panel body
 -|move|Next to the move pip bar, also within the Move menu/move Action tab
 -|boost|Next to the Boost button, within the Boost Action modal
 X|structure|Next to the structure pip tracker in the Active Mode: Combat view

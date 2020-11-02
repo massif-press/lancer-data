@@ -282,7 +282,7 @@
     "license_level": 0,
     "effect": "You may choose to count any and all of your movement as flying; however, you take Size +1 Heat at the end of any of your turns in which you fly this way.",
     "synergies": [{
-      "locations": ["move", "boost"],
+      "locations": ["boost"],
       "detail": "You can fly when you Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling."
     }]
   },
