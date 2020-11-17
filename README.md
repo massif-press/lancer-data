@@ -51,7 +51,8 @@ Actions in `actions.json` define the basic actions every player has access to in
   "pilot"?: boolean
   "mech"?: boolean
   "synergy_locations"?: string[]
-  "log"?: string[]
+  "confirm"?: string[]
+  "log"?: string
 }
 ```
 
@@ -63,7 +64,9 @@ Actions marked with neither `mech` nor `pilot` are defaulted to `mech` only.
 
 `synergy_locations` will cause Synergies to be collected and displayed for that location on the action's Active Mode action panel, eg. by adding the synergy location `'ram'` to an action, synergies that would display on the Ram Quick Action panel will *also* show up on your action. 
 
-`log` is an optional string array of flavor text that will be shown when a player commits an action. If omitted, it will only display `ACTIVATION CONFIRMED.`
+`confirm` is an optional string array of flavor text that will be shown in the UI when a player commits the action. If omitted, it will only display `ACTIVATION CONFIRMED.`
+
+`log` is an optional string that will be written to the pilot's combat log when the player commits the action.
 
 # Backgrounds (backgrounds.json)
 ```ts
@@ -361,6 +364,8 @@ For brevity's sake, Pilot Gear/Equipment is collected in one file and is differe
 },
 ```
 
+Pilot Equipment actions and deployables will always be available **unless** they are marked with the `pilot` flag, in which case they will only be available when the pilot it **unmounted**
+
 # Reserves (reserves.json)
 ```ts
 {
@@ -570,6 +575,8 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "range"?: IRangeData[],
   "tags"?: ITagData[],
   "sp"?: number,
+  "skirmish_cost"?: number,
+  "barrage_cost"?: number,
   "description": string, // v-html
   "effect"?: string // v-html
   "on_attack"?: string // v-html
@@ -583,6 +590,8 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "integrated"?: string[]
 }
 ```
+
+`skirmish_cost` and `barrage_cost` denote the uses an activation of this item will expend for either skirmish or barrage, if the item has the Limited tag. If no value is set, they will both be set to `1` (one Limited tag 'use' cost per activation).
 
 ### Effects
 Effects are eqipment abilities that **do not** grant the player a new Action but **do** add or modify gameplay mechanics. The field should be used for "usage notes" (for lack of a better term) that have game-mechanical properties that cannot be modeled with Actions or Deployables, or may include representation elsewhere but involve player notes/choices that can't be modeled there (like the Hydra's Ghast Nexus), or any other sort of mechanically important detail that is unsuited for inclusion (like the rules for the Pegasus' Mimic Gun). An item takes only one effect.
@@ -722,6 +731,8 @@ IDeployableData (note that this does not have an `id` field, this is generated u
   "tech_attack"?: number,
   "save"?: number,
   "speed"?: number,
+  "pilot"?: boolean,
+  "mech"?: boolean,
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[]
   "synergies"?: ISynergyData[],
@@ -742,6 +753,8 @@ A `redeploy` value will generate a redeploy action.
 `cost` will deduct its value from the parent system's limited item uses, if it is a limited-tagged item. If `cost` is omitted and the item is limited, `cost` will be automatically set to `1`
 
 `tags` in the context of a deployable, are for the deployed equipment only, and not the governing system.
+
+`pilot` and `mech` refer to this item's deployment action availability. `pilot` deployables are available when the pilot is **unmounted** and vice versa. If neither are provided, deployables are by default available only when **mounted**
 
 
 # Profiles
@@ -831,14 +844,14 @@ The following is a list of currently implemented synergy hint locations and thei
 
 Implemented|ID|Location|
 |--|--|--------|
--|active_effects|The Active Effects panel near the top of the Active Mode view
--|rest|A panel near the top of the Active Mode:Rest view
+X|active_effects|The Active Effects panel near the top of the Active Mode view
+X|rest|A panel near the top of the Active Mode:Rest view
 X|weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
 X|system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
 -|deployable|Deployment action for deployable, deployable panel body
 -|drone|Deployment action for drone, drone panel body
--|move|Next to the move pip bar, also within the Move menu/move Action tab
--|boost|Next to the Boost button, within the Boost Action modal
+X|move|Next to the move pip bar, also within the Move menu/move Action tab
+X|boost|Next to the Boost button, within the Boost Action modal
 X|structure|Next to the structure pip tracker in the Active Mode: Combat view
 X|armor|Next to the armor pip tracker in the Active Mode: Combat view
 X|hp|Next to the HP pip tracker in the Active Mode: Combat view
@@ -848,23 +861,23 @@ X|heat|Next to the heat pip tracker in the Active Mode: Combat view
 X|repair|Next to the repair capacity pip tracker in the Active Mode: Combat view
 X|core_power|Next to the CORE power pip tracker in the Active Mode: Combat view
 X|overcharge|Next to the overcharge pip tracker in the Active Mode: Combat view
--|other|Other Action tab
--|ram|Ram Action modal
--|grapple|Grapple Action modal
--|tech_attack|Tech Attack Action modal
--|overcharge|Overcharge Action modal
+X|ram|Ram Action modal
+X|grapple|Grapple Action modal
+X|tech_attack|Tech Attack Action modal
+X|overcharge|Overcharge Action modal
 X|skill_check|Skill Check Action modal
--|overwatch|Overwatch Action modal
+X|overwatch|Overwatch Action modal
 X|improvised_attack|Improvised Attack Action modal
 X|disengage|Disengage Action modal
 X|dismount|Dismount Action modal
--|stabilize|Stabilize Action modal
--|tech|Quick and Full Tech Attack modals
--|lock_on|Lock On Action modal
+X|stabilize|Stabilize Action modal
+X|tech|Quick and Full Tech Attack modals
+X|lock_on|Lock On Action modal
 X|hull|mouseover tooltip for HULL stat
 X|agility|mouseover tooltip for AGILITY stat
 X|systems|mouseover tooltip for SYSTEMS stat
 X|engineering|mouseover tooltip for ENGINEERING stat
+X|pilot_weapon|Pilot Weapon panel and action modal
 
 # Counters (ICounterData)
 Counters are tick/clock/track managers available on the Pilot Active mode under the COUNTERS heading. Pilots can create, edit, and delete custom counters, but adding one to an item will generate an automatic, permanent counter that will always be available if the prerequisites are met (item is equipped, talent is unlocked, etc.)
@@ -952,29 +965,29 @@ X|`save`|Add Mech Save|integer
 X|`sp`|Add Mech SP|integer
 X|`size`|Add Mech Size|integer
 X|`ai_cap`|Add AI Capacity|integer
--|`cheap_struct`|Half cost for Structure repairs|boolean
--|`cheap_stress`|Half cost for Reactor Stress repairs|boolean
--|`overcharge`|Overcharge Track|DieRoll[]
+X|`cheap_struct`|Half cost for Structure repairs|boolean
+X|`cheap_stress`|Half cost for Reactor Stress repairs|boolean
+X|`overcharge`|Overcharge Track|DieRoll[]
 X|`limited_bonus`|Add Limited equipment uses|integer
 X|`pilot_hp`|Add Pilot HP|integer
 X|`pilot_armor`|Add Pilot Armor|integer
 X|`pilot_evasion`|Add Pilot Evasion|integer
 X|`pilot_edef`|Add Pilot E-Defense|integer
 X|`pilot_speed`|Add Pilot Speed|integer
--|`pilot_gear_cap`|Add Pilot Gear capacity|integer
--|`pilot_weapon_cap`|Add Pilot Weapon capacity|integer
--|`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
--|`deployable_size`|Add size to all deployed Drones and Deployables|integer
--|`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
--|`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
--|`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
--|`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
--|`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
--|`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
--|`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
--|`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
--|`deployable_save`|Add save to all deployed Drones and Deployables|integer
--|`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
+X|`pilot_gear_cap`|Add Pilot Gear capacity|integer
+X|`pilot_weapon_cap`|Add Pilot Weapon capacity|integer
+X|`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
+X|`deployable_size`|Add size to all deployed Drones and Deployables|integer
+X|`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
+X|`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
+X|`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
+X|`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
+X|`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
+X|`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
+X|`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
+X|`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
+X|`deployable_save`|Add save to all deployed Drones and Deployables|integer
+X|`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
 
 ## Special Values
 Any `integer` type bonus can be replaced with one of the following special value strings surrounded in brackets (eg. `"{ll}"`):

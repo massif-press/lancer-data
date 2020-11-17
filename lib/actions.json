@@ -15,7 +15,7 @@
     "terse": "Overcharging immediately allows you to make any quick action of your choice as a Free Action, even one you already made this turn.",
     "detail": "When you OVERCHARGE, you briefly push your mech beyond factory specifications for a tactical advantage. Moments of intense action won’t tax your mech’s systems too much, but sustained action beyond prescribed limits takes a toll.<br>Once per turn, you can OVERCHARGE your mech, allowing you to make any quick action as a free action – even actions you have already taken this turn.<br>The first time you OVERCHARGE, take 1 heat.<br>The second time you OVERCHARGE, take 1d3 heat.<br>The third time, take 1d6 heat, and each time thereafter take 1d6+4 heat.<br>A FULL REPAIR resets this counter.",
     "synergy_locations": ["overcharge"],
-    "log": ["REACTOR LIMITER DISABLED. CORE TEMPERATURES RISING."]
+    "confirm": ["REACTOR LIMITER DISABLED. CORE TEMPERATURES RISING."]
   },
   {
     "id": "act_skirmish",
@@ -31,7 +31,7 @@
     "terse": "Take an extra movement of at least 1 space, up to your SPEED.",
     "detail": "When you BOOST, you move at least 1 space, up to your SPEED. This allows you to make an extra movement, on top of your standard move. Certain talents and systems can only be used when you BOOST, not when you make a standard move.",
     "synergy_locations": ["boost"],
-    "log": ["POWER REDIRECTED."],
+    "confirm": ["POWER REDIRECTED."],
     "mech": true,
     "pilot": true
   },
@@ -42,7 +42,7 @@
     "terse": "Attempt to knock down or knock back your target. On a success the target is knocked Prone and you may choose to knock them back one space.",
     "detail": "When you RAM, you make a melee attack with the aim of knocking a target down or back.<br>To RAM, make a melee attack against an adjacent character the same SIZE or smaller than you. On a success, your target is knocked PRONE and you may also choose to knock them back by one space, directly away from you.",
     "synergy_locations": ["ram"],
-    "log": ["MANUVER CONFIRMED.", "WARNING: PROXIMITY.", "WARNING: COLLISION IMMINENT"]
+    "confirm": ["MANUVER CONFIRMED.", "WARNING: PROXIMITY.", "WARNING: COLLISION IMMINENT"]
   },
   {
     "id": "act_grapple",
@@ -67,7 +67,7 @@
     "terse": "Enhance another character’s systems.",
     "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems.<br>To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time.",
     "synergy_locations": ["bolster"],
-    "log": ["UPLINK ESTABLISHED.", "PARALLELIZING COMBAT ALGORITHMS"]
+    "confirm": ["UPLINK ESTABLISHED.", "PARALLELIZING COMBAT ALGORITHMS"]
   },
   {
     "id": "act_scan",
@@ -76,7 +76,7 @@
     "terse": "Perform a deep scan on an enemy",
     "detail": "When you SCAN, you use your mech’s powerful sensors to perform a deep scan on an enemy.<br>To SCAN, choose a character or object within SENSORS and line of sight, then ask the GM for one of the following pieces of information, which they must answer honestly:<br>• Your target’s weapons, systems, and full statistics (HP, SPEED, EVASION, ARMOR, MECH SKILLS, and so on).<br>• One piece of hidden information about the target, such as confidential cargo or data, current mission, the identity of the pilot, and so on.<br>• Generic or public information about the target that can be pulled from an info bank or records, such as the model number of a mech.<br>Any information gathered is only current at the time of the SCAN – if the target later takes damage, for instance, you don’t receive an update.",
     "synergy_locations": ["scan"],
-    "log": ["ESTABLISHING TARGET LOCK.", "LOCK CONFIRMED. FIRING SOLUTIONS CALCULATED."]
+    "confirm": ["ESTABLISHING TARGET LOCK.", "LOCK CONFIRMED. FIRING SOLUTIONS CALCULATED."]
   },
   {
     "id": "act_lockon",
@@ -85,7 +85,7 @@
     "terse": "Digitally mark a target",
     "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points.<br>To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition. Any character making an attack against a character with LOCK ON may choose to gain +1 Accuracy on that attack and then clear the LOCK ON condition after that attack resolves. This is called consuming LOCK ON.",
     "synergy_locations": ["lock_on"],
-    "log": ["ESTABLISHING TARGET LOCK.", "LOCK CONFIRMED. FIRING SOLUTIONS CALCULATED."]
+    "confirm": ["ESTABLISHING TARGET LOCK.", "LOCK CONFIRMED. FIRING SOLUTIONS CALCULATED."]
   },
   {
     "id": "act_invade",
@@ -100,7 +100,7 @@
     "activation": "Invade",
     "terse": "IMPAIR and SLOW a character until the end of their next turn.",
     "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.",
-    "log": ["SIGNAL FRAGMENTATION IN PROGRESS."]
+    "confirm": ["SIGNAL FRAGMENTATION IN PROGRESS."]
   },
   {
     "id": "act_hide",
@@ -111,7 +111,7 @@
     "mech": true,
     "pilot": true,
     "synergy_locations": ["hide"],
-    "log": ["SENSOR SIGNATURE OBSCURED. COMMS IN TIGHTBEAM ONLY. SIGHTLINES CLEAR."]
+    "confirm": ["SENSOR SIGNATURE OBSCURED. COMMS IN TIGHTBEAM ONLY. SIGHTLINES CLEAR."]
   },
   {
     "id": "act_search",
@@ -139,7 +139,7 @@
     "terse": "Eject from your mech, flying 6 spaces in the direction of your choice.",
     "detail": "You can also EJECT as a quick action, flying 6 spaces in the direction of your choice; however, this is a single-use system for emergency use only – it leaves your mech IMPAIRED. Your mech remains IMPAIRED and you cannot EJECT again until your next FULL REPAIR.",
     "synergy_locations": ["eject"],
-    "log": ["SAFETY PROTOCOLS DISABLED. MANUAL CONTROL MODE SUSPENDED. EXPLOSIVE BOLTS PRIMED.", "GOOD LUCK, PILOT."]
+    "confirm": ["SAFETY PROTOCOLS DISABLED. MANUAL CONTROL MODE SUSPENDED. EXPLOSIVE BOLTS PRIMED.", "GOOD LUCK, PILOT."]
   },
   {
     "id": "act_prepare",
@@ -150,7 +150,7 @@
     "mech": true,
     "pilot": true,
     "synergy_locations": ["prepare"],
-    "log": ["COMMAND QUEUED, STANDING BY."]
+    "confirm": ["COMMAND QUEUED, STANDING BY."]
   },
   {
     "id": "act_self_destruct",
@@ -167,7 +167,7 @@
     "terse": "Shut down your mech as a desperate measure, to end system attacks, regain control of AI, and cool your mech. The mech is STUNNED until rebooted via the BOOT UP action.",
     "detail": "When you SHUT DOWN, your mech powers completely off and enters a rest state. It’s always risky to do in the field, but it’s sometimes necessary to prevent a catastrophic systems overload or an NHP cascading.<br>You can SHUT DOWN your mech as a quick action. Your mech takes the SHUT DOWN status, with these effects:<br>• all heat is cleared, as is EXPOSED;<br>• any cascading NHPs return to a normal state;<br>• any statuses or conditions affecting the mech caused by tech actions, such as LOCK ON, immediately end;<br>• the mech gains IMMUNITY to all tech actions and attacks, including any from allied characters;<br>• the mech is STUNNED indefinitely. Nothing can prevent this condition, and it remains until the mech ceases to be SHUT DOWN.<br>The only way to remove the SHUT DOWN status is to BOOT UP the mech.",
     "synergy_locations": ["shut_down"],
-    "log": ["ALERT: EMERGENCY SHUTDOWN", "STOPPING GMS/VCTRL.MANUAL", "KILLING ALL REMAINING PROCESSES", "LOGGING RESOLVER STATE", ">://cc.main.term", ">:// _"]
+    "confirm": ["ALERT: EMERGENCY SHUTDOWN", "STOPPING GMS/VCTRL.MANUAL", "KILLING ALL REMAINING PROCESSES", "confirmGING RESOLVER STATE", ">://cc.main.term", ">:// _"]
   },
   {
     "id": "act_reload",
@@ -209,7 +209,7 @@
     "terse": "Disengage safely from a dangerous situation. Until the end of your current turn, you ignore engagement and your movement does not provoke reactions.",
     "detail": "When you DISENGAGE, you attempt to extricate yourself safely from a dangerous situation, make a steady and measured retreat, or rely on your mech’s agility to slip in and out of threat ranges faster than an enemy can strike.<br>Until the end of your current turn, you ignore engagement and your movement does not provoke reactions.",
     "synergy_locations": ["disengage"],
-    "log": ["DISENGAGE SUCCESSFUL. NEW EXTRICATION VECTORS AVAILABLE."]
+    "confirm": ["DISENGAGE SUCCESSFUL. NEW EXTRICATION VECTORS AVAILABLE."]
   },
   {
     "id": "act_improvised_attack",
@@ -236,7 +236,7 @@
     "terse": "Fire up your mech from Shut Down.",
     "detail": "You can BOOT UP a mech that you are piloting as a full action, clearing SHUT DOWN and restoring your mech to a powered state.",
     "synergy_locations": ["boot_up"],
-    "log": ["COMPANION/CONCIERGE UNIT INITIALIZING", "GMS COMP/CON Unit Mk XI Rev 11.4.1c", "5016.8.22 General Massive Systems // Please Operate Responsibly", "RESTORING PROCESSES AT ret.n@142::ACCORD-6", "INTERFACE ONLINE. REBOOT SUCCESSFUL."]
+    "confirm": ["COMPANION/CONCIERGE UNIT INITIALIZING", "GMS COMP/CON Unit Mk XI Rev 11.4.1c", "5016.8.22 General Massive Systems // Please Operate Responsibly", "RESTORING PROCESSES AT ret.n@142::ACCORD-6", "INTERFACE ONLINE. REBOOT SUCCESSFUL."]
   },
   {
     "id": "act_mount",
@@ -253,7 +253,7 @@
     "terse": "Get out of your mech.",
     "detail": "When you DISMOUNT, you climb off of a mech. Dismounting is the preferred term among most pilots.<br>You can DISMOUNT as a full action. When you DISMOUNT, you are placed in an adjacent space – if there are no free spaces, you cannot DISMOUNT.<br>Additionally, you can also DISMOUNT willing allied mechs or vehicles you have MOUNTED.",
     "synergy_locations": ["dismount"],
-    "log": ["LOCKS DISENGAGED. MANUAL CONTROL MODE SUSPENDED."]
+    "confirm": ["LOCKS DISENGAGED. MANUAL CONTROL MODE SUSPENDED."]
   },
   {
     "id": "act_skill_check",
