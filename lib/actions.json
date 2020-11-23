@@ -11,7 +11,7 @@
   {
     "id": "act_overcharge",
     "name": "OVERCHARGE",
-    "activation": "Overcharge",
+    "activation": "Free",
     "terse": "Overcharging immediately allows you to make any quick action of your choice as a Free Action, even one you already made this turn.",
     "detail": "When you OVERCHARGE, you briefly push your mech beyond factory specifications for a tactical advantage. Moments of intense action won’t tax your mech’s systems too much, but sustained action beyond prescribed limits takes a toll.<br>Once per turn, you can OVERCHARGE your mech, allowing you to make any quick action as a free action – even actions you have already taken this turn.<br>The first time you OVERCHARGE, take 1 heat.<br>The second time you OVERCHARGE, take 1d3 heat.<br>The third time, take 1d6 heat, and each time thereafter take 1d6+4 heat.<br>A FULL REPAIR resets this counter.",
     "synergy_locations": ["overcharge"],
@@ -22,7 +22,8 @@
     "name": "SKIRMISH",
     "activation": "Quick",
     "terse": "Attack with a single weapon. In addition to your primary attack, you may also attack with a different Auxiliary weapon on the same mount.",
-    "detail": "When you SKIRMISH, you attack with a single weapon.<br>To SKIRMISH, choose a weapon and a valid target within RANGE (or THREAT) then make an attack.<br>• In addition to your primary attack, you may also attack with a different AUXILIARY weapon on the same mount. That weapon doesn’t deal bonus damage.<br>• SUPERHEAVY weapons are too cumbersome to use in a SKIRMISH, and can only be fired as part of a BARRAGE."  
+    "detail": "When you SKIRMISH, you attack with a single weapon.<br>To SKIRMISH, choose a weapon and a valid target within RANGE (or THREAT) then make an attack.<br>• In addition to your primary attack, you may also attack with a different AUXILIARY weapon on the same mount. That weapon doesn’t deal bonus damage.<br>• SUPERHEAVY weapons are too cumbersome to use in a SKIRMISH, and can only be fired as part of a BARRAGE.",
+    "ignore_used": true
   },
   {
     "id": "act_boost",
@@ -58,6 +59,7 @@
     "activation": "Quick",
     "terse": "Perform quick electronic warfare or systems-boosting activities.",
     "detail": "When you use QUICK TECH, you engage in electronic warfare, countermeasures, and other technical actions, often aided by a mech’s powerful computing and simulation cores.<br>Each time you take this action, you choose an option from the QUICK TECH list. All mechs have access to these options, but some systems enhance them or make new options available.<br>Unlike other quick actions, QUICK TECH can be taken more than once per turn; however, a different option must be chosen every time, unless specified otherwise or granted as a free action.",
+    "ignore_used": true,
     "synergy_locations": ["quick_tech"]
   },
   {
