@@ -381,7 +381,7 @@
     "license_level": 2,
     "deployables": [{
       "type": "Deployable",
-      "Name": "Aegis Shield Generator",
+      "name": "Aegis Shield Generator",
       "activation": "Quick",
       "cost": 1,
       "size": 1,
@@ -525,10 +525,10 @@
     "source": "IPS-N",
     "license": "LANCASTER",
     "license_level": 3,
-    "effect": {
+    "actions": [{
       "activation": "Quick",
       "detail": "Expend a charge to fire this small, self-arming system onto an allied mech within range 5. They gain Overshield equal to your Grit +4. While they have this Overshield they gain Immunity to Impaired and Jammed."
-    },
+    }],
     "description": "The IPS-N Aceso Stabilizer is a useful triage measure for any scoring and minor mechanical damage that is sustained in the course of combat engagement or negative environmental interaction. Thanks to its negligible processor demand, Aceso Stabilizers can even be controlled by comp/con units – this allows the pilot to concentrate on complex repairs or immediate threat neutralization."
   },
   {
@@ -713,10 +713,10 @@
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 2,
-    "effect": {
+    "actions": [{
       "activation": "Quick",
       "detail": "This system blankets a free blast 1 area within range 5 with explosive caltrops. The affected area becomes difficult terrain for the rest of the scene, and mechs take 1d3 AP explosive damage when they enter the affected area for the first time in a round or end their turn within it."
-    },
+    }],
     "description": "Wicked anti-organic, anti-vehicle systems for proximity denial, caltrop launchers fire either great clouds or long swathes of shimmering metal over an area. IPS-N’s HX-CAL caltrop system includes small, shaped explosives in the mix of hardened pyramids."
   },
   {
@@ -794,16 +794,14 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 2,
-    "effect": {
-      "type": "Deployable",
-      "name": "Perimeter Command Plate",
-      "activation": "Quick",
-      "count": 1,
-      "size": 2,
-      "hp": 20,
-      "evasion": 5,
-      "detail": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.<br>The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed."
-    },
+      "deployables": [{
+        "name": "Perimeter Command Plate",
+        "type": "Deployable",
+        "size": 2,
+        "hp": 20,
+        "evasion": 5,
+        "detail": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.<br>The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed."
+      }],
     "description": "The Exotic Materials Group developed the Perimeter Command Plate to extend the area of the Black Witch’s zone of control. Utilizing single-pattern flash printers, the Black Witch prints a broad, circular plate seeded with electromagnetic projectors. Although the plates are intended to be disposable, Black Witch pilots often grow attached to their “familiars” and request their flash-printers create personalized plates."
   },
   {
