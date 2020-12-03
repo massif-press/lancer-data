@@ -69,6 +69,7 @@
     "description": "A mech built on the Gyges template is designed for combat – enhanced with finely tuned stabilizers and a robust suite of targeting software and hardware.",
     "bonuses": [{
           "id": "range",
+          "weapon_types": ["Melee"],
           "range_types": ["Threat"],
           "val": 1
     }],

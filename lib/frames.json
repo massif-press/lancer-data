@@ -1719,7 +1719,11 @@
     },
     "traits": [{
         "name": "Limit Break",
-        "description": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat."
+        "description": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat.",
+        "synergies": [{
+        "locations":["active_effects"],
+        "detail": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat."}
+      ]
       },
       {
         "name": "Plasma Sheath",
@@ -1734,7 +1738,12 @@
       "use": "scene",
       "activation": "Protocol",
       "passive_name": "Overclock",
-      "passive_effect": "Protocol<br>You cause your mech to become Exposed until the end of your next turn.",
+      "passive_effect": "As a Protocol, you cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons.",
+      "passive_actions": [{
+          "name": "Overclock",
+          "activation": "Protocol",
+          "detail": "You cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+      }],
       "active_bonuses": [
         {
           "id": "range",
@@ -1748,6 +1757,10 @@
           "range_types": ["Threat"],
           "val": 2
         }
+      ],
+      "active_synergies": [{
+        "locations":["active_effects"],
+        "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."}
       ]
     }
   }

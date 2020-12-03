@@ -39,7 +39,7 @@
     "description": "Your mech can take heat from tech attacks and some of its own systems. If it takes more heat than its HEAT CAP, it overheats. Mechs also have STRESS, which is similar to STRUCTURE – when they exceed their HEAT CAP, they take 1 STRESS and clear all heat. When they lose STRESS like this, mechs have to make a special stress damage check and receive a consequence based on the roll. Most mechs have 4 STRESS, and are destroyed when they reach 0 STRESS."
   },
   {
-    "name": "HIT POINTS (HP)",
+    "name": "HP",
     "description": "The amount of damage a pilot can receive before going DOWN AND OUT, and the amount of damage a mech can receive before it takes structure damage. When Mechs reach 0 HP, they take 1 structure damage and their HP resets. When they lose STRUCTURE like this, mechs have to make a special structure damage check and receive a consequence based on the roll. Most mechs have 4 STRUCTURE and are destroyed when they reach 0 STRUCTURE."
   },
   {

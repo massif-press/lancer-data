@@ -2374,14 +2374,16 @@
     "license_level": 1,
     "actions": [{
         "activation": "Quick",
-        "detail": "This system generates a burst 3 dome that lasts until the end of your next turn. You become Immobilized for the duration, but any ranged or melee attacks made against characters within the affected area from outside the dome receive +1 difficulty.<br>Additionally, gain the Blinkfield Intervention reaction while the shield is active."
+        "detail": "This system generates a burst 3 dome that lasts until the end of your next turn. You become Immobilized for the duration, but any ranged or melee attacks made against characters within the affected area from outside the dome receive +1 difficulty.<br>Additionally, gain the Blinkfield Intervention reaction while the shield is active.",
+        "heat_cost": 0
       },
       {
         "name": "Blinkfield Intervention",
         "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "A character or object within the affected area is attacked.",
-        "detail": "Take two Heat, then grant the attack’s target Resistance to all damage from this attack."
+        "detail": "Take two Heat, then grant the attack’s target Resistance to all damage from this attack.",
+        "heat_cost": 2
       }
     ],
     "description": "The Armory’s ENCLAVE-Pattern Support Shield creates a localized one-way blinkfield, folding a thin dome of complex realspace around its user and their immediate area, protecting occupants from incoming projectiles. Entities within the field can fire out, but probabilistic fluctuations cause incoming projectiles to “lag”, skipping them away from their intended target and along a randomized trajectory."

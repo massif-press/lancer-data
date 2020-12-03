@@ -108,10 +108,15 @@
       },
       {
         "name": "KNOCKOUT BLOW",
-        "description": "Gain a Brawler Die, 1d6 starting at 6. Each time you Grapple, Ram, or make an Improvised Attack, lower the value of the Brawler Die by 1. When the Brawler Die reaches 1, you may reset it to 6 and, as a full action, make a knockout blow against an adjacent character. They must pass a Hull save, or take 2d6+2 Kinetic damage and become Stunned until the end of their next turn. The value of your Brawler Die persists between scenes, but it resets to 6 when you rest or perform a Full Repair.",
+        "description": "Gain a Brawler Die, 1d6 starting at 6. Each time you Grapple, Ram, or make an Improvised Attack, lower the value of the Brawler Die by 1. When the Brawler Die reaches 1, you may reset it to 6 and, as a full action, make a Knockout Blow against an adjacent character. The value of your Brawler Die persists between scenes, but it resets to 6 when you rest or perform a Full Repair.",
         "synergies": [{
           "locations": ["grapple", "ram", "improvised_attack"],
           "detail": "Lowers the value of your Brawler Die by 1"
+        }],
+        "actions": [{
+          "name": "Knockout Blow",
+          "activation": "Full",
+          "detail": "Reset your Brawler Die to 6 and, as a full action, make a Knockout Blow against an adjacent character. They must pass a Hull save, or take 2d6+2 Kinetic damage and become Stunned until the end of their next turn.<br>This action can only be taken when the value of your Brawler Die is 1."
         }],
         "counters": [{
           "id": "ctr_brawler",
@@ -572,20 +577,20 @@
         "name": "SAFE_CRACKER",
         "description": "Gain the following options for Invade:",
         "actions": [{
-          "activation": "Invade",
-          "options": [{
               "name": "Jam Cockpit",
+          "activation": "Invade",
               "detail": "Characters may not Mount or Dismount your target until the cockpit is fixed with a successful Engineering check as a full action."
             },
             {
               "name": "Disable Life Support",
+          "activation": "Invade",
               "detail": "Your target receives +1 Difficulty on all saves until the life-support system is rebooted with a successful Systems check as a quick action."
             }, {
               "name": "Hack./Slash",
+          "activation": "Invade",
               "detail": "Your target cannot benefit from or take Quick or Full Tech actions until the mech is either Shut Down or its core computer is rebooted with a successful Systems check as a quick action."
             }
-          ]
-        }]
+        ]
       },
       {
         "name": "LAST ARGUMENT OF KINGS",
@@ -937,12 +942,17 @@
       },
       {
         "name": "TORRENT",
-        "description": "Gain a Torrent Die, 1d6 starting at 6. Whenever you use Stormbending, lower the value of the Torrent Die by 1, to a minimum of 1.<br>When the Torrent Die reaches 1, you may reset it to 6 and make a massive attack as a full action, targeting a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>The value of your Torrent Die persists between scenes, but it resets when you rest or perform a Full Repair.",
+        "description": "Gain a Torrent Die, 1d6 starting at 6. Whenever you use Stormbending, lower the value of the Torrent Die by 1, to a minimum of 1.<br>When the Torrent Die reaches 1, you may reset it to 6 and make a Massive Attack as a full action.<br>The value of your Torrent Die persists between scenes, but it resets when you rest or perform a Full Repair.",
         "synergies": [{
           "locations": ["weapon"],
           "weapon_types": ["Launcher"],
           "weapon_sizes": ["any"],
           "detail": "Whenever you use Stormbending, lower the value of the Torrent Die by 1."
+        }],
+        "actions": [{
+          "name": "Massive Attack",
+          "activation": "Full",
+          "detail": "Reset your Torrent Die to 6, then target a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>This action can only be taken when the value of your Torrent Die is 1."
         }],
         "counters": [{
           "id": "ctr_stormbringer",
@@ -1072,21 +1082,19 @@
     "description": "Think of a firefight: what’s your average pilot or trooper gonna sling? Jacketed lead, of course. A mag or three of depleted uranium if their target’s a big one. Boring. No, worse than boring: Dull. Predictable. Basic.<br>And guess what? Dull isn’t fun, predictable gets you killed, and basic leaves a boring body. Put down the depleted uranium and pick up a magazine of anoriginary stutterblink slugs, or at least a pack of tachyon flechettes. Lay waste in style, and live forever.",
     "ranks": [{
         "name": "ARMAMENT",
-        "description": "You carry a supply of custom ammunition that can be used with all your main ranged weapons. Gain the Ammo Case system.",
+        "description": "You carry a supply of custom ammunition that can be used with all your main ranged weapons. Gain the Ammo Case system.<br> Once per turn, when you attack and hit with a MAIN ranged weapon, you may expend one charge to apply one of the following effects to your attack: <ul><li> THUMPER: The attack gains KNOCKBACK 1 and deals Explosive damage.</li><li>SHOCK: The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 AP Energy Damage, whether the result is a hit or miss.</li><li>MAG: The attack gains ARCING and deals Kinetic damage.</li></ul>",
         "integrated": [
           "ms_walking_armory_1"
         ],
         "exclusive": true
-
       },
       {
         "name": "EXPANDED PORTFOLIO",
-        "description": "Upgrade your Ammo Case, gaining new ammunition types, each of which costs two charges rather than one.",
+        "description": "Upgrade your Ammo Case, gaining new ammunition types, each of which costs two charges rather than one.<br><ul><li>HELLFIRE (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li>JAGER (2 charges): The attack gains KNOCKBACK 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a HULL save or be knocked PRONE.</li><li>SABOT (2 charges): The attack gains AP and deals Kinetic damage.</li></ul>",
         "integrated": [
           "ms_walking_armory_2"
         ],
         "exclusive": true
-
       },
       {
         "name": "EFFICIENCY",

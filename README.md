@@ -53,6 +53,8 @@ Actions in `actions.json` define the basic actions every player has access to in
   "synergy_locations"?: string[]
   "confirm"?: string[]
   "log"?: string
+  "ignore_used"?: boolean
+  "heat_cost"?: boolean
 }
 ```
 
@@ -67,6 +69,10 @@ Actions marked with neither `mech` nor `pilot` are defaulted to `mech` only.
 `confirm` is an optional string array of flavor text that will be shown in the UI when a player commits the action. If omitted, it will only display `ACTIVATION CONFIRMED.`
 
 `log` is an optional string that will be written to the pilot's combat log when the player commits the action.
+
+`ignore_used` will prevent the action from ever being marked as "used" in Active Mode.
+
+C/C will try to calculate the heat cost of item actions based on item tags, but this can be overriden with the `heat_cost` field. For items that have a heat tag and multiple associated actions but only one that incurs the heat cost (such as the Saladin's Support Shield), the `heat_cost` for the non-heat-incurring action can be set to `0`
 
 # Backgrounds (backgrounds.json)
 ```ts
@@ -917,6 +923,8 @@ It is possible to "chain" equipment through `integrated` arrays, and is therefor
   "range_types"?: RangeType[]
   "weapon_types"?: WeaponType[]
   "weapon_sizes"?: WeaponSize[]
+  "overwrite"?: boolean
+  "replace"?: boolean
 }
 ```
 
@@ -988,6 +996,13 @@ X|`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployab
 X|`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
 X|`deployable_save`|Add save to all deployed Drones and Deployables|integer
 X|`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
+
+The `overwrite` flag will *overwrite* any integer value with the highest bonus of the same type from any source that has an `overwrite` flag. Eg: a mech with items that give +4, +2, +3 (overwrite) and +2 (ovewrite) AI Cap will result in a +3 AI Cap bonus.
+This flag is not necessary for non-integer values.
+
+The `replace` flag will *replace* **any interger value** in the target item, pilot, or mech with the total collected `replace` bonus value. Eg. a mech with a base HP of 8 and the following bonuses: +1, +1 and 3 (replace) will result in a mech with a final HP of **5** (5 replaced by 3, +1 +1). A mech with a base HP of 8 and the following bonuses: +1, 3 (replace), and 3 (replace) will result in a mech with a final HP of **7** (5 replaced by 3 + 3, then +1).
+
+The `overwrite` and `replace` flags can be used together to create equipment that overrides the final computed bonus value with a flat value.
 
 ## Special Values
 Any `integer` type bonus can be replaced with one of the following special value strings surrounded in brackets (eg. `"{ll}"`):

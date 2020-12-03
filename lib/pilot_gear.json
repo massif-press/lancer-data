@@ -156,15 +156,18 @@
       },
       {
         "id": "pilot_evasion",
-        "val": 10
+        "val": 10,
+        "replace": true
       },
       {
         "id": "pilot_edef",
-        "val": 10
+        "val": 10,
+        "replace": true
       },
       {
         "id": "pilot_speed",
-        "val": 4
+        "val": 4,
+        "replace": true
       }
     ]
   },
@@ -183,15 +186,18 @@
       },
       {
         "id": "pilot_evasion",
-        "val": 8
+        "val": 8,
+        "replace": true
       },
       {
         "id": "pilot_edef",
-        "val": 8
+        "val": 8,
+        "replace": true
       },
       {
         "id": "pilot_speed",
-        "val": 4
+        "val": 4,
+        "replace": true
       }
     ]
   },
@@ -210,15 +216,18 @@
       },
       {
         "id": "pilot_evasion",
-        "val": 6
+        "val": 6,
+        "replace": true
       },
       {
         "id": "pilot_edef",
-        "val": 8
+        "val": 8,
+        "replace": true
       },
       {
         "id": "pilot_speed",
-        "val": 3
+        "val": 3,
+        "replace": true
       }
     ]
   },
@@ -229,15 +238,18 @@
     "description": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
     "bonuses": [{
         "id": "pilot_evasion",
-        "val": 10
+        "val": 10,
+        "replace": true
       },
       {
         "id": "pilot_edef",
-        "val": 10
+        "val": 10,
+        "replace": true
       },
       {
         "id": "pilot_speed",
-        "val": 5
+        "val": 5,
+        "replace": true
       }
     ]
   },
@@ -248,15 +260,18 @@
     "description": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
     "bonuses": [{
         "id": "pilot_evasion",
-        "val": 8
+        "val": 8,
+        "replace": true
       },
       {
         "id": "pilot_edef",
-        "val": 8
+        "val": 8,
+        "replace": true
       },
       {
         "id": "pilot_speed",
-        "val": 4
+        "val": 4,
+        "replace": true
       }
     ],
     "actions": [{
