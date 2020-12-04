@@ -103,15 +103,13 @@
     "deployables": [{
       "name": "Jericho Deployable Cover",
       "type": "Deployable",
+      "instances": 2,
       "size": 1,
       "hp": 10,
       "evasion": 5,
       "detail": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
-      "actions": [{
-        "name": "Pick Up Jericho Deployable Cover",
-        "activation": "Full",
-        "detail": "Pick up the Jericho Deployable Cover"
-      }]
+      "recall": "Full",
+      "redeploy": "Quick"
     }]
   },
   {

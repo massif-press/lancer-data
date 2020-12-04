@@ -721,11 +721,12 @@ IDeployableData (note that this does not have an `id` field, this is generated u
   "name": string
   "type" string // this is for UI furnishing only
   "detail": string
-  "activation": ActivationType,
+  "activation"?: ActivationType,
   "deactivation"?: ActivationType,
   "recall"?: ActivationType,
   "redeploy"?: ActivationType,
   "size": number,
+  "instances"?: number,
   "cost"?: number
   "armor"?: number,
   "hp"?: number,
@@ -746,6 +747,9 @@ IDeployableData (note that this does not have an `id` field, this is generated u
   "tags"?: ITagData[],
 }
 ```
+Deployables will automatically generate a Deploy action on their parent item. Deployables without an `activation` value will default to a Quick action. 
+By default, deployables have an `instances` value of `1`, which is how many copies of the deployable are spawned per activation.
+
 Note that most of these fields are optional, but their inclusion will cause the relevant UI features to render.
 
 Actions, Bonuses, and Synergies on the Deployable will only be active/available only for as long as the Deployable is deployed.
