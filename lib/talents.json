@@ -756,11 +756,23 @@
     "description": "Whatever your actual age, you’re the Old Man of the battlefield. A light to your friends and allies; the resolute eye of a howling storm. Your steady voice, confident stance, and talent for command set allies at ease because they know you’ll lead them to victory every time. With you at the helm, victory is attainable, and heroes seem a little more real.",
     "ranks": [{
         "name": "FIELD COMMANDER",
-        "description": "Gain 3 Leadership Dice, which are d6s: 1/turn, on your turn as a free action, you may give an order to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene.<br>You can’t use Leadership Dice from other characters as long as you have any remaining. If you have none, you regain 1 Leadership Die when you rest or regain all when you perform a Full Repair.<br>Leadership dice are consumed when expended."
+        "description": "Gain 3 Leadership Dice, which are d6s, and gain the Issue Order Free Action.<br>You can’t use Leadership Dice from other characters as long as you have any remaining. If you have none, you regain 1 Leadership Die when you rest or regain all when you perform a Full Repair.<br>Leadership dice are consumed when expended.",
+        "actions": [{
+          "name": "Issue Order",
+          "activation": "Free",
+          "detail": "1/turn, on your turn as a free action, you may issue an order to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene."
+        }]
       },
       {
         "name": "OPEN CHANNELS",
-        "description": "Gain 5 Leadership Dice instead of 3; additionally, you can now issue a command as a reaction at the start of any other player’s turn, any number of times per round."
+        "description": "Gain 5 Leadership Dice instead of 3; additionally, you can now issue a command as a reaction at the start of any other player’s turn, any number of times per round.",
+        "actions": [{
+          "name": "Issue Command",
+          "activation": "Reaction",
+          "frequency": "Unlimited",
+          "trigger": "Another player starts their turn.",
+          "detail": "You may issue a command to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene."
+        }]
       },
       {
         "name": "INSPIRING PRESENCE",

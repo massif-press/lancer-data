@@ -237,7 +237,7 @@ The `info.json` file is only used in the app to reference the rules release vers
 ```
 
 # Manufacturers (manufacturers.json)
-Any homebrew content from a new manufacturer requires a manufacturer item in `manufacturers.json`. Please take note the Manufacturer ID detail below:
+Any homebrew content from a new manufacturer requires a manufacturer item in `manufacturers.json`. Please take note of the Manufacturer ID detail below:
 
 ```ts
 {
