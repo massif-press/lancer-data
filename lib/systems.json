@@ -667,7 +667,11 @@
     "license_level": 3,
     "actions": [{
       "activation": "Quick",
-      "detail": "When activated, the Hyperdense Armor hardens into a shimmering, reflective surface that offers unparalleled protection. You gain Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; however, you become Slowed and deal half damage, Heat and Burn to characters beyond Range 3.<br>Hyperdense armor can be deactivated as a quick action."
+      "detail": "When activated, the Hyperdense Armor hardens into a shimmering, reflective surface that offers unparalleled protection. You gain Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; however, you become Slowed and deal half damage, Heat and Burn to characters beyond Range 3."
+    },{
+      "name": "Deactivate Hyperdense Armor",
+      "activation": "Quick",
+      "detail": "Deactivate Hyperdense Armor, losing Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; as well as clearing your Slowed status and dealealing normal damage, Heat and Burn to characters beyond Range 3."
     }],
     "description": "IPS-N HyperDense Armor is built for space – forged with no regard for any constraints users might face within a gravity well. As such, many pilots protected by HyperDense products are shocked to experience the difference between piloting their mech down a well and taking it for a ride in the null-gravity of space."
   },
