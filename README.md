@@ -1,6 +1,63 @@
 # About
 JSON data for Massif Press' LANCER TTRPG
 
+# Overview
+This guide is primarily meant as documentation for authors of custom LANCER content who want to provide their players with associated COMP/CON content packages.
+
+If you are interested in submitting your content package to be included in the directory within COMP/CON, please check the [LANCER Community Content Packs](#LANCER-Community-Content-Packs) section
+
+A working example of custom data can be found [here](https://github.com/massif-press/long-rim-data), in the Long Rim player data repository. Additionally, all item data for the Core book can be found within this repository.
+
+If you have any additional questions after reading this document, please contact me at @Beeftime#0558 in the `#comp-con-homebrew` channel on [the official LANCER Discord](https://discord.gg/Qu3C4te) 
+
+## Adding Content to COMP/CON
+COMP/CON comes with the Core book data already loaded, but other data (official and otherwise) must be loaded via a Lancer Content Package (.lcp) file, a renamed .zip archive. 
+
+### LCP Structure
+Your content package is contained in a single-level folder that, at minimum, contains an [lcp_manifest.json](#lcp_manifestjson) file that looks, at minimum, like this:
+
+```json
+{
+  "name": "My content package name",
+  "author": "My name or organization",
+  "description": "A short description of my LCP <i>HTML-enabled</i>",
+  "version": "1.0",
+}
+```
+
+the `active` property is what COMP/CON uses to determine what installed packages are loaded. It's best to keep this as `false`.
+
+A working, but content-less, folder structure would look like this:
+
+```
+my homebrew folder
+│   lcp_manifest.json
+```
+
+additional data will be included in the folder on the same level as the `info.json` file. _Content folders should not have any depth_.
+
+### Troubleshooting
+
+Most of the time, issues related to LCPs come from malformed LCP data. To that end, a tool has been developed for VSCode to ensure correct data format, available [here](https://marketplace.visualstudio.com/items?itemName=massif-press.comp-con-content-authoring)
+
+Further questions can be answered in the #comp-con-homebrew channel in the LANCER Discord.
+
+# LANCER Community Content Packs
+If you'd like to submit your content pack for inclusion within COMP/CON, there are a few requirements:
+
+- Compatible with the new item regime, as described by this document.
+- Downloadable through an itch.io page (free or paid)
+- Nominated by the community as a good asset, even for people that aren't on the Discord or otherwise tied in to the greater Lancer community (ie: has been playtested, doesn't require other assets, only references already-published material, etc)
+- Does not contain any questionable or illegal content, or any content not owned by the author.
+- Passes a final content and code pass
+
+If these standards are acceptable, please contact me at @Beeftime#0558 in [the official LANCER Discord](https://discord.gg/Qu3C4te), ideally within the #comp-con-homebrew channel.
+
+## Extending COMP/CON Code
+COMP/CON is an open-source project and may be forked freely. However, if you want to submit code for novel features to support your content packs (or otherwise), that's totally acceptable. Please notify me at @Beeftime#0558 in [the official LANCER Discord](https://discord.gg/Qu3C4te), in the #comp-con channel and we can discuss the details.
+
+Additionally, I am available for commissioned work to develop COMP/CON features at your direction (outside of currently-planned features, etc.). Please contact me on the Discord for rates, timeframe, and further information.
+
 # Structure
 COMP/CON's LANCER data is stored as JSON data that is then parsed on app load to hydrate an item database. Lancer Content Packs (LCPs) with additional content can be parsed by C/C provided they follow the schema detailed below. These content packs will be **appended** to the core content in this repo (meaning it is impossible to overwrite a piece of core equipment, even if they share an ID).
 
@@ -28,7 +85,7 @@ Omitting one or both of the optional properties would allow C/C to correctly par
 ## Item IDs
 COMP/CON, whenever it can, references item data by ID. This means two very important things:
 
-1) IDs must be unique for data to be referenced correctly. If there are two items with the same ID there's no guarantee as to which one will be referenced, so it's in your best interests to have longer, specific IDs. Consider the following format: `my-lcp-prefix_data-type-prefix_my_item_name`. Long IDs will not perceptably slow down item references.
+1) IDs must be unique for data to be referenced correctly. If there are two items with the same ID there's no guarantee as to which one will be referenced, so it's in your best interests to have longer, specific IDs. Consider the following format: `my-lcp-prefix_data-type-prefix_my_item_name`. Long IDs will not perceptibly slow down item references.
 
 2) If you change and item ID, user data that references that item will break (in one form or another). To the extent possible, ensure that item IDs stay the same through future versions of your LCP
 
@@ -45,9 +102,9 @@ Actions in `actions.json` define the basic actions every player has access to in
 {
   "id": string,
   "name": string,
-  "action_type"?: ActivationType,
-  "terse": string, // terse text used in the action menu. The fewer characters the better.
   "detail": string, // v-html
+  "activation": ActivationType,
+  "terse"?: string, // terse text used in the action menu. The fewer characters the better.
   "pilot"?: boolean
   "mech"?: boolean
   "synergy_locations"?: string[]
@@ -72,7 +129,7 @@ Actions marked with neither `mech` nor `pilot` are defaulted to `mech` only.
 
 `ignore_used` will prevent the action from ever being marked as "used" in Active Mode.
 
-C/C will try to calculate the heat cost of item actions based on item tags, but this can be overriden with the `heat_cost` field. For items that have a heat tag and multiple associated actions but only one that incurs the heat cost (such as the Saladin's Support Shield), the `heat_cost` for the non-heat-incurring action can be set to `0`
+C/C will try to calculate the heat cost of item actions based on item tags, but this can be overridden with the `heat_cost` field. For items that have a heat tag and multiple associated actions but only one that incurs the heat cost (such as the Saladin's Support Shield), the `heat_cost` for the non-heat-incurring action can be set to `0`
 
 # Backgrounds (backgrounds.json)
 ```ts
@@ -114,7 +171,7 @@ Many of the CORE Bonus effects are hardcoded, which is something to keep in mind
 ```
 
 # Factions (factions.json)
-TBD
+FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. This document will be updated when that changes.
 
 # Frames (frames.json)
 ```ts
@@ -124,7 +181,6 @@ TBD
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "name": string,
   "mechtype": string[], // can be customized
-  "y_pos": number, // used for vertical alignment of the mech in banner views (like in the new mech selector)
   "description": string, // v-html
   "mounts": MountType[],
   "stats": {
@@ -145,8 +201,8 @@ TBD
   },
   "traits": IFrameTraitData[],
   "core_system": ICoreSystemData,
-  "image_url": string
-  "other_art": IArtLocation[]
+  "image_url"?: string
+  "y_pos"?: number, // used for vertical alignment of the mech in banner views (like in the new mech selector)
 },
 ```
 
@@ -173,15 +229,15 @@ Including a `use` value will give it a button in the Player Active Mode that wil
 ```ts
 {
   "name": string,
-  "description": string, // v-html
   "active_name": string,
   "active_effect": string, // v-html
   "activation": ActivationType,
+  "description"?: string, // v-html
   "deactivation"?: ActivationType,
   "use"?: 'Round' | 'Next Round' | 'Scene' | 'Encounter' | 'Mission',
-  "active_actions": IActionData[],
-  "active_bonuses": IBonusData[],
-  "active_synergies": ISynergyData[],
+  "active_actions"?: IActionData[],
+  "active_bonuses"?: IBonusData[],
+  "active_synergies"?: ISynergyData[],
   "passive_name"?: string,
   "passive_effect"?: string, // v-html, 
   "passive_actions"?: IActionData[],
@@ -190,28 +246,20 @@ Including a `use` value will give it a button in the Player Active Mode that wil
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
-  "tags": ITagData[]
+  "tags"?: ITagData[]
 }
 ```
 
-The `use` value in the CORE System data relates to how long the `active_effect` text is shown as part of the CORE Power Engaged UI element. For example, if set to `Next Round`, the CORE Power Engaged UI element will dissappear after the player ends the round **after** the round in which the player activated the system. If set to `Mission`, it will only disappear after the player presses the confirmation button on the End Mission modal. If there is no `use` value, the CORE System remains activated for the remainer of the mission, or until the `deactivation` action is taken, whichever comes first.
+The `use` value in the CORE System data relates to how long the `active_effect` text is shown as part of the CORE Power Engaged UI element. For example, if set to `Next Round`, the CORE Power Engaged UI element will disappear after the player ends the round **after** the round in which the player activated the system. If set to `Mission`, it will only disappear after the player presses the confirmation button on the End Mission modal. If there is no `use` value, the CORE System remains activated for the remainder of the mission, or until the `deactivation` action is taken, whichever comes first.
 
 `active_actions`, `active_bonuses, and `active_synergies` are only available from when the CORE System is activated (action type dictated by the `activation` value) until it is deactivated (`deactivation` action type) or the `use` condition is met, as described above. 
 
 `passive_actions`, `passive_bonuses`, and `passive_synergies`, on the other hand, persist as if they were granted by normally installed systems.
 
-## IArtLocation
-```ts
-{
-  "tag"?: string,
-  "src"?: string
-  "url"?: string
-}
-```
-Art location data **must** take a tag and a filename (src/images/`tag` subfolder), including extension. Unless you're working on or forking the app itself, you'll probably want just the `url`, for now. Likewise the `image_url` should point to your frame artwork. The `image_url` will be the default frame artwork, and the `other_art` images will populate the frame's image gallery/selector.
-
-# Glossary (glossary.json)
+# Glossary (glossary.json - NOT YET IMPLEMENTED)
 The glossary is meant to collect common game terms for quick user reference. If your LCP contains new mechanics with important keywords, it's a good idea to include them in a `glossary.js` file
+
+This has not yet been implemented. This document will be updated when it has.
 
 ```ts
 {
@@ -220,8 +268,8 @@ The glossary is meant to collect common game terms for quick user reference. If 
 },
 ```
 
-# Info (info.json)
-The `info.json` file is only used in the app to reference the rules release version. Homebrew content should instead include a `lcp_manifest.json`, as detailed below:
+# Info (lcp_manifest.json)
+The `info.json` file found within this repository is only used in the app to reference the rules release version. Homebrew content should instead include a `lcp_manifest.json`, as detailed below:
 
 ## lcp_manifest.json
 ```ts
@@ -259,18 +307,19 @@ The `logo` field is used for core LANCER manufacturer logos, when building your 
 The manufacturer ID should be acronym/abbreviated form of the manufacturer name (eg. GMS for General Massive Systems). This is often used in `Source` fields for licensed equipment. When making your own LCPs, take care to choose a unique manufacturer ID for homebrew manufacturers.
 
 # Mods (mods.json)
-Weapon mods are handled seperately in C/C than in Lancer (where they're just tagged Systems), and have a set of mod-specific fields that modify where and how they are applied.
+Weapon mods are handled separately in C/C than in Lancer (where they're just tagged Systems), and have a set of mod-specific fields that modify where and how they are applied.
 
 ```ts
 {
   "id": string,
   "name": string,
-  "sp": number,
   "source": string, // Manufacturer ID
   "license": string, // Frame Name
   "license_level": number, // set to 0 to be available to all Pilots
-  "effect": string, // v-html
-  "tags": ITagData[], // tags related to the mod itself
+  "sp"?: number,
+  "description"?: string, // v-html
+  "effect"?: string, // v-html
+  "tags"?: ITagData[], // tags related to the mod itself
   "allowed_types"?: WeaponType[], // weapon types the mod CAN be applied to
   "allowed_sizes"?: WeaponSize[], // weapon sizes the mod CAN be applied to
   "restricted_types"?: WeaponType[], // weapon types the mod CAN NOT be applied to
@@ -293,7 +342,7 @@ Any combination of allowed/restricted values can be used to narrow a mod's appli
 In any case, `restricted` values take precedence over `allowed` values. A mod that both allows and restricts Superheavy Weapons will ultimately restrict installation on Superheavies.
 
 ## System Mods (Experimental -- NOT YET IMPLEMENTED) (system_mods.json)
-This is currently unsupported in the LANCER Core Book (or any Massif material at the time of this writing), but is available for use in homebrew development. 
+This is currently unsupported in the LANCER Core Book (or any Massif material at the time of this writing), but will be made available for use in homebrew development. This document will be updated when System Mods are available for use.
 
 ```ts
 {
@@ -329,10 +378,10 @@ For brevity's sake, Pilot Gear/Equipment is collected in one file and is differe
   "id": string,
   "name": string, // v-html
   "type": "Weapon",
-  "description": string,
-  "tags": ITagData[],
-  "range": IRangeData[],
-  "damage": IDamageData[],
+  "description"?: string,
+  "tags"?: ITagData[],
+  "range"?: IRangeData[],
+  "damage"?: IDamageData[],
   "actions"?: IActionData[], // these are only available to UNMOUNTED pilots
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent system
   "synergies"?: ISynergyData[],
@@ -346,8 +395,8 @@ For brevity's sake, Pilot Gear/Equipment is collected in one file and is differe
   "id": string,
   "name": string, // v-html
   "type": "Armor",
-  "description": string,
-  "tags": ITagData[],
+  "description"?: string,
+  "tags"?: ITagData[],
   "actions"?: IActionData[], // these are only available to UNMOUNTED pilots
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent system
   "synergies"?: ISynergyData[],
@@ -360,9 +409,9 @@ For brevity's sake, Pilot Gear/Equipment is collected in one file and is differe
 {
   "id": string,
   "name": string, // v-html
-  "type": "Armor",
-  "description": string,
-  "tags": ITagData[],
+  "type": "Gear",
+  "description"?: string,
+  "tags"?: ITagData[],
   "actions"?: IActionData[], // these are only available to UNMOUNTED pilots
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent system
   "synergies"?: ISynergyData[],
@@ -377,10 +426,10 @@ Pilot Equipment actions and deployables will always be available **unless** they
 {
   "id": string,
   "name": string,
-  "type": "Mech" | "Tactical" | "Resources" | "Bonuses",
+  "type": "Mech" | "Tactical" | "Resource" | "Bonus",
   "label": string,
-  "description": string, // v-html
-  "consumable": boolean
+  "description"?: string, // v-html
+  "consumable"?: boolean // defaults to false
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[]
   "synergies"?: ISynergyData[]
@@ -390,7 +439,7 @@ Pilot Equipment actions and deployables will always be available **unless** they
 },
 ```
 
-A character with a reserve will always have its associated action/bonus/synergy/deployable/counter avaialable until the player manually disables (marks "Used") or deletes the reserve item. If the reserve is marked with `consumable`, the reserve will be automatically disabled when any of the associated actions or deployables are used in the Active Mode.
+A character with a reserve will always have its associated action/bonus/synergy/deployable/counter available until the player manually disables (marks "Used") or deletes the reserve item. If the reserve is marked with `consumable`, the reserve will be automatically disabled when any of the associated actions or deployables are used in the Active Mode.
 
 # Rules (rules.json)
 The rules file sets some of the base values of the game, but as of this writing additional values for the core rules are not recognized in LCPs.
@@ -428,15 +477,13 @@ The rules file sets some of the base values of the game, but as of this writing 
 ```ts
   {
     "name": string,
-    "icon"?: string,
-    "icon_url"?: string
+    "icon_url": string
     "type": "Status" | "Condition",
-    "terse": string, // prefer fewest characters
-    "exclusive"?: "Mech" | "Pilot",
     "effects": string // v-html
+    "terse"?: string, // prefer fewest characters
+    "exclusive"?: "Mech" | "Pilot",
   },
 ```
-Either `icon` OR `icon_url` is required, use the latter if you're adding new Statuses/Conditions in a LCP.
 
 # Systems (systems.json)
 
@@ -447,11 +494,11 @@ Either `icon` OR `icon_url` is required, use the latter if you're adding new Sta
     "source": string, // must be the same as the Manufacturer ID to sort correctly
     "license": string, // reference to the Frame name of the associated license
     "license_level": number, // set to zero for this item to be available to a LL0 character
+    "effect"?: string, // v-html
     "type"?: SystemType
-    "sp": number,
-    "description": string, // v-html
+    "sp"?: number,
+    "description"?: string, // v-html
     "tags"?: ITagData[],
-    "effect": string, // v-html
     "actions"?: IActionData[],
     "bonuses"?: IBonusData[]
     "synergies"?: ISynergyData[],
@@ -478,8 +525,8 @@ Object Key|CC Location
   "id": string,
   "name": string,
   "description": string, // v-html, see note below
-  "hidden": boolean
-  "filter_ignore": boolean
+  "hidden"?: boolean
+  "filter_ignore"?: boolean
 }
 ```
 
@@ -493,7 +540,7 @@ Tag ID|Behavior
 `filter_ignore` will prevent this tag from appearing in equipment filters. Mostly this is used to avoid redundancies in the filter menu (eg, tagged range types), but may be useful in other circumstances.
 
 ## {VAL}
-Tag descriptions may include the string "`{VAL}`", a token that will be replaced with any `val` paramater passed to the ITagData object of tagged equipment. For example, the following tag:
+Tag descriptions may include the string "`{VAL}`", a token that will be replaced with any `val` parameter passed to the ITagData object of tagged equipment. For example, the following tag:
 ```ts
 {
   "id": "tg_my_tag",
@@ -524,7 +571,7 @@ It's important to keep in mind that all `val` passed to the description will be 
   "val" string | number
 }
 ```
-Tags related to item type and activation costs will be automatially applied by COMP/CON (such as eg. `tg_quick_action` or `tg_drone`)
+Tags related to item type and activation costs will be automatically applied by COMP/CON (such as eg. `tg_quick_action` or `tg_drone`)
 
 # Talents (talents.json)
 The talent object collects the general detail about a Pilot Talent and serves as a container for `IRankData`, which contains the Talent mechanics:
@@ -533,16 +580,15 @@ The talent object collects the general detail about a Pilot Talent and serves as
 {
   "id": string,
   "name": string,
-  "icon": string // Used internally
-  "icon_url": string // Must be .svg
-  "terse": string, // terse text used in short descriptions. The fewer characters the better
   "description": string, // v-html
   "ranks": IRankData[]
+  "icon_url"?: string // Must be .svg
+  "terse"?: string, // terse text used in short descriptions. The fewer characters the better
 }
 ```
 Use `icon_url`  if you're adding new Talents in an LCP, otherwise the talent will be given a "generic Talent" icon.
 
-Currently, only Talents with three (and exaclty three) ranks have been tested. More or less *should* work properly, but there's always the chance it breaks something. If this is the case with your LCP, please open a ticket.
+Currently, only Talents with three (and exactly three) ranks have been tested. More or less *should* work properly, but there's always the chance it breaks something. If this is the case with your LCP, please open a ticket.
 
 ## IRankData
 IRankData contains the synergies, actions, and talent items granted through ranks in the talent:
@@ -551,7 +597,7 @@ IRankData contains the synergies, actions, and talent items granted through rank
 {
   "name": string,
   "description": string, // v-html
-  "exclusive": boolean // see below 
+  "exclusive"?: boolean // see below 
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[]
   "synergies"?: ISynergyData[]
@@ -577,12 +623,13 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "license_level": number, // set to zero for this item to be available to a LL0 character
   "mount": MountType,
   "type": WeaponType,
+  "cost"?: number
+  "barrage"?: boolean,
+  "skirmish"?: boolean,
   "damage"?: IDamageData[],
   "range"?: IRangeData[],
   "tags"?: ITagData[],
   "sp"?: number,
-  "skirmish_cost"?: number,
-  "barrage_cost"?: number,
   "description": string, // v-html
   "effect"?: string // v-html
   "on_attack"?: string // v-html
@@ -594,15 +641,103 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "profiles"?: IWeaponProfile[] //see note below
 }
 ```
+`cost` refers to the usage cost per attack with this weapon. It defaults to 1.
 
-`skirmish_cost` and `barrage_cost` denote the uses an activation of this item will expend for either skirmish or barrage, if the item has the Limited tag. If no value is set, they will both be set to `1` (one Limited tag 'use' cost per activation).
+`barrage` denotes that this weapon can be fired as part of a barrage, and `skirmish` denotes that this weapon can be fired as part of a skirmish. If neither of these flags are set, `barrage` will be set to `true` by default for all weapons, and `skirmish` will be set to `true` by default for all **non-Superheavy** weapons.
 
-### Effects
+## Weapon Effects
 Effects are eqipment abilities that **do not** grant the player a new Action but **do** add or modify gameplay mechanics. The field should be used for "usage notes" (for lack of a better term) that have game-mechanical properties that cannot be modeled with Actions or Deployables, or may include representation elsewhere but involve player notes/choices that can't be modeled there (like the Hydra's Ghast Nexus), or any other sort of mechanically important detail that is unsuited for inclusion (like the rules for the Pegasus' Mimic Gun). An item takes only one effect.
 
-On Attack/Hit/Crit effects (like the Blackbeard's Chain Axe), are modeled in seperate fields. A weapon may be given any combination of `on_attack`, `on_hit`, `on_crit`, and `effect` fields.
+On Attack/Hit/Crit effects (like the Blackbeard's Chain Axe), are modeled in separate fields. A weapon may be given any combination of `on_attack`, `on_hit`, `on_crit`, and `effect` fields.
+
+## Profiled Weapons
+Weapon profiles are stored as an array of abbreviated `IWeaponData` data as an optional property of a weapon. C/C won't look for or render profile data *within* profiles, so it's not possible to nest a profile more than one deep. 
+
+Actions, Effects, and Synergies will only be available to the player *while* the profile is active.
+
+For a weapon with multiple profiles, the default profile will be the **first** (index 0) item in the profile array, and will be used for things like damage sorting.
+
+### IWeaponProfile
+```ts
+  "name": string
+  "effect"?: string
+  "skirmish"?: boolean
+  "barrage"?: boolean
+  "cost"?: number
+  "on_attack"?: string
+  "on_hit"?: string
+  "on_crit"?: string
+  "damage"?: IDamageData[]
+  "range"?: IRangeData[]
+  "actions"?: IActionData[]
+  "bonuses"?: IBonusData[]
+  "synergies"?: ISynergyData[]
+  "deployables"?: IDeployableData[]
+  "counters"?: ICounterData[]
+  "integrated"?: string[]
+```
+
+All Weapon Profile fields are equivalent to their base Weapon representations.
+
+Note that, aside from the `name` field, all fields on a profile are optional. If a field is not provided, a Weapon Profile will fall back to whatever is in container weapon data.
+
+### Example
+```ts
+{
+  "id": "mw_my_profiled_weapon",
+  "name": "My Profiled Weapon",
+  "mount": "Heavy",
+  "type": "Cannon",
+  "source": "GMS",
+  "license_level": 0,
+  "profiles": [{
+      "name": "Profile A",
+      "damage": [{
+        "type": "kinetic",
+        "val": "1d6"
+      }],
+      "range": [{
+        "type": "Range",
+        "val": 10
+      }],
+      "effect": "This effect is only applicable in Profile A",
+      "actions": [{
+        "name": "Profile A Action",
+        "activation": "Quick",
+        "detail": "This action will only appear in Active Mode is Profile A is active"
+      }],
+      "tags": [{
+        "id": "tg_heatself",
+        "val": 1
+      }]
+    },
+    {
+      "name": "Profile B",
+      "damage": [{
+        "type": "kinetic",
+        "val": 10
+      }],
+      "range": [{
+        "type": "Range",
+        "val": 8
+      }],
+      "effect": "This Bonus will only be applied if Profile B is active",
+      "bonuses": [{
+        "id": "hp",
+        "val": 5,
+      }],
+      "tags": [{
+        "id": "tg_reliable",
+        "val": 3
+      }]
+    }
+  ],
+  "description": "This description will appear regardless of which profile is active."
+}
+```
 
 ---
 
@@ -641,7 +776,7 @@ If not given a `name` field, the Item Action button will be titled "Activate ITE
 
 
 ### Protocols
-Protocols are distinct from Free Actions only in that C/C will collect them seperately for the purposes of checking if they're the first used action(s) on a turn.
+Protocols are distinct from Free Actions only in that C/C will collect them separately for the purposes of checking if they're the first used action(s) on a turn.
 
 ### Charges
 Charge-style equipment is usually broken into two possible actions (throw grenade/deploy mine) and should be rendered as follows:
@@ -704,9 +839,6 @@ Where X is a positive integer.
 
 anything else will appear in the UI on the "Frequency" line but will be treated as if it were `Unlimited`
 
-### Other
-"Other" Actions are treated as Free Actions but arranged into the "Other" menu in the Player Active Mode.
-
 # Deployables
 Deployables encompass anything that can and should be tracked in the Player's Deployable Tracker, specifically Deployable and Drone-tagged equipment. The `deployables` field takes an array of the `IDeployableData` object as follows:
 
@@ -721,11 +853,11 @@ IDeployableData (note that this does not have an `id` field, this is generated u
   "name": string
   "type" string // this is for UI furnishing only
   "detail": string
+  "size": number // not required for Mines
   "activation"?: ActivationType,
   "deactivation"?: ActivationType,
   "recall"?: ActivationType,
   "redeploy"?: ActivationType,
-  "size": number,
   "instances"?: number,
   "cost"?: number
   "armor"?: number,
@@ -767,68 +899,6 @@ A `redeploy` value will generate a redeploy action.
 `pilot` and `mech` refer to this item's deployment action availability. `pilot` deployables are available when the pilot is **unmounted** and vice versa. If neither are provided, deployables are by default available only when **mounted**
 
 
-# Profiles
-Weapon profiles are stored as an array of abbreviated `IWeaponData` data as an optional property of a weapon. C/C won't look for or render profile data *within* profiles, so it's not possible to nest a profile more than one deep. 
-
-Actions, Effects, and Synergies will only be available to the player *while* the profile is active.
-
-For a weapon with multiple profiles, the default profile will be the **first** (index 0) item in the profile array, and will be used for things like damage sorting.
-
-an example of a profiled weapon: 
-```ts
-{
-  "id": "mw_my_profiled_weapon",
-  "name": "My Profiled Weapon",
-  "mount": "Heavy",
-  "type": "Cannon",
-  "source": "GMS",
-  "license_level": 0,
-  "profiles": [{
-      "name": "Profile A",
-      "damage": [{
-        "type": "kinetic",
-        "val": "1d6"
-      }],
-      "range": [{
-        "type": "Range",
-        "val": 10
-      }],
-      "effect": "This effect is only applicable in Profile A",
-      "actions": [{
-        "name": "Profile A Action",
-        "activation": "Quick",
-        "detail": "This action will only appear in Active Mode is Profile A is active"
-      }],
-      "tags": [{
-        "id": "tg_heatself",
-        "val": 1
-      }]
-    },
-    {
-      "name": "Profile B",
-      "damage": [{
-        "type": "kinetic",
-        "val": 10
-      }],
-      "range": [{
-        "type": "Range",
-        "val": 8
-      }],
-      "effect": "This Bonus will only be applied if Profile B is active",
-      "bonuses": [{
-        "id": "hp",
-        "val": 5,
-      }],
-      "tags": [{
-        "id": "tg_reliable",
-        "val": 3
-      }]
-    }
-  ],
-  "description": "This description will appear regardless of which profile is active."
-}
-```
-
 # Synergies
 Synergies are used to convey hint text regarding talent rank or equipment interaction. They are available on `Talent Ranks`, `Frame Traits`, `Core Systems`, and `Equipment` as an array of `ISynergyData`
 ```ts
@@ -852,42 +922,42 @@ Similarly `system_types` will filter system synergy hints to a specific type (eg
 ## Synergy Locations
 The following is a list of currently implemented synergy hint locations and their ID strings. To appear, a synergy must take at least one of these location IDs:
 
-Implemented|ID|Location|
-|--|--|--------|
-X|active_effects|The Active Effects panel near the top of the Active Mode view
-X|rest|A panel near the top of the Active Mode:Rest view
-X|weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
-X|system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
--|deployable|Deployment action for deployable, deployable panel body
--|drone|Deployment action for drone, drone panel body
-X|move|Next to the move pip bar, also within the Move menu/move Action tab
-X|boost|Next to the Boost button, within the Boost Action modal
-X|structure|Next to the structure pip tracker in the Active Mode: Combat view
-X|armor|Next to the armor pip tracker in the Active Mode: Combat view
-X|hp|Next to the HP pip tracker in the Active Mode: Combat view
-X|overshield|Next to the overshield pip tracker in the Active Mode: Combat view
-X|stress|Next to the reactor stress pip tracker in the Active Mode: Combat view
-X|heat|Next to the heat pip tracker in the Active Mode: Combat view
-X|repair|Next to the repair capacity pip tracker in the Active Mode: Combat view
-X|core_power|Next to the CORE power pip tracker in the Active Mode: Combat view
-X|overcharge|Next to the overcharge pip tracker in the Active Mode: Combat view
-X|ram|Ram Action modal
-X|grapple|Grapple Action modal
-X|tech_attack|Tech Attack Action modal
-X|overcharge|Overcharge Action modal
-X|skill_check|Skill Check Action modal
-X|overwatch|Overwatch Action modal
-X|improvised_attack|Improvised Attack Action modal
-X|disengage|Disengage Action modal
-X|dismount|Dismount Action modal
-X|stabilize|Stabilize Action modal
-X|tech|Quick and Full Tech Attack modals
-X|lock_on|Lock On Action modal
-X|hull|mouseover tooltip for HULL stat
-X|agility|mouseover tooltip for AGILITY stat
-X|systems|mouseover tooltip for SYSTEMS stat
-X|engineering|mouseover tooltip for ENGINEERING stat
-X|pilot_weapon|Pilot Weapon panel and action modal
+ID|Location|
+--|--------|
+active_effects|The Active Effects panel near the top of the Active Mode view
+rest|A panel near the top of the Active Mode:Rest view
+weapon|The body of the equipped weapon item panel in a loadout, as well as in the Skirmish/Barrage action modals
+system|The body of the equipped system item panel in a loadout, as well as in the Activation Action modals
+deployable|Deployment action for deployable, deployable panel body
+drone|Deployment action for drone, drone panel body
+move|Next to the move pip bar, also within the Move menu/move Action tab
+boost|Next to the Boost button, within the Boost Action modal
+structure|Next to the structure pip tracker in the Active Mode: Combat view
+armor|Next to the armor pip tracker in the Active Mode: Combat view
+hp|Next to the HP pip tracker in the Active Mode: Combat view
+overshield|Next to the overshield pip tracker in the Active Mode: Combat view
+stress|Next to the reactor stress pip tracker in the Active Mode: Combat view
+heat|Next to the heat pip tracker in the Active Mode: Combat view
+repair|Next to the repair capacity pip tracker in the Active Mode: Combat view
+core_power|Next to the CORE power pip tracker in the Active Mode: Combat view
+overcharge|Next to the overcharge pip tracker in the Active Mode: Combat view
+ram|Ram Action modal
+grapple|Grapple Action modal
+tech_attack|Tech Attack Action modal
+overcharge|Overcharge Action modal
+skill_check|Skill Check Action modal
+overwatch|Overwatch Action modal
+improvised_attack|Improvised Attack Action modal
+disengage|Disengage Action modal
+dismount|Dismount Action modal
+stabilize|Stabilize Action modal
+tech|Quick and Full Tech Attack modals
+lock_on|Lock On Action modal
+hull|mouseover tooltip for HULL stat
+agility|mouseover tooltip for AGILITY stat
+systems|mouseover tooltip for SYSTEMS stat
+engineering|mouseover tooltip for ENGINEERING stat
+pilot_weapon|Pilot Weapon panel and action modal
 
 # Counters (ICounterData)
 Counters are tick/clock/track managers available on the Pilot Active mode under the COUNTERS heading. Pilots can create, edit, and delete custom counters, but adding one to an item will generate an automatic, permanent counter that will always be available if the prerequisites are met (item is equipped, talent is unlocked, etc.)
@@ -949,62 +1019,62 @@ Bonuses are collected and added **to the pilot**, meaning that they will persist
 
 The optional type and size parameters will restrict any weapon-related bonus to those values. If no values are supplied, it will be treated as `all`. These filters are **exclusive** meaning that an item must satisfy all conditions to receive the bonus. For example, a Bonus that included an `Explosive` damage type and a `Launcher` weapon type would only apply to Launchers that dealt Explosive damage. To create eg. a system that increases the damage of all explosive weapons *and* all ranged weapons, two Bonus objects should be used.
 
-Implemented|ID|Detail|Values|
-|--|--|------|------|
-X|`skill_point`|Add Pilot Skill Trigger point|integer
-X|`mech_skill_point`|Add Mech Skill (HASE) point|integer
-X|`talent_point`|Add Pilot Talent point|integer
-X|`license_point`|Add Pilot License point|integer
-X|`cb_point`|Add Pilot CORE Bonus point|integer
-X|`range`|Add Range (including Threat) to weapons|integer
-X|`damage`|Add Damage to weapons|integer
-X|`hp`|Add Mech HP|integer
-X|`armor`|Add Mech Armor|integer
-X|`structure`|Add Mech Structure|integer
-X|`stress`|Add Mech Reactor Stress|integer
-X|`heatcap`|Add Mech Heat Capacity|integer
-X|`repcap`|Add Mech Repair Capacity|integer
--|`core_power`|Add Mech CORE Power|integer
-X|`speed`|Add Mech Speed|integer
-X|`evasion`|Add Mech Evasion|integer
-X|`edef`|Add Mech E-Defense|integer
-X|`sensor`|Add Mech Sensor Range|integer
-X|`attack`|Add Mech Attack Bonus|integer
-X|`tech_attack`|Add Mech Tech Attack|integer
-X|`grapple`|Add Mech Grapple Value|integer
-X|`ram`|Add Mech Ram Value|integer
-X|`save`|Add Mech Save|integer
-X|`sp`|Add Mech SP|integer
-X|`size`|Add Mech Size|integer
-X|`ai_cap`|Add AI Capacity|integer
-X|`cheap_struct`|Half cost for Structure repairs|boolean
-X|`cheap_stress`|Half cost for Reactor Stress repairs|boolean
-X|`overcharge`|Overcharge Track|DieRoll[]
-X|`limited_bonus`|Add Limited equipment uses|integer
-X|`pilot_hp`|Add Pilot HP|integer
-X|`pilot_armor`|Add Pilot Armor|integer
-X|`pilot_evasion`|Add Pilot Evasion|integer
-X|`pilot_edef`|Add Pilot E-Defense|integer
-X|`pilot_speed`|Add Pilot Speed|integer
-X|`pilot_gear_cap`|Add Pilot Gear capacity|integer
-X|`pilot_weapon_cap`|Add Pilot Weapon capacity|integer
-X|`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
-X|`deployable_size`|Add size to all deployed Drones and Deployables|integer
-X|`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
-X|`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
-X|`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
-X|`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
-X|`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
-X|`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
-X|`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
-X|`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
-X|`deployable_save`|Add save to all deployed Drones and Deployables|integer
-X|`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
+|ID|Detail|Values|
+|--|------|------|
+`skill_point`|Add Pilot Skill Trigger point|integer
+`mech_skill_point`|Add Mech Skill (HASE) point|integer
+`talent_point`|Add Pilot Talent point|integer
+`license_point`|Add Pilot License point|integer
+`cb_point`|Add Pilot CORE Bonus point|integer
+`range`|Add Range (including Threat) to weapons|integer
+`damage`|Add Damage to weapons|integer
+`hp`|Add Mech HP|integer
+`armor`|Add Mech Armor|integer
+`structure`|Add Mech Structure|integer
+`stress`|Add Mech Reactor Stress|integer
+`heatcap`|Add Mech Heat Capacity|integer
+`repcap`|Add Mech Repair Capacity|integer
+`speed`|Add Mech Speed|integer
+`evasion`|Add Mech Evasion|integer
+`edef`|Add Mech E-Defense|integer
+`sensor`|Add Mech Sensor Range|integer
+`attack`|Add Mech Attack Bonus|integer
+`tech_attack`|Add Mech Tech Attack|integer
+`grapple`|Add Mech Grapple Value|integer
+`ram`|Add Mech Ram Value|integer
+`save`|Add Mech Save|integer
+`sp`|Add Mech SP|integer
+`size`|Add Mech Size|integer
+`ai_cap`|Add AI Capacity|integer
+`cheap_struct`|Half cost for Structure repairs|boolean
+`cheap_stress`|Half cost for Reactor Stress repairs|boolean
+`overcharge`|Overcharge Track|DieRoll[]
+`limited_bonus`|Add Limited equipment uses|integer
+`pilot_hp`|Add Pilot HP|integer
+`pilot_armor`|Add Pilot Armor|integer
+`pilot_evasion`|Add Pilot Evasion|integer
+`pilot_edef`|Add Pilot E-Defense|integer
+`pilot_speed`|Add Pilot Speed|integer
+`pilot_gear_cap`|Add Pilot Gear capacity|integer
+`pilot_weapon_cap`|Add Pilot Weapon capacity|integer
+`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
+`deployable_size`|Add size to all deployed Drones and Deployables|integer
+`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
+`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
+`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
+`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
+`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
+`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
+`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
+`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
+`deployable_save`|Add save to all deployed Drones and Deployables|integer
+`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
 
-The `overwrite` flag will *overwrite* any integer value with the highest bonus of the same type from any source that has an `overwrite` flag. Eg: a mech with items that give +4, +2, +3 (overwrite) and +2 (ovewrite) AI Cap will result in a +3 AI Cap bonus.
+The `overwrite` flag will *overwrite* any integer value bonus with the highest bonus of the same type from any source that has an `overwrite` flag. Which is to say: all applicable bonuses of that bonus ID will be collected and everything will be discarded *except for* the bonus of the highest value *that has an `overwrite` flag*. 
+Eg: a mech with items that give +4, +2, +3 (overwrite) and +2 (overwrite) AI Cap will result in a +3 AI Cap bonus.
 This flag is not necessary for non-integer values.
 
-The `replace` flag will *replace* **any interger value** in the target item, pilot, or mech with the total collected `replace` bonus value. Eg. a mech with a base HP of 8 and the following bonuses: +1, +1 and 3 (replace) will result in a mech with a final HP of **5** (5 replaced by 3, +1 +1). A mech with a base HP of 8 and the following bonuses: +1, 3 (replace), and 3 (replace) will result in a mech with a final HP of **7** (5 replaced by 3 + 3, then +1).
+The `replace` flag will *replace* **any integer value** in the target item, pilot, or mech with the total collected `replace` bonus value. Eg. a mech with a base HP of 8 and the following bonuses: +1, +1 and 3 (replace) will result in a mech with a final HP of **5** (5 replaced by 3, +1 +1). A mech with a base HP of 8 and the following bonuses: +1, 3 (replace), and 3 (replace) will result in a mech with a final HP of **7** (5 replaced by 3 + 3, then +1).
 
 The `overwrite` and `replace` flags can be used together to create equipment that overrides the final computed bonus value with a flat value.
 

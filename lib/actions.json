@@ -42,7 +42,7 @@
     "terse": "Attempt to knock down or knock back your target. On a success the target is knocked Prone and you may choose to knock them back one space.",
     "detail": "When you RAM, you make a melee attack with the aim of knocking a target down or back.<br>To RAM, make a melee attack against an adjacent character the same SIZE or smaller than you. On a success, your target is knocked PRONE and you may also choose to knock them back by one space, directly away from you.",
     "synergy_locations": ["ram"],
-    "confirm": ["MANUVER CONFIRMED.", "WARNING: PROXIMITY.", "WARNING: COLLISION IMMINENT"]
+    "confirm": ["MANEUVER CONFIRMED.", "WARNING: PROXIMITY.", "WARNING: COLLISION IMMINENT"]
   },
   {
     "id": "act_grapple",

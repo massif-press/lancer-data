@@ -32,14 +32,14 @@
     "traits": [{
         "name": "Initiative",
         "description": "1/scene the Everest may take any quick action as a free action.",
-        "use": "Scene"
+        "use": "Encounter"
       },
       {
         "name": "Replaceable parts",
         "description": "While resting, the Everest can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.",
         "bonuses": [{
           "id": "cheap_struct",
-          "val": true
+          "val": 1
         }],
         "synergies": [{
           "locations": ["rest"],
@@ -51,7 +51,7 @@
       "name": "Hyperspec Fuel Injector",
       "active_name": "Power Up",
       "active_effect": "For the rest of this scene, you gain +1 Accuracy on all attacks, checks, and saves; additionally, 1/turn, you can Boost as a free action.",
-      "use": "Scene",
+      "use": "Encounter",
       "activation": "Protocol",
       "active_synergies": [{
         "locations":["active_effects", "boost"],
@@ -63,23 +63,23 @@
     ]
     },
     "other_art": [{
-        "tag": "Mech",
+        "tag": "mech",
         "src": "pre_assault_pixel.png"
       },
       {
-        "tag": "Mech",
+        "tag": "mech",
         "src": "pre_hacker_pixel.png"
       },
       {
-        "tag": "Mech",
+        "tag": "mech",
         "src": "pre_sniper_pixel.png"
       },
       {
-        "tag": "Mech",
+        "tag": "mech",
         "src": "pre_support_pixel.png"
       },
       {
-        "tag": "Mech",
+        "tag": "mech",
         "src": "pre_vanguard_pixel.png"
       }
     ]
@@ -196,7 +196,7 @@
       "name": "FORTRESS",
       "active_name": "Fortress Protocol",
       "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:<ul><li>You become Immobilized.</li><li>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</li><li>When you Brace, you may take a full action on your next turn instead of just a quick action.</li><li>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</li></ul>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
-      "use": "Scene",
+      "use": "Encounter",
       "deactivation": "Protocol",
       "activation": "Protocol"
     }
@@ -306,7 +306,7 @@
       "description": "IPS-N’s Perpetual Momentum Drive exploits fighter-tier nearlight spooling to capture and sustain a passive .000001 ls charge, able to be dumped into boost systems upon command. Chassis equipped with this drive require heavy reinforcement, including strengthened joints and limbs, and installation of a k-comp crash couch to protect the pilot from sudden g-force and shear.",
       "active_name": "Engage Drive",
       "active_effect": "For the rest of the scene, Skirmisher allows you to move 4 spaces at a time instead of 1 space.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     }
   },
@@ -356,7 +356,7 @@
       "active_name": "Thunder God",
       "active_effect": "You start to spin your M35 Mjolnir up, beginning with no chambered rounds. For the rest of the scene, you load two rounds into chambers at the end of any of your turns in which you haven’t fired the M35 Mjolnir . It can hold a maximum of six rounds.<br>When you fire the M35 Mjolnir, all chambers fire simultaneously, dealing 4 kinetic damage per loaded round. If you fire four or more rounds at once, the attack gains AP and, on a hit, your target becomes Shredded until the end of their next turn.",
       "activation": "Protocol",
-      "use": "scene",
+      "use": "Encounter",
       "integrated": [
         "mw_raleigh_integrated"
       ]
@@ -406,11 +406,11 @@
       "description": "IPS-N security teams are no strangers to the dangers of ship-to-ship or ship-to-station boarding actions. Tight corridors, unstable gravity, dark environments, hard vacuum, and the potential dual threat of both organic and inorganic opposition make boarding actions some of the most statistically deadly engagement – according to IPS-N’s internal metrics, even the winning side should expect at least 30% casualties.Hoping to lessen the cognitive burden on pilots and any NHPs or comp/cons installed in their chassis, IPS-N developed the WATCHDOG co-pilot. The WATCHDOG is a simple subsentient partition: a flash-homunculus of aggregated intelligence generated from thousands of after-action reports from boarding actions, debriefings, and volunteer donors. Not an NHP, nor even a comp/con, the WATCHDOG is a robust tactical program similar to a smart weapon. That said, its ability to operate without cycling presents certain advantages: namely, these co-pilots have some capacity to learn and make best-guess predictions based on analysis of their pilots. WATCHDOGs tend to have plain personalities – to whatever extend they can be said to have one – and are a favorite of pilots looking for a no-nonsense attitude and crisp, efficient counsel.<br>The WATCHDOG system is currently under review by a joint USB/UDoJ-HR commission, but there has been no formal stay on production yet issued.",
       "active_name": "Hyper-Reflex Mode",
       "active_effect": "For the rest of this scene:<ul><li>If you have less than threat 3 with a ranged weapon, it increases to 3.</li><li>1/round, you may take an additional Overwatch reaction.</li><li>Any character you hit with Overwatch becomes Immobilized until the end of their next turn.</li></ul>",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     },
     "other_art": [{
-      "tag": "Mech",
+      "tag": "mech",
       "src": "alt_hortuga.png"
     }]
   },
@@ -460,12 +460,12 @@
       "description": "Primarily a defensive modification, Shrike armor bristles with hardened chromium-tungsten spikes – a nod to the Vlad’s historical namesake. Shrike tips are strategically placed in areas with a high likelihood of kinetic encounters: gauntlets, manipulator joints, shoulder plating, and so on. Shrike armor is uncommon among pilots from the Core and is considered a mark of underdeveloped – if terrifying – tactics.",
       "active_name": "Tormentor Spines",
       "active_effect": "For the rest of this scene, you gain Resistance to all damage originating within range 3, and Shrike Armor deals 3 AP kinetic damage instead of 1.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     },
     "data_type": "frame",
     "other_art": [{
-      "tag": "Mech",
+      "tag": "mech",
       "src": "alt_agonist.png"
     }]
   },
@@ -521,7 +521,7 @@
       "active_name": "Mag Field",
       "active_effect": "This system projects a blast 3 magnetic field with at least one space adjacent to you, causing the following effects until the end of your next turn:<ul><li>The affected area is difficult terrain.</li><li>Ranged attacks that deal kinetic or explosive can’t enter or leave the affected area – projectiles stop at the edge, doing no damage. Record each attack stopped this way.</li><li>Mechs and other characters made at least partly of metal that start their turn in the affected area or enter it for the first time in a round must succeed on a Hull save or be pulled as close to the center as possible and become Immobilized.</li></ul>When the effect ends, any ranged attacks that were stopped resume their trajectory – toward the center of the affected area. The GM rolls attacks against each character within, gaining +1 per blocked attack (to a maximum of +6). On hit, these attacks deal 1d6 kinetic damage per blocked attack (to a maximum of 6d6 kinetic damage).",
       "activation": "Full",
-      "use": "next_turn"
+      "use": "Next Turn"
     }
   },
   {
@@ -585,12 +585,12 @@
           "detail": "End your focus on a <b>Mark for Death</b> target."
         }
       ],
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     },
     "data_type": "frame",
     "other_art": [{
-      "tag": "Mech",
+      "tag": "mech",
       "src": "alt_hercules.png"
     }]
   },
@@ -659,7 +659,7 @@
         "activation": "Quick",
         "detail": "You may instantly teleport to the location of any hologram within range 50 as a quick action. When you do so, all extant holograms detonate – creating burst 1 explosions that deal 1d6 Energy Damage (Agility save for half) – and you may not create any new holograms until the start of your next turn"
       }],
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     }
   },
@@ -712,7 +712,7 @@
       "description": "Tactical cloaks are tight-knit, tight-bind weaves of reactive fabric – high-license tech restricted to pilots of Metalmark Classification II or higher. The weave covers roughly 80% of a mech’s surface area, giving it a dull quality when viewed through optics or with the naked eye. Beyond their use as regular camouflage, activated tactical cloaks bend light in a way that makes their wearers nearly impossible to see.",
       "active_name": "Tactical Cloak",
       "active_effect": "You are Invisible for the rest of the scene.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     }
   },
@@ -829,7 +829,7 @@
       "description": "Open only to highly licensed pilots, the EX Slipstream program is a uniquely SSC innovation. The Ex Slipstream module itself is a miniaturized near-lightspeed drive capable of transporting the user through blinkspace with acceptable accuracy. The technology is temperamental, at best: nothing smaller than a mech can survive the stress of exposed blink travel, and the experience is traumatic to both the user and anyone in close proximity.",
       "active_name": "Stabilize Singularity",
       "active_effect": "For the rest of the scene, you teleport when you Boost or make a standard move.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Blinkspace Jump",
       "passive_effect": "Gain the Blinkspace Jump Full Action.",
@@ -877,7 +877,7 @@
       {
         "name": "Prophetic Scanners",
         "description": "1/round, when the Swallowtail inflicts Lock On, its target also becomes Shredded until the end of its next turn.",
-        "use": "round",
+        "use": "Round",
         "synergies": [{
           "locations": ["lock_on"],
           "detail": "1/round, when the Swallowtail inflicts Lock On, its target also becomes Shredded until the end of its next turn."
@@ -896,7 +896,7 @@
         "trigger": "An allied character in line of sight takes damage from another character in line of sight.",
         "detail": "Effect: Roll 1d6. On 4+, the attack was actually a simulation predicted by your processor - your ally gains Resistance to all damage dealt by the attack and may teleport up to 3 spaces, representing their “true” location. On 3 or less, there’s a glitch – your allied doesn’t gain Resistance, but can teleport up to 6 spaces."
       }],
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     }
   },
@@ -948,7 +948,7 @@
       "description": "In a moment, with aught but desire, the pilot of a Balor may quick-print a cloak comprised of countless minuscule drones: a hellswarm cloak – living shield and fluid-dynamic knife, cutting and guarding, in one shimmering wave. They become Hivemaster, and their will is obeyed by millions.",
       "active_name": "Hive Frenzy",
       "active_effect": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<ul><li>You and adjacent allies gain soft cover.</li><li>Scouring Swarm deals 4 kinetic, instead of 2.</li><li>Regeneration restores 1/2 of your total HP, instead of 1/4.</li><li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.</li><li>You become Shredded and cannot clear this condition for the duration.</li></ul>",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol"
     }
   },
@@ -1017,7 +1017,7 @@
       "active_effect": "Your mech retracts its major systems and attaches itself to another mech, becoming more like a vestigial blister than a separate entity. The host must be an allied and willing mech not already hosting another Goblin, larger than and adjacent to you. While attached, you occupy their space, move with them, and benefit from hard cover, but can still be attacked and targeted separately. You also take any conditions and heat taken by your host.<br>Your host may use your Systems, E-Defense, and Tech Attack instead of their own. Additionally, from the beginning of the next round, you no longer take your own turns; instead, you can take two quick actions or one full action at any point during your host’s turn. You can’t Overcharge or move, but may still take reactions and free actions normally. Your host’s turn counts as your turn for the purpose of effects that refer to the start or end of a character’s turn.<br>This effect lasts either for the rest of the scene, until you detach as a quick action, or until you or your host becomes Stunned. When the effect ends, you don’t take a turn until the next round.",
       "activation": "Quick",
       "deactivation": "Quick",
-      "use": "Scene"
+      "use": "Encounter"
     }
   },
   {
@@ -1069,7 +1069,7 @@
       "active_name": "Extrude Basilisk",
       "active_effect": "You project a horrifying basilisk, a visual data-pattern that is incredibly harmful to NHPs and electronic systems, and hard to look at even for humans. For the rest of the scene, hostile characters must succeed on a Systems save before attacking you or any allied characters within range 3. On a failure, they become Stunned until the end of their next turn. Each character can only be Stunned by this effect once per scene.",
       "activation": "Quick",
-      "use": "Scene"
+      "use": "Encounter"
     }
   },
   {
@@ -1213,7 +1213,7 @@
       "description": "And RA Said Unto Themself:<br><code class='horus'>LET MY NAME ENVELOP YOU. SEEK NO SHELTER FROM THE FLAME OR THE TEETH OF THE BEAST. CLOAK YOURSELF IN THE FIRE OF MY WORD AND CAST BACK TO YOUR ENEMIES THAT WHICH WOULD BLACKEN YOUR FORM.</code>",
       "active_name": "Destruction of the Temple of the Enemies of RA",
       "active_effect": "Your mech crackles with energy: gain Resistance to heat for the rest of this scene and a Charge Die – 1d6, starting at 1. Whenever you take heat or energy, even from yourself, increase the value of the Charge Die by 1. When the Charge Die reaches 6, the absorbed energy discharges in a burst 2 inferno. Characters within the affected area must succeed on an Engineering save or take 6d6 AP energy damage. On a success, they take half damage. Objects in the affected area are automatically hit. Once discharged, this effect ends.",
-      "use": "scene",
+      "use": "Encounter",
       "deactivation": "Free",
       "activation": "Protocol",
       "passive_name": "Charged Exoskeleton",
@@ -1259,7 +1259,7 @@
     "traits": [{
         "name": "INVERT COCKPIT",
         "description": "You may Mount or Dismount the Minotaur for the first time each round as a free action. Additionally, the Minotaur doesn’t become Impaired when you Eject.",
-        "use": "round"
+        "use": "Round"
       },
       {
         "name": "INTERNAL METAFOLD",
@@ -1325,7 +1325,7 @@
       "description": "“– funny thing. See, right now, this weapon technically doesn’t even exist. You’re shooting them with a gun that isn’t real, and yet it is! Don’t worry about it. RA’s like that. Just, here, know that because it exists at some point, we’ve made it. That’s causality, and causality is a –\"",
       "active_name": "Unshackle Ushabti",
       "active_effect": "For the rest of this scene, you can use the Ushabti Omnigun 3/round, instead of 1/round.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Ushabti Omnigun",
       "passive_effect": "[ERROR]<br>[range 15][1 AP kinetic damage]<br>Your mech’s omnigun is a piece of experimental hardware so advanced that it defies physics: it doesn’t require a mount, nor does it have a weapon type or size – meaning that it can’t be modified or benefit from your talents.<br>You can’t attack normally with this weapon. Instead, 1/round, as a free action during your turn, you can use it to deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule in this book or any other supersedes this."
@@ -1480,12 +1480,12 @@
     "traits": [{
         "name": "Assault Launcher",
         "description": "1/round, the Iskander may throw one Grenade or plant one Mine as though it has range 15.",
-        "use": "round"
+        "use": "Round"
       },
       {
         "name": "Mine Deployers",
         "description": "1/round, when the Iskander plants a Mine (even using its Assault Launcher trait), it may plant up to two other Mines in free spaces adjacent to itself as a free action.",
-        "use": "round"
+        "use": "Round"
       },
       {
         "name": "Skeleton Key",
@@ -1497,7 +1497,7 @@
       "description": "The Broad-Sweep Seeder is a proprietary device developed during the Orrugi Occupation, during which Armory legionnaires fought an embittered, recalcitrant local guerilla movement. IEDs, VBEDs, and D/SABEDs were often employed by the resistance; to counter the threat, Harrison Armory developed the Seeder to simultaneously scan, identify, and eliminate explosive threats in proximity to stationary units. The technology proved successful and, with minor adaptation, was adapted for installation on Armory frames.<br>The Broad-Sweep Seeder emits an excited LIDAR hivecone to flag potential targets: if positive identification occurs, the target is neutralized with a spray of mag-accelerated, dull-coat flechettes. The Seeder can also carry explosive hivemines.",
       "active_name": "Death Cloud",
       "active_effect": "This system fires an enormous, expanding cloud of micromines across the whole battlefield, affecting all hostile characters within range 50. For the rest of the scene, when hostile characters make any movement other than their standard move (including involuntary movement), they take 3 AP explosive damage. This effect can trigger any number of times, but only 1/round for each character.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Quick"
     }
   },
@@ -1548,7 +1548,7 @@
       "description": "The Trueblack Aegis is a breakthrough in personal shielding developed by the Armory’s Think Tank. Like the Armory’s other NHP-derived technologies, the Aegis is a “black-box” technology: its code and inner workings are highly confidential, and it can typically only be requisitioned by pilots of high rank or standing within Harrison Armory. Some Cosmopolitan pilots have described the appearance of the Aegis as similar to the void – or blindness – they see when looking into blinkspace. It’s safe to assume the device harnesses unstable blinkfield technology to manifest a thin blinkspace bubble within defined parameters. The blinkfield can only maintain coherence for a brief moment but can be flickered on and off to create a total blinkspace dome.",
       "active_name": "Activate Aegis",
       "active_effect": "A shimmering, utterly black field quickly envelops your mech, covering it like a second skin. For the rest of the scene, you:<ul><li>reduce all damage to 1, except for damage that ignores reduction;</li><li>gain Immunity to all tech actions, including beneficial ones, and any current tech effects or conditions on you end;</li><li>can only use systems with the Shield tag – any others immediately deactivate (systems that do not require activation are unaffected);</li><li>can’t take quick actions, full actions, or reactions, except for standard moves, Grapple, Ram, Improvised Attack, Activate (Shield systems only), Skill Check, and Boost;</li><li>can’t Overcharge;</li><li>can’t use comms to talk to other characters (as sound doesn’t exit the shield).</li></ul>You can still receive statuses and Heat, and can be affected by involuntary movement. You can otherwise interact normally with the world, including picking up and dragging items, and so on.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Quick"
     }
   },
@@ -1591,7 +1591,7 @@
       {
         "name": "Warp Shield",
         "description": "1/round, the Saladin can give +1 difficulty to any attack against it or an allied character within Sensors as a reaction before the roll is made.",
-        "use": "round"
+        "use": "Round"
       }
     ],
     "core_system": {
@@ -1599,7 +1599,7 @@
       "description": "Developed by the Think Tank as a joint venture with IPS-Northstar’s Stellar Engineering Unit, the Tachyon Loop uses a closed-loop system to restrain and manipulate a tachyon lance, accelerating tachyons at faster-than-light speeds around a central buckler. The buckler can be carried by a mech or mounted directly, interceding directional incoming fire. As the tachyons travel faster than light, they are invisible to the naked eye, giving the shield the appearance of a large spoked wheel.",
       "active_name": "Tachyon Shield",
       "active_effect": "This system projects an accelerated-tachyon shield over an allied character within Sensors. You may choose a new target as a quick action. Gain the Defensive Pulse reaction for the rest of the scene.<br>Defensive Pulse<br>Reaction, 1/round<br>Trigger: Your target is attacked.<br>Effect: You empower their tachyon shield with a pulse of energy. They gain Resistance to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and Range from your target instead of from the attacker. If the attack was part of an area of effect, the new target must be inside the same area of effect from the original attack instead.",
-      "use": "scene",
+      "use": "Encounter",
       "active_actions": [{
         "name": "Defensive Pulse",
         "activation": "Reaction",
@@ -1657,7 +1657,7 @@
       {
         "name": "Mathur Stop",
         "description": "When the Sherman clears all heat, you may choose to receive heat equal to half its Heat Cap, putting it in the Danger Zone.",
-        "use": "free"
+        "use": "Free"
       },
       {
         "name": "Vent Heat",
@@ -1675,7 +1675,7 @@
       ]
     },
     "other_art": [{
-      "tag": "Mech",
+      "tag": "mech",
       "src": "alt_sherman_old.png"
     }],
     "counters": [{
@@ -1735,7 +1735,7 @@
       "description": "Pilots of a certain breed thrive at the very edge of catastrophe, risking either glorious success or utter failure in each moment. These daredevils are familiar with the howl of critical heat warnings – the warbling siren song of destruction and superheated reactor feeds. Tokugawa pilots are notorious for supercharging their weapons with excess energy, pushing their heat gauge to the max. Harnessing the Tokugawa’s unique reactor, these pilots churn out damage and make no friends in the engineering bay – assuming they don’t melt into a ball of slag before they make it back from the line.",
       "active_name": "Radiance",
       "active_effect": "For the rest of this scene, weapons that deal any energy gain +5 Range if they are ranged or +2 Threat if they are melee.<br>While you’re Exposed, Limit Break stacks with these bonuses for a total increase of +10 range and +3 threat.",
-      "use": "scene",
+      "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Overclock",
       "passive_effect": "As a Protocol, you cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons.",

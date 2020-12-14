@@ -4,7 +4,7 @@
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6"
     }],
     "range": [{
@@ -35,7 +35,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6"
     }],
     "range": [{
@@ -57,7 +57,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+3"
     }],
     "range": [{
@@ -78,7 +78,7 @@
     "mount": "Superheavy",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "3d6+3"
     }],
     "range": [{
@@ -107,7 +107,7 @@
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6+3"
     }],
     "range": [{
@@ -128,7 +128,7 @@
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6+4"
     }],
     "range": [{
@@ -149,7 +149,7 @@
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6+1"
     }],
     "range": [{
@@ -167,7 +167,7 @@
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "2d6"
     }],
     "range": [{
@@ -203,7 +203,7 @@
     "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d3+1"
     }],
     "range": [{
@@ -229,7 +229,7 @@
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d6+1"
     }],
     "range": [{
@@ -259,7 +259,7 @@
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6"
     }],
     "range": [{
@@ -280,7 +280,7 @@
     "mount": "Auxiliary",
     "type": "Nexus",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d3"
     }],
     "range": [{
@@ -301,7 +301,7 @@
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d3"
     }],
     "range": [{
@@ -328,7 +328,7 @@
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+1"
     }],
     "range": [{
@@ -349,7 +349,7 @@
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d6+1"
     }],
     "range": [{
@@ -379,7 +379,7 @@
     "mount": "Main",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6"
     }],
     "range": [{
@@ -402,7 +402,7 @@
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d3+1"
     }],
     "range": [{
@@ -424,7 +424,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+2"
     }],
     "range": [{
@@ -442,7 +442,7 @@
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6+3"
     }],
     "range": [{
@@ -464,7 +464,7 @@
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": 2
     }],
     "range": [{
@@ -482,7 +482,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+2"
     }],
     "range": [{
@@ -503,7 +503,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6"
     }],
     "range": [{
@@ -526,7 +526,7 @@
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": 1
     }],
     "range": [{
@@ -545,7 +545,7 @@
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+4"
     }],
     "range": [{
@@ -567,7 +567,7 @@
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+2"
     }],
     "range": [{
@@ -606,7 +606,7 @@
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d3"
     }],
     "range": [{
@@ -634,7 +634,7 @@
     "profiles": [{
         "name": "Standard",
         "damage": [{
-          "type": "kinetic",
+          "type": "Kinetic",
           "val": "1d6"
         }],
         "range": [{
@@ -651,7 +651,7 @@
       {
         "name": "Spin-Up Mode",
         "damage": [{
-          "type": "kinetic",
+          "type": "Kinetic",
           "val": "4d6+4"
         }],
         "range": [{
@@ -681,15 +681,15 @@
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": 1
       },
       {
-        "type": "heat",
+        "type": "Heat",
         "val": 1
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 1
       }
     ],
@@ -713,7 +713,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6"
     }],
     "range": [{
@@ -740,7 +740,7 @@
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d3+1"
     }],
     "range": [{
@@ -759,7 +759,7 @@
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6"
     }],
     "range": [{
@@ -790,11 +790,11 @@
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": "2d6"
       },
       {
-        "type": "explosive",
+        "type": "Explosive",
         "val": "1d6"
       }
     ],
@@ -821,7 +821,7 @@
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6+2"
     }],
     "range": [{
@@ -843,7 +843,7 @@
     "mount": "Main",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6"
     }],
     "range": [{
@@ -869,7 +869,7 @@
     "mount": "Heavy",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "3d6"
     }],
     "range": [{
@@ -892,7 +892,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d3+5"
     }],
     "range": [{
@@ -914,7 +914,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6"
     }],
     "range": [{
@@ -933,7 +933,7 @@
     "mount": "Main",
     "type": "CQB",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+1"
     }],
     "range": [{
@@ -961,11 +961,11 @@
     "mount": "Superheavy",
     "type": "Melee",
     "damage": [{
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": "3d6"
       },
       {
-        "type": "energy",
+        "type": "Energy",
         "val": "1d6"
       }
     ],
@@ -992,7 +992,7 @@
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+1"
     }],
     "range": [{
@@ -1011,7 +1011,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+1"
     }],
     "range": [{
@@ -1040,7 +1040,7 @@
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+4"
     }],
     "range": [{
@@ -1069,7 +1069,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+1"
     }],
     "range": [{
@@ -1091,11 +1091,11 @@
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
-        "type": "explosive",
+        "type": "Explosive",
         "val": "1d3"
       },
       {
-        "type": "heat",
+        "type": "Heat",
         "val": 1
       }
     ],
@@ -1122,7 +1122,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d6+1"
     }],
     "range": [{
@@ -1144,11 +1144,11 @@
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": 1
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 2
       }
     ],
@@ -1176,7 +1176,7 @@
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": 3
     }],
     "range": [{
@@ -1198,7 +1198,7 @@
     "mount": "Heavy",
     "type": "Launcher",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6+3"
     }],
     "range": [{
@@ -1227,7 +1227,7 @@
     "mount": "Superheavy",
     "type": "Launcher",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "2d6"
     }],
     "range": [{
@@ -1259,7 +1259,7 @@
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d3"
     }],
     "range": [{
@@ -1281,7 +1281,7 @@
     "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d3"
     }],
     "range": [{
@@ -1302,7 +1302,7 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": 3
     }],
     "range": [{
@@ -1324,7 +1324,7 @@
     "mount": "Auxiliary",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "1d3"
     }],
     "range": [{
@@ -1350,7 +1350,7 @@
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6"
     }],
     "range": [{
@@ -1373,11 +1373,11 @@
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 2
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 2
       }
     ],
@@ -1403,7 +1403,7 @@
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": 3
     }],
     "range": [{
@@ -1440,7 +1440,7 @@
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": "2d6"
     }],
     "range": [{
@@ -1466,7 +1466,7 @@
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
-      "type": "variable",
+      "type": "Variable",
       "val": "1d3+2"
     }],
     "range": [{
@@ -1492,7 +1492,7 @@
     "mount": "Heavy",
     "type": "Nexus",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d6+3"
     }],
     "range": [{
@@ -1531,7 +1531,7 @@
     "mount": "Superheavy",
     "type": "Nexus",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6+3"
     }],
     "range": [{
@@ -1564,7 +1564,7 @@
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3"
     }],
     "range": [{
@@ -1591,7 +1591,7 @@
     "mount": "Heavy",
     "type": "CQB",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6+1"
     }],
     "range": [{
@@ -1614,7 +1614,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": 4
     }],
     "range": [{
@@ -1670,7 +1670,7 @@
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": 3
     }],
     "range": [{
@@ -1702,7 +1702,7 @@
           "val": 2
         }],
         "damage": [{
-          "type": "explosive",
+          "type": "Explosive",
           "val": "3d6"
         }],
     "on_attack": "Choose to fire in either siege mode or direct fire mode.",
@@ -1728,7 +1728,7 @@
           "val": 20
         }],
         "damage": [{
-          "type": "explosive",
+          "type": "Explosive",
           "val": "3d6"
         }],
     "on_attack": "Choose to fire in either siege mode or direct fire mode.",
@@ -1751,11 +1751,11 @@
     "mount": "Heavy",
     "type": "CQB",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": 1
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 4
       }
     ],
@@ -1774,11 +1774,11 @@
     "mount": "Superheavy",
     "type": "CQB",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": "1d6+2"
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 6
       }
     ],
@@ -1808,7 +1808,7 @@
     "mount": "Auxiliary",
     "type": "Cannon",
     "damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": 3
     }],
     "range": [{
@@ -1856,7 +1856,7 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": 10
     }],
     "range": [{
@@ -1893,7 +1893,7 @@
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+1"
     }],
     "range": [{
@@ -1916,11 +1916,11 @@
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": "1d6"
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 1
       }
     ],
@@ -1943,11 +1943,11 @@
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": "2d6"
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 3
       }
     ],
@@ -1970,11 +1970,11 @@
     "mount": "Superheavy",
     "type": "Cannon",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": "2d6"
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 8
       }
     ],
@@ -2002,7 +2002,7 @@
     "mount": "Main",
     "type": "CQB",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+2"
     }],
     "range": [{
@@ -2034,11 +2034,11 @@
     "mount": "Main",
     "type": "Melee",
     "damage": [{
-        "type": "energy",
+        "type": "Energy",
         "val": "1d6"
       },
       {
-        "type": "burn",
+        "type": "Burn",
         "val": 3
       }
     ],
@@ -2065,7 +2065,7 @@
     "mount": "Main",
     "type": "CQB",
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d3+2"
     }],
     "range": [{
@@ -2100,7 +2100,7 @@
     "mount": "Main",
     "type": "Special",
     "damage": [{
-      "type": "variable",
+      "type": "Variable",
       "val": "1d6+2"
     }],
     "range": [{
@@ -2141,7 +2141,7 @@
     "mount": "Main",
     "type": "Special",
     "damage": [{
-      "type": "variable",
+      "type": "Variable",
       "val": "1d6+2"
     }],
     "range": [{
@@ -2182,7 +2182,7 @@
     "mount": "Main",
     "type": "Special",
     "damage": [{
-      "type": "variable",
+      "type": "Variable",
       "val": "1d6+4"
     }],
     "range": [{
@@ -2243,7 +2243,7 @@
       }
     ],
     "damage": [{
-      "type": "kinetic",
+      "type": "Kinetic",
       "val": 4
     }],
     "effect": "1/round, when you reload any weapon, this weapon can be fired as a free action."
@@ -2279,7 +2279,7 @@
           }
         ],
         "damage": [{
-          "type": "explosive",
+          "type": "Explosive",
           "val": "2d6"
         }],
         "effect": "Objects within the affected area automatically take 20 AP explosive damage. After the attack, the blast cloud lingers, providing soft cover to characters within the affected area until the end of your next turn."
@@ -2296,7 +2296,7 @@
           }
         ],
         "damage": [{
-          "type": "explosive",
+          "type": "Explosive",
           "val": "3d6"
         }],
         "effect": "Objects and terrain in the area automatically take 40 AP explosive damage, and on hit characters become Shredded and Impaired until the end of their next turn. The blast cloud is a burning storm: until the end of your next turn, characters within the affected area receive soft cover, and characters that start their turn within the area or move there for the first time in a round take 4 burn."
@@ -2313,7 +2313,7 @@
           }
         ],
         "damage": [{
-          "type": "explosive",
+          "type": "Explosive",
           "val": "4d6"
         }],
         "effect": "Objects and terrain in the area automatically take 100 AP explosive damage, and characters become Shredded and Stunned until the end of their next turn on hit. The ground in the affected area is vaporized on impact: for the rest of the scene, it is difficult terrain, characters within the affected area receive soft cover, and characters that start their turn with the area or move there for the first time in a round take 4 burn."
@@ -2330,7 +2330,7 @@
       "val": "4/Charge"
     }],
     "damage": [{
-      "type": "energy",
+      "type": "Energy",
       "val": "1d6/Charge"
     }],
     "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair.",

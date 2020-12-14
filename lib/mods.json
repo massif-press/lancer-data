@@ -21,7 +21,7 @@
       }
     ],
     "added_damage": [{
-      "type": "explosive",
+      "type": "Explosive",
       "val": "1d6"
     }]
   },
@@ -30,12 +30,12 @@
     "name": "UNCLE-CLASS COMP/CON",
     "sp": 3,
     "allowed_types": [
-      "melee",
-      "cqb",
-      "rifle",
-      "launcher",
-      "cannon",
-      "nexus"
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
     ],
     "source": "IPS-N",
     "license": "RALEIGH",
@@ -51,7 +51,7 @@
       }
     ],
     "restricted_sizes": [
-      "superheavy"
+      "Superheavy"
     ]
   },
   {
@@ -59,9 +59,9 @@
     "name": "THROUGHBOLT ROUNDS",
     "sp": 2,
     "allowed_types": [
-      "cqb",
-      "cannon",
-      "rifle"
+      "CQB",
+      "Cannon",
+      "Rifle"
     ],
     "source": "IPS-N",
     "license": "TORTUGA",
@@ -79,7 +79,7 @@
     "name": "SHOCK WREATH",
     "sp": 2,
     "allowed_types": [
-      "melee"
+      "Melee"
     ],
     "source": "SSC",
     "license": "METALMARK",
@@ -104,8 +104,8 @@
     "name": "STABILIZER MOD",
     "sp": 2,
     "allowed_types": [
-      "launcher",
-      "cannon"
+      "Launcher",
+      "Cannon"
     ],
     "source": "SSC",
     "license": "MONARCH",
@@ -127,12 +127,12 @@
     "name": "NANOCOMPOSITE ADAPTATION",
     "sp": 2,
     "allowed_types": [
-      "melee",
-      "cqb",
-      "rifle",
-      "launcher",
-      "cannon",
-      "nexus"
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
     ],
     "source": "HORUS",
     "license": "BALOR",
@@ -153,12 +153,12 @@
     "name": "PHASE-READY MOD",
     "sp": 2,
     "allowed_types": [
-      "melee",
-      "cqb",
-      "rifle",
-      "launcher",
-      "cannon",
-      "nexus"
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
     ],
     "source": "HA",
     "license": "NAPOLEON",
@@ -171,12 +171,12 @@
     "name": "PARACAUSAL MOD",
     "sp": 4,
     "allowed_types": [
-      "melee",
-      "cqb",
-      "rifle",
-      "launcher",
-      "cannon",
-      "nexus"
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
     ],
     "source": "HA",
     "license": "SALADIN",

@@ -167,6 +167,7 @@
     "description": "A single-use deployable shield generator – a SIZE 1 deployable that grants soft cover to all friendly characters in a BURST 2 radius.",
     "deployables": [{
       "name": "Deployable Shield (Reserve)",
+      "type": "Deployable",
       "size": 1,
       "detail": "Grants soft cover to all friendly characters in a BURST 2 radius"
     }]
