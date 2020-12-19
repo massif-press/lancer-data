@@ -1,5 +1,19 @@
 [
   {
+    "id": "missing_weaponmod",
+    "name": "ERR: DATA NOT FOUND",
+    "sp": 1,
+    "allowed_types": [
+      "Melee"
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 1,
+    "effect": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
+    "tags": []
+  },
+  {
     "id": "wm_thermal_charge",
     "name": "THERMAL CHARGE",
     "sp": 2,

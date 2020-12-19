@@ -1,4 +1,14 @@
-[{
+[
+  {
+    "id": "missing_pilotweapon",
+    "name": "ERR: DATA NOT FOUND",
+    "type": "Weapon",
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
+    "tags": [],
+    "range": [],
+    "damage": []
+  },
+  {
     "id": "pg_archaic_melee",
     "name": "ARCHAIC MELEE",
     "type": "Weapon",
@@ -146,6 +156,12 @@
     "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic."
   },
   {
+        "id": "missing_pilotarmor",
+    "name": "ERR: DATA NOT FOUND",
+    "type": "Armor",
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack."
+  },
+  {
     "id": "pg_light_hardsuit",
     "name": "LIGHT HARDSUIT",
     "type": "Armor",
@@ -280,6 +296,12 @@
       "detail": "Become Invisible. You will cease to be Invisible if you take any damage.",
       "pilot": true
     }]
+  },
+    {
+        "id": "missing_pilotgear",
+    "name": "ERR: DATA NOT FOUND",
+    "type": "Gear",
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack."
   },
   {
     "id": "pg_corrective",

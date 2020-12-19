@@ -1,4 +1,18 @@
-[{
+[
+  {
+    "id": "missing_mechweapon",
+    "name": "ERR: DATA NOT FOUND",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [],
+    "range": [],
+    "tags": [],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Weapon. This is likely the result of a missing or outdated content pack."
+  },
+  {
     "id": "mw_anti_materiel_rifle",
     "name": "ANTI-MATERIEL RIFLE",
     "mount": "Heavy",
@@ -1402,6 +1416,7 @@
     "name": "AUTOPOD",
     "mount": "Main",
     "type": "Launcher",
+    "no_attack": true,
     "damage": [{
       "type": "Kinetic",
       "val": 3
@@ -1439,6 +1454,7 @@
     "name": "VORPAL GUN",
     "mount": "Main",
     "type": "Cannon",
+    "no_attack": true,
     "damage": [{
       "type": "Kinetic",
       "val": "2d6"
@@ -1642,6 +1658,8 @@
     "name": "MIMIC GUN",
     "mount": "Heavy",
     "type": "???",
+    "no_mods": true,
+    "no_core_bonus": true,
     "damage": [{
       "override": true,
       "val": "??? kinetic"
@@ -1669,6 +1687,9 @@
     "name": "AUTOGUN",
     "mount": "Main",
     "type": "Cannon",
+    "no_attack": true,
+    "no_bonuses": true,
+    "no_synergies": true,
     "damage": [{
       "type": "Kinetic",
       "val": 3
@@ -1680,6 +1701,13 @@
     "source": "HORUS",
     "license": "PEGASUS",
     "license_level": 3,
+    "actions": [
+      {
+        "name": "Fire Autogun",
+        "activation": "Free",
+        "detail": "This weapon can’t make normal attacks. Instead, you can attack with it as a free action at the end of your turn. It doesn’t benefit from or trigger your talents."
+      }
+    ],
     "effect": "This weapon can’t make normal attacks. Instead, you can attack with it as a free action at the end of your turn. It doesn’t benefit from or trigger your talents.",
     "description": "As the name implies, autoguns are automated weapons. Similar to point-defense systems, autoguns are chambered to provide effective fire against armored targets. Typically mounted on a stabilized, secondary arm, a reliably tuned autogun can be trusted to track and eliminate designated enemy units while a pilot concentrates on more specialized weapons or processes. Cheap, with malleable codebases, autoguns are common among active, armed HORUS cells.",
     "sp": 1
@@ -2253,7 +2281,16 @@
     "name": "Apocalypse Rail",
     "mount": "Ship-class",
     "type": "Spool Weapon",
+    "skirmish": false,
+    "barrage": false,
     "effect": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it. The Apocalypse Rail cannot be fired at targets within range 5.<br> After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4.",
+    "actions": [
+      {
+        "name": "Fire Apocalypse Rain",
+        "activation": "Full",
+        "detail": "If the value of the Apocalypse Die is 1–3, you can attack on your turn with the Apocalypse Rail as a full action, but can’t move or take any other actions on the same turn.<br>After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4."
+      }
+    ],
     "profiles": [{
         "name": "Charge Rail: 4",
     "damage": [{

@@ -964,7 +964,7 @@
         "actions": [{
           "name": "Massive Attack",
           "activation": "Full",
-          "detail": "Reset your Torrent Die to 6, then target a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>This action can only be taken when the value of your Torrent Die is 1."
+          "detail": "Reset your Torrent Die to 6, then target a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned until the end of their next turn, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>This action can only be taken when the value of your Torrent Die is 1."
         }],
         "counters": [{
           "id": "ctr_stormbringer",
@@ -1009,7 +1009,7 @@
           "name": "Flank",
           "activation": "Reaction",
           "frequency": "1/round",
-          "trigger": "Any time an attack misses you.",
+          "trigger": "A character who doesn’t have cover from your position is successfully attacked by an allied character.",
           "detail": "You may target them with Overwatch, dealing half damage, heat or burn on a hit"
         }]
       }

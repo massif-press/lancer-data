@@ -1,5 +1,12 @@
 [
   {
+    "id": "missing_corebonus",
+    "name": "ERR: DATA NOT FOUND",
+    "source": "",
+    "effect": "MISSING CORE BONUS DATA",
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Core Bonus. This is likely the result of a missing or outdated content pack."
+  },
+  {
     "id": "cb_auto_stabilizing_hardpoints",
     "name": "AUTO-STABILIZING HARDPOINTS",
     "source": "GMS",

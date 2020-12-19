@@ -1,4 +1,16 @@
-[{
+[
+    {
+    "id": "missing_mechsystem",
+    "name": "ERR: DATA NOT FOUND",
+    "sp": 1,
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "effect": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
+    "tags": []
+  },
+  {
     "id": "ms_comp_con_class_assistant_unit",
     "name": "COMP/CON-CLASS ASSISTANT UNIT",
     "type": "AI",

@@ -626,6 +626,9 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "cost"?: number
   "barrage"?: boolean,
   "skirmish"?: boolean,
+  "no_attack"?: boolean,
+  "no_mods"?: boolean,
+  "no_core_bonus"?: boolean,
   "damage"?: IDamageData[],
   "range"?: IRangeData[],
   "tags"?: ITagData[],
@@ -637,7 +640,9 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "on_crit"?: string // v-html
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[]
+  "no_bonus"?: boolean
   "synergies"?: ISynergyData[],
+  "no_synergy"?: boolean,
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
@@ -647,6 +652,14 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
 `cost` refers to the usage cost per attack with this weapon. It defaults to 1.
 
 `barrage` denotes that this weapon can be fired as part of a barrage, and `skirmish` denotes that this weapon can be fired as part of a skirmish. If neither of these flags are set, `barrage` will be set to `true` by default for all weapons, and `skirmish` will be set to `true` by default for all **non-Superheavy** weapons.
+
+`no_attack` suppresses creation of Skirmish/Barrage actions for this weapon, intended for use with special or weapon-mounted systems (eg. the Goblin's Autopod)
+
+`no_bonus` and `no_synergy` inhibit the collection and display of `Bonuses` and `Synergies` respectively (eg. the Pegasus Autogun)
+
+`no_mods` inhibits the addition of mods to this weapon (eg. Pegasus Mimic Gun)
+
+`no_core_bonus` inhibits the display of mount-sensitive core bonuses, when making attacks with this weapon (eg. Pegasus Mimic Gun)
 
 ## Weapon Effects
 Effects are eqipment abilities that **do not** grant the player a new Action but **do** add or modify gameplay mechanics. The field should be used for "usage notes" (for lack of a better term) that have game-mechanical properties that cannot be modeled with Actions or Deployables, or may include representation elsewhere but involve player notes/choices that can't be modeled there (like the Hydra's Ghast Nexus), or any other sort of mechanically important detail that is unsuited for inclusion (like the rules for the Pegasus' Mimic Gun). An item takes only one effect.

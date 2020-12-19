@@ -1,4 +1,40 @@
-[{
+[
+    {
+    "id": "missing_frame",
+    "license_level": 0,
+    "source": "",
+    "name": "ERR: DATA NOT FOUND",
+        "mechtype": [
+      "Balanced"
+    ],
+    "y_pos": 0,
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Frame. This is likely the result of a missing or outdated content pack.",
+    "mounts": [],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [],
+    "core_system": {
+      "name": "ERR: MISSING DATA",
+      "active_name": "",
+      "active_effect": "",
+      "use": "Next Round",
+      "activation": "Free"
+  }},
+  {
     "id": "mf_standard_pattern_i_everest",
     "license_level": 0,
     "source": "GMS",
@@ -1127,7 +1163,9 @@
           "name": "Guardian Drone",
           "type": "OROCHI Drone",
           "detail": "This drone projects a shield. Ranged attacks against adjacent allied characters receive +1 difficulty.",
-          "activation": "Quick",
+          "activation": "Free",
+          "recall": "Quick",
+          "redeploy": "Quick",
           "size": 0.5,
           "hp": "5 + {grit}"
         },
@@ -1135,7 +1173,9 @@
           "name": "Snare Drone",
           "type": "OROCHI Drone",
           "detail": "As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make an Agility save. On a failure, they become Immobilized. They only cease to be Immobilized when the drone is destroyed or no longer adjacent, or they succeed on an Agility save as a quick action.",
-          "activation": "Quick",
+          "activation": "Free",
+          "recall": "Quick",
+          "redeploy": "Quick",
           "size": 0.5,
           "hp": "5 + {grit}"
         },
@@ -1143,7 +1183,9 @@
           "name": "Shredder Drone",
           "type": "OROCHI Drone",
           "detail": "As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Hull save. On a failure, they take 1 kinetic damage and become Shredded until the end of their next turn.",
-          "activation": "Quick",
+          "activation": "Free",
+          "recall": "Quick",
+          "redeploy": "Quick",
           "size": 0.5,
           "hp": "5 + {grit}"
         },
@@ -1151,18 +1193,14 @@
           "name": "Hunter Drone",
           "type": "OROCHI Drone",
           "detail": "As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Systems save. On a failure, they receive Lock On.",
-          "activation": "Quick",
+          "activation": "Free",
+          "recall": "Quick",
+          "redeploy": "Quick",
           "size": 0.5,
           "hp": "5 + {grit}"
         }
       ],
-      "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action.",
-      "passive_actions": [{
-          "name": "Recall OROCHI Drone",
-          "activation": "Quick",
-          "detail": "If this drone is deployed, you may recall it as a Quick Action, integrating it into your mech’s body where it cannot be targeted."
-        }
-      ]
+      "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action."
     }
   },
   {
