@@ -650,7 +650,7 @@
           "locations": ["weapon"],
           "weapon_types": ["Melee"],
           "weapon_sizes": ["Auxiliary"],
-          "detail": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly towards the targeted character before the attack. This movement ignores engagement and doesn’t provoke reactions."
+          "detail": "1/round, when you attack with an Auxiliary melee weapon, you may fly up to 3 spaces directly towards a targeted character before the attack. This movement ignores engagement and doesn’t provoke reactions."
         }]
       },
       {

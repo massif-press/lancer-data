@@ -1346,7 +1346,6 @@
     "tags": [{
         "id": "tg_unique"
       }
-      
     ],
     "source": "HORUS",
     "license": "GOBLIN",
@@ -1360,7 +1359,6 @@
         "name": "Eject Power Cores",
         "activation": "Invade",
         "detail": "Your target becomes Jammed until the end of their next turn as you temporarily disrupt their systems, ejecting ammo magazines and cooling rods. Characters adjacent to your target take 2 energy damage. This can only be used 1/scene on each character."
-
       }
     ],
     "description": "This system upgrade appears to add auxiliary INSTINCT systems that are capable of autonomous operation independent of the base INSTINCT rig, increasing the efficacy of systemic invasion attempts. Pilots report unnerving low-frequency humming when this tech is installed without the parent rig."

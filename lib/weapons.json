@@ -2286,7 +2286,7 @@
     "effect": "The Apocalypse Rail must be charged before it can be fired, using the Charge Rail CORE Power.<br>This weapon has different profiles determined by the current value of the APOCALYPSE DIE when you fire it. Each profile replaces the one proceeding it. The Apocalypse Rail cannot be fired at targets within range 5.<br> After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4.",
     "actions": [
       {
-        "name": "Fire Apocalypse Rain",
+        "name": "Fire Apocalypse Rail",
         "activation": "Full",
         "detail": "If the value of the Apocalypse Die is 1–3, you can attack on your turn with the Apocalypse Rail as a full action, but can’t move or take any other actions on the same turn.<br>After an attack with the Apocalypse Rail, the Apocalypse Die resets to 4."
       }
