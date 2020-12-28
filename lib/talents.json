@@ -511,7 +511,7 @@
           "locations": ["weapon"],
           "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
           "weapon_sizes": ["Auxiliary"],
-          "detail": "Each time you hit with an this weapon, reduce the value of the Gunslinger Die by 1"
+          "detail": "Each time you hit with this weapon, reduce the value of the Gunslinger Die by 1"
         }],
         "counters": [{
           "id": "ctr_gunslinger",
