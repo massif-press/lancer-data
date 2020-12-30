@@ -294,6 +294,13 @@
           "weapon_types": ["Melee"],
           "weapon_sizes": ["Main"],
           "detail": "Gain +1 Accuracy on the first melee attack you make with a Main Melee weapon on your turn."
+        }],
+        "counters": [{
+          "id": "ctr_duelist",
+          "name": "BLADEMASTER DICE",
+          "default_value": 0,
+          "min": 0,
+          "max": 3
         }]
       },
       {
@@ -316,14 +323,7 @@
           "detail": "1/round, when you hit with this weapon on your turn, you may spend a Blademaster Die to immediately Grapple or Ram your target as a free action after the attack has been resolved."
         }]
       }
-    ],
-    "counters": [{
-      "id": "ctr_duelist",
-      "name": "BLADEMASTER DICE",
-      "default_value": 0,
-      "min": 0,
-      "max": 3
-    }]
+    ]
   },
   {
     "id": "t_drone_commander",
@@ -761,6 +761,13 @@
           "name": "Issue Order",
           "activation": "Free",
           "detail": "1/turn, on your turn as a free action, you may issue an order to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene."
+        }],
+        "counters": [{
+          "id": "ctr_leader",
+          "name": "LEADERSHIP DICE",
+          "default_value": 0,
+          "min": 0,
+          "max": 6
         }]
       },
       {
@@ -782,14 +789,7 @@
           "detail": "Allies that have your Leadership Dice can expend them to reduce damage by –1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack."
         }]
       }
-    ],
-    "counters": [{
-      "id": "ctr_leader",
-      "name": "LEADERSHIP DICE",
-      "default_value": 0,
-      "min": 0,
-      "max": 6
-    }]
+    ]
   },
   {
     "id": "t_nuclear_cavalier",

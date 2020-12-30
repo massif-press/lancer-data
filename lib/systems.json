@@ -1620,6 +1620,9 @@
         "id": "tg_resistall"
       }]
     }],
+      "tags": [{
+        "id": "tg_resistall"
+      }],
     "description": "The Tempest protocol is a cunning little piece of code that can be uploaded to any broadcast-forward drone, making it – in true HORUS fashion – difficult to detect prior to activation. The protocol is a simple one: an aggressive zone-denial memetic that blasts target systems and NHPs with a strong subjective override, instilling a sharp aversion to certain subjects, areas, and ideas."
   },
   {
