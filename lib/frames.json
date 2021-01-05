@@ -165,6 +165,13 @@
         "synergies": [{
           "locations": ["grapple", "boost"],
           "detail": "While grappling, the Blackbeard can Boost and take reactions."
+        },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Blackbeard gains +1 difficulty on Engineering checks and saves.",
+        "synergies": [{
+          "locations": ["engineering", "skill_check"],
+          "detail": "The Blackbeard gains +1 difficulty on Engineering checks and saves."
         }]
       }
     ],
