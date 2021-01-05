@@ -1776,11 +1776,10 @@
       "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Overclock",
-      "passive_effect": "As a Protocol, you cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons.",
       "passive_actions": [{
           "name": "Overclock",
           "activation": "Protocol",
-          "detail": "You cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+          "detail": "You cause your mech to become Exposed until the end of your next turn."
       }],
       "active_bonuses": [
         {
