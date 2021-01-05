@@ -737,9 +737,6 @@
     "id": "ms_charged_stake",
     "name": "CHARGED STAKE",
     "sp": 2,
-    "tags": [{
-      "id": "tg_full_action"
-    }],
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 3,
@@ -1858,9 +1855,6 @@
     "sp": 2,
     "tags": [{
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_full_tech"
       }
     ],
     "source": "HORUS",
@@ -1923,9 +1917,6 @@
       },
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_full_tech"
       },
       {
         "id": "tg_round",
@@ -2351,9 +2342,6 @@
       {
         "id": "tg_heat_self",
         "val": 4
-      },
-      {
-        "id": "tg_full_action"
       }
     ],
     "source": "HA",
@@ -2441,9 +2429,6 @@
       {
         "id": "tg_heat_self",
         "val": 2
-      },
-      {
-        "id": "tg_full_action"
       }
     ],
     "source": "HA",
