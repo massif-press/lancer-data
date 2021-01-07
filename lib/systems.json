@@ -1734,6 +1734,10 @@
     "sp": 3,
     "tags": [{
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
       }
     ],
     "source": "HORUS",
