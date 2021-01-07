@@ -1,10 +1,9 @@
-[
-    {
+[{
     "id": "missing_frame",
     "license_level": 0,
     "source": "GMS",
     "name": "ERR: DATA NOT FOUND",
-        "mechtype": [
+    "mechtype": [
       "Balanced"
     ],
     "y_pos": 0,
@@ -33,7 +32,8 @@
       "active_effect": "",
       "use": "Next Round",
       "activation": "Free"
-  }},
+    }
+  },
   {
     "id": "mf_standard_pattern_i_everest",
     "license_level": 0,
@@ -90,13 +90,12 @@
       "use": "Encounter",
       "activation": "Protocol",
       "active_synergies": [{
-        "locations":["active_effects", "boost"],
+        "locations": ["active_effects", "boost"],
         "detail": "1/turn, you can Boost as a free action."
       }, {
-        "locations": ["hull", "agility","systems","engineering"],
+        "locations": ["hull", "agility", "systems", "engineering"],
         "detail": "Gain +1 Accuracy on all attacks, checks, and saves."
-      }
-    ]
+      }]
     },
     "other_art": [{
         "tag": "mech",
@@ -165,6 +164,13 @@
         "synergies": [{
           "locations": ["grapple", "boost"],
           "detail": "While grappling, the Blackbeard can Boost and take reactions."
+        }]
+      }, {
+        "name": "Exposed Reactor",
+        "description": "The Blackbeard receives +1 Difficulty on ENGINEERING checks and saves.",
+        "synergies": [{
+          "locations": ["engineering", "skill_check"],
+          "detail": "The Blackbeard gains +1 Difficulty on ENGINEERING checks and saves."
         }]
       }
     ],
@@ -251,7 +257,8 @@
       "Main/Aux"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 1,
       "hp": 6,
@@ -414,7 +421,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 2,
       "hp": 8,
@@ -646,7 +654,8 @@
       "Flex"
     ],
     "stats": {
-      "size": 0.5, "structure": 4,
+      "size": 0.5,
+      "structure": 4,
       "stress": 4,
       "armor": 0,
       "hp": 6,
@@ -768,7 +777,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 1,
       "hp": 8,
@@ -952,7 +962,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 0,
       "hp": 12,
@@ -1003,7 +1014,7 @@
       "Flex"
     ],
     "stats": {
-      "size": 0.5, 
+      "size": 0.5,
       "structure": 4,
       "stress": 4,
       "armor": 0,
@@ -1072,7 +1083,8 @@
       "Main"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 0,
       "hp": 12,
@@ -1235,7 +1247,7 @@
     },
     "traits": [{
         "name": "SLAG CARAPACE",
-        "description": "The Manticore has Resistance to Eenergy Damage and Burn."
+        "description": "The Manticore has Resistance to Energy Damage and Burn."
       },
       {
         "name": "UNSTABLE SYSTEM",
@@ -1385,7 +1397,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 3, "structure": 4,
+      "size": 3,
+      "structure": 4,
       "stress": 4,
       "armor": 2,
       "hp": 10,
@@ -1501,7 +1514,8 @@
       "Heavy"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 1,
       "hp": 8,
@@ -1554,7 +1568,8 @@
       "Main/Aux"
     ],
     "stats": {
-      "size": 0.5, "structure": 4,
+      "size": 0.5,
+      "structure": 4,
       "stress": 4,
       "armor": 2,
       "hp": 6,
@@ -1604,7 +1619,8 @@
       "Flex"
     ],
     "stats": {
-      "size": 2, "structure": 4,
+      "size": 2,
+      "structure": 4,
       "stress": 4,
       "armor": 1,
       "hp": 12,
@@ -1759,9 +1775,9 @@
         "name": "Limit Break",
         "description": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat.",
         "synergies": [{
-        "locations":["active_effects"],
-        "detail": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat."}
-      ]
+          "locations": ["active_effects"],
+          "detail": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat."
+        }]
       },
       {
         "name": "Plasma Sheath",
@@ -1778,12 +1794,11 @@
       "passive_name": "Overclock",
       "passive_effect": "As a Protocol, you cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons.",
       "passive_actions": [{
-          "name": "Overclock",
-          "activation": "Protocol",
-          "detail": "You cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+        "name": "Overclock",
+        "activation": "Protocol",
+        "detail": "You cause your mech to become Exposed until the end of your next turn. All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
       }],
-      "active_bonuses": [
-        {
+      "active_bonuses": [{
           "id": "range",
           "damage_types": ["Energy"],
           "range_types": ["Range"],
@@ -1797,9 +1812,9 @@
         }
       ],
       "active_synergies": [{
-        "locations":["active_effects"],
-        "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."}
-      ]
+        "locations": ["active_effects"],
+        "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+      }]
     }
   }
 ]
