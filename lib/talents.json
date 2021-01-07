@@ -506,7 +506,7 @@
       },
       {
         "name": "I KILL WITH MY HEART",
-        "description": "You gain a Gunslinger Die, 1d6 starting at 6. Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
+        "description": "You gain a Gunslinger Die, 1d6 starting at 6. Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
         "synergies": [{
           "locations": ["weapon"],
           "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
@@ -620,7 +620,7 @@
       },
       {
         "name": "HAMMERBEAT",
-        "description": "If you successfully hit with the attack granted by <b>Covering Fire</b>, your target is Immobilized until the end of their next turn.",
+        "description": "If you successfully hit your Covering Fire target with the attack reaction granted by that talent, your target is Immobilized until the end of their next turn.",
         "synergies": [{
           "locations": ["active_effects"],
           "detail": "If you successfully hit with the attack granted by <b>Covering Fire</b>, your target is Immobilized until the end of their next turn."
