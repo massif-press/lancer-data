@@ -1,0 +1,28 @@
+{
+  "pilot_names": [],
+  "callsigns": [],
+  "mech_names":  [],
+  "team_names":  [],
+  "quirks": [
+    "Part (or all) of your body was too damaged to be cloned perfectly and a significant percentage of your clone body has been replaced with cybernetics. These high-quality prostheses aren’t obviously synthetic to casual observers. You don’t know the extent of the damage.",
+    "Your clone has been fitted with a necessary but visible cybernetic augmentation – an arm, leg, eyes, or similar. It is a conspicuous prosthetic.",
+    "By accident or malign intent, your cognitive profile has been loaded into someone else’s body. It might be a clone of a notorious or famous individual, with both enemies and allies who thought they were dead; or, you might run into the “original” person the clone was based on.",
+    "Your clone has a unique appearance that clearly marks you as vat-grown.",
+    "Thanks to a series of administrative mishaps, the appearance of your new body is drastically different to that of your old body.",
+    "An additional, withered limb grows out of your clone’s chest shortly after your cognitive profile has been loaded. It sometimes moves on its own.",
+    "There’s a conspicuous barcode printed on your clone body. The barcode means something specific to at least one powerful organization, but you aren’t privy to its meaning – at least not yet.",
+    "In certain light conditions, it’s possible to read a script or inscription printed just under your skin. The script is all over your body and contains information contested by powerful organizations or entities – scientific formulae, maps, or something else entirely.",
+    "Your clone body is unusually susceptible to solar radiation, viruses, bacteria, or some other common environmental phenomenon. You must wear an environmental suit to operate outside certain safe environments, which include your mech’s cockpit and your personal quarters. You can use downtime actions to make other rooms safe.",
+    "Genetic material from a non-human source was used in the creation of your clone body. Whoever revived you won’t tell you the exact details or what long-term effects it will have, and they treat you like a science experiment. The new genetic material has caused a cosmetic change that is useful and visible, although able to be hidden.",
+    "Whenever you try to sleep or rest, you’re stricken with vivid and persistent dreams, visions, and images of your death. You know they’re real but can’t reconcile the existential gulf between the experiences of the old and new versions of yourself.",
+    "In addition to your cognitive profile, your clone body has been loaded with a digital homunculus of someone else: a basic digital reconstruction of a personality that is more like a piece of software than a person. While not technically sapient, it is very smart, and carries a message or secret with it.",
+    "You’re plagued by the constant understanding or belief that the “real” you is actually dead, and you’re merely a facsimile of a dead person, implanted with someone else’s memories. You can’t establish the difference between the “you” that died and the “you” that exists now.",
+    "In addition to your cognitive profile, your flash clone is woven through with a subdermal data-lattice: this storage device contains very dangerous and potentially unwanted information that is contested or sought by powerful entities.",
+    "The flash-cloning process went awry, and you have been revived tabula rasa. In desperation, the technicians dump a stock personality construct into your clone body. Choose a new background and triggers.",
+    "There are complications while growing your clone body: it has a dramatically reduced life expectancy.",
+    "Something changed you – you now have persistent and intrusive mental contact with an entity or entities, human or otherwise.",
+    "You keep having searing headaches during which you see brief flashes of what you’re pretty sure is the future. Sometimes these visions come to pass, sometimes they don’t.",
+    "Knowingly or unknowingly, your clone body has been implanted with a mental trigger that places you in a receptive state when heard or activated, causing you to either follow a pre-programmed course of action or to follow instructions given by the person who activated you. These commands must be simple (e.g., kill, lie, etc.), and the GM determines who (PC or NPC) gave them. You might be able to overcome this effect in time.",
+    "You come back with total amnesia regarding the time before your death, meaning you must be retrained and prepared from scratch. You lose all previous triggers and assign new ones up to your current level. Additionally, you may rewrite some incidental facts of your backstory."
+  ]
+}

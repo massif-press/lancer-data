@@ -1,106 +1,125 @@
-[
-  {
+[{
     "id": "reserve_skill",
     "name": "Skill Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
-    "description": "Add a Skill Point to gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action."
+    "description": "Add a Skill Point to gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action.",
+    "bonuses": [{
+      "id": "skill_point",
+      "val": 1
+    }]
   },
   {
     "id": "reserve_mechskill",
     "name": "Mech Skill Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
-    "description": "Add a Mech Skill Point to add to your Pilot's HULL, AGILITY, SYSTEMS, or ENGINEERING rating."
+    "description": "Add a Mech Skill Point to add to your Pilot's HULL, AGILITY, SYSTEMS, or ENGINEERING rating.",
+    "bonuses": [{
+      "id": "mech_skill_point",
+      "val": 1
+    }]
   },
   {
     "id": "reserve_talent",
     "name": "Talent Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
-    "description": "Add a Talent Point to gain or improve a Pilot Talent."
+    "description": "Add a Talent Point to gain or improve a Pilot Talent.",
+    "bonuses": [{
+      "id": "talent_point",
+      "val": 1
+    }]
   },
   {
     "id": "reserve_license",
     "name": "License Point",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
-    "description": "Add a License Point to advance or unlock a new License."
+    "description": "Add a License Point to advance or unlock a new License.",
+    "bonuses": [{
+      "id": "license_point",
+      "val": 1
+    }]
   },
   {
     "id": "reserve_corebonus",
     "name": "Extra CORE Bonus",
-    "type": "Bonuses",
+    "type": "Bonus",
     "label": "Bonus",
-    "description": "Add an additional CORE Bonus."
+    "description": "Add an additional CORE Bonus.",
+    "bonuses": [{
+      "id": "cb_point",
+      "val": 1
+    }]
   },
   {
     "id": "reserve_access",
     "name": "Access",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Resource",
     "description": "A keycard, invite, bribes or insider access to a particular location."
   },
   {
     "id": "reserve_backing",
     "name": "Backing",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Contact",
     "description": "Useful leverage through political support from a powerful figure."
   },
   {
     "id": "reserve_supplies",
     "name": "Supplies",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Resource",
     "description": "Gear allowing easy crossing of a hazardous or hostile area."
   },
   {
     "id": "reserve_disguise",
     "name": "Disguise",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Identity",
     "description": "An effective disguise or cover identity, allowing uncontested access to a location."
   },
   {
     "id": "reserve_diversion",
     "name": "Diversion",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Diversion",
     "description": "A distraction that provides time to take action without fear of consequence."
   },
   {
     "id": "reserve_blackmail",
     "name": "Blackmail",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Target",
     "description": "Blackmail materials or sensitive information concerning a particular person."
   },
   {
     "id": "reserve_reputation",
     "name": "Reputation",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Status",
     "description": "A good name in the mission area, prompting good first impressions with the locals."
   },
   {
     "id": "reserve_safe_harbor",
     "name": "Safe Harbor",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Location",
     "description": "Guaranteed safety for meeting, planning, or recuperating."
   },
   {
     "id": "reserve_tracking",
     "name": "Tracking",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Target",
     "description": "Details on the location of important objects or people."
   },
   {
     "id": "reserve_knowledge",
     "name": "Knowledge",
-    "type": "Resources",
+    "type": "Resource",
     "label": "Subject",
     "description": "An understanding of local history, customs, culture, or etiquette."
   },
@@ -123,56 +142,91 @@
     "name": "Extra repairs",
     "type": "Mech",
     "label": "Resource",
-    "description": "Supplies that give a mech +2 REPAIR CAP."
+    "description": "Supplies that give a mech +2 REPAIR CAP.",
+    "bonuses": [{
+      "id": "repcap",
+      "val": 2
+    }]
   },
   {
     "id": "reserve_core_battery",
     "name": "CORE battery",
     "type": "Mech",
     "label": "Battery",
-    "description": "An extra battery that allows a second use of a mech’s CORE SYSTEM."
+    "description": "An extra battery that allows a second use of a mech’s CORE SYSTEM.",
+    "bonuses": [{
+      "id": "core_power",
+      "val": 2
+    }]
   },
   {
     "id": "reserve_deployable_shield",
-    "name": "Deployable shield",
+    "name": "Deployable Shield",
     "type": "Mech",
     "label": "Shield",
-    "description": "A single-use deployable shield generator – a SIZE 1 deployable that grants soft cover to all friendly characters in a BURST 2 radius."
+    "description": "A single-use deployable shield generator – a SIZE 1 deployable that grants soft cover to all friendly characters in a BURST 2 radius.",
+    "deployables": [{
+      "name": "Deployable Shield (Reserve)",
+      "type": "Deployable",
+      "size": 1,
+      "detail": "Grants soft cover to all friendly characters in a BURST 2 radius"
+    }]
   },
   {
     "id": "reserve_redundant_repair",
     "name": "Redundant repair",
     "type": "Mech",
     "label": "Resource",
-    "description": "The ability to STABILIZE as a free action once per mission."
+    "description": "The ability to STABILIZE as a free action once per mission.",
+    "actions": [{
+      "name": "Redundant Repair",
+      "activation": "Free",
+      "detail": "STABILIZE as a free action."
+    }]
   },
   {
     "id": "reserve_systems_reinforcement",
     "name": "Systems reinforcement",
     "type": "Mech",
     "label": "Resource",
-    "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
+    "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING.",
+    "synergies": [{
+      "locations": ["hase"],
+      "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
+    }]
   },
   {
     "id": "reserve_smart_ammo",
     "name": "Smart ammo",
     "type": "Mech",
     "label": "Ammo",
-    "description": "All weapons of your choice can be fired as if they are SMART."
+    "description": "All weapons of your choice can be fired as if they are SMART.",
+    "synergies": [{
+      "locations": ["weapon"],
+      "detail": "All weapons of your choice can be fired as if they are SMART"
+    }]
   },
   {
     "id": "reserve_boosted_servos",
     "name": "Boosted servos",
     "type": "Mech",
     "label": "Resource",
-    "description": "IMMUNITY to the SLOWED condition."
+    "description": "IMMUNITY to the SLOWED condition.",
+    "synergies": [{
+      "locations": ["move"],
+      "detail": "Your mech has IMMUNITY to the SLOWED condition."
+    }]
   },
   {
     "id": "reserve_jump_jets",
     "name": "Jump jets",
     "type": "Mech",
     "label": "Resource",
-    "description": "During this mission your mech can FLY when moving, but must end movement on land."
+    "description": "During this mission your mech can FLY when moving, but must end movement on land.",
+    "synergies": [{
+      "locations": ["move"],
+      "detail": "Your mech can FLY when moving, but must end movement on land."
+    }]
   },
   {
     "id": "reserve_scouting",
@@ -186,7 +240,7 @@
     "name": "Vehicle",
     "type": "Tactical",
     "label": "Designation",
-    "description": "Use of a transport vehicle or starship (e.g., a TIER 1 NPC with the VEHICLE or SHIP template."
+    "description": "Use of a transport vehicle or starship (e.g. a TIER 1 NPC with the VEHICLE or SHIP template.)"
   },
   {
     "id": "reserve_reinforcements",
@@ -207,21 +261,36 @@
     "name": "Accuracy",
     "type": "Tactical",
     "label": "Skill/Action",
-    "description": "Training or enhancement that provides +1 ACCURACY to a particular mech skill or action for the duration of this mission."
+    "description": "Training or enhancement that provides +1 ACCURACY to a particular mech skill or action for the duration of this mission.",
+    "synergies": [{
+      "locations": ["other"],
+      "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
+    }]
   },
   {
     "id": "reserve_bombardment",
     "name": "Bombardment",
     "type": "Tactical",
     "label": "Resource",
-    "description": "The ability to call in artillery or orbital bombardment once during mech combat (full action, RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage)."
+    "description": "The ability to call in artillery or orbital bombardment once during mech combat (full action, RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage).",
+    "actions": [{
+      "name": "Bombardment",
+      "activation": "Full",
+      "detail": "Call in artillery or orbital bombardment:<br>RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage"
+    }]
   },
   {
     "id": "reserve_extended_harness",
     "name": "Extended Harness",
     "type": "Tactical",
     "label": "Resource",
-    "description": "A custom harness that allows you to carry an extra pilot weapon and two extra pieces of pilot gear for the duration of this mission."
+    "description": "A custom harness that allows you to carry an extra pilot weapon and two extra pieces of pilot gear for the duration of this mission.",
+    "bonuses": [
+      {
+        "id": "pilot_gear",
+        "val": 2
+      }
+    ]
   },
   {
     "id": "reserve_ambush",

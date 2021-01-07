@@ -25,7 +25,7 @@
     "Flex": ["Main", "Auxiliary"],
     "Heavy": ["Superheavy", "Heavy", "Main", "Auxiliary"]
   },
-  "overcharge": ["+1", "+1d3", "+1d6", "+1d6+4"],
+  "overcharge": ["1", "1d3", "1d6", "1d6+4"],
   "skill_headers": [
       {
         "attr": "str",
