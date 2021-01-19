@@ -1515,9 +1515,7 @@
       "type": "Range",
       "val": 10
     }],
-    "tags": [{
-        "id": "tg_drone"
-      },
+    "tags": [
       {
         "id": "tg_smart"
       }
