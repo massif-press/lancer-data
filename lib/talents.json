@@ -294,6 +294,13 @@
           "weapon_types": ["Melee"],
           "weapon_sizes": ["Main"],
           "detail": "Gain +1 Accuracy on the first melee attack you make with a Main Melee weapon on your turn."
+        }],
+        "counters": [{
+          "id": "ctr_duelist",
+          "name": "BLADEMASTER DICE",
+          "default_value": 0,
+          "min": 0,
+          "max": 3
         }]
       },
       {
@@ -316,14 +323,7 @@
           "detail": "1/round, when you hit with this weapon on your turn, you may spend a Blademaster Die to immediately Grapple or Ram your target as a free action after the attack has been resolved."
         }]
       }
-    ],
-    "counters": [{
-      "id": "ctr_duelist",
-      "name": "BLADEMASTER DICE",
-      "default_value": 0,
-      "min": 0,
-      "max": 3
-    }]
+    ]
   },
   {
     "id": "t_drone_commander",
@@ -506,12 +506,12 @@
       },
       {
         "name": "I KILL WITH MY HEART",
-        "description": "You gain a Gunslinger Die, 1d6 starting at 6. Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
+        "description": "You gain a Gunslinger Die, 1d6 starting at 6. Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
         "synergies": [{
           "locations": ["weapon"],
           "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
           "weapon_sizes": ["Auxiliary"],
-          "detail": "Each time you hit with an this weapon, reduce the value of the Gunslinger Die by 1"
+          "detail": "Each time you hit with this weapon, reduce the value of the Gunslinger Die by 1"
         }],
         "counters": [{
           "id": "ctr_gunslinger",
@@ -620,7 +620,7 @@
       },
       {
         "name": "HAMMERBEAT",
-        "description": "If you successfully hit with the attack granted by <b>Covering Fire</b>, your target is Immobilized until the end of their next turn.",
+        "description": "If you successfully hit your Covering Fire target with the attack reaction granted by that talent, your target is Immobilized until the end of their next turn.",
         "synergies": [{
           "locations": ["active_effects"],
           "detail": "If you successfully hit with the attack granted by <b>Covering Fire</b>, your target is Immobilized until the end of their next turn."
@@ -761,6 +761,13 @@
           "name": "Issue Order",
           "activation": "Free",
           "detail": "1/turn, on your turn as a free action, you may issue an order to an allied PC you can communicate with, describing a course of action, and give them a Leadership Die. They may either expend the Leadership Die to gain +1 Accuracy on any action that directly follows from that order, or they may return it to you as a free action. Allies can have one Leadership Die at a time, which lasts until used or until the end of the current scene."
+        }],
+        "counters": [{
+          "id": "ctr_leader",
+          "name": "LEADERSHIP DICE",
+          "default_value": 0,
+          "min": 0,
+          "max": 6
         }]
       },
       {
@@ -782,14 +789,7 @@
           "detail": "Allies that have your Leadership Dice can expend them to reduce damage by –1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack."
         }]
       }
-    ],
-    "counters": [{
-      "id": "ctr_leader",
-      "name": "LEADERSHIP DICE",
-      "default_value": 0,
-      "min": 0,
-      "max": 6
-    }]
+    ]
   },
   {
     "id": "t_nuclear_cavalier",
@@ -1094,7 +1094,7 @@
     "description": "Think of a firefight: what’s your average pilot or trooper gonna sling? Jacketed lead, of course. A mag or three of depleted uranium if their target’s a big one. Boring. No, worse than boring: Dull. Predictable. Basic.<br>And guess what? Dull isn’t fun, predictable gets you killed, and basic leaves a boring body. Put down the depleted uranium and pick up a magazine of anoriginary stutterblink slugs, or at least a pack of tachyon flechettes. Lay waste in style, and live forever.",
     "ranks": [{
         "name": "ARMAMENT",
-        "description": "You carry a supply of custom ammunition that can be used with all your main ranged weapons. Gain the Ammo Case system.<br> Once per turn, when you attack and hit with a MAIN ranged weapon, you may expend one charge to apply one of the following effects to your attack: <ul><li> THUMPER: The attack gains KNOCKBACK 1 and deals Explosive damage.</li><li>SHOCK: The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 AP Energy Damage, whether the result is a hit or miss.</li><li>MAG: The attack gains ARCING and deals Kinetic damage.</li></ul>",
+        "description": "You carry a supply of custom ammunition that can be used with all your main ranged weapons. Gain the Ammo Case system.<br> Once per turn, when you attack with a MAIN ranged weapon, you may expend one charge to apply one of the following effects to your attack: <ul><li> THUMPER: The attack gains KNOCKBACK 1 and deals Explosive damage.</li><li>SHOCK: The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 AP Energy Damage, whether the result is a hit or miss.</li><li>MAG: The attack gains ARCING and deals Kinetic damage.</li></ul>",
         "integrated": [
           "ms_walking_armory_1"
         ],

@@ -181,6 +181,7 @@ FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. Th
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "name": string,
   "mechtype": string[], // can be customized
+  "specialty": boolean | IPrerequisite // see below
   "description": string, // v-html
   "mounts": MountType[],
   "stats": {
@@ -207,6 +208,20 @@ FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. Th
 ```
 
 Frame sizes can be any integer or **0.5**, which will be correctly rendered as 1/2 in the app. No other fractional size is recognized. All other number values must be integers.
+
+The `specialty` field is used to denote nonstandard, frameless licenses in homebrew, expansions, etc. This may take a boolean that, if true, will hide the associated frame and mark the license with a "Specialty" flag, but may also take an IPrerequisite object: 
+
+```ts
+{
+  "source": string,
+  "min_rank": number
+  "cumulative"?: boolean
+}
+```
+Where `source` is a Manufacturer ID and `min_rank` indicates the minimum rank of one of that Manufacturer's licenses the Pilot must have unlocked to get access to this license.
+If the `cumulative` flag is set, the Pilot must have at least a `min_rank` of that manufacturer's licenses, similar to how CORE Bonuses are gated.
+
+For further information, see Kai Tave's "Field Guide to Suldan" supplement.
 
 ## IFrameTraitData
 ```ts

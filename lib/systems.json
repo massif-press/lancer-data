@@ -683,7 +683,7 @@
     },{
       "name": "Deactivate Hyperdense Armor",
       "activation": "Quick",
-      "detail": "Deactivate Hyperdense Armor, losing Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; as well as clearing your Slowed status and dealealing normal damage, Heat and Burn to characters beyond Range 3."
+      "detail": "Deactivate Hyperdense Armor, losing Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; as well as clearing your Slowed status and dealing normal damage, Heat and Burn to characters beyond Range 3."
     }],
     "description": "IPS-N HyperDense Armor is built for space – forged with no regard for any constraints users might face within a gravity well. As such, many pilots protected by HyperDense products are shocked to experience the difference between piloting their mech down a well and taking it for a ride in the null-gravity of space."
   },
@@ -737,9 +737,6 @@
     "id": "ms_charged_stake",
     "name": "CHARGED STAKE",
     "sp": 2,
-    "tags": [{
-      "id": "tg_full_action"
-    }],
     "source": "IPS-N",
     "license": "VLAD",
     "license_level": 3,
@@ -1470,11 +1467,17 @@
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 1,
-    "actions": [{
+    "effect": "On activation, choose an allied character within SENSORS: until the end of your next turn, you gain the Battlefield Awareness reaction.",
+    "actions": [
+      {
+        "name": "Activate Mimic Mesh",
+        "activation": "Quick",
+        "detail": "Until the end of your next turn, you may use the Battlefield Awareness reaction."
+      }, 
+      {
       "name": "Battlefield Awareness",
       "activation": "Reaction",
       "frequency": "Unlimited",
-      "init": "Choose an allied character within Sensors: until the end of your next turn, you gain the Battlefield Awareness reaction.",
       "trigger": "A hostile action is taken against your target.",
       "detail": "You may move 3 spaces towards your target, by the most direct route possible. This movement interrupts and resolves before the triggering action, ignores engagement and doesn’t provoke reactions. This reaction can be taken as many times per round as it is triggered."
     }],
@@ -1620,6 +1623,9 @@
         "id": "tg_resistall"
       }]
     }],
+      "tags": [{
+        "id": "tg_resistall"
+      }],
     "description": "The Tempest protocol is a cunning little piece of code that can be uploaded to any broadcast-forward drone, making it – in true HORUS fashion – difficult to detect prior to activation. The protocol is a simple one: an aggressive zone-denial memetic that blasts target systems and NHPs with a strong subjective override, instilling a sharp aversion to certain subjects, areas, and ideas."
   },
   {
@@ -1725,6 +1731,10 @@
     "sp": 3,
     "tags": [{
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
       }
     ],
     "source": "HORUS",
@@ -1858,9 +1868,6 @@
     "sp": 2,
     "tags": [{
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_full_tech"
       }
     ],
     "source": "HORUS",
@@ -1923,9 +1930,6 @@
       },
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_full_tech"
       },
       {
         "id": "tg_round",
@@ -2320,6 +2324,9 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_invulnerable"
       }
     ],
     "source": "HA",
@@ -2351,9 +2358,6 @@
       {
         "id": "tg_heat_self",
         "val": 4
-      },
-      {
-        "id": "tg_full_action"
       }
     ],
     "source": "HA",
@@ -2441,9 +2445,6 @@
       {
         "id": "tg_heat_self",
         "val": 2
-      },
-      {
-        "id": "tg_full_action"
       }
     ],
     "source": "HA",
