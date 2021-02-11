@@ -2561,11 +2561,13 @@
     "bonuses": [{
           "id": "range",
           "damage_types": ["Energy"],
+          "weapon_types": ["Melee"],
           "range_types": ["Threat"],
           "val": 1
     }, {
           "id": "range",
           "damage_types": ["Energy"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
           "range_types": ["Range"],
           "val": 5
     }],
