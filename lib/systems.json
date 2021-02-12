@@ -1406,7 +1406,7 @@
   {
     "id": "ms_osiris_class_nhp",
     "name": "OSIRIS-CLASS NHP",
-    "type": "Tech",
+    "type": "AI",
     "sp": 3,
     "tags": [{
         "id": "tg_ai"
