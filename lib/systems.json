@@ -683,7 +683,7 @@
     },{
       "name": "Deactivate Hyperdense Armor",
       "activation": "Quick",
-      "detail": "Deactivate Hyperdense Armor, losing Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; as well as clearing your Slowed status and dealealing normal damage, Heat and Burn to characters beyond Range 3."
+      "detail": "Deactivate Hyperdense Armor, losing Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; as well as clearing your Slowed status and dealing normal damage, Heat and Burn to characters beyond Range 3."
     }],
     "description": "IPS-N HyperDense Armor is built for space – forged with no regard for any constraints users might face within a gravity well. As such, many pilots protected by HyperDense products are shocked to experience the difference between piloting their mech down a well and taking it for a ride in the null-gravity of space."
   },
@@ -2562,11 +2562,13 @@
     "bonuses": [{
           "id": "range",
           "damage_types": ["Energy"],
+          "weapon_types": ["Melee"],
           "range_types": ["Threat"],
           "val": 1
     }, {
           "id": "range",
           "damage_types": ["Energy"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
           "range_types": ["Range"],
           "val": 5
     }],
