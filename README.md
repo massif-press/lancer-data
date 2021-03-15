@@ -21,7 +21,7 @@ Your content package is contained in a single-level folder that, at minimum, con
   "name": "My content package name",
   "author": "My name or organization",
   "description": "A short description of my LCP <i>HTML-enabled</i>",
-  "version": "1.0",
+  "version": "1.0"
 }
 ```
 
@@ -76,7 +76,7 @@ Example notation:
 {
   "required_property": string,
   "required_sub_object": IObject,
-  "optional_enum"?: EnumeratedType
+  "optional_enum"?: EnumeratedType,
   "optional_property"?: number
 }
 ```
@@ -105,12 +105,12 @@ Actions in `actions.json` define the basic actions every player has access to in
   "detail": string, // v-html
   "activation": ActivationType,
   "terse"?: string, // terse text used in the action menu. The fewer characters the better.
-  "pilot"?: boolean
-  "mech"?: boolean
-  "synergy_locations"?: string[]
-  "confirm"?: string[]
-  "log"?: string
-  "ignore_used"?: boolean
+  "pilot"?: boolean,
+  "mech"?: boolean,
+  "synergy_locations"?: string[],
+  "confirm"?: string[],
+  "log"?: string,
+  "ignore_used"?: boolean,
   "heat_cost"?: boolean
 }
 ```
@@ -150,10 +150,10 @@ Many of the CORE Bonus effects are hardcoded, which is something to keep in mind
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "effect": string, // v-html
   "description": string, // v-html
-  "mounted_effect"?: string
+  "mounted_effect"?: string,
   "actions"?: IActionData[],
-  "bonuses"?: IBonusData[]
-  "synergies"?: ISynergyData[]
+  "bonuses"?: IBonusData[],
+  "synergies"?: ISynergyData[],
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
@@ -181,7 +181,7 @@ FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. Th
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "name": string,
   "mechtype": string[], // can be customized
-  "specialty": boolean | IPrerequisite // see below
+  "specialty": boolean | IPrerequisite, // see below
   "description": string, // v-html
   "mounts": MountType[],
   "stats": {
@@ -214,7 +214,7 @@ The `specialty` field is used to denote nonstandard, frameless licenses in homeb
 ```ts
 {
   "source": string,
-  "min_rank": number
+  "min_rank": number,
   "cumulative"?: boolean
 }
 ```
@@ -230,8 +230,8 @@ For further information, see Kai Tave's "Field Guide to Suldan" supplement.
   "description": string, // v-html
   "use"?: 'Turn' | 'Next Turn' | 'Round' | 'Next Round' | 'Scene' | 'Encounter' | 'Mission',
   "actions"?: IActionData[],
-  "bonuses"?: IBonusData[]
-  "synergies"?: ISynergyData[]
+  "bonuses"?: IBonusData[],
+  "synergies"?: ISynergyData[],
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
@@ -260,7 +260,7 @@ Including a `use` value will give it a button in the Player Active Mode that wil
   "passive_synergies": ISynergyData[],
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
-  "integrated"?: string[]
+  "integrated"?: string[],
   "tags"?: ITagData[]
 }
 ```
@@ -339,9 +339,9 @@ Weapon mods are handled separately in C/C than in Lancer (where they're just tag
   "allowed_sizes"?: WeaponSize[], // weapon sizes the mod CAN be applied to
   "restricted_types"?: WeaponType[], // weapon types the mod CAN NOT be applied to
   "restricted_sizes"?: WeaponSize[], // weapon sizes the mod CAN NOT be applied to
-  "added_tags"?: ITagData[] // tags propogated to the weapon the mod is installed on
-  "added_damage"?: IDamageData[] // damage added to the weapon the mod is installed on, see note
-  "added_range"?: IRangeData[] // damage added to the weapon the mod is installed on, see note
+  "added_tags"?: ITagData[], // tags propogated to the weapon the mod is installed on
+  "added_damage"?: IDamageData[], // damage added to the weapon the mod is installed on, see note
+  "added_range"?: IRangeData[], // damage added to the weapon the mod is installed on, see note
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent weapon
   "synergies"?: ISynergyData[],
@@ -371,7 +371,7 @@ This is currently unsupported in the LANCER Core Book (or any Massif material at
   "license_level": number, // set to 0 to be available to all Pilots
   "effect": string, // v-html
   "tags": ITagData[], // tags related to the mod itself
-  "added_tags": ITagData[] // tags propogated to the system the mod is installed on
+  "added_tags": ITagData[], // tags propogated to the system the mod is installed on
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent system
   "synergies"?: ISynergyData[],
@@ -444,10 +444,10 @@ Pilot Equipment actions and deployables will always be available **unless** they
   "type": "Mech" | "Tactical" | "Resource" | "Bonus",
   "label": string,
   "description"?: string, // v-html
-  "consumable"?: boolean // defaults to false
+  "consumable"?: boolean, // defaults to false
   "actions"?: IActionData[],
-  "bonuses"?: IBonusData[]
-  "synergies"?: ISynergyData[]
+  "bonuses"?: IBonusData[],
+  "synergies"?: ISynergyData[],
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
@@ -494,7 +494,7 @@ The rules file sets some of the base values of the game, but as of this writing 
     "name": string,
     "icon_url": string
     "type": "Status" | "Condition",
-    "effects": string // v-html
+    "effects": string, // v-html
     "terse"?: string, // prefer fewest characters
     "exclusive"?: "Mech" | "Pilot",
   },
@@ -510,7 +510,7 @@ The rules file sets some of the base values of the game, but as of this writing 
     "license": string, // reference to the Frame name of the associated license
     "license_level": number, // set to zero for this item to be available to a LL0 character
     "effect"?: string, // v-html
-    "type"?: SystemType
+    "type"?: SystemType,
     "sp"?: number,
     "description"?: string, // v-html
     "tags"?: ITagData[],
@@ -540,7 +540,7 @@ Object Key|CC Location
   "id": string,
   "name": string,
   "description": string, // v-html, see note below
-  "hidden"?: boolean
+  "hidden"?: boolean,
   "filter_ignore"?: boolean
 }
 ```
@@ -596,8 +596,8 @@ The talent object collects the general detail about a Pilot Talent and serves as
   "id": string,
   "name": string,
   "description": string, // v-html
-  "ranks": IRankData[]
-  "icon_url"?: string // Must be .svg
+  "ranks": IRankData[],
+  "icon_url"?: string, // Must be .svg
   "terse"?: string, // terse text used in short descriptions. The fewer characters the better
 }
 ```
@@ -612,10 +612,10 @@ IRankData contains the synergies, actions, and talent items granted through rank
 {
   "name": string,
   "description": string, // v-html
-  "exclusive"?: boolean // see below 
+  "exclusive"?: boolean, // see below 
   "actions"?: IActionData[],
-  "bonuses"?: IBonusData[]
-  "synergies"?: ISynergyData[]
+  "bonuses"?: IBonusData[],
+  "synergies"?: ISynergyData[],
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
@@ -638,7 +638,7 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "license_level": number, // set to zero for this item to be available to a LL0 character
   "mount": MountType,
   "type": WeaponType,
-  "cost"?: number
+  "cost"?: number,
   "barrage"?: boolean,
   "skirmish"?: boolean,
   "no_attack"?: boolean,
@@ -649,18 +649,18 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "tags"?: ITagData[],
   "sp"?: number,
   "description": string, // v-html
-  "effect"?: string // v-html
-  "on_attack"?: string // v-html
-  "on_hit"?: string // v-html
-  "on_crit"?: string // v-html
+  "effect"?: string, // v-html
+  "on_attack"?: string, // v-html
+  "on_hit"?: string, // v-html
+  "on_crit"?: string, // v-html
   "actions"?: IActionData[],
-  "bonuses"?: IBonusData[]
-  "no_bonus"?: boolean
+  "bonuses"?: IBonusData[],
+  "no_bonus"?: boolean,
   "synergies"?: ISynergyData[],
   "no_synergy"?: boolean,
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
-  "integrated"?: string[]
+  "integrated"?: string[],
   "profiles"?: IWeaponProfile[] //see note below
 }
 ```
@@ -690,21 +690,21 @@ For a weapon with multiple profiles, the default profile will be the **first** (
 
 ### IWeaponProfile
 ```ts
-  "name": string
-  "effect"?: string
-  "skirmish"?: boolean
-  "barrage"?: boolean
-  "cost"?: number
-  "on_attack"?: string
-  "on_hit"?: string
-  "on_crit"?: string
-  "damage"?: IDamageData[]
-  "range"?: IRangeData[]
-  "actions"?: IActionData[]
-  "bonuses"?: IBonusData[]
-  "synergies"?: ISynergyData[]
-  "deployables"?: IDeployableData[]
-  "counters"?: ICounterData[]
+  "name": string,
+  "effect"?: string,
+  "skirmish"?: boolean,
+  "barrage"?: boolean,
+  "cost"?: number,
+  "on_attack"?: string,
+  "on_hit"?: string,
+  "on_crit"?: string,
+  "damage"?: IDamageData[],
+  "range"?: IRangeData[],
+  "actions"?: IActionData[],
+  "bonuses"?: IBonusData[],
+  "synergies"?: ISynergyData[],
+  "deployables"?: IDeployableData[],
+  "counters"?: ICounterData[],
   "integrated"?: string[]
 ```
 
@@ -785,9 +785,9 @@ Actions encompass any distinct move a player can make -- mostly this will be sys
   "name"?: string,
   "activation": ActivationType,
   "detail": string, // v-html
-  "cost"?: number
-  "pilot"?: boolean
-  "synergy_locations"?: string[]
+  "cost"?: number,
+  "pilot"?: boolean,
+  "synergy_locations"?: string[],
   "log"?: string[]  
 }
 ```
@@ -878,16 +878,16 @@ IDeployableData (note that this does not have an `id` field, this is generated u
 
 ```ts
 {
-  "name": string
-  "type" string // this is for UI furnishing only
-  "detail": string
-  "size": number // not required for Mines
+  "name": string,
+  "type" string, // this is for UI furnishing only
+  "detail": string,
+  "size": number, // not required for Mines
   "activation"?: ActivationType,
   "deactivation"?: ActivationType,
   "recall"?: ActivationType,
   "redeploy"?: ActivationType,
   "instances"?: number,
-  "cost"?: number
+  "cost"?: number,
   "armor"?: number,
   "hp"?: number,
   "evasion"?: number,
@@ -901,10 +901,10 @@ IDeployableData (note that this does not have an `id` field, this is generated u
   "pilot"?: boolean,
   "mech"?: boolean,
   "actions"?: IActionData[],
-  "bonuses"?: IBonusData[]
+  "bonuses"?: IBonusData[],
   "synergies"?: ISynergyData[],
   "counters"?: ICounterData[],
-  "tags"?: ITagData[],
+  "tags"?: ITagData[]
 }
 ```
 Deployables will automatically generate a Deploy action on their parent item. Deployables without an `activation` value will default to a Quick action. 
@@ -939,10 +939,10 @@ Similarly `system_types` will filter system synergy hints to a specific type (eg
 
 ```ts
 {
-  "locations": string[] // see below,
-  "detail": string // v-html
-  "weapon_types"?: WeaponType[]
-  "system_types"?: SystemType[]
+  "locations": string[], // see below,
+  "detail": string, // v-html
+  "weapon_types"?: WeaponType[],
+  "system_types"?: SystemType[],
   "weapon_sizes"?: WeaponSize[]
 }
 ```
@@ -1020,12 +1020,12 @@ It is possible to "chain" equipment through `integrated` arrays, and is therefor
 ```ts
 {
   "id": string,
-  "val": string | number
-  "damage_types"?: DamageType[]
-  "range_types"?: RangeType[]
-  "weapon_types"?: WeaponType[]
-  "weapon_sizes"?: WeaponSize[]
-  "overwrite"?: boolean
+  "val": string | number,
+  "damage_types"?: DamageType[],
+  "range_types"?: RangeType[],
+  "weapon_types"?: WeaponType[],
+  "weapon_sizes"?: WeaponSize[],
+  "overwrite"?: boolean,
   "replace"?: boolean
 }
 ```
