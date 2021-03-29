@@ -1083,8 +1083,6 @@ The optional type and size parameters will restrict any weapon-related bonus to 
 `pilot_evasion`|Add Pilot Evasion|integer
 `pilot_edef`|Add Pilot E-Defense|integer
 `pilot_speed`|Add Pilot Speed|integer
-`pilot_gear_cap`|Add Pilot Gear capacity|integer
-`pilot_weapon_cap`|Add Pilot Weapon capacity|integer
 `deployable_hp`|Add HP to all deployed Drones and Deployables|integer
 `deployable_size`|Add size to all deployed Drones and Deployables|integer
 `deployable_charges`|Add charges to all deployed Drones and Deployables|integer

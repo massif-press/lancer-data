@@ -143,7 +143,7 @@
     "actions": [{
       "name": "Frag Grenade",
       "activation": "Quick",
-      "detail": "Throw a Frag Grenade within Range 5. All characters within the a Blast 1 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage."
+      "detail": "Throw a Frag Grenade within Range 5. All characters within a Blast 1 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage."
     }],
     "deployables": [{
       "name": "Explosive Mine",

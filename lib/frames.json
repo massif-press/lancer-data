@@ -1378,7 +1378,14 @@
       "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Ushabti Omnigun",
-      "passive_effect": "[ERROR]<br>[range 15][1 AP kinetic damage]<br>Your mech’s omnigun is a piece of experimental hardware so advanced that it defies physics: it doesn’t require a mount, nor does it have a weapon type or size – meaning that it can’t be modified or benefit from your talents.<br>You can’t attack normally with this weapon. Instead, 1/round, as a free action during your turn, you can use it to deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule in this book or any other supersedes this."
+      "passive_effect": "[ERROR]<br>[range 15][1 AP Kinetic Damage]<br>Your mech’s omnigun is a piece of experimental hardware so advanced that it defies physics: it doesn’t require a mount, nor does it have a weapon type or size – meaning that it can’t be modified or benefit from your talents.<br>You can’t attack normally with this weapon. Instead, 1/round, as a free action during your turn, you can use it to deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule in this book or any other supersedes this.",
+      "passive_actions": [
+        {
+          "name": "Fire Omnigun",
+          "activation": "Free",
+          "detail": "1/round, as a free action during your turn, deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule  supersedes this."
+        }
+      ]
     }
   },
   {

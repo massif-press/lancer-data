@@ -342,7 +342,7 @@
         "actions": [{
           "name": "Shepherd Drone",
           "activation": "Protocol",
-          "detail": "Move a drone up to 4 spaces if it is within Sensors."
+          "detail": "Move a drone you control up to 4 spaces if it is within Sensors."
         }],
         "bonuses": [{
           "id": "deployable_hp",

@@ -1657,7 +1657,8 @@
     "no_core_bonus": true,
     "damage": [{
       "override": true,
-      "val": "??? Kinetic"
+      "type": "Kinetic",
+      "val": "???"
     }],
     "range": [{
       "override": true,
