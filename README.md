@@ -1083,18 +1083,30 @@ The optional type and size parameters will restrict any weapon-related bonus to 
 `pilot_evasion`|Add Pilot Evasion|integer
 `pilot_edef`|Add Pilot E-Defense|integer
 `pilot_speed`|Add Pilot Speed|integer
-`deployable_hp`|Add HP to all deployed Drones and Deployables|integer
-`deployable_size`|Add size to all deployed Drones and Deployables|integer
-`deployable_charges`|Add charges to all deployed Drones and Deployables|integer
-`deployable_armor`|Add armor to all deployed Drones and Deployables|integer
-`deployable_evasion`|Add evasion to all deployed Drones and Deployables|integer
-`deployable_edef`|Add edef to all deployed Drones and Deployables|integer
-`deployable_heatcap`|Add heatcap to all deployed Drones and Deployables|integer
-`deployable_repcap`|Add repcap to all deployed Drones and Deployables|integer
-`deployable_sensor_range`|Add sensor range to all deployed Drones and Deployables|integer
-`deployable_tech_attack`|Add tech attack to all deployed Drones and Deployables|integer
-`deployable_save`|Add save to all deployed Drones and Deployables|integer
-`deployable_speed`|Add speed to all deployed Drones and Deployables|integer
+`deployable_hp`|Add HP to all deployed Deployables|integer
+`deployable_size`|Add size to all deployed Deployables|integer
+`deployable_charges`|Add charges to all deployed Deployables|integer
+`deployable_armor`|Add armor to all deployed Deployables|integer
+`deployable_evasion`|Add evasion to all deployed Deployables|integer
+`deployable_edef`|Add edef to all deployed Deployables|integer
+`deployable_heatcap`|Add heatcap to all deployed Deployables|integer
+`deployable_repcap`|Add repcap to all deployed Deployables|integer
+`deployable_sensor_range`|Add sensor range to all deployed Deployables|integer
+`deployable_tech_attack`|Add tech attack to all deployed Deployables|integer
+`deployable_save`|Add save to all deployed Deployables|integer
+`deployable_speed`|Add speed to all deployed Deployables|integer
+`drone_hp`|Add HP to all deployed Drones|integer
+`drone_size`|Add size to all deployed Drones|integer
+`drone_charges`|Add charges to all deployed Drones|integer
+`drone_armor`|Add armor to all deployed Drones|integer
+`drone_evasion`|Add evasion to all deployed Drones|integer
+`drone_edef`|Add edef to all deployed Drones|integer
+`drone_heatcap`|Add heatcap to all deployed Drones|integer
+`drone_repcap`|Add repcap to all deployed Drones|integer
+`drone_sensor_range`|Add sensor range to all deployed Drones|integer
+`drone_tech_attack`|Add tech attack to all deployed Drones|integer
+`drone_save`|Add save to all deployed Drones|integer
+`drone_speed`|Add speed to all deployed Drones|integer
 
 The `overwrite` flag will *overwrite* any integer value bonus with the highest bonus of the same type from any source that has an `overwrite` flag. Which is to say: all applicable bonuses of that bonus ID will be collected and everything will be discarded *except for* the bonus of the highest value *that has an `overwrite` flag*. 
 Eg: a mech with items that give +4, +2, +3 (overwrite) and +2 (overwrite) AI Cap will result in a +3 AI Cap bonus.
