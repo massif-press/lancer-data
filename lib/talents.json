@@ -511,7 +511,7 @@
         ],
         "bonuses": [
           {
-            "id": "deployable_hp",
+            "id": "drone_hp",
             "val": 5
           }
         ]

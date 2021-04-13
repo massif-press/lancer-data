@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": "missing_frame",
     "license_level": 0,
     "source": "GMS",
@@ -65,7 +66,8 @@
       "speed": 4,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Initiative",
         "description": "1/scene the Everest may take any quick action as a free action.",
         "use": "Encounter"
@@ -73,14 +75,20 @@
       {
         "name": "Replaceable parts",
         "description": "While resting, the Everest can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.",
-        "bonuses": [{
-          "id": "cheap_struct",
-          "val": 1
-        }],
-        "synergies": [{
-          "locations": ["rest"],
-          "detail": "The Everest can be repaired at a rate of 1 Repair per 1 structure damage."
-        }]
+        "bonuses": [
+          {
+            "id": "cheap_struct",
+            "val": 1
+          }
+        ],
+        "synergies": [
+          {
+            "locations": [
+              "rest"
+            ],
+            "detail": "The Everest can be repaired at a rate of 1 Repair per 1 structure damage."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -89,15 +97,27 @@
       "active_effect": "For the rest of this scene, you gain +1 Accuracy on all attacks, checks, and saves; additionally, 1/turn, you can Boost as a free action.",
       "use": "Encounter",
       "activation": "Protocol",
-      "active_synergies": [{
-        "locations": ["active_effects", "boost"],
-        "detail": "1/turn, you can Boost as a free action."
-      }, {
-        "locations": ["hull", "agility", "systems", "engineering"],
-        "detail": "Gain +1 Accuracy on all attacks, checks, and saves."
-      }]
+      "active_synergies": [
+        {
+          "locations": [
+            "active_effects",
+            "boost"
+          ],
+          "detail": "1/turn, you can Boost as a free action."
+        },
+        {
+          "locations": [
+            "hull",
+            "agility",
+            "systems",
+            "engineering"
+          ],
+          "detail": "Gain +1 Accuracy on all attacks, checks, and saves."
+        }
+      ]
     },
-    "other_art": [{
+    "other_art": [
+      {
         "tag": "mech",
         "src": "pre_assault_pixel.png"
       },
@@ -150,28 +170,44 @@
       "speed": 5,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Grapple cable",
         "description": "The Blackbeard can Grapple targets within Range 5. If the Grapple is successful, the Blackbeard is immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and the Blackbeard does not move.",
-        "synergies": [{
-          "locations": ["grapple"],
-          "detail": "The Blackbeard can Grapple targets within Range 5. If the Grapple is successful, the Blackbeard is immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and the Blackbeard does not move."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "grapple"
+            ],
+            "detail": "The Blackbeard can Grapple targets within Range 5. If the Grapple is successful, the Blackbeard is immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and the Blackbeard does not move."
+          }
+        ]
       },
       {
         "name": "Lock/Kill Subsystem",
         "description": "While grappling, the Blackbeard can Boost and take reactions.",
-        "synergies": [{
-          "locations": ["grapple", "boost"],
-          "detail": "While grappling, the Blackbeard can Boost and take reactions."
-        }]
-      }, {
+        "synergies": [
+          {
+            "locations": [
+              "grapple",
+              "boost"
+            ],
+            "detail": "While grappling, the Blackbeard can Boost and take reactions."
+          }
+        ]
+      },
+      {
         "name": "Exposed Reactor",
         "description": "The Blackbeard receives +1 Difficulty on ENGINEERING checks and saves.",
-        "synergies": [{
-          "locations": ["engineering", "skill_check"],
-          "detail": "The Blackbeard gains +1 Difficulty on ENGINEERING checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "engineering",
+              "skill_check"
+            ],
+            "detail": "The Blackbeard gains +1 Difficulty on ENGINEERING checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -213,7 +249,8 @@
       "speed": 3,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Heavy Frame",
         "description": "The Drake can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
       },
@@ -224,10 +261,15 @@
       {
         "name": "Slow",
         "description": "The Drake receives +1 difficulty on Agility checks and saves.",
-        "synergies": [{
-          "locations": ["agility", "skill_check"],
-          "detail": "The Drake receives +1 difficulty on Agility checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "agility",
+              "skill_check"
+            ],
+            "detail": "The Drake receives +1 difficulty on Agility checks and saves."
+          }
+        ]
       },
       {
         "name": "Guardian",
@@ -272,18 +314,21 @@
       "speed": 6,
       "sp": 8
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Insulated",
         "description": "The Lancaster has Immunity to burn."
       },
       {
         "name": "Combat Repair",
         "description": "In combat, the Lancaster can use 4 Repairs to repair a destroyed mech as a full action, returning it to 1 Structure, 1 Stress, and 1 HP.",
-        "actions": [{
-          "name": "Combat Repair",
-          "activation": "Full",
-          "detail": "Use 4 Repairs to repair a destroyed mech as a full action, returning it to 1 Structure, 1 Stress, and 1 HP."
-        }]
+        "actions": [
+          {
+            "name": "Combat Repair",
+            "activation": "Full",
+            "detail": "Use 4 Repairs to repair a destroyed mech as a full action, returning it to 1 Structure, 1 Stress, and 1 HP."
+          }
+        ]
       },
       {
         "name": "Redundant Systems",
@@ -331,13 +376,18 @@
       "speed": 5,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Momentum",
         "description": "1/round, after you Boost, the Nelson’s next melee attack deals +1d6 bonus damage on hit.",
-        "synergies": [{
-          "locations": ["boost"],
-          "detail": "1/round, after you Boost, the Nelson’s next melee attack deals +1d6 bonus damage on hit."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "boost"
+            ],
+            "detail": "1/round, after you Boost, the Nelson’s next melee attack deals +1d6 bonus damage on hit."
+          }
+        ]
       },
       {
         "name": "Skirmisher",
@@ -384,7 +434,8 @@
       "speed": 4,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Full Metal Jacket",
         "description": "At the end of its turn, if the Raleigh hasn’t made any attacks or forced any saves, it can reload all Loading weapons as a free action."
       },
@@ -436,7 +487,8 @@
       "speed": 3,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Sentinel",
         "description": "The Tortuga gains +1 accuracy on all attacks made as reactions (e.g. Overwatch)."
       },
@@ -453,10 +505,12 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "other_art": [{
-      "tag": "mech",
-      "src": "alt_hortuga.png"
-    }]
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "alt_hortuga.png"
+      }
+    ]
   },
   {
     "id": "mf_vlad",
@@ -490,7 +544,8 @@
       "speed": 4,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Dismemberment",
         "description": "When the Vlad inflicts Immobilize on another character, the target also becomes Shredded for the same duration."
       },
@@ -508,10 +563,12 @@
       "activation": "Protocol"
     },
     "data_type": "frame",
-    "other_art": [{
-      "tag": "mech",
-      "src": "alt_agonist.png"
-    }]
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "alt_agonist.png"
+      }
+    ]
   },
   {
     "id": "mf_black_witch",
@@ -543,20 +600,23 @@
       "speed": 5,
       "sp": 8
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Repulsor Field",
         "description": "The Black Witch has Resistance to Kinetic Damage."
       },
       {
         "name": "Mag Parry",
         "description": "1/round, as a reaction, you may attempt to parry an attack that would deal Kinetic Damage to you or an adjacent allied character. Roll 1d6: on 5+, the attack misses. This effect does not stack with Invisible.",
-        "actions": [{
-          "name": "Mag Parry",
-          "activation": "Reaction",
-          "frequency": "1/round",
-          "trigger": "An incoming attack will deal Kinetic Damage to you or an adjacent allied character",
-          "detail": "Roll 1d6: on 5+, the attack misses. This effect does not stack with Invisible."
-        }]
+        "actions": [
+          {
+            "name": "Mag Parry",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "An incoming attack will deal Kinetic Damage to you or an adjacent allied character",
+            "detail": "Roll 1d6: on 5+, the attack misses. This effect does not stack with Invisible."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -598,19 +658,32 @@
       "speed": 5,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Neurolink",
         "description": "The Death’s Head may reroll its first ranged attack each round, but must keep the second result."
       },
       {
         "name": "Perfected Targeting",
         "description": "The Death’s Head gains an additional +1 to all ranged attack rolls.",
-        "synergies": [{
-          "locations": ["weapon"],
-          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
-          "weapon_sizes": ["any"],
-          "detail": "The Death’s Head gains an additional +1 to all ranged attack rolls."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The Death’s Head gains an additional +1 to all ranged attack rolls."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -618,7 +691,8 @@
       "description": "Precognition is the next step in human/AI interaction. Using a neural bridge, SSC’s precognitive targeting system allows pilots to learn constantly and unconsciously from data gathered in the field, equipping them to read situations before they develop. Precognition is highly experimental and the precise mechanisms unknown even to the designers, so SSC recommends limited, monitored use of this system.",
       "active_name": "Neural Shunt",
       "active_effect": "For the rest of this scene, you gain the Mark for Death action.",
-      "active_actions": [{
+      "active_actions": [
+        {
           "name": "Mark for Death",
           "activation": "Full",
           "detail": "Choose a character within range 30 but further than range 5 to focus on; while focusing, you become Immobilized and can’t take reactions, but you deal bonus damage based on weapon size (aux: 1d6, main: 2d6, heavy or larger: 3d6) on ranged critical hits against them, as long as they aren’t in cover or within range 5.<br>You may only focus on one character at a time. As a protocol, you may cease focusing on a target."
@@ -633,10 +707,12 @@
       "activation": "Protocol"
     },
     "data_type": "frame",
-    "other_art": [{
-      "tag": "mech",
-      "src": "alt_hercules.png"
-    }]
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "alt_hercules.png"
+      }
+    ]
   },
   {
     "id": "mf_dusk_wing",
@@ -669,29 +745,43 @@
       "speed": 6,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Maneuverability Jets",
         "description": "The Dusk Wing can hover when it moves.",
-        "synergies": [{
-          "locations": ["move"],
-          "detail": "The Dusk Wing can hover when it moves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "The Dusk Wing can hover when it moves."
+          }
+        ]
       },
       {
         "name": "Harlequin Cloak",
         "description": "During its turn, the Dusk Wing is Invisible; it reappears at the end of the turn.",
-        "synergies": [{
-          "locations": ["active_effects"],
-          "detail": "During its turn, the Dusk Wing is Invisible; it reappears at the end of the turn."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "active_effects"
+            ],
+            "detail": "During its turn, the Dusk Wing is Invisible; it reappears at the end of the turn."
+          }
+        ]
       },
       {
         "name": "Fragile",
         "description": "The Dusk Wing receives +1 difficulty on Hull checks and saves.",
-        "synergies": [{
-          "locations": ["hull", "skill_check"],
-          "detail": "The Dusk Wing receives +1 difficulty on Hull checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "hull",
+              "skill_check"
+            ],
+            "detail": "The Dusk Wing receives +1 difficulty on Hull checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -699,11 +789,13 @@
       "description": "“Belief in what we could see, what we could touch – in what our comp/cons assured us was there, in our own subjectivity and memory. Belief in reality became a weapon. We approached the metavault knowing that we would face an unknown enemy, but we approached with the advantage of numbers and machine strength.<br>“DHIYED taught us as it killed us: through garbled comms chatter, through the screams of the dying, through the cackling of our mirror-selves as they killed us. Every spoofed signature, every temporal skip, every memetic, every non-Euclid – these were lessons.<br>“Do you understand?<br>“DHIYED the Teacher. DHIYED the Monster. As we killed it, DHIYED taught us what to fear, and how to face it.<br>“What do I fear now? That's a good question. What does the pilot fear who cracked open DHIYED’s casket?<br>“I don’t think we killed it. I think it wants us to believe we killed it – and I cannot imagine what it has done while we think ourselves safe.”",
       "active_name": "Hall of Mirrors",
       "active_effect": "For the rest of the scene, whenever you start a unique movement during your turn (e.g., a standard move, Boost, or movement granted by talents or systems), you leave a holographic imprint of yourself behind in the space from which you started. These are illusory objects the same Size as you that have Immunity to all damage and effects and aren’t obstructions.<br>When hostile characters start their turn in, move through, or move adjacent to the space occupied by a hologram, it detonates. They must succeed on an Agility save or take 1d6 energy damage. On a success, they take half damage.<br>You also gain the Hologram Teleport Quick Action.",
-      "active_actions": [{
-        "name": "Hologram Teleport",
-        "activation": "Quick",
-        "detail": "You may instantly teleport to the location of any hologram within range 50 as a quick action. When you do so, all extant holograms detonate – creating burst 1 explosions that deal 1d6 Energy Damage (Agility save for half) – and you may not create any new holograms until the start of your next turn"
-      }],
+      "active_actions": [
+        {
+          "name": "Hologram Teleport",
+          "activation": "Quick",
+          "detail": "You may instantly teleport to the location of any hologram within range 50 as a quick action. When you do so, all extant holograms detonate – creating burst 1 explosions that deal 1d6 Energy Damage (Agility save for half) – and you may not create any new holograms until the start of your next turn"
+        }
+      ],
       "use": "Encounter",
       "activation": "Protocol"
     }
@@ -739,13 +831,18 @@
       "speed": 5,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Flash Cloak",
         "description": "The Metalmark is Invisible while moving, but reappears when stationary.",
-        "synergies": [{
-          "locations": ["move"],
-          "detail": "The Metalmark is Invisible while moving."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "move"
+            ],
+            "detail": "The Metalmark is Invisible while moving."
+          }
+        ]
       },
       {
         "name": "Carapace Adaptation",
@@ -792,25 +889,46 @@
       "speed": 5,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Avenger Silos",
         "description": "1/round, on a critical hit with any ranged weapon, the Monarch may deal 3 explosive to a different character of your choice within range 15 and line of sight.",
-        "synergies": [{
-          "locations": ["weapon"],
-          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
-          "weapon_sizes": ["any"],
-          "detail": "1/round, on a critical hit with any ranged weapon, the Monarch may deal 3 explosive to a different character of your choice within range 15 and line of sight."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, on a critical hit with any ranged weapon, the Monarch may deal 3 explosive to a different character of your choice within range 15 and line of sight."
+          }
+        ]
       },
       {
         "name": "Seeking Payload",
         "description": "The Monarch can use a Launcher weapon to attack a character with the Lock On condition as if its weapon had Seeking, but must consume the Lock On during the attack. When it does so, the attack’s damage cannot be reduced in any way.",
-        "synergies": [{
-          "locations": ["weapon"],
-          "weapon_types": ["Launcher"],
-          "weapon_sizes": ["any"],
-          "detail": "The Monarch can use a Launcher weapon to attack a character with the Lock On condition as if its weapon had Seeking, but must consume the Lock On during the attack. When it does so, the attack’s damage cannot be reduced in any way."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Launcher"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The Monarch can use a Launcher weapon to attack a character with the Lock On condition as if its weapon had Seeking, but must consume the Lock On during the attack. When it does so, the attack’s damage cannot be reduced in any way."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -851,23 +969,37 @@
       "speed": 5,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Hunter",
         "description": "1/round, the Mourning Cloak may deal +1d6 bonus damage on hit with a melee attack if its target has no adjacent characters, or if the Mourning Cloak is the only character adjacent to the target.",
-        "synergies": [{
-          "locations": ["weapon"],
-          "weapon_types": ["Melee"],
-          "weapon_sizes": ["any"],
-          "detail": "1/round, the Mourning Cloak may deal +1d6 bonus damage on hit with a melee attack if its target has no adjacent characters, or if the Mourning Cloak is the only character adjacent to the target."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "1/round, the Mourning Cloak may deal +1d6 bonus damage on hit with a melee attack if its target has no adjacent characters, or if the Mourning Cloak is the only character adjacent to the target."
+          }
+        ]
       },
       {
         "name": "Biotic Components",
         "description": "The Mourning Cloak gains +1 accuracy on Agility checks and saves.",
-        "synergies": [{
-          "locations": ["agility", "skill_check"],
-          "detail": "The Mourning Cloak gains +1 accuracy on Agility checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "agility",
+              "skill_check"
+            ],
+            "detail": "The Mourning Cloak gains +1 accuracy on Agility checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -879,11 +1011,13 @@
       "activation": "Protocol",
       "passive_name": "Blinkspace Jump",
       "passive_effect": "Gain the Blinkspace Jump Full Action.",
-      "passive_actions": [{
-        "name": "Blinkspace Jump",
-        "activation": "Full",
-        "detail": "Teleport to a space within range 3d6. You don’t require line of sight, but attempts to teleport to occupied spaces cause you to remain stationary and lose this action. If you roll the same number on all three dice, you disappear until your group rests, at which point you reappear nearby."
-      }]
+      "passive_actions": [
+        {
+          "name": "Blinkspace Jump",
+          "activation": "Full",
+          "detail": "Teleport to a space within range 3d6. You don’t require line of sight, but attempts to teleport to occupied spaces cause you to remain stationary and lose this action. If you roll the same number on all three dice, you disappear until your group rests, at which point you reappear nearby."
+        }
+      ]
     }
   },
   {
@@ -916,7 +1050,8 @@
       "speed": 6,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Integrated Cloak",
         "description": "At the end of its turn, the Swallowtail becomes Invisible if it hasn’t moved that turn. This lasts until it moves or takes a reaction, or until the start of its next turn."
       },
@@ -924,10 +1059,14 @@
         "name": "Prophetic Scanners",
         "description": "1/round, when the Swallowtail inflicts Lock On, its target also becomes Shredded until the end of its next turn.",
         "use": "Round",
-        "synergies": [{
-          "locations": ["lock_on"],
-          "detail": "1/round, when the Swallowtail inflicts Lock On, its target also becomes Shredded until the end of its next turn."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "lock_on"
+            ],
+            "detail": "1/round, when the Swallowtail inflicts Lock On, its target also becomes Shredded until the end of its next turn."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -935,13 +1074,15 @@
       "description": "Cloudscout TACSIM Swarms are packets of networked microsensors, launched in nonlethal mortar canisters that detonate high above the battlefield. Once seeded, the swarm generates a TACSIM program that begins to run brevity cycles: tight, contained simulations of tactical possibility. Probability results are then fed to the Swallowtail’s choir processors, which in turn feed it to the pilot and networked squad members, ensuring a high probability of successful outcomes.",
       "active_name": "Prophetic Interjection",
       "active_effect": "Gain the Tactical Simulation reaction for the rest of the scene.",
-      "active_actions": [{
-        "name": "Tactical Simulation",
-        "activation": "Reaction",
-        "frequency": "1/round",
-        "trigger": "An allied character in line of sight takes damage from another character in line of sight.",
-        "detail": "Effect: Roll 1d6. On 4+, the attack was actually a simulation predicted by your processor - your ally gains Resistance to all damage dealt by the attack and may teleport up to 3 spaces, representing their “true” location. On 3 or less, there’s a glitch – your allied doesn’t gain Resistance, but can teleport up to 6 spaces."
-      }],
+      "active_actions": [
+        {
+          "name": "Tactical Simulation",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "An allied character in line of sight takes damage from another character in line of sight.",
+          "detail": "Effect: Roll 1d6. On 4+, the attack was actually a simulation predicted by your processor - your ally gains Resistance to all damage dealt by the attack and may teleport up to 3 spaces, representing their “true” location. On 3 or less, there’s a glitch – your allied doesn’t gain Resistance, but can teleport up to 6 spaces."
+        }
+      ],
       "use": "Encounter",
       "activation": "Protocol"
     }
@@ -977,7 +1118,8 @@
       "speed": 3,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "SCOURING SWARM",
         "description": "The Balor deals 2 kinetic to characters of its choice that start their turn grappled by or adjacent to it."
       },
@@ -1029,32 +1171,44 @@
       "speed": 5,
       "sp": 8
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "LITURGICODE",
         "description": "The Goblin gains +1 accuracy on tech attacks.",
-        "synergies": [{
-          "locations": ["tech_attack"],
-          "detail": "The Goblin gains +1 accuracy on tech attacks."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "tech_attack"
+            ],
+            "detail": "The Goblin gains +1 accuracy on tech attacks."
+          }
+        ]
       },
       {
         "name": "REACTIVE CODE",
         "description": "Gain the Reactive Code reaction.",
-        "actions": [{
-          "name": "Reactive Code",
-          "activation": "Reaction",
-          "frequency": "1/round",
-          "trigger": "You are hit by a Tech Attack.",
-          "detail": "You may take any Quick Tech option against the attacker as a reaction."
-        }]
+        "actions": [
+          {
+            "name": "Reactive Code",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "You are hit by a Tech Attack.",
+            "detail": "You may take any Quick Tech option against the attacker as a reaction."
+          }
+        ]
       },
       {
         "name": "FRAGILE",
         "description": "The Goblin receives +1 difficulty on Hull checks and saves.",
-        "synergies": [{
-          "locations": ["hull", "skill_check"],
-          "detail": "The Goblin receives +1 difficulty on Hull checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "hull",
+              "skill_check"
+            ],
+            "detail": "The Goblin receives +1 difficulty on Hull checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -1098,7 +1252,8 @@
       "speed": 4,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "METASTATIC PARALYSIS",
         "description": "When an attack roll against the Gorgon lands on 1–2, it automatically misses and the attacker becomes Stunned until the end of their next turn."
       },
@@ -1151,13 +1306,20 @@
       "speed": 5,
       "sp": 8
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "SYSTEM LINK",
         "description": "When deployed, the Hydra’s Deployables and Drones gain +5 HP.",
-        "bonuses": [{
-          "id": "deployable_hp",
-          "val": 5
-        }]
+        "bonuses": [
+          {
+            "id": "deployable_hp",
+            "val": 5
+          },
+          {
+            "id": "drone_hp",
+            "val": 5
+          }
+        ]
       },
       {
         "name": "SHEPHERD FIELD",
@@ -1171,7 +1333,8 @@
       "active_effect": "All four OROCHI drones are deployed to separate points within Sensors; they remain active for the rest of the scene. You may recall or redeploy any number of them at a time.",
       "activation": "Quick",
       "passive_name": "OROCHI Drones",
-      "deployables": [{
+      "deployables": [
+        {
           "name": "Guardian Drone",
           "type": "OROCHI Drone",
           "detail": "This drone projects a shield. Ranged attacks against adjacent allied characters receive +1 difficulty.",
@@ -1245,7 +1408,8 @@
       "speed": 3,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "SLAG CARAPACE",
         "description": "The Manticore has Resistance to Energy Damage and Burn."
       },
@@ -1269,13 +1433,15 @@
       "passive_name": "Charged Exoskeleton",
       "passive_effect": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3."
     },
-    "counters": [{
-      "id": "ctr_charged_exoskeleton",
-      "name": "CHARGE DIE",
-      "default_value": 1,
-      "min": 1,
-      "max": 6
-    }]
+    "counters": [
+      {
+        "id": "ctr_charged_exoskeleton",
+        "name": "CHARGE DIE",
+        "default_value": 1,
+        "min": 1,
+        "max": 6
+      }
+    ]
   },
   {
     "id": "mf_minotaur",
@@ -1306,7 +1472,8 @@
       "speed": 4,
       "sp": 8
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "INVERT COCKPIT",
         "description": "You may Mount or Dismount the Minotaur for the first time each round as a free action. Additionally, the Minotaur doesn’t become Impaired when you Eject.",
         "use": "Round"
@@ -1361,7 +1528,8 @@
       "speed": 4,
       "sp": 7
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "¿%:?EXTR!UDE GUN",
         "description": "GUN: GUN"
       },
@@ -1419,7 +1587,8 @@
       "speed": 2,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Heavy FRAME",
         "description": "The Barbarossa can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
       },
@@ -1434,10 +1603,15 @@
       {
         "name": "Slow",
         "description": "The Barbarossa receives +1 difficulty on Agility checks and saves.",
-        "synergies": [{
-          "locations": ["agility", "skill_check"],
-          "detail": "The Barbarossa receives +1 difficulty on Agility checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "agility",
+              "skill_check"
+            ],
+            "detail": "The Barbarossa receives +1 difficulty on Agility checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -1450,13 +1624,15 @@
         "mw_barbarossa_integrated"
       ]
     },
-    "counters": [{
-      "id": "ctr_apocalypse_rail",
-      "name": "APOCALYPSE DIE",
-      "default_value": 4,
-      "min": 1,
-      "max": 4
-    }]
+    "counters": [
+      {
+        "id": "ctr_apocalypse_rail",
+        "name": "APOCALYPSE DIE",
+        "default_value": 4,
+        "min": 1,
+        "max": 4
+      }
+    ]
   },
   {
     "id": "mf_genghis",
@@ -1489,7 +1665,8 @@
       "speed": 3,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Insulated",
         "description": "The Genghis has Immunity to burn."
       },
@@ -1536,7 +1713,8 @@
       "speed": 3,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Assault Launcher",
         "description": "1/round, the Iskander may throw one Grenade or plant one Mine as though it has range 15.",
         "use": "Round"
@@ -1590,17 +1768,22 @@
       "speed": 4,
       "sp": 7
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Heavy shielding",
         "description": "When the Napoleon would take half damage on a successful check or save, it instead reduces the damage to 1."
       },
       {
         "name": "Flash Aegis",
         "description": "When the Napoleon Braces, it reduces incoming damage to 1 instead of gaining Resistance.",
-        "synergies": [{
-          "locations": ["brace"],
-          "detail": "When the Napoleon Braces, it reduces incoming damage to 1 instead of gaining Resistance."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "brace"
+            ],
+            "detail": "When the Napoleon Braces, it reduces incoming damage to 1 instead of gaining Resistance."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -1641,7 +1824,8 @@
       "speed": 3,
       "sp": 8
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Reinforced frame",
         "description": "The Saladin has Immunity to Shredded."
       },
@@ -1661,17 +1845,20 @@
       "active_name": "Tachyon Shield",
       "active_effect": "This system projects an accelerated-tachyon shield over an allied character within Sensors. You may choose a new target as a quick action. Gain the Defensive Pulse reaction for the rest of the scene.<br>Defensive Pulse<br>Reaction, 1/round<br>Trigger: Your target is attacked.<br>Effect: You empower their tachyon shield with a pulse of energy. They gain Resistance to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and Range from your target instead of from the attacker. If the attack was part of an area of effect, the new target must be inside the same area of effect from the original attack instead.",
       "use": "Encounter",
-      "active_actions": [{
-        "name": "Defensive Pulse",
-        "activation": "Reaction",
-        "init": "This system projects an accelerated-tachyon shield over an allied character within Sensors. You may choose a new target as a quick action.",
-        "trigger": "Your target is attacked.",
-        "detail": "You empower their tachyon shield with a pulse of energy. They gain Resistance to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and Range from your target instead of from the attacker. If the attack was part of an area of effect, the new target must be inside the same area of effect from the original attack instead."
-      }, {
-        "name": "Retarget Tachyon Shield",
-        "activation": "Quick",
-        "detail": "Change the target of your Tachyon Shield to another allied character within Sensors."
-      }],
+      "active_actions": [
+        {
+          "name": "Defensive Pulse",
+          "activation": "Reaction",
+          "init": "This system projects an accelerated-tachyon shield over an allied character within Sensors. You may choose a new target as a quick action.",
+          "trigger": "Your target is attacked.",
+          "detail": "You empower their tachyon shield with a pulse of energy. They gain Resistance to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and Range from your target instead of from the attacker. If the attack was part of an area of effect, the new target must be inside the same area of effect from the original attack instead."
+        },
+        {
+          "name": "Retarget Tachyon Shield",
+          "activation": "Quick",
+          "detail": "Change the target of your Tachyon Shield to another allied character within Sensors."
+        }
+      ],
       "activation": "Quick"
     }
   },
@@ -1707,13 +1894,19 @@
       "speed": 3,
       "sp": 5
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Superior Reactor",
         "description": "The Sherman gains +1 accuracy on Engineering checks and saves.",
-        "synergies": [{
-          "locations": ["engineering", "skill_check"],
-          "detail": "The Sherman gains +1 accuracy on Engineering checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "engineering",
+              "skill_check"
+            ],
+            "detail": "The Sherman gains +1 accuracy on Engineering checks and saves."
+          }
+        ]
       },
       {
         "name": "Mathur Stop",
@@ -1735,17 +1928,21 @@
         "mw_sherman_integrated"
       ]
     },
-    "other_art": [{
-      "tag": "mech",
-      "src": "alt_sherman_old.png"
-    }],
-    "counters": [{
-      "id": "ctr_zf4_solidcore",
-      "name": "ZF4 CHARGES",
-      "default_value": 1,
-      "min": 1,
-      "max": 4
-    }]
+    "other_art": [
+      {
+        "tag": "mech",
+        "src": "alt_sherman_old.png"
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_zf4_solidcore",
+        "name": "ZF4 CHARGES",
+        "default_value": 1,
+        "min": 1,
+        "max": 4
+      }
+    ]
   },
   {
     "id": "mf_tokugawa",
@@ -1778,13 +1975,18 @@
       "speed": 4,
       "sp": 6
     },
-    "traits": [{
+    "traits": [
+      {
         "name": "Limit Break",
         "description": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat.",
-        "synergies": [{
-          "locations": ["active_effects"],
-          "detail": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "active_effects"
+            ],
+            "detail": "When the Tokugawa is Exposed, its ranged and melee attacks deal +3 energy bonus damage on hit, all of its weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat."
+          }
+        ]
       },
       {
         "name": "Plasma Sheath",
@@ -1799,28 +2001,43 @@
       "use": "Encounter",
       "activation": "Protocol",
       "passive_name": "Overclock",
-      "passive_actions": [{
+      "passive_actions": [
+        {
           "name": "Overclock",
           "activation": "Protocol",
           "detail": "You cause your mech to become Exposed until the end of your next turn."
-      }],
-      "active_bonuses": [{
+        }
+      ],
+      "active_bonuses": [
+        {
           "id": "range",
-          "damage_types": ["Energy"],
-          "range_types": ["Range"],
+          "damage_types": [
+            "Energy"
+          ],
+          "range_types": [
+            "Range"
+          ],
           "val": 5
         },
         {
           "id": "range",
-          "damage_types": ["Energy"],
-          "range_types": ["Threat"],
+          "damage_types": [
+            "Energy"
+          ],
+          "range_types": [
+            "Threat"
+          ],
           "val": 2
         }
       ],
-      "active_synergies": [{
-        "locations": ["active_effects"],
-        "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
-      }]
+      "active_synergies": [
+        {
+          "locations": [
+            "active_effects"
+          ],
+          "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+        }
+      ]
     }
   }
 ]
