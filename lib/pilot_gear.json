@@ -393,10 +393,12 @@
             "val": 1
           }
         ],
-        "damage": {
-          "type": "Explosive",
-          "val": 2
-        },
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 2
+          }
+        ],
         "detail": "Throw a grenade within Range 5. Affected characters withing a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
         "pilot": true
       }

@@ -181,10 +181,12 @@
             "val": 1
           }
         ],
-        "damage": {
-          "type": "Explosive",
-          "val": "1d6"
-        },
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          }
+        ],
         "detail": "Throw a Frag Grenade within Range 5. All characters within a Blast 1 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage."
       }
     ],
@@ -772,10 +774,12 @@
             "val": 1
           }
         ],
-        "damage": {
-          "type": "Energy",
-          "val": "1d6"
-        },
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d6"
+          }
+        ],
         "detail": "Throw a Thermal Grenade within Range 5. All characters within a Blast 1 area must succeed on an Agility save or take 1d6 energy. On a success, they take half damage. Objects and terrain are hit automatically and take 10 AP energy damage."
       }
     ],
@@ -2331,10 +2335,12 @@
     "actions": [
       {
         "name": "Roller Grenade",
-        "damage": {
-          "type": "Explosive",
-          "val": "1d6+3"
-        },
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+3"
+          }
+        ],
         "detail": "Instead of throwing this grenade, it rolls along a line 10 path directly from you, bouncing over obstructions and objects up to Size 1 and passing through holes or gaps no smaller than Size 1/2. It detonates when it moves through or adjacent to the space occupied by any character: they must succeed on an Agility save or take 1d6+3 explosive damage and be knocked 3 spaces in the direction the grenade was rolled. On a success, they take half damage and aren’t knocked back."
       }
     ],
@@ -2496,10 +2502,12 @@
             "val": 5
           }
         ],
-        "damage": {
-          "type": "Burn",
-          "val": 2
-        },
+        "damage": [
+          {
+            "type": "Burn",
+            "val": 2
+          }
+        ],
         "detail": "Throw a Napalm Grenade within Range 5. This grenade releases a spray of napalm in a line 5 path of your choice from its impact location. Characters within the affected area must succeed on an Agility save or take 2 burn. On a success, they take 1 burn."
       }
     ],
