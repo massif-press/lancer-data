@@ -814,6 +814,8 @@ Charge-style equipment is usually broken into two possible actions (throw grenad
   {
     "name": "my grenade",
     "activation": "Quick",
+    "range"?: IRangeData[],
+    "damage"?: IDamageData[],
     "detail": "equipment details, which can be distinct from the item effect, if desired",
     "cost": 1
   },
