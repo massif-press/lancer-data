@@ -20,6 +20,9 @@
         "id": "tg_ai"
       },
       {
+        "id": "tg_no_cascade"
+      },
+      {
         "id": "tg_unique"
       }
     ],

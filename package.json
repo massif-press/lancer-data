@@ -1,6 +1,6 @@
 {
   "name": "lancer-data",
-  "version": "3.0.32",
+  "version": "3.0.33",
   "description": "Data for the LANCER TTRPG",
   "main": "index.js",
   "repository": {

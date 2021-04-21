@@ -304,5 +304,11 @@
     "name": "SET DAMAGE VALUE",
     "description": "Allow player to set the damage value for this equipment (HIDDEN TAG)",
     "hidden": true
+  },
+  {
+    "id": "tg_no_cascade",
+    "name": "PREVENT CASCADE",
+    "description": "Prohibits an AI system from being recognized as a valid target for Cascading (HIDDEN TAG)",
+    "hidden": true
   }
 ]
