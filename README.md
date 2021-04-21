@@ -157,6 +157,7 @@ Many of the CORE Bonus effects are hardcoded, which is something to keep in mind
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
 }
 ```
 `effect` is used in the Bonus description in the CB browser/selector, and `mounted_effect` furnishes the mount prepend panel when a mount-related CORE Bonus is installed. `description` is used for flavor details.
@@ -235,6 +236,7 @@ For further information, see Kai Tave's "Field Guide to Suldan" supplement.
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
 },  
 ```
 Including a `use` value will give it a button in the Player Active Mode that will appear on the Active Sheet as well as in the "Other" Action Menu. This will log the action and prevent its reuse (until the specified step). `Scene` and `Encounter` are handled the same. Any other value will cause the button to render and the trait usage to be logged, but will not disable the button on use.
@@ -261,6 +263,7 @@ Including a `use` value will give it a button in the Player Active Mode that wil
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
   "tags"?: ITagData[]
 }
 ```
@@ -348,6 +351,7 @@ Weapon mods are handled separately in C/C than in Lancer (where they're just tag
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
 }
 ```
 
@@ -378,6 +382,7 @@ This is currently unsupported in the LANCER Core Book (or any Massif material at
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
 }
 ```
 
@@ -451,6 +456,7 @@ Pilot Equipment actions and deployables will always be available **unless** they
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
 },
 ```
 
@@ -520,6 +526,7 @@ The rules file sets some of the base values of the game, but as of this writing 
     "deployables"?: IDeployableData[],
     "counters"?: ICounterData[],
     "integrated"?: string[]
+    "special_equipment"?: string[]
   },
 ```
 If `type` is omitted, the system is given the type `"System"`
@@ -661,6 +668,7 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "deployables"?: IDeployableData[],
   "counters"?: ICounterData[],
   "integrated"?: string[]
+  "special_equipment"?: string[]
   "profiles"?: IWeaponProfile[] //see note below
 }
 ```
@@ -706,6 +714,7 @@ For a weapon with multiple profiles, the default profile will be the **first** (
   "deployables"?: IDeployableData[]
   "counters"?: ICounterData[]
   "integrated"?: string[]
+  "special_equipment"?: string[]
 ```
 
 All Weapon Profile fields are equivalent to their base Weapon representations.
@@ -988,6 +997,7 @@ agility|mouseover tooltip for AGILITY stat
 systems|mouseover tooltip for SYSTEMS stat
 engineering|mouseover tooltip for ENGINEERING stat
 pilot_weapon|Pilot Weapon panel and action modal
+cascade|Cascade warning panel
 
 # Counters (ICounterData)
 Counters are tick/clock/track managers available on the Pilot Active mode under the COUNTERS heading. Pilots can create, edit, and delete custom counters, but adding one to an item will generate an automatic, permanent counter that will always be available if the prerequisites are met (item is equipped, talent is unlocked, etc.)
@@ -1017,6 +1027,18 @@ Certain equipment, talents, etc can add equipment to mechs. These are collected 
 COMP/CON will determine if the item is a Weapon or System. Weapons will be added to a unique and item-bound Integrated Mount. Integrated items are not removable (but destroyable, cascadable, etc.).
 
 It is possible to "chain" equipment through `integrated` arrays, and is therefore possible to loop infinitely, which will cause the app to crash. Keep this in mind when building LCPs.
+
+## Special Equipment
+Similar to integrated items, Special Equipment adds an entry to the pilot's special/exotic equipment list, making the item available in mech or pilot equipment selectors, but -- unlike Integrated items -- allowing these items to be removed. An example is the Technophile talent's AI system, which becomes available through the talent, but is not automatically added like an Integrated item and can be omitted from a Mech loadout.
+
+Like Integrated items, these are collected as an array of item IDs:
+```ts
+{
+  "special_equipment": string[]
+}
+```
+
+Special Equipment attached to other pieces of equipment are available only when the items are equipped, making it possible to set up linked or prerequisite systems in this way, although C/C will make consistency removals if eg. the prerequisite system is removed from the loadout.
 
 # Bonuses
 ```ts

@@ -1464,7 +1464,7 @@
       {
         "name": "SERVANT FRAGMENT",
         "description": "You have developed a custom NHP. This NHP can speak to you and has a personality, but they are less advanced than most NHPs and are incapable of independent thought, relying on you for direction. When acting alone, they will follow the last direction given and defend themself as needed; however, they have limited initiative and don’t benefit from your talents.<br>You may choose for your mech to gain the <b>Servant-Class NHP</b> System",
-        "integrated": [
+        "special_equipment": [
           "ms_technophile_1"
         ],
         "exclusive": true
@@ -1472,7 +1472,7 @@
       {
         "name": "STUDENT FRAGMENT",
         "description": "Your custom NHP has developed further, and is now capable of independent thought. It can make complex decisions and judgments and act independently, without instruction. Replace your mech’s Servant-Class NHP with the <b>Student-Class NHP</b>",
-        "integrated": [
+        "special_equipment": [
           "ms_technophile_2"
         ],
         "exclusive": true
@@ -1480,8 +1480,22 @@
       {
         "name": "ENLIGHTENMENT",
         "description": "Gain the following benefits:<ul><li>AIs installed in your mech cannot enter cascade unless you choose to let them go.</li><li>So long as your custom NHP vouches for you, NHPs that are cascading or unshackled no longer view you with indifference. You are significant to them in a way few others are.</li><li>Replace your mech’s Student-Class NHP with the <b>Enlightenment-Class NHP</b>",
-        "integrated": [
+        "special_equipment": [
           "ms_technophile_3"
+        ],
+        "synergies": [
+          {
+            "locations": [
+              "cascade"
+            ],
+            "detail": "AIs installed in your mech cannot enter cascade unless you choose to let them go."
+          },
+          {
+            "locations": [
+              "active_effects"
+            ],
+            "detail": "So long as your custom NHP vouches for you, NHPs that are cascading or unshackled no longer view you with indifference. You are significant to them in a way few others are."
+          }
         ],
         "exclusive": true
       }
