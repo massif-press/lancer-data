@@ -32,11 +32,11 @@
   },
   {
     "name": "HEAT",
-    "description": "Heat taken by a target represents harm to internal systems and reactor shielding. It fills in HEAT CAP."
+    "description": "Heat taken by a target represents harm to internal systems and reactor shielding. It fills in HEAT CAP. Heat ignores ARMOR, and doesn't count as damage."
   },
   {
     "name": "HEAT CAPACITY",
-    "description": "Your mech can take heat from tech attacks and some of its own systems. If it takes more heat than its HEAT CAP, it overheats. Mechs also have STRESS, which is similar to STRUCTURE – when they exceed their HEAT CAP, they take 1 STRESS and clear all heat. When they lose STRESS like this, mechs have to make a special stress damage check and receive a consequence based on the roll. Most mechs have 4 STRESS, and are destroyed when they reach 0 STRESS."
+    "description": "Your mech can take heat from tech attacks and some of its own systems. If it takes more heat than its HEAT CAP, it overheats. Mechs also have STRESS, which is similar to STRUCTURE – when they exceed their HEAT CAP, they take 1 STRESS and clear all heat. When they lose STRESS like this, mechs have to make a special stress damage check and receive a consequence based on the roll. Most mechs have 4 STRESS, and are destroyed when they reach 0 STRESS.<br><br>If a character without a HEAT CAP would take heat, they instead take an equivalent amount of energy damage."
   },
   {
     "name": "HP",
@@ -100,5 +100,53 @@
   }, {
     "name": "BURST",
     "description": "Equipment with a BURST attack pattern affects characters within a radius of X spaces, centered on and including the space occupied by the user (or target). If the Burst is an attack, the user or target is not affected by the attack unless specified. Cover and line of sight are calculated from the character. If a BURST effect is ongoing, it moves with the character at its center. A separate attack roll is made for each target, but damage is only rolled once and bonus damage is halved if there are multiple characters affected. For any ability or effect calling for you to choose a target or targets within RANGE, this equipment can choose any target that could be hit by its pattern.<br><br>Additionally, some LINE, CONE, BURST, and Blast attacks list a RANGE. In these cases, the attack’s origin point can be drawn from a point within the range specified and line of sight. For example, an attack with Burst 2 and Range 10 would affect a BURST 2 area starting from any point within RANGE 10."
+  },
+  {
+    "name": "INVOLUNTARY MOVEMENT",
+    "description": "When characters are pushed, pulled, or knocked in certain directions, it is called involuntary movement. Involuntary movement forces the affected character to move in a straight line, in a specified direction. When moving involuntarily, mechs do not provoke reactions or engagement unless specified otherwise but are still blocked by obstructions."
+  },
+  {
+    "name": "DIFFICULT TERRAIN",
+    "description": "All movement through difficult terrain is at half speed – each space of difficult terrain they move into is equivalent to two spaces of movement."
+  },
+  {
+    "name": "DANGEROUS TERRAIN",
+    "description": "When characters end their turn in dangerous terrain or move into it for the first time in a round, they must make an ENGINEERING check. On a failure, they take 5 damage – kinetic, energy, explosive, or burn, depending on the hazard. Each character only needs to make one such check per round."
+  },
+  {
+    "name": "LIFTING AND DRAGGING",
+    "description": "Mechs can drag characters or objects up to twice their SIZE but are SLOWED while doing so. They can also lift characters or objects of equal or lesser SIZE overhead but are IMMOBILIZED while doing so. While dragging or lifting, characters can’t take reactions. The same rules apply to pilots and other characters on foot, but they can’t drag or lift anything above SIZE 1/2.<br><br>While flying, mechs cannot carry characters or objects with a total SIZE larger than SIZE 1/2 -- there's just not enough thrust."
+  },
+  {
+    "name": "JUMPING AND CLIMBING",
+    "description": "Characters with legs can jump instead of their standard move. They may jump horizontally, moving half their speed in a straight line and ignoring obstructions at ground level that they could jump over (such as pits or gaps), or they may can jump vertically, moving 1 space adjacent and moving up by spaces equivalent to their SIZE. For example, a SIZE 1 mech could jump up to 1 space high, and 1 space over. Characters that jump and end the jump mid air automatically fall at the end of the move (see below).<br><br>Like moving through difficult terrain, characters climb at half their usual SPEED – each space moved is equivalent to moving 2 spaces normally. A successful HULL or AGILITY check might be required to climb particularly difficult surfaces without falling."
+  },
+  {
+    "name": "FALLING/FALL DAMAGE",
+    "description": "Unless specified otherwise, characters start to fall at the end of the current turn, and fall at the end of each of their turns thereafter. They take 3 AP kinetic damage for every three spaces fallen, to a maximum of 9. Falling counts as involuntary movement."
+  },
+  {
+    "name": "ZERO GRAVITY",
+    "description": "Mechs operating underwater, in zero-g, or in space are SLOWED unless they have a propulsion or flight system; however, they can’t fall and can fly when moving regardless of whether they have a flight system."
+  },
+  {
+    "name": "FLIGHT/HOVER",
+    "description": "Flying characters can move vertically and horizontally up to their SPEED. For example, a mech with a flight system and 6 SPEED could end its movement anywhere within six spaces of its starting location, up to a maximum of 6 spaces high. When flying, characters must move at least 1 space on their turn or begin falling. Flight movement must follow a straight line; however, if a character takes additional movement actions, such as BOOST, these can be used to move in a different direction. <br><br>Flying characters have IMMUNITY to PRONE. Flying characters begin falling if they become IMMOBILIZED, STUNNED, or otherwise can’t move. Flying characters that take structure damage or stress must succeed on an AGILITY save or begin falling. <br><br>Some advanced mechs can HOVER. HOVER is an advanced form of FLIGHT. Hovering characters do not need to fly in a straight line, and can remain stationary while airborne without falling."
+  },
+  {
+    "name": "TELEPORT",
+    "description": "Characters must start and end a teleport on a surface they can normally move on; for example, a character that can’t fly can’t teleport mid-air. Teleportation ignores obstructions, does not require line of sight, ignores engagement, and does not provoke reactions; however, it still counts as movement and so is affected by conditions like IMMOBILIZED. A teleporting character counts as moving 1 space, no matter how far they travel. Characters can attempt to teleport to spaces they can’t see, but if a space is already occupied, the teleport fails."
+  },
+  {
+    "name": "CRITICAL HITS",
+    "description": "A 20+ on a melee or ranged attack causes a critical hit. On a critical hit, all damage dice are rolled twice (including bonus damage) and the highest result from each source of damage is used. For example, if a player got a critical hit on an attack that would normally deal 2d6 damage, they would instead roll 4d6 and pick the two highest results."
+  },
+  {
+    "name": "HARM/CALCULATING DAMAGE",
+    "description": "Damage is calculated in this order:<br>1) Attacker rolls damage and applies any relevant reductions or increases (e.g. Exposed, half-damage from Heavy Gunner)<br>2)Target's armor is subtracted from the total damage<br>3)Any other deductions from the defender are subtracted from the remaining damage; this includes reductions from Resistance, systems, talents, etc."
+  },
+  {
+    "name": "BURN",
+    "description": "When characters take BURN, it has two effects: first, they immediately take BURN damage, ignoring ARMOR, and then the character marks the burn they just took. At the end of their turn, characters with burn marked must roll an ENGINEERING check. On a success, they clear all burn currently marked; otherwise, they take BURN damage equal to the amount of burn currently marked.<br><br>Failing the ENGINEERING check does not increase how much burn is marked, it just prevents the currently marked burn from being cleared. Also, if a character is hit by multiple sources of BURN, the character still only makes one ENGINEERING check."
   }
 ]
