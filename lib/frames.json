@@ -1494,7 +1494,11 @@
       "active_effect": "Choose a character within Sensors: they become Stunned as you hurl their systems into a metaphysical information trap so tangled they can do nothing but try and escape. At the end of their next turn, they can make a Systems save at +3 difficulty. On a success, they are no longer Stunned. This save can be repeated at the end of each of their turns, gaining +1 accuracy each time until successful.",
       "activation": "Full",
       "passive_name": "Metafold Maze",
-      "passive_effect": "Quick Action<br>When you hit with a tech attack, you may activate this system, causing your target to become Slowed until the end of your next turn. If they are already Slowed, they become Immobilized until the end of your next turn; if they are already Immobilized, they become Stunned until the end of your next turn. Each character can only be Stunned by this effect once per combat but can be Slowed or Immobilized any number of times."
+      "passive_actions": [{
+        "name": "Metafold Maze",
+        "activation": "Quick",
+        "detail": "When you hit with a tech attack, you may activate this system, causing your target to become Slowed until the end of your next turn. If they are already Slowed, they become Immobilized until the end of your next turn; if they are already Immobilized, they become Stunned until the end of your next turn. Each character can only be Stunned by this effect once per combat but can be Slowed or Immobilized any number of times."
+      }]
     }
   },
   {
