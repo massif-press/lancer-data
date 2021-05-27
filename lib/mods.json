@@ -204,9 +204,9 @@
     "license_level": 3,
     "effect": "This weapon gains Overkill, and its damage can’t be reduced in any way, including by other effects and systems (such as Resistance, Armor, etc).",
     "description": "Paracausal weapons are a headache for military planners; their precise A–Z function is often obscured, though they consistently produce the same “Z” output per “A” input.<br>The first reports of unregulated paracausal weaponry occurred during the civil engagements on Tian Shen. System-local forces received sealed magazines with directions to be loaded and fired as normal, although inspection of the magazines’ contents was prohibited on grounds that it would “damage the payload”. Helmet and gun cam footage do not betray the anomalous effects of this ordnance, though after-action reports uncovered a seemingly minor, though incredibly odd fact: every single trooper outfitted with this paracausal ammunition scored a 100% positive impact rate.<br>Union has scheduled all unregulated paracausal weapons and ammunition for retrieval, and the bureau is currently investigating Harrison Armory for its role in the development of the technology. Despite this, paracausal ammunition is still in use, as shipments and codes continue to leak to interested parties.",
-    "applied_tags": [
+    "added_tags": [
       {
-        "id": "overkill"
+        "id": "tg_overkill"
       }
     ]
   }
