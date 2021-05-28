@@ -1020,7 +1020,16 @@
     "license": "BLACK WITCH",
     "license_level": 3,
     "effect": "Tech attacks against you or adjacent allied characters receive +1 difficulty. Each subsequent tech attack against you or an adjacent allied character receives an additional +1 difficulty, to a maximum of +3 difficulty.<br>Your Black ICE definitions roll over – resetting to +1 difficulty – when it would increase to +4 difficulty or at the end of the scene. Allied characters lose this benefit when they break adjacency.",
-    "description": "Black ICE modules are defensive systems packaged standard with the Black Witch fleets used by SSC's own internal security forces. They project a bubble of WHITECELL code that analyzes incoming hostile script and structures inoculants for friendly systems on the fly."
+    "description": "Black ICE modules are defensive systems packaged standard with the Black Witch fleets used by SSC's own internal security forces. They project a bubble of WHITECELL code that analyzes incoming hostile script and structures inoculants for friendly systems on the fly.",
+    "counters": [
+      {
+        "id": "ctr_black_ice_module",
+        "name": "BLACK ICE MODULE",
+        "default_value": 1,
+        "min": 1,
+        "max": 3
+      }
+    ]
   },
   {
     "id": "ms_magnetic_shield",
