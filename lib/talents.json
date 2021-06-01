@@ -215,6 +215,15 @@
             ],
             "detail": "On a miss, your next attack roll gains +1 Accuracy. This effect stacks and persists until you hit."
           }
+        ],
+        "counters": [
+          {
+            "id": "ctr_brutal",
+            "name": "BRUTAL DIE",
+            "default_value": 0,
+            "min": 0,
+            "max": 100
+          }
         ]
       }
     ]
