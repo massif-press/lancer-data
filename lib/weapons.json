@@ -2288,15 +2288,15 @@
     ],
     "profiles": [{
         "name": "Charge Rail: 4",
-    "damage": [{
-      "override": true,
-      "val": "N/A"
-    }],
-    "range": [{
-      "override": true,
-      "type": "Range",
-      "val": "N/A"
-    }],
+        "damage": [{
+          "override": true,
+          "val": "N/A"
+        }],
+        "range": [{
+          "override": true,
+          "type": "Range",
+          "val": "N/A"
+        }],
         "effect": "Cannot Be Fired"
       },
       {
@@ -2357,15 +2357,57 @@
     "name": "ZF4 SOLIDCORE",
     "mount": "Main",
     "type": "Cannon",
-    "range": [{
-      "type": "Line",
-      "val": "4/Charge"
-    }],
-    "damage": [{
-      "type": "Energy",
-      "val": "1d6/Charge"
-    }],
-    "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair.",
+    "profiles": [
+      {
+        "name": "1 Charge",
+        "range": [{
+            "type": "Line",
+            "val": 4
+          }
+        ],
+        "damage": [{
+          "type": "Energy",
+          "val": "1d6"
+        }],
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+      }, {
+        "name": "2 Charges",
+        "range": [{
+            "type": "Line",
+            "val": 8
+          }
+        ],
+        "damage": [{
+          "type": "Energy",
+          "val": "2d6"
+        }],
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+      }, {
+        "name": "3 Charges",
+        "range": [{
+            "type": "Line",
+            "val": 12
+          }
+        ],
+        "damage": [{
+          "type": "Energy",
+          "val": "3d6"
+        }],
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+      }, {
+        "name": "4 Charges",
+        "range": [{
+            "type": "Line",
+            "val": 16
+          }
+        ],
+        "damage": [{
+          "type": "Energy",
+          "val": "4d6"
+        }],
+        "effect": "This weapon’s profile is determined by the number of Charges it carries. It begins with 1 Charge, dealing 1d6 energy with line 4. Each time you Stabilize, you gain an additional 1 Charge, up to a maximum of 4. The ZF4 gains an additional +4 range and +1d6 energy damage for each charge, and resets to 1 Charge after each attack. Charges persist between scenes, but are lost during a full repair."
+      }
+    ],
     "tags": [{
       "id": "tg_ordnance"
     }]
