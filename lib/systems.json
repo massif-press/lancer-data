@@ -1089,6 +1089,7 @@
     "actions": [
       {
         "activation": "Quick Tech",
+        "tech_attack": true,
         "detail": "Make a tech attack against a character within Sensors. On a hit, you know their exact location, HP, Structure, and Speed for the duration. They can’t Hide and you ignore their Invisible status. To remove the tracking drone, they must succeed on an Engineering check as a quick action; otherwise it deactivates at the end of the scene."
       }
     ],
@@ -1505,6 +1506,7 @@
     "actions": [
       {
         "activation": "Full Tech",
+        "tech_attack": true,
         "detail": "Make a tech attack against a character within  Sensors and line of sight. On a success, they take 2 heat, Lock On, and cannot benefit from soft cover until the Lock On is cleared; additionally, once before the start of your next turn, when an allied character hits your target, you may declare as a reaction that they have hit a weak spot. If it wasn’t already, the attack becomes a critical hit."
       }
     ],
@@ -1736,6 +1738,7 @@
       {
         "name": "Hurl Into the Duat",
         "activation": "Quick Tech",
+        "tech_attack": true,
         "detail": "You channel your target’s systems through an unknown extradimensional space and unleash an incredibly powerful system attack.<br>Make a tech attack against a target within Sensors. On a success, they take 2 heat and you inflict an additional effect as follows: the first time you successfully make this attack, you inflict the First Gate on your target; each subsequent successful attack (on any target) increases the level of the effect that you inflict (e.g. your second attack inflicts the Second Gate, your third inflicts the Third Gate, etc.) until you inflict the Fourth Gate, after which the effect resets to the First Gate. Your progress persists between scenes but resets if you rest or perform a Full Repair.<br>First Gate: You control your target’s standard move next turn.<br>Second Gate: Your target becomes Slowed and Impaired until the end of their next turn.<br>Third Gate: Your target becomes Stunned until the end of their next turn.<br>Fourth Gate: Your target changes allegiance temporarily, becoming an allied character until the end of their next turn. They treat your allied characters and hostile characters as their own and are treated as an allied NPC for activation and turn order. This effect ends immediately if you or any allied character damages, inflicts heat upon, or attacks (including Grapple and Ram) your target, or forces them to make a save. This action may only be used 1/round"
       }
     ],
@@ -2176,11 +2179,13 @@
       {
         "name": "Chains of Prometheus",
         "activation": "Full Tech",
+        "tech_attack": true,
         "detail": "Make a tech attack against a character within Sensors. On a hit, they take 4 heat and, for the rest of the scene, take 2 heat any time they are more than range 3 from you at the end of their turn. They can end this effect with a successful Systems save as a full action. This can only affect one character at a time."
       },
       {
         "name": "Excommunicate",
         "activation": "Full Tech",
+        "tech_attack": true,
         "detail": "Make a tech attack against a character within Sensors. On a hit, for the rest of the scene, the first time in a round they move adjacent to an allied character during their turn or start their turn adjacent to one, both characters take 3 heat. They can end this effect with a successful Systems save as a full action. This can only affect one character at a time."
       }
     ],
@@ -2241,11 +2246,13 @@
       {
         "name": "Predator/Prey Concepts",
         "activation": "Full Tech",
+        "tech_attack": true,
         "detail": "Make a tech attack against a hostile character within Sensors. On a hit, they immediately attack a different character or object of your choice with a single weapon as a reaction. Although you choose their target and weapon, they count as attacking and taking a reaction."
       },
       {
         "name": "Slave Systems",
         "activation": "Full Tech",
+        "tech_attack": true,
         "detail": "Make a tech attack against a hostile character within Sensors. On a hit, they immediately take one of the following actions – chosen by you – as a reaction: Boost, Stabilize, Improvised Attack, Grapple, Ram. Although you choose the action and its target (if relevant), they count as taking the action and taking a reaction."
       }
     ],
