@@ -865,6 +865,7 @@
           {
             "activation": "Full Tech",
             "name": "Last Argument of Kings",
+            "tech_attack": true,
             "detail": "Make a tech attack against a target within Sensors and line of sight. On a success, you implant a virus that triggers a minor meltdown in your target’s reactor: they immediately take Burn equal to their current Heat. If this action causes your target to overheat, it resolves before they reset their Heat Cap."
           }
         ]

@@ -797,6 +797,7 @@ Actions encompass any distinct move a player can make -- mostly this will be sys
   "cost"?: number
   "pilot"?: boolean
   "synergy_locations"?: string[]
+  "tech_attack"?: boolean
   "log"?: string[]  
 }
 ```
