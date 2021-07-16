@@ -647,6 +647,7 @@
     "license_level": 3,
     "profiles": [{
         "name": "Standard",
+        "skirmish": true,
         "damage": [{
           "type": "Kinetic",
           "val": "1d6"
@@ -1762,6 +1763,9 @@
           {
             "id": "tg_knockback",
             "val": 2
+          },
+          {
+            "id": "tg_loading"
           }
         ]
       }

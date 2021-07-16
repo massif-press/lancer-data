@@ -1335,8 +1335,8 @@
       "passive_name": "OROCHI Drones",
       "deployables": [
         {
-          "name": "Guardian Drone",
-          "type": "OROCHI Drone",
+          "name": "Guardian OROCHI Drone",
+          "type": "Drone",
           "detail": "This drone projects a shield. Ranged attacks against adjacent allied characters receive +1 difficulty.",
           "activation": "Free",
           "recall": "Quick",
@@ -1345,8 +1345,8 @@
           "hp": "5 + {grit}"
         },
         {
-          "name": "Snare Drone",
-          "type": "OROCHI Drone",
+          "name": "Snare OROCHI Drone",
+          "type": "Drone",
           "detail": "As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make an Agility save. On a failure, they become Immobilized. They only cease to be Immobilized when the drone is destroyed or no longer adjacent, or they succeed on an Agility save as a quick action.",
           "activation": "Free",
           "recall": "Quick",
@@ -1355,8 +1355,8 @@
           "hp": "5 + {grit}"
         },
         {
-          "name": "Shredder Drone",
-          "type": "OROCHI Drone",
+          "name": "Shredder OROCHI Drone",
+          "type": "Drone",
           "detail": "As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Hull save. On a failure, they take 1 kinetic damage and become Shredded until the end of their next turn.",
           "activation": "Free",
           "recall": "Quick",
@@ -1365,8 +1365,8 @@
           "hp": "5 + {grit}"
         },
         {
-          "name": "Hunter Drone",
-          "type": "OROCHI Drone",
+          "name": "Hunter OROCHI Drone",
+          "type": "Drone",
           "detail": "As a reaction, you may force characters that start their turn adjacent to this drone or move adjacent to it for the first time in a round to make a Systems save. On a failure, they receive Lock On.",
           "activation": "Free",
           "recall": "Quick",
