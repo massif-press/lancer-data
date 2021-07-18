@@ -33,7 +33,8 @@
       "active_effect": "",
       "use": "Next Round",
       "activation": "Free"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/missing_frame.png"
   },
   {
     "id": "mf_standard_pattern_i_everest",
@@ -137,7 +138,8 @@
         "tag": "mech",
         "src": "pre_vanguard_pixel.png"
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
   },
   {
     "id": "mf_blackbeard",
@@ -216,7 +218,8 @@
       "active_name": "Omni-harpoon",
       "active_effect": "This system fires grappling harpoons at any number of targets within Range 5 and line of sight. Affected characters must succeed on a Hull save or take 2d6 Kinetic damage and be knocked Prone, then pulled adjacent to you, or as close as possible. They become Immobilized until the end of their next turn. On a success, they take half damage and are otherwise unaffected.",
       "activation": "Quick"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_blackbeard.png"
   },
   {
     "id": "mf_drake",
@@ -283,7 +286,8 @@
       "use": "Encounter",
       "deactivation": "Protocol",
       "activation": "Protocol"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_drake.png"
   },
   {
     "id": "mf_lancaster",
@@ -344,7 +348,8 @@
       "integrated": [
         "mw_lancaster_integrated"
       ]
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_lancaster.png"
   },
   {
     "id": "mf_nelson",
@@ -401,7 +406,8 @@
       "active_effect": "For the rest of the scene, Skirmisher allows you to move 4 spaces at a time instead of 1 space.",
       "use": "Encounter",
       "activation": "Protocol"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_nelson.png"
   },
   {
     "id": "mf_raleigh",
@@ -454,7 +460,8 @@
       "integrated": [
         "mw_raleigh_integrated"
       ]
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_raleigh.png"
   },
   {
     "id": "mf_tortuga",
@@ -510,7 +517,8 @@
         "tag": "mech",
         "src": "alt_hortuga.png"
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tortuga.png"
   },
   {
     "id": "mf_vlad",
@@ -568,7 +576,8 @@
         "tag": "mech",
         "src": "alt_agonist.png"
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_vlad.png"
   },
   {
     "id": "mf_black_witch",
@@ -626,7 +635,8 @@
       "active_effect": "This system projects a blast 3 magnetic field with at least one space adjacent to you, causing the following effects until the end of your next turn:<ul><li>The affected area is difficult terrain.</li><li>Ranged attacks that deal kinetic or explosive can’t enter or leave the affected area – projectiles stop at the edge, doing no damage. Record each attack stopped this way.</li><li>Mechs and other characters made at least partly of metal that start their turn in the affected area or enter it for the first time in a round must succeed on a Hull save or be pulled as close to the center as possible and become Immobilized.</li></ul>When the effect ends, any ranged attacks that were stopped resume their trajectory – toward the center of the affected area. The GM rolls attacks against each character within, gaining +1 per blocked attack (to a maximum of +6). On hit, these attacks deal 1d6 kinetic damage per blocked attack (to a maximum of 6d6 kinetic damage).",
       "activation": "Full",
       "use": "Next Turn"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_black_witch.png"
   },
   {
     "id": "mf_deaths_head",
@@ -712,7 +722,8 @@
         "tag": "mech",
         "src": "alt_hercules.png"
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_deaths_head.png"
   },
   {
     "id": "mf_dusk_wing",
@@ -798,7 +809,8 @@
       ],
       "use": "Encounter",
       "activation": "Protocol"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_dusk_wing.png"
   },
   {
     "id": "mf_metalmark",
@@ -856,7 +868,8 @@
       "active_effect": "You are Invisible for the rest of the scene.",
       "use": "Encounter",
       "activation": "Protocol"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_metalmark.png"
   },
   {
     "id": "mf_monarch",
@@ -937,7 +950,8 @@
       "active_name": "Divine Punishment",
       "active_effect": "Choose any number of characters within range 50: your targets must each succeed on an Agility save or take 1d6+4 explosive. On a success, they take half damage. These self-guiding missiles can reach any target as long as there is a path to do so.",
       "activation": "Full"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_monarch.png"
   },
   {
     "id": "mf_mourning_cloak",
@@ -1018,7 +1032,8 @@
           "detail": "Teleport to a space within range 3d6. You don’t require line of sight, but attempts to teleport to occupied spaces cause you to remain stationary and lose this action. If you roll the same number on all three dice, you disappear until your group rests, at which point you reappear nearby."
         }
       ]
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_mourning_cloak.png"
   },
   {
     "id": "mf_swallowtail",
@@ -1085,7 +1100,8 @@
       ],
       "use": "Encounter",
       "activation": "Protocol"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_swallowtail.png"
   },
   {
     "id": "mf_balor",
@@ -1139,7 +1155,8 @@
       "active_effect": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<ul><li>You and adjacent allies gain soft cover.</li><li>Scouring Swarm deals 4 kinetic, instead of 2.</li><li>Regeneration restores 1/2 of your total HP, instead of 1/4.</li><li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.</li><li>You become Shredded and cannot clear this condition for the duration.</li></ul>",
       "use": "Encounter",
       "activation": "Protocol"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_balor.png"
   },
   {
     "id": "mf_goblin",
@@ -1219,7 +1236,8 @@
       "activation": "Quick",
       "deactivation": "Quick",
       "use": "Encounter"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_goblin.png"
   },
   {
     "id": "mf_gorgon",
@@ -1273,7 +1291,8 @@
       "active_effect": "You project a horrifying basilisk, a visual data-pattern that is incredibly harmful to NHPs and electronic systems, and hard to look at even for humans. For the rest of the scene, hostile characters must succeed on a Systems save before attacking you or any allied characters within range 3. On a failure, they become Stunned until the end of their next turn. Each character can only be Stunned by this effect once per scene.",
       "activation": "Quick",
       "use": "Encounter"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_gorgon.png"
   },
   {
     "id": "mf_hydra",
@@ -1376,7 +1395,8 @@
         }
       ],
       "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action. <br>When you rest or perform a FULL REPAIR, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_hydra.png"
   },
   {
     "id": "mf_manticore",
@@ -1441,7 +1461,8 @@
         "min": 1,
         "max": 6
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_manticore.png"
   },
   {
     "id": "mf_minotaur",
@@ -1494,12 +1515,15 @@
       "active_effect": "Choose a character within Sensors: they become Stunned as you hurl their systems into a metaphysical information trap so tangled they can do nothing but try and escape. At the end of their next turn, they can make a Systems save at +3 difficulty. On a success, they are no longer Stunned. This save can be repeated at the end of each of their turns, gaining +1 accuracy each time until successful.",
       "activation": "Full",
       "passive_name": "Metafold Maze",
-      "passive_actions": [{
-        "name": "Metafold Maze",
-        "activation": "Quick",
-        "detail": "When you hit with a tech attack, you may activate this system, causing your target to become Slowed until the end of your next turn. If they are already Slowed, they become Immobilized until the end of your next turn; if they are already Immobilized, they become Stunned until the end of your next turn. Each character can only be Stunned by this effect once per combat but can be Slowed or Immobilized any number of times."
-      }]
-    }
+      "passive_actions": [
+        {
+          "name": "Metafold Maze",
+          "activation": "Quick",
+          "detail": "When you hit with a tech attack, you may activate this system, causing your target to become Slowed until the end of your next turn. If they are already Slowed, they become Immobilized until the end of your next turn; if they are already Immobilized, they become Stunned until the end of your next turn. Each character can only be Stunned by this effect once per combat but can be Slowed or Immobilized any number of times."
+        }
+      ]
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_minotaur.png"
   },
   {
     "id": "mf_pegasus",
@@ -1558,7 +1582,8 @@
           "detail": "1/round, as a free action during your turn, deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule  supersedes this."
         }
       ]
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_pegasus.png"
   },
   {
     "id": "mf_barbarossa",
@@ -1636,7 +1661,8 @@
         "min": 1,
         "max": 4
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_barbarossa.png"
   },
   {
     "id": "mf_genghis",
@@ -1685,7 +1711,8 @@
       "active_name": "Expose Power Cells",
       "active_effect": "The next time you exceed your Heat Cap this scene, you instead clear all heat and vent a burst 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
       "activation": "Quick"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_genghis.png"
   },
   {
     "id": "mf_iskander",
@@ -1740,7 +1767,8 @@
       "active_effect": "This system fires an enormous, expanding cloud of micromines across the whole battlefield, affecting all hostile characters within range 50. For the rest of the scene, when hostile characters make any movement other than their standard move (including involuntary movement), they take 3 AP explosive damage. This effect can trigger any number of times, but only 1/round for each character.",
       "use": "Encounter",
       "activation": "Quick"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_iskander.png"
   },
   {
     "id": "mf_napoleon",
@@ -1797,7 +1825,8 @@
       "active_effect": "A shimmering, utterly black field quickly envelops your mech, covering it like a second skin. For the rest of the scene, you:<ul><li>reduce all damage to 1, except for damage that ignores reduction;</li><li>gain Immunity to all tech actions, including beneficial ones, and any current tech effects or conditions on you end;</li><li>can only use systems with the Shield tag – any others immediately deactivate (systems that do not require activation are unaffected);</li><li>can’t take quick actions, full actions, or reactions, except for standard moves, Grapple, Ram, Improvised Attack, Activate (Shield systems only), Skill Check, and Boost;</li><li>can’t Overcharge;</li><li>can’t use comms to talk to other characters (as sound doesn’t exit the shield).</li></ul>You can still receive statuses and Heat, and can be affected by involuntary movement. You can otherwise interact normally with the world, including picking up and dragging items, and so on.",
       "use": "Encounter",
       "activation": "Quick"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_napoleon.png"
   },
   {
     "id": "mf_saladin",
@@ -1864,7 +1893,8 @@
         }
       ],
       "activation": "Quick"
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_saladin.png"
   },
   {
     "id": "mf_sherman",
@@ -1946,7 +1976,8 @@
         "min": 1,
         "max": 4
       }
-    ]
+    ],
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_sherman.png"
   },
   {
     "id": "mf_tokugawa",
@@ -2042,6 +2073,7 @@
           "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
         }
       ]
-    }
+    },
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tokugawa.png"
   }
 ]
