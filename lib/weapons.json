@@ -1757,15 +1757,12 @@
         }],
     "on_attack": "Choose to fire in either siege mode or direct fire mode.",
     "tags": [{
-            "id": "tg_heat_self",
-            "val": 2
-          },
-          {
             "id": "tg_knockback",
             "val": 2
           },
           {
-            "id": "tg_loading"
+            "id": "tg_heat_self",
+            "val": 2
           }
         ]
       }
