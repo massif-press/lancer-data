@@ -276,7 +276,23 @@
     "actions": [{
       "name": "Bombardment",
       "activation": "Full",
-      "detail": "Call in artillery or orbital bombardment:<br>RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage"
+      "detail": "Call in artillery or orbital bombardment:<br>RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage",
+      "range": [
+        {
+          "type": "Range",
+          "val": 30
+        },
+        {
+          "type": "Blast",
+          "val": 2
+        }
+      ],
+      "damage": [
+        {
+          "type": "Explosive",
+          "val": "3d6"
+        }
+      ]
     }]
   },
   {
