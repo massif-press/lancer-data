@@ -1856,6 +1856,8 @@
   {
     "id": "mw_gravity_gun",
     "name": "GRAVITY GUN",
+    "no_mods": true,
+    "no_core_bonus": true,
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [],
