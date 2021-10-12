@@ -829,7 +829,15 @@
     "source": "IPS-N",
     "license": "TORTUGA",
     "license_level": 1,
-    "effect": "When you Ram, you deal 2 kinetic damage on hit, and you deal 10 AP kinetic damage when you Ram objects and terrain",
+    "effect": "When you Ram, you deal 2 kinetic damage on hit, and you deal 10 AP kinetic damage when you Ram objects and terrain.",
+    "synergies": [
+      {
+        "locations": [
+          "ram"
+        ],
+        "detail": "When you Ram, you deal 2 kinetic damage on hit, and you deal 10 AP kinetic damage when you Ram objects and terrain."
+      }
+    ],
     "description": "The siege ram is a handheld metal beam with a wedge tip, ready to be smashed into the seams of sealed bulkhead doors and driven home. It’s another holdover from the days before the IPS-N merger. When someone needs to open a bulkhead that’s just slammed shut, it’s what marine pilots pick up to get the job done. Heavy, dumb, and unbreakable: IPS-N’s siege ram is the universal skeleton key."
   },
   {
@@ -1654,7 +1662,7 @@
     "license_level": 1,
     "actions": [
       {
-        "name": "Puppet System.",
+        "name": "Puppet System",
         "activation": "Invade",
         "detail": "Your target moves its maximum Speed in a direction of your choice. They can be moved into hazardous areas and other obstacles, but are still affected by difficult terrain, obstructions, and so on. This movement is involuntary, but provokes reactions and Engagement as normal and doesn’t count as Knockback, pushing, or pulling."
       },
