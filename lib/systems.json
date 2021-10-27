@@ -2335,7 +2335,7 @@
       {
         "name": "Probabilistic Cannibalism",
         "activation": "Reaction",
-        "frequesncy": "2/round",
+        "frequency": "2/round",
         "trigger": "You or any other character within Sensors would roll a d20",
         "detail": "Effect: Choose X or Y. That number immediately becomes the result of the roll.<br>This reaction can be used no more than two times before the start of your next turn."
       }
