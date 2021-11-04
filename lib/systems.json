@@ -2858,10 +2858,6 @@
       },
       {
         "id": "tg_shield"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
       }
     ],
     "source": "HA",
