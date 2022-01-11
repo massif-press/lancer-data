@@ -887,6 +887,13 @@
             "name": "Covering Fire",
             "activation": "Quick",
             "detail": "Choose a character within line of sight and Range of one of your Heavy ranged weapons, and within 10 spaces: they are Impaired until the start of your next turn. For the duration, if your target moves more than 1 space, they clear Impaired, but you may attack them as a reaction with a Heavy ranged weapon for half damage, Heat, or Burn, and then this effect ends. You can make this attack at any point during their movement (e.g., waiting until they exit cover).<br>Covering Fire can only affect one character at a time – subsequent uses replace previous ones – and it immediately ends if your target damages you."
+          },
+          {
+            "name": "Covering Fire Attack",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "The target of your Covering Fire moves more than 1 space.",
+            "detail": "You may attack the target with a Heavy ranged weapon for half damage, Heat, or Burn. You can make this attack at any point during their movement (e.g., waiting until they exit cover)."
           }
         ]
       },
