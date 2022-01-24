@@ -141,7 +141,7 @@
   {
     "id": "tg_grenade",
     "name": "GRENADE",
-    "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range and line of sight."
+    "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
   },
   {
     "id": "tg_heat_self",
