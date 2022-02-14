@@ -580,36 +580,60 @@
     "name": "ASSAULT CANNON",
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{
-      "type": "Kinetic",
-      "val": "1d6+2"
-    }],
-    "range": [{
-      "type": "Range",
-      "val": 8
-    }],
-    "tags": [{
-        "id": "tg_overkill"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      }
-    ],
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 1,
-    "effect": "You can spin up this weapon’s barrels as a quick action. While spinning, it gains Reliable 3, but you become Slowed. You can end this effect as a protocol.",
-    "actions": [
-      {
-        "name": "Spin Up Assault Cannon",
-        "activation": "Quick",
-        "detail": "Your Assault Cannon gains Reliable 3, but you become Slowed."
+    "profiles": [{
+        "name": "Standard",
+        "damage": [{
+          "type": "Kinetic",
+          "val": "1d6+2"
+        }],
+        "range": [{
+          "type": "Range",
+          "val": 8
+        }],
+        "effect": "You can spin up this weapon’s barrels as a quick action.",
+        "actions": [{
+          "name": "Spin Up Assault Cannon",
+          "activation": "Quick",
+          "detail": "Spin up the barrels of the Assault Cannon, Slowing your mech and allowing use of its \"Spin-Up Mode\" profile."
+        }],
+        "tags": [{
+          "id": "tg_overkill"
+        },
+        {
+          "id": "tg_heat_self",
+          "val": 1
+        }]
       },
       {
-         "name": "Spin Down Assault Cannon",
-         "activation": "Protocol",
-         "detail": "End your Assault Cannon's Spin Up effect, losing Reliable 3 and the Slowed status it incurs."
+        "name": "Spin-Up Mode",
+        "damage": [{
+          "type": "Kinetic",
+          "val": "1d6+2"
+        }],
+        "range": [{
+          "type": "Range",
+          "val": 8
+        }],
+        "effect": "While spinning, this weapon gains Reliable 3, but you become Slowed.<br>You can end this effect as a protocol.",
+        "actions": [{
+          "name": "Cease Spin-Up",
+          "activation": "Protocol",
+          "detail": "End the Assault Cannon's \"Spin-Up Mode\", ending the Slowed condition and allowing the Assault Cannon to be used with its \"Standard\" profile."
+        }],
+        "tags": [{
+          "id": "tg_overkill"
+        },
+        {
+          "id": "tg_heat_self",
+          "val": 1
+        },
+        {
+          "id": "tg_reliable",
+          "val": 3
+        }]
       }
     ],
     "description": "IPS-N’s assault cannon of choice is a deep-cooled autocannon, fieldable as a mounted weapon or manipulator-operated platform. The cannon, simple in its functionality, can be fed by either box magazine or belt and is a standard inclusion in almost any among IPS-N fleet orders. In micro and zero-gravity environments, Drake pilots commonly employ the assault cannon as an additional propulsion system."
@@ -660,7 +684,7 @@
         "actions": [{
           "name": "Spin Up Leviathan",
           "activation": "Quick",
-          "detail": "Spin up this barrels of the Leviathan Heavy Assault Cannon, Slowing your mech and allowing use of its \"Spin-Up Mode\" profile."
+          "detail": "Spin up the barrels of the Leviathan Heavy Assault Cannon, Slowing your mech and allowing use of its \"Spin-Up Mode\" profile."
         }]
       },
       {
