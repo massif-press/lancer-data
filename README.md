@@ -747,7 +747,7 @@ Note that, aside from the `name` field, all fields on a profile are optional. If
         "detail": "This action will only appear in Active Mode is Profile A is active"
       }],
       "tags": [{
-        "id": "tg_heatself",
+        "id": "tg_heat_self",
         "val": 1
       }]
     },
