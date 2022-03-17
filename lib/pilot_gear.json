@@ -407,6 +407,9 @@
       {
         "id": "tg_limited",
         "val": 2
+      },
+      {
+        "id": "tg_grenade"
       }
     ]
   },
