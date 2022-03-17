@@ -2272,6 +2272,7 @@
     "name": "Latch Drone",
     "mount": "Main",
     "type": "Launcher",
+    "damage": [],
     "range": [{
       "type": "Range",
       "val": 8
