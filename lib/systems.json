@@ -1836,7 +1836,7 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "The sentinel drone drone can be deployed to any free space within Sensors and line of sight, where it establishes a burst 2 security perimeter. Hostile characters within the affected area take 3 kinetic damage from the drone’s automatic fire before making any attack.",
+        "detail": "The sentinel drone can be deployed to any free space within Sensors and line of sight, where it establishes a burst 2 security perimeter. Hostile characters within the affected area take 3 kinetic damage from the drone’s automatic fire before making any attack.",
         "recall": "Quick",
         "redeploy": "Quick"
       }
