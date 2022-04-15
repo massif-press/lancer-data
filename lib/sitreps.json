@@ -43,7 +43,7 @@
     "description": "GAUNTLET missions are usually done under duress or when no other options are available, and they usually take place in unfriendly territory. Gauntlet missions require PCs to move through a dangerous area to secure a position.",
     "pcVictory": "At the end of the eighth round, there are more PCs inside the Control Zone than there are enemy characters. Ultras count as 4 characters, elites count as 2, and grunts count as 1/4.",
     "enemyVictory": "At the end of the eighth round, there are at least as many enemy characters inside the Control Zone as there are PCs.",
-    "deployment": "The PCs deploy first, choosing positions for their characters in the Allied Deployment Zone; next, the GM places the Objective in the Objective Zone.",
+    "deployment": "The GM deploys first in the EDZ; the PCs deploy next, choosing positions for their characters within the Allied Deployment Zone.",
     "controlZone": "The area around the EDZ/Control Zone is fortified with Size 1–2 hard cover."
   },
   {
