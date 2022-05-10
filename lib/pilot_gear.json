@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "missing_pilotweapon",
     "name": "ERR: DATA NOT FOUND",
     "type": "Weapon",
@@ -13,136 +12,103 @@
     "name": "ARCHAIC MELEE",
     "type": "Weapon",
     "description": "These weapons were made using pre-Union alloys and technology, and might be anything from industrial-era steel swords through to stone axes. While they remain widely used on some worlds, archaic weapons used by pilots are usually relics, heirlooms, or ceremonial weapons.",
-    "tags": [
-      {
-        "id": "tg_archaic"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 1
-      }
-    ]
+    "tags": [{
+      "id": "tg_archaic"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "damage": [{
+      "type": "kinetic",
+      "val": 1
+    }]
   },
   {
     "id": "pg_archaic_ranged",
     "name": "ARCHAIC RANGED",
     "type": "Weapon",
     "description": "These weapons are pre-modern devices like muskets and bows, all of which are still used in some societies.",
-    "tags": [
-      {
-        "id": "tg_archaic"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 1
-      }
-    ]
+    "tags": [{
+      "id": "tg_archaic"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "damage": [{
+      "type": "kinetic",
+      "val": 1
+    }]
   },
   {
     "id": "pg_light_a_c",
     "name": "LIGHT A/C",
     "type": "Weapon",
     "description": "Light A/C weapons might be knives, bayonets, punching daggers, and short swords.",
-    "tags": [
-      {
-        "id": "tg_sidearm"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 1
-      }
-    ]
+    "tags": [{
+      "id": "tg_sidearm"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "damage": [{
+      "type": "kinetic",
+      "val": 1
+    }]
   },
   {
     "id": "pg_medium_a_c",
     "name": "MEDIUM A/C",
     "type": "Weapon",
     "description": "Medium A/C weapons are typically swords, officer’s sabers, and trench axes.",
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": 2
-      }
-    ]
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "damage": [{
+      "type": "Kinetic",
+      "val": 2
+    }]
   },
   {
     "id": "pg_heavy_a_c",
     "name": "HEAVY A/C",
     "type": "Weapon",
     "description": "Heavy weapons are designed with the augmented strength of hardsuits in mind and include war hammers, mallets, rams, pikes, and heavy two-handed assault swords.",
-    "tags": [
-      {
-        "id": "tg_inaccurate"
-      }
-    ],
-    "range": [
-      {
-        "type": "Threat",
-        "val": 1
-      }
-    ],
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": 3
-      }
-    ]
+    "tags": [{
+      "id": "tg_inaccurate"
+    }],
+    "range": [{
+      "type": "Threat",
+      "val": 1
+    }],
+    "damage": [{
+      "type": "kinetic",
+      "val": 3
+    }]
   },
   {
     "id": "pg_light_signature",
     "name": "LIGHT SIGNATURE",
     "type": "Weapon",
     "description": "Light signature weapons might be oversized revolvers, braces of pistols, and submachine guns.",
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_sidearm"
       },
       {
         "id": "tg_set_damage_type"
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 3
-      }
-    ],
-    "damage": [
-      {
-        "type": "variable",
-        "val": 1
-      }
-    ],
+    "range": [{
+      "type": "Range",
+      "val": 3
+    }],
+    "damage": [{
+      "type": "variable",
+      "val": 1
+    }],
     "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic."
   },
   {
@@ -150,23 +116,17 @@
     "name": "MEDIUM SIGNATURE",
     "type": "Weapon",
     "description": "Medium signature weapons are assault rifles, shotguns, pack-fed lasers, or disruption guns.",
-    "tags": [
-      {
-        "id": "tg_set_damage_type"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
-    "damage": [
-      {
-        "type": "variable",
-        "val": 2
-      }
-    ],
+    "tags": [{
+      "id": "tg_set_damage_type"
+    }],
+    "range": [{
+      "type": "Range",
+      "val": 5
+    }],
+    "damage": [{
+      "type": "variable",
+      "val": 2
+    }],
     "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic."
   },
   {
@@ -174,8 +134,7 @@
     "name": "HEAVY SIGNATURE",
     "type": "Weapon",
     "description": "Heavy signature weapons are missile tubes, heavy lasers, light machine gun, or exotic rifles.",
-    "tags": [
-      {
+    "tags": [{
         "id": "tg_ordnance"
       },
       {
@@ -185,18 +144,14 @@
         "id": "tg_set_damage_type"
       }
     ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
-    "damage": [
-      {
-        "type": "variable",
-        "val": 4
-      }
-    ],
+    "range": [{
+      "type": "Range",
+      "val": 10
+    }],
+    "damage": [{
+      "type": "variable",
+      "val": 4
+    }],
     "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic."
   },
   {
@@ -210,8 +165,7 @@
     "name": "LIGHT HARDSUIT",
     "type": "Armor",
     "description": "Light hardsuits are usually made from reactive, cloth-like weaves, with limited plating and few powered components to maximize mobility. Like other hardsuits, they can be sealed against vacuum, and protect against a decent amount of radiation and other harmful particles.",
-    "bonuses": [
-      {
+    "bonuses": [{
         "id": "pilot_hp",
         "val": 3
       },
@@ -237,8 +191,7 @@
     "name": "ASSAULT HARDSUIT",
     "type": "Armor",
     "description": "These hardsuits, common among military units, feature heavier plating than light hardsuits but more mobility than heavy hardsuits. They are powered, augmenting the user’s strength, and typically feature an onboard computer, sensor suite, integrated air, burst EVA system, and waste recycling systems.",
-    "bonuses": [
-      {
+    "bonuses": [{
         "id": "pilot_hp",
         "val": 3
       },
@@ -268,8 +221,7 @@
     "name": "HEAVY HARDSUIT",
     "type": "Armor",
     "description": "The heaviest hardsuits. They are always powered and up-armored with thick, composite armor. Heavy hardsuits often feature integrated weapons, powerful mobility suites, and – by augmenting their user’s strength – allow their user to field much heavier weapons than normal infantry can typically carry. Heavy hardsuits are in decline now that half-size chassis are popular, but they are still common among private militaries and middle-tier Diasporan armed forces.",
-    "bonuses": [
-      {
+    "bonuses": [{
         "id": "pilot_hp",
         "val": 3
       },
@@ -299,8 +251,7 @@
     "name": "MOBILITY HARDSUIT",
     "type": "Armor",
     "description": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
-    "bonuses": [
-      {
+    "bonuses": [{
         "id": "pilot_evasion",
         "val": 10,
         "replace": true
@@ -322,8 +273,7 @@
     "name": "STEALTH HARDSUIT",
     "type": "Armor",
     "description": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
-    "bonuses": [
-      {
+    "bonuses": [{
         "id": "pilot_evasion",
         "val": 8,
         "replace": true
@@ -339,14 +289,12 @@
         "replace": true
       }
     ],
-    "actions": [
-      {
-        "name": "Activate Stealth Hardsuit",
-        "activation": "Quick",
-        "detail": "Become Invisible. You will cease to be Invisible if you take any damage.",
-        "pilot": true
-      }
-    ]
+    "actions": [{
+      "name": "Activate Stealth Hardsuit",
+      "activation": "Quick",
+      "detail": "Become Invisible. You will cease to be Invisible if you take any damage.",
+      "pilot": true
+    }]
   },
   {
     "id": "missing_pilotgear",
@@ -359,52 +307,42 @@
     "name": "CORRECTIVE",
     "type": "Gear",
     "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.<br>Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP.",
-    "actions": [
-      {
-        "name": "Use Corrective",
-        "activation": "Full",
-        "detail": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP",
-        "pilot": true
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 1
-      }
-    ]
+    "actions": [{
+      "name": "Use Corrective",
+      "activation": "Full",
+      "detail": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP",
+      "pilot": true
+    }],
+    "tags": [{
+      "id": "tg_limited",
+      "val": 1
+    }]
   },
   {
     "id": "pg_frag_grenades",
     "name": "FRAG GRENADES",
     "type": "Gear",
     "description": "Expend a charge for the following effect:<ul><li><b>Frag Grenade</b> (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.</li></ul>",
-    "actions": [
-      {
-        "name": "Use Frag Grenade",
-        "activation": "Quick",
-        "range": [
-          {
-            "type": "Range",
-            "val": 5
-          },
-          {
-            "type": "Blast",
-            "val": 1
-          }
-        ],
-        "damage": [
-          {
-            "type": "Explosive",
-            "val": 2
-          }
-        ],
-        "detail": "Throw a grenade within Range 5. Affected characters withing a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
-        "pilot": true
-      }
-    ],
-    "tags": [
-      {
+    "actions": [{
+      "name": "Use Frag Grenade",
+      "activation": "Quick",
+      "range": [{
+          "type": "Range",
+          "val": 5
+        },
+        {
+          "type": "Blast",
+          "val": 1
+        }
+      ],
+      "damage": [{
+        "type": "Explosive",
+        "val": 2
+      }],
+      "detail": "Throw a grenade within Range 5. Affected characters withing a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
+      "pilot": true
+    }],
+    "tags": [{
         "id": "tg_limited",
         "val": 2
       },
@@ -418,68 +356,54 @@
     "name": "PATCH",
     "type": "Gear",
     "description": "“Patch” is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.<br>Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
-    "actions": [
-      {
-        "name": "Use Patch",
-        "activation": "Full",
-        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
-        "pilot": true
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 1
-      }
-    ]
+    "actions": [{
+      "name": "Use Patch",
+      "activation": "Full",
+      "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
+      "pilot": true
+    }],
+    "tags": [{
+      "id": "tg_limited",
+      "val": 1
+    }]
   },
   {
     "id": "pg_stims",
     "name": "STIMS",
     "type": "Gear",
     "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
-    "actions": [
-      {
-        "name": "Use Patch",
-        "activation": "Quick",
-        "detail": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
-        "pilot": true
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 3
-      }
-    ]
+    "actions": [{
+      "name": "Use Stim",
+      "activation": "Quick",
+      "detail": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
+      "pilot": true
+    }],
+    "tags": [{
+      "id": "tg_limited",
+      "val": 3
+    }]
   },
   {
     "id": "pg_thermite_charge",
     "name": "THERMITE CHARGE",
     "type": "Gear",
     "description": "Expend a charge for the following effect:<ul><li><b>Thermite Charge</b> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.</li></ul>",
-    "deployables": [
-      {
-        "name": "Thermite Charge",
-        "type": "Mine",
-        "detail": "This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
-        "pilot": true,
-        "actions": [
-          {
-            "name": "Detonate",
-            "activation": "Quick",
-            "detail": "Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
-            "pilot": true
-          }
-        ]
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 1
-      }
-    ]
+    "deployables": [{
+      "name": "Thermite Charge",
+      "type": "Mine",
+      "detail": "This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
+      "pilot": true,
+      "actions": [{
+        "name": "Detonate",
+        "activation": "Quick",
+        "detail": "Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
+        "pilot": true
+      }]
+    }],
+    "tags": [{
+      "id": "tg_limited",
+      "val": 1
+    }]
   },
   {
     "id": "pg_antiphoton_visor",
