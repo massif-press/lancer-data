@@ -179,6 +179,8 @@ FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. Th
 {
   "id": string,
   "license_level": number, // set to zero for this item to be available to a LL0 character
+  "license_id": string, // reference to the Frame id of the associated license, relevant for variants
+  "variant": string, // optional; name of the main frame license for which this frame is a variant
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "name": string,
   "mechtype": string[], // can be customized
@@ -333,6 +335,7 @@ Weapon mods are handled separately in C/C than in Lancer (where they're just tag
   "name": string,
   "source": string, // Manufacturer ID
   "license": string, // Frame Name
+  "license_id": string, // reference to the Frame id of the associated license
   "license_level": number, // set to 0 to be available to all Pilots
   "sp"?: number,
   "description"?: string, // v-html
@@ -514,6 +517,7 @@ The rules file sets some of the base values of the game, but as of this writing 
     "name": string,
     "source": string, // must be the same as the Manufacturer ID to sort correctly
     "license": string, // reference to the Frame name of the associated license
+    "license_id": string, // reference to the Frame id of the associated license
     "license_level": number, // set to zero for this item to be available to a LL0 character
     "effect"?: string, // v-html
     "type"?: SystemType
@@ -642,6 +646,7 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "name": string,
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "license": string, // reference to the Frame name of the associated license
+  "license_id": string, // reference to the Frame id of the associated license
   "license_level": number, // set to zero for this item to be available to a LL0 character
   "mount": MountType,
   "type": WeaponType,

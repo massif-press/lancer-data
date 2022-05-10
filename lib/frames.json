@@ -34,7 +34,8 @@
       "use": "Next Round",
       "activation": "Free"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/missing_frame.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/missing_frame.png",
+    "license_id": "missing_frame"
   },
   {
     "id": "mf_standard_pattern_i_everest",
@@ -139,7 +140,8 @@
         "src": "pre_vanguard_pixel.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_standard_pattern_i_everest.png",
+    "license_id": "mf_standard_pattern_i_everest"
   },
   {
     "id": "mf_blackbeard",
@@ -219,7 +221,8 @@
       "active_effect": "This system fires grappling harpoons at any number of targets within Range 5 and line of sight. Affected characters must succeed on a Hull save or take 2d6 Kinetic damage and be knocked Prone, then pulled adjacent to you, or as close as possible. They become Immobilized until the end of their next turn. On a success, they take half damage and are otherwise unaffected.",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_blackbeard.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_blackbeard.png",
+    "license_id": "mf_blackbeard"
   },
   {
     "id": "mf_drake",
@@ -287,7 +290,8 @@
       "deactivation": "Protocol",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_drake.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_drake.png",
+    "license_id": "mf_drake"
   },
   {
     "id": "mf_lancaster",
@@ -349,7 +353,8 @@
         "mw_lancaster_integrated"
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_lancaster.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_lancaster.png",
+    "license_id": "mf_lancaster"
   },
   {
     "id": "mf_nelson",
@@ -407,7 +412,8 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_nelson.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_nelson.png",
+    "license_id": "mf_nelson"
   },
   {
     "id": "mf_raleigh",
@@ -461,7 +467,8 @@
         "mw_raleigh_integrated"
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_raleigh.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_raleigh.png",
+    "license_id": "mf_raleigh"
   },
   {
     "id": "mf_tortuga",
@@ -518,7 +525,8 @@
         "src": "alt_hortuga.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tortuga.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tortuga.png",
+    "license_id": "mf_tortuga"
   },
   {
     "id": "mf_vlad",
@@ -577,7 +585,8 @@
         "src": "alt_agonist.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_vlad.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_vlad.png",
+    "license_id": "mf_vlad"
   },
   {
     "id": "mf_black_witch",
@@ -636,7 +645,8 @@
       "activation": "Full",
       "use": "Next Turn"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_black_witch.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_black_witch.png",
+    "license_id": "mf_black_witch"
   },
   {
     "id": "mf_deaths_head",
@@ -723,7 +733,8 @@
         "src": "alt_hercules.png"
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_deaths_head.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_deaths_head.png",
+    "license_id": "mf_deaths_head"
   },
   {
     "id": "mf_dusk_wing",
@@ -810,7 +821,8 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_dusk_wing.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_dusk_wing.png",
+    "license_id": "mf_dusk_wing"
   },
   {
     "id": "mf_metalmark",
@@ -869,7 +881,8 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_metalmark.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_metalmark.png",
+    "license_id": "mf_metalmark"
   },
   {
     "id": "mf_monarch",
@@ -951,7 +964,8 @@
       "active_effect": "Choose any number of characters within range 50: your targets must each succeed on an Agility save or take 1d6+4 explosive. On a success, they take half damage. These self-guiding missiles can reach any target as long as there is a path to do so.",
       "activation": "Full"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_monarch.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_monarch.png",
+    "license_id": "mf_monarch"
   },
   {
     "id": "mf_mourning_cloak",
@@ -1033,7 +1047,8 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_mourning_cloak.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_mourning_cloak.png",
+    "license_id": "mf_mourning_cloak"
   },
   {
     "id": "mf_swallowtail",
@@ -1101,7 +1116,8 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_swallowtail.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_swallowtail.png",
+    "license_id": "mf_swallowtail"
   },
   {
     "id": "mf_balor",
@@ -1156,7 +1172,8 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_balor.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_balor.png",
+    "license_id": "mf_balor"
   },
   {
     "id": "mf_goblin",
@@ -1237,7 +1254,8 @@
       "deactivation": "Quick",
       "use": "Encounter"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_goblin.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_goblin.png",
+    "license_id": "mf_goblin"
   },
   {
     "id": "mf_gorgon",
@@ -1292,7 +1310,8 @@
       "activation": "Quick",
       "use": "Encounter"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_gorgon.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_gorgon.png",
+    "license_id": "mf_gorgon"
   },
   {
     "id": "mf_hydra",
@@ -1396,7 +1415,8 @@
       ],
       "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action. <br>When you rest or perform a FULL REPAIR, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_hydra.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_hydra.png",
+    "license_id": "mf_hydra"
   },
   {
     "id": "mf_manticore",
@@ -1462,7 +1482,8 @@
         "max": 6
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_manticore.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_manticore.png",
+    "license_id": "mf_manticore"
   },
   {
     "id": "mf_minotaur",
@@ -1523,7 +1544,8 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_minotaur.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_minotaur.png",
+    "license_id": "mf_minotaur"
   },
   {
     "id": "mf_pegasus",
@@ -1583,7 +1605,8 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_pegasus.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_pegasus.png",
+    "license_id": "mf_pegasus"
   },
   {
     "id": "mf_barbarossa",
@@ -1662,7 +1685,8 @@
         "max": 4
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_barbarossa.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_barbarossa.png",
+    "license_id": "mf_barbarossa"
   },
   {
     "id": "mf_genghis",
@@ -1712,7 +1736,8 @@
       "active_effect": "The next time you exceed your Heat Cap this scene, you instead clear all heat and vent a burst 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_genghis.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_genghis.png",
+    "license_id": "mf_genghis"
   },
   {
     "id": "mf_iskander",
@@ -1768,7 +1793,8 @@
       "use": "Encounter",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_iskander.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_iskander.png",
+    "license_id": "mf_iskander"
   },
   {
     "id": "mf_napoleon",
@@ -1826,7 +1852,8 @@
       "use": "Encounter",
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_napoleon.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_napoleon.png",
+    "license_id": "mf_napoleon"
   },
   {
     "id": "mf_saladin",
@@ -1894,7 +1921,8 @@
       ],
       "activation": "Quick"
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_saladin.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_saladin.png",
+    "license_id": "mf_saladin"
   },
   {
     "id": "mf_sherman",
@@ -1977,7 +2005,8 @@
         "max": 4
       }
     ],
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_sherman.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_sherman.png",
+    "license_id": "mf_sherman"
   },
   {
     "id": "mf_tokugawa",
@@ -2074,6 +2103,7 @@
         }
       ]
     },
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tokugawa.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_tokugawa.png",
+    "license_id": "mf_tokugawa"
   }
 ]

@@ -11,7 +11,8 @@
     "license_level": 1,
     "effect": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
     "description": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
-    "tags": []
+    "tags": [],
+    "license_id": ""
   },
   {
     "id": "wm_thermal_charge",
@@ -39,7 +40,8 @@
         "type": "Explosive",
         "val": "1d6"
       }
-    ]
+    ],
+    "license_id": "mf_nelson"
   },
   {
     "id": "wm_uncle_class_comp_con",
@@ -71,7 +73,8 @@
     ],
     "restricted_sizes": [
       "Superheavy"
-    ]
+    ],
+    "license_id": "mf_raleigh"
   },
   {
     "id": "wm_throughbolt_rounds",
@@ -91,7 +94,8 @@
       {
         "id": "tg_unique"
       }
-    ]
+    ],
+    "license_id": "mf_tortuga"
   },
   {
     "id": "wm_shock_wreath",
@@ -116,7 +120,8 @@
       {
         "id": "tg_unique"
       }
-    ]
+    ],
+    "license_id": "mf_metalmark"
   },
   {
     "id": "wm_stabilizer_mod",
@@ -141,7 +146,8 @@
       {
         "id": "tg_ordnance"
       }
-    ]
+    ],
+    "license_id": "mf_monarch"
   },
   {
     "id": "wm_nanocomposite_adaptation",
@@ -167,7 +173,8 @@
       {
         "id": "tg_seeking"
       }
-    ]
+    ],
+    "license_id": "mf_balor"
   },
   {
     "id": "wm_phase_ready_mod",
@@ -185,7 +192,8 @@
     "license": "NAPOLEON",
     "license_level": 2,
     "effect": "As long as you know the rough location of your target, the weapon this mod is applied to can attack through solid walls and obstructions, doesn’t require line of sight, and ignores all cover, but targets attacked this way count as Invisible.",
-    "description": "As it was named following its first use during the civil hostilities on Luna de Oro, phase-ready ammunition is the “devil’s bullets”. Each round contains a nanoprocessor suite networked with its weapon of origin that calculates and translates the specific nature of that round’s superpositional relation with a projected future doppelgänger that manifests in the space immediately before its intended target. To put it simply, phase-ready rounds, when fired, exist in two places at once: exiting the barrel of the weapon they were fired from, and directly in front of the target, prior to impact. The prime round may never hit its target, but given it already exists at the moment of impact, the doppelgänger round will reliably reach its mark."
+    "description": "As it was named following its first use during the civil hostilities on Luna de Oro, phase-ready ammunition is the “devil’s bullets”. Each round contains a nanoprocessor suite networked with its weapon of origin that calculates and translates the specific nature of that round’s superpositional relation with a projected future doppelgänger that manifests in the space immediately before its intended target. To put it simply, phase-ready rounds, when fired, exist in two places at once: exiting the barrel of the weapon they were fired from, and directly in front of the target, prior to impact. The prime round may never hit its target, but given it already exists at the moment of impact, the doppelgänger round will reliably reach its mark.",
+    "license_id": "mf_napoleon"
   },
   {
     "id": "wm_paracausal_mod",
@@ -208,6 +216,7 @@
       {
         "id": "tg_overkill"
       }
-    ]
+    ],
+    "license_id": "mf_saladin"
   }
 ]
