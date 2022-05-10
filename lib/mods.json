@@ -15,7 +15,7 @@
   },
   {
     "id": "wm_thermal_charge",
-    "name": "THERMAL CHARGE",
+    "name": "Thermal Charge",
     "sp": 2,
     "allowed_types": [
       "Melee"
@@ -43,7 +43,7 @@
   },
   {
     "id": "wm_uncle_class_comp_con",
-    "name": "UNCLE-CLASS COMP/CON",
+    "name": "UNCLE-Class Comp/Con",
     "sp": 3,
     "allowed_types": [
       "Melee",
@@ -75,7 +75,7 @@
   },
   {
     "id": "wm_throughbolt_rounds",
-    "name": "THROUGHBOLT ROUNDS",
+    "name": "Throughbolt Rounds",
     "sp": 2,
     "allowed_types": [
       "CQB",
@@ -95,7 +95,7 @@
   },
   {
     "id": "wm_shock_wreath",
-    "name": "SHOCK WREATH",
+    "name": "Shock Wreath",
     "sp": 2,
     "allowed_types": [
       "Melee"
@@ -120,7 +120,7 @@
   },
   {
     "id": "wm_stabilizer_mod",
-    "name": "STABILIZER MOD",
+    "name": "Stabilizer Mod",
     "sp": 2,
     "allowed_types": [
       "Launcher",
@@ -145,7 +145,7 @@
   },
   {
     "id": "wm_nanocomposite_adaptation",
-    "name": "NANOCOMPOSITE ADAPTATION",
+    "name": "Nanocomposite Adaptation",
     "sp": 2,
     "allowed_types": [
       "Melee",
@@ -171,7 +171,7 @@
   },
   {
     "id": "wm_phase_ready_mod",
-    "name": "PHASE-READY MOD",
+    "name": "Phase-Ready Mod",
     "sp": 2,
     "allowed_types": [
       "Melee",
@@ -189,7 +189,7 @@
   },
   {
     "id": "wm_paracausal_mod",
-    "name": "PARACAUSAL MOD",
+    "name": "Paracausal Mod",
     "sp": 4,
     "allowed_types": [
       "Melee",

@@ -14,7 +14,7 @@
   },
   {
     "id": "mw_anti_materiel_rifle",
-    "name": "ANTI-MATERIEL RIFLE",
+    "name": "Anti-Materiel Rifle",
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [{
@@ -45,7 +45,7 @@
   },
   {
     "id": "mw_assault_rifle",
-    "name": "ASSAULT RIFLE",
+    "name": "Assault Rifle",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -67,7 +67,7 @@
   },
   {
     "id": "mw_charged_blade",
-    "name": "CHARGED BLADE",
+    "name": "Charged Blade",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -88,7 +88,7 @@
   },
   {
     "id": "mw_cyclone_pulse_rifle",
-    "name": "CYCLONE PULSE RIFLE",
+    "name": "Cyclone Pulse Rifle",
     "mount": "Superheavy",
     "type": "Rifle",
     "damage": [{
@@ -117,7 +117,7 @@
   },
   {
     "id": "mw_heavy_charged_blade",
-    "name": "HEAVY CHARGED BLADE",
+    "name": "Heavy Charged Blade",
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
@@ -138,7 +138,7 @@
   },
   {
     "id": "mw_heavy_machine_gun",
-    "name": "HEAVY MACHINE GUN",
+    "name": "Heavy Machine Gun",
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
@@ -159,7 +159,7 @@
   },
   {
     "id": "mw_heavy_melee_weapon",
-    "name": "HEAVY MELEE WEAPON",
+    "name": "Heavy Melee Weapon",
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
@@ -177,7 +177,7 @@
   },
   {
     "id": "mw_howitzer",
-    "name": "HOWITZER",
+    "name": "Howitzer",
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
@@ -213,7 +213,7 @@
   },
   {
     "id": "mw_missile_rack",
-    "name": "MISSILE RACK",
+    "name": "Missile Rack",
     "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [{
@@ -239,7 +239,7 @@
   },
   {
     "id": "mw_mortar",
-    "name": "MORTAR",
+    "name": "Mortar",
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
@@ -269,7 +269,7 @@
   },
   {
     "id": "mw_nexus_hunter_killer",
-    "name": "NEXUS (HUNTER-KILLER)",
+    "name": "Nexus (Hunter-Killer)",
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
@@ -290,7 +290,7 @@
   },
   {
     "id": "mw_nexus_light",
-    "name": "NEXUS (LIGHT)",
+    "name": "Nexus (Light)",
     "mount": "Auxiliary",
     "type": "Nexus",
     "damage": [{
@@ -311,7 +311,7 @@
   },
   {
     "id": "mw_pistol",
-    "name": "PISTOL",
+    "name": "Pistol",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
@@ -338,7 +338,7 @@
   },
   {
     "id": "mw_segment_knife",
-    "name": "SEGMENT KNIFE",
+    "name": "Segment Knife",
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
@@ -359,7 +359,7 @@
   },
   {
     "id": "mw_rocket_propelled_grenade",
-    "name": "ROCKET-PROPELLED GRENADE",
+    "name": "Rocket-Propelled Grenade",
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
@@ -389,7 +389,7 @@
   },
   {
     "id": "mw_shotgun",
-    "name": "SHOTGUN",
+    "name": "Shotgun",
     "mount": "Main",
     "type": "CQB",
     "damage": [{
@@ -412,7 +412,7 @@
   },
   {
     "id": "mw_tactical_knife",
-    "name": "TACTICAL KNIFE",
+    "name": "Tactical Knife",
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
@@ -434,7 +434,7 @@
   },
   {
     "id": "mw_tactical_melee_weapon",
-    "name": "TACTICAL MELEE WEAPON",
+    "name": "Tactical Melee Weapon",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -452,7 +452,7 @@
   },
   {
     "id": "mw_thermal_lance",
-    "name": "THERMAL LANCE",
+    "name": "Thermal Lance",
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
@@ -474,7 +474,7 @@
   },
   {
     "id": "mw_thermal_pistol",
-    "name": "THERMAL PISTOL",
+    "name": "Thermal Pistol",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
@@ -492,7 +492,7 @@
   },
   {
     "id": "mw_thermal_rifle",
-    "name": "THERMAL RIFLE",
+    "name": "Thermal Rifle",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -513,7 +513,7 @@
   },
   {
     "id": "mw_chain_axe",
-    "name": "CHAIN AXE",
+    "name": "Chain Axe",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -536,7 +536,7 @@
   },
   {
     "id": "mw_bristlecrown_flechette_launcher",
-    "name": "BRISTLECROWN FLECHETTE LAUNCHER",
+    "name": "Bristlecrown Flechette Launcher",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
@@ -555,7 +555,7 @@
   },
   {
     "id": "mw_nanocarbon_sword",
-    "name": "NANOCARBON SWORD",
+    "name": "Nanocarbon Sword",
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
@@ -577,7 +577,7 @@
   },
   {
     "id": "mw_assault_cannon",
-    "name": "ASSAULT CANNON",
+    "name": "Assault Cannon",
     "mount": "Main",
     "type": "Cannon",
     "source": "IPS-N",
@@ -640,7 +640,7 @@
   },
   {
     "id": "mw_concussion_missiles",
-    "name": "CONCUSSION MISSILES",
+    "name": "Concussion Missiles",
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
@@ -663,7 +663,7 @@
   },
   {
     "id": "mw_leviathan_heavy_assault_cannon",
-    "name": "LEVIATHAN HEAVY ASSAULT CANNON",
+    "name": "Leviathan Heavy Assault Cannon",
     "mount": "Superheavy",
     "type": "Cannon",
     "source": "IPS-N",
@@ -716,7 +716,7 @@
   },
   {
     "id": "mw_cutter_mkii_plasma_torch",
-    "name": "CUTTER MKII PLASMA TORCH",
+    "name": "Cutter MkII Plasma Torch",
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
@@ -748,7 +748,7 @@
   },
   {
     "id": "mw_war_pike",
-    "name": "WAR PIKE",
+    "name": "War Pike",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -775,7 +775,7 @@
   },
   {
     "id": "mw_power_knuckles",
-    "name": "POWER KNUCKLES",
+    "name": "Power Knuckles",
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
@@ -794,7 +794,7 @@
   },
   {
     "id": "mw_hand_cannon",
-    "name": "HAND CANNON",
+    "name": "Hand Cannon",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
@@ -825,7 +825,7 @@
   },
   {
     "id": "mw_bolt_thrower",
-    "name": "BOLT THROWER",
+    "name": "Bolt Thrower",
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
@@ -856,7 +856,7 @@
   },
   {
     "id": "mw_kinetic_hammer",
-    "name": "KINETIC HAMMER",
+    "name": "Kinetic Hammer",
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
@@ -878,7 +878,7 @@
   },
   {
     "id": "mw_deck_sweeper_automatic_shotgun",
-    "name": "DECK-SWEEPER AUTOMATIC SHOTGUN",
+    "name": "Deck-Sweeper Automatic Shotgun",
     "mount": "Main",
     "type": "CQB",
     "damage": [{
@@ -904,7 +904,7 @@
   },
   {
     "id": "mw_daisy_cutter",
-    "name": "DAISY CUTTER",
+    "name": "Daisy Cutter",
     "mount": "Heavy",
     "type": "CQB",
     "damage": [{
@@ -927,7 +927,7 @@
   },
   {
     "id": "mw_catalytic_hammer",
-    "name": "CATALYTIC HAMMER",
+    "name": "Catalytic Hammer",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -949,7 +949,7 @@
   },
   {
     "id": "mw_impact_lance",
-    "name": "IMPACT LANCE",
+    "name": "Impact Lance",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -968,7 +968,7 @@
   },
   {
     "id": "mw_impaler_nailgun",
-    "name": "IMPALER NAILGUN",
+    "name": "Impaler Nailgun",
     "mount": "Main",
     "type": "CQB",
     "damage": [{
@@ -996,7 +996,7 @@
   },
   {
     "id": "mw_combat_drill",
-    "name": "COMBAT DRILL",
+    "name": "Combat Drill",
     "mount": "Superheavy",
     "type": "Melee",
     "damage": [{
@@ -1027,7 +1027,7 @@
   },
   {
     "id": "mw_magnetic_cannon",
-    "name": "MAGNETIC CANNON",
+    "name": "Magnetic Cannon",
     "mount": "Main",
     "type": "Cannon",
     "damage": [{
@@ -1046,7 +1046,7 @@
   },
   {
     "id": "mw_vulture_dmr",
-    "name": "VULTURE DMR",
+    "name": "Vulture DMR",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -1075,7 +1075,7 @@
   },
   {
     "id": "mw_railgun",
-    "name": "RAILGUN",
+    "name": "Railgun",
     "mount": "Heavy",
     "type": "Rifle",
     "damage": [{
@@ -1104,7 +1104,7 @@
   },
   {
     "id": "mw_veil_rifle",
-    "name": "VEIL RIFLE",
+    "name": "Veil Rifle",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -1126,7 +1126,7 @@
   },
   {
     "id": "mw_burst_launcher",
-    "name": "BURST LAUNCHER",
+    "name": "Burst Launcher",
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
@@ -1157,7 +1157,7 @@
   },
   {
     "id": "mw_rail_rifle",
-    "name": "RAIL RIFLE",
+    "name": "Rail Rifle",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -1179,7 +1179,7 @@
   },
   {
     "id": "mw_shock_knife",
-    "name": "SHOCK KNIFE",
+    "name": "Shock Knife",
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
@@ -1211,7 +1211,7 @@
   },
   {
     "id": "mw_sharanga_missiles",
-    "name": "SHARANGA MISSILES",
+    "name": "Sharanga Missiles",
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
@@ -1233,7 +1233,7 @@
   },
   {
     "id": "mw_gandiva_missiles",
-    "name": "GANDIVA MISSILES",
+    "name": "Gandiva Missiles",
     "mount": "Heavy",
     "type": "Launcher",
     "damage": [{
@@ -1262,7 +1262,7 @@
   },
   {
     "id": "mw_pinaka_missiles",
-    "name": "PINAKA MISSILES",
+    "name": "Pinaka Missiles",
     "mount": "Superheavy",
     "type": "Launcher",
     "damage": [{
@@ -1294,7 +1294,7 @@
   },
   {
     "id": "mw_fold_knife",
-    "name": "FOLD KNIFE",
+    "name": "Fold Knife",
     "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{
@@ -1316,7 +1316,7 @@
   },
   {
     "id": "mw_vijaya_rockets",
-    "name": "VIJAYA ROCKETS",
+    "name": "Vijaya Rockets",
     "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [{
@@ -1337,7 +1337,7 @@
   },
   {
     "id": "mw_variable_sword",
-    "name": "VARIABLE SWORD",
+    "name": "Variable Sword",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
@@ -1359,7 +1359,7 @@
   },
   {
     "id": "mw_oracle_lmg_i",
-    "name": "ORACLE LMG-I",
+    "name": "Oracle LMG-I",
     "mount": "Auxiliary",
     "type": "Rifle",
     "damage": [{
@@ -1385,7 +1385,7 @@
   },
   {
     "id": "mw_nanobot_whip",
-    "name": "NANOBOT WHIP",
+    "name": "Nanobot Whip",
     "mount": "Heavy",
     "type": "Melee",
     "damage": [{
@@ -1408,7 +1408,7 @@
   },
   {
     "id": "mw_swarm_hive_nanites",
-    "name": "SWARM/HIVE NANITES",
+    "name": "Swarm/Hive Nanites",
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
@@ -1438,7 +1438,7 @@
   },
   {
     "id": "mw_autopod",
-    "name": "AUTOPOD",
+    "name": "Autopod",
     "mount": "Main",
     "type": "Launcher",
     "no_attack": true,
@@ -1473,7 +1473,7 @@
   },
   {
     "id": "mw_vorpal_gun",
-    "name": "VORPAL GUN",
+    "name": "Vorpal Gun",
     "mount": "Main",
     "type": "Cannon",
     "no_attack": true,
@@ -1500,7 +1500,7 @@
   },
   {
     "id": "mw_ghoul_nexus",
-    "name": "GHOUL NEXUS",
+    "name": "Ghoul Nexus",
     "mount": "Main",
     "type": "Nexus",
     "damage": [{
@@ -1526,7 +1526,7 @@
   },
   {
     "id": "mw_ghast_nexus",
-    "name": "GHAST NEXUS",
+    "name": "Ghast Nexus",
     "mount": "Heavy",
     "type": "Nexus",
     "damage": [{
@@ -1563,7 +1563,7 @@
   },
   {
     "id": "mw_annihilation_nexus",
-    "name": "ANNIHILATION NEXUS",
+    "name": "Annihilation Nexus",
     "mount": "Superheavy",
     "type": "Nexus",
     "damage": [{
@@ -1596,7 +1596,7 @@
   },
   {
     "id": "mw_catalyst_pistol",
-    "name": "CATALYST PISTOL",
+    "name": "Catalyst Pistol",
     "mount": "Auxiliary",
     "type": "CQB",
     "damage": [{
@@ -1623,7 +1623,7 @@
   },
   {
     "id": "mw_arc_projector",
-    "name": "ARC PROJECTOR",
+    "name": "Arc Projector",
     "mount": "Heavy",
     "type": "CQB",
     "damage": [{
@@ -1646,7 +1646,7 @@
   },
   {
     "id": "mw_smartgun",
-    "name": "SMARTGUN",
+    "name": "Smartgun",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -1675,7 +1675,7 @@
   },
   {
     "id": "mw_mimic_gun",
-    "name": "MIMIC GUN",
+    "name": "Mimic Gun",
     "mount": "Heavy",
     "type": "???",
     "no_mods": true,
@@ -1705,7 +1705,7 @@
   },
   {
     "id": "mw_autogun",
-    "name": "AUTOGUN",
+    "name": "Autogun",
     "mount": "Main",
     "type": "Cannon",
     "no_attack": true,
@@ -1734,7 +1734,7 @@
   },
   {
     "id": "mw_siege_cannon",
-    "name": "SIEGE CANNON",
+    "name": "Siege Cannon",
     "mount": "Superheavy",
     "type": "Cannon",
     "source": "HA",
@@ -1795,7 +1795,7 @@
   },
   {
     "id": "mw_krakatoa_thermobaric_flamethrower",
-    "name": "KRAKATOA THERMOBARIC FLAMETHROWER",
+    "name": "Krakatoa Thermobaric Flamethrower",
     "mount": "Heavy",
     "type": "CQB",
     "damage": [{
@@ -1818,7 +1818,7 @@
   },
   {
     "id": "mw_plasma_thrower",
-    "name": "PLASMA THROWER",
+    "name": "Plasma Thrower",
     "mount": "Superheavy",
     "type": "CQB",
     "damage": [{
@@ -1852,7 +1852,7 @@
   },
   {
     "id": "mw_stub_cannon",
-    "name": "STUB CANNON",
+    "name": "Stub Cannon",
     "mount": "Auxiliary",
     "type": "Cannon",
     "damage": [{
@@ -1879,7 +1879,7 @@
   },
   {
     "id": "mw_gravity_gun",
-    "name": "GRAVITY GUN",
+    "name": "Gravity Gun",
     "no_mods": true,
     "no_core_bonus": true,
     "mount": "Heavy",
@@ -1902,7 +1902,7 @@
   },
   {
     "id": "mw_displacer",
-    "name": "DISPLACER",
+    "name": "Displacer",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -1939,7 +1939,7 @@
   },
   {
     "id": "mw_shatterhead_colony_missiles",
-    "name": "SHATTERHEAD COLONY MISSILES",
+    "name": "Shatterhead Colony Missiles",
     "mount": "Main",
     "type": "Launcher",
     "damage": [{
@@ -1962,7 +1962,7 @@
   },
   {
     "id": "mw_sol_pattern_laser_rifle",
-    "name": "SOL-PATTERN LASER RIFLE",
+    "name": "SOL-Pattern Laser Rifle",
     "mount": "Main",
     "type": "Rifle",
     "damage": [{
@@ -1989,7 +1989,7 @@
   },
   {
     "id": "mw_andromeda_pattern_heavy_laser_rifle",
-    "name": "ANDROMEDA-PATTERN HEAVY LASER RIFLE",
+    "name": "ANDROMEDA-Pattern Heavy Laser Rifle",
     "mount": "Heavy",
     "type": "Cannon",
     "damage": [{
@@ -2016,7 +2016,7 @@
   },
   {
     "id": "mw_tachyon_lance",
-    "name": "TACHYON LANCE",
+    "name": "Tachyon Lance",
     "mount": "Superheavy",
     "type": "Cannon",
     "damage": [{
@@ -2048,7 +2048,7 @@
   },
   {
     "id": "mw_annihilator",
-    "name": "ANNIHILATOR",
+    "name": "Annihilator",
     "mount": "Main",
     "type": "CQB",
     "damage": [{
@@ -2080,7 +2080,7 @@
   },
   {
     "id": "mw_torch",
-    "name": "TORCH",
+    "name": "Torch",
     "mount": "Main",
     "type": "Melee",
     "damage": [{
