@@ -13,7 +13,7 @@
   },
   {
     "id": "ms_comp_con_class_assistant_unit",
-    "name": "COMP/CON-CLASS ASSISTANT UNIT",
+    "name": "Comp/Con-Class Assistant Unit",
     "type": "AI",
     "sp": 2,
     "tags": [
@@ -36,7 +36,7 @@
   },
   {
     "id": "ms_custom_paint_job",
-    "name": "CUSTOM PAINT JOB",
+    "name": "Custom Paint Job",
     "sp": 1,
     "tags": [
       {
@@ -54,7 +54,7 @@
   },
   {
     "id": "ms_expanded_compartment",
-    "name": "EXPANDED COMPARTMENT",
+    "name": "Expanded Compartment",
     "sp": 1,
     "tags": [
       {
@@ -69,7 +69,7 @@
   },
   {
     "id": "ms_manipulators",
-    "name": "MANIPULATORS",
+    "name": "Manipulators",
     "sp": 1,
     "tags": [
       {
@@ -85,7 +85,7 @@
   },
   {
     "id": "ms_pattern_a_smoke_charges",
-    "name": "PATTERN-A SMOKE CHARGES",
+    "name": "Pattern-A Smoke Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -137,7 +137,7 @@
   },
   {
     "id": "ms_pattern_a_jericho_deployable_cover",
-    "name": "PATTERN-A JERICHO DEPLOYABLE COVER",
+    "name": "Pattern-A Jericho Deployable Cover",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -165,7 +165,7 @@
   },
   {
     "id": "ms_pattern_b_hex_charges",
-    "name": "PATTERN-B HEX CHARGES",
+    "name": "Pattern-B HEX Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -224,7 +224,7 @@
   },
   {
     "id": "ms_personalizations",
-    "name": "PERSONALIZATIONS",
+    "name": "Personalizations",
     "sp": 1,
     "tags": [
       {
@@ -245,7 +245,7 @@
   },
   {
     "id": "ms_stable_structure",
-    "name": "STABLE STRUCTURE",
+    "name": "Stable Structure",
     "sp": 2,
     "tags": [
       {
@@ -260,7 +260,7 @@
   },
   {
     "id": "ms_turret_drones",
-    "name": "TURRET DRONES",
+    "name": "Turret Drones",
     "type": "Drone",
     "sp": 2,
     "tags": [
@@ -301,7 +301,7 @@
   },
   {
     "id": "ms_type_3_projected_shield",
-    "name": "TYPE-3 PROJECTED SHIELD",
+    "name": "Type-3 Projected Shield",
     "type": "Shield",
     "sp": 2,
     "tags": [
@@ -331,7 +331,7 @@
   },
   {
     "id": "ms_eva_module",
-    "name": "EVA MODULE",
+    "name": "EVA Module",
     "type": "Flight System",
     "sp": 1,
     "tags": [
@@ -355,7 +355,7 @@
   },
   {
     "id": "ms_rapid_burst_jump_jet_system",
-    "name": "RAPID BURST JUMP JET SYSTEM",
+    "name": "Rapid Burst Jump Jet System",
     "type": "Flight System",
     "sp": 2,
     "tags": [
@@ -379,7 +379,7 @@
   },
   {
     "id": "ms_type_i_flight_system",
-    "name": "TYPE-I FLIGHT SYSTEM",
+    "name": "Type-I Flight System",
     "type": "Flight System",
     "sp": 3,
     "tags": [
@@ -403,7 +403,7 @@
   },
   {
     "id": "ms_synthetic_muscle_netting",
-    "name": "SYNTHETIC MUSCLE NETTING",
+    "name": "Synthetic Muscle Netting",
     "sp": 2,
     "tags": [
       {
@@ -433,7 +433,7 @@
   },
   {
     "id": "ms_reinforced_cabling",
-    "name": "REINFORCED CABLING",
+    "name": "Reinforced Cabling",
     "sp": 2,
     "source": "IPS-N",
     "license": "BLACKBEARD",
@@ -455,7 +455,7 @@
   },
   {
     "id": "ms_sekhmet_class_nhp",
-    "name": "SEKHMET-CLASS NHP",
+    "name": "SEKHMET-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -481,7 +481,7 @@
   },
   {
     "id": "ms_argonaut_shield",
-    "name": "ARGONAUT SHIELD",
+    "name": "Argonaut Shield",
     "sp": 2,
     "tags": [
       {
@@ -502,7 +502,7 @@
   },
   {
     "id": "ms_aegis_shield_generator",
-    "name": "AEGIS SHIELD GENERATOR",
+    "name": "Aegis Shield Generator",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -548,7 +548,7 @@
   },
   {
     "id": "ms_portable_bunker",
-    "name": "PORTABLE BUNKER",
+    "name": "Portable Bunker",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -581,7 +581,7 @@
   },
   {
     "id": "ms_cable_winch_system",
-    "name": "CABLE WINCH SYSTEM",
+    "name": "Cable Winch System",
     "sp": 1,
     "source": "IPS-N",
     "license": "LANCASTER",
@@ -597,7 +597,7 @@
   },
   {
     "id": "ms_restock_drone",
-    "name": "RESTOCK DRONE",
+    "name": "Restock Drone",
     "type": "Drone",
     "sp": 2,
     "tags": [
@@ -637,7 +637,7 @@
   },
   {
     "id": "ms_mule_harness",
-    "name": "MULE HARNESS",
+    "name": "MULE Harness",
     "sp": 2,
     "tags": [
       {
@@ -653,7 +653,7 @@
   },
   {
     "id": "ms_whitewash_sealant_spray",
-    "name": "WHITEWASH SEALANT SPRAY",
+    "name": "Whitewash Sealant Spray",
     "sp": 2,
     "source": "IPS-N",
     "license": "LANCASTER",
@@ -669,7 +669,7 @@
   },
   {
     "id": "ms_aceso_stabilizer",
-    "name": "ACESO STABILIZER",
+    "name": "Aceso Stabilizer",
     "type": "Shield",
     "sp": 3,
     "tags": [
@@ -701,7 +701,7 @@
   },
   {
     "id": "ms_bulwark_mods",
-    "name": "BULWARK MODS",
+    "name": "Bulwark Mods",
     "sp": 1,
     "tags": [
       {
@@ -725,7 +725,7 @@
   },
   {
     "id": "ms_armor_lock_plating",
-    "name": "ARMOR-LOCK PLATING",
+    "name": "Armor-Lock Plating",
     "sp": 1,
     "tags": [
       {
@@ -759,7 +759,7 @@
   },
   {
     "id": "ms_ramjet",
-    "name": "RAMJET",
+    "name": "Ramjet",
     "sp": 3,
     "tags": [
       {
@@ -784,7 +784,7 @@
   },
   {
     "id": "ms_bb_breach_blast_charges",
-    "name": "BB BREACH/BLAST CHARGES",
+    "name": "BB Breach/Blast Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -843,7 +843,7 @@
   },
   {
     "id": "ms_roland_chamber",
-    "name": "“ROLAND” CHAMBER",
+    "name": "“Roland” Chamber",
     "sp": 3,
     "tags": [
       {
@@ -859,7 +859,7 @@
   },
   {
     "id": "ms_siege_ram",
-    "name": "SIEGE RAM",
+    "name": "Siege Ram",
     "sp": 2,
     "tags": [
       {
@@ -883,7 +883,7 @@
   },
   {
     "id": "ms_hyperdense_armor",
-    "name": "HYPERDENSE ARMOR",
+    "name": "HyperDense Armor",
     "type": "Shield",
     "sp": 3,
     "tags": [
@@ -913,7 +913,7 @@
   },
   {
     "id": "ms_webjaw_snare",
-    "name": "WEBJAW SNARE",
+    "name": "Webjaw Snare",
     "type": "Deployable",
     "sp": 1,
     "tags": [
@@ -945,7 +945,7 @@
   },
   {
     "id": "ms_caltrop_launcher",
-    "name": "CALTROP LAUNCHER",
+    "name": "Caltrop Launcher",
     "sp": 1,
     "tags": [
       {
@@ -966,7 +966,7 @@
   },
   {
     "id": "ms_charged_stake",
-    "name": "CHARGED STAKE",
+    "name": "Charged Stake",
     "sp": 2,
     "source": "IPS-N",
     "license": "VLAD",
@@ -982,7 +982,7 @@
   },
   {
     "id": "ms_ferrous_lash",
-    "name": "FERROUS LASH",
+    "name": "Ferrous Lash",
     "sp": 2,
     "source": "SSC",
     "license": "BLACK WITCH",
@@ -998,7 +998,7 @@
   },
   {
     "id": "ms_iceout_drone",
-    "name": "ICEOUT DRONE",
+    "name": "ICEOUT Drone",
     "type": "Drone",
     "sp": 2,
     "tags": [
@@ -1038,7 +1038,7 @@
   },
   {
     "id": "ms_perimeter_command_plate",
-    "name": "PERIMETER COMMAND PLATE",
+    "name": "Perimeter Command Plate",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -1064,7 +1064,7 @@
   },
   {
     "id": "ms_black_ice_module",
-    "name": "BLACK ICE MODULE",
+    "name": "Black ICE Module",
     "type": "Tech",
     "sp": 3,
     "tags": [
@@ -1080,7 +1080,7 @@
     "counters": [
       {
         "id": "ctr_black_ice_module",
-        "name": "BLACK ICE MODULE",
+        "name": "Black ICE Module",
         "default_value": 1,
         "min": 1,
         "max": 3
@@ -1090,7 +1090,7 @@
   },
   {
     "id": "ms_magnetic_shield",
-    "name": "MAGNETIC SHIELD",
+    "name": "Magnetic Shield",
     "type": "Shield",
     "sp": 2,
     "tags": [
@@ -1115,7 +1115,7 @@
   },
   {
     "id": "ms_high_stress_mag_clamps",
-    "name": "HIGH-STRESS MAG CLAMPS",
+    "name": "High-Stress Mag Clamps",
     "sp": 1,
     "tags": [
       {
@@ -1139,7 +1139,7 @@
   },
   {
     "id": "ms_tracking_bug",
-    "name": "TRACKING BUG",
+    "name": "Tracking Bug",
     "type": "Tech",
     "sp": 2,
     "source": "SSC",
@@ -1157,7 +1157,7 @@
   },
   {
     "id": "ms_core_siphon",
-    "name": "CORE SIPHON",
+    "name": "Core Siphon",
     "sp": 2,
     "tags": [
       {
@@ -1178,7 +1178,7 @@
   },
   {
     "id": "ms_kinetic_compensator",
-    "name": "KINETIC COMPENSATOR",
+    "name": "Kinetic Compensator",
     "sp": 2,
     "tags": [
       {
@@ -1209,7 +1209,7 @@
   },
   {
     "id": "ms_neurospike",
-    "name": "NEUROSPIKE",
+    "name": "Neurospike",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1237,7 +1237,7 @@
   },
   {
     "id": "ms_flicker_field_projector",
-    "name": "FLICKER FIELD PROJECTOR",
+    "name": "Flicker Field Projector",
     "sp": 1,
     "tags": [
       {
@@ -1262,7 +1262,7 @@
   },
   {
     "id": "ms_stuncrown",
-    "name": "STUNCROWN",
+    "name": "StunCrown",
     "sp": 2,
     "tags": [
       {
@@ -1287,7 +1287,7 @@
   },
   {
     "id": "ms_oasis_wall",
-    "name": "OASIS WALL",
+    "name": "OASIS Wall",
     "type": "Shield",
     "sp": 3,
     "tags": [
@@ -1316,7 +1316,7 @@
   },
   {
     "id": "ms_flash_charges",
-    "name": "FLASH CHARGES",
+    "name": "Flash Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -1368,7 +1368,7 @@
   },
   {
     "id": "ms_reactive_weave",
-    "name": "REACTIVE WEAVE",
+    "name": "Reactive Weave",
     "sp": 1,
     "tags": [
       {
@@ -1392,7 +1392,7 @@
   },
   {
     "id": "ms_active_camouflage",
-    "name": "ACTIVE CAMOUFLAGE",
+    "name": "Active Camouflage",
     "sp": 3,
     "tags": [
       {
@@ -1417,7 +1417,7 @@
   },
   {
     "id": "ms_javelin_rockets",
-    "name": "JAVELIN ROCKETS",
+    "name": "Javelin Rockets",
     "sp": 2,
     "tags": [
       {
@@ -1438,7 +1438,7 @@
   },
   {
     "id": "ms_tlaloc_class_nhp",
-    "name": "TLALOC-CLASS NHP",
+    "name": "TLALOC-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -1468,7 +1468,7 @@
   },
   {
     "id": "ms_hunter_logic_suite",
-    "name": "HUNTER LOGIC SUITE",
+    "name": "Hunter Logic Suite",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1496,7 +1496,7 @@
   },
   {
     "id": "ms_singularity_motivator",
-    "name": "SINGULARITY MOTIVATOR",
+    "name": "Singularity Motivator",
     "sp": 2,
     "tags": [
       {
@@ -1520,7 +1520,7 @@
   },
   {
     "id": "ms_fade_cloak",
-    "name": "FADE CLOAK",
+    "name": "FADE Cloak",
     "sp": 2,
     "tags": [
       {
@@ -1541,7 +1541,7 @@
   },
   {
     "id": "ms_lotus_projector",
-    "name": "LOTUS PROJECTOR",
+    "name": "Lotus Projector",
     "type": "Drone",
     "sp": 2,
     "tags": [
@@ -1575,7 +1575,7 @@
   },
   {
     "id": "ms_markerlight",
-    "name": "MARKERLIGHT",
+    "name": "Markerlight",
     "type": "Tech",
     "sp": 2,
     "source": "SSC",
@@ -1593,7 +1593,7 @@
   },
   {
     "id": "ms_retractable_profile",
-    "name": "RETRACTABLE PROFILE",
+    "name": "Retractable Profile",
     "type": "Tech",
     "sp": 1,
     "tags": [
@@ -1615,7 +1615,7 @@
   },
   {
     "id": "ms_athena_class_nhp",
-    "name": "ATHENA-CLASS NHP",
+    "name": "ATHENA-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -1642,7 +1642,7 @@
   },
   {
     "id": "ms_lb_oc_cloaking_field",
-    "name": "LB/OC CLOAKING FIELD",
+    "name": "LB/OC Cloaking Field",
     "sp": 4,
     "tags": [
       {
@@ -1664,7 +1664,7 @@
   },
   {
     "id": "ms_hive_drone",
-    "name": "HIVE DRONE",
+    "name": "Hive Drone",
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
@@ -1688,7 +1688,7 @@
   },
   {
     "id": "ms_scanner_swarm",
-    "name": "SCANNER SWARM",
+    "name": "Scanner Swarm",
     "type": "Tech",
     "sp": 1,
     "tags": [
@@ -1705,7 +1705,7 @@
   },
   {
     "id": "ms_swarm_body",
-    "name": "SWARM BODY",
+    "name": "Swarm Body",
     "sp": 2,
     "tags": [
       {
@@ -1726,7 +1726,7 @@
   },
   {
     "id": "ms_h0r_os_system_upgrade_i",
-    "name": "H0R_OS SYSTEM UPGRADE I",
+    "name": "H0R_OS System Upgrade I",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1754,7 +1754,7 @@
   },
   {
     "id": "ms_metahook",
-    "name": "METAHOOK",
+    "name": "Metahook",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1776,7 +1776,7 @@
   },
   {
     "id": "ms_h0r_os_system_upgrade_ii",
-    "name": "H0R_OS SYSTEM UPGRADE II",
+    "name": "H0R_OS System Upgrade II",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1804,7 +1804,7 @@
   },
   {
     "id": "ms_osiris_class_nhp",
-    "name": "OSIRIS-CLASS NHP",
+    "name": "OSIRIS-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -1835,7 +1835,7 @@
   },
   {
     "id": "ms_h0r_os_system_upgrade_iii",
-    "name": "H0R_OS SYSTEM UPGRADE III",
+    "name": "H0R_OS System Upgrade III",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -1863,7 +1863,7 @@
   },
   {
     "id": "ms_mimic_mesh",
-    "name": "MIMIC MESH",
+    "name": "Mimic Mesh",
     "sp": 2,
     "tags": [
       {
@@ -1893,7 +1893,7 @@
   },
   {
     "id": "ms_sentinel_drone",
-    "name": "SENTINEL DRONE",
+    "name": "Sentinel Drone",
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
@@ -1934,7 +1934,7 @@
   },
   {
     "id": "ms_monitor_module",
-    "name": "MONITOR MODULE",
+    "name": "Monitor Module",
     "sp": 2,
     "tags": [
       {
@@ -1953,7 +1953,7 @@
     "counters": [
       {
         "id": "ctr_monitor_module",
-        "name": "MONITOR MODULE",
+        "name": "Monitor Module",
         "default_value": 0,
         "min": 0,
         "max": 3
@@ -1964,7 +1964,7 @@
   },
   {
     "id": "ms_scylla_class_nhp",
-    "name": "SCYLLA-CLASS NHP",
+    "name": "SCYLLA-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -2030,7 +2030,7 @@
   },
   {
     "id": "ms_tempest_drone",
-    "name": "TEMPEST DRONE",
+    "name": "Tempest Drone",
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
@@ -2064,7 +2064,7 @@
   },
   {
     "id": "ms_assassin_drone",
-    "name": "ASSASSIN DRONE",
+    "name": "Assassin Drone",
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
@@ -2097,7 +2097,7 @@
   },
   {
     "id": "ms_beckoner",
-    "name": "BECKONER",
+    "name": "Beckoner",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -2125,7 +2125,7 @@
   },
   {
     "id": "ms_smite",
-    "name": "SMITE",
+    "name": "Smite",
     "type": "Tech",
     "sp": 3,
     "tags": [
@@ -2153,7 +2153,7 @@
   },
   {
     "id": "ms_emp_pulse",
-    "name": "EMP PULSE",
+    "name": "EMP Pulse",
     "sp": 2,
     "tags": [
       {
@@ -2174,7 +2174,7 @@
   },
   {
     "id": "ms_lightning_generator",
-    "name": "LIGHTNING GENERATOR",
+    "name": "Lightning Generator",
     "sp": 3,
     "tags": [
       {
@@ -2199,7 +2199,7 @@
   },
   {
     "id": "ms_mesmer_charges",
-    "name": "MESMER CHARGES",
+    "name": "Mesmer Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2248,7 +2248,7 @@
   },
   {
     "id": "ms_viral_logic_suite",
-    "name": "VIRAL LOGIC SUITE",
+    "name": "Viral Logic Suite",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -2276,7 +2276,7 @@
   },
   {
     "id": "ms_aggressive_system_sync",
-    "name": "AGGRESSIVE SYSTEM SYNC",
+    "name": "Aggressive System Sync",
     "type": "Tech",
     "sp": 2,
     "source": "HORUS",
@@ -2301,7 +2301,7 @@
   },
   {
     "id": "ms_metafold_carver",
-    "name": "METAFOLD CARVER",
+    "name": "Metafold Carver",
     "type": "Tech",
     "sp": 2,
     "tags": [],
@@ -2325,7 +2325,7 @@
   },
   {
     "id": "ms_interdiction_field",
-    "name": "INTERDICTION FIELD",
+    "name": "Interdiction Field",
     "sp": 3,
     "source": "HORUS",
     "license": "MINOTAUR",
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "ms_law_of_blades",
-    "name": "LAW OF BLADES",
+    "name": "Law of Blades",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -2371,7 +2371,7 @@
   },
   {
     "id": "ms_hunter_lock",
-    "name": "HUNTER LOCK",
+    "name": "Hunter Lock",
     "sp": 2,
     "tags": [
       {
@@ -2392,7 +2392,7 @@
   },
   {
     "id": "ms_eye_of_horus",
-    "name": "EYE OF HORUS",
+    "name": "Eye of HORUS",
     "sp": 3,
     "tags": [
       {
@@ -2413,7 +2413,7 @@
   },
   {
     "id": "ms_sisyphus_class_nhp",
-    "name": "SISYPHUS-CLASS NHP",
+    "name": "SISYPHUS-Class NHP",
     "type": "AI",
     "sp": 2,
     "tags": [
@@ -2450,7 +2450,7 @@
   },
   {
     "id": "ms_roller_directed_payload_charges",
-    "name": "“ROLLER” DIRECTED PAYLOAD CHARGES",
+    "name": "“Roller” Directed Payload Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2503,7 +2503,7 @@
   },
   {
     "id": "ms_siege_stabilizers",
-    "name": "SIEGE STABILIZERS",
+    "name": "Siege Stabilizers",
     "sp": 1,
     "tags": [
       {
@@ -2524,7 +2524,7 @@
   },
   {
     "id": "ms_autoloader_drone",
-    "name": "AUTOLOADER DRONE",
+    "name": "Autoloader Drone",
     "type": "Drone",
     "sp": 2,
     "tags": [
@@ -2555,7 +2555,7 @@
   },
   {
     "id": "ms_flak_launcher",
-    "name": "FLAK LAUNCHER",
+    "name": "Flak Launcher",
     "sp": 2,
     "source": "HA",
     "license": "BARBAROSSA",
@@ -2571,7 +2571,7 @@
   },
   {
     "id": "ms_external_ammo_feed",
-    "name": "EXTERNAL AMMO FEED",
+    "name": "External Ammo Feed",
     "sp": 3,
     "tags": [
       {
@@ -2596,7 +2596,7 @@
   },
   {
     "id": "ms_explosive_vents",
-    "name": "EXPLOSIVE VENTS",
+    "name": "Explosive Vents",
     "sp": 2,
     "tags": [
       {
@@ -2616,7 +2616,7 @@
   },
   {
     "id": "ms_havok_charges",
-    "name": "HAVOK CHARGES",
+    "name": "HAVOK Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2674,7 +2674,7 @@
   },
   {
     "id": "ms_auto_cooler",
-    "name": "AUTO-COOLER",
+    "name": "Auto-Cooler",
     "sp": 2,
     "tags": [
       {
@@ -2695,7 +2695,7 @@
   },
   {
     "id": "ms_agni_class_nhp",
-    "name": "AGNI-CLASS NHP",
+    "name": "AGNI-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -2725,7 +2725,7 @@
   },
   {
     "id": "ms_grounding_charges",
-    "name": "GROUNDING CHARGES",
+    "name": "Grounding Charges",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2774,7 +2774,7 @@
   },
   {
     "id": "ms_repulser_field",
-    "name": "REPULSER FIELD",
+    "name": "Repulser Field",
     "sp": 1,
     "tags": [
       {
@@ -2799,7 +2799,7 @@
   },
   {
     "id": "ms_clamp_bombs",
-    "name": "CLAMP BOMBS",
+    "name": "Clamp Bombs",
     "sp": 2,
     "tags": [
       {
@@ -2825,7 +2825,7 @@
   },
   {
     "id": "ms_tesseract",
-    "name": "TESSERACT",
+    "name": "Tesseract",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -2853,7 +2853,7 @@
   },
   {
     "id": "ms_stasis_bolt",
-    "name": "STASIS BOLT",
+    "name": "Stasis Bolt",
     "type": "Shield",
     "sp": 1,
     "tags": [
@@ -2887,7 +2887,7 @@
   },
   {
     "id": "ms_stasis_generator",
-    "name": "STASIS GENERATOR",
+    "name": "Stasis Generator",
     "type": "Shield",
     "sp": 2,
     "tags": [
@@ -2912,7 +2912,7 @@
   },
   {
     "id": "ms_stasis_barrier",
-    "name": "STASIS BARRIER",
+    "name": "Stasis Barrier",
     "type": "Deployable",
     "sp": 2,
     "tags": [
@@ -2952,7 +2952,7 @@
   },
   {
     "id": "ms_blinkshield",
-    "name": "BLINKSHIELD",
+    "name": "Blinkshield",
     "type": "Shield",
     "sp": 2,
     "tags": [
@@ -2981,7 +2981,7 @@
   },
   {
     "id": "ms_enclave_pattern_support_shield",
-    "name": "ENCLAVE-PATTERN SUPPORT SHIELD",
+    "name": "ENCLAVE-Pattern Support Shield",
     "type": "Shield",
     "sp": 2,
     "tags": [
@@ -3015,7 +3015,7 @@
   },
   {
     "id": "ms_flash_anchor",
-    "name": "FLASH ANCHOR",
+    "name": "Flash Anchor",
     "type": "Shield",
     "sp": 1,
     "tags": [
@@ -3047,7 +3047,7 @@
   },
   {
     "id": "ms_hardlight_defense_system",
-    "name": "HARDLIGHT DEFENSE SYSTEM",
+    "name": "Hardlight Defense System",
     "type": "Shield",
     "sp": 3,
     "tags": [
@@ -3081,7 +3081,7 @@
   },
   {
     "id": "ms_noah_class_nhp",
-    "name": "NOAH-CLASS NHP",
+    "name": "NOAH-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -3107,7 +3107,7 @@
   },
   {
     "id": "ms_reactor_stabilizer",
-    "name": "REACTOR STABILIZER",
+    "name": "Reactor Stabilizer",
     "sp": 3,
     "tags": [
       {
@@ -3123,7 +3123,7 @@
   },
   {
     "id": "ms_redundant_systems_upgrade",
-    "name": "REDUNDANT SYSTEMS UPGRADE",
+    "name": "Redundant Systems Upgrade",
     "sp": 3,
     "tags": [
       {
@@ -3148,7 +3148,7 @@
   },
   {
     "id": "ms_asura_class_nhp",
-    "name": "ASURA-CLASS NHP",
+    "name": "ASURA-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -3182,7 +3182,7 @@
   },
   {
     "id": "ms_external_batteries",
-    "name": "EXTERNAL BATTERIES",
+    "name": "External Batteries",
     "sp": 2,
     "tags": [
       {
@@ -3230,7 +3230,7 @@
   },
   {
     "id": "ms_deep_well_heat_sink",
-    "name": "DEEP WELL HEAT SINK",
+    "name": "Deep Well Heat Sink",
     "sp": 4,
     "tags": [
       {
@@ -3246,7 +3246,7 @@
   },
   {
     "id": "ms_lucifer_class_nhp",
-    "name": "LUCIFER-CLASS NHP",
+    "name": "LUCIFER-Class NHP",
     "type": "AI",
     "sp": 3,
     "tags": [
@@ -3280,7 +3280,7 @@
   },
   {
     "id": "ms_plasma_gauntlet",
-    "name": "PLASMA GAUNTLET",
+    "name": "Plasma Gauntlet",
     "sp": 2,
     "tags": [
       {
