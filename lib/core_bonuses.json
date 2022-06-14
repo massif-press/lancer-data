@@ -293,7 +293,7 @@
     "description": "The Heatfall Coolant System comes packaged with a stabilized reactor core; paired together, this combo is guaranteed to keep a mech cool in nearly any environment.",
     "bonuses": [{
       "id": "overcharge",
-      "val": ["+1", "+1d3", "+1d6", "+1d6"]
+      "val": ["1", "1d3", "1d6", "1d6"]
     }]
   },
   {
