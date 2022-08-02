@@ -148,6 +148,7 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
+    "effect": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
     "deployables": [
       {
         "name": "Jericho Deployable Cover",
@@ -517,6 +518,7 @@
     "source": "IPS-N",
     "license": "DRAKE",
     "license_level": 2,
+    "effect": "Expend a charge to deploy a Size 1 shield generator in a free, adjacent space, where it creates a burst 1 shield.",
     "deployables": [
       {
         "type": "Deployable",
@@ -526,7 +528,7 @@
         "size": 1,
         "hp": 10,
         "evasion": 5,
-        "detail": "Expend a charge to deploy a Size 1 shield generator in a free, adjacent space, where it creates a burst 1 shield. Set out three d6s to represent the generator’s remaining power. As a reaction when any character or object of your choice at least partly in the area takes damage, you may roll one of the d6s to reduce the damage by the amount rolled.<br>This effect lasts for the rest of the scene, until all dice have been rolled and the generator loses power, or the generator is destroyed.",
+        "detail": "Set out three d6s to represent the generator’s remaining power. As a reaction when any character or object of your choice at least partly in the area takes damage, you may roll one of the d6s to reduce the damage by the amount rolled.<br>This effect lasts for the rest of the scene, until all dice have been rolled and the generator loses power, or the generator is destroyed.",
         "counters": [
           {
             "id": "aegis_shield_die",
@@ -1049,6 +1051,7 @@
     "source": "SSC",
     "license": "BLACK WITCH",
     "license_level": 2,
+    "effect": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.",
     "deployables": [
       {
         "name": "Perimeter Command Plate",
@@ -1056,7 +1059,7 @@
         "size": 2,
         "hp": 20,
         "evasion": 5,
-        "detail": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.<br>The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed."
+        "detail": "The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed."
       }
     ],
     "description": "The Exotic Materials Group developed the Perimeter Command Plate to extend the area of the Black Witch’s zone of control. Utilizing single-pattern flash printers, the Black Witch prints a broad, circular plate seeded with electromagnetic projectors. Although the plates are intended to be disposable, Black Witch pilots often grow attached to their “familiars” and request their flash-printers create personalized plates.",
@@ -1552,6 +1555,7 @@
     "source": "SSC",
     "license": "SWALLOWTAIL",
     "license_level": 1,
+    "effect": "This scout drone can be deployed to a space within Sensors and line of sight, where it emits a Burst 2 field with the following effects:<ul><li>You know the current location, HP, Evasion, E-Defense, and Heat of all characters within the affected area.</li><li>Hostile characters cannot Hide in the area, and if they end their turn in the affected area they cease to be Hidden.</li><li>Hostile characters can’t benefit from being Invisible while in the affected area.</li></ul>You can recall and redeploy your scout drone as a quick action.",
     "deployables": [
       {
         "type": "Drone",
@@ -1560,14 +1564,9 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "This scout drone can be deployed to a space within Sensors and line of sight, where it emits a Burst 2 field with the following effects:<ul><li>You know the current location, HP, Evasion, E-Defense, and Heat of all characters within the affected area.</li><li>Hostile characters cannot Hide in the area, and if they end their turn in the affected area they cease to be Hidden.</li><li>Hostile characters can’t benefit from being Invisible while in the affected area.</li></ul>",
-        "actions": [
-          {
-            "name": "Recall and Redeploy",
-            "activation": "Quick",
-            "detail": "Recall and redeploy this drone"
-          }
-        ]
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "detail": "This scout drone can be deployed to a space within Sensors and line of sight, where it emits a Burst 2 field with the following effects:<ul><li>You know the current location, HP, Evasion, E-Defense, and Heat of all characters within the affected area.</li><li>Hostile characters cannot Hide in the area, and if they end their turn in the affected area they cease to be Hidden.</li><li>Hostile characters can’t benefit from being Invisible while in the affected area.</li></ul>You can recall and redeploy your scout drone as a quick action."
       }
     ],
     "description": "Mech-mounted Lotus Projectors are designed to launch small, actively camouflaged scout drones. The projector fires the single-use drones at subsonic speeds in bursts of ten, blanketing a wide area in order to relay information about terrain and targets within.",
@@ -1670,6 +1669,7 @@
     "source": "HORUS",
     "license": "BALOR",
     "license_level": 1,
+    "effect": "This hive drone can be deployed to a free space within Sensors and line of sight, where it releases a burst 2 greywash swarm with the following effects:<ul><li>Allied characters at least partially within the affected area gain soft cover, as does the hive drone.</li><li>Hostile characters take 1 AP kinetic damage when they start their turn in the affected area or enter it for the first time in a round. Damage from areas created by multiple hive drones does not stack.</li></ul>The drone can be deployed to a different space or recalled as a quick action.",
     "deployables": [
       {
         "type": "Drone",
@@ -1680,7 +1680,7 @@
         "evasion": 10,
         "recall": "Quick",
         "redeploy": "Quick",
-        "detail": "This hive drone can be deployed to a free space within Sensors and line of sight, where it releases a burst 2 greywash swarm with the following effects:<ul><li>Allied characters at least partially within the affected area gain soft cover, as does the hive drone.</li><li>Hostile characters take 1 AP kinetic damage when they start their turn in the affected area or enter it for the first time in a round. Damage from areas created by multiple hive drones does not stack.</li></ul>"
+        "detail": "This hive drone can be deployed to a free space within Sensors and line of sight, where it releases a burst 2 greywash swarm with the following effects:<ul><li>Allied characters at least partially within the affected area gain soft cover, as does the hive drone.</li><li>Hostile characters take 1 AP kinetic damage when they start their turn in the affected area or enter it for the first time in a round. Damage from areas created by multiple hive drones does not stack.</li></ul>The drone can be deployed to a different space or recalled as a quick action."
       }
     ],
     "description": "It looks, at first, like a roiling cloud of gray fog, churning and fizzing – smoking soda water spilled across concrete. It advances with curious motion, stretching and snapping back. A confusion of snakes, writhing forward with speed that betrays intent.<br>Color flashes across the gray cloud, a swarm-luminescence – the light created by millions of nanites glowing with heat as they consume whatever they cross.<br>This is greywash, and it is never sated.",
@@ -1899,6 +1899,7 @@
     "source": "HORUS",
     "license": "GORGON",
     "license_level": 1,
+    "effect": "The sentinel drone can be deployed to any free space within Sensors and line of sight, where it establishes a burst 2 security perimeter. Hostile characters within the affected area take 3 kinetic damage from the drone’s automatic fire before making any attack.<br>The sentinel drone can be redeployed to a new location or recalled as a quick action.",
     "deployables": [
       {
         "type": "Drone",
@@ -1907,7 +1908,7 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "The sentinel drone can be deployed to any free space within Sensors and line of sight, where it establishes a burst 2 security perimeter. Hostile characters within the affected area take 3 kinetic damage from the drone’s automatic fire before making any attack.",
+        "detail": "The sentinel drone can be deployed to any free space within Sensors and line of sight, where it establishes a burst 2 security perimeter. Hostile characters within the affected area take 3 kinetic damage from the drone’s automatic fire before making any attack.<br>The sentinel drone can be redeployed to a new location or recalled as a quick action.",
         "recall": "Quick",
         "redeploy": "Quick"
       }
@@ -2036,6 +2037,7 @@
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 2,
+    "effect": "This large, armored tempest drone may be deployed to a free space within Sensors and line of sight.",
     "deployables": [
       {
         "type": "Drone",
@@ -2044,7 +2046,7 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "This large, armored tempest drone may be deployed to a free space within Sensors and line of sight. Any character that starts their turn adjacent to the tempest drone or moves adjacent to it for the first time in a round must succeed on a Hull save or take 4 energy damage and be knocked 3 spaces directly away from the drone.<br> Until recalled or destroyed, it remains deployed until the end of the scene.",
+        "detail": "Any character that starts their turn adjacent to the tempest drone or moves adjacent to it for the first time in a round must succeed on a Hull save or take 4 energy damage and be knocked 3 spaces directly away from the drone.<br>You may recall or redeploy the tempest drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene.",
         "recall": "Quick",
         "redeploy": "Quick",
         "tags": [
@@ -2070,6 +2072,7 @@
     "source": "HORUS",
     "license": "HYDRA",
     "license_level": 3,
+    "effect": "This assassin drone may be deployed to any free, adjacent space.",
     "deployables": [
       {
         "type": "Drone",
@@ -2078,7 +2081,7 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "This assassin drone may be deployed to any free, adjacent space. Upon deployment, it targets a blast 2 area of your choice within line of sight and Sensors and you gain the Area Denial reaction (usable any number of times a round). Unless recalled or destroyed, it remains deployed until the end of the scene.",
+        "detail": "Upon deployment, it targets a blast 2 area of your choice within line of sight and Sensors and you gain the Area Denial reaction (usable any number of times a round).<br>You may recall or redeploy the assassin drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene.",
         "recall": "Quick",
         "redeploy": "Quick",
         "actions": [
@@ -2539,6 +2542,7 @@
     "source": "HA",
     "license": "BARBAROSSA",
     "license_level": 2,
+    "effect": "Expend a charge to deploy this autoloader drone to any adjacent space.",
     "deployables": [
       {
         "type": "Drone",
@@ -2547,7 +2551,7 @@
         "hp": 5,
         "edef": 10,
         "evasion": 10,
-        "detail": "Expend a charge to deploy this autoloader drone to any adjacent space. 1/round, one character adjacent to it may reload a Loading weapon as a quick action. It deactivates at the end of the scene."
+        "detail": "1/round, one character adjacent to it may reload a Loading weapon as a quick action. It deactivates at the end of the scene."
       }
     ],
     "description": "Autoloader drones are many-limbed machines that assist their team by loading ordnance, maintaining powerline hookups, and cycling magazine-fed weapons, in addition to many other physical tasks.",
@@ -2933,13 +2937,14 @@
     "source": "HA",
     "license": "NAPOLEON",
     "license_level": 2,
+    "effect": "Expend a charge to activate this stasis barrier, generating a line 4 barrier 4 spaces high in free spaces with at least one space adjacent to you.",
     "deployables": [
       {
         "type": "Deployable",
         "name": "Stasis Barrier",
         "activation": "Quick",
         "deactivation": "Quick",
-        "detail": "Expend a charge to activate this stasis barrier, generating a line 4 barrier 4 spaces high in free spaces with at least one space adjacent to you. It counts as an obstruction and provides soft cover, but doesn’t block line of sight.<br>When an attack is made against a character that benefits from this barrier’s soft cover, roll 1d6: on 4+, the attack is consumed by the barrier and has no effect whatsoever. The barrier lasts for the rest of the scene, or until you deactivate it as a quick action. This effect does not stack with Invisible.",
+        "detail": "Generate a line 4 barrier 4 spaces high in free spaces with at least one space adjacent to you. It counts as an obstruction and provides soft cover, but doesn’t block line of sight.<br>When an attack is made against a character that benefits from this barrier’s soft cover, roll 1d6: on 4+, the attack is consumed by the barrier and has no effect whatsoever. The barrier lasts for the rest of the scene, or until you deactivate it as a quick action. This effect does not stack with Invisible.",
         "tags": [
           {
             "id": "tg_invulnerable"
