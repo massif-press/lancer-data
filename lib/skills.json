@@ -32,7 +32,7 @@
     "name": "CHARM",
     "description": "Convince a receptive audience or use leverage (money, power, personal benefit) to get your way.",
     "detail": "To charm, you need a receptive audience, or some kind of promise of leverage (money, power, personal benefit, etc). You can use it when trying to smooth talk your way past guards, get someone on your side, sway a potential benefactor, talk someone down, perform diplomacy between two parties, or blatantly lie to someone. You can also use it when trying to impersonate someone. Charm won’t work on people that aren’t receptive (such as soldiers you are in a gunfight with) or that you don’t have leverage over (promises of safety, money, power, recompense, help, etc). These promises don’t necessarily have to be true but they have to have some weight with your target.",
-    "family": "int"
+    "family": "cha"
   },
   {
     "id": "sk_get_a_hold_of_something",
