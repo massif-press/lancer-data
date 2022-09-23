@@ -283,7 +283,7 @@
       }
     ],
     "core_system": {
-      "name": "FORTRESS",
+      "name": "Fortress",
       "active_name": "Fortress Protocol",
       "active_effect": "You deploy heavy stabilizers and your mech becomes more like a fortified emplacement than a vehicle. When activated, two sections of hard cover (line 2, Size 1) unfold from your mech, drawn in any direction. These cover sections have Immunity to all damage.<br>Additionally, the following effects apply while active:<ul><li>You become Immobilized.</li><li>You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.</li><li>When you Brace, you may take a full action on your next turn instead of just a quick action.</li><li>Any character that gains hard cover from you or your cover sections gains Immunity to Knockback, Prone, and all involuntary movement, and gains the benefits of Blast Plating.</li></ul>This system can be deactivated as a protocol. Otherwise, it lasts until the end of the current scene.",
       "use": "Encounter",
@@ -512,7 +512,7 @@
       }
     ],
     "core_system": {
-      "name": "WATCHDOG co-pilot",
+      "name": "WATCHDOG Co-Pilot",
       "description": "IPS-N security teams are no strangers to the dangers of ship-to-ship or ship-to-station boarding actions. Tight corridors, unstable gravity, dark environments, hard vacuum, and the potential dual threat of both organic and inorganic opposition make boarding actions some of the most statistically deadly engagement – according to IPS-N’s internal metrics, even the winning side should expect at least 30% casualties. Hoping to lessen the cognitive burden on pilots and any NHPs or comp/cons installed in their chassis, IPS-N developed the WATCHDOG co-pilot. The WATCHDOG is a simple subsentient partition: a flash-homunculus of aggregated intelligence generated from thousands of after-action reports from boarding actions, debriefings, and volunteer donors. Not an NHP, nor even a comp/con, the WATCHDOG is a robust tactical program similar to a smart weapon. That said, its ability to operate without cycling presents certain advantages: namely, these co-pilots have some capacity to learn and make best-guess predictions based on analysis of their pilots. WATCHDOGs tend to have plain personalities – to whatever extend they can be said to have one – and are a favorite of pilots looking for a no-nonsense attitude and crisp, efficient counsel.<br>The WATCHDOG system is currently under review by a joint USB/UDoJ-HR commission, but there has been no formal stay on production yet issued.",
       "active_name": "Hyper-Reflex Mode",
       "active_effect": "For the rest of this scene:<ul><li>If you have less than threat 3 with a ranged weapon, it increases to 3.</li><li>1/round, you may take an additional Overwatch reaction.</li><li>Any character you hit with Overwatch becomes Immobilized until the end of their next turn.</li></ul>",
@@ -1152,15 +1152,15 @@
     },
     "traits": [
       {
-        "name": "SCOURING SWARM",
+        "name": "Scouring Swarm",
         "description": "The Balor deals 2 kinetic to characters of its choice that start their turn grappled by or adjacent to it."
       },
       {
-        "name": "REGENERATION",
+        "name": "Regeneration",
         "description": "At the end of its turn, the Balor regains 1/4 of its total HP. When it takes stress or structure damage, this effect ceases until the end of its next turn."
       },
       {
-        "name": "SELF-PERPETUATING",
+        "name": "Self-Perpetuating",
         "description": "When you rest, the Balor regains full HP automatically and without REPAIRS."
       }
     ],
@@ -1207,7 +1207,7 @@
     },
     "traits": [
       {
-        "name": "LITURGICODE",
+        "name": "Liturgicode",
         "description": "The Goblin gains +1 accuracy on tech attacks.",
         "synergies": [
           {
@@ -1219,7 +1219,7 @@
         ]
       },
       {
-        "name": "REACTIVE CODE",
+        "name": "Reactive Code",
         "description": "Gain the Reactive Code reaction.",
         "actions": [
           {
@@ -1232,7 +1232,7 @@
         ]
       },
       {
-        "name": "FRAGILE",
+        "name": "Fragile",
         "description": "The Goblin receives +1 difficulty on Hull checks and saves.",
         "synergies": [
           {
@@ -1290,15 +1290,15 @@
     },
     "traits": [
       {
-        "name": "METASTATIC PARALYSIS",
+        "name": "Metastatic Paralysis",
         "description": "When an attack roll against the Gorgon lands on 1–2, it automatically misses and the attacker becomes Stunned until the end of their next turn."
       },
       {
-        "name": "GAZE",
+        "name": "Gaze",
         "description": "The Gorgon can take two reactions per turn, instead of one."
       },
       {
-        "name": "GUARDIAN",
+        "name": "Guardian",
         "description": "Adjacent allied characters may use the Gorgon for hard cover."
       }
     ],
@@ -1346,7 +1346,7 @@
     },
     "traits": [
       {
-        "name": "SYSTEM LINK",
+        "name": "System Link",
         "description": "When deployed, the Hydra’s Deployables and Drones gain +5 HP.",
         "bonuses": [
           {
@@ -1360,7 +1360,7 @@
         ]
       },
       {
-        "name": "SHEPHERD FIELD",
+        "name": "Shepherd Field",
         "description": "Drones, Deployables, and objects adjacent to the Hydra gain Resistance to all damage."
       }
     ],
@@ -1450,15 +1450,15 @@
     },
     "traits": [
       {
-        "name": "SLAG CARAPACE",
+        "name": "Slag Carapace",
         "description": "The Manticore has Resistance to Energy Damage and Burn."
       },
       {
-        "name": "UNSTABLE SYSTEM",
+        "name": "Unstable System",
         "description": "When destroyed, the Manticore explodes as per a reactor meltdown at the end of its next turn."
       },
       {
-        "name": "CASTIGATE THE ENEMIES OF THE GODHEAD",
+        "name": "Castigate the Enemies of the Godhead",
         "description": "When you rest or perform a Full Repair, you can push the Manticore into an unstable Castigation State (or bring it out of one). In this state, the Manticore explodes immediately when destroyed due to damage or reactor meltdown, vaporizing it and instantly killing you and any other passengers. Characters within burst 2 must succeed on an Agility save or take 8d6 explosive. On a success, they take half damage. This only takes place if you are physically present in the Manticore."
       }
     ],
@@ -1516,16 +1516,16 @@
     },
     "traits": [
       {
-        "name": "INVERT COCKPIT",
+        "name": "Invert Cockpit",
         "description": "You may Mount or Dismount the Minotaur for the first time each round as a free action. Additionally, the Minotaur doesn’t become Impaired when you Eject.",
         "use": "Round"
       },
       {
-        "name": "INTERNAL METAFOLD",
+        "name": "Internal Metafold",
         "description": "While inside the Minotaur, you can’t be harmed in any way, even if the Minotaur explodes or is destroyed."
       },
       {
-        "name": "LOCALIZED MAZE",
+        "name": "Localized Maze",
         "description": "Hostile characters cannot pass through a space occupied by the Minotaur for any reason, and must always stop moving when Engaged with it, regardless of Size."
       }
     ],
@@ -1581,10 +1581,10 @@
     "traits": [
       {
         "name": "¿%:?EXTR!UDE GUN",
-        "description": "GUN: GUN"
+        "description": "GUN: <b>GUN</b>"
       },
       {
-        "name": "BY THE WAY, I KNOW EVERYTHING",
+        "name": "By the Way, I Know Everything",
         "description": "When it would roll damage, the Pegasus can instead deal the average damage based on the number of dice rolled, as follows: 1d3 (2), 1d6 (4), 2d6 (7), 3d6 (11), 4d6 (14). This must be decided before rolling damage."
       }
     ],
@@ -1641,7 +1641,7 @@
     },
     "traits": [
       {
-        "name": "Heavy FRAME",
+        "name": "Heavy Frame",
         "description": "The Barbarossa can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
       },
       {
