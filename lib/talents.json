@@ -1447,12 +1447,16 @@
               "weapon"
             ],
             "weapon_types": [
-              "Ranged"
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus"
             ],
             "weapon_sizes": [
               "any"
             ],
-            "detail": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target.t"
+            "detail": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target."
           }
         ]
       },
