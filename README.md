@@ -21,7 +21,7 @@ Your content package is contained in a single-level folder that, at minimum, con
   "name": "My content package name",
   "author": "My name or organization",
   "description": "A short description of my LCP <i>HTML-enabled</i>",
-  "version": "1.0",
+  "version": "1.0"
 }
 ```
 
