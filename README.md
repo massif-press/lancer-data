@@ -25,6 +25,14 @@ Your content package is contained in a single-level folder that, at minimum, con
 }
 ```
 
+Optionally, you can include the following fields in your manifest:
+
+```json
+  "item_prefix": "example_prefix_",
+  "image_url": "URL to a thumbnail image",
+  "website": "Website URL to my LCP's source"
+```
+
 the `active` property is what COMP/CON uses to determine what installed packages are loaded. It's best to keep this as `false`.
 
 A working, but content-less, folder structure would look like this:
@@ -179,7 +187,7 @@ FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. Th
 {
   "id": string,
   "license_level": number, // set to zero for this item to be available to a LL0 character
-  "license_id": string, // reference to the Frame id of the associated license, relevant for variants
+  "license_id": string, // reference to the Frame id of the associated license; used to link variant frames to the main license
   "variant": string, // optional; name of the main frame license for which this frame is a variant
   "source": string, // must be the same as the Manufacturer ID to sort correctly
   "name": string,
