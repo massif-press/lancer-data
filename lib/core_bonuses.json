@@ -264,11 +264,7 @@
     "name": "Adaptive Reactor",
     "source": "HA",
     "effect": "When you Stabilize and choose to cool your mech, you may spend 2 Repairs to clear 1 stress damage.",
-    "description": "All Armory frames are designed with multiple failsafe systems, but VIP clients and high-tier citizenry have access to a special catalog. With dozens of options for over-engineering reactors, it’s easy to make sure a mech can keep running indefinitely.",
-    "bonuses": [{
-      "id": "cheap_stress",
-      "val": true
-    }]
+    "description": "All Armory frames are designed with multiple failsafe systems, but VIP clients and high-tier citizenry have access to a special catalog. With dozens of options for over-engineering reactors, it’s easy to make sure a mech can keep running indefinitely."
   },
   {
     "id": "cb_armory_sculpted_chassis",
