@@ -8,7 +8,7 @@
     "id": "env_extremecold",
     "name": "Extreme Cold",
     "description": "Local cultures have adapted to the frozen climate, but mechs and pilots quickly freeze without a nearby source of heat. Mechs that don’t move or Boost on their turn become Immobilized at the end of their turn. This lasts until they break free with a successful Hull save as a quick action. In addition, all mechs gain Resistance to Heat."
-  },    
+  },
   {
     "id": "env_extremeheat",
     "name": "Extreme Heat",
@@ -98,5 +98,5 @@
     "id": "env_holyworld",
     "name": "Holy World",
     "description": "This world is beautiful and lacks especially dangerous features, but the local population holds it sacrosanct. Damaging any natural object – rocks, trees, and pristine grasslands, for example – incurs the wrath of the residents."
-  }  
+  }
 ]

@@ -1,13 +1,13 @@
 [
   {
-  "id": "sitrep_standardcombat",
-  "name": "Standard Combat",
-  "pcVictory": "PCs defeat or route all enemy forces",
-  "enemyVictory": "PCs are defeated or retreat from battle",
-  "description": "A simple affair, with two sides facing off against each other until one of them is broken or destroyed."
+    "id": "sitrep_standardcombat",
+    "name": "Standard Combat",
+    "pcVictory": "PCs defeat or route all enemy forces",
+    "enemyVictory": "PCs are defeated or retreat from battle",
+    "description": "A simple affair, with two sides facing off against each other until one of them is broken or destroyed."
   },
   {
-  "id": "sitrep_control",
+    "id": "sitrep_control",
     "name": "Control",
     "description": "CONTROL missions require the PCs to maintain control of four Control Zones for six rounds. The zones might contain important locations like transmission towers, gun batteries, terminals, or hangars. At the end of each round, each side gains 1 point for each Control Zone they control. If one side controls all four Control Zones, they gain an additional +1 point.",
     "pcVictory": "The PCs have the highest score at the end of the sixth round",

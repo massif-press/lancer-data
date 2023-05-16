@@ -13,7 +13,7 @@
   },
   {
     "id": "ms_comp_con_class_assistant_unit",
-    "name": "Comp/Con-Class Assistant Unit",
+    "name": "COMP/CON-Class Assistant Unit",
     "type": "AI",
     "sp": 2,
     "tags": [
@@ -30,7 +30,7 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
-    "effect": "Your mech has a basic comp/con unit, granting it the AI tag. The comp/con can speak to you and has a personality, but, unlike an NHP, is not truly capable of independent thought. It is obedient to you alone.<br>You can give control of your mech to its comp/con as a protocol, allowing your mech to act independently on your turn with its own set of actions. Unlike other AIs, a mech controlled by a comp/con has no independent initiative and requires direct input. Your mech will follow basic courses of action (defend this area, attack this enemy, protect me, etc.) to the best of its ability, or will act to defend itself if its instructions are complete or it receives no further guidance. You can issue new commands at the start of your turn as long as you are within Range 50 and have the means to communicate with your mech. Comp/con units are not true NHPs and thus cannot enter cascade.",
+    "effect": "Your mech has a basic COMP/CON unit, granting it the AI tag. The COMP/CON can speak to you and has a personality, but, unlike an NHP, is not truly capable of independent thought. It is obedient to you alone.<br>You can give control of your mech to its COMP/CON as a protocol, allowing your mech to act independently on your turn with its own set of actions. Unlike other AIs, a mech controlled by a COMP/CON has no independent initiative and requires direct input. Your mech will follow basic courses of action (defend this area, attack this enemy, protect me, etc.) to the best of its ability, or will act to defend itself if its instructions are complete or it receives no further guidance. You can issue new commands at the start of your turn as long as you are within Range 50 and have the means to communicate with your mech. Comp/con units are not true NHPs and thus cannot enter cascade.",
     "description": "The GMS Companion/Concierge-Class Assistant Unit conforms to all galaxy-wide standards. These virtual assistants pass even the most rigid Turing-Null assessment criteria and are cleared to operate even in the absence of a pilot.",
     "license_id": ""
   },
@@ -346,9 +346,7 @@
     "effect": "Your mech has a propulsion system suitable for use in low or zero gravity and underwater environments. In those environments, you can fly and are not Slowed.",
     "synergies": [
       {
-        "locations": [
-          "move"
-        ],
+        "locations": ["move"],
         "detail": "Your mech has a propulsion system suitable for use in low or zero gravity and underwater environments. In those environments, you can fly and are not Slowed."
       }
     ],
@@ -370,9 +368,7 @@
     "effect": "You can fly when you Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling.",
     "synergies": [
       {
-        "locations": [
-          "boost"
-        ],
+        "locations": ["boost"],
         "detail": "You can fly when you Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling."
       }
     ],
@@ -394,9 +390,7 @@
     "effect": "You may choose to count any and all of your movement as flying; however, you take Size +1 Heat at the end of any of your turns in which you fly this way.",
     "synergies": [
       {
-        "locations": [
-          "move"
-        ],
+        "locations": ["move"],
         "detail": "You may choose to count any and all of your movement as flying; however, you take Size +1 Heat at the end of any of your turns in which you fly this way."
       }
     ],
@@ -417,15 +411,11 @@
     "effect": "You may Ram targets larger than you, and when you Grapple or Ram larger targets, you count as the same Size as the largest opponent. When you Grapple or Ram opponents of the same Size or smaller, you count as at least one Size larger. Additionally, your lifting and dragging capacity is doubled.",
     "synergies": [
       {
-        "locations": [
-          "ram"
-        ],
+        "locations": ["ram"],
         "detail": "You may Ram targets larger than you, and when you Ram larger targets, you count as the same Size as the largest opponent. When you Ram opponents of the same Size or smaller, you count as at least one Size larger."
       },
       {
-        "locations": [
-          "grapple"
-        ],
+        "locations": ["grapple"],
         "detail": "When you Grapple larger targets, you count as the same Size as the largest opponent. When you Grapple opponents of the same Size or smaller, you count as at least one Size larger."
       }
     ],
@@ -698,7 +688,7 @@
         "detail": "Expend a charge to fire this small, self-arming system onto an allied mech within range 5. They gain Overshield equal to your Grit +4. While they have this Overshield they gain Immunity to Impaired and Jammed."
       }
     ],
-    "description": "The IPS-N Aceso Stabilizer is a useful triage measure for any scoring and minor mechanical damage that is sustained in the course of combat engagement or negative environmental interaction. Thanks to its negligible processor demand, Aceso Stabilizers can even be controlled by comp/con units – this allows the pilot to concentrate on complex repairs or immediate threat neutralization.",
+    "description": "The IPS-N Aceso Stabilizer is a useful triage measure for any scoring and minor mechanical damage that is sustained in the course of combat engagement or negative environmental interaction. Thanks to its negligible processor demand, Aceso Stabilizers can even be controlled by COMP/CON units – this allows the pilot to concentrate on complex repairs or immediate threat neutralization.",
     "license_id": "mf_lancaster"
   },
   {
@@ -716,9 +706,7 @@
     "effect": "Your mech’s extended limbs, additional armor, redundant motor systems, and other reinforcements allow you to ignore difficult terrain.",
     "synergies": [
       {
-        "locations": [
-          "move"
-        ],
+        "locations": ["move"],
         "detail": "Your mech’s extended limbs, additional armor, redundant motor systems, and other reinforcements allow you to ignore difficult terrain."
       }
     ],
@@ -744,15 +732,11 @@
     "effect": "You can Brace while Grappling. When you do so, any grapples currently affecting you end.<br>Additionally, when you Brace, you gain the following benefits until the end of your following turn:<ul><li>Attacks against you receive +1 difficulty.</li><li>You can’t fail Agility or Hull saves or contested checks.</li><li>You gain Immunity to Knockback, Grapple, being knocked Prone, and being moved by any external force smaller than Size 5.</li></ul>",
     "synergies": [
       {
-        "locations": [
-          "grapple"
-        ],
+        "locations": ["grapple"],
         "detail": "You can Brace while Grappling."
       },
       {
-        "locations": [
-          "brace"
-        ],
+        "locations": ["brace"],
         "detail": "When you Brace, you gain the following benefits until the end of your following turn:<ul><li>Attacks against you receive +1 difficulty.</li><li>You can’t fail Agility or Hull saves or contested checks.</li><li>You gain Immunity to Knockback, Grapple, being knocked Prone, and being moved by any external force smaller than Size 5.</li></ul>"
       }
     ],
@@ -874,9 +858,7 @@
     "effect": "When you Ram, you deal 2 kinetic damage on hit, and you deal 10 AP kinetic damage when you Ram objects and terrain.",
     "synergies": [
       {
-        "locations": [
-          "ram"
-        ],
+        "locations": ["ram"],
         "detail": "When you Ram, you deal 2 kinetic damage on hit, and you deal 10 AP kinetic damage when you Ram objects and terrain."
       }
     ],
@@ -1131,9 +1113,7 @@
     "effect": "You treat all solid surfaces as flat ground for the purposes of movement; you can move across them normally instead of climbing, although you begin to fall if you are knocked Prone.",
     "synergies": [
       {
-        "locations": [
-          "move"
-        ],
+        "locations": ["move"],
         "detail": "You treat all solid surfaces as flat ground for the purposes of movement; you can move across them normally instead of climbing, although you begin to fall if you are knocked Prone."
       }
     ],
@@ -1194,16 +1174,8 @@
     "effect": "When you miss with a ranged attack roll, your next ranged attack roll gains +1 accuracy.",
     "synergies": [
       {
-        "locations": [
-          "weapon"
-        ],
-        "weapon_types": [
-          "Rifle",
-          "Cannon",
-          "Launcher",
-          "CQB",
-          "Nexus"
-        ],
+        "locations": ["weapon"],
+        "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
         "detail": "When you miss with a ranged attack roll, your next ranged attack roll gains +1 accuracy."
       }
     ],
@@ -1253,10 +1225,7 @@
     "effect": "Whenever you Boost or make a standard move, you project a holographic pattern around you, leaving dazzling afterimages that make it hard to discern your precise location: you count as Invisible the next time you’re attacked. You can only benefit from one instance of this effect at a time.",
     "synergies": [
       {
-        "locations": [
-          "move",
-          "boost"
-        ],
+        "locations": ["move", "boost"],
         "detail": "Whenever you Boost or make a standard move, you project a holographic pattern around you, leaving dazzling afterimages that make it hard to discern your precise location: you count as Invisible the next time you’re attacked. You can only benefit from one instance of this effect at a time."
       }
     ],
@@ -1384,9 +1353,7 @@
     "effect": "When you Brace, you become Invisible until the end of your next turn and may immediately move spaces equal to your Speed.",
     "synergies": [
       {
-        "locations": [
-          "Brace"
-        ],
+        "locations": ["Brace"],
         "detail": "When you Brace, you become Invisible until the end of your next turn and may immediately move spaces equal to your Speed."
       }
     ],
@@ -1584,7 +1551,7 @@
       {
         "activation": "Full Tech",
         "tech_attack": true,
-        "detail": "Make a tech attack against a character within  Sensors and line of sight. On a success, they take 2 heat, Lock On, and cannot benefit from soft cover until the Lock On is cleared; additionally, once before the start of your next turn, when an allied character hits your target, you may declare as a reaction that they have hit a weak spot. If it wasn’t already, the attack becomes a critical hit."
+        "detail": "Make a tech attack against a character within Sensors and line of sight. On a success, they take 2 heat, Lock On, and cannot benefit from soft cover until the Lock On is cleared; additionally, once before the start of your next turn, when an allied character hits your target, you may declare as a reaction that they have hit a weak spot. If it wasn’t already, the attack becomes a critical hit."
       }
     ],
     "description": "“Out, damned spot! Out, I say! – One, two. Why, then, ‘tis time to do’t. Hell is murky! – Fie, my lord, fie! A soldier, and afeard? What need we fear who knows it, when none can call our power to account?”<ul><li>Shakespeare, Macbeth, act 5, sc. 1.</li></ul>",
@@ -2724,7 +2691,7 @@
         "detail": "1/scene, expend a charge to automatically clear all heat at the end of your turn, venting it in a burst 2 wave. Characters within the affected area must succeed on an Engineering save or take 2 burn and be pushed outside the area (or as far as possible). Until the end of your next turn, characters within the affected area receive soft cover."
       }
     ],
-    "description": "AGNI was developed during the Hercynian Crisis using a combination of combat performance data recorded by extant subsentient artificial intelligences (weapons systems, comp/cons, co-pilot systems, tactic-minds, general combat data) and the modeled neural network of an Egregorian overmind captured and vivisected by the Union Science Bureau.<br>AGNI Prime was used to devise systems of heat management that have since been disseminated throughout core space, ensuring unparalleled heat processing, recycling, and shielding. Further developments into radiation shielding, omninet capability, and nanite control are forthcoming; meanwhile, AGNI clones have been optimized to support mech core systems.<br>Pilots report that AGNI clones are generally cold and efficient. An insignificant percentage have reported instances of memory recitation and command rejection, followed days later by total breakdown through attempted self-emancipation. Pilots are recommended to cycle their AGNI clones at least once every six standard months.",
+    "description": "AGNI was developed during the Hercynian Crisis using a combination of combat performance data recorded by extant subsentient artificial intelligences (weapons systems, COMP/CONs, co-pilot systems, tactic-minds, general combat data) and the modeled neural network of an Egregorian overmind captured and vivisected by the Union Science Bureau.<br>AGNI Prime was used to devise systems of heat management that have since been disseminated throughout core space, ensuring unparalleled heat processing, recycling, and shielding. Further developments into radiation shielding, omninet capability, and nanite control are forthcoming; meanwhile, AGNI clones have been optimized to support mech core systems.<br>Pilots report that AGNI clones are generally cold and efficient. An insignificant percentage have reported instances of memory recitation and command rejection, followed days later by total breakdown through attempted self-emancipation. Pilots are recommended to cycle their AGNI clones at least once every six standard months.",
     "license_id": "mf_genghis"
   },
   {
@@ -3201,32 +3168,16 @@
     "bonuses": [
       {
         "id": "range",
-        "damage_types": [
-          "Energy"
-        ],
-        "weapon_types": [
-          "Melee"
-        ],
-        "range_types": [
-          "Threat"
-        ],
+        "damage_types": ["Energy"],
+        "weapon_types": ["Melee"],
+        "range_types": ["Threat"],
         "val": 1
       },
       {
         "id": "range",
-        "damage_types": [
-          "Energy"
-        ],
-        "weapon_types": [
-          "Rifle",
-          "Cannon",
-          "Launcher",
-          "CQB",
-          "Nexus"
-        ],
-        "range_types": [
-          "Range"
-        ],
+        "damage_types": ["Energy"],
+        "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+        "range_types": ["Range"],
         "val": 5
       }
     ],
@@ -3410,44 +3361,20 @@
       {
         "name": "Thumper",
         "detail": "The attack gains Knockback 1 and deals Explosive damage.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Shock",
         "detail": "The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Mag",
         "detail": "The attack gains Arcing and deals Kinetic damage.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       }
     ],
     "description": "Gained from the <i>Walking Armory: Rank I</i> pilot talent.",
@@ -3478,89 +3405,41 @@
       {
         "name": "Thumper",
         "detail": "The attack gains Knockback 1 and deals Explosive damage.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Shock",
         "detail": "The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Mag",
         "detail": "The attack gains Arcing and deals Kinetic damage.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Hellfire",
         "detail": "The attack deals Energy damage and deals any bonus damage as Burn.",
         "cost": 2,
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Jager",
         "detail": "The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.",
         "cost": 2,
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Sabot",
         "detail": "The attack gains AP and deals Kinetic damage.",
         "cost": 2,
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       }
     ],
     "description": "Gained from the <i>Walking Armory: Rank II</i> pilot talent.",
@@ -3591,89 +3470,41 @@
       {
         "name": "Thumper",
         "detail": "The attack gains Knockback 1 and deals Explosive damage.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Shock",
         "detail": "The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Mag",
         "detail": "The attack gains Arcing and deals Kinetic damage.",
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Hellfire",
         "detail": "The attack deals Energy damage and deals any bonus damage as Burn.",
         "cost": 2,
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Jager",
         "detail": "The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.",
         "cost": 2,
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       },
       {
         "name": "Sabot",
         "detail": "The attack gains AP and deals Kinetic damage.",
         "cost": 2,
-        "allowed_sizes": [
-          "Main"
-        ],
-        "allowed_types": [
-          "cqb",
-          "rifle",
-          "launcher",
-          "cannon",
-          "nexus"
-        ]
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
       }
     ],
     "description": "Gained from the <i>Walking Armory: Rank III</i> pilot talent.",

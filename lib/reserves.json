@@ -1,13 +1,16 @@
-[{
+[
+  {
     "id": "reserve_skill",
     "name": "Skill Point",
     "type": "Bonus",
     "label": "Bonus",
     "description": "Add a Skill Point to gain or improve a skill, typically as part of the \"Get Focused\" Downtime Action.",
-    "bonuses": [{
-      "id": "skill_point",
-      "val": 1
-    }]
+    "bonuses": [
+      {
+        "id": "skill_point",
+        "val": 1
+      }
+    ]
   },
   {
     "id": "reserve_mechskill",
@@ -15,10 +18,12 @@
     "type": "Bonus",
     "label": "Bonus",
     "description": "Add a Mech Skill Point to add to your Pilot's HULL, AGILITY, SYSTEMS, or ENGINEERING rating.",
-    "bonuses": [{
-      "id": "mech_skill_point",
-      "val": 1
-    }]
+    "bonuses": [
+      {
+        "id": "mech_skill_point",
+        "val": 1
+      }
+    ]
   },
   {
     "id": "reserve_talent",
@@ -26,10 +31,12 @@
     "type": "Bonus",
     "label": "Bonus",
     "description": "Add a Talent Point to gain or improve a Pilot Talent.",
-    "bonuses": [{
-      "id": "talent_point",
-      "val": 1
-    }]
+    "bonuses": [
+      {
+        "id": "talent_point",
+        "val": 1
+      }
+    ]
   },
   {
     "id": "reserve_license",
@@ -37,10 +44,12 @@
     "type": "Bonus",
     "label": "Bonus",
     "description": "Add a License Point to advance or unlock a new License.",
-    "bonuses": [{
-      "id": "license_point",
-      "val": 1
-    }]
+    "bonuses": [
+      {
+        "id": "license_point",
+        "val": 1
+      }
+    ]
   },
   {
     "id": "reserve_corebonus",
@@ -48,10 +57,12 @@
     "type": "Bonus",
     "label": "Bonus",
     "description": "Add an additional CORE Bonus.",
-    "bonuses": [{
-      "id": "cb_point",
-      "val": 1
-    }]
+    "bonuses": [
+      {
+        "id": "cb_point",
+        "val": 1
+      }
+    ]
   },
   {
     "id": "reserve_access",
@@ -143,10 +154,12 @@
     "type": "Mech",
     "label": "Resource",
     "description": "Supplies that give a mech +2 REPAIR CAP.",
-    "bonuses": [{
-      "id": "repcap",
-      "val": 2
-    }]
+    "bonuses": [
+      {
+        "id": "repcap",
+        "val": 2
+      }
+    ]
   },
   {
     "id": "reserve_core_battery",
@@ -154,10 +167,12 @@
     "type": "Mech",
     "label": "Battery",
     "description": "An extra battery that allows a second use of a mech’s CORE SYSTEM.",
-    "bonuses": [{
-      "id": "core_power",
-      "val": 2
-    }]
+    "bonuses": [
+      {
+        "id": "core_power",
+        "val": 2
+      }
+    ]
   },
   {
     "id": "reserve_deployable_shield",
@@ -165,12 +180,14 @@
     "type": "Mech",
     "label": "Shield",
     "description": "A single-use deployable shield generator – a SIZE 1 deployable that grants soft cover to all friendly characters in a BURST 2 radius.",
-    "deployables": [{
-      "name": "Deployable Shield (Reserve)",
-      "type": "Deployable",
-      "size": 1,
-      "detail": "Grants soft cover to all friendly characters in a BURST 2 radius"
-    }]
+    "deployables": [
+      {
+        "name": "Deployable Shield (Reserve)",
+        "type": "Deployable",
+        "size": 1,
+        "detail": "Grants soft cover to all friendly characters in a BURST 2 radius"
+      }
+    ]
   },
   {
     "id": "reserve_redundant_repair",
@@ -178,11 +195,13 @@
     "type": "Mech",
     "label": "Resource",
     "description": "The ability to STABILIZE as a free action once per mission.",
-    "actions": [{
-      "name": "Redundant Repair",
-      "activation": "Free",
-      "detail": "STABILIZE as a free action."
-    }]
+    "actions": [
+      {
+        "name": "Redundant Repair",
+        "activation": "Free",
+        "detail": "STABILIZE as a free action."
+      }
+    ]
   },
   {
     "id": "reserve_systems_reinforcement",
@@ -190,10 +209,14 @@
     "type": "Mech",
     "label": "Resource",
     "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING.",
-    "synergies": [{
-      "locations": ["hase"],
-      "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
-    }]
+    "synergies": [
+      {
+        "locations": [
+          "hase"
+        ],
+        "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
+      }
+    ]
   },
   {
     "id": "reserve_smart_ammo",
@@ -201,10 +224,14 @@
     "type": "Mech",
     "label": "Ammo",
     "description": "All weapons of your choice can be fired as if they are SMART.",
-    "synergies": [{
-      "locations": ["weapon"],
-      "detail": "All weapons of your choice can be fired as if they are SMART"
-    }]
+    "synergies": [
+      {
+        "locations": [
+          "weapon"
+        ],
+        "detail": "All weapons of your choice can be fired as if they are SMART"
+      }
+    ]
   },
   {
     "id": "reserve_boosted_servos",
@@ -212,10 +239,14 @@
     "type": "Mech",
     "label": "Resource",
     "description": "IMMUNITY to the SLOWED condition.",
-    "synergies": [{
-      "locations": ["move"],
-      "detail": "Your mech has IMMUNITY to the SLOWED condition."
-    }]
+    "synergies": [
+      {
+        "locations": [
+          "move"
+        ],
+        "detail": "Your mech has IMMUNITY to the SLOWED condition."
+      }
+    ]
   },
   {
     "id": "reserve_jump_jets",
@@ -223,10 +254,14 @@
     "type": "Mech",
     "label": "Resource",
     "description": "During this mission your mech can FLY when moving, but must end movement on land.",
-    "synergies": [{
-      "locations": ["move"],
-      "detail": "Your mech can FLY when moving, but must end movement on land."
-    }]
+    "synergies": [
+      {
+        "locations": [
+          "move"
+        ],
+        "detail": "Your mech can FLY when moving, but must end movement on land."
+      }
+    ]
   },
   {
     "id": "reserve_scouting",
@@ -262,10 +297,14 @@
     "type": "Tactical",
     "label": "Skill/Action",
     "description": "Training or enhancement that provides +1 ACCURACY to a particular mech skill or action for the duration of this mission.",
-    "synergies": [{
-      "locations": ["other"],
-      "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
-    }]
+    "synergies": [
+      {
+        "locations": [
+          "other"
+        ],
+        "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
+      }
+    ]
   },
   {
     "id": "reserve_bombardment",
@@ -273,27 +312,29 @@
     "type": "Tactical",
     "label": "Resource",
     "description": "The ability to call in artillery or orbital bombardment once during mech combat (full action, RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage).",
-    "actions": [{
-      "name": "Bombardment",
-      "activation": "Full",
-      "detail": "Call in artillery or orbital bombardment:<br>RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage",
-      "range": [
-        {
-          "type": "Range",
-          "val": 30
-        },
-        {
-          "type": "Blast",
-          "val": 2
-        }
-      ],
-      "damage": [
-        {
-          "type": "Explosive",
-          "val": "3d6"
-        }
-      ]
-    }]
+    "actions": [
+      {
+        "name": "Bombardment",
+        "activation": "Full",
+        "detail": "Call in artillery or orbital bombardment:<br>RANGE 30 within line of sight, BLAST 2, 3d6 explosive damage",
+        "range": [
+          {
+            "type": "Range",
+            "val": 30
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "3d6"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "reserve_extended_harness",
