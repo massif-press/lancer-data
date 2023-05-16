@@ -1,5 +1,5 @@
 {
-  "name": "lancer-data",
+  "name": "@massif/lancer-data",
   "version": "3.1.1",
   "description": "Data for the LANCER TTRPG",
   "main": "index.js",
@@ -17,5 +17,12 @@
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "zip-lib": "^0.7.3"
-  }
+  },
+  "keywords": [
+    "lancer",
+    "compcon",
+    "comp/con",
+    "lancerrpg",
+    "massif"
+  ]
 }
