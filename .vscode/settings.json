@@ -1,8 +1,0 @@
-{
-  "eslint.enable": false,
-  "cSpell.ignoreWords": [
-    "cascadable",
-    "lockon"
-  ],
-  "cSpell.enabled": true
-}
