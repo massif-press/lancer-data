@@ -664,7 +664,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "BLACKBEARD",
+    "license": "Blackbeard",
     "license_level": 1,
     "on_crit": "Your target becomes Shredded until the end of the current turn.",
     "description": "A simple tactical-scale version of a logging tool, IPS-N’s chain axe is a serrated chainblade run off core power. The axe’s teeth are tungsten-tipped, hardened to chew through both hard and soft targets. Chain axes are effective weapons and utility tools that are often used by boarding parties to breach reinforced bulkheads.",
@@ -688,7 +688,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "BLACKBEARD",
+    "license": "Blackbeard",
     "license_level": 2,
     "effect": "This weapon ignores ranged penalties from Engaged, and deals 3 Kinetic damage to Grappled or Biological targets, instead of 1.",
     "description": "The IPS-N Bristlecrown Flechette Launcher uses a hive-analogous mechanism to project a total soft-target kill zone in a dome around the user, proactively denying hostile infantry-tier actions.",
@@ -718,7 +718,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "BLACKBEARD",
+    "license": "Blackbeard",
     "license_level": 2,
     "description": "IPS-N’s nanocarbon sword is a new spin on an old classic. Embedded nanosensors along the blade capture a full spectrum of data and transfer it to omninet storage banks for after-action review. Meanwhile, onboard software interprets the live feedback and adjusts the molecular composition of the blade edge in real time.",
     "license_id": "mf_blackbeard"
@@ -729,7 +729,7 @@
     "mount": "Main",
     "type": "Cannon",
     "source": "IPS-N",
-    "license": "DRAKE",
+    "license": "Drake",
     "license_level": 1,
     "profiles": [
       {
@@ -828,7 +828,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "DRAKE",
+    "license": "Drake",
     "license_level": 2,
     "on_hit": "The target must succeed on a Hull save or become Impaired until the end of their next turn.",
     "description": "Concussion missiles are fitted with overpressure-generating charges with low shatter and low incandescence – they’re meant to stun, deter, push back, and disorient, usually in tandem with a larger, more lethal attack.",
@@ -840,7 +840,7 @@
     "mount": "Superheavy",
     "type": "Cannon",
     "source": "IPS-N",
-    "license": "DRAKE",
+    "license": "Drake",
     "license_level": 3,
     "profiles": [
       {
@@ -936,7 +936,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "LANCASTER",
+    "license": "Lancaster",
     "license_level": 3,
     "effect": "This weapon deals 10AP energy to objects, cover, terrain, and the environment.",
     "description": "Plasma cutters were tools first: simple blades built to toggle and sustain a plasma sheath, making it easier to cut metal. Repeated ad hoc use of cutters as personal defense weapons against pirate boarding parties convinced IPS-N of the need for a mil-spec variant of the civilian tool – the Cutter, now in its second generation. The Cutter MkII feeds directly from the mech’s power core, with a port to attach power packs in case of cord severance. Although the cutting edge can be shortened to a knife length, its most popular setting is the “cutlass”, a medium-length option perfect for balancing reach and maneuverability in close quarters.",
@@ -970,7 +970,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "NELSON",
+    "license": "Nelson",
     "license_level": 1,
     "description": "A war pike is a simple weapon – a long haft, topped with a dense, slim point, meant to puncture armor. Early designs were derivative of mining pylons, but the modern war pike is a sturdy, balanced, and reliable weapon that’s perfect for a charge.",
     "license_id": "mf_nelson"
@@ -993,7 +993,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "NELSON",
+    "license": "Nelson",
     "license_level": 3,
     "on_crit": "Your target must succeed on a Hull save or be knocked Prone.",
     "description": "IPS-N’s line of power knuckles are another popular purchase for pilots who prefer to fight up close. Taking the form of anything from shaped studs to hyperdense knuckles, or a series of magnetically accelerated micro-rams, power knuckles amplify the already incredible hitting power of a mech.",
@@ -1030,7 +1030,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "RALEIGH",
+    "license": "Raleigh",
     "license_level": 1,
     "description": "The IPS-N hand cannon is a licensed version of GMS’s Type-I Pistol, adapted for a much heavier caliber. This modification requires the belt-fed system of the GMS build to be swapped for a cylinder or magazine-based system, depending on the specific model of hand cannon.",
     "license_id": "mf_raleigh"
@@ -1066,7 +1066,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "RALEIGH",
+    "license": "Raleigh",
     "license_level": 2,
     "description": "As with many of IPS-N’s classic weapons, the bolt thrower is descended from a civilian mining tool. It fires self-propelled explosive bolts, perfect for use in micro- and null-gravity as well as in-atmosphere.",
     "license_id": "mf_raleigh"
@@ -1095,7 +1095,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "RALEIGH",
+    "license": "Raleigh",
     "license_level": 3,
     "description": "A kinetic hammer is a simple tool, but a brutal one. Made up of a supermassive head fused to a long haft, the hammer carries enough force to create massively traumatic pressure waves upon landing a successful blow.",
     "license_id": "mf_raleigh"
@@ -1127,7 +1127,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "TORTUGA",
+    "license": "Tortuga",
     "license_level": 1,
     "description": "The Deck-Sweeper Automatic Shotgun is a belt-fed scattergun, a favorite of marine pilots aboard stations and capital ships. Its methodology is straightforward: charge, point, and fire. A single-barrel constriction allows for pneumatic absorption – dampening the effect of its incredible recoil – and its belt feeder is compatible with many types of shot-and-slug ammunition.",
     "license_id": "mf_tortuga"
@@ -1156,7 +1156,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "TORTUGA",
+    "license": "Tortuga",
     "license_level": 2,
     "on_attack": "Creates a cloud of smoke and detritus in the attack cone, providing soft cover in the affected area that lasts until the end of your next turn.",
     "description": "The Daisy Cutter is an effective weapon – if outdated – that’s still favored by many marine pilots. Essentially, it’s a massive shotgun; the pilot loads a charge into the gun’s breech, drops a packed sabot down the barrel, aims, and fires a hellfire cloud of flechette darts, bearings, and ignited magnesium strips, guaranteed to clear any deck on which it’s been fired.",
@@ -1185,7 +1185,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "TORTUGA",
+    "license": "Tortuga",
     "license_level": 2,
     "on_crit": "Your target must succeed on a Hull save or become Stunned until the end of their next turn.",
     "description": "Modified originally from blast-mining equipment, the catalytic hammer (colloquially, the “pilebunker”) has since been refined into a formidable melee weapon. When fired, a charge propels the hammer – a solid cylinder with a spike on one end – through a short barrel, impacting with enormous kinetic force. Standard hammer heads are smooth to allow for easy extraction from targets, but they can be detached and replaced if retrieval is impossible. Any installation of a catalytic hammer necessitates superstructure reinforcement to allow for sufficient energy dispersal.",
@@ -1209,7 +1209,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "VLAD",
+    "license": "Vlad",
     "license_level": 1,
     "on_attack": "You also attack all characters in a Line between you and your target. You take 1 heat for each target past the first.",
     "description": "The impact lance is a mil-spec variant of a common mining tool: the single-use chemical survey laser. IPS-N’s military variant mounts a series of impact lances on a mech’s brachial or thoracic carriages, leaving its manipulators free to field other weapons and systems. It can be wired directly into a chassis’ core, or charged with disposable chemical batteries.<br>The lance array fires for a microsecond, burning through its stored charge to produce an intense burst of light that stabs out in a tight, pulsed beam capable of searing through meters of hardened bulkhead.",
@@ -1243,7 +1243,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "VLAD",
+    "license": "Vlad",
     "license_level": 2,
     "on_hit": "Targets must succeed on a Hull save or become Immobilized until the end of their next turn.",
     "description": "The Impaler’s noncombustible, sabot-jacketed two-stage macroflechettes can pierce even the heaviest armor. Once catapulted from its launcher, the sabot disengages on approach to its target and triggers a second stage – internal propulsion drives the macroflechette forward with incredible velocity. Over-penetration is certain against soft targets; IPS-N advises firing this weapon only when the area behind the target is clear of allies or noncombatants.",
@@ -1279,7 +1279,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "VLAD",
+    "license": "Vlad",
     "license_level": 3,
     "effect": "When attacking a character that is Prone, Immobilized, or Stunned, this weapon’s Overkill tag does an extra +1d6 bonus damage each time it activates. This can activate indefinitely if the new bonus die result is a 1, triggering Overkill again.",
     "description": "The combat drill is a brutal close-combat weapon, powered by a massive external catalyst pack. The bit is tipped with microplasmatic projectors designed to pre-treat the target and ensure drill penetration.",
@@ -1303,7 +1303,7 @@
       }
     ],
     "source": "SSC",
-    "license": "BLACK WITCH",
+    "license": "Black Witch",
     "license_level": 1,
     "on_hit": "All characters within the affected area must succeed on a Hull save or be pulled 1d3+1 spaces toward you, or as close as possible.",
     "description": "SSC’s magnetic cannon is a first from the Exotic Materials Group: an aperture-focused electromagnetic projection beam that uses intense pulses of magnetic energy to disrupt and damage hardware. Targets caught in the beam of a magnetic cannon suffer additional damage to their software as massive systemic stress is inflicted on sensitive components.",
@@ -1339,7 +1339,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DEATH’S HEAD",
+    "license": "Death’s Head",
     "license_level": 2,
     "description": "The Vulture Designated Marksman Rifle (DMR) is SSC’s core battle rifle. Reliable, available in dozens of configurations and calibers, and fed by box, drum, or belt, the Vulture is a popular armament across a wide range of mechs.",
     "license_id": "mf_deaths_head"
@@ -1374,7 +1374,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DEATH’S HEAD",
+    "license": "Death’s Head",
     "license_level": 3,
     "description": "Railguns are simple, elegant weapons. With magnetically accelerated projectiles and no moving parts, they are effective in any theater and entirely self-contained within disposable units. This efficacy comes at a cost: railguns have massive power draw, making it necessary for wielders to carry core-charged auxiliary power translation packs.",
     "license_id": "mf_deaths_head"
@@ -1402,7 +1402,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DUSK WING",
+    "license": "Dusk Wing",
     "license_level": 1,
     "effect": "This weapon does not attack allied characters caught in its area of effect; instead, it shrouds them in a field of coruscating energy that throws off targeting systems, giving them soft cover until the end of their next turn.",
     "description": "“We made first contact maybe an hour after breaching the vault. I remember nothing of it. I’m told most of my squad was killed outright; all I remember is light – brilliant – and a lightness in my own being.<br>“I do believe that I died in that moment, and yet I’m here, and I can’t square these two realities. Something has gone wrong, something has gone wrong, something has gone–”",
@@ -1438,7 +1438,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DUSK WING",
+    "license": "Dusk Wing",
     "license_level": 2,
     "on_crit": "Target becomes Impaired until the end of their next turn.",
     "description": "“Yes, they could die. We killed many of them – blew them away with burst launchers and cannons. I don’t think they mattered to it. Not like insects; not like that… there’s still a use for insects: as food, as necessary components in an ecosystem. Their deaths slowed us, but it didn’t command them to slow us. Even when we breached the last chamber and saw it, I don’t even think it recognized we were there.”",
@@ -1468,7 +1468,7 @@
       }
     ],
     "source": "SSC",
-    "license": "METALMARK",
+    "license": "Metalmark",
     "license_level": 2,
     "description": "Rail rifles are popular weapons for use in all theaters, but they are the only choice for pilots operating in atmospheres made up of highly combustible gases. They use a line of cascading electromagnets to accelerate small projectiles at tremendous speeds, firing without the need for combustion.<br>Like other rail weapons, rail rifles are quiet in comparison to their traditional counterparts, although massive power requirements make it difficult to mask their energy signatures.",
     "license_id": "mf_metalmark"
@@ -1505,7 +1505,7 @@
       }
     ],
     "source": "SSC",
-    "license": "METALMARK",
+    "license": "Metalmark",
     "license_level": 2,
     "description": "Shock knives are short, powered blades designed for integration with Shock Wreaths, a popular post-fab modification. The knives are custom-sculpted by SSC’s Terashima artisan enclave, each one bearing the unique hash-stamp of its designer. Part of SSC’s LUX-Iconic line – a civilian-accessible track of the BELLA CIAO line – each shock knife print code allows only a single use. If lost, pilots must submit an apology and request in writing explaining the circumstances of the loss in order to receive another code.",
     "license_id": "mf_metalmark"
@@ -1533,7 +1533,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MONARCH",
+    "license": "Monarch",
     "license_level": 1,
     "effect": "This weapon can attack two targets at a time.",
     "description": "“It was a duel. This is why they were made: to duel, and in that combat, to shake the pillars of the universe.” — “Notes for Young John”,  Ministrations of the Master Teacher",
@@ -1568,7 +1568,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MONARCH",
+    "license": "Monarch",
     "license_level": 2,
     "description": "Gandiva missiles are a reliable mainstay from Smith-Shimano’s BELLA CIAO line. Like the heavier Pinaka, the Gandiva is equipped with jet-assisted midflight repositioning systems, enhancing target navigation in rapidly changing battlefield environments. The Gandiva’s delivery platform is administered by a hivemind COMP/CON drone AI, giving it the capacity to learn from each right-of-launch experience.",
     "sp": 1,
@@ -1605,7 +1605,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MONARCH",
+    "license": "Monarch",
     "license_level": 3,
     "effect": "Attacks with this weapon create up to two blast 1 areas, which cannot overlap.<br>You may also delay the impact of attacks made with this weapon. Choose the target area(s), which become visible to all characters: the missiles land at the end of the next round, after all characters have acted, and deal 3d6 explosive damage instead of 2d6, but you become Slowed until the end of your next turn.",
     "description": "Pinaka missiles are massive, two-stage missiles typically mounted along a mech’s spine or carried, disassembled, to be launched from a brachial mount. The Pinaka was originally adapted from ship-to-ship missiles; as such, their second stage uses jet-assist repositioning for midflight orientation.",
@@ -1634,7 +1634,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MOURNING CLOAK",
+    "license": "Mourning Cloak",
     "license_level": 1,
     "on_crit": "You may teleport 2 spaces in any direction after the attack resolves.",
     "description": ">//[Am I alone here?]<br>>//[[No. There is only an absence of you. It is very busy here, but you cannot see it]]<br>— DHIYED fragment tablet 1.3",
@@ -1663,7 +1663,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MOURNING CLOAK",
+    "license": "Mourning Cloak",
     "license_level": 1,
     "description": "Intended for use as force multipliers in close-range engagements, Vijaya rockets are miniaturized rockets launched from a drum-fed launcher. On detonation, the rockets’ shaped charges project the blast forward, away from the user.",
     "license_id": "mf_mourning_cloak"
@@ -1691,7 +1691,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MOURNING CLOAK",
+    "license": "Mourning Cloak",
     "license_level": 3,
     "on_crit": "Deal +1d6 bonus damage.",
     "description": "The variable sword is a Smith-Shimano hallmark: a length of razor-sharp molecular wire attached to a handle and locked in place by a magnetic field, variable swords are invisible to the naked eye until they cut into their target. Designed in the early days of interstellar travel, variable swords were meant to allow for the precise gathering of samples, while also reducing the overall burden on a mech’s core.",
@@ -1723,7 +1723,7 @@
       }
     ],
     "source": "SSC",
-    "license": "SWALLOWTAIL",
+    "license": "Swallowtail",
     "license_level": 2,
     "description": "The Oracle Indirect Light Machine Gun (designated O/LMG-I) packs a subsentient, high-volume DOWNPOUR static quad-barrel system into a single cylinder typically installed on the dorsal panel of a chassis. Paired with a firing system, the Oracle is capable of directing persistent defilade-ignorant kinetic fire at targets.",
     "sp": 1,
@@ -1752,7 +1752,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "BALOR",
+    "license": "Balor",
     "license_level": 3,
     "on_crit": "Pull your target to a free space adjacent to you, or as close as possible.",
     "description": "Using swarm-coding and legion directives, HORUS collectivists created a framework to organize a swarm of nanites into a whip-like weapon. Nanobot whips can retract into their base blister for stowing, detach in melee combat to restrain nearby enemies, and return to their base unit when summoned.",
@@ -1789,7 +1789,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "BALOR",
+    "license": "Balor",
     "license_level": 3,
     "description": "SWARM/HIVE nanites are among the more insidious weapons produced by HORUS: dispatched in maniples – single “swarm” units carrying enough nanites to fill a square meter – SWARM/HIVE nanites combine the systemic invasion properties of BOOST/HIVE code with the aggressive consumption of a CONSUME/HIVE maniple. Launched from mounted blisters, SWARM/HIVE nanite maniples fall upon their targets as great clouds of teeth, infiltrating sensitive compartments and modules before consuming any organic and inorganic material they touch.",
     "license_id": "mf_balor"
@@ -1821,7 +1821,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GOBLIN",
+    "license": "Goblin",
     "license_level": 1,
     "effect": "Instead of using any kind of trigger mechanism, this weapon automatically scans for target locks, firing spinning, razor-sharp disks upon successful IDs. Gain the Autonomous Assault reaction, which is the only way you can attack with the Autopod",
     "actions": [
@@ -1856,7 +1856,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GORGON",
+    "license": "Gorgon",
     "license_level": 3,
     "effect": "Gain the Snicker-Snack reaction, which is the only way you can attack with this weapon.",
     "actions": [
@@ -1897,7 +1897,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "HYDRA",
+    "license": "Hydra",
     "license_level": 1,
     "on_attack": "Choose this weapon’s damage type.",
     "description": "Ghoul nexuses command some of the largest viable drones in modern combat. These drones are slightly smaller than an average human—metal cylinders bristling with hardpoints suitable for most infantry-level anti-mech weapons. Propelled by VTOL/hover-capable jet systems, Ghoul drones are fearsome, all-theater autonomous units that are difficult to track and take down.",
@@ -1926,7 +1926,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "HYDRA",
+    "license": "Hydra",
     "license_level": 2,
     "effect": "This weapon may be used to attack as normal, or deployed as a Drone",
     "deployables": [
@@ -1973,7 +1973,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "HYDRA",
+    "license": "Hydra",
     "license_level": 3,
     "on_attack": "You can make a second attack with this weapon at the start of your next turn as a protocol. This secondary attack can’t deal bonus damage, and doesn't trigger additional secondary attacks.<br>You may center this weapon’s attack on either yourself or any of your Drones within Sensors.",
     "actions": [
@@ -2014,7 +2014,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MANTICORE",
+    "license": "Manticore",
     "license_level": 1,
     "description": "“Burn, thou fiend, before the fire of the Eye of RA!”",
     "license_id": "mf_manticore"
@@ -2043,7 +2043,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MANTICORE",
+    "license": "Manticore",
     "license_level": 2,
     "on_hit": "You may also make a secondary attack against a different character within range 3 of the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat, and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon.",
     "description": "“Fire be upon thee, APEP! Thy flesh is seared from thy bones; The Lord of the Duat will never enable thy shade to rise again!”",
@@ -2078,7 +2078,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "PEGASUS",
+    "license": "Pegasus",
     "license_level": 1,
     "description": "“Smart weapon” is a broad term that describes any and all weapons capable of interacting with onboard systems in order to boost their combat efficacy. Smartguns are weapons that come pre-loaded with companion software and the necessary hardware in order to interact with targeting systems and host NHPs. A popular addition to many HORUS mechs, smart weapons make for reliable kinetic delivery systems.",
     "sp": 2,
@@ -2106,7 +2106,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "PEGASUS",
+    "license": "Pegasus",
     "license_level": 2,
     "effect": "This horrifying weapon has no basic form; it constantly contorts itself into different shapes, mimicking the weapons of other combatants. It counts as all ranged weapon types simultaneously (e.g., CQB, Rifle, etc.), but it can’t take Mods or benefit from core bonuses, although it still benefits from talents as normal.<br>At the start of combat, roll 3d20 and note the results in order: X, Y, and Z. X is its starting base Range (before modifications from talents). At the start of each of your turns after the first, the mimic gun cycles to the next result, taking that as its base Range. After Z, it cycles back to X.<br>The mimic gun does kinetic equal to 1 + half of its current base Range.<br>You may provoke the mimic gun as a full action, rolling a new set of 3d20.",
     "actions": [
@@ -2139,7 +2139,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "PEGASUS",
+    "license": "Pegasus",
     "license_level": 3,
     "actions": [
       {
@@ -2159,7 +2159,7 @@
     "mount": "Superheavy",
     "type": "Cannon",
     "source": "HA",
-    "license": "BARBAROSSA",
+    "license": "Barbarossa",
     "license_level": 3,
     "profiles": [
       {
@@ -2249,7 +2249,7 @@
       }
     ],
     "source": "HA",
-    "license": "GENGHIS",
+    "license": "Genghis",
     "license_level": 1,
     "description": "Between the thick arboreal environment of Hercynia, the swarm tactics of the Egregorians, and the ineffectual performance of slug ammunition, the need for wide-effect weapons was apparent. GMS quick developed the Krakatoa – a thermobaric flamethrower – and disseminated it to affiliates. The Krakatoa was quickly adopted by Union’s Marine Expeditionary Forces, seeing heavy use in the depths of the Hercynian continental jungles thanks to its stability, reliability, and stopping power.<br>Later reworked and adopted by the Armory following the resolution of the Hercynian Crisis, the Krakatoa has become a popular tool for the creation of area-of-denial firebreaks.",
     "license_id": "mf_genghis"
@@ -2286,7 +2286,7 @@
       }
     ],
     "source": "HA",
-    "license": "GENGHIS",
+    "license": "Genghis",
     "license_level": 3,
     "effect": "Can be fired as Cone 7 <i>or</i> Line 10",
     "on_attack": "White-hot flames continue to burn in 3 free spaces of your choice within the affected area, lasting for the rest of the scene. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage.",
@@ -2321,7 +2321,7 @@
       }
     ],
     "source": "HA",
-    "license": "ISKANDER",
+    "license": "Iskander",
     "license_level": 1,
     "description": "The stub cannon is a supercompact rotary cannon – short-range, but suitable for integration into hardpoints and manipulators.",
     "license_id": "mf_iskander"
@@ -2345,7 +2345,7 @@
       }
     ],
     "source": "HA",
-    "license": "ISKANDER",
+    "license": "Iskander",
     "license_level": 2,
     "on_attack": "Characters within the affected area must succeed on a Hull save or take 1d6 energy damage and be pulled as close to the center of the blast possible. This weapon cannot be modified or benefit from core bonuses.",
     "description": "“The complex negotiations of gravity and time, shattered in an instant by a machine that can pluck waves like a player strums the strings of a guitar.<br>We’ve weaponized the force that holds all things in its embrace. What could go wrong?”",
@@ -2388,7 +2388,7 @@
       }
     ],
     "source": "HA",
-    "license": "NAPOLEON",
+    "license": "Napoleon",
     "license_level": 3,
     "description": "The Displacer is the result of ongoing blinkspace exposure tests and refinement of standard interstellar travel methods. In terms of appearance, the Displacer could be mistaken for a conventional energy rifle, but it requires a massive secondary, dorsal-mounted reactor: when fired, the Displacer identifies a bubble of local space (size and location determined on an ad hoc basis by the user) and snaps it into blinkspace. The destination of the bubble is unknown, but the effect is dramatic: anything inside simply ceases to exist in this dimension, transported somewhere in the void of blinkspace. The Displacer makes no sound when fired, but the sudden and necessary venting of its power supply is tremendous; similarly, the heatwave of its backblast vent is deadly to any unshielded personnel exposed to it.",
     "license_id": "mf_napoleon"
@@ -2416,7 +2416,7 @@
       }
     ],
     "source": "HA",
-    "license": "SALADIN",
+    "license": "Saladin",
     "license_level": 1,
     "effect": "The final attack roll for this weapon can never be affected by difficulty.",
     "description": "Developed following costly urban and naval boarding engagements in the Interest War, Shatterhead Colony Missiles are now a standard part of the arsenal fielded by Armory interdiction teams. When they reach an optimal distance, Shatterheads break open in a burst of high-catalyst fuel to reveal a cluster of small thermobaric pellets that spread out and ignite, choking the affected area with flame. The effect overloads energy shielding and saturates cover, though only a small percent of the projectiles actually reach their target.",
@@ -2451,7 +2451,7 @@
       }
     ],
     "source": "HA",
-    "license": "SHERMAN",
+    "license": "Sherman",
     "license_level": 1,
     "description": "Laser rifles contain a series of apertures and lenses that amplify and focus light into tight beams, sometimes visible, that heat the zone of impact for long enough to turn it into plasma. The SOL-Pattern Laser Rifle consistently outputs 3.5 petawatts, pulsed, but can also project a steady beam at lower power levels. The SOL is entirely self-contained but can be patched into a mech’s reactor core for emergency recharge.<br>Although some laser rifles double as communications and data-transfer devices, the SOL is strictly suitable for combat applications.",
     "license_id": "mf_sherman"
@@ -2484,7 +2484,7 @@
       }
     ],
     "source": "HA",
-    "license": "SHERMAN",
+    "license": "Sherman",
     "license_level": 2,
     "description": "The Harrison Armory ANDROMEDA-Pattern Heavy Laser Rifle scales up the SOL by half, adding a second projector that can fire independently, synchronized, or in alternating patterns and wavelengths with the primary projector. The effect overwhelms most shields, but the power draw necessary makes this weapon impractical on platforms without the necessary heat reduction and dispersal to manage the incredible cost.",
     "license_id": "mf_sherman"
@@ -2520,7 +2520,7 @@
       }
     ],
     "source": "HA",
-    "license": "SHERMAN",
+    "license": "Sherman",
     "license_level": 3,
     "on_attack": "If you’re in the Danger Zone, create a cone 3 backblast of burning plasma in the opposite direction to the attack. Characters within the affected area must succeed on an Engineering save or take 4 burn and 2 heat. Until the start of your next turn, the affected area provides soft cover.",
     "description": "Tachyon lances are the weaponized results of joint IPS-N and Harrison Armory experiments into faster-than-light travel. Rendered obsolete by subsequent developments in blinkspace travel (and the difficulty of ensuring corporeal passenger survival), the Armory’s tachyon accelerators were mothballed until Think Tank engineers realized their potential application as weapons. Tachyon lances project tachyon particles – essentially subatomic localized objects – faster than light toward their targets. These particles are impossible to perceive optically, and because they travel faster than light, can’t be seen or evaded. Although the particles are tiny, they travel with colossal speed and energy. The damage a tachyon lance deals to its target – should it hit – is unparalleled.",
@@ -2557,7 +2557,7 @@
       }
     ],
     "source": "HA",
-    "license": "TOKUGAWA",
+    "license": "Tokugawa",
     "license_level": 1,
     "on_hit": "Make a secondary attack against all characters within burst 1 of the target. These attacks can’t deal bonus damage, and don’t trigger the Annihilator’s heat cost or secondary attacks.",
     "description": "Harrison Armory is known to employ somewhat unconventional development methods: tactical solutions are theorized and designed in the field as often as they are in the lab, with the former often outperforming the latter. The Annihilator’s name comes from pilots’ slang for a jury-rigged weapon first improvised in the Bradbury Rebellion, when desperate resistance pilots found a way to shunt the incredible waste heat from their reactors into a directed blast.",
@@ -2594,7 +2594,7 @@
       }
     ],
     "source": "HA",
-    "license": "TOKUGAWA",
+    "license": "Tokugawa",
     "license_level": 2,
     "description": "The Torch is a potent weapon: a heavy crescent-bladed plasma cutter, powered straight from a chassis’ reactor. Torches generally project as axes, though their blades can be changed to a range of other shapes. A common weapon in CQB theaters, the torch has lately become a status symbol among officers, carried by many alongside a smaller auxiliary weapon.",
     "license_id": "mf_tokugawa"
