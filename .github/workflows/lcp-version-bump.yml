@@ -1,0 +1,10 @@
+# This workflow calls an org-level reusable workflow for incrementing LCP and NPM package versions.
+
+name: LCP Version Bump
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-bump-version-tag:
+    uses: massif-press/.github/workflows/bump-version-tag.yml@master
