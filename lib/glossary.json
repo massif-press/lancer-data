@@ -120,11 +120,11 @@
     "description": "When characters end their turn in dangerous terrain or move into it for the first time in a round, they must make an ENGINEERING check. On a failure, they take 5 damage – kinetic, energy, explosive, or burn, depending on the hazard. Each character only needs to make one such check per round."
   },
   {
-    "name": "Lifting And Dragging",
+    "name": "Lifting and Dragging",
     "description": "Mechs can drag characters or objects up to twice their SIZE but are SLOWED while doing so. They can also lift characters or objects of equal or lesser SIZE overhead but are IMMOBILIZED while doing so. While dragging or lifting, characters can’t take reactions. The same rules apply to pilots and other characters on foot, but they can’t drag or lift anything above SIZE 1/2.<br><br>While flying, mechs cannot carry characters or objects with a total SIZE larger than SIZE 1/2 -- there's just not enough thrust."
   },
   {
-    "name": "Jumping And Climbing",
+    "name": "Jumping and Climbing",
     "description": "Characters with legs can jump instead of their standard move. They may jump horizontally, moving half their speed in a straight line and ignoring obstructions at ground level that they could jump over (such as pits or gaps), or they may can jump vertically, moving 1 space adjacent and moving up by spaces equivalent to their SIZE. For example, a SIZE 1 mech could jump up to 1 space high, and 1 space over. Characters that jump and end the jump mid air automatically fall at the end of the move (see below).<br><br>Like moving through difficult terrain, characters climb at half their usual SPEED – each space moved is equivalent to moving 2 spaces normally. A successful HULL or AGILITY check might be required to climb particularly difficult surfaces without falling."
   },
   {

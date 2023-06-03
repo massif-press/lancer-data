@@ -1,14 +1,14 @@
 [
   {
     "id": "sk_act_unseen_or_unheard",
-    "name": "Act Unseen Or Unheard",
+    "name": "Act Unseen or Unheard",
     "description": "Get somewhere or do something without detection.",
     "detail": "Get somewhere or do something without being detected, but not necessarily with speed. Hide, sneak, or move quietly. Infiltrate a facility while avoiding security, patrols, or cameras. Perform a quick action or maneuver without being seen or heard, such as picking a pocket, unholstering your gun, or cheating at cards. Wear a disguise.",
     "family": "dex"
   },
   {
     "id": "sk_apply_fists_to_faces",
-    "name": "Apply Fists To Faces",
+    "name": "Apply Fists to Faces",
     "description": "Fight in open, brutal unarmed combat.",
     "detail": "Punch someone in the face, or alternately fight in open, brutal unarmed combat, whether it’s a fist fight, martial arts duel, or a huge brawl. This is never subtle, never clean, and probably causes a lot of noise.",
     "family": "str"
@@ -36,7 +36,7 @@
   },
   {
     "id": "sk_get_a_hold_of_something",
-    "name": "Get A Hold Of Something",
+    "name": "Get a Hold of Something",
     "description": "Acquire temporary or permanent allies, assets, or connections through wealth or social influence.",
     "detail": "Acquire useful allies, assets, or connections through wealth or social influence. This could be permanent (buying it or receiving it) or temporary (renting or borrowing help or supplies, etc), and might be harder or easier depending on how much you want to use it. This can’t be used for something that’s normally gated by license level (like mech parts) but could be used for aid, supplies, information, food materials, soldiers, or anything else that has more narrative impact. Typically this is acquired by buying it from a market or requisitioning it from a parent organization.",
     "family": "cha"
@@ -50,14 +50,14 @@
   },
   {
     "id": "sk_hack_or_fix",
-    "name": "Hack Or Fix",
+    "name": "Hack or Fix",
     "description": "Repair a device or faulty system; alternatively, hack it wide open, or totally wreck, disable or sabotage it.",
     "detail": "Repair a device or faulty system. Alternately, hack it wide open, or totally wreck, disable or sabotage it. You can use this for hacking or safeguarding electronic systems, such as electronic door locks, computer systems, omninet webs, or NHP coffins.",
     "family": "int"
   },
   {
     "id": "sk_invent_or_create",
-    "name": "Invent Or Create",
+    "name": "Invent or Create",
     "description": "Invent new devices, tools, or approaches to problems.",
     "detail": "Generally speaking, you need tools and supplies to invent or create something successfully. Use this with many downtime actions to work on projects. You can also use it in the spur of the moment to invent new devices, tools, or approaches to something (improvised explosives, gear, disguises, or some similar).",
     "family": "int"
@@ -71,7 +71,7 @@
   },
   {
     "id": "sk_lead_or_inspire",
-    "name": "Lead Or Inspire",
+    "name": "Lead or Inspire",
     "description": "Give an inspiring speech, or motivate a group of people into action.",
     "detail": "Give an inspiring speech, or motivate a group of people into action. Administer or run an organization efficiently or effectively, such as a company, a ship’s crew, a group of colonists or a mining venture. Effectively command a platoon of soldiers in battle, or (perhaps) an entire army.",
     "family": "cha"
@@ -92,7 +92,7 @@
   },
   {
     "id": "sk_read_a_situation",
-    "name": "Read A Situation",
+    "name": "Read a Situation",
     "description": "Look for subtext, motives, or threats in a situation or person.",
     "detail": "Look for subtext, motive, or threat in a situation or person, often social situations. Use your intuition to learn someone’s motivation, learn who is really in charge, or who is about to do something rash or stupid. Get a gut feeling about a situation or person. Sense if someone is lying to you.",
     "family": "int"
@@ -148,7 +148,7 @@
   },
   {
     "id": "sk_word_on_the_street",
-    "name": "Word On The Street",
+    "name": "Word on the Street",
     "description": "Get gossip, news, or hearsay from the streets, or from a particular social scene.",
     "detail": "Get gossip, news, or hearsay from the streets. What you get depends on what ‘streets’ you are getting word from (high society, low society, hearsay, military chatter, etc). This probably takes a lot less time than investigating something in detail, but the information might be more qualitative or colored by opinion (sometimes that might be useful). You can always learn where the information came from or who to go to next.",
     "family": "cha"
