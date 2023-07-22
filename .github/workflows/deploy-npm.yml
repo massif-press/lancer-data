@@ -1,0 +1,14 @@
+# This workflow will call org-level reusable workflows for deploying an NPM package to npmjs.com.
+
+name: Deploy NPM
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+
+jobs:
+  call-npm-publish:
+    uses: massif-press/.github/.github/workflows/npm-publish.yml@master
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

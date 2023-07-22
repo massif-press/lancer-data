@@ -4,7 +4,8 @@
   "description": "Data for the LANCER TTRPG",
   "main": "index.js",
   "scripts": {
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "test": "node ./scripts/test.js"
   },
   "repository": {
     "type": "git",
