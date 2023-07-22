@@ -406,7 +406,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "BLACKBEARD",
+    "license": "Blackbeard",
     "license_level": 1,
     "effect": "You may Ram targets larger than you, and when you Grapple or Ram larger targets, you count as the same Size as the largest opponent. When you Grapple or Ram opponents of the same Size or smaller, you count as at least one Size larger. Additionally, your lifting and dragging capacity is doubled.",
     "synergies": [
@@ -427,7 +427,7 @@
     "name": "Reinforced Cabling",
     "sp": 2,
     "source": "IPS-N",
-    "license": "BLACKBEARD",
+    "license": "Blackbeard",
     "license_level": 3,
     "actions": [
       {
@@ -458,7 +458,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "BLACKBEARD",
+    "license": "Blackbeard",
     "license_level": 3,
     "actions": [
       {
@@ -480,7 +480,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "DRAKE",
+    "license": "Drake",
     "license_level": 1,
     "actions": [
       {
@@ -506,7 +506,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "DRAKE",
+    "license": "Drake",
     "license_level": 2,
     "effect": "Expend a charge to deploy a Size 1 shield generator in a free, adjacent space, where it creates a burst 1 shield.",
     "deployables": [
@@ -553,7 +553,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "DRAKE",
+    "license": "Drake",
     "license_level": 3,
     "effect": "Expend a charge to deploy a portable bunker to a free, adjacent area 4 by 4 area. At the start of your next turn, it unfolds into a fortified emplacement.",
     "deployables": [
@@ -576,7 +576,7 @@
     "name": "Cable Winch System",
     "sp": 1,
     "source": "IPS-N",
-    "license": "LANCASTER",
+    "license": "Lancaster",
     "license_level": 1,
     "actions": [
       {
@@ -602,7 +602,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "LANCASTER",
+    "license": "Lancaster",
     "license_level": 1,
     "effect": "Expend a charge to deploy a restock drone to any free, adjacent space, where it primes at the end of your turn.",
     "deployables": [
@@ -637,7 +637,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "LANCASTER",
+    "license": "Lancaster",
     "license_level": 2,
     "effect": "Extra mounts, straps, and hard points allow other characters to climb and ride your mech. Adjacent, non-Immobilized characters can climb onto your mech as a quick action. While riding, they occupy the same space as you, move when you move (even if they’re Slowed), and benefit from soft cover. If you or a rider are knocked Prone, Stunned, Immobilized, or destroyed, they land Prone in adjacent spaces. Riders can climb down as part of any movement away, but can only climb onto your mech as a quick action.<br>You can carry riders of a combined Size equal to your Size, minus Size 1/2 (e.g., if your mech is Size 1 you can carry one Size 1/2 character; if it is Size 2, you can carry a Size 1 character and a Size 1/2 character).",
     "description": "The Multiple User, Light Entanglement (MULE) Harness is a mass-produced version of a common battlefield modification that allows friendly soldiers to ride along on a chassis. Some systems are large enough to allow smaller chassis to accompany larger chassis; typically, these variants are employed in high altitude, low orbit insertions where reduced radar presence is required.",
@@ -648,7 +648,7 @@
     "name": "Whitewash Sealant Spray",
     "sp": 2,
     "source": "IPS-N",
-    "license": "LANCASTER",
+    "license": "Lancaster",
     "license_level": 2,
     "actions": [
       {
@@ -680,7 +680,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "LANCASTER",
+    "license": "Lancaster",
     "license_level": 3,
     "actions": [
       {
@@ -701,7 +701,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "NELSON",
+    "license": "Nelson",
     "license_level": 1,
     "effect": "Your mech’s extended limbs, additional armor, redundant motor systems, and other reinforcements allow you to ignore difficult terrain.",
     "synergies": [
@@ -727,7 +727,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "NELSON",
+    "license": "Nelson",
     "license_level": 2,
     "effect": "You can Brace while Grappling. When you do so, any grapples currently affecting you end.<br>Additionally, when you Brace, you gain the following benefits until the end of your following turn:<ul><li>Attacks against you receive +1 difficulty.</li><li>You can’t fail Agility or Hull saves or contested checks.</li><li>You gain Immunity to Knockback, Grapple, being knocked Prone, and being moved by any external force smaller than Size 5.</li></ul>",
     "synergies": [
@@ -757,7 +757,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "NELSON",
+    "license": "Nelson",
     "license_level": 3,
     "actions": [
       {
@@ -786,7 +786,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "RALEIGH",
+    "license": "Raleigh",
     "license_level": 1,
     "actions": [
       {
@@ -837,7 +837,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "RALEIGH",
+    "license": "Raleigh",
     "license_level": 2,
     "effect": "When you reload any weapon, your next attack with a Loading weapon gains this effect:<br>On hit: This attack deals +1d6 explosive bonus damage, and targets must succeed on a Hull save or be knocked Prone.",
     "description": "Packed into sealed, self-contained cylinders, IPS-N’s “Roland Rounds” are high-explosive anti-armor charges built for kinetic weapons of any mech-scale caliber. Loaded in place of inert kinetic ammunition, a Roland HE/AA shell increases the efficacy and destructive power of any weapon it is fired from.",
@@ -853,7 +853,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "TORTUGA",
+    "license": "Tortuga",
     "license_level": 1,
     "effect": "When you Ram, you deal 2 kinetic damage on hit, and you deal 10 AP kinetic damage when you Ram objects and terrain.",
     "synergies": [
@@ -879,7 +879,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "TORTUGA",
+    "license": "Tortuga",
     "license_level": 3,
     "actions": [
       {
@@ -910,7 +910,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "VLAD",
+    "license": "Vlad",
     "license_level": 1,
     "effect": "Expend a charge to deploy a Webjaw snare to a free, adjacent space, where it arms at the end of your turn.",
     "deployables": [
@@ -937,7 +937,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "VLAD",
+    "license": "Vlad",
     "license_level": 2,
     "actions": [
       {
@@ -953,7 +953,7 @@
     "name": "Charged Stake",
     "sp": 2,
     "source": "IPS-N",
-    "license": "VLAD",
+    "license": "Vlad",
     "license_level": 3,
     "actions": [
       {
@@ -969,7 +969,7 @@
     "name": "Ferrous Lash",
     "sp": 2,
     "source": "SSC",
-    "license": "BLACK WITCH",
+    "license": "Black Witch",
     "license_level": 1,
     "actions": [
       {
@@ -995,7 +995,7 @@
       }
     ],
     "source": "SSC",
-    "license": "BLACK WITCH",
+    "license": "Black Witch",
     "license_level": 2,
     "effect": "Expend a charge to deploy an ICEOUT drone to a free space within Sensors and line of sight, where it hovers in place and generates a burst 1 field.",
     "deployables": [
@@ -1031,7 +1031,7 @@
       }
     ],
     "source": "SSC",
-    "license": "BLACK WITCH",
+    "license": "Black Witch",
     "license_level": 2,
     "effect": "This heavy metal Perimeter Command Plate (PCP) can be flash-printed and deployed to a free 2x2 space within range 5. The PCP is flat, doesn’t obstruct movement, and lasts for the rest of the scene. If you create a new PCP, the old one disintegrates.",
     "deployables": [
@@ -1058,7 +1058,7 @@
       }
     ],
     "source": "SSC",
-    "license": "BLACK WITCH",
+    "license": "Black Witch",
     "license_level": 3,
     "effect": "Tech attacks against you or adjacent allied characters receive +1 difficulty. Each subsequent tech attack against you or an adjacent allied character receives an additional +1 difficulty, to a maximum of +3 difficulty.<br>Your Black ICE definitions roll over – resetting to +1 difficulty – when it would increase to +4 difficulty or at the end of the scene. Allied characters lose this benefit when they break adjacency.",
     "description": "Black ICE modules are defensive systems packaged standard with the Black Witch fleets used by SSC's own internal security forces. They project a bubble of WHITECELL code that analyzes incoming hostile script and structures inoculants for friendly systems on the fly.",
@@ -1087,7 +1087,7 @@
       }
     ],
     "source": "SSC",
-    "license": "BLACK WITCH",
+    "license": "Black Witch",
     "license_level": 3,
     "actions": [
       {
@@ -1108,7 +1108,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DEATH’S HEAD",
+    "license": "Death’s Head",
     "license_level": 1,
     "effect": "You treat all solid surfaces as flat ground for the purposes of movement; you can move across them normally instead of climbing, although you begin to fall if you are knocked Prone.",
     "synergies": [
@@ -1126,7 +1126,7 @@
     "type": "Tech",
     "sp": 2,
     "source": "SSC",
-    "license": "DEATH’S HEAD",
+    "license": "Death’s Head",
     "license_level": 1,
     "actions": [
       {
@@ -1148,7 +1148,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DEATH’S HEAD",
+    "license": "Death’s Head",
     "license_level": 2,
     "actions": [
       {
@@ -1169,7 +1169,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DEATH’S HEAD",
+    "license": "Death’s Head",
     "license_level": 3,
     "effect": "When you miss with a ranged attack roll, your next ranged attack roll gains +1 accuracy.",
     "synergies": [
@@ -1193,7 +1193,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DUSK WING",
+    "license": "Dusk Wing",
     "license_level": 1,
     "actions": [
       {
@@ -1220,7 +1220,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DUSK WING",
+    "license": "Dusk Wing",
     "license_level": 2,
     "effect": "Whenever you Boost or make a standard move, you project a holographic pattern around you, leaving dazzling afterimages that make it hard to discern your precise location: you count as Invisible the next time you’re attacked. You can only benefit from one instance of this effect at a time.",
     "synergies": [
@@ -1246,7 +1246,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DUSK WING",
+    "license": "Dusk Wing",
     "license_level": 3,
     "actions": [
       {
@@ -1275,7 +1275,7 @@
       }
     ],
     "source": "SSC",
-    "license": "DUSK WING",
+    "license": "Dusk Wing",
     "license_level": 3,
     "actions": [
       {
@@ -1304,7 +1304,7 @@
       }
     ],
     "source": "SSC",
-    "license": "METALMARK",
+    "license": "Metalmark",
     "license_level": 1,
     "actions": [
       {
@@ -1348,7 +1348,7 @@
       }
     ],
     "source": "SSC",
-    "license": "METALMARK",
+    "license": "Metalmark",
     "license_level": 1,
     "effect": "When you Brace, you become Invisible until the end of your next turn and may immediately move spaces equal to your Speed.",
     "synergies": [
@@ -1374,7 +1374,7 @@
       }
     ],
     "source": "SSC",
-    "license": "METALMARK",
+    "license": "Metalmark",
     "license_level": 3,
     "actions": [
       {
@@ -1395,7 +1395,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MONARCH",
+    "license": "Monarch",
     "license_level": 1,
     "actions": [
       {
@@ -1424,7 +1424,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MONARCH",
+    "license": "Monarch",
     "license_level": 3,
     "actions": [
       {
@@ -1447,7 +1447,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MOURNING CLOAK",
+    "license": "Mourning Cloak",
     "license_level": 2,
     "actions": [
       {
@@ -1474,7 +1474,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MOURNING CLOAK",
+    "license": "Mourning Cloak",
     "license_level": 2,
     "actions": [
       {
@@ -1498,7 +1498,7 @@
       }
     ],
     "source": "SSC",
-    "license": "MOURNING CLOAK",
+    "license": "Mourning Cloak",
     "license_level": 3,
     "actions": [
       {
@@ -1520,7 +1520,7 @@
       }
     ],
     "source": "SSC",
-    "license": "SWALLOWTAIL",
+    "license": "Swallowtail",
     "license_level": 1,
     "effect": "This scout drone can be deployed to a space within Sensors and line of sight, where it emits a Burst 2 field with the following effects:<ul><li>You know the current location, HP, Evasion, E-Defense, and Heat of all characters within the affected area.</li><li>Hostile characters cannot Hide in the area, and if they end their turn in the affected area they cease to be Hidden.</li><li>Hostile characters can’t benefit from being Invisible while in the affected area.</li></ul>You can recall and redeploy your scout drone as a quick action.",
     "deployables": [
@@ -1545,7 +1545,7 @@
     "type": "Tech",
     "sp": 2,
     "source": "SSC",
-    "license": "SWALLOWTAIL",
+    "license": "Swallowtail",
     "license_level": 1,
     "actions": [
       {
@@ -1568,7 +1568,7 @@
       }
     ],
     "source": "SSC",
-    "license": "SWALLOWTAIL",
+    "license": "Swallowtail",
     "license_level": 2,
     "actions": [
       {
@@ -1593,7 +1593,7 @@
       }
     ],
     "source": "SSC",
-    "license": "SWALLOWTAIL",
+    "license": "Swallowtail",
     "license_level": 3,
     "effect": "Your mech gains the AI tag and Simulacrum.",
     "actions": [
@@ -1617,7 +1617,7 @@
       }
     ],
     "source": "SSC",
-    "license": "SWALLOWTAIL",
+    "license": "Swallowtail",
     "license_level": 3,
     "actions": [
       {
@@ -1634,7 +1634,7 @@
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
-    "license": "BALOR",
+    "license": "Balor",
     "license_level": 1,
     "effect": "This hive drone can be deployed to a free space within Sensors and line of sight, where it releases a burst 2 greywash swarm with the following effects:<ul><li>Allied characters at least partially within the affected area gain soft cover, as does the hive drone.</li><li>Hostile characters take 1 AP kinetic damage when they start their turn in the affected area or enter it for the first time in a round. Damage from areas created by multiple hive drones does not stack.</li></ul>The drone can be deployed to a different space or recalled as a quick action.",
     "deployables": [
@@ -1664,7 +1664,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "BALOR",
+    "license": "Balor",
     "license_level": 1,
     "effect": "You gain +1 accuracy on tech attacks against adjacent characters.",
     "description": "HORUS-coded scanner swarms establish oculus-form nanite protocols around defined objects or areas, ensuring constant circulation and data capture. The nanites ingest and process full-spectrum information, relaying it back to their pilot/parent in return for an endorphic code-impulse that prompts continued scanning.",
@@ -1680,7 +1680,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "BALOR",
+    "license": "Balor",
     "license_level": 2,
     "actions": [
       {
@@ -1702,7 +1702,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GOBLIN",
+    "license": "Goblin",
     "license_level": 1,
     "actions": [
       {
@@ -1730,7 +1730,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GOBLIN",
+    "license": "Goblin",
     "license_level": 2,
     "actions": [
       {
@@ -1752,7 +1752,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GOBLIN",
+    "license": "Goblin",
     "license_level": 2,
     "actions": [
       {
@@ -1787,7 +1787,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GOBLIN",
+    "license": "Goblin",
     "license_level": 3,
     "actions": [
       {
@@ -1811,7 +1811,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GOBLIN",
+    "license": "Goblin",
     "license_level": 3,
     "actions": [
       {
@@ -1838,7 +1838,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GORGON",
+    "license": "Gorgon",
     "license_level": 1,
     "effect": "On activation, choose an allied character within SENSORS: until the end of your next turn, you gain the Battlefield Awareness reaction.",
     "actions": [
@@ -1864,7 +1864,7 @@
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
-    "license": "GORGON",
+    "license": "Gorgon",
     "license_level": 1,
     "effect": "The sentinel drone can be deployed to any free space within Sensors and line of sight, where it establishes a burst 2 security perimeter. Hostile characters within the affected area take 3 kinetic damage from the drone’s automatic fire before making any attack.<br>The sentinel drone can be redeployed to a new location or recalled as a quick action.",
     "deployables": [
@@ -1894,7 +1894,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GORGON",
+    "license": "Gorgon",
     "license_level": 2,
     "effect": "Any time you or any allied character adjacent to you is missed by a tech attack or succeed on a save against a hostile tech action, choose one of the following:<ul><li>The attacker becomes Impaired until the end of their next turn and takes 2 heat.</li><li>The attacker becomes Jammed until the end of their next turn.</li></ul>",
     "description": "The //SCORPION program has a long history on the omninet despite its rather mundane operation (for HORUS-tagged code, at least). Traced back to pre-Deimos theorycode found on an obscure research paper discussing pre-NHP machine mind reflex-responses, //SCORPION evolved from a simple packet interpreter to a robust anti-incursion program, nimble enough to adapt to most any market-line system that receives its broadcast.",
@@ -1910,7 +1910,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GORGON",
+    "license": "Gorgon",
     "license_level": 2,
     "actions": [
       {
@@ -1948,7 +1948,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "GORGON",
+    "license": "Gorgon",
     "license_level": 3,
     "actions": [
       {
@@ -1979,7 +1979,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "HYDRA",
+    "license": "Hydra",
     "license_level": 1,
     "actions": [
       {
@@ -2002,7 +2002,7 @@
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
-    "license": "HYDRA",
+    "license": "Hydra",
     "license_level": 2,
     "effect": "This large, armored tempest drone may be deployed to a free space within Sensors and line of sight.",
     "deployables": [
@@ -2037,7 +2037,7 @@
     "type": "Drone",
     "sp": 2,
     "source": "HORUS",
-    "license": "HYDRA",
+    "license": "Hydra",
     "license_level": 3,
     "effect": "This assassin drone may be deployed to any free, adjacent space.",
     "deployables": [
@@ -2076,7 +2076,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MANTICORE",
+    "license": "Manticore",
     "license_level": 1,
     "actions": [
       {
@@ -2104,7 +2104,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MANTICORE",
+    "license": "Manticore",
     "license_level": 2,
     "actions": [
       {
@@ -2131,7 +2131,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MANTICORE",
+    "license": "Manticore",
     "license_level": 3,
     "actions": [
       {
@@ -2156,7 +2156,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MANTICORE",
+    "license": "Manticore",
     "license_level": 3,
     "actions": [
       {
@@ -2185,7 +2185,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MINOTAUR",
+    "license": "Minotaur",
     "license_level": 1,
     "actions": [
       {
@@ -2227,7 +2227,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MINOTAUR",
+    "license": "Minotaur",
     "license_level": 1,
     "actions": [
       {
@@ -2250,7 +2250,7 @@
     "type": "Tech",
     "sp": 2,
     "source": "HORUS",
-    "license": "MINOTAUR",
+    "license": "Minotaur",
     "license_level": 2,
     "actions": [
       {
@@ -2276,7 +2276,7 @@
     "sp": 2,
     "tags": [],
     "source": "HORUS",
-    "license": "MINOTAUR",
+    "license": "Minotaur",
     "license_level": 2,
     "actions": [
       {
@@ -2298,7 +2298,7 @@
     "name": "Interdiction Field",
     "sp": 3,
     "source": "HORUS",
-    "license": "MINOTAUR",
+    "license": "Minotaur",
     "license_level": 3,
     "actions": [
       {
@@ -2320,7 +2320,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "MINOTAUR",
+    "license": "Minotaur",
     "license_level": 3,
     "actions": [
       {
@@ -2349,7 +2349,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "PEGASUS",
+    "license": "Pegasus",
     "license_level": 1,
     "actions": [
       {
@@ -2370,7 +2370,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "PEGASUS",
+    "license": "Pegasus",
     "license_level": 2,
     "actions": [
       {
@@ -2399,7 +2399,7 @@
       }
     ],
     "source": "HORUS",
-    "license": "PEGASUS",
+    "license": "Pegasus",
     "license_level": 3,
     "actions": [
       {
@@ -2436,7 +2436,7 @@
       }
     ],
     "source": "HA",
-    "license": "BARBAROSSA",
+    "license": "Barbarossa",
     "license_level": 1,
     "actions": [
       {
@@ -2481,7 +2481,7 @@
       }
     ],
     "source": "HA",
-    "license": "BARBAROSSA",
+    "license": "Barbarossa",
     "license_level": 1,
     "actions": [
       {
@@ -2507,7 +2507,7 @@
       }
     ],
     "source": "HA",
-    "license": "BARBAROSSA",
+    "license": "Barbarossa",
     "license_level": 2,
     "effect": "Expend a charge to deploy this autoloader drone to any adjacent space.",
     "deployables": [
@@ -2529,7 +2529,7 @@
     "name": "Flak Launcher",
     "sp": 2,
     "source": "HA",
-    "license": "BARBAROSSA",
+    "license": "Barbarossa",
     "license_level": 2,
     "actions": [
       {
@@ -2554,7 +2554,7 @@
       }
     ],
     "source": "HA",
-    "license": "BARBAROSSA",
+    "license": "Barbarossa",
     "license_level": 3,
     "actions": [
       {
@@ -2579,7 +2579,7 @@
       }
     ],
     "source": "HA",
-    "license": "GENGHIS",
+    "license": "Genghis",
     "license_level": 1,
     "effect": "When you clear all heat or take stress, your mech’s cooling vents open and unleash a burst 1 explosion. Characters within the affected area take 2 heat and 2 burn.",
     "description": "With the right tweaks, it becomes possible to dump excess heat into the area directly surrounding a chassis. Explosive venting is an unsanctioned, unsafe method of sudden cooling that has nevertheless been adopted by many pilots.",
@@ -2603,7 +2603,7 @@
       }
     ],
     "source": "HA",
-    "license": "GENGHIS",
+    "license": "Genghis",
     "license_level": 2,
     "actions": [
       {
@@ -2653,7 +2653,7 @@
       }
     ],
     "source": "HA",
-    "license": "GENGHIS",
+    "license": "Genghis",
     "license_level": 2,
     "actions": [
       {
@@ -2682,7 +2682,7 @@
       }
     ],
     "source": "HA",
-    "license": "GENGHIS",
+    "license": "Genghis",
     "license_level": 3,
     "actions": [
       {
@@ -2712,7 +2712,7 @@
       }
     ],
     "source": "HA",
-    "license": "ISKANDER",
+    "license": "Iskander",
     "license_level": 1,
     "actions": [
       {
@@ -2757,7 +2757,7 @@
       }
     ],
     "source": "HA",
-    "license": "ISKANDER",
+    "license": "Iskander",
     "license_level": 2,
     "actions": [
       {
@@ -2782,7 +2782,7 @@
       }
     ],
     "source": "HA",
-    "license": "ISKANDER",
+    "license": "Iskander",
     "license_level": 3,
     "actions": [
       {
@@ -2805,7 +2805,7 @@
       }
     ],
     "source": "HA",
-    "license": "ISKANDER",
+    "license": "Iskander",
     "license_level": 3,
     "actions": [
       {
@@ -2836,7 +2836,7 @@
       }
     ],
     "source": "HA",
-    "license": "NAPOLEON",
+    "license": "Napoleon",
     "license_level": 1,
     "effect": "This system charges as a quick action, readying a projected stasis point. While it is charged, you gain the Interdiction Point reaction. It can only hold one charge at a time, but charges last for the rest of the scene or until used.",
     "actions": [
@@ -2870,7 +2870,7 @@
       }
     ],
     "source": "HA",
-    "license": "NAPOLEON",
+    "license": "Napoleon",
     "license_level": 1,
     "actions": [
       {
@@ -2902,7 +2902,7 @@
       }
     ],
     "source": "HA",
-    "license": "NAPOLEON",
+    "license": "Napoleon",
     "license_level": 2,
     "effect": "Expend a charge to activate this stasis barrier, generating a line 4 barrier 4 spaces high in free spaces with at least one space adjacent to you.",
     "deployables": [
@@ -2940,7 +2940,7 @@
       }
     ],
     "source": "HA",
-    "license": "NAPOLEON",
+    "license": "Napoleon",
     "license_level": 3,
     "actions": [
       {
@@ -2965,7 +2965,7 @@
       }
     ],
     "source": "HA",
-    "license": "SALADIN",
+    "license": "Saladin",
     "license_level": 1,
     "actions": [
       {
@@ -3003,7 +3003,7 @@
       }
     ],
     "source": "HA",
-    "license": "SALADIN",
+    "license": "Saladin",
     "license_level": 2,
     "actions": [
       {
@@ -3035,7 +3035,7 @@
       }
     ],
     "source": "HA",
-    "license": "SALADIN",
+    "license": "Saladin",
     "license_level": 2,
     "actions": [
       {
@@ -3065,7 +3065,7 @@
       }
     ],
     "source": "HA",
-    "license": "SALADIN",
+    "license": "Saladin",
     "license_level": 3,
     "actions": [
       {
@@ -3087,7 +3087,7 @@
       }
     ],
     "source": "HA",
-    "license": "SHERMAN",
+    "license": "Sherman",
     "license_level": 1,
     "effect": "You may reroll overheating checks, but must keep the second result, even if it’s worse.",
     "description": "A necessary component of most mechs that rely on high energy output, reactor stabilizers add another layer of failsafes to vent heat, manage power flow, and shunt excessive output into weapons and systems as needed.",
@@ -3107,7 +3107,7 @@
       }
     ],
     "source": "HA",
-    "license": "SHERMAN",
+    "license": "Sherman",
     "license_level": 2,
     "actions": [
       {
@@ -3140,7 +3140,7 @@
       }
     ],
     "source": "HA",
-    "license": "SHERMAN",
+    "license": "Sherman",
     "license_level": 3,
     "actions": [
       {
@@ -3162,7 +3162,7 @@
       }
     ],
     "source": "HA",
-    "license": "TOKUGAWA",
+    "license": "Tokugawa",
     "license_level": 1,
     "effect": "Weapons that deal any energy gain +5 RANGE if they are ranged or +1 THREAT if they are melee. When you take any structure damage, this system is destroyed and you take 1d6 AP explosive damage from the explosion. This damage can’t be prevented or reduced in any way.",
     "bonuses": [
@@ -3194,7 +3194,7 @@
       }
     ],
     "source": "HA",
-    "license": "TOKUGAWA",
+    "license": "Tokugawa",
     "license_level": 2,
     "effect": "When you start your turn in the Danger Zone, you gain Resistance to heat for the rest of the turn. This effect persists even if you leave the Danger Zone during your turn.",
     "description": "The Deep Well experimental heat-sink system is a part of the Armory’s VANGUARD line of equipment, available to licensed beta testers. Through a complex, delicate weave of heat exchangers, Deep Well recycles the heat generated by a mech into usable energy. The system works well, but the delicate nature of the exchange renders it highly volatile.",
@@ -3222,7 +3222,7 @@
       }
     ],
     "source": "HA",
-    "license": "TOKUGAWA",
+    "license": "Tokugawa",
     "license_level": 3,
     "actions": [
       {
@@ -3251,7 +3251,7 @@
       }
     ],
     "source": "HA",
-    "license": "TOKUGAWA",
+    "license": "Tokugawa",
     "license_level": 3,
     "actions": [
       {
