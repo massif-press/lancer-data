@@ -1,6 +1,6 @@
 # !! IMPORTANT !!
 
-The `lancer-data` package is no longer the current source of COMP/CON data, and is now available under `@Massif/lancer-data`. The `lancer-data` package will no longer be updated, and will be removed in the future. Please update your dependencies accordingly.
+The `lancer-data` npm package is now available under `@massif/lancer-data`. The `lancer-data` package will no longer be updated, and will be removed in the future. Please update your dependencies accordingly. It is published from this repo, so everything else will stay the same otherwise.
 
 # About
 
