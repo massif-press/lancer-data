@@ -8,7 +8,7 @@
     "effects": "Characters are in the DANGER ZONE when half or more of their heat is filled in. They’re smoking hot, which enables some attacks, talents, and effects."
   },
   {
-    "name": "Down And Out",
+    "name": "Down and Out",
     "icon": "downandout",
     "type": "Status",
     "terse": "Pilot is unconscious, any additional damage kills",

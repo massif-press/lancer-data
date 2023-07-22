@@ -414,7 +414,7 @@
   },
   {
     "id": "act_get_a_damn_drink",
-    "name": "Get A Damn Drink",
+    "name": "Get a Damn Drink",
     "activation": "Downtime",
     "terse": "Blow off some steam and generally get into trouble.",
     "detail": "When you GET A DAMN DRINK, you blow off some steam, carouse, and generally get into trouble. You might be trying to make connections, collect gossip, forge a reputation, or even just to forget what happened on the last mission. There’s usually trouble.<br>State your intention and roll:<br>On 9 or less, decide whether you had good time or not; either way, you wake up in a gutter somewhere with only one remaining:<br>• Your dignity.<br>• All of your possessions.<br>• Your memory.<br>On 10–19, gain one as RESERVES and lose one:<br>• A good reputation.<br>• A friend or connection.<br>• A useful item or piece of information.<br>• A convenient opportunity.<br>On 20+, gain two from the 10–19 list as RESERVES and don’t lose anything.<br>You can only make this action where there’s actually a drink to get (e.g., in a town, station, city, or some other populated area), or some other kind of entertainment."
@@ -449,14 +449,14 @@
   },
   {
     "id": "act_power_at_a_cost",
-    "name": "Power At A Cost",
+    "name": "Power at a Cost",
     "activation": "Downtime",
     "terse": "Gain rewards, opportunities, or resources.",
     "detail": "When you seek POWER AT A COST, you’re trying to get your hands on something.<br>Name what you want. You can definitely get it, but depending on the outlandishness of the request, the GM chooses one or two:<br>• It’s going to take a lot more time than you thought.<br>• It’s going to be really damn risky.<br>• You’ll have to have to give something up or leave something behind (e.g., wealth, resources, allies).<br>• You’re going to piss off someone or something important and powerful.<br>• Things are going to go wildly off-plan.<br>• You’ll need more information to proceed safely.<br>• It’s going to fall apart damn soon.<br>• You’ll need more resources, but you know where to find them.<br>• You can get something almost right: a lesser version, or less of it.<br>This is a straightforward way to acquire RESERVES, opportunities, and additional resources. You might want something directly useful for a mission; some‐ thing more abstract, like time, safety, information, allies, or support; something practical, like a base of operations, materials, shelter, or food; or, even something as simple as a damn pack of cigarettes.<br>You can also use POWER AT A COST during missions for similar effects. Other downtime actions generally can’t be used during missions, but your group can adapt them if desired."
   },
   {
     "id": "act_scrounge_and_barter",
-    "name": "Scrounge And Barter",
+    "name": "Scrounge and Barter",
     "activation": "Downtime",
     "terse": "Try and get your hands on some gear or asset.",
     "detail": "When you SCROUNGE AND BARTER, you try to get your hands on some gear or an asset by dredging the scrapyard, chasing down rumors, bartering in the local market, or hunting around.<br>You might want some better pilot gear, a vehicle, narcotics, goods, or other sundries. It needs to be something physical, but doesn’t necessarily have to be on the gear list. If you get it, you can take it on the next mission as RESERVES.<br>Name what you want and roll:<br>On 9 or less, you get what you want, but choose one:<br>• It was stolen, probably from someone who’s looking for it.<br>• It’s degraded, old, filthy, or malfunctioning.<br>• Someone else has it right now and won’t give it up without force or convincing.<br>On 10–19, you get what you want, but choose the price you need to pay:<br>• Time.<br>• Dignity.<br>• Reputation.<br>• Health, comfort, and wellness. On 20+, you get what you’re looking for, no problem."
