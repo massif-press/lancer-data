@@ -211,9 +211,7 @@
     "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING.",
     "synergies": [
       {
-        "locations": [
-          "hase"
-        ],
+        "locations": ["hase"],
         "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
       }
     ]
@@ -226,9 +224,7 @@
     "description": "All weapons of your choice can be fired as if they are SMART.",
     "synergies": [
       {
-        "locations": [
-          "weapon"
-        ],
+        "locations": ["weapon"],
         "detail": "All weapons of your choice can be fired as if they are SMART"
       }
     ]
@@ -241,9 +237,7 @@
     "description": "IMMUNITY to the SLOWED condition.",
     "synergies": [
       {
-        "locations": [
-          "move"
-        ],
+        "locations": ["move"],
         "detail": "Your mech has IMMUNITY to the SLOWED condition."
       }
     ]
@@ -256,9 +250,7 @@
     "description": "During this mission your mech can FLY when moving, but must end movement on land.",
     "synergies": [
       {
-        "locations": [
-          "move"
-        ],
+        "locations": ["move"],
         "detail": "Your mech can FLY when moving, but must end movement on land."
       }
     ]
@@ -299,9 +291,7 @@
     "description": "Training or enhancement that provides +1 ACCURACY to a particular mech skill or action for the duration of this mission.",
     "synergies": [
       {
-        "locations": [
-          "other"
-        ],
+        "locations": ["other"],
         "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
       }
     ]
@@ -344,7 +334,7 @@
     "description": "A custom harness that allows you to carry an extra pilot weapon and two extra pieces of pilot gear for the duration of this mission.",
     "bonuses": [
       {
-        "id": "pilot_gear",
+        "id": "pilot_gear_slots",
         "val": 2
       }
     ]
