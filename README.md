@@ -1223,6 +1223,8 @@ The optional type and size parameters will restrict any weapon-related bonus to 
 | `drone_tech_attack`       | Add tech attack to all deployed Drones       | integer   |
 | `drone_save`              | Add save to all deployed Drones              | integer   |
 | `drone_speed`             | Add speed to all deployed Drones             | integer   |
+| `pilot_gear_slots`        | Increase Pilot Gear capacity                 | integer   |
+| `pilot_weapon_slots`      | Increase Pilot Weapon capacity               | integer   |
 
 The `overwrite` flag will _overwrite_ any integer value bonus with the highest bonus of the same type from any source that has an `overwrite` flag. Which is to say: all applicable bonuses of that bonus ID will be collected and everything will be discarded _except for_ the bonus of the highest value _that has an `overwrite` flag_.
 Eg: a mech with items that give +4, +2, +3 (overwrite) and +2 (overwrite) AI Cap will result in a +3 AI Cap bonus.
