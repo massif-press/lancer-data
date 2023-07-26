@@ -336,6 +336,10 @@
       {
         "id": "pilot_gear_slots",
         "val": 2
+      },
+      {
+        "id": "pilot_weapon_slots",
+        "val": 1
       }
     ]
   },
