@@ -33,16 +33,6 @@ Your content package is contained in a single-level folder that, at minimum, con
 }
 ```
 
-Optionally, you can include the following fields in your manifest:
-
-```json
-  "item_prefix": "example_prefix_",
-  "image_url": "URL to a thumbnail image",
-  "website": "Website URL to my LCP's source"
-```
-
-the `active` property is what COMP/CON uses to determine what installed packages are loaded. It's best to keep this as `false`.
-
 A working, but content-less, folder structure would look like this:
 
 ```
@@ -52,9 +42,41 @@ my homebrew folder
 
 additional data will be included in the folder on the same level as the `info.json` file. _Content folders should not have any depth_.
 
+Optionally, you can include the following fields in your manifest:
+
+```json
+  "item_prefix": "example_prefix_",
+  "image_url": "URL to a thumbnail image",
+  "website": "Website URL to my LCP's source"
+  "dependencies": LcpDependency[] // see below
+```
+
+#### LCP Dependencies
+
+LCPs can declare dependencies: other LCPs required for it to function. These dependencies are declared in the `dependencies` field of the LCP manifest, and are an array of `LcpDependency` objects:
+
+```ts
+{
+  "name": string, // name of the dependency
+  "version": string, // version of the dependency
+  "link"?: string // link to the dependency's website
+}
+```
+
+The `name` field must **exactly match** the `name` field of the dependency's manifest.
+
+The `version` field must be a [semver](https://semver.org/) version string, and must match the dependency's version. COMP/CON defaults to "this version or later", for example, if the user has already installed dependency version `2.0.0` and the dependency required is `1.0.1`, COMP/CON will accept it. COMP/CON will not accept a dependency of `0.5.0` or `1.0.0`. However, there are two special characters that can modify this behavior:
+
+- `*` will accept any version of the dependency, as long as the name matches.
+- `=X.X.X` will only accept the exact version of the dependency (X.X.X), and will not accept any other version. For example, if the version string is `=1.0.0`, COMP/CON will only accept version `1.0.0` of the dependency, not `1.0.1`, or `2.0.0`.
+
+The `link` field is optional, and if provided will be displayed in the Content Pack Manager to help users find and download the required content packs. While this is not a required field, it's strongly recommended to include it.
+
+COMP/CON will automatically sort and load LCPs in order based on required dependencies, and will not load an LCP if it has an unsatisfied dependency. The user will be notified of any missing dependencies in the Content Pack Manager.
+
 ### Troubleshooting
 
-Most of the time, issues related to LCPs come from malformed LCP data. To that end, a tool has been developed for VSCode to ensure correct data format, available [here](https://marketplace.visualstudio.com/items?itemName=massif-press.comp-con-content-authoring)
+Most of the time, issues related to LCPs come from malformed LCP data.
 
 Further questions can be answered in the #comp-con-homebrew channel in the LANCER Discord.
 
@@ -65,7 +87,7 @@ If you'd like to submit your content pack for inclusion within COMP/CON, there a
 - Compatible with the new item regime, as described by this document.
 - Downloadable through an itch.io page (free or paid)
 - Nominated by the community as a good asset, even for people that aren't on the Discord or otherwise tied in to the greater Lancer community (ie: has been playtested, doesn't require other assets, only references already-published material, etc)
-- Does not contain any questionable or illegal content, or any content not owned by the author.
+- Does not contain any questionable or illegal content, nor any content not owned by the author.
 - Passes a final content and code pass
 
 If these standards are acceptable, please contact me at @Beeftime#0558 in [the official LANCER Discord](https://discord.gg/Qu3C4te), ideally within the #comp-con-homebrew channel.
@@ -387,7 +409,7 @@ Weapon mods are handled separately in C/C than in Lancer (where they're just tag
   "allowed_sizes"?: WeaponSize[], // weapon sizes the mod CAN be applied to
   "restricted_types"?: WeaponType[], // weapon types the mod CAN NOT be applied to
   "restricted_sizes"?: WeaponSize[], // weapon sizes the mod CAN NOT be applied to
-  "added_tags"?: ITagData[] // tags propogated to the weapon the mod is installed on
+  "added_tags"?: ITagData[] // tags propagated to the weapon the mod is installed on
   "added_damage"?: IDamageData[] // damage added to the weapon the mod is installed on, see note
   "added_range"?: IRangeData[] // damage added to the weapon the mod is installed on, see note
   "actions"?: IActionData[],
@@ -421,7 +443,7 @@ This is currently unsupported in the LANCER Core Book (or any Massif material at
   "license_level": number, // set to 0 to be available to all Pilots
   "effect": string, // v-html
   "tags": ITagData[], // tags related to the mod itself
-  "added_tags": ITagData[] // tags propogated to the system the mod is installed on
+  "added_tags": ITagData[] // tags propagated to the system the mod is installed on
   "actions"?: IActionData[],
   "bonuses"?: IBonusData[], // these bonuses are applied to the pilot, not parent system
   "synergies"?: ISynergyData[],
@@ -758,7 +780,7 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
 
 ## Weapon Effects
 
-Effects are eqipment abilities that **do not** grant the player a new Action but **do** add or modify gameplay mechanics. The field should be used for "usage notes" (for lack of a better term) that have game-mechanical properties that cannot be modeled with Actions or Deployables, or may include representation elsewhere but involve player notes/choices that can't be modeled there (like the Hydra's Ghast Nexus), or any other sort of mechanically important detail that is unsuited for inclusion (like the rules for the Pegasus' Mimic Gun). An item takes only one effect.
+Effects are equipment abilities that **do not** grant the player a new Action but **do** add or modify gameplay mechanics. The field should be used for "usage notes" (for lack of a better term) that have game-mechanical properties that cannot be modeled with Actions or Deployables, or may include representation elsewhere but involve player notes/choices that can't be modeled there (like the Hydra's Ghast Nexus), or any other sort of mechanically important detail that is unsuited for inclusion (like the rules for the Pegasus' Mimic Gun). An item takes only one effect.
 
 On Attack/Hit/Crit effects (like the Blackbeard's Chain Axe), are modeled in separate fields. A weapon may be given any combination of `on_attack`, `on_hit`, `on_crit`, and `effect` fields.
 
@@ -1031,7 +1053,7 @@ Synergies are used to convey hint text regarding talent rank or equipment intera
 ```
 
 The `ISynergyData` object contains two mandatory and three optional fields. Location and detail - are mandatory and contain the display location for the synergy hint (see below) and the text (`detail`) of the synergy hint. `weapon_types` and `weapon_sizes` are optional filters for displaying synergies on weapons, and take `WeaponType` and `WeaponSize` enum values, respectively. Omitting these fields on weapons will cause them to be set to `any` -- useful if you are looking for a synergy hint on eg. a Melee weapon of any size, or a Superheavy weapon of any type.
-Similarly `system_types` will filter system synergy hints to a specific type (eg. `Drone`) and will appear on all Systems if ommitted (set to `any`).
+Similarly `system_types` will filter system synergy hints to a specific type (eg. `Drone`) and will appear on all Systems if omitted (set to `any`).
 
 ```ts
 {
