@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+const fs = require('fs');
 var currentDir = process.cwd();
 var files = fs.readdirSync('./lib');
 let contents = ""
