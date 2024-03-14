@@ -4,7 +4,11 @@
     "name": "ERR: DATA NOT FOUND",
     "type": "Weapon",
     "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      }
+    ],
     "range": [],
     "damage": []
   },
@@ -16,6 +20,9 @@
     "tags": [
       {
         "id": "tg_archaic"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -39,6 +46,9 @@
     "tags": [
       {
         "id": "tg_archaic"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -62,6 +72,9 @@
     "tags": [
       {
         "id": "tg_sidearm"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -82,6 +95,11 @@
     "name": "Medium A/C",
     "type": "Weapon",
     "description": "Medium A/C weapons are typically swords, officer’s sabers, and trench axes.",
+    "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      }
+    ],
     "range": [
       {
         "type": "Threat",
@@ -103,6 +121,9 @@
     "tags": [
       {
         "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -129,6 +150,9 @@
       },
       {
         "id": "tg_set_damage_type"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -153,6 +177,9 @@
     "tags": [
       {
         "id": "tg_set_damage_type"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -183,6 +210,9 @@
       },
       {
         "id": "tg_set_damage_type"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [

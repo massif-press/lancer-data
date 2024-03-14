@@ -199,6 +199,11 @@
     "description": "This gear offers protection in combat, but it is obvious to observers and usually can’t be hidden. Only one piece of Personal Armor can be worn at a time. Putting on Personal Armor takes 10–20 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they’re expecting to go into a warzone."
   },
   {
+    "id": "tg_pilot_weapon",
+    "name": "Pilot Weapon",
+    "description": "On missions, pilots can take up to two weapons. All pilot weapons are pilot-scale and can’t be used by mechs."
+  },
+  {
     "id": "tg_gear",
     "name": "Gear",
     "description": "This is a tool, piece of equipment, or another item. Pilots can have up to three of these at a time."
