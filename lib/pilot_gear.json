@@ -298,7 +298,7 @@
     "id": "pg_mobility_hardsuit",
     "name": "Mobility Hardsuit",
     "type": "Armor",
-    "description": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
+    "effect": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -321,7 +321,7 @@
     "id": "pg_stealth_hardsuit",
     "name": "Stealth Hardsuit",
     "type": "Armor",
-    "description": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
+    "effect": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -358,7 +358,8 @@
     "id": "pg_corrective",
     "name": "Corrective",
     "type": "Gear",
-    "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.<br>Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP.",
+    "effect": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP.",
+    "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.",
     "actions": [
       {
         "name": "Use Corrective",
@@ -378,7 +379,7 @@
     "id": "pg_frag_grenades",
     "name": "Frag Grenades",
     "type": "Gear",
-    "description": "Expend a charge for the following effect:<ul><li><b>Frag Grenade</b> (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.</li></ul>",
+    "effect": "Expend a charge for the following effect:<ul><li><b>Frag Grenade</b> (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.</li></ul>",
     "actions": [
       {
         "name": "Use Frag Grenade",
@@ -417,7 +418,8 @@
     "id": "pg_patch",
     "name": "Patch",
     "type": "Gear",
-    "description": "“Patch” is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.<br>Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
+    "effect": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
+    "description": "“Patch” is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.",
     "actions": [
       {
         "name": "Use Patch",
@@ -437,7 +439,8 @@
     "id": "pg_stims",
     "name": "Stims",
     "type": "Gear",
-    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
+    "effect": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
+    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.",
     "actions": [
       {
         "name": "Use Stim",
@@ -457,7 +460,7 @@
     "id": "pg_thermite_charge",
     "name": "Thermite Charge",
     "type": "Gear",
-    "description": "Expend a charge for the following effect:<ul><li><b>Thermite Charge</b> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.</li></ul>",
+    "effect": "Expend a charge for the following effect:<ul><li><b>Thermite Charge</b> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.</li></ul>",
     "deployables": [
       {
         "name": "Thermite Charge",
@@ -569,7 +572,8 @@
     "id": "pg_sleeping_bag",
     "name": "Sleeping Bag",
     "type": "Gear",
-    "description": "Coming in a variety of sizes, sleeping bags are a field necessity. They’re designed to fold out from a hardsuit, fit within a mech’s cockpit, resist fire and changes in temperature, and – when necessary – seal against vacuum.<br>You can climb into your sleeping bag, gaining Immunity to burn, protection against vacuum, and enough air to last an hour; however, while in the sleeping bag you are Stunned and can’t take actions other than to exit the bag as a full action."
+    "effect": "You can climb into your sleeping bag, gaining Immunity to burn, protection against vacuum, and enough air to last an hour; however, while in the sleeping bag you are Stunned and can’t take actions other than to exit the bag as a full action.",
+    "description": "Coming in a variety of sizes, sleeping bags are a field necessity. They’re designed to fold out from a hardsuit, fit within a mech’s cockpit, resist fire and changes in temperature, and – when necessary – seal against vacuum."
   },
   {
     "id": "pg_ssc_sylph_undersuit",
