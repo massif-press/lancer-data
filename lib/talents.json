@@ -376,7 +376,7 @@
             "name": "Parry",
             "activation": "Reaction",
             "trigger": "You are hit by a melee attack",
-            "detail": "You gain Resistance to all damage, heat, and burn dealt by the attack"
+            "detail": "You gain Resistance to all damage, heat, and burn dealt by the attack."
           },
           {
             "name": "Deflect",
