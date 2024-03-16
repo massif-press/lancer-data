@@ -382,7 +382,7 @@
             "name": "Deflect",
             "activation": "Reaction",
             "trigger": "You are hit by a ranged attack",
-            "detail": "You may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attak."
+            "detail": "You may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack."
           },
           {
             "name": "Feint",
