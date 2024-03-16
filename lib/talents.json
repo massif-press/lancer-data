@@ -387,12 +387,12 @@
           {
             "name": "Feint",
             "activation": "Free",
-            "detail": "Choose an adjacent character: when moving, you ignore engagement and don't provoke reactions from your target until the start of your next turn."
+            "detail": "Choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn."
           },
           {
             "name": "Trip",
             "activation": "Quick",
-            "detail": "Choose an adjacent character: they must pass an Agility save of fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can't end your turn in their space."
+            "detail": "Choose an adjacent character: they must pass an Agility save of fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space."
           }
         ],
         "counters": [
