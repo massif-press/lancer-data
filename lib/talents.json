@@ -392,7 +392,7 @@
           {
             "name": "Trip",
             "activation": "Quick",
-            "detail": "Expend 1 Blademaster die. Choose an adjacent character: they must pass an Agility save of fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space."
+            "detail": "Expend 1 Blademaster die. Choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space."
           }
         ],
         "counters": [
