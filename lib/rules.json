@@ -7,6 +7,8 @@
   "base_pilot_evasion": 10,
   "base_pilot_edef": 10,
   "base_pilot_speed": 4,
+  "base_pilot_sensors": 5,
+  "base_pilot_save_target": 10,
   "minimum_pilot_skills": 4,
   "minimum_mech_skills": 2,
   "minimum_pilot_talents": 3,
