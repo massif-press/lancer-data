@@ -469,6 +469,7 @@ For brevity's sake, Pilot Gear/Equipment is collected in one file and is differe
   "name": string, // v-html
   "type": "Weapon",
   "description"?: string,
+  "effect"?: string,
   "tags"?: ITagData[],
   "range"?: IRangeData[],
   "damage"?: IDamageData[],

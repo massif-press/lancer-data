@@ -4,7 +4,11 @@
     "name": "ERR: DATA NOT FOUND",
     "type": "Weapon",
     "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
-    "tags": [],
+    "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      }
+    ],
     "range": [],
     "damage": []
   },
@@ -16,6 +20,9 @@
     "tags": [
       {
         "id": "tg_archaic"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -39,6 +46,9 @@
     "tags": [
       {
         "id": "tg_archaic"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -62,6 +72,9 @@
     "tags": [
       {
         "id": "tg_sidearm"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -82,6 +95,11 @@
     "name": "Medium A/C",
     "type": "Weapon",
     "description": "Medium A/C weapons are typically swords, officer’s sabers, and trench axes.",
+    "tags": [
+      {
+        "id": "tg_pilot_weapon"
+      }
+    ],
     "range": [
       {
         "type": "Threat",
@@ -103,6 +121,9 @@
     "tags": [
       {
         "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -129,6 +150,9 @@
       },
       {
         "id": "tg_set_damage_type"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -153,6 +177,9 @@
     "tags": [
       {
         "id": "tg_set_damage_type"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -183,6 +210,9 @@
       },
       {
         "id": "tg_set_damage_type"
+      },
+      {
+        "id": "tg_pilot_weapon"
       }
     ],
     "range": [
@@ -203,7 +233,12 @@
     "id": "missing_pilotarmor",
     "name": "ERR: DATA NOT FOUND",
     "type": "Armor",
-    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack."
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
+    ]
   },
   {
     "id": "pg_light_hardsuit",
@@ -229,6 +264,11 @@
         "id": "pilot_speed",
         "val": 4,
         "replace": true
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_personal_armor"
       }
     ]
   },
@@ -261,6 +301,11 @@
         "val": 4,
         "replace": true
       }
+    ],
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
     ]
   },
   {
@@ -292,13 +337,18 @@
         "val": 3,
         "replace": true
       }
+    ],
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
     ]
   },
   {
     "id": "pg_mobility_hardsuit",
     "name": "Mobility Hardsuit",
     "type": "Armor",
-    "description": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
+    "effect": "These hardsuits have integrated flight systems, allowing pilots to fly when they move or Boost. Flying pilots must end their turn on the ground (or another surface) or begin falling.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -315,13 +365,18 @@
         "val": 5,
         "replace": true
       }
+    ],
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
     ]
   },
   {
     "id": "pg_stealth_hardsuit",
     "name": "Stealth Hardsuit",
     "type": "Armor",
-    "description": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
+    "effect": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
     "bonuses": [
       {
         "id": "pilot_evasion",
@@ -339,6 +394,11 @@
         "replace": true
       }
     ],
+    "tags": [
+      {
+        "id": "tg_personal_armor"
+      }
+    ],
     "actions": [
       {
         "name": "Activate Stealth Hardsuit",
@@ -352,13 +412,19 @@
     "id": "missing_pilotgear",
     "name": "ERR: DATA NOT FOUND",
     "type": "Gear",
-    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack."
+    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_corrective",
     "name": "Corrective",
     "type": "Gear",
-    "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.<br>Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP.",
+    "effect": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP.",
+    "description": "This clear, plastic-like sheet can be placed over the wounds of severely injured pilots. It instantly begins to stabilize them, injecting medicine and deploying nanites to stitch wounds shut.",
     "actions": [
       {
         "name": "Use Corrective",
@@ -371,6 +437,9 @@
       {
         "id": "tg_limited",
         "val": 1
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -378,7 +447,7 @@
     "id": "pg_frag_grenades",
     "name": "Frag Grenades",
     "type": "Gear",
-    "description": "Expend a charge for the following effect:<ul><li><b>Frag Grenade</b> (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.</li></ul>",
+    "effect": "Expend a charge for the following effect:<ul><li><b>Frag Grenade</b> (Grenade, Range 5, Blast 1): Affected characters must succeed on an Agility save or take 2 Explosive damage.</li></ul>",
     "actions": [
       {
         "name": "Use Frag Grenade",
@@ -399,7 +468,7 @@
             "val": 2
           }
         ],
-        "detail": "Throw a grenade within Range 5. Affected characters withing a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
+        "detail": "Throw a grenade within Range 5. Affected characters within a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
         "pilot": true
       }
     ],
@@ -410,6 +479,9 @@
       },
       {
         "id": "tg_grenade"
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -417,7 +489,8 @@
     "id": "pg_patch",
     "name": "Patch",
     "type": "Gear",
-    "description": "“Patch” is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.<br>Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
+    "effect": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
+    "description": "“Patch” is pilot slang for any kind of modern first aid gear, including sprayable medi-gel and instant-acting medical patches.",
     "actions": [
       {
         "name": "Use Patch",
@@ -430,6 +503,9 @@
       {
         "id": "tg_limited",
         "val": 1
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -437,7 +513,8 @@
     "id": "pg_stims",
     "name": "Stims",
     "type": "Gear",
-    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.<br>Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
+    "effect": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
+    "description": "These chemical stimulants are sometimes administered automatically by injectors built into a pilot’s suit, or even implanted within their body. Uncontrolled use can be addictive and dangerous to health in the long-term and is a problem for some pilots.",
     "actions": [
       {
         "name": "Use Stim",
@@ -450,6 +527,9 @@
       {
         "id": "tg_limited",
         "val": 3
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -457,7 +537,7 @@
     "id": "pg_thermite_charge",
     "name": "Thermite Charge",
     "type": "Gear",
-    "description": "Expend a charge for the following effect:<ul><li><b>Thermite Charge</b> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.</li></ul>",
+    "effect": "Expend a charge for the following effect:<ul><li><b>Thermite Charge</b> (Mine, Burst 1): This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.</li></ul>",
     "deployables": [
       {
         "name": "Thermite Charge",
@@ -478,6 +558,9 @@
       {
         "id": "tg_limited",
         "val": 1
+      },
+      {
+        "id": "tg_gear"
       }
     ]
   },
@@ -485,114 +568,210 @@
     "id": "pg_antiphoton_visor",
     "name": "Antiphoton Visor",
     "type": "Gear",
-    "description": "Designed to protect the wearer’s eyes from intense bursts of light, antiphoton visors are commonly found among breach teams and solar-forward operators. They are effective against flash weapons, intense UV light, and incidental charges from energy weapons."
+    "description": "Designed to protect the wearer’s eyes from intense bursts of light, antiphoton visors are commonly found among breach teams and solar-forward operators. They are effective against flash weapons, intense UV light, and incidental charges from energy weapons.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_camo_cloth",
     "name": "Camo Cloth",
     "type": "Gear",
-    "description": "A square of reactive material that slowly shifts to reflect the surrounding environment, enough to cover a human comfortably. The transition takes about 10 seconds and makes anything hidden underneath very difficult to spot."
+    "description": "A square of reactive material that slowly shifts to reflect the surrounding environment, enough to cover a human comfortably. The transition takes about 10 seconds and makes anything hidden underneath very difficult to spot.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_dataplating",
     "name": "Dataplating",
     "type": "Gear",
-    "description": "Dataplating is a general term for any comm-linked jewelry, subdermal netting, wearable jaw, brow, or maxillary plates, etc., that allows subvocal communication and persistent heads-up and augmented reality displays without wearing a helm. Dataplates can quickly translate nearly any language, and allow users to communicate with each other all but silently."
+    "description": "Dataplating is a general term for any comm-linked jewelry, subdermal netting, wearable jaw, brow, or maxillary plates, etc., that allows subvocal communication and persistent heads-up and augmented reality displays without wearing a helm. Dataplates can quickly translate nearly any language, and allow users to communicate with each other all but silently.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_extra_rations",
     "name": "Extra Rations",
     "type": "Gear",
-    "description": "Pilot rations aren’t much better than their nautical forerunners – both are variants on hardtack and nutrient paste. Pilots often carry a stash of extra food, or luxuries like chocolate, coffee, alcohol, or preserved goods from their homeworld. These rations can be used to barter or boost morale."
+    "description": "Pilot rations aren’t much better than their nautical forerunners – both are variants on hardtack and nutrient paste. Pilots often carry a stash of extra food, or luxuries like chocolate, coffee, alcohol, or preserved goods from their homeworld. These rations can be used to barter or boost morale.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_flexsuit",
     "name": "Flexsuit",
     "type": "Gear",
-    "description": "A strong base-layer suit that recycles water, generates nutrients, and adapts very rapidly to hostile environs, maintaining a stable condition and extending survivability. Flexsuit wearers can go for roughly a week without eating or drink thanks to the ambrosia paste generated by their suit before its systems are depleted; however, they don’t prevent feelings of hunger. Removing the suit for a day or two is enough to replenish its reserves. Flexsuits also maintain a steady temperature within acceptable parameters."
+    "description": "A strong base-layer suit that recycles water, generates nutrients, and adapts very rapidly to hostile environs, maintaining a stable condition and extending survivability. Flexsuit wearers can go for roughly a week without eating or drink thanks to the ambrosia paste generated by their suit before its systems are depleted; however, they don’t prevent feelings of hunger. Removing the suit for a day or two is enough to replenish its reserves. Flexsuits also maintain a steady temperature within acceptable parameters.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_handheld_printer",
     "name": "Handheld Printer",
     "type": "Gear",
-    "description": "A miniaturized version of Union’s full-scale printers, handheld printers can be used to make simple objects out of flexible and durable plastic – as long as you have the right pattern chip."
+    "description": "A miniaturized version of Union’s full-scale printers, handheld printers can be used to make simple objects out of flexible and durable plastic – as long as you have the right pattern chip.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_subjectivity_enhancement_suite",
     "name": "Subjectivity-Enhancement Suite",
     "type": "Gear",
-    "description": "A subjectivity-enhancement suite is a set of cybernetic implants allowing users to hack systems without a rig. Users of these suites blend the organic with the synthetic, gaining the ability to extrude implanted universal-plug cables from within their body to make hardline connections with terminals. When plugged in, users can access a comprehensive, fully interactive alternate-reality interface with direct omninet access, making navigating – or hacking – local and networked systems as easy as wishing it so (of course, you must be careful: by opening up your mind to the digital, you may face dangers other, less enhanced people are ignorant of)."
+    "description": "A subjectivity-enhancement suite is a set of cybernetic implants allowing users to hack systems without a rig. Users of these suites blend the organic with the synthetic, gaining the ability to extrude implanted universal-plug cables from within their body to make hardline connections with terminals. When plugged in, users can access a comprehensive, fully interactive alternate-reality interface with direct omninet access, making navigating – or hacking – local and networked systems as easy as wishing it so (of course, you must be careful: by opening up your mind to the digital, you may face dangers other, less enhanced people are ignorant of).",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_infoskin",
     "name": "Infoskin",
     "type": "Gear",
-    "description": "A reactive, synthetic polymer with advanced qualities, infoskin bonds quickly to real skin and hair. Once applied, it responds to electronic signals delivered by linked software, rapidly changing its color and texture – even contorting and distorting its form – allowing wearers to make minor changes to their appearance. With infoskin, it’s a simple matter to alter facial features, hair color, or makeup patterns."
+    "description": "A reactive, synthetic polymer with advanced qualities, infoskin bonds quickly to real skin and hair. Once applied, it responds to electronic signals delivered by linked software, rapidly changing its color and texture – even contorting and distorting its form – allowing wearers to make minor changes to their appearance. With infoskin, it’s a simple matter to alter facial features, hair color, or makeup patterns.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_mag_clamps",
     "name": "Mag-Clamps",
     "type": "Gear",
-    "description": "These clamps attach easily to any metal surface, enhancing maneuverability in zero-g environments or when repairing mechs. They can be carried or fitted to boots."
+    "description": "These clamps attach easily to any metal surface, enhancing maneuverability in zero-g environments or when repairing mechs. They can be carried or fitted to boots.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_nanite_spray",
     "name": "Nanite Spray",
     "type": "Gear",
-    "description": "A spray paint that can be applied to any surface. Nanite spray is invisible to the naked eye but able to transmit simple messages or small data packets when scanned."
+    "description": "A spray paint that can be applied to any surface. Nanite spray is invisible to the naked eye but able to transmit simple messages or small data packets when scanned.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_omnihook",
     "name": "Omnihook",
     "type": "Gear",
-    "description": "A portable – if bulky – omninet terminal that allows for communication, data transfer, and limited hot-spotting. Omnihooks are extremely valuable, although most mech squads have at least one. Tuning an omnihook requires a high level of skill, so they are usually mounted or carried by designated operators."
+    "description": "A portable – if bulky – omninet terminal that allows for communication, data transfer, and limited hot-spotting. Omnihooks are extremely valuable, although most mech squads have at least one. Tuning an omnihook requires a high level of skill, so they are usually mounted or carried by designated operators.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_personal_drone",
     "name": "Personal Drone",
     "type": "Gear",
-    "description": "Small, non-combat drones are a common sight in the field. They’re fairly noisy but can fly about half a mile with good maneuverability before losing signal, relaying audio and visual information as they go."
+    "description": "Small, non-combat drones are a common sight in the field. They’re fairly noisy but can fly about half a mile with good maneuverability before losing signal, relaying audio and visual information as they go.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_prosocollar",
     "name": "Prosocollar",
     "type": "Gear",
-    "description": "A collar-like device that fits snugly around its wearer’s neck, projecting a holographic image over their face and head. Prosocollars can change their wearer’s voice and scramble or change their appearance. The projection won’t stand up to close inspection, but it can easily fool electronic systems and distant observers."
+    "description": "A collar-like device that fits snugly around its wearer’s neck, projecting a holographic image over their face and head. Prosocollars can change their wearer’s voice and scramble or change their appearance. The projection won’t stand up to close inspection, but it can easily fool electronic systems and distant observers.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_smart_scope",
     "name": "Smart Scope",
     "type": "Gear",
-    "description": "A powerful electronic scope that provides high-resolution magnification up to two miles, and automatically adjusts its reticle for wind, gravity, and pressure. Smart scopes can project their field of vision and all data to the HUD of any networked user. They can also pair with other thermal, optical, or simulated-vision devices to further enhance targeting."
+    "description": "A powerful electronic scope that provides high-resolution magnification up to two miles, and automatically adjusts its reticle for wind, gravity, and pressure. Smart scopes can project their field of vision and all data to the HUD of any networked user. They can also pair with other thermal, optical, or simulated-vision devices to further enhance targeting.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_sleeping_bag",
     "name": "Sleeping Bag",
     "type": "Gear",
-    "description": "Coming in a variety of sizes, sleeping bags are a field necessity. They’re designed to fold out from a hardsuit, fit within a mech’s cockpit, resist fire and changes in temperature, and – when necessary – seal against vacuum.<br>You can climb into your sleeping bag, gaining Immunity to burn, protection against vacuum, and enough air to last an hour; however, while in the sleeping bag you are Stunned and can’t take actions other than to exit the bag as a full action."
+    "effect": "You can climb into your sleeping bag, gaining Immunity to burn, protection against vacuum, and enough air to last an hour; however, while in the sleeping bag you are Stunned and can’t take actions other than to exit the bag as a full action.",
+    "description": "Coming in a variety of sizes, sleeping bags are a field necessity. They’re designed to fold out from a hardsuit, fit within a mech’s cockpit, resist fire and changes in temperature, and – when necessary – seal against vacuum.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_ssc_sylph_undersuit",
     "name": "SSC Sylph Undersuit",
     "type": "Gear",
-    "description": "Discovered on Acrimea IV, a biome cultivar world controlled by Smith-Shimano Corpro (SSC), the sylph is an organic lifeform that can seemingly survive in nearly any environment. Using breeding-analogous methods defined by established bioengineering doctrines, SSC developed the sylph undersuit – sterile, living sylphs grown as envelopes and fitted to their owners. The sylph bonds to its wearer, forming a symbiotic relationship: the sylph is sustained by the host’s waste products, in return protecting the host from a range of hostile environmental factors.<br>These semi-biological, skin-tight undersuits can be worn for extended periods. They are translucent, semi-liquid, and able to be stored when not in use, conforming to whatever container they are placed in. They clean the host’s body, aid natural healing processes, and eliminate waste. As desired, segments can become opaque, change color, or take on a new texture. Sylph undersuits can cover the host’s head, sealing against vacuum, providing protection against radiation, and filtering air or liquids, even providing the ability to breathe water for a limited time."
+    "description": "Discovered on Acrimea IV, a biome cultivar world controlled by Smith-Shimano Corpro (SSC), the sylph is an organic lifeform that can seemingly survive in nearly any environment. Using breeding-analogous methods defined by established bioengineering doctrines, SSC developed the sylph undersuit – sterile, living sylphs grown as envelopes and fitted to their owners. The sylph bonds to its wearer, forming a symbiotic relationship: the sylph is sustained by the host’s waste products, in return protecting the host from a range of hostile environmental factors.<br>These semi-biological, skin-tight undersuits can be worn for extended periods. They are translucent, semi-liquid, and able to be stored when not in use, conforming to whatever container they are placed in. They clean the host’s body, aid natural healing processes, and eliminate waste. As desired, segments can become opaque, change color, or take on a new texture. Sylph undersuits can cover the host’s head, sealing against vacuum, providing protection against radiation, and filtering air or liquids, even providing the ability to breathe water for a limited time.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_sound_system",
     "name": "Sound System",
     "type": "Gear",
-    "description": "Though their tactical utility is questionable, many pilots set up internal speaker systems in their cockpits. This gives them a clear line to their compatriots during combat, along with the ability to play music."
+    "description": "Though their tactical utility is questionable, many pilots set up internal speaker systems in their cockpits. This gives them a clear line to their compatriots during combat, along with the ability to play music.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_tertiary_arm",
     "name": "Tertiary Arm",
     "type": "Gear",
-    "description": "A powered third arm mounted on a bracket on the hardsuit. Tertiary arms are powered and controlled using the same neural bridge processes that allow hardsuits to respond to user input. They can be equipped with manipulators to allow for fine motor control, weapons to enhance combat efficacy, or specialty tools."
+    "description": "A powered third arm mounted on a bracket on the hardsuit. Tertiary arms are powered and controlled using the same neural bridge processes that allow hardsuits to respond to user input. They can be equipped with manipulators to allow for fine motor control, weapons to enhance combat efficacy, or specialty tools.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   },
   {
     "id": "pg_wilderness_survival_kit",
     "name": "Wilderness Survival Kit",
     "type": "Gear",
-    "description": "This kit contains many essentials for surviving in hostile environments: a rebreather, water filters, hardsuit patches, backup thermals, a bivouac kit, and so on."
+    "description": "This kit contains many essentials for surviving in hostile environments: a rebreather, water filters, hardsuit patches, backup thermals, a bivouac kit, and so on.",
+    "tags": [
+      {
+        "id": "tg_gear"
+      }
+    ]
   }
 ]
