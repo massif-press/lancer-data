@@ -460,6 +460,7 @@
     "source": "IPS-N",
     "license": "Blackbeard",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and the SEKHMET Protocol.",
     "actions": [
       {
         "name": "SEKHMET Protocol",
@@ -1426,6 +1427,7 @@
     "source": "SSC",
     "license": "Monarch",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and the TLALOC Protocol.",
     "actions": [
       {
         "name": "TLALOC Protocol",
@@ -1789,6 +1791,7 @@
     "source": "HORUS",
     "license": "Goblin",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and and can perform the Hurl Into the Duat QUICK TECH option.",
     "actions": [
       {
         "name": "Hurl Into the Duat",
@@ -1950,6 +1953,7 @@
     "source": "HORUS",
     "license": "Gorgon",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and Unleash SCYLLA.",
     "actions": [
       {
         "name": "Unleash SCYLLA",
@@ -2401,6 +2405,7 @@
     "source": "HORUS",
     "license": "Pegasus",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and Bend Probability.",
     "actions": [
       {
         "name": "Bend Probability",
@@ -2684,6 +2689,7 @@
     "source": "HA",
     "license": "Genghis",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and the AGNI Protocol.",
     "actions": [
       {
         "name": "AGNI Protocol",
@@ -3067,6 +3073,7 @@
     "source": "HA",
     "license": "Saladin",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and Diluvian Ark.",
     "actions": [
       {
         "name": "Diluvian Ark",
@@ -3142,6 +3149,7 @@
     "source": "HA",
     "license": "Sherman",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and the ASURA Protocol.",
     "actions": [
       {
         "name": "ASURA Protocol",
@@ -3224,6 +3232,7 @@
     "source": "HA",
     "license": "Tokugawa",
     "license_level": 3,
+    "effect": "Your mech gains the AI tag and the LUCIFER Protocol.",
     "actions": [
       {
         "name": "LUCIFER Protocol",
