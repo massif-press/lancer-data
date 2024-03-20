@@ -371,6 +371,30 @@
             "detail": "1/round, when you hit with a Main Melee weapon, gain 1 Blademaster Die."
           }
         ],
+        "actions": [
+          {
+            "name": "Parry",
+            "activation": "Reaction",
+            "trigger": "You are hit by a melee attack",
+            "detail": "Expend 1 Blademaster die. You gain Resistance to all damage, heat, and burn dealt by the attack."
+          },
+          {
+            "name": "Deflect",
+            "activation": "Reaction",
+            "trigger": "You are hit by a ranged attack",
+            "detail": "You may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack."
+          },
+          {
+            "name": "Feint",
+            "activation": "Free",
+            "detail": "Expend 1 Blademaster die. Choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn."
+          },
+          {
+            "name": "Trip",
+            "activation": "Quick",
+            "detail": "Expend 1 Blademaster die. Choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space."
+          }
+        ],
         "counters": [
           {
             "id": "ctr_duelist",
