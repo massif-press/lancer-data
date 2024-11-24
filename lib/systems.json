@@ -1791,7 +1791,7 @@
     "source": "HORUS",
     "license": "Goblin",
     "license_level": 3,
-    "effect": "Your mech gains the AI tag and and can perform the Hurl Into the Duat QUICK TECH option.",
+    "effect": "Your mech gains the AI tag and can perform the Hurl Into the Duat QUICK TECH option.",
     "actions": [
       {
         "name": "Hurl Into the Duat",
