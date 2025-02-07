@@ -347,7 +347,7 @@
       },
       {
         "name": "Skirmisher",
-        "description": "After attacking, the Nelson can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions."
+        "description": "After attacking, the Nelson can immediately move 1 space in any direction as long as it isn’t Immobilized or Slowed. This movement ignores engagement and doesn’t provoke reactions."
       }
     ],
     "core_system": {
