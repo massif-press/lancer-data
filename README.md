@@ -160,7 +160,7 @@ Actions in `actions.json` define the basic actions every player has access to in
   "confirm"?: string[]
   "log"?: string
   "ignore_used"?: boolean
-  "heat_cost"?: boolean
+  "heat_cost"?: number
 }
 ```
 
