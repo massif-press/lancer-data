@@ -400,7 +400,6 @@ Weapon mods are handled separately in C/C than in Lancer (where they're just tag
   "id": string,
   "name": string,
   "source": string, // Manufacturer ID
-  "license": string, // Frame Name
   "license_id": string, // reference to the Frame id of the associated license
   "license_level": number, // set to 0 to be available to all Pilots
   "sp"?: number,
@@ -441,7 +440,6 @@ This is currently unsupported in the LANCER Core Book (or any Massif material at
   "allowed_types"?: SystemType[], // system types the mod CAN be applied to
   "restricted_types"?: SystemType[], // system types the mod CAN NOT be applied to
   "source": string, // Manufacturer ID
-  "license": string, // Frame Name
   "license_level": number, // set to 0 to be available to all Pilots
   "effect": string, // v-html
   "tags": ITagData[], // tags related to the mod itself
@@ -594,7 +592,6 @@ The "skill family" ("str", "con", "dex", "int", "cha") only determines _where_ o
     "id": string,
     "name": string,
     "source": string, // must be the same as the Manufacturer ID to sort correctly
-    "license": string, // reference to the Frame name of the associated license
     "license_id": string, // reference to the Frame id of the associated license
     "license_level": number, // set to zero for this item to be available to a LL0 character
     "effect"?: string, // v-html
@@ -736,7 +733,6 @@ Weapons are essentially mounted systems that furnish the "Skirmish" and "Barrage
   "id": string,
   "name": string,
   "source": string, // must be the same as the Manufacturer ID to sort correctly
-  "license": string, // reference to the Frame name of the associated license
   "license_id": string, // reference to the Frame id of the associated license
   "license_level": number, // set to zero for this item to be available to a LL0 character
   "mount": MountType,
