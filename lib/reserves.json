@@ -170,7 +170,7 @@
     "bonuses": [
       {
         "id": "core_power",
-        "val": 2
+        "val": 1
       }
     ]
   },
@@ -211,10 +211,67 @@
     "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING.",
     "synergies": [
       {
-        "locations": ["hase"],
+        "locations": ["stats"],
         "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
       }
-    ]
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_hull",
+    "name": "Systems reinforcement (HULL)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to HULL skill checks.",
+    "bonuses": [
+      {
+        "id": "hull",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_agility",
+    "name": "Systems reinforcement (AGILITY)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to AGILITY skill checks.",
+    "bonuses": [
+      {
+        "id": "agility",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_systems",
+    "name": "Systems reinforcement (SYSTEMS)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to SYSTEMS skill checks.",
+    "bonuses": [
+      {
+        "id": "systems",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
+  },
+  {
+    "id": "reserve_systems_reinforcement_engineering",
+    "name": "Systems reinforcement (ENGINEERING)",
+    "type": "Mech",
+    "label": "Resource",
+    "description": "+1 ACCURACY to ENGINEERING skill checks.",
+    "bonuses": [
+      {
+        "id": "engineering",
+        "accuracy": 1
+      }
+    ],
+    "deprecated": true
   },
   {
     "id": "reserve_smart_ammo",
@@ -222,10 +279,10 @@
     "type": "Mech",
     "label": "Ammo",
     "description": "All weapons of your choice can be fired as if they are SMART.",
-    "synergies": [
+    "active_effects": [
       {
-        "locations": ["weapon"],
-        "detail": "All weapons of your choice can be fired as if they are SMART"
+        "name": "Smart Ammo",
+        "detail": "All weapons of your choice can be fired as if they are SMART."
       }
     ]
   },
@@ -235,10 +292,10 @@
     "type": "Mech",
     "label": "Resource",
     "description": "IMMUNITY to the SLOWED condition.",
-    "synergies": [
+    "resistances": [
       {
-        "locations": ["move"],
-        "detail": "Your mech has IMMUNITY to the SLOWED condition."
+        "type": "condition",
+        "val": "slowed"
       }
     ]
   },
@@ -248,6 +305,12 @@
     "type": "Mech",
     "label": "Resource",
     "description": "During this mission your mech can FLY when moving, but must end movement on land.",
+    "active_effects": [
+      {
+        "name": "Jump Jets",
+        "detail": "Your mech can FLY when moving, but must end movement on land."
+      }
+    ],
     "synergies": [
       {
         "locations": ["move"],
@@ -289,9 +352,15 @@
     "type": "Tactical",
     "label": "Skill/Action",
     "description": "Training or enhancement that provides +1 ACCURACY to a particular mech skill or action for the duration of this mission.",
+    "active_effects": [
+      {
+        "name": "Accuracy",
+        "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
+      }
+    ],
     "synergies": [
       {
-        "locations": ["other"],
+        "locations": ["stats"],
         "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
       }
     ]
@@ -320,7 +389,8 @@
         "damage": [
           {
             "type": "Explosive",
-            "val": "3d6"
+            "val": "3d6",
+            "aoe": true
           }
         ]
       }

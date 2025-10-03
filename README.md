@@ -190,6 +190,7 @@ C/C will try to calculate the heat cost of item actions based on item tags, but 
   "skills"?: string[] // Use ids from skills.json
 }
 ```
+
 The `skills` field is an optional array of skill IDs from `skills.json`, used to present example skill triggers for a background. Upon selection of a background, if a pilot currently has no skill trigger points assigned, C/C will attempt to auto-populate the pilot with 1 point in each of the example skill triggers.
 
 # CORE Bonuses (core_bonuses.json)
@@ -225,10 +226,6 @@ Many of the CORE Bonus effects are hardcoded, which is something to keep in mind
   "description": string // v-html"
 }
 ```
-
-# Factions (factions.json)
-
-FACTIONS are an upcoming feature that is not yet implemented within COMP/CON. This document will be updated when that changes.
 
 # Frames (frames.json)
 
@@ -834,7 +831,7 @@ Note that, aside from the `name` field, all fields on a profile are optional. If
   "profiles": [{
       "name": "Profile A",
       "damage": [{
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": "1d6"
       }],
       "range": [{
@@ -855,7 +852,7 @@ Note that, aside from the `name` field, all fields on a profile are optional. If
     {
       "name": "Profile B",
       "damage": [{
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 10
       }],
       "range": [{

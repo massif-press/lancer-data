@@ -1,4 +1,5 @@
-#!/usr/bin/node
+#!/usr/bin/env node
+const readline = require('readline');
 
 const fs = require('fs');
 
@@ -75,7 +76,7 @@ function decapitalize() {
   });
 }
 
-function expandEffect() {
+function collapseEffect() {
   fs.readdir(folderPath, (err, files) => {
     if (err) {
       console.error('Error reading directory:', err);
@@ -97,8 +98,8 @@ function expandEffect() {
             let modified = false;
 
             jsonData = jsonData.map((obj) => {
-              if (obj.hasOwnProperty('effect') && typeof obj.effect === 'string') {
-                obj.effect = { description: obj.effect };
+              if (obj.hasOwnProperty('effect') && typeof obj.effect === 'object') {
+                obj.effect = obj.effect.description;
                 modified = true;
               }
               return obj;
@@ -122,6 +123,110 @@ function expandEffect() {
   });
 }
 
+async function collectEffects() {
+  const collection = {
+    active_effects: [],
+    add_status: [],
+    add_condition: [],
+    remove_condition: [],
+    add_resist: [],
+    damage: [],
+    range: [],
+    save: [],
+    bonus_damage: [],
+  };
+
+  fs.readdir(folderPath, (err, files) => {
+    if (err) {
+      console.error('Error reading directory:', err);
+      return;
+    }
+
+    const promises = [];
+
+    files.forEach((file) => {
+      if (path.extname(file) === '.json') {
+        const filePath = path.join(folderPath, file);
+        promises.push(
+          fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+              console.error(`Error reading file ${file}:`, err);
+              return;
+            }
+            try {
+              const jsonData = JSON.parse(data);
+              if (!Array.isArray(jsonData)) return;
+              console.log(`Processing ${file} with ${jsonData.length} entries`);
+              jsonData.forEach((obj) => {
+                const elemArr = [obj];
+                if (obj.actions) elemArr.push(...obj.actions);
+                if (obj.deployables) elemArr.push(...obj.deployables);
+                elemArr.forEach((e) => {
+                  if (e.active_effects) {
+                    for (const effect of e.active_effects) {
+                      if (Object.keys(effect).length > 2) {
+                        collection.active_effects.push(effect);
+                      }
+                    }
+                  }
+                  if (e.add_status) collection.add_status.push(e.add_status);
+                  if (e.add_condition) collection.add_condition.push(e.add_condition);
+                  if (e.remove_condition) collection.remove_condition.push(e.remove_condition);
+                  if (e.add_resist) collection.add_resist.push(e.add_resist);
+                  if (e.damage) collection.damage.push(e.damage);
+                  if (e.range) collection.range.push(e.range);
+                  if (e.save) collection.save.push(e.save);
+                  if (e.bonus_damage) collection.bonus_damage.push(e.save);
+                });
+              });
+            } catch (parseError) {
+              console.error(`Error parsing JSON in file ${file}:`, parseError);
+            }
+          })
+        );
+      }
+    });
+  });
+
+  await new Promise((resolve) => setTimeout(resolve, 2000)); // wait for all files to be processed
+
+  await fs.writeFile(
+    'output/activeEffects.json',
+    JSON.stringify(collection, null, 2),
+    'utf8',
+    (err) => {
+      if (err) {
+        console.error('Error writing activeEffects.json:', err);
+      } else {
+        console.log('activeEffects.json updated');
+      }
+    }
+  );
+}
+
 // run
 
-expandEffect();
+const functions = {
+  1: { name: 'Decapitalize Item names', fn: decapitalize },
+  2: { name: 'Collapse Effect Props', fn: collapseEffect },
+  3: { name: 'Collect Active Effects', fn: collectEffects },
+};
+
+console.log('Choose a function:');
+for (const key in functions) {
+  console.log(`${key}. ${functions[key].name}`);
+}
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question('> ', (answer) => {
+  if (functions[answer]) {
+    functions[answer].fn();
+  } else {
+    console.log('Invalid choice.');
+  }
+  rl.close();
+});

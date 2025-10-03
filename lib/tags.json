@@ -35,8 +35,8 @@
   },
   {
     "id": "tg_accurate",
-    "name": "Accurate",
-    "description": "Attacks made with this weapon receive +1 Accuracy."
+    "name": "Accurate {VAL}",
+    "description": "Attacks made with this weapon receive +{VAL} Accuracy."
   },
   {
     "id": "tg_arcing",
@@ -50,8 +50,8 @@
   },
   {
     "id": "tg_inaccurate",
-    "name": "Inaccurate",
-    "description": "Attacks made with this weapon receive +1 Difficulty."
+    "name": "Inaccurate {VAL}",
+    "description": "Attacks made with this weapon receive +{VAL} Difficulty."
   },
   {
     "id": "tg_knockback",
@@ -64,14 +64,24 @@
     "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
   },
   {
+    "id": "tg_loading",
+    "name": "Loading",
+    "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+  },
+  {
+    "id": "tg_loading_after",
+    "name": "Loading (Multiple Uses)",
+    "description": "This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems. The user can choose to reload this weapon at the end of their turn, allowing them to fire it again on the same turn. This is a COMP/CON-specific alias for the LOADING tag, and all rules pertaining to LOADING apply."
+  },
+  {
     "id": "tg_ordnance",
     "name": "Ordnance",
     "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
   },
   {
     "id": "tg_overkill",
-    "name": "Overkill",
-    "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+    "name": "Overkill {VAL}-{VAL2}",
+    "description": "When rolling for damage with this weapon, any damage dice that land on a {VAL} cause the attacker to take {VAL2} Heat, and are then rerolled. Additional {VAL}s continue to trigger this effect."
   },
   {
     "id": "tg_overshield",
@@ -314,6 +324,12 @@
     "id": "tg_no_cascade",
     "name": "Prevent Cascade",
     "description": "Prohibits an AI system from being recognized as a valid target for Cascading (HIDDEN TAG)",
+    "hidden": true
+  },
+  {
+    "id": "tg_irreducible",
+    "name": "Irreducible",
+    "description": "Prohibits damage reduction from any source (HIDDEN TAG)",
     "hidden": true
   }
 ]

@@ -1,0 +1,2285 @@
+{
+  "active_effects": [
+    {
+      "name": "Titanomachy Mesh",
+      "activation": "Free",
+      "frequency": "1/round",
+      "condition": "You successfully Ram or Grapple a mech.",
+      "detail": "You can Ram or Grapple again as a free action."
+    },
+    {
+      "name": "All-Theater Movement Suite",
+      "condition": "You choose to count your movement as flying this turn.",
+      "damage": [
+        {
+          "type": "Heat",
+          "val": 1,
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "name": "Ghostweave",
+      "detail": "You are Invisible. If you take no actions on your turn other than your standard move, Hide, and Boost, you remain Invisible until the start of your next turn. You immediately cease to be Invisible when you take a reaction.",
+      "add_status": [
+        {
+          "id": "invisible",
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "name": "The Lesson of Thinking-Tomorrow’s-Thought",
+      "condition": "You hit with a tech attack.",
+      "detail": "Your next melee attack against the same target gains +1 accuracy, and its damage can’t be reduced in any way.",
+      "bonus": {
+        "id": "melee",
+        "accuracy": 1
+      }
+    },
+    {
+      "name": "Armory-Sculpted Chassis",
+      "activation": "Free",
+      "condition": "You Overcharge.",
+      "duration": "next_turn_start_self",
+      "detail": "You gain soft cover until the start of your next turn.",
+      "add_other": [
+        {
+          "type": "cover",
+          "val": "soft",
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "name": "Stasis Shielding",
+      "condition": "You take stress damage.",
+      "duration": "next_turn_start_self",
+      "detail": "You gain Resistance to all damage until the start of your next turn.",
+      "bonus": {
+        "id": "resistance",
+        "val": "all",
+        "target": "self"
+      }
+    },
+    {
+      "name": "EVA Module",
+      "condition": "You are in a low or zero gravity or underwater environment.",
+      "detail": "You can fly and are not Slowed."
+    },
+    {
+      "name": "Rapid Burst Jump Jet System",
+      "condition": "You Boost.",
+      "detail": "You can fly when you Boost; however, you must end the movement on the ground or another solid surface, or else immediately begin falling."
+    },
+    {
+      "name": "Type-I Flight System",
+      "detail": "You may choose to count any and all of your movement as flying; however, you take Size +1 Heat at the end of any of your turns in which you fly this way.",
+      "cost": {
+        "type": "Heat",
+        "val": "{size} + 1"
+      }
+    },
+    {
+      "name": "SEKHMET Protocol (Melee Crit Bonus)",
+      "detail": "All melee critical hits deal +1d6 bonus damage.",
+      "on_crit": {
+        "bonus_damage": {
+          "val": "1d6",
+          "weapon_types": ["melee"]
+        }
+      }
+    },
+    {
+      "name": "SEKHMET Protocol (Skirmish)",
+      "detail": "1/round, you can Skirmish with melee weapons only as a free action.",
+      "actions": [
+        {
+          "name": "SEKHMET Protocol Skirmish",
+          "activation": "Free",
+          "frequency": "1/round",
+          "detail": "Skirmish with melee weapons as a free action."
+        }
+      ]
+    },
+    {
+      "name": "Siege Ram",
+      "detail": "When you Ram, you deal 2 kinetic damage on hit",
+      "condition": "On a hit with Ram",
+      "damage": [
+        {
+          "type": "Kinetic",
+          "val": "2"
+        }
+      ]
+    },
+    {
+      "name": "Siege Ram (Object/Terrain)",
+      "detail": "You deal 10 AP kinetic damage when you Ram objects and terrain",
+      "condition": "When you Ram objects or terrain",
+      "damage": [
+        {
+          "type": "Kinetic",
+          "val": "10",
+          "ap": true
+        }
+      ]
+    },
+    {
+      "name": "TLALOC Protocol Active",
+      "detail": "You may reroll each missed melee or ranged attack roll once, choosing a new target within the attack’s Range. If the attack was part of an area of effect, it must target a character in the same area. Any given target can't be hit more than once as part of the same action.",
+      "duration": "next_turn_start_self"
+    },
+    {
+      "name": "Swarm Body Active",
+      "detail": "Characters of your choice that start their turn in the area or enter it on their turn must succeed on a Systems save or take 3 kinetic. This amount increases by +3 damage for each of your turns that you have remained stationary, up to a maximum of 9 kinetic.",
+      "damage": [
+        {
+          "type": "Kinetic",
+          "val": 3,
+          "aoe": true
+        }
+      ]
+    },
+    {
+      "name": "Eye of HORUS Active",
+      "detail": "Characters within Sensors don’t benefit from Hidden and Invisible against you and you may check the HP, Evasion, E-Defense, and current Heat of hostile characters within the same area. Allied characters do not benefit from this effect.",
+      "duration": "next_turn_end_self"
+    },
+    {
+      "name": "Blinkshield Active",
+      "detail": "Nothing can enter or exit the bubble, not even light – it’s both impermeable and has Immunity to all damage and effects. Line of sight can’t be drawn through the border of the area, and it can’t be crossed by any action or effect – even those that don’t require line of sight – but time passes normally on both sides. For characters within the affected area, the world outside goes totally black; likewise, characters outside the affected area see a perfect black sphere.",
+      "duration": "next_turn_end_self"
+    },
+    {
+      "name": "ENCLAVE-Pattern Support Shield Active",
+      "detail": "Any ranged or melee attacks made against characters within the affected area from outside the dome receive +1 difficulty.",
+      "duration": "next_turn_end_self"
+    },
+    {
+      "name": "Diluvian Ark Active",
+      "detail": "Each time you or an allied adjacent character are targeted by a ranged attack, you may take 1 heat as a reaction and roll 1d6 before the attacker rolls: on 4+, you take an additional 1 heat and the attack automatically misses you and any allies adjacent to you. This effect does not stack with Invisible.<br>Each time a ranged attack fails to hit you or an adjacent allied character, the attacker takes 4 kinetic damage.",
+      "duration": "next_turn_end_self"
+    },
+    {
+      "name": "NHP Assistance",
+      "detail": "1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it’s worse.",
+      "frequency": "1/round"
+    },
+    {
+      "name": "NHP Assistance",
+      "detail": "1/round, with the assistance of your NHP, you may reroll any mech skill check or save. You must keep the new result, even if it’s worse.",
+      "frequency": "1/round"
+    }
+  ],
+  "add_status": [
+    [
+      {
+        "id": "lockon"
+      }
+    ],
+    [
+      {
+        "id": "impaired",
+        "target": "self"
+      },
+      {
+        "id": "slowed",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "prone"
+      }
+    ],
+    [
+      {
+        "id": "stunned",
+        "target": "self",
+        "duration": "next_turn_start_self"
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "save": true,
+        "save_stat": "agi",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "id": "prone",
+        "save": true,
+        "save_stat": "hull"
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "save": true,
+        "save_stat": "hull"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "save": true,
+        "save_stat": "hull"
+      }
+    ],
+    [
+      {
+        "id": "jammed",
+        "save": true,
+        "aoe": true,
+        "save_stat": "agi"
+      },
+      {
+        "id": "impaired",
+        "save": true,
+        "aoe": true,
+        "save_stat": "systems"
+      }
+    ],
+    [
+      {
+        "id": "invisible",
+        "target": "self",
+        "duration": "next_turn_end_self"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "target": "self",
+        "duration": "next_turn_start_self"
+      }
+    ],
+    [
+      {
+        "id": "impaired",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "id": "lock_on"
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "target": "self"
+      },
+      {
+        "id": "invisible",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "jammed",
+        "target": "target",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "id": "impaired",
+        "target": "attacker",
+        "duration": "next_turn_end_attacker"
+      },
+      {
+        "id": "jammed",
+        "target": "attacker",
+        "duration": "next_turn_end_attacker"
+      }
+    ],
+    [
+      {
+        "id": "stunned",
+        "duration": "next_turn_end_target",
+        "save": true,
+        "save_stat": "systems"
+      }
+    ],
+    [
+      {
+        "id": "stunned",
+        "target": "self",
+        "duration": "next_turn_end_self"
+      },
+      {
+        "id": "stunned",
+        "duration": "next_turn_end_target",
+        "aoe": true,
+        "save": true,
+        "save_stat": "systems"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "duration": "next_turn_end_target",
+        "save": true,
+        "save_stat": "systems",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "save": true,
+        "save_stat": "systems",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "target": "self"
+      },
+      {
+        "id": "slowed",
+        "duration": "next_turn_end_target",
+        "aoe": true,
+        "save": true,
+        "save_stat": "systems"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "save": true,
+        "save_stat": "agility"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "target": "any",
+        "save": true,
+        "save_stat": "engineering"
+      }
+    ],
+    [
+      {
+        "id": "stunned",
+        "target": "any"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "immobilized",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "slowed",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "id": "stunned",
+        "target": "self"
+      },
+      {
+        "id": "prone",
+        "target": "any",
+        "save": true,
+        "save_stat": "agility"
+      }
+    ]
+  ],
+  "add_condition": [
+    [
+      {
+        "condition": "Argonaut Shield Target",
+        "target": "ally"
+      }
+    ],
+    [
+      {
+        "condition": "HyperDense Armor Active",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "condition": "Nuerospike: Shrike Code Target"
+      }
+    ],
+    [
+      {
+        "condition": "Nuerospike: Mirage Target"
+      }
+    ],
+    [
+      {
+        "condition": "Hunter Logic Suite: Stalk Prey Target"
+      }
+    ],
+    [
+      {
+        "condition": "Hunter Logic Suite: Terrify Target"
+      }
+    ],
+    [
+      {
+        "condition": "FADE Cloak: Intangible"
+      }
+    ],
+    [
+      {
+        "condition": "Markerlight Target"
+      }
+    ],
+    [
+      {
+        "condition": "Retractable Profile Active",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "condition": "LB/OC Cloaking Field Active",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "condition": "Metahook Target",
+        "target": "ally"
+      }
+    ],
+    [
+      {
+        "condition": "Hurl into the Duat Target"
+      }
+    ],
+    [
+      {
+        "condition": "H0R_OS: Celestial Shackles Target"
+      }
+    ],
+    [
+      {
+        "condition": "Mimic Mesh Target",
+        "target": "ally"
+      }
+    ],
+    [
+      {
+        "condition": "Monitor Module Target",
+        "target": "ally",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "condition": "Mesmer Beacon Target",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "condition": "Viral Logic: Banish Target",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "condition": "Aggressive System Sync: Chains of Prometheus Target"
+      }
+    ],
+    [
+      {
+        "condition": "Aggressive System Sync: Excommunicate Target"
+      }
+    ],
+    [
+      {
+        "condition": "Hunter Lock Target"
+      }
+    ],
+    [
+      {
+        "condition": "Affected by Flak Launcher",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "condition": "Affected by Gravity Grenade"
+      }
+    ],
+    [
+      {
+        "condition": "Affected by Stasis Generator",
+        "duration": "next_turn_end_target"
+      }
+    ],
+    [
+      {
+        "condition": "Hardlight Defense System Active",
+        "target": "self"
+      }
+    ]
+  ],
+  "remove_condition": [
+    [
+      {
+        "condition": "HyperDense Armor Active",
+        "target": "self"
+      }
+    ],
+    {
+      "condition": "Retractable Profile Activated",
+      "target": "self"
+    },
+    [
+      {
+        "condition": "LB/OC Cloaking Field Active",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "condition": "Hardlight Defense System Active",
+        "target": "self"
+      }
+    ]
+  ],
+  "add_resist": [
+    [
+      {
+        "resist": "all",
+        "target": "ally"
+      }
+    ],
+    [
+      {
+        "resist": "impaired",
+        "type": "immunity"
+      },
+      {
+        "resist": "jammed",
+        "type": "immunity"
+      }
+    ],
+    [
+      {
+        "resist": "all",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "type": "all",
+        "val": "immunity",
+        "target": "any"
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": "resistance",
+        "target": "self"
+      }
+    ]
+  ],
+  "damage": [
+    [
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2",
+        "ap": true,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "3d6",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "variable",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "variable",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "variable",
+        "val": 4
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d6",
+        "aoe": true,
+        "save": "half",
+        "save_stat": "agi"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "3d6",
+        "aoe": true,
+        "save": "half",
+        "save_stat": "agi"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6",
+        "save": "half",
+        "save_stat": "Agility"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6",
+        "ap": true,
+        "save": true,
+        "save_stat": "hull"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d3",
+        "ap": true
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6",
+        "ap": true,
+        "save": true,
+        "save_stat": "hull"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 1,
+        "ap": true
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 2,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2,
+        "save": true,
+        "save_stat": "systems"
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 2,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 4,
+        "save": true,
+        "save_stat": "hull"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+2",
+        "ap": true,
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6",
+        "ap": true,
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2,
+        "aoe": true
+      },
+      {
+        "type": "Energy",
+        "val": "1d6",
+        "ap": true,
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 1,
+        "target": "self"
+      },
+      {
+        "type": "Energy",
+        "val": 2,
+        "aoe": true
+      },
+      {
+        "type": "Energy",
+        "val": 4,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 4
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "2d6",
+        "save": true,
+        "save_stat": "systems",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2,
+        "aoe": true
+      },
+      {
+        "type": "Burn",
+        "val": 2,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Burn",
+        "val": 2,
+        "save": "half",
+        "save_stat": "agility",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Burn",
+        "val": 4,
+        "save": "half",
+        "save_stat": "agility"
+      }
+    ],
+    [
+      {
+        "type": "Burn",
+        "val": 2,
+        "aoe": true,
+        "save": "half",
+        "save_stat": "engineering"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d6+3",
+        "ap": true,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Heat",
+        "val": 2,
+        "target": "self"
+      }
+    ],
+    [
+      {
+        "type": "Burn",
+        "val": 2,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "4d6",
+        "ap": true,
+        "save": "half",
+        "save_stat": "agility"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+3"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "3d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6+4"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6+1"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "2d6"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d6+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d6+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 1
+      },
+      {
+        "type": "Heat",
+        "val": 1
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      },
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6+2"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "3d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d3+5"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "3d6"
+      },
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      },
+      {
+        "type": "Heat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 1
+      },
+      {
+        "type": "Burn",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": 3,
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "2d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 2
+      },
+      {
+        "type": "Burn",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    [
+      {
+        "type": "Variable",
+        "val": "1d3+2"
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": "1d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+1",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 4
+      }
+    ],
+    [
+      {
+        "override": true,
+        "type": "Kinetic",
+        "val": "???"
+      }
+    ],
+    [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": 1
+      },
+      {
+        "type": "Burn",
+        "val": 4
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6+2"
+      },
+      {
+        "type": "Burn",
+        "val": 6
+      }
+    ],
+    [
+      {
+        "type": "Explosive",
+        "val": 3
+      }
+    ],
+    [],
+    [
+      {
+        "type": "Energy",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      },
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      },
+      {
+        "type": "Burn",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Burn",
+        "val": 4,
+        "aoe": true,
+        "save": true,
+        "save_stat": "Engineering"
+      },
+      {
+        "type": "Heat",
+        "val": 2,
+        "aoe": true,
+        "save": true,
+        "save_stat": "Engineering"
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+2",
+        "aoe": true
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      },
+      {
+        "type": "Burn",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    [
+      {
+        "type": "Variable",
+        "val": "1d6+2"
+      }
+    ],
+    [
+      {
+        "type": "Variable",
+        "val": "1d6+2"
+      }
+    ],
+    [
+      {
+        "type": "Variable",
+        "val": "1d6+4"
+      }
+    ],
+    [],
+    [
+      {
+        "type": "Kinetic",
+        "val": 4
+      }
+    ]
+  ],
+  "range": [
+    [
+      {
+        "type": "Range",
+        "val": 30
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Blast",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "val": "{sensors}"
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 20
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Cone",
+        "val": 7
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 20
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 20
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Burst",
+        "val": 2
+      }
+    ],
+    [
+      {
+        "type": "Cone",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "override": true,
+        "type": "Range",
+        "val": "???"
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Cone",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Cone",
+        "val": 7
+      },
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Blast",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 12
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 20
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ]
+  ],
+  "save": [
+    {
+      "type": "hull"
+    },
+    {
+      "type": "agi"
+    },
+    {
+      "stat": "systems"
+    },
+    {
+      "stat": "systems"
+    },
+    {
+      "stat": "agility"
+    },
+    {
+      "stat": "hull",
+      "aoe": true
+    },
+    {
+      "stat": "engineering"
+    },
+    {
+      "stat": "engineering"
+    }
+  ],
+  "bonus_damage": [null]
+}
