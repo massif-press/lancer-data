@@ -50,7 +50,7 @@
             "name": "Spin Up Thrusters",
             "activation": "Quick",
             "detail": "As a quick action on your turn, you may spin up your thrusters. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the Supersonic reaction.",
-            "add_condition": [
+            "add_special": [
               {
                 "condition": "Supersonic Target"
               }
@@ -82,7 +82,7 @@
           {
             "name": "I’m Your Huckleberry",
             "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy.",
-            "add_condition": [
+            "add_special": [
               {
                 "condition": "Set Bondmate",
                 "target": "ally"
@@ -283,7 +283,7 @@
             "activation": "Protocol",
             "detail": "Become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with Rifles.",
             "add_status": [{ "id": "immobilized", "duration": "next_turn_start_self" }],
-            "add_condition": [{ "condition": "Steadying Aim" }]
+            "add_special": [{ "attribute": "Steadying Aim" }]
           }
         ],
         "bonuses": [
@@ -830,7 +830,7 @@
             "detail": "The first time on your turn that you attack a hostile character within Range 3, hit or miss, you may give them the Exemplar’s Mark as a free action. Characters can only have one Exemplar’s Mark at a time – new marks from any character replace existing marks.<br>The character has the Exemplar’s Mark until the start of your next turn, and while they have it, you gain the <b>Valiant Aid</b> Reaction.",
             "condition": "The first time on your turn that you attack a hostile character within Range 3",
             "frequency": "1/turn",
-            "add_condition": [
+            "add_special": [
               {
                 "type": "Exemplar's Mark",
                 "duration": "next_turn_start_self"
@@ -1079,7 +1079,7 @@
             "activation": "Quick",
             "detail": "Choose a character within line of sight and Range of one of your Heavy ranged weapons, and within 10 spaces: they are Impaired until the start of your next turn. For the duration, if your target moves more than 1 space, they clear Impaired, but you may attack them as a reaction with a Heavy ranged weapon for half damage, Heat, or Burn, and then this effect ends. You can make this attack at any point during their movement (e.g., waiting until they exit cover).<br>Covering Fire can only affect one character at a time – subsequent uses replace previous ones – and it immediately ends if your target damages you.",
             "add_status": [{ "id": "impaired", "duration": "next_turn_start_self" }],
-            "add_condition": [{ "condition": "Covering Fire Target" }]
+            "add_special": [{ "attribute": "Covering Fire Target" }]
           },
           {
             "name": "Covering Fire Attack",

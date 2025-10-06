@@ -419,7 +419,7 @@
       }
     ]
   ],
-  "add_condition": [
+  "add_special": [
     [
       {
         "condition": "Argonaut Shield Target",
@@ -554,7 +554,7 @@
       }
     ]
   ],
-  "remove_condition": [
+  "remove_special": [
     [
       {
         "condition": "HyperDense Armor Active",

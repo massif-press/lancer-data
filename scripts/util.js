@@ -127,8 +127,8 @@ async function collectEffects() {
   const collection = {
     active_effects: [],
     add_status: [],
-    add_condition: [],
-    remove_condition: [],
+    add_special: [],
+    remove_special: [],
     add_resist: [],
     damage: [],
     range: [],
@@ -170,8 +170,8 @@ async function collectEffects() {
                     }
                   }
                   if (e.add_status) collection.add_status.push(e.add_status);
-                  if (e.add_condition) collection.add_condition.push(e.add_condition);
-                  if (e.remove_condition) collection.remove_condition.push(e.remove_condition);
+                  if (e.add_special) collection.add_special.push(e.add_special);
+                  if (e.remove_special) collection.remove_special.push(e.remove_special);
                   if (e.add_resist) collection.add_resist.push(e.add_resist);
                   if (e.damage) collection.damage.push(e.damage);
                   if (e.range) collection.range.push(e.range);

@@ -285,7 +285,7 @@
             { "type": "prone", "val": "immunity", "target": "self" }
           ],
           "add_status": [{ "id": "immobilized", "target": "self" }],
-          "add_condition": [{ "condition": "Immune to involuntary movement", "target": "self" }],
+          "add_special": [{ "attribute": "Immune to involuntary movement", "target": "self" }],
           "add_other": [{ "type": "cover", "val": "hard", "target": "self" }]
         },
         {
@@ -1189,6 +1189,7 @@
             "name": "Hunter",
             "frequency": "1/round",
             "condition": "You hit with a melee attack, your target has no adjacent characters, or if you are the only character adjacent to the target.",
+            "weapon_types": ["melee"],
             "bonus_damage": "1d6"
           }
         ]
