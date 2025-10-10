@@ -75,10 +75,12 @@
         "val": true
       }
     ],
-    "synergies": {
-      "locations": ["mount"],
-      "detail": "The weapon on this mount can be fired 1/round as a free action when you fire any other weapon on your mech."
-    },
+    "synergies": [
+      {
+        "locations": ["mount"],
+        "detail": "The weapon on this mount can be fired 1/round as a free action when you fire any other weapon on your mech."
+      }
+    ],
     "description": "The empty spaces in your mech’s chassis – inside fists, chest plates, anywhere there’s room – are filled with integrated weapons, ready to fire on reflex."
   },
   {

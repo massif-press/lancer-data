@@ -1810,10 +1810,12 @@
       "activation": "Protocol",
       "passive_name": "Charged Exoskeleton",
       "passive_effect": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3.",
-      "synergies": {
-        "locations": ["take_damage", "heat"],
-        "detail": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3."
-      },
+      "synergies": [
+        {
+          "locations": ["take_damage", "heat"],
+          "detail": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3."
+        }
+      ],
       "passive_effects": [
         {
           "name": "Exoskeleton Discharge",
