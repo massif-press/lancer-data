@@ -21,6 +21,7 @@ const data = {
   statuses: require('./lib/statuses.json'),
   systems: require('./lib/systems.json'),
   tables: require('./lib/tables.json'),
+  lists: require('./lib/lists.json'),
   tags: require('./lib/tags.json'),
   talents: require('./lib/talents.json'),
   weapons: require('./lib/weapons.json'),

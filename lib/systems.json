@@ -674,7 +674,7 @@
       {
         "activation": "Quick",
         "detail": "These cables can be attached to an adjacent character. If the target is Stunned or willing, you automatically succeed; otherwise, they can resist with a successful Hull save. Once attached, you and the target may not move more than 5 spaces away from each other. Either character can tow the other, obeying the normal rules for lifting and dragging, and becoming Slowed while doing so.<br>Any character can remove the cables on a hit with a melee attack or Improvised Attack against Evasion 10.<br>These cables can also be used to drag, pull, or otherwise interact with objects and the environment. They are 5 spaces long and can support a combined Size 6 before they break. Characters can use them to climb surfaces, allowing them to climb without a Speed penalty.",
-        "save": { "type": "hull" }
+        "save": "hull"
       }
     ],
     "description": "A winch system consists of an externally mounted spool of nanocarbon-weave cable and a recovery subroutine installed on the mech.",
@@ -1142,7 +1142,7 @@
         "activation": "Quick",
         "detail": "Choose a character within range 8 and line of sight. If they are allied, you may pull them 5 spaces in any direction; if they are hostile, they must succeed on an Agility save or be pulled 5 spaces in a direction of your choice. This movement ignores engagement and doesn’t provoke reactions.<br>If a hostile target moved by this system collides with an obstruction or another mech, they stop moving and are knocked Prone.",
         "range": [{ "type": "Range", "val": 8 }],
-        "save": { "type": "agi" }
+        "save": "agi"
       }
     ],
     "description": "Initially developed as a nonlethal crowd-suppression device, the Ferrous Lash is a far more complex and dangerous device in the hands of the right pilot. The Lash consists of a series of integrated launchers that detonate payloads of fast-congealing ferrofluids that restrain their targets. Tuned to the correct frequency, these proprietary ferrofluid blends form into rudimentary ambulatory segments, pulling their hosts back towards the one wielding the Lash.",
@@ -1216,7 +1216,7 @@
             "activation": "Free",
             "trigger": "Hostile characters that move onto the PCP",
             "detail": "Must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone.",
-            "save": { "type": "hull" }
+            "save": "hull"
           },
           {
             "name": "Attract",
@@ -2119,7 +2119,7 @@
         "edef": 10,
         "evasion": 10,
         "detail": "Choose a free space within Sensors and a target – either yourself or an allied character within Sensors. You create a false idol – an illusory decoy of your target – in the chosen space. Before attempting to take any hostile actions against your target, characters with line of sight to the false idol must make a Systems save. On a failure, they don’t lose the action, but cannot target the original character and believe the false idol is real instead until the end of their next turn.<br>The false idol is the same Size as your target, can benefit from cover, and has Evasion 10, E-Defense 10, and 1 HP. It disappears if it takes heat or damage, or at the end of the scene. If you create a second idol, the previous one disappears.",
-        "save": { "stat": "systems" }
+        "save": "sys"
       }
     ],
     "description": "H0r_OS II builds further on the framework established by H0R_OS I, enabling the now-autonomous program to manifest an “Other” – a wholly new being constructed from aggregate user and environmental data. Others may be adapted to resemble a person, an object, or even a physical phenomenon. While the simulacrum isn’t perfect, it’s good enough to confuse systems and most observers on a first look.",
@@ -2637,7 +2637,7 @@
           }
         ],
         "detail": "Throw a Mesmer Beacon within Range 5. Your target must succeed on a Systems save, or the only voluntary movements they can make are toward you until the end of their next turn.",
-        "save": { "stat": "systems" },
+        "save": "sys",
         "add_special": [
           {
             "attribute": "Mesmer Beacon Target",
@@ -3049,7 +3049,7 @@
       {
         "activation": "Quick",
         "detail": "Choose a flying character within range 15 and line of sight. They must succeed on an Agility save or immediately land (this counts as falling without any damage), and additionally become Slowed and can’t fly until the end of their next turn.",
-        "save": { "stat": "agility" },
+        "save": "agi",
         "add_special": [
           {
             "condition": "Affected by Flak Launcher",
@@ -3368,7 +3368,7 @@
         "name": "Clamp Bombs",
         "type": "Grenade",
         "detail": "This bomb clamps to a target and detonates at the end of their next turn, dealing 1d6+3 AP explosive damage. All characters adjacent to your target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn.",
-        "save": { "stat": "engineering" },
+        "save": "eng",
         "damage": [{ "type": "Explosive", "val": "1d6+3", "ap": true, "aoe": true }]
       }
     ],
@@ -3464,7 +3464,7 @@
       {
         "activation": "Quick",
         "detail": "Choose a hostile character or willing allied character within line of sight and range 5: until the end of their next turn, they become Stunned, gain Immunity to all damage and effects, and can’t be moved, targeted, or affected by any other character or effect. This can be used on each character 1/scene. Hostile characters can succeed on an Engineering save to ignore this effect.",
-        "save": { "stat": "engineering" },
+        "save": "eng",
         "add_status": [{ "id": "stunned", "target": "any" }],
         "add_resist": [{ "type": "all", "val": "immunity", "target": "any" }],
         "add_special": [
