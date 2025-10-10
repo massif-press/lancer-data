@@ -84,8 +84,9 @@
             "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy.",
             "add_special": [
               {
-                "condition": "Set Bondmate",
-                "target": "ally"
+                "condition": "Bondmate",
+                "target": "ally",
+                "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy."
               }
             ]
           }
@@ -283,7 +284,7 @@
             "activation": "Protocol",
             "detail": "Become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with Rifles.",
             "add_status": [{ "id": "immobilized", "duration": "next_turn_start_self" }],
-            "add_special": [{ "attribute": "Steadying Aim" }]
+            "add_special": [{ "attribute": "Steadying Aim", "detail": "You gain +1 Accuracy on all attacks you make with Rifles." }]
           }
         ],
         "bonuses": [

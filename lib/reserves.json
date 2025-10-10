@@ -292,10 +292,9 @@
     "type": "Mech",
     "label": "Resource",
     "description": "IMMUNITY to the SLOWED condition.",
-    "resistances": [
+    "add_resist": [
       {
-        "type": "condition",
-        "val": "slowed"
+        "immunity": "slowed"
       }
     ]
   },

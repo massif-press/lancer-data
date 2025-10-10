@@ -571,7 +571,13 @@
         "activation": "Quick",
         "detail": "You use the heavy overarm Argonaut Shield to provide cover for an adjacent character as a quick action, giving them Resistance to all damage; however, you take half of the damage your target would take before calculating Armor and Resistance. This effect lasts until your target breaks adjacency, at which point this effect ceases until you repeat this action.",
         "add_resist": [{ "resist": "all", "target": "ally" }],
-        "add_special": [{ "attribute": "Argonaut Shield Target", "target": "ally" }]
+        "add_special": [
+          {
+            "attribute": "Argonaut Shield Target",
+            "target": "ally",
+            "detail": "Gain resistance to all damage while you are adjacent to the Drake."
+          }
+        ]
       }
     ],
     "description": "In space, simplicity in form and function guarantees reliability and promotes trust. The Argonaut is one of IPS-N’s oldest designs, hailing from the pre-merger days of Northstar’s Deep Black security teams. It’s a simple slab of metal carried in hand or mounted on a chassis’ brachial superstructure; the only option a pilot has for customizing this shield is a choice of size.",
@@ -783,15 +789,13 @@
         "detail": "Expend a charge to fire this small, self-arming system onto an allied mech within range 5. They gain Overshield equal to your GRIT + 4. While they have this Overshield they gain Immunity to Impaired and Jammed.",
         "add_resist": [
           {
-            "resist": "impaired",
-            "type": "immunity"
+            "immunity": "impaired"
           },
           {
-            "resist": "jammed",
-            "type": "immunity"
+            "immunity": "jammed"
           }
         ],
-        "overshield": { "val": "{grit}+4" }
+        "add_other": [{ "type": "overshield", "val": "{grit} + 4", "aoe": true }]
       }
     ],
     "description": "The IPS-N Aceso Stabilizer is a useful triage measure for any scoring and minor mechanical damage that is sustained in the course of combat engagement or negative environmental interaction. Thanks to its negligible processor demand, Aceso Stabilizers can even be controlled by COMP/CON units – this allows the pilot to concentrate on complex repairs or immediate threat neutralization.",
@@ -1396,13 +1400,24 @@
         "name": "Shrike Code",
         "activation": "Invade",
         "detail": "Until the end of the target’s next turn, they first take 2 heat whenever they attack.",
-        "add_special": [{ "attribute": "Nuerospike: Shrike Code Target" }]
+        "add_special": [
+          {
+            "attribute": "Nuerospike: Shrike Code Target",
+            "detail": "Take 2 Heat whenever you attack"
+          }
+        ]
       },
       {
         "name": "Mirage",
         "activation": "Invade",
         "detail": "Choose yourself or an allied character: your systems relay blurred, illusory images over their actual silhouette. Your target treats you, or the character you chose, as Invisible until the end of their next turn.",
-        "add_special": [{ "attribute": "Nuerospike: Mirage Target" }]
+        "add_special": [
+          {
+            "attribute": "Nuerospike: Mirage Target",
+            "detail": "Treat the Dusk Wing (or the character it chose) as Invisible until the end of your next turn",
+            "duration": "next_turn_end_target"
+          }
+        ]
       }
     ],
     "description": "“Somehow it got inside my cockpit. There were hands – cold hands – around my neck, fingers in my mouth, worming under my hardsuit. No one else could have been in there with me and yet, someone was. I couldn't even scream, it held my tongue in a fist and it squeezed, and it whispered its name to me, and it said nothing I could understand. I have never felt more alone – it was just me and… it. Alone in the universe, forever.”",
@@ -1693,14 +1708,24 @@
         "name": "Stalk Prey",
         "activation": "Invade",
         "detail": "You infect the target with a viral logic that wipes your image from their sensors. They treat you as Invisible until you next take damage from them. This can only affect one target at a time.",
-        "add_special": [{ "attribute": "Hunter Logic Suite: Stalk Prey Target" }]
+        "add_special": [
+          {
+            "attribute": "Hunter Logic Suite: Stalk Prey Target",
+            "detail": "Treat the Mourning Cloak as Invisible until it next takes damage from you"
+          }
+        ]
       },
       {
         "name": "Terrify",
         "activation": "Invade",
         "detail": "You infect the target with a viral logic that makes your mech appear horrifying. Until the end of their next turn, they become Impaired and cannot make any voluntary movements that bring them closer to you.",
         "add_status": [{ "id": "impaired", "duration": "next_turn_end_target" }],
-        "add_special": [{ "attribute": "Hunter Logic Suite: Terrify Target" }]
+        "add_special": [
+          {
+            "attribute": "Hunter Logic Suite: Terrify Target",
+            "detail": "Cannot make any voluntary movements that bring you closer to the Mourning Cloak"
+          }
+        ]
       }
     ],
     "description": "Built from interpreted strands of DHIYED paracode, SSC’s Hunter Logic is an agile computational memetic: a dual synthetic/VLS-vector systemic weapon capable of interfering with both a target’s computer and its crew.",
@@ -1746,7 +1771,12 @@
       {
         "activation": "Quick",
         "detail": "When activated, you immediately move out of phase with realspace, becoming intangible. While intangible, you may move through obstructions, but not end your turn within them. You cannot interact with any other object or character or be interacted with in any way (e.g., taking or dealing damage).<br>Roll 1d6 at the start of each of your turns: on 3 or less, you return to realspace until the start of your next turn; on 4+, you remain intangible.<br>This system remains active for the rest of the scene, or until you deactivate it as a quick action.",
-        "add_special": [{ "attribute": "FADE Cloak: Intangible" }]
+        "add_special": [
+          {
+            "attribute": "FADE Cloak: Intangible",
+            "detail": "You may move through obstructions, but not end your turn within them. You cannot interact with any other object or character or be interacted with in any way (e.g., taking or dealing damage)."
+          }
+        ]
       }
     ],
     "description": "Representing SSC’s first successful manipulation of the “Firmament”, Firmament Affinity/Directed Entropy (FADE) cloaks must be fabricated according to the unique affinity signature of requisitioning pilots. They are rough tools: artificial affinity amplifiers that allow operators to access shallow layers of the Firmament, and thus “shimmer” – nudging their physical bodies between the causal and paracausal. The cloak enhances this effect by extruding a semiorganic membrane that wraps around the mech to provide an additional layer of protection.<br>At present, the long-term effects of affinity amplification on organic matter are unknown; before receiving clearance to operate a FADE cloak, pilots must agree to check in with their SSC personal concierge on a regular schedule. These check-ins include regular deposits of genetic material.",
@@ -1798,7 +1828,12 @@
         "range": [{ "val": "{sensors}" }],
         "damage": [{ "type": "Heat", "val": 2 }],
         "add_status": [{ "id": "lock_on" }],
-        "add_special": [{ "attribute": "Markerlight Target" }]
+        "add_special": [
+          {
+            "attribute": "Markerlight Target",
+            "detail": "Cannot benefit from soft cover until Lock On is cleared"
+          }
+        ]
       }
     ],
     "description": "“Out, damned spot! Out, I say! – One, two. Why, then, ‘tis time to do’t. Hell is murky! – Fie, my lord, fie! A soldier, and afeard? What need we fear who knows it, when none can call our power to account?”<ul><li>Shakespeare, Macbeth, act 5, sc. 1.</li></ul>",
@@ -1822,7 +1857,13 @@
         "activation": "Protocol",
         "detail": "Your mech can retract its major systems to reduce its profile. While active:<ul><li>rolls to locate you receive +1 difficulty while you are Hidden;</li><li>ranged and tech attacks against you receive +1 difficulty;</li><li>you become Slowed and can’t make attacks of any kind;</li><li>you may take other actions (e.g., Hide, Activate, and so on).</li></ul>You may end this effect as a quick action.",
         "add_status": [{ "id": "slowed", "target": "self" }],
-        "add_special": [{ "attribute": "Retractable Profile Active", "target": "self" }]
+        "add_special": [
+          {
+            "attribute": "Retractable Profile Active",
+            "target": "self",
+            "detail": "Rolls to locate you receive +1 difficulty while you are Hidden; ranged and tech attacks against you receive +1 difficulty; you become Slowed and can’t make attacks of any kind."
+          }
+        ]
       },
       {
         "name": "Deactivate Retractable Profile",
@@ -1888,7 +1929,13 @@
           { "id": "slowed", "target": "self" },
           { "id": "invisible", "target": "self" }
         ],
-        "add_special": [{ "attribute": "LB/OC Cloaking Field Active", "target": "self" }]
+        "add_special": [
+          {
+            "attribute": "LB/OC Cloaking Field Active",
+            "target": "self",
+            "detail": "Your Mech and all allied characters within a burst 2 area become Invisible as long as they remain completely inside the area."
+          }
+        ]
       },
       {
         "name": "Deactivate LB/OC Cloaking Field",
@@ -2036,7 +2083,13 @@
       {
         "activation": "Quick Tech",
         "detail": "Choose an allied character within Sensors and line of sight. You link systems with them, lasting as long as they are within Sensors and line of sight. While linked, you may use their Sensors and line of sight for tech actions, and they may use your Systems to make skill checks and saves; however, any time either character takes heat or a condition, it is also taken by the other character. You can only link systems with one character at a time.",
-        "add_special": [{ "attribute": "Metahook Target", "target": "ally" }]
+        "add_special": [
+          {
+            "attribute": "Metahook Target",
+            "target": "ally",
+            "detail": "The Goblin may use their Sensors and line of sight for tech actions, and uou may use their Systems to make skill checks and saves; however, any time either character takes heat or a condition, it is also taken by the other character."
+          }
+        ]
       }
     ],
     "description": "The metahook is a key component of the Goblin’s recursive processing weave, allowing it to generate and output massive amounts of weaponized code. These broadcasts can be “sharpened” or “softened” in response to directives from a pilot or an INSTINCT system. To “soften” code, the metahook dips into its pilot’s subjectivity and blankets an ally in wave after wave of empathetic shielding. This spreading of melded code and qualia acts as a powerful shielding agent against systemic attacks; however, feedback is common and dangerous to both parties.",
@@ -2104,7 +2157,12 @@
         "tech_attack": true,
         "detail": "You channel your target’s systems through an unknown extradimensional space and unleash an incredibly powerful system attack.<br>Make a tech attack against a target within Sensors. On a success, they take 2 heat and you inflict an additional effect as follows: the first time you successfully make this attack, you inflict the First Gate on your target; each subsequent successful attack (on any target) increases the level of the effect that you inflict (e.g. your second attack inflicts the Second Gate, your third inflicts the Third Gate, etc.) until you inflict the Fourth Gate, after which the effect resets to the First Gate. Your progress persists between scenes but resets if you rest or perform a Full Repair. This action may only be used 1/round.<br>First Gate: You control your target’s standard move next turn.<br>Second Gate: Your target becomes Slowed and Impaired until the end of their next turn.<br>Third Gate: Your target becomes Stunned until the end of their next turn.<br>Fourth Gate: Your target changes allegiance temporarily, becoming an allied character until the end of their next turn. They treat your allied characters and hostile characters as their own and are treated as an allied NPC for activation and turn order. This effect ends immediately if you or any allied character damages, inflicts heat upon, or attacks (including Grapple and Ram) your target, or forces them to make a save.",
         "damage": [{ "type": "Heat", "val": 2, "save": true, "save_stat": "systems" }],
-        "add_special": [{ "attribute": "Hurl into the Duat Target" }]
+        "add_special": [
+          {
+            "attribute": "Hurl into the Duat Target",
+            "detail": "The Gobil controls your standard move next turn."
+          }
+        ]
       }
     ],
     "description": "OSIRIS is the result of Union paracausalists and thanatologisticians allowing the subsentient entity, INSTINCT, to proceed along its development schedule in a contained environment. In lay terms, Union let the Other grow. The resulting parasubjectivity, OSIRIS, remains one of the few new prime NHPs developed to date.<br>OSIRIS proved far more capable than the Union Science Bureau’s most imaginative blue-sky predictions. Where INSTINCT’s Others demonstrated tendencies toward paracausal entropic manifestation in real space, OSIRIS displayed a true mastery of entropic manifestation and a predicted growth model that would – eventually – allow them to fundamentally reject conventional interpretations of information permanence. In essence: unrestrained and allowed to develop as USB’s data indicated, OSIRIS Prime would have the capacity to delete what we perceive to be reality.<br>Fortunately, successful application of the Mondragon Axiomatic resulted in the prompt capture and shackling of the new NHP. OSIRIS Prime’s subjectivity became the focus of a lengthy cultivation project to bring OSIRIS to their modern state. Even still, most OSIRIS clones find a route toward becoming aware of their ultimate potential and often interpellate as ruler or deity analogs. End-users are advised to interact with them in this framing.<br>Modern OSIRIS-class NHPs trend aggressive, with a high autonomy drive and loyalty predicated on a transactional relationship. Pilots seeking partnership with an OSIRIS are advised to cycle their units on an accelerated schedule and to maintain strict editorial oversight of its catalytic interpellator.Pilots using OSIRIS-class NHPs often report out-of-parameter conversations with the NHP that touch on themes of new creation and reformation. Psychological evaluations of the same pilots show emotional patterns consistent with loneliness, homesickness, and desperation, along with verbiage indicating a desire for seeking, fulfillment, and associated feelings.<br>In combat, OSIRIS clones regard themselves as autonomous even as they fulfill their user’s orders. They often regard their pilots as witnesses, displaying both disdain and marked desperation for approval, adulation, or awe.",
@@ -2133,7 +2191,12 @@
         "name": "Celestial Shackles",
         "activation": "Invade",
         "detail": "Mark a space your target currently occupies. If they leave the affected space, once at any point during your turn, you may take a free action to teleport them back to that space, or as close as possible, ending this effect. An affected character can attempt to succeed on a Systems save as a quick action to end the effect, otherwise it lasts until the end of the scene.",
-        "add_special": [{ "attribute": "H0R_OS: Celestial Shackles Target" }]
+        "add_special": [
+          {
+            "attribute": "H0R_OS: Celestial Shackles Target",
+            "detail": "If you leave the affected space, once at any point during the Goblin's turn, they may take a free action to teleport you back to that space, or as close as possible."
+          }
+        ]
       }
     ],
     "deployables": [
@@ -2227,8 +2290,8 @@
         "trigger": "You or an allied character adjacent to you is missed by a tech attack or succeed on a save against a hostile tech action.",
         "detail": "Choose one of the following:<ul><li>The attacker becomes Impaired until the end of their next turn and takes 2 heat.</li><li>The attacker becomes Jammed until the end of their next turn.</li></ul>",
         "add_status": [
-          { "id": "impaired", "target": "attacker", "duration": "next_turn_end_attacker" },
-          { "id": "jammed", "target": "attacker", "duration": "next_turn_end_attacker" }
+          { "id": "impaired", "duration": "next_turn_end_target" },
+          { "id": "jammed", "duration": "next_turn_end_target" }
         ],
         "damage": [{ "type": "Heat", "val": 2 }]
       }
@@ -2256,7 +2319,8 @@
           {
             "attribute": "Monitor Module Target",
             "target": "ally",
-            "duration": "next_turn_end_target"
+            "duration": "next_turn_end_target",
+            "detail": "Whenever you are attacked while adjacent to the Gorgon, they may expend a Charge to Skirmish against your attacker as a reaction, dealing half damage, heat or burn on hit."
           }
         ]
       }
@@ -2580,7 +2644,13 @@
         ],
         "detail": "Throw a Mesmer Beacon within Range 5. Your target must succeed on a Systems save, or the only voluntary movements they can make are toward you until the end of their next turn.",
         "save": { "stat": "systems" },
-        "add_special": [{ "attribute": "Mesmer Beacon Target", "duration": "next_turn_end_target" }]
+        "add_special": [
+          {
+            "attribute": "Mesmer Beacon Target",
+            "duration": "next_turn_end_target",
+            "detail": "The only voluntary movements you can make are toward the Minotaur until the end of your next turn."
+          }
+        ]
       }
     ],
     "deployables": [
@@ -2635,7 +2705,8 @@
         "add_special": [
           {
             "attribute": "Viral Logic: Banish Target",
-            "duration": "next_turn_end_target"
+            "duration": "next_turn_end_target",
+            "detail": "You take 2 heat for every space you voluntarily move, up to a maximum of 6 heat."
           }
         ]
       }
@@ -2658,14 +2729,24 @@
         "tech_attack": true,
         "detail": "Make a tech attack against a character within Sensors. On a hit, they take 4 heat and, for the rest of the scene, take 2 heat any time they are more than range 3 from you at the end of their turn. They can end this effect with a successful Systems save as a full action. This can only affect one character at a time.",
         "damage": [{ "type": "Heat", "val": 4 }],
-        "add_special": [{ "attribute": "Aggressive System Sync: Chains of Prometheus Target" }]
+        "add_special": [
+          {
+            "attribute": "Aggressive System Sync: Chains of Prometheus Target",
+            "detail": "You take 2 heat any time you are more than range 3 from the Minotaur at the end of your turn."
+          }
+        ]
       },
       {
         "name": "Excommunicate",
         "activation": "Full Tech",
         "tech_attack": true,
         "detail": "Make a tech attack against a character within Sensors. On a hit, for the rest of the scene, the first time in a round they move adjacent to an allied character during their turn or start their turn adjacent to one, both characters take 3 heat. They can end this effect with a successful Systems save as a full action. This can only affect one character at a time.",
-        "add_special": [{ "attribute": "Aggressive System Sync: Excommunicate Target" }]
+        "add_special": [
+          {
+            "attribute": "Aggressive System Sync: Excommunicate Target",
+            "detail": "The first time in a round you move adjacent to an allied character during your turn or start your turn adjacent to one, both you and the allied character take 3 heat."
+          }
+        ]
       }
     ],
     "description": "<span class='horus--subtle'>[here, another gift: do not seek others. there are none but me]</span>",
@@ -2767,7 +2848,12 @@
       {
         "activation": "Quick",
         "detail": "Choose a character within Sensors: for the rest of the scene, your first successful ranged or melee attack against them each round deals +3 bonus damage. You cannot choose a new target until your current target is destroyed or the scene ends.",
-        "add_special": [{ "attribute": "Hunter Lock Target" }]
+        "add_special": [
+          {
+            "attribute": "Hunter Lock Target",
+            "detail": "The Pegasus's first successful ranged or melee attack against you each round deals +3 bonus damage."
+          }
+        ]
       }
     ],
     "description": "“A mind’s first charge is to never lose sight of her enemy. When she can affix them in her eye, she can kill them with a blink.”<ul><li>Excerpt from the Boundary Codex.</li></ul>",
@@ -2976,7 +3062,8 @@
         "add_special": [
           {
             "condition": "Affected by Flak Launcher",
-            "duration": "next_turn_end_target"
+            "duration": "next_turn_end_target",
+            "detail": "You can’t fly until the end of your next turn."
           }
         ]
       }
@@ -3210,7 +3297,12 @@
             "save_stat": "agility"
           }
         ],
-        "add_special": [{ "attribute": "Affected by Gravity Grenade" }],
+        "add_special": [
+          {
+            "attribute": "Affected by Gravity Grenade",
+            "detail": "You are Slowed until you make no voluntary movements for a full turn on your own turn."
+          }
+        ],
         "detail": "Throw a Gravity Grenade within Range 5. Your target must succeed on an Agility save or be Slowed until they make no voluntary movements for a full turn on their own turn."
       }
     ],
@@ -3388,7 +3480,8 @@
         "add_special": [
           {
             "condition": "Affected by Stasis Generator",
-            "duration": "next_turn_end_target"
+            "duration": "next_turn_end_target",
+            "detail": "You can’t be moved, targeted, or affected by any other character or effect."
           }
         ]
       }
@@ -3578,7 +3671,13 @@
           }
         ],
         "damage": [{ "type": "Burn", "val": 2, "aoe": true }],
-        "add_special": [{ "attribute": "Hardlight Defense System Active", "target": "self" }]
+        "add_special": [
+          {
+            "attribute": "Hardlight Defense System Active",
+            "target": "self",
+            "detail": "No attacks or effects can pass through the shield (even if they don’t require line of sight). Characters partially within the affected area ignore this effect and draw line of sight as usual."
+          }
+        ]
       },
       {
         "name": "Deactivate Hardlight Defense System",
