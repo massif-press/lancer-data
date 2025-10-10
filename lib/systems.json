@@ -227,8 +227,8 @@
             "type": "Explosive",
             "val": "1d6",
             "aoe": true,
-            "save": "half",
-            "save_stat": "agi"
+            "save": "agi",
+            "save_half": true
           }
         ],
         "detail": "Throw a Frag Grenade within Range 5. All characters within a Blast 1 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage."
@@ -249,8 +249,8 @@
             "type": "Explosive",
             "val": "3d6",
             "aoe": true,
-            "save": "half",
-            "save_stat": "agi"
+            "save": "agi",
+            "save_half": true
           }
         ],
         "activation": "Quick",
@@ -750,8 +750,7 @@
         "add_status": [
           {
             "id": "slowed",
-            "save": true,
-            "save_stat": "agi",
+            "save": "agi",
             "duration": "next_turn_end_target"
           }
         ]
@@ -915,8 +914,8 @@
           {
             "type": "Energy",
             "val": "1d6",
-            "save": "half",
-            "save_stat": "Agility"
+            "save": "agi",
+            "save_half": true
           }
         ],
         "detail": "Throw a Thermal Grenade within Range 5. All characters within a Blast 1 area must succeed on an Agility save or take 1d6 energy. On a success, they take half damage. Objects and terrain are hit automatically and take 10 AP energy damage."
@@ -958,7 +957,7 @@
         "activation": "Free",
         "trigger": "You attack with a Loading weapon after reloading any weapon.",
         "detail": "On hit: This attack deals +1d6 explosive bonus damage, and targets must succeed on a Hull save or be knocked Prone.",
-        "add_status": [{ "id": "prone", "save": true, "save_stat": "hull" }]
+        "add_status": [{ "id": "prone", "save": "hull" }]
       }
     ],
     "description": "Packed into sealed, self-contained cylinders, IPS-N’s “Roland Rounds” are high-explosive anti-armor charges built for kinetic weapons of any mech-scale caliber. Loaded in place of inert kinetic ammunition, a Roland HE/AA shell increases the efficacy and destructive power of any weapon it is fired from.",
@@ -1077,11 +1076,10 @@
             "type": "Kinetic",
             "val": "1d6",
             "ap": true,
-            "save": true,
-            "save_stat": "hull"
+            "save": "hull"
           }
         ],
-        "add_status": [{ "id": "immobilized", "save": true, "save_stat": "hull" }]
+        "add_status": [{ "id": "immobilized", "save": "hull" }]
       }
     ],
     "description": "Suitable for use in any theater, the IPS-N Webjaw Explosively Accelerated Filament system is a deployable perimeter defense solution designed to arrest hostile movement in predetermined kill-corridors. The Webjaw consists of a networked cluster of single-use anchors, each consisting of a barb, a coil of arachnosynth NoCut filament, and an explosive charge.<br>When triggered remotely, or by a series of programmable physical, electronic, or chemical triggers, the anchors fire, embedding barbs deep inside targets, whether soft or hard. The barbs, secured to anchor points by NoCut filament, clog and restrict movement, fouling gears, wheels, rotors, engines, and all methods of locomotion.",
@@ -1125,10 +1123,8 @@
       {
         "activation": "Full",
         "detail": "This system fires a charged stake at a character adjacent to you. Your target must succeed on a Hull save or be impaled by the stake, taking<br>1d6 AP energy damage and becoming Immobilized while impaled. At the end of each of their turns, an impaled character takes 1d6 AP energy damage. An impaled character can successfully repeat this save as a full action to remove the stake and free themselves, which is the only way to end the immobilization.<br>You can only affect one character with the stake at a time.",
-        "damage": [
-          { "type": "Energy", "val": "1d6", "ap": true, "save": true, "save_stat": "hull" }
-        ],
-        "add_status": [{ "id": "immobilized", "save": true, "save_stat": "hull" }]
+        "damage": [{ "type": "Energy", "val": "1d6", "ap": true, "save": "hull" }],
+        "add_status": [{ "id": "immobilized", "save": "hull" }]
       }
     ],
     "description": "Descended from blast-mining tools, this enormous, improvised system is housed and prepped to fire in a specially primed chamber. It first penetrates and immobilizes armored targets, then sends a powerful, vaporizing charge into vulnerable internal systems.",
@@ -1227,7 +1223,7 @@
             "activation": "Free",
             "trigger": "Characters that move onto the PCP",
             "detail": "Must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed.",
-            "add_status": [{ "id": "immobilized", "save": true, "save_stat": "hull" }]
+            "add_status": [{ "id": "immobilized", "save": "hull" }]
           }
         ]
       }
@@ -1472,8 +1468,8 @@
         "activation": "Quick",
         "detail": "Expend a charge to create a burst 3 flash of light. All hostile characters within the affected area that have line of sight to you must succeed on an Agility save or become Jammed, and a Systems save or become Impaired. These effects last until the end of their next turn.<br>Characters in cover from you are not affected by this system.",
         "add_status": [
-          { "id": "jammed", "save": true, "aoe": true, "save_stat": "agi" },
-          { "id": "impaired", "save": true, "aoe": true, "save_stat": "systems" }
+          { "id": "jammed", "save": "agi", "aoe": true },
+          { "id": "impaired", "save": "sys", "aoe": true }
         ]
       }
     ],
@@ -2156,7 +2152,7 @@
         "activation": "Quick Tech",
         "tech_attack": true,
         "detail": "You channel your target’s systems through an unknown extradimensional space and unleash an incredibly powerful system attack.<br>Make a tech attack against a target within Sensors. On a success, they take 2 heat and you inflict an additional effect as follows: the first time you successfully make this attack, you inflict the First Gate on your target; each subsequent successful attack (on any target) increases the level of the effect that you inflict (e.g. your second attack inflicts the Second Gate, your third inflicts the Third Gate, etc.) until you inflict the Fourth Gate, after which the effect resets to the First Gate. Your progress persists between scenes but resets if you rest or perform a Full Repair. This action may only be used 1/round.<br>First Gate: You control your target’s standard move next turn.<br>Second Gate: Your target becomes Slowed and Impaired until the end of their next turn.<br>Third Gate: Your target becomes Stunned until the end of their next turn.<br>Fourth Gate: Your target changes allegiance temporarily, becoming an allied character until the end of their next turn. They treat your allied characters and hostile characters as their own and are treated as an allied NPC for activation and turn order. This effect ends immediately if you or any allied character damages, inflicts heat upon, or attacks (including Grapple and Ram) your target, or forces them to make a save.",
-        "damage": [{ "type": "Heat", "val": 2, "save": true, "save_stat": "systems" }],
+        "damage": [{ "type": "Heat", "val": 2, "save": "hull" }],
         "add_special": [
           {
             "attribute": "Hurl into the Duat Target",
@@ -2430,7 +2426,7 @@
         "detail": "Any character that starts their turn adjacent to the tempest drone or moves adjacent to it for the first time in a round must succeed on a Hull save or take 4 energy damage and be knocked 3 spaces directly away from the drone.<br>You may recall or redeploy the tempest drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene.",
         "recall": "Quick",
         "redeploy": "Quick",
-        "damage": [{ "type": "Energy", "val": 4, "save": true, "save_stat": "hull" }],
+        "damage": [{ "type": "Energy", "val": 4, "save": "hull" }],
         "tags": [
           {
             "id": "tg_resistall"
@@ -2533,8 +2529,7 @@
           {
             "id": "stunned",
             "duration": "next_turn_end_target",
-            "save": true,
-            "save_stat": "systems"
+            "save": "sys"
           }
         ]
       },
@@ -2573,8 +2568,7 @@
             "id": "stunned",
             "duration": "next_turn_end_target",
             "aoe": true,
-            "save": true,
-            "save_stat": "systems"
+            "save": "sys"
           }
         ]
       }
@@ -2668,8 +2662,7 @@
           {
             "id": "immobilized",
             "duration": "next_turn_end_target",
-            "save": true,
-            "save_stat": "systems",
+            "save": "sys",
             "aoe": true
           }
         ]
@@ -2696,7 +2689,7 @@
         "name": "Logic Bomb",
         "activation": "Invade",
         "detail": "All characters of your choice within burst 2 of your target must succeed on a Systems save or become Slowed until they end one of their turns not adjacent to any character.",
-        "add_status": [{ "id": "slowed", "save": true, "save_stat": "systems", "aoe": true }]
+        "add_status": [{ "id": "slowed", "save": "sys", "aoe": true }]
       },
       {
         "name": "Banish",
@@ -2793,8 +2786,7 @@
             "id": "slowed",
             "duration": "next_turn_end_target",
             "aoe": true,
-            "save": true,
-            "save_stat": "systems"
+            "save": "sys"
           }
         ]
       }
@@ -2972,8 +2964,7 @@
           {
             "type": "Explosive",
             "val": "2d6",
-            "save": true,
-            "save_stat": "systems",
+            "save": "sys",
             "aoe": true
           }
         ],
@@ -3167,8 +3158,9 @@
           {
             "type": "Burn",
             "val": 2,
-            "save": "half",
-            "save_stat": "agility",
+            "save": "agi",
+            "save_half": true,
+
             "aoe": true
           }
         ],
@@ -3189,8 +3181,8 @@
           {
             "type": "Burn",
             "val": 4,
-            "save": "half",
-            "save_stat": "agility"
+            "save": "agi",
+            "save_half": true
           }
         ],
         "detail": "When a character moves over or adjacent to this mine, it detonates with a focused explosion in a line 5 path in the direction of the character who triggered it. Characters within the affected area must succeed on an Agility save or take 4 burn. On a success, they take 2 burn."
@@ -3252,8 +3244,8 @@
             "type": "Burn",
             "val": 2,
             "aoe": true,
-            "save": "half",
-            "save_stat": "engineering"
+            "save": "sys",
+            "save_half": true
           }
         ]
       }
@@ -3293,8 +3285,7 @@
         "add_status": [
           {
             "id": "slowed",
-            "save": true,
-            "save_stat": "agility"
+            "save": "agi"
           }
         ],
         "add_special": [
@@ -3316,7 +3307,7 @@
             "name": "Detonate Grounding Mine",
             "activation": "Quick",
             "detail": "Detonating the Grounding Mine affects a single character within range 5 of the mine: they must succeed on a Hull save or be pulled as far as possible toward the mine and knocked Prone. Flying characters that fail the save are affected the same way, except they are also forced to land (this counts as falling but without damage).",
-            "add_status": [{ "id": "prone", "save": true, "save_stat": "hull" }]
+            "add_status": [{ "id": "prone", "save": "hull" }]
           }
         ]
       }
@@ -3411,8 +3402,7 @@
           {
             "id": "immobilized",
             "target": "any",
-            "save": true,
-            "save_stat": "engineering"
+            "save": "eng"
           }
         ]
       }
@@ -3918,13 +3908,13 @@
             "type": "Energy",
             "val": "4d6",
             "ap": true,
-            "save": "half",
-            "save_stat": "agility"
+            "save": "agi",
+            "save_half": true
           }
         ],
         "add_status": [
           { "id": "stunned", "target": "self" },
-          { "id": "prone", "target": "any", "save": true, "save_stat": "agility" }
+          { "id": "prone", "target": "any", "save": "hull" }
         ]
       }
     ],

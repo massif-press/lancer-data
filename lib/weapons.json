@@ -801,8 +801,7 @@
         {
           "id": "impaired",
           "duration": "next_turn_end_target",
-          "save": true,
-          "save_stat": "hull"
+          "save": "hull"
         }
       ]
     },
@@ -976,8 +975,7 @@
         {
           "id": "prone",
           "duration": "next_turn_end_target",
-          "save": true,
-          "save_stat": "hull"
+          "save": "hull"
         }
       ]
     },
@@ -1245,8 +1243,7 @@
         {
           "id": "immobilized",
           "duration": "next_turn_end_target",
-          "save": true,
-          "save_stat": "hull"
+          "save": "hull"
         }
       ]
     },
@@ -2377,8 +2374,7 @@
           "type": "Energy",
           "val": "1d6",
           "aoe": true,
-          "save": true,
-          "save_stat": "Hull"
+          "save": "hull"
         }
       ]
     },
@@ -2569,15 +2565,13 @@
             "type": "Burn",
             "val": 4,
             "aoe": true,
-            "save": true,
-            "save_stat": "Engineering"
+            "save": "eng"
           },
           {
             "type": "Heat",
             "val": 2,
             "aoe": true,
-            "save": true,
-            "save_stat": "Engineering"
+            "save": "eng"
           }
         ]
       }

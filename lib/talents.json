@@ -201,7 +201,7 @@
               {
                 "id": "stunned",
                 "duration": "next_turn_end_target",
-                "save": "Hull"
+                "save": "hull"
               }
             ]
           }
@@ -284,7 +284,12 @@
             "activation": "Protocol",
             "detail": "Become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with Rifles.",
             "add_status": [{ "id": "immobilized", "duration": "next_turn_start_self" }],
-            "add_special": [{ "attribute": "Steadying Aim", "detail": "You gain +1 Accuracy on all attacks you make with Rifles." }]
+            "add_special": [
+              {
+                "attribute": "Steadying Aim",
+                "detail": "You gain +1 Accuracy on all attacks you make with Rifles."
+              }
+            ]
           }
         ],
         "bonuses": [
@@ -355,7 +360,7 @@
             "name": "Watch This",
             "condition": "You perform a critical hit with a Rifle while Steadying Aim is active",
             "detail": "Your target must pass a Hull save or you may choose an additional effect for your attack:<ul><li><b>Headshot:</b> They only have line of sight to adjacent spaces until the end of their next turn.</li><li><b>Leg shot:</b> They become Immobilized until the end of their next turn.</li><li><b>Body shot:</b> They are knocked Prone.</li></ul>",
-            "save": "Hull",
+            "save": "hull",
             "add_status": [
               {
                 "id": "prone",
@@ -398,14 +403,12 @@
               {
                 "id": "impaired",
                 "duration": "next_turn_end_target",
-                "save": true,
-                "save_stat": "Systems"
+                "save": "sys"
               },
               {
                 "id": "slowed",
                 "duration": "next_turn_end_target",
-                "save": true,
-                "save_stat": "Systems"
+                "save": "sys"
               }
             ]
           }
@@ -458,14 +461,12 @@
               {
                 "id": "impaired",
                 "duration": "next_turn_end_target",
-                "save": true,
-                "save_stat": "Systems"
+                "save": "sys"
               },
               {
                 "id": "slowed",
                 "duration": "next_turn_end_target",
-                "save": true,
-                "save_stat": "Systems"
+                "save": "sys"
               }
             ]
           },
@@ -474,7 +475,7 @@
             "detail": "1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or they only have line of sight to adjacent squares until the end of their next turn.",
             "condition": "You perform a critical hit with a Nexus weapon",
             "frequency": "1/round",
-            "save": "systems"
+            "save": "sys"
           },
           {
             "name": "Tidal Suppression: Virulent Swarm",
@@ -485,8 +486,7 @@
               {
                 "id": "shredded",
                 "duration": "next_turn_end_target",
-                "save": true,
-                "save_stat": "Systems",
+                "save": "sys",
                 "aoe": true
               }
             ]
@@ -496,7 +496,7 @@
             "detail": "1/round, when you perform a critical hit with a Nexus, your target must succeed on a Systems save or take 1 Burn each time they take an action or reaction until the end of their next turn.",
             "condition": "You perform a critical hit with a Nexus weapon",
             "frequency": "1/round",
-            "save": "systems"
+            "save": "sys"
           }
         ],
         "synergies": [
@@ -1208,14 +1208,12 @@
             "add_status": [
               {
                 "id": "slowed",
-                "save": true,
-                "save_stat": "hull",
+                "save": "hull",
                 "duration": "next_turn_end_target"
               },
               {
                 "id": "impaired",
-                "save": true,
-                "save_stat": "hull",
+                "save": "hull",
                 "duration": "next_turn_end_target"
               }
             ]
@@ -1275,7 +1273,7 @@
             "condition": "You Ram a target into another character or an obstruction large enough to stop their movement",
             "frequency": "1/round",
             "damage": [{ "val": "1d6", "type": "Kinetic", "aoe": true }],
-            "add_status": [{ "id": "prone", "save": true, "save_stat": "hull" }]
+            "add_status": [{ "id": "prone", "save": "hull" }]
           }
         ],
         "synergies": [
@@ -1298,7 +1296,7 @@
               { "val": "1d3+3", "type": "Heat", "target": "self" },
               { "val": "20", "type": "Kinetic", "ap": true, "aoe": true }
             ],
-            "add_status": [{ "id": "prone", "save": true, "save_stat": "hull", "aoe": true }]
+            "add_status": [{ "id": "prone", "save": "hull", "aoe": true }]
           }
         ],
         "synergies": [
@@ -1447,7 +1445,7 @@
             "detail": "1/round, before rolling an attack with a Cannon, all characters adjacent to you must succeed on a Hull save or be knocked back by 1 space and knocked Prone. You are then pushed 1 space in any direction.",
             "condition": "You are about to roll an attack with a Cannon",
             "frequency": "1/round",
-            "add_status": [{ "id": "prone", "save": true, "save_stat": "hull", "aoe": true }]
+            "add_status": [{ "id": "prone", "save": "hull", "aoe": true }]
           }
         ],
         "synergies": [
@@ -1658,9 +1656,7 @@
             "name": "Massive Attack",
             "activation": "Full",
             "detail": "Reset your Torrent Die to 6, then target a character within line of sight and Range 15: they must succeed on an Agility save or take 2d6 Explosive damage, become Stunned until the end of their next turn, and be knocked Prone. On a success, they take half damage and are knocked Prone but not Stunned.<br>This action can only be taken when the value of your Torrent Die is 1.",
-            "damage": [
-              { "type": "Explosive", "val": "2d6", "save": "half", "save_stat": "agility" }
-            ],
+            "damage": [{ "type": "Explosive", "val": "2d6", "save": "agi", "save_half": true }],
             "condition": "The value of your Torrent Die is 1"
           }
         ],

@@ -519,8 +519,7 @@
                 "type": "Energy",
                 "val": 3,
                 "ap": true,
-                "save": true,
-                "save_stat": "engineering"
+                "save": "eng"
               }
             ],
             "pilot": true

@@ -168,18 +168,17 @@
             {
               "val": "2d6",
               "type": "Kinetic",
-              "save": "half",
-              "save_stat": "hull",
+              "save": "hull",
+              "save_half": true,
               "aoe": true
             }
           ],
           "add_status": [
-            { "id": "prone", "save": true, "save_stat": "hull", "aoe": true },
+            { "id": "prone", "save": "hull", "aoe": true },
             {
               "id": "immobilized",
               "duration": "next_turn_end_target",
-              "save": true,
-              "save_stat": "hull",
+              "save": "hull",
               "aoe": true
             }
           ]
@@ -980,8 +979,8 @@
             {
               "val": "1d6",
               "type": "Energy",
-              "save": "half",
-              "save_stat": "agility",
+              "save": "agi",
+              "save_half": true,
               "aoe": true
             }
           ],
@@ -1137,8 +1136,8 @@
             {
               "val": "1d6+4",
               "type": "Explosive",
-              "save": "half",
-              "save_stat": "agility",
+              "save": "agi",
+              "save_half": true,
               "aoe": true
             }
           ],
@@ -1598,8 +1597,7 @@
             {
               "id": "stunned",
               "duration": "next_turn_end_target",
-              "save": true,
-              "save_stat": "systems",
+              "save": "sys",
               "aoe": true
             }
           ]
@@ -1777,8 +1775,9 @@
               {
                 "val": "8d6",
                 "type": "Explosive",
-                "save": "half",
-                "save_stat": "agility",
+                "save": "agi",
+                "save_half": true,
+
                 "aoe": true
               }
             ]
