@@ -324,7 +324,8 @@
           {
             "name": "Zero In",
             "condition": "You make a ranged attack with a Rifle while Steadying Aim is active",
-            "detail": "Attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit."
+            "detail": "Attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit.",
+            "bonus_damage": "1d6"
           }
         ],
         "synergies": [
@@ -333,22 +334,6 @@
             "weapon_types": ["Rifle"],
             "weapon_sizes": ["any"],
             "detail": "1/round, while <b>steadying your aim</b> and making a ranged attack with this weapon, you can attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit"
-          }
-        ],
-        "bonuses": [
-          {
-            "id": "bonus_damage",
-            "val": "1d6",
-            "weapon_types": ["Rifle"],
-            "weapon_sizes": ["any"],
-            "condition": "On critical hit, while steadying your aim"
-          },
-          {
-            "id": "accuracy",
-            "val": -1,
-            "weapon_types": ["Rifle"],
-            "weapon_sizes": ["any"],
-            "condition": "While steadying your aim"
           }
         ]
       },
@@ -833,7 +818,7 @@
             "frequency": "1/turn",
             "add_special": [
               {
-                "type": "Exemplar's Mark",
+                "attribute": "Exemplar's Mark",
                 "duration": "next_turn_start_self"
               }
             ]
@@ -1099,7 +1084,7 @@
             "name": "Hammerbeat",
             "detail": "If you successfully hit your Covering Fire target with the attack reaction granted by that talent, your target is Immobilized until the end of their next turn.",
             "condition": "You successfully hit your Covering Fire target with the attack reaction granted by that talent",
-            "add_status": [{ "type": "Immobilized", "duration": "next_turn_end_target" }]
+            "add_status": [{ "id": "immobilized", "duration": "next_turn_end_target" }]
           }
         ]
       },
@@ -1688,7 +1673,7 @@
             "detail": "1/round, gain +1 Accuracy on any melee attack if at least one allied character is Engaged with your target.",
             "condition": "You make a melee attack and at least one allied character is Engaged with your target",
             "frequency": "1/round",
-            "bonus": { "type": "accuracy", "val": 1 }
+            "bonus": { "id": "accuracy", "val": 1 }
           }
         ],
         "synergies": [
@@ -1709,7 +1694,7 @@
             "detail": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target.",
             "condition": "You make a ranged attack while you are at a higher elevation than your target",
             "frequency": "1/round",
-            "bonus": { "type": "accuracy", "val": 1 }
+            "bonus": { "id": "accuracy", "val": 1 }
           }
         ],
         "synergies": [
@@ -1790,7 +1775,7 @@
             "detail": "Gain +1 Accuracy when using CQB weapons to attack targets within Range 3.",
             "condition": "You attack with a CQB weapon at a target within Range 3",
             "frequency": "1/round",
-            "bonus": { "type": "accuracy", "val": 1 }
+            "bonus": { "id": "accuracy", "val": 1 }
           }
         ],
         "synergies": [
@@ -1809,8 +1794,7 @@
           {
             "name": "See-Through Seeker",
             "detail": "As long as you have line of sight, ignore both soft and hard cover when using CQB weapons to attack targets within Range 3.",
-            "condition": "You attack with a CQB weapon at a target within Range 3",
-            "bonus": { "type": "ignore_cover", "val": 1 }
+            "condition": "You attack with a CQB weapon at a target within Range 3"
           }
         ],
         "synergies": [

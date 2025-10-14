@@ -279,10 +279,7 @@
         {
           "name": "Fortress Protocol",
           "detail": "You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.",
-          "add_resist": [
-            { "type": "knockback", "val": "immunity", "target": "self" },
-            { "type": "prone", "val": "immunity", "target": "self" }
-          ],
+          "add_resist": [{ "resist": "prone", "val": "immunity", "target": "self" }],
           "add_status": [{ "id": "immobilized", "target": "self" }],
           "add_special": [{ "attribute": "Immune to involuntary movement", "target": "self" }],
           "add_other": [{ "type": "cover", "val": "hard", "target": "self" }]
@@ -427,10 +424,7 @@
             "frequency": "1/round",
             "condition": "After you Boost",
             "detail": "Your next melee attack deals +1d6 bonus damage on hit.",
-            "bonus_damage": {
-              "val": "1d6",
-              "weapon_types": ["melee"]
-            }
+            "bonus_damage": "1d6"
           }
         ],
         "synergies": [

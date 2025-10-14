@@ -80,8 +80,8 @@
   },
   {
     "id": "tg_overkill",
-    "name": "Overkill {VAL}-{VAL2}",
-    "description": "When rolling for damage with this weapon, any damage dice that land on a {VAL} cause the attacker to take {VAL2} Heat, and are then rerolled. Additional {VAL}s continue to trigger this effect."
+    "name": "Overkill {VAL}",
+    "description": "When rolling for damage with this weapon, any damage dice that land on a {VAL} cause the attacker to take 1 Heat, and are then rerolled. Additional {VAL}s continue to trigger this effect."
   },
   {
     "id": "tg_overshield",
