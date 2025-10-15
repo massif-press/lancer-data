@@ -9,11 +9,10 @@
       {
         "name": "Acrobatics",
         "description": "While flying, you get the following benefits:<ul><li>You make all Agility checks and saves with +1 Accuracy.</li><li>Any time an attack misses you, you may fly up to 2 spaces in any direction as a reaction.</li></ul>",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "agility",
-            "accuracy": 1,
-            "condition": "While flying"
+            "name": "Acrobatics",
+            "detail": "While flying, you make all Agility checks and saves with +1 Accuracy."
           }
         ],
         "actions": [
@@ -90,28 +89,6 @@
               }
             ]
           }
-        ],
-        "bonuses": [
-          {
-            "id": "check",
-            "accuracy": 1,
-            "condition": "While adjacent to your Bondmate"
-          },
-          {
-            "id": "save",
-            "accuracy": 1,
-            "condition": "While adjacent to your Bondmate"
-          },
-          {
-            "id": "check",
-            "accuracy": 2,
-            "condition": "While adjacent to your Bondmate, if they also have this talent"
-          },
-          {
-            "id": "save",
-            "accuracy": 2,
-            "condition": "While adjacent to your Bondmate, if they also have this talent"
-          }
         ]
       },
       {
@@ -154,16 +131,7 @@
     "ranks": [
       {
         "name": "Hold and Lock",
-        "description": "You gain +1 Accuracy on all melee attacks against targets you are Grappling.",
-        "bonuses": [
-          {
-            "id": "accuracy",
-            "accuracy": 1,
-            "weapon_types": ["Melee"],
-            "weapon_sizes": ["any"],
-            "condition": "When making melee attacks against targets you are Grappling"
-          }
-        ]
+        "description": "You gain +1 Accuracy on all melee attacks against targets you are Grappling."
       },
       {
         "name": "Sledgehammer",
@@ -238,12 +206,10 @@
       {
         "name": "Cull the Herd",
         "description": "Your critical hits gain Knockback 1.",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "knockback",
-            "weapon_types": ["any"],
-            "weapon_sizes": ["any"],
-            "condition": "on_crit"
+            "name": "Cull the Herd",
+            "detail": "Your critical hits gain Knockback 1."
           }
         ]
       },
@@ -290,15 +256,6 @@
                 "detail": "You gain +1 Accuracy on all attacks you make with Rifles."
               }
             ]
-          }
-        ],
-        "bonuses": [
-          {
-            "id": "accuracy",
-            "accuracy": 1,
-            "weapon_types": ["Rifle"],
-            "weapon_sizes": ["any"],
-            "condition": "While you are Immobilized from using the Steady Aim protocol"
           }
         ],
         "active_effects": [
@@ -1672,8 +1629,7 @@
             "name": "Opportunist",
             "detail": "1/round, gain +1 Accuracy on any melee attack if at least one allied character is Engaged with your target.",
             "condition": "You make a melee attack and at least one allied character is Engaged with your target",
-            "frequency": "1/round",
-            "bonus": { "id": "accuracy", "val": 1 }
+            "frequency": "1/round"
           }
         ],
         "synergies": [
@@ -1693,8 +1649,7 @@
             "name": "Solar Backdrop",
             "detail": "1/round, gain +1 Accuracy on any ranged attack made while you are at a higher elevation than your target.",
             "condition": "You make a ranged attack while you are at a higher elevation than your target",
-            "frequency": "1/round",
-            "bonus": { "id": "accuracy", "val": 1 }
+            "frequency": "1/round"
           }
         ],
         "synergies": [
@@ -1774,8 +1729,7 @@
             "name": "Handshake Etiquette",
             "detail": "Gain +1 Accuracy when using CQB weapons to attack targets within Range 3.",
             "condition": "You attack with a CQB weapon at a target within Range 3",
-            "frequency": "1/round",
-            "bonus": { "id": "accuracy", "val": 1 }
+            "frequency": "1/round"
           }
         ],
         "synergies": [

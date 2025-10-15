@@ -401,8 +401,7 @@
       {
         "name": "The Lesson of Thinking-Tomorrow’s-Thought",
         "condition": "You hit with a tech attack.",
-        "detail": "Your next melee attack against the same target gains +1 accuracy, and its damage can’t be reduced in any way.",
-        "bonus": { "id": "melee", "accuracy": 1 }
+        "detail": "Your next melee attack against the same target gains +1 accuracy, and its damage can’t be reduced in any way."
       }
     ]
   },
@@ -519,7 +518,7 @@
         "condition": "You take stress damage.",
         "duration": "next_turn_start_self",
         "detail": "You gain Resistance to all damage until the start of your next turn.",
-        "bonus": { "id": "resistance", "val": "all", "target": "self" }
+        "add_resist": [{ "resistance": "all", "target": "self" }]
       }
     ],
     "description": "A Think Tank exercise in extending stasis beyond the capabilities of civilian utility, Harrison Armory’s stasis shielding actively identifies critically stressed inorganic systems and blankets them in unmodulated “Holdfast” stasis, preventing further degradation for a limited period of time until repairs can be made."

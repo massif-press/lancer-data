@@ -228,12 +228,7 @@
       {
         "name": "Blast Plating",
         "description": "The Drake has Resistance to damage, burn and heat from blast, burst, line, and cone attacks.",
-        "bonuses": [
-          {
-            "id": "resistance",
-            "val": "aoe"
-          }
-        ]
+        "add_resist": [{ "resist": "aoe", "target": "self" }]
       },
       {
         "name": "Slow",
@@ -266,12 +261,7 @@
           "type": "cover",
           "size": 1,
           "size_special": "Line 2",
-          "bonuses": [
-            {
-              "id": "immunity",
-              "val": "all"
-            }
-          ],
+          "add_resist": [{ "immunity": "all", "target": "self" }],
           "description": "A section of hard cover (line 2, Size 1) with Immunity to all damage."
         }
       ],
@@ -335,12 +325,7 @@
       {
         "name": "Insulated",
         "description": "The Lancaster has Immunity to burn.",
-        "bonuses": [
-          {
-            "id": "immunity",
-            "val": "burn"
-          }
-        ]
+        "add_resist": [{ "immunity": "burn", "target": "self" }]
       },
       {
         "name": "Combat Repair",
@@ -556,17 +541,11 @@
       {
         "name": "Sentinel",
         "description": "The Tortuga gains +1 accuracy on all attacks made as reactions (e.g. Overwatch).",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": ["actions", "attack"],
-            "detail": "The Tortuga gains +1 accuracy on all attacks made as reactions (e.g. Overwatch)."
-          }
-        ],
-        "bonuses": [
-          {
-            "id": "attack",
-            "accuracy": 1,
-            "condition": "This attack is being made as a reaction"
+            "name": "Sentinel",
+            "detail": "You gain +1 accuracy on all attacks made as reactions (e.g. Overwatch).",
+            "condition": "You make an attack as a reaction"
           }
         ]
       },
@@ -703,14 +682,7 @@
       "active_effects": [
         {
           "name": "Tormentor Spines Resistance",
-          "detail": "You gain Resistance to all damage originating within range 3.",
-          "bonuses": [
-            {
-              "id": "resistance",
-              "val": "all",
-              "condition": "The source of the damage is within range 3"
-            }
-          ]
+          "detail": "You gain Resistance to all damage originating within range 3."
         },
         {
           "name": "Shrike Armor (Tormentor Spines)",
@@ -761,10 +733,11 @@
       {
         "name": "Repulsor Field",
         "description": "The Black Witch has Resistance to Kinetic Damage.",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "resistance",
-            "val": "kinetic"
+            "name": "Repulsor Field",
+            "detail": "You have Resistance to Kinetic Damage.",
+            "add_resist": [{ "resist": "Kinetic", "target": "self" }]
           }
         ]
       },
@@ -1045,10 +1018,16 @@
       "description": "Tactical cloaks are tight-knit, tight-bind weaves of reactive fabric – high-license tech restricted to pilots of Metalmark Classification II or higher. The weave covers roughly 80% of a mech’s surface area, giving it a dull quality when viewed through optics or with the naked eye. Beyond their use as regular camouflage, activated tactical cloaks bend light in a way that makes their wearers nearly impossible to see.",
       "active_name": "Tactical Cloak",
       "active_effect": "You are Invisible for the rest of the scene.",
-      "active_bonuses": [
+      "active_effects": [
         {
-          "id": "status",
-          "val": "invisible"
+          "name": "Tactical Cloak",
+          "detail": "You are Invisible for the rest of the scene.",
+          "add_status": [
+            {
+              "id": "invisible",
+              "target": "self"
+            }
+          ]
         }
       ],
       "use": "Encounter",
@@ -1363,13 +1342,7 @@
           {
             "name": "Regeneration",
             "condition": "Your turn ends and you haven’t taken stress or structure damage since the start of your turn",
-            "detail": "You regain 1/4 of your total HP. When you take stress or structure damage, this effect ceases until the end of your next turn.",
-            "bonuses": [
-              {
-                "id": "regeneration",
-                "val": "quarter"
-              }
-            ]
+            "detail": "You regain 1/4 of your total HP. When you take stress or structure damage, this effect ceases until the end of your next turn."
           }
         ],
         "synergies": [
@@ -1395,19 +1368,24 @@
       "description": "In a moment, with aught but desire, the pilot of a Balor may quick-print a cloak comprised of countless minuscule drones: a hellswarm cloak – living shield and fluid-dynamic knife, cutting and guarding, in one shimmering wave. They become Hivemaster, and their will is obeyed by millions.",
       "active_name": "Hive Frenzy",
       "active_effect": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<ul><li>You and adjacent allies gain soft cover.</li><li>Scouring Swarm deals 4 kinetic, instead of 2.</li><li>Regeneration restores 1/2 of your total HP, instead of 1/4.</li><li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.</li><li>You become Shredded and cannot clear this condition for the duration.</li></ul>",
-      "active_bonuses": [
+      "active_effects": [
         {
-          "id": "cover",
-          "val": "soft"
-        },
-        {
-          "id": "regeneration",
-          "val": "half",
-          "override": true
-        },
-        {
-          "id": "status",
-          "val": "shredded"
+          "name": "Hive Frenzy",
+          "detail": "Your nanites switch into a hyperactive mode, causing the following effects until the end of the scene:<ul><li>You and adjacent allies gain soft cover.</li><li>Scouring Swarm deals 4 kinetic, instead of 2.</li><li>Regeneration restores 1/2 of your total HP, instead of 1/4.</li><li>If you would take structure damage, roll 1d6: on 6, your mech hellishly pulls itself together, taking no structure damage, returning to 1 HP, and gaining Immunity to all damage until the end of the current turn.</li><li>You become Shredded and cannot clear this condition for the duration.</li></ul>",
+          "add_status": [
+            {
+              "id": "shredded",
+              "target": "self",
+              "duration": "scene"
+            }
+          ],
+          "add_other": [
+            {
+              "id": "cover",
+              "val": "soft",
+              "target": "self"
+            }
+          ]
         }
       ],
       "use": "Encounter",
@@ -1741,14 +1719,20 @@
       {
         "name": "Slag Carapace",
         "description": "The Manticore has Resistance to Energy Damage and Burn.",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "resistance",
-            "val": "energy"
-          },
-          {
-            "id": "resistance",
-            "val": "burn"
+            "name": "Slag Carapace",
+            "detail": "You have Resistance to Energy damage and Burn.",
+            "add_resist": [
+              {
+                "resist": "energy",
+                "target": "self"
+              },
+              {
+                "resist": "burn",
+                "target": "self"
+              }
+            ]
           }
         ]
       },
@@ -1784,10 +1768,16 @@
       "description": "And RA Said Unto Themself:<br><code class='horus'>LET MY NAME ENVELOP YOU. SEEK NO SHELTER FROM THE FLAME OR THE TEETH OF THE BEAST. CLOAK YOURSELF IN THE FIRE OF MY WORD AND CAST BACK TO YOUR ENEMIES THAT WHICH WOULD BLACKEN YOUR FORM.</code>",
       "active_name": "Destruction of the Temple of the Enemies of RA",
       "active_effect": "Your mech crackles with energy: gain Resistance to heat for the rest of this scene and a Charge Die – 1d6, starting at 1. Whenever you take heat or energy, even from yourself, increase the value of the Charge Die by 1. When the Charge Die reaches 6, the absorbed energy discharges in a burst 2 inferno. Characters within the affected area must succeed on an Engineering save or take 6d6 AP energy damage. On a success, they take half damage. Objects in the affected area are automatically hit. Once discharged, this effect ends.",
-      "active_bonuses": [
+      "active_effects": [
         {
-          "id": "resistance",
-          "val": "heat"
+          "name": "Destruction of the Temple of the Enemies of RA",
+          "detail": "Gain Resistance to heat for the rest of this scene and a Charge Die – 1d6, starting at 1. Whenever you take heat or energy, even from yourself, increase the value of the Charge Die by 1. When the Charge Die reaches 6, the absorbed energy discharges in a burst 2 inferno. Characters within the affected area must succeed on an Engineering save or take 6d6 AP energy damage. On a success, they take half damage. Objects in the affected area are automatically hit. Once discharged, this effect ends.",
+          "add_resist": [
+            {
+              "resist": "heat",
+              "target": "self"
+            }
+          ]
         }
       ],
       "active_counters": [
@@ -2031,10 +2021,16 @@
       {
         "name": "Pressure Plating",
         "description": "The Barbarossa has resistance to Explosive Damage.",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "resistance",
-            "val": "explosive"
+            "name": "Pressure Plating",
+            "detail": "You have Resistance to Explosive damage.",
+            "add_resist": [
+              {
+                "resist": "explosive",
+                "target": "self"
+              }
+            ]
           }
         ]
       },
@@ -2108,10 +2104,16 @@
       {
         "name": "Insulated",
         "description": "The Genghis has Immunity to burn.",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "immunity",
-            "val": "burn"
+            "name": "Insulated",
+            "detail": "You have Immunity to Burn.",
+            "add_immunity": [
+              {
+                "immunity": "burn",
+                "target": "self"
+              }
+            ]
           }
         ]
       },
@@ -2341,10 +2343,16 @@
       {
         "name": "Reinforced Frame",
         "description": "The Saladin has Immunity to Shredded.",
-        "bonuses": [
+        "active_effects": [
           {
-            "id": "immunity",
-            "val": "shredded"
+            "name": "Reinforced Frame",
+            "detail": "You have Immunity to Shredded.",
+            "add_immunity": [
+              {
+                "immunity": "shredded",
+                "target": "self"
+              }
+            ]
           }
         ]
       },
@@ -2458,7 +2466,13 @@
             "name": "Vent Heat",
             "condition": "You Stabilize or exceed your Heat Cap.",
             "detail": "You benefit from soft cover until the start of your next turn.",
-            "bonuses": [{ "id": "cover", "val": "soft" }]
+            "add_other": [
+              {
+                "type": "cover",
+                "val": "soft",
+                "target": "self"
+              }
+            ]
           }
         ],
         "synergies": [

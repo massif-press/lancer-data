@@ -1309,7 +1309,7 @@
     "on_hit": {
       "detail": "All characters within the affected area must succeed on a Hull save or be pulled 1d3+1 spaces toward you, or as close as possible.",
       "save": {
-        "type": "hull",
+        "stat": "hull",
         "aoe": true
       }
     },
