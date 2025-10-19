@@ -203,7 +203,6 @@
     "active_effects": [
       {
         "name": "Titanomachy Mesh",
-        "activation": "Free",
         "frequency": "1/round",
         "condition": "You successfully Ram or Grapple a mech.",
         "detail": "You can Ram or Grapple again as a free action."
@@ -461,7 +460,6 @@
     "active_effects": [
       {
         "name": "Armory-Sculpted Chassis",
-        "activation": "Free",
         "condition": "You Overcharge.",
         "duration": "next_turn_start_self",
         "detail": "You gain soft cover until the start of your next turn.",

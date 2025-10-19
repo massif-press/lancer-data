@@ -40,7 +40,6 @@
         "name": "UNCLE",
         "activation": "Free",
         "frequency": "1/turn",
-        "condition": "The weapon this mod is applied to hasn’t been used this turn.",
         "detail": "1/turn, you can attack at +2 difficulty with UNCLE’s weapon as a free action. UNCLE can’t use weapons that have already been used this turn, and any weapon UNCLE attacks with can’t be used again until the start of your next turn."
       }
     ],

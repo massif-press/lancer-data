@@ -269,7 +269,7 @@
         {
           "name": "Fortress Protocol",
           "detail": "You benefit from hard cover, even in the open, and gain Immunity to Knockback, Prone, and all involuntary movement.",
-          "add_resist": [{ "resist": "prone", "val": "immunity", "target": "self" }],
+          "add_resist": [{ "immunity": "prone", "target": "self" }],
           "add_status": [{ "id": "immobilized", "target": "self" }],
           "add_special": [{ "attribute": "Immune to involuntary movement", "target": "self" }],
           "add_other": [{ "type": "cover", "val": "hard", "target": "self" }]
@@ -821,6 +821,13 @@
       "description": "Precognition is the next step in human/AI interaction. Using a neural bridge, SSC’s precognitive targeting system allows pilots to learn constantly and unconsciously from data gathered in the field, equipping them to read situations before they develop. Precognition is highly experimental and the precise mechanisms unknown even to the designers, so SSC recommends limited, monitored use of this system.",
       "active_name": "Neural Shunt",
       "active_effect": "For the rest of this scene, you gain the Mark for Death action.",
+      "active_effects": [
+        {
+          "name": "Mark for Death Focus",
+          "detail": "Deal bonus damage to your Marked for Death target based on weapon size (aux: 1d6, main: 2d6, heavy or larger: 3d6) on ranged critical hits against them, as long as they aren’t in cover or within range 5.",
+          "condition": "You are focusing on a target (Marked for Death)"
+        }
+      ],
       "active_actions": [
         {
           "name": "Mark for Death",
@@ -837,14 +844,6 @@
             {
               "id": "immobilized",
               "target": "self"
-            }
-          ],
-          "add_active_effects": [
-            {
-              "name": "Mark for Death Focus",
-              "detail": "Deal bonus damage to your Marked for Death target based on weapon size (aux: 1d6, main: 2d6, heavy or larger: 3d6) on ranged critical hits against them, as long as they aren’t in cover or within range 5.",
-              "condition": "You are focusing on a target (Marked for Death)",
-              "clearable": true
             }
           ]
         },
@@ -1375,8 +1374,7 @@
           "add_status": [
             {
               "id": "shredded",
-              "target": "self",
-              "duration": "scene"
+              "target": "self"
             }
           ],
           "add_other": [
@@ -1853,7 +1851,7 @@
         ],
         "synergies": [
           {
-            "locations": ["eject", "palette"],
+            "locations": ["eject"],
             "detail": "The Minotaur doesn’t become Impaired when you Eject."
           }
         ]
@@ -2390,7 +2388,6 @@
         {
           "name": "Defensive Pulse",
           "activation": "Reaction",
-          "init": "This system projects an accelerated-tachyon shield over an allied character within Sensors. You may choose a new target as a quick action.",
           "trigger": "Your target is attacked.",
           "detail": "You empower their tachyon shield with a pulse of energy. They gain Resistance to all damage from the attack, and if the attack misses, you may force the attacker to reroll it against a character or object of your choice, checking line of sight and Range from your target instead of from the attacker. If the attack was part of an area of effect, the new target must be inside the same area of effect from the original attack instead."
         },

@@ -379,8 +379,7 @@
       {
         "name": "Activate Stealth Hardsuit",
         "activation": "Quick",
-        "detail": "Become Invisible. You will cease to be Invisible if you take any damage.",
-        "pilot": true
+        "detail": "Become Invisible. You will cease to be Invisible if you take any damage."
       }
     ]
   },
@@ -394,8 +393,7 @@
       {
         "name": "Use Corrective",
         "activation": "Full",
-        "detail": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP",
-        "pilot": true
+        "detail": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP"
       }
     ],
     "tags": [
@@ -433,8 +431,7 @@
             "val": 2
           }
         ],
-        "detail": "Throw a grenade within Range 5. Affected characters within a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
-        "pilot": true
+        "detail": "Throw a grenade within Range 5. Affected characters within a Blast 1 must succeed on an Agility save or take 2 Explosive damage."
       }
     ],
     "tags": [
@@ -460,8 +457,7 @@
       {
         "name": "Use Patch",
         "activation": "Full",
-        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
-        "pilot": true
+        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots."
       }
     ],
     "tags": [
@@ -484,8 +480,7 @@
       {
         "name": "Use Stim",
         "activation": "Quick",
-        "detail": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
-        "pilot": true
+        "detail": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>"
       }
     ],
     "tags": [
@@ -508,7 +503,6 @@
         "name": "Thermite Charge",
         "type": "Mine",
         "detail": "This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
-        "pilot": true,
         "actions": [
           {
             "name": "Detonate",
@@ -521,8 +515,7 @@
                 "ap": true,
                 "save": "eng"
               }
-            ],
-            "pilot": true
+            ]
           },
           {
             "name": "Detonate (vs. Object)",
@@ -534,8 +527,7 @@
                 "val": 10,
                 "ap": true
               }
-            ],
-            "pilot": true
+            ]
           }
         ]
       }

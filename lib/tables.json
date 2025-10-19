@@ -4,7 +4,6 @@
     "title": "Structure Damage",
     "description": "When a mech is reduced to 0 HP and takes structure damage, its player (or the GM) makes a structure damage check. This represents the results of unusually powerful or accurate hits, which can disable a mech rapidly if not dealt with.<br/>To make a structure damage check, roll 1d6 per point of structure damage marked, including the structure damage that has just been taken. Choose the lowest result and check the structure damage chart to determine the outcome. Rolling multiple 1s has particularly catastrophic consequences.",
     "die": 6,
-    "mult": "lost_structure",
     "results": [
       {
         "min": 5,
@@ -37,7 +36,6 @@
     "title": "Overheating",
     "description": "When a mech exceeds its HEAT CAP and takes stress damage, its player (or the GM) makes an overheating check.<br>To make an overheating check, roll 1d6 per point of stress damage marked, including the stress damage that has just been taken. Choose the lowest result and check the overheating chart to determine the outcome. Rolling multiple 1s has particularly catastrophic consequences",
     "die": 6,
-    "mult": "lost_stress",
     "results": [
       {
         "min": 5,
