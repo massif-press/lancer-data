@@ -17,7 +17,7 @@
       }
     ],
     "description": "Using the best in shock-absorption and steadytech, you can retain accuracy across longer, sustained periods of fire.",
-    "mounted_effect": "Attacks made with weapons from this mount can be made with +1 Accuracy."
+    "mounted_effect": "Attacks made with weapons from this mount gain +1 Accuracy."
   },
   {
     "id": "cb_overpower_caliber",

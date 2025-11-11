@@ -21,13 +21,13 @@
         "min": 1,
         "max": 1,
         "title": "Direct Hit",
-        "result": "The result depends on your mech’s remaining STRUCTURE:<br>3+ STRUCTURE: Your mech is STUNNED until the end of your next turn.<br>2 STRUCTURE: Roll a HULL check. On a success, your mech is STUNNED until the end of your next turn. On a failure, your mech is destroyed.<br>1 STRUCTURE: Your mech is destroyed."
+        "result": "This result depends on your mech’s remaining STRUCTURE:<ul><li>3+ Structure: Your mech is STUNNED until the end of your next turn.</li><li>2 Structure: Roll a HULL check. On a success, your mech is STUNNED until the end of your next turn. On a failure, your mech is destroyed.</li><li>1 Structure: Your mech is STUNNED until the end of your next turn.</li></ul>"
       },
       {
         "min": -1,
         "max": -1,
-        "title": "Catastrophic Damage",
-        "result": "Choose one of the following effects:<br/>- Your mech is STUNNED until the end of your next turn, and one of your mech’s systems is DISABLED until the end of your next turn.<br/>- You take 3 additional structure damage."
+        "title": "Crushing Hit",
+        "result": "Your mech is damaged beyond repair – it is destroyed. You may still exit it as normal."
       }
     ]
   },

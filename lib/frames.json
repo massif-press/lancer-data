@@ -117,20 +117,20 @@
             "detail": "You are pulled adjacent to your target by the most direct path. If there are no suitable spaces, the grapple breaks and you do not move."
           }
         ],
-        "synergies": [
+        "active_effects": [
           {
-            "locations": ["grapple"],
-            "detail": "The Blackbeard can Grapple targets within Range 5. If the Grapple is successful, the Blackbeard is immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and the Blackbeard does not move."
+            "name": "Grapple Cable",
+            "detail": "You can Grapple targets within Range 5. If the Grapple is successful, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and you do not move."
           }
         ]
       },
       {
         "name": "Lock/Kill Subsystem",
         "description": "While grappling, the Blackbeard can Boost and take reactions.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": ["grapple", "actions"],
-            "detail": "While grappling, the Blackbeard can Boost and take reactions."
+            "name": "Lock/Kill Subsystem",
+            "detail": "While grappling, you can Boost and take reactions."
           }
         ]
       },
