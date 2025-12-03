@@ -122,6 +122,12 @@
             "name": "Grapple Cable",
             "detail": "You can Grapple targets within Range 5. If the Grapple is successful, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and you do not move."
           }
+        ],
+        "synergies": [
+          {
+            "locations": ["grapple"],
+            "detail": "If the Grapple is successful, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, the grapple breaks and you do not move."
+          }
         ]
       },
       {

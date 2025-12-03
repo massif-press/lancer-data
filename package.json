@@ -1,6 +1,6 @@
 {
   "name": "@massif/lancer-data",
-  "version": "4.0.0",
+  "version": "4.0.0-beta.14",
   "description": "Data for the LANCER TTRPG",
   "main": "index.js",
   "scripts": {
