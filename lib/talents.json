@@ -347,7 +347,7 @@
                 "save": "sys"
               },
               {
-                "id": "slowed",
+                "id": "slow",
                 "duration": "next_turn_end_target",
                 "save": "sys"
               }
@@ -405,7 +405,7 @@
                 "save": "sys"
               },
               {
-                "id": "slowed",
+                "id": "slow",
                 "duration": "next_turn_end_target",
                 "save": "sys"
               }
@@ -1146,7 +1146,7 @@
             "frequency": "1/turn",
             "add_status": [
               {
-                "id": "slowed",
+                "id": "slow",
                 "save": "hull",
                 "duration": "next_turn_end_target"
               },

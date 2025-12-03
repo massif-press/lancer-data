@@ -5,8 +5,7 @@
     "activation": "Move",
     "terse": "Move your character up to its Speed in any direction.",
     "detail": "On their turn, characters can always move spaces equal to their SPEED, in addition to any other actions. This is called a standard move to distinguish it from movement granted by systems or talents.<br>A character only counts as moving if they move 1 or more spaces.<br>Characters can move into any adjacent space, even diagonally, as long as the space isn’t occupied by an obstruction (and is one that they would be able to move in – characters can't move straight up unless they can fly, for example). There are several factors that can affect movement, which are detailed here.",
-    "pilot": true,
-    "hide_active": true
+    "pilot": true
   },
   {
     "id": "act_overcharge",
@@ -35,7 +34,8 @@
     "name": "Ram",
     "activation": "Quick",
     "terse": "Attempt to knock down or knock back your target. On a success the target is knocked Prone and you may choose to knock them back one space.",
-    "detail": "When you RAM, you make a melee attack with the aim of knocking a target down or back.<br>To RAM, make a melee attack against an adjacent character the same SIZE or smaller than you. On a success, your target is knocked PRONE and you may also choose to knock them back by one space, directly away from you."
+    "detail": "When you RAM, you make a melee attack with the aim of knocking a target down or back.<br>To RAM, make a melee attack against an adjacent character the same SIZE or smaller than you. On a success, your target is knocked PRONE and you may also choose to knock them back by one space, directly away from you.",
+    "add_status": [{ "id": "prone", "attack": "melee" }]
   },
   {
     "id": "act_grapple",
@@ -49,15 +49,22 @@
     "name": "Quick Tech",
     "activation": "Quick",
     "terse": "Perform quick electronic warfare or systems-boosting activities.",
-    "detail": "When you use QUICK TECH, you engage in electronic warfare, countermeasures, and other technical actions, often aided by a mech’s powerful computing and simulation cores.<br>Each time you take this action, you choose an option from the QUICK TECH list. All mechs have access to these options, but some systems enhance them or make new options available.<br>Unlike other quick actions, QUICK TECH can be taken more than once per turn; however, a different option must be chosen every time, unless specified otherwise or granted as a free action.",
-    "ignore_used": true
+    "detail": "When you use QUICK TECH, you engage in electronic warfare, countermeasures, and other technical actions, often aided by a mech’s powerful computing and simulation cores.<br>Each time you take this action, you choose an option from the QUICK TECH list. All mechs have access to these options, but some systems enhance them or make new options available.<br>Unlike other quick actions, QUICK TECH can be taken more than once per turn; however, a different option must be chosen every time, unless specified otherwise or granted as a free action."
   },
   {
     "id": "act_bolster",
     "name": "Bolster",
     "activation": "Quick Tech",
     "terse": "Enhance another character’s systems.",
-    "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems.<br>To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time."
+    "detail": "When you BOLSTER, you use your mech’s formidable processing power to enhance another character’s systems.<br>To BOLSTER, choose a character within SENSORS. They receive +2 Accuracy on the next skill check or save they make between now and the end of their next turn. Characters can only benefit from one BOLSTER at a time.",
+    "add_special": [
+      {
+        "attribute": "Bolstered",
+        "target": "ally",
+        "detail": "Gain +2 Accuracy on the next skill check or save you make.",
+        "duration": "end_next_turn_target"
+      }
+    ]
   },
   {
     "id": "act_scan",
@@ -71,7 +78,8 @@
     "name": "Lock On",
     "activation": "Quick Tech",
     "terse": "Digitally mark a target",
-    "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points.<br>To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition. Any character making an attack against a character with LOCK ON may choose to gain +1 Accuracy on that attack and then clear the LOCK ON condition after that attack resolves. This is called consuming LOCK ON."
+    "detail": "When you LOCK ON, you digitally mark a target, lighting them up for your teammates’ targeting systems and exposing weak points.<br>To LOCK ON, choose a character within SENSORS and line of sight. They gain the LOCK ON condition. Any character making an attack against a character with LOCK ON may choose to gain +1 Accuracy on that attack and then clear the LOCK ON condition after that attack resolves. This is called consuming LOCK ON.",
+    "add_status": [{ "id": "lockon" }]
   },
   {
     "id": "act_invade",
@@ -85,14 +93,18 @@
     "name": "Fragment Signal",
     "activation": "Invade",
     "terse": "IMPAIR and SLOW a character until the end of their next turn.",
-    "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn."
+    "detail": "You feed false information, obscene messages, or phantom signals to your target’s computing core. They become IMPAIRED and SLOWED until the end of their next turn.",
+    "add_status": [
+      { "id": "impaired", "duration": "end_next_turn_target" },
+      { "id": "slow", "duration": "end_next_turn_target" }
+    ]
   },
   {
     "id": "act_hide",
     "name": "Hide",
     "activation": "Quick",
     "terse": "Obscure the position of your mech, becoming HIDDEN and unable to be identified, precisely located, or be targeted directly by attacks or hostile actions",
-    "detail": "When you HIDE, you obscure the position of your mech in order to reposition, avoid incoming fire, repair, or ambush.<br>To HIDE, you must not be ENGAGED and you must either be outside of any enemies’ line of sight, obscured by sufficient cover, or invisible. If you HIDE while meeting one of these criteria, you gain the HIDDEN status.<br>Hard cover is sufficient to HIDE as long as it is large enough to totally conceal you, but soft cover is only sufficient if you are completely inside an area or zone that grants soft cover – many systems and talents that grant soft cover or plain old obscurement just don’t provide enough to hide behind!<br>If you are INVISIBLE, you can always HIDE, regardless of cover, unless you’re ENGAGED.<br>The exact location of HIDDEN targets cannot be identified and they cannot be targeted directly by attacks or hostile actions, but they can still be hit by attacks that affect an area. Although NPCs cannot perfectly locate a HIDDEN character, they might still know an approximate location. Thus, an NPC could flush an area with a flamethrower even if they don’t know exactly where a HIDDEN player is lurking.<br>Additionally, other characters ignore engagement with you while you are HIDDEN – it’s assumed you’re trying to stay stealthy.<br>You cease to be HIDDEN if you make an attack (melee, ranged, or tech) or if your mech takes a hostile action (such as forcing a target to make a save). Using BOOST or taking reactions with your mech also causes you to lose HIDDEN. Other actions can be taken as normal.<br>You also immediately lose HIDDEN if your cover disappears or is destroyed, or if you lose cover due to line of sight (e.g., if a mech jumps over a wall and can now draw unbroken line of sight to you). If you’re hiding while INVISIBLE, you lose HIDDEN when you cease to be INVISIBLE unless you are in cover.",
+    "detail": "<p>When you HIDE, you obscure the position of your mech in order to reposition, avoid incoming fire, repair, or ambush.</p><p>To HIDE, you must not be ENGAGED and you must either be outside of any enemies’ line of sight, obscured by sufficient cover, or invisible. If you HIDE while meeting one of these criteria, you gain the HIDDEN status.</p><p>Hard cover is sufficient to HIDE as long as it is large enough to totally conceal you, but soft cover is only sufficient if you are completely inside an area or zone that grants soft cover – many systems and talents that grant soft cover or plain old obscurement just don’t provide enough to hide behind!</p><p>If you are INVISIBLE, you can always HIDE, regardless of cover, unless you’re ENGAGED.</p><p>The exact location of HIDDEN targets cannot be identified and they cannot be targeted directly by attacks or hostile actions, but they can still be hit by attacks that affect an area. Although NPCs cannot perfectly locate a HIDDEN character, they might still know an approximate location. Thus, an NPC could flush an area with a flamethrower even if they don’t know exactly where a HIDDEN player is lurking.</p><p>Additionally, other characters ignore engagement with you while you are HIDDEN – it’s assumed you’re trying to stay stealthy.</p><p>You cease to be HIDDEN if you make an attack (melee, ranged, or tech) or if your mech takes a hostile action (such as forcing a target to make a save). Using BOOST or taking reactions with your mech also causes you to lose HIDDEN. Other actions can be taken as normal.</p><p>You also immediately lose HIDDEN if your cover disappears or is destroyed, or if you lose cover due to line of sight (e.g., if a mech jumps over a wall and can now draw unbroken line of sight to you). If you’re hiding while INVISIBLE, you lose HIDDEN when you cease to be INVISIBLE unless you are in cover.</p>",
     "pilot": true
   },
   {
@@ -100,7 +112,14 @@
     "name": "Search",
     "activation": "Quick",
     "terse": "Look for a hidden target.",
-    "detail": "When you SEARCH, you attempt to identify hidden characters. To SEARCH in a mech, choose a character within your SENSORS that you suspect is HIDDEN and make a contested SYSTEMS check against their AGILITY.<br>To SEARCH as a pilot on foot, make a contested skill check, adding bonuses from triggers as normal. This can be used to reveal characters within RANGE 5.<br>Once a HIDDEN character has been found using SEARCH, they immediately lose HIDDEN and can be located again by any character.",
+    "detail": "When you SEARCH, you attempt to identify hidden characters. To SEARCH in a mech, choose a character within your SENSORS that you suspect is HIDDEN and make a contested SYSTEMS check against their AGILITY."
+  },
+  {
+    "id": "act_search_pilot",
+    "name": "Search",
+    "activation": "Quick",
+    "terse": "Look for a hidden target.",
+    "detail": "To SEARCH as a pilot on foot, make a contested skill check, adding bonuses from triggers as normal. This can be used to reveal characters within RANGE 5.<br>Once a HIDDEN character has been found using SEARCH, they immediately lose HIDDEN and can be located again by any character.",
     "pilot": true
   },
   {
@@ -181,7 +200,8 @@
     "name": "Improvised Attack",
     "activation": "Full",
     "terse": "Attack with a fist, rifle butt, or improvised weapon in melee.",
-    "detail": "When you make an IMPROVISED ATTACK, you attack with a rifle butt, fist, or another improvised melee weapon. You can use anything from the butt of a weapon to a slab of concrete or a length of hull plating – the flavor of the attack is up to you!<br>To make an IMPROVISED ATTACK, make a melee attack against an adjacent target. On a success, they take 1d6 kinetic damage."
+    "detail": "When you make an IMPROVISED ATTACK, you attack with a rifle butt, fist, or another improvised melee weapon. You can use anything from the butt of a weapon to a slab of concrete or a length of hull plating – the flavor of the attack is up to you!<br>To make an IMPROVISED ATTACK, make a melee attack against an adjacent target. On a success, they take 1d6 kinetic damage.",
+    "damage": { "type": "kinetic", "val": "1d6", "attack": "melee" }
   },
   {
     "id": "act_activate_full",
@@ -218,7 +238,7 @@
     "name": "Skill Check",
     "activation": "Full",
     "terse": "Perform an activity with a clear goal that would take a skill check.",
-    "detail": "When you make a SKILL CHECK, you undertake an activity that isn’t covered by other actions but has a clear goal and is sufficiently complex to require a roll. The parameters and outcomes of SKILL CHECKS are up to the GM, but they must be involved enough to require a full action. If you want to do something that can be done quickly, no action is required.<br>Examples of SKILL CHECKS:<br>• Bruja, on foot, wants to open a locked door. The GM asks her to make a SKILL CHECK and decides that Bruja can get a bonus from her ‘Hack or Fix’ trigger.<br>• Pan wants to jump a crevasse in his mech that’s wider than he can normally manage. The GM decides to allow him to try it with AGILITY.<br>• Zaid wants to lift a heavy boulder with his mech, to clear a passage. The GM decides this is probably a full action and requires a SKILL CHECK with HULL.",
+    "detail": "When you make a SKILL CHECK, you undertake an activity that isn’t covered by other actions but has a clear goal and is sufficiently complex to require a roll. The parameters and outcomes of SKILL CHECKS are up to the GM, but they must be involved enough to require a full action. If you want to do something that can be done quickly, no action is required.",
     "pilot": true
   },
   {
@@ -257,7 +277,6 @@
     "name": "Free Action",
     "activation": "Free",
     "terse": "Characters may perform any number of Free Actions on their turn.",
-    "detail": "Free actions are often granted by systems, talents, gear, or OVERCHARGE. Characters may perform any number of free actions on their turn, but only on their turn, and only those granted to them. Free actions can always be used to make duplicate actions.<br>The most common type of free action is a PROTOCOL, which is granted by gear or systems and can be activated or deactivated only at the start of a turn. Each Protocol can only be taken once per turn.",
-    "hide_active": true
+    "detail": "Free actions are often granted by systems, talents, gear, or OVERCHARGE. Characters may perform any number of free actions on their turn, but only on their turn, and only those granted to them. Free actions can always be used to make duplicate actions.<br>The most common type of free action is a PROTOCOL, which is granted by gear or systems and can be activated or deactivated only at the start of a turn. Each Protocol can only be taken once per turn."
   }
 ]

@@ -81,7 +81,7 @@
             "target": "self"
           },
           {
-            "id": "slowed",
+            "id": "slow",
             "target": "self"
           }
         ]
@@ -736,7 +736,7 @@
         "detail": "This sealant can be sprayed on characters or free spaces within range 5 and line of sight. It has different effects depending on the target:<ul><li><b>Hostile Characters:</b> Your target must succeed on an Agility save or they become Slowed until the end of their next turn and clear all burn.</li><li><b>Allied Characters:</b> Your target clears all burn but they become Slowed until the end of their next turn.</li><li><b>Free Space:</b> Any fires within blast 1 are extinguished and the area becomes difficult terrain for the rest of the scene.</li></ul>",
         "add_status": [
           {
-            "id": "slowed",
+            "id": "slow",
             "save": "agi",
             "duration": "next_turn_end_target"
           }
@@ -1018,7 +1018,7 @@
         "activation": "Quick",
         "detail": "When activated, the HyperDense Armor hardens into a shimmering, reflective surface that offers unparalleled protection. You gain Resistance to all damage, Heat and Burn from attacks that originate beyond Range 3; however, you become Slowed and deal half damage, Heat and Burn to characters beyond Range 3.",
         "add_resist": [{ "resist": "all", "target": "self" }],
-        "add_status": [{ "id": "slowed", "target": "self" }],
+        "add_status": [{ "id": "slow", "target": "self" }],
         "add_special": [{ "attribute": "HyperDense Armor Active", "target": "self" }]
       },
       {
@@ -1837,7 +1837,7 @@
       {
         "activation": "Protocol",
         "detail": "Your mech can retract its major systems to reduce its profile. While active:<ul><li>rolls to locate you receive +1 difficulty while you are Hidden;</li><li>ranged and tech attacks against you receive +1 difficulty;</li><li>you become Slowed and can’t make attacks of any kind;</li><li>you may take other actions (e.g., Hide, Activate, and so on).</li></ul>You may end this effect as a quick action.",
-        "add_status": [{ "id": "slowed", "target": "self" }],
+        "add_status": [{ "id": "slow", "target": "self" }],
         "add_special": [
           {
             "attribute": "Retractable Profile Active",
@@ -1907,7 +1907,7 @@
         "activation": "Quick",
         "detail": "You become Slowed, but your Mech and all allied characters within a burst 2 area become Invisible as long as they remain completely inside the area. This effect lasts until the end of your next turn, or until you are Stunned, take damage, or deactivate it as a quick action.",
         "add_status": [
-          { "id": "slowed", "target": "self" },
+          { "id": "slow", "target": "self" },
           { "id": "invisible", "target": "self" }
         ],
         "add_special": [
@@ -2670,7 +2670,7 @@
         "name": "Logic Bomb",
         "activation": "Invade",
         "detail": "All characters of your choice within burst 2 of your target must succeed on a Systems save or become Slowed until they end one of their turns not adjacent to any character.",
-        "add_status": [{ "id": "slowed", "save": "sys", "aoe": true }]
+        "add_status": [{ "id": "slow", "save": "sys", "aoe": true }]
       },
       {
         "name": "Banish",
@@ -2760,9 +2760,9 @@
         "activation": "Quick",
         "detail": "When activated, this system creates a burst 3 field around you that lasts until it is deactivated as a quick action, and you become Slowed for the duration. Hostile characters that start their turn within the affected area or that enter it for the first time in a round must succeed on a Systems save or become Slowed until the end of their next turn. Only characters of your choice within the field can teleport or consider the area of the field valid space for teleportation.",
         "add_status": [
-          { "id": "slowed", "target": "self" },
+          { "id": "slow", "target": "self" },
           {
-            "id": "slowed",
+            "id": "slow",
             "duration": "next_turn_end_target",
             "aoe": true,
             "save": "sys"
@@ -3261,7 +3261,7 @@
         ],
         "add_status": [
           {
-            "id": "slowed",
+            "id": "slow",
             "save": "agi"
           }
         ],
@@ -3678,7 +3678,7 @@
         "name": "Diluvian Ark",
         "activation": "Quick",
         "detail": "These effects apply until the end of your next turn:<ul><li>You become Slowed.</li><li>Each time you or an allied adjacent character are targeted by a ranged attack, you may take 1 heat as a reaction and roll 1d6 before the attacker rolls: on 4+, you take an additional 1 heat and the attack automatically misses you and any allies adjacent to you. This effect does not stack with Invisible.</li><li>Each time a ranged attack fails to hit you or an adjacent allied character, the attacker takes 4 kinetic damage.</li></ul>",
-        "add_status": [{ "id": "slowed", "target": "self" }],
+        "add_status": [{ "id": "slow", "target": "self" }],
         "active_effects": [
           {
             "name": "Diluvian Ark Active",

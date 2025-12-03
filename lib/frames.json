@@ -1892,7 +1892,7 @@
           "detail": "When you hit with a tech attack, you may activate this system, causing your target to become Slowed until the end of your next turn. If they are already Slowed, they become Immobilized until the end of your next turn; if they are already Immobilized, they become Stunned until the end of your next turn. Each character can only be Stunned by this effect once per combat but can be Slowed or Immobilized any number of times.",
           "add_status": [
             {
-              "id": "slowed",
+              "id": "slow",
               "duration": "next_turn_end_self"
             },
             {

@@ -159,7 +159,7 @@
         "target": "self"
       },
       {
-        "id": "slowed",
+        "id": "slow",
         "target": "self"
       }
     ],
@@ -177,7 +177,7 @@
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "save": "agi",
         "duration": "next_turn_end_target"
       }
@@ -190,7 +190,7 @@
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "target": "self"
       }
     ],
@@ -245,13 +245,13 @@
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "target": "self"
       }
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "target": "self"
       },
       {
@@ -306,18 +306,18 @@
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "save": "sys",
         "aoe": true
       }
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "target": "self"
       },
       {
-        "id": "slowed",
+        "id": "slow",
         "duration": "next_turn_end_target",
         "aoe": true,
         "save": "sys"
@@ -331,7 +331,7 @@
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "save": "agi"
       }
     ],
@@ -362,7 +362,7 @@
     ],
     [
       {
-        "id": "slowed",
+        "id": "slow",
         "target": "self"
       }
     ],
