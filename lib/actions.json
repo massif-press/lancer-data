@@ -228,6 +228,15 @@
     "damage": { "type": "kinetic", "val": "1d6", "attack": "melee" }
   },
   {
+    "id": "act_improvised_attack_npc",
+    "name": "Improvised Attack",
+    "activation": "Full",
+    "terse": "Attack with a fist, rifle butt, or improvised weapon in melee.",
+    "detail": "The NPC makes a melee attack with a bonus of +1/2/3 and deals 3/4/6 damage, based on their Tier",
+    "damage": { "type": "kinetic", "val": "3", "attack": "melee" },
+    "hidden": true
+  },
+  {
     "id": "act_activate_full",
     "name": "Full Activation",
     "activation": "Full",
