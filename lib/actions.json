@@ -38,11 +38,27 @@
     "add_status": [{ "id": "prone", "attack": "melee" }]
   },
   {
+    "id": "act_ram_npc",
+    "name": "Ram",
+    "activation": "Quick",
+    "terse": "The NPC makes a melee attack against a character adjacent to them and their size or smaller, with a bonus of +1/2/3. On a success, they knock their target Prone",
+    "detail": "The NPC makes a melee attack against a character adjacent to them and their size or smaller, with a bonus of +1/2/3. On a success, they knock their target Prone",
+    "add_status": [{ "id": "prone", "attack": "melee" }],
+    "hidden": true
+  },
+  {
     "id": "act_grapple",
     "name": "Grapple",
     "activation": "Quick",
     "terse": "Attempt to grab on your target, potentially immobilizing it or riding it.",
     "detail": "When you GRAPPLE, you try to grab hold of a target and overpower them – disarming, subduing, or damaging them so they can’t do the same to you.<br>To GRAPPLE, choose an adjacent character and make a melee attack. On a hit:<br>• both characters become ENGAGED;<br>• neither character can BOOST or take reactions for the duration of the grapple;<br>• the smaller character becomes IMMOBILIZED but moves when the larger party moves, mirroring their movement. If both parties are the same SIZE, either can make contested HULL checks at the start of their turn: the winner counts as larger than the loser until this contest is repeated.<br>A GRAPPLE ends when:<br>• either character breaks adjacency, such as if they are knocked back by another effect;<br>• the attacker chooses to end the grapple as a free action;<br>• The defender breaks free by succeeding on a contested HULL check as a quick action.<br>If a GRAPPLE involves more than two characters, the same rules apply, but when counting SIZE, add together the SIZE of all characters on each side. For example, if two SIZE 1 allied characters are grappling a single SIZE 2 enemy, the allied characters count as a combined SIZE 2 and can try to drag their foe around."
+  },
+  {
+    "id": "act_grapple_npc",
+    "name": "Grapple",
+    "activation": "Quick",
+    "terse": "The NPC makes a melee attack against a character adjacent to them with a bonus of +1/2/3, grappling them if successful.",
+    "detail": "The NPC makes a melee attack against a character adjacent to them with a bonus of +1/2/3, grappling them if successful."
   },
   {
     "id": "act_quick_tech",
@@ -189,6 +205,14 @@
     "detail": "When you STABILIZE, you enact emergency protocols to purge your mech’s systems of excess heat, repair your chassis where you can, or eliminate hostile code.<br>To STABILIZE, choose one of the following:<br>• Cool your mech, clearing all heat and EXPOSED.<br>• Mark 1 REPAIR to restore all HP.<br>Additionally, choose one of the following:<br>• Reload all LOADING weapons.<br>• Clear any burn currently affecting your mech.<br>• Clear a condition that wasn’t caused by one of your own systems, talents, etc.<br>• Clear an adjacent allied character’s condition that wasn’t caused by one of their own systems, talents, etc."
   },
   {
+    "id": "act_stabilize_npc",
+    "name": "Stabilize",
+    "activation": "Full",
+    "terse": "The NPC clears all heat and the Exposed status, and reloads all Loading weapons.",
+    "detail": "The NPC clears all heat and the Exposed status, and reloads all Loading weapons.",
+    "hidden": true
+  },
+  {
     "id": "act_disengage",
     "name": "Disengage",
     "activation": "Full",
@@ -271,6 +295,14 @@
     "terse": "Attack a close-by target attempting to move.",
     "detail": "When you OVERWATCH, you control and defend the space around your mech from enemy incursion through pilot skill, reflexes, or finely tuned subsystems.<br>Unless specified otherwise, all weapons default to 1 THREAT.<br>Overwatch<br>Reaction, 1/round<br>Trigger: A hostile character starts any movement (including BOOST and other actions) inside one of your weapons’ THREAT.<br>Effect: Trigger OVERWATCH, immediately using that weapon to SKIRMISH against that character as a reaction, before they move.",
     "pilot": true
+  },
+  {
+    "id": "act_overwatch_npc",
+    "name": "Overwatch",
+    "activation": "Reaction",
+    "terse": "Attack a close-by target attempting to move.",
+    "detail": "When a character starts any movement in threat range of an NPC’s weapon, that NPC may take the skirmish action against them as a reaction. An NPC can only overwatch once between turns unless specified. ",
+    "hidden": true
   },
   {
     "id": "act_free_action",
