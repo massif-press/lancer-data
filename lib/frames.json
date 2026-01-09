@@ -291,7 +291,7 @@
       ],
       "active_synergies": [
         {
-          "locations": ["actions", "brace"],
+          "locations": ["brace"],
           "detail": "When you Brace, you may take a full action on your next turn instead of just a quick action."
         }
       ],
@@ -415,12 +415,16 @@
             "frequency": "1/round",
             "condition": "After you Boost",
             "detail": "Your next melee attack deals +1d6 bonus damage on hit.",
-            "bonus_damage": "1d6"
+            "bonus_damage": {
+              "detail": "1d6 bonus damage on hit after you Boost, once per round as a Free Action.",
+              "val": "1d6",
+              "weapon_types": ["melee"]
+            }
           }
         ],
         "synergies": [
           {
-            "locations": ["move", "actions", "boost"],
+            "locations": ["boost"],
             "detail": "1/round, after you Boost, the Nelson’s next melee attack deals +1d6 bonus damage on hit."
           }
         ]
@@ -500,7 +504,8 @@
         "description": "The Raleigh can make ranged attacks when Jammed.",
         "synergies": [
           {
-            "locations": ["statuses"],
+            "locations": ["attack", "weapon"],
+            "weapon_types": ["ranged"],
             "detail": "The Raleigh can make ranged attacks when Jammed."
           }
         ]
@@ -558,10 +563,10 @@
       {
         "name": "Guardian",
         "description": "Adjacent allied characters can use the Tortuga for hard cover.",
-        "synergies": [
+        "active_effects": [
           {
-            "locations": ["stats"],
-            "detail": "Adjacent allied characters can use the Tortuga for hard cover."
+            "name": "Guardian",
+            "detail": "Adjacent allied characters can use you for hard cover."
           }
         ]
       }
@@ -597,7 +602,7 @@
       ],
       "active_synergies": [
         {
-          "locations": ["overwatch", "palette"],
+          "locations": ["overwatch"],
           "detail": "Any character you hit with Overwatch becomes Immobilized until the end of their next turn."
         }
       ],
@@ -650,7 +655,7 @@
         ],
         "synergies": [
           {
-            "locations": ["attack", "statuses"],
+            "locations": ["attack"],
             "detail": "When the Vlad inflicts Immobilize on another character, the target also becomes Shredded for the same duration."
           }
         ]
@@ -670,12 +675,6 @@
                 "val": 3
               }
             ]
-          }
-        ],
-        "synergies": [
-          {
-            "locations": ["stats", "take_damage"],
-            "detail": "When a character within range 3 attacks the Vlad, the attacker first takes 1 AP kinetic damage."
           }
         ]
       }
@@ -1166,8 +1165,11 @@
             "name": "Hunter",
             "frequency": "1/round",
             "condition": "You hit with a melee attack, your target has no adjacent characters, or if you are the only character adjacent to the target.",
-            "weapon_types": ["melee"],
-            "bonus_damage": "1d6"
+            "bonus_damage": {
+              "val": "1d6",
+              "detail": "You hit with a melee attack if your target has no adjacent characters, or if you are the only character adjacent to the target.",
+              "weapon_types": ["melee"]
+            }
           }
         ]
       },
@@ -1194,10 +1196,6 @@
         }
       ],
       "active_synergies": [
-        {
-          "locations": ["move"],
-          "detail": "You teleport when you make a standard move."
-        },
         {
           "locations": ["boost"],
           "detail": "You teleport when you Boost."
@@ -1349,23 +1347,11 @@
             "condition": "Your turn ends and you haven’t taken stress or structure damage since the start of your turn",
             "detail": "You regain 1/4 of your total HP. When you take stress or structure damage, this effect ceases until the end of your next turn."
           }
-        ],
-        "synergies": [
-          {
-            "locations": ["hp"],
-            "detail": "At the end of its turn, the Balor regains 1/4 (1/2 if Hellswarm is active) of its total HP. When it takes stress or structure damage, this effect ceases until the end of its next turn."
-          }
         ]
       },
       {
         "name": "Self-Perpetuating",
-        "description": "When you rest, the Balor regains full HP automatically and without repairs.",
-        "synergies": [
-          {
-            "locations": ["rest"],
-            "detail": "When you rest, the Balor regains full HP automatically and without repairs."
-          }
-        ]
+        "description": "When you rest, the Balor regains full HP automatically and without repairs."
       }
     ],
     "core_system": {
@@ -1512,12 +1498,6 @@
               }
             ]
           }
-        ],
-        "synergies": [
-          {
-            "locations": ["take_damage"],
-            "detail": "When an attack roll against the Gorgon lands on 1–2, it automatically misses and the attacker becomes Stunned until the end of their next turn."
-          }
         ]
       },
       {
@@ -1527,12 +1507,6 @@
           {
             "name": "Gaze",
             "detail": "You can take two reactions per turn, instead of one."
-          }
-        ],
-        "synergies": [
-          {
-            "locations": ["actions"],
-            "detail": "The Gorgon can take two reactions per turn, instead of one."
           }
         ],
         "bonuses": [
@@ -1549,12 +1523,6 @@
           {
             "name": "Guardian",
             "detail": "Adjacent allied characters may use you for hard cover."
-          }
-        ],
-        "synergies": [
-          {
-            "locations": ["stats"],
-            "detail": "Adjacent allied characters may use the Gorgon for hard cover."
           }
         ]
       }
@@ -1798,12 +1766,6 @@
       "activation": "Protocol",
       "passive_name": "Charged Exoskeleton",
       "passive_effect": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3.",
-      "synergies": [
-        {
-          "locations": ["take_damage", "heat"],
-          "detail": "1/round, when you take heat, you may deal 2 AP energy damage to a character within range 3."
-        }
-      ],
       "passive_effects": [
         {
           "name": "Exoskeleton Discharge",
@@ -2130,12 +2092,6 @@
             "trigger": "You take structure damage.",
             "detail": "Clear all heat."
           }
-        ],
-        "synergies": [
-          {
-            "locations": ["take_damage", "structure"],
-            "detail": "When the Genghis takes structure damage, it clears all heat."
-          }
         ]
       }
     ],
@@ -2275,12 +2231,6 @@
       {
         "name": "Heavy Shielding",
         "description": "When the Napoleon would take half damage on a successful check or save, it instead reduces the damage to 1.",
-        "synergies": [
-          {
-            "locations": ["take_damage"],
-            "detail": "When the Napoleon would take half damage on a successful check or save, it instead reduces the damage to 1."
-          }
-        ],
         "active_effects": [
           {
             "name": "Heavy Shielding",
@@ -2556,6 +2506,12 @@
             "name": "Plasma Sheath",
             "condition": "You are in the Danger Zone and attack with a weapon that deals any amount of energy.",
             "detail": "All bonus damage becomes burn."
+          }
+        ],
+        "synergies": [
+          {
+            "locations": ["attack"],
+            "detail": "When the Tokugawa is in the Danger Zone and attacks with a weapon that deals any amount of energy, all bonus damage becomes burn."
           }
         ]
       }

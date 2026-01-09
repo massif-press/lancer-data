@@ -98,7 +98,7 @@
     "license": "Metalmark",
     "license_level": 3,
     "effect": "In addition to its usual damage, 1/round you may activate the wreath as a quick action when you hit a character with the weapon this mod is applied to to cause it to take 1d6 burn. If it already is suffering from burn, it can additionally only draw line of sight to adjacent spaces until the end of its next turn.",
-    "on_hit": {
+    "actions": {
       "activation": "Quick",
       "damage": [
         {

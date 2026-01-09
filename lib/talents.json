@@ -200,6 +200,12 @@
             "name": "Predator",
             "detail": "When you roll a 20 on a die for any attack and critical hit, you deal the maximum possible damage and bonus damage."
           }
+        ],
+        "synergies": [
+          {
+            "locations": ["attack"],
+            "detail": "When you roll a 20 on a die for any attack and critical hit, you deal the maximum possible damage and bonus damage."
+          }
         ]
       },
       {
@@ -267,7 +273,7 @@
         "synergies": [
           {
             "locations": ["weapon"],
-            "weapon_types": ["Rifle"],
+            "weapon_types": ["rifle"],
             "weapon_sizes": ["any"],
             "detail": "Gain +1 Accuracy on all attacks you make with this weapon if you have used the <b>Steady Aim</b> Protocol this turn."
           }
@@ -281,14 +287,18 @@
             "name": "Zero In",
             "condition": "You make a ranged attack with a Rifle while Steadying Aim is active",
             "detail": "Attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit.",
-            "bonus_damage": "1d6"
+            "bonus_damage": {
+              "detail": "+1d6 bonus damage on a critical hit when making a ranged attack with a Rifle while Steadying Aim is active. This attack also gains +1 Difficulty.",
+              "val": "1d6",
+              "weapon_types": ["rifle"],
+              "hit_type": "crit"
+            }
           }
         ],
         "synergies": [
           {
-            "locations": ["weapon"],
-            "weapon_types": ["Rifle"],
-            "weapon_sizes": ["any"],
+            "locations": ["weapon", "attack"],
+            "weapon_types": ["rifle"],
             "detail": "1/round, while <b>steadying your aim</b> and making a ranged attack with this weapon, you can attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit"
           }
         ]
@@ -867,14 +877,18 @@
         "active_effects": [
           {
             "name": "Gunslinger Die",
-            "detail": "Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. When the Gunslinger Die reaches 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
+            "detail": "Each time you hit with an Auxiliary ranged weapon, reduce the value of the Gunslinger Die by 1. The value of your Gunslinger Die persists between scenes but resets to 6 when you rest or perform a Full Repair.",
             "condition": "You hit with an Auxiliary ranged weapon"
           },
           {
             "name": "I Kill With My Heart",
             "detail": "When your Gunslinger Die is at 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with an Auxiliary ranged weapon. This attack also ignores cover.",
             "condition": "Your Gunslinger Die is at 1",
-            "bonus_damage": "2d6"
+            "bonus_damage": {
+              "val": "2d6",
+              "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+              "weapon_sizes": ["Auxiliary"]
+            }
           }
         ],
         "synergies": [
@@ -883,6 +897,12 @@
             "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
             "weapon_sizes": ["Auxiliary"],
             "detail": "Each time you hit with this weapon, reduce the value of the Gunslinger Die by 1"
+          },
+          {
+            "locations": ["attack"],
+            "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+            "weapon_sizes": ["Auxiliary"],
+            "detail": "When your Gunslinger Die is at 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with this weapon. This attack also ignores cover."
           }
         ],
         "counters": [
@@ -907,13 +927,7 @@
     "ranks": [
       {
         "name": "Unsanctioned Capacity Upgrade",
-        "description": "While resting, you can spend 2 Repairs to replenish 1 use of all Limited weapons and systems.",
-        "synergies": [
-          {
-            "locations": ["rest"],
-            "detail": "While resting, you can spend 2 Repairs to replenish 1 use of all Limited weapons and systems."
-          }
-        ]
+        "description": "While resting, you can spend 2 Repairs to replenish 1 use of all Limited weapons and systems."
       },
       {
         "name": "Machine Bond",
@@ -964,7 +978,7 @@
         ],
         "synergies": [
           {
-            "locations": ["tech"],
+            "locations": ["tech_attack"],
             "detail": "When you hit with a tech attack that consumes Lock On, your target must choose to either take 2 Heat or be pushed 3 spaces in a direction of your choice."
           }
         ]
@@ -1290,13 +1304,7 @@
       },
       {
         "name": "Inspiring Presence",
-        "description": "Gain 6 Leadership Dice instead of 5. Allies that have your Leadership Dice can expend them to reduce damage by –1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack.",
-        "synergies": [
-          {
-            "locations": ["stats"],
-            "detail": "Allies that have your Leadership Dice can expend them to reduce damage by –1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack."
-          }
-        ]
+        "description": "Gain 6 Leadership Dice instead of 5. Allies that have your Leadership Dice can expend them to reduce damage by –1d6 when taking damage or to deal +1d6 bonus damage when they hit with an attack."
       }
     ]
   },
@@ -1335,12 +1343,18 @@
             "detail": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit.",
             "condition": "Your first ranged or melee attack roll while in the Danger Zone",
             "frequency": "1/turn",
-            "damage": [{ "val": "1d6", "type": "Energy" }]
+            "bonus_damage": [
+              {
+                "detail": "The first ranged or melee hit you make on your turn while in the Danger Zone deals +1d6 Energy bonus damage.",
+                "val": "1d6",
+                "type": "Energy"
+              }
+            ]
           }
         ],
         "synergies": [
           {
-            "locations": ["weapon"],
+            "locations": ["weapon", "attack"],
             "detail": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit."
           }
         ]
@@ -1768,7 +1782,7 @@
         ],
         "synergies": [
           {
-            "locations": ["overwatch", "stats"],
+            "locations": ["overwatch"],
             "detail": "You may attack with Overwatch using CQB weapons when hostile characters enter, leave, or exit spaces within your Threat, no matter whether they started their movement there."
           }
         ]

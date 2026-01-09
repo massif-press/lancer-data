@@ -209,12 +209,6 @@
     "type": "Mech",
     "label": "Resource",
     "description": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING.",
-    "synergies": [
-      {
-        "locations": ["stats"],
-        "detail": "+1 ACCURACY to skill checks made with one skill – HULL, AGILITY, SYSTEMS or ENGINEERING."
-      }
-    ],
     "deprecated": true
   },
   {
@@ -354,12 +348,6 @@
     "active_effects": [
       {
         "name": "Accuracy",
-        "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
-      }
-    ],
-    "synergies": [
-      {
-        "locations": ["stats"],
         "detail": "+1 ACCURACY to a particular mech skill or action for the duration of this mission."
       }
     ]
