@@ -1711,7 +1711,10 @@
     "license_level": 3,
     "on_crit": {
       "detail": "Deal +1d6 bonus damage.",
-      "bonus_damage": "1d6"
+      "bonus_damage": {
+        "val": "1d6",
+        "hit_type": "crit"
+      }
     },
     "description": "The variable sword is a Smith-Shimano hallmark: a length of razor-sharp molecular wire attached to a handle and locked in place by a magnetic field, variable swords are invisible to the naked eye until they cut into their target. Designed in the early days of interstellar travel, variable swords were meant to allow for the precise gathering of samples, while also reducing the overall burden on a mech’s core.",
     "license_id": "mf_mourning_cloak"

@@ -504,7 +504,7 @@
         "description": "The Raleigh can make ranged attacks when Jammed.",
         "synergies": [
           {
-            "locations": ["attack", "weapon"],
+            "locations": ["attack"],
             "weapon_types": ["ranged"],
             "detail": "The Raleigh can make ranged attacks when Jammed."
           }
@@ -1624,7 +1624,10 @@
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": "5 + {grit}"
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         },
         {
           "name": "Snare OROCHI Drone",
@@ -1634,7 +1637,10 @@
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": "5 + {grit}"
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         },
         {
           "name": "Shredder OROCHI Drone",
@@ -1644,7 +1650,10 @@
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": "5 + {grit}"
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         },
         {
           "name": "Hunter OROCHI Drone",
@@ -1654,7 +1663,10 @@
           "recall": "Quick",
           "redeploy": "Quick",
           "size": 0.5,
-          "hp": "5 + {grit}"
+          "hp": "5 + {grit}",
+          "evasion": "{evasion}",
+          "edef": "{edef}",
+          "speed": "{speed}"
         }
       ],
       "passive_effect": "Your mech contains powerful, integrated drone companions. At creation, choose a single OROCHI Drone to accompany you. <br>Your OROCHI drones share your Evasion, E-Defense, and Speed. They can move independently on your turn, but can’t take any other actions. If you can fly or teleport, they can too.<br>If an OROCHI drone is within Sensors, you may recall it as a quick action, integrating it into your mech’s body where it cannot be targeted. You may redeploy it to a space within Sensors as a quick action. <br>When you rest or perform a FULL REPAIR, you may choose a different drone to accompany you; additionally, your drones regain all HP and are automatically repaired if they were destroyed."

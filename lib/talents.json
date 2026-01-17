@@ -297,7 +297,7 @@
         ],
         "synergies": [
           {
-            "locations": ["weapon", "attack"],
+            "locations": ["weapon"],
             "weapon_types": ["rifle"],
             "detail": "1/round, while <b>steadying your aim</b> and making a ranged attack with this weapon, you can attempt to hit a weak point: gain +1 Difficulty on the attack roll, and deal +1d6 bonus damage on a critical hit"
           }
@@ -899,7 +899,7 @@
             "detail": "Each time you hit with this weapon, reduce the value of the Gunslinger Die by 1"
           },
           {
-            "locations": ["attack"],
+            "locations": ["weapon"],
             "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
             "weapon_sizes": ["Auxiliary"],
             "detail": "When your Gunslinger Die is at 1, you may reset it to 6 to give +2d6 bonus damage on hit and AP to your next attack with this weapon. This attack also ignores cover."
@@ -1354,7 +1354,7 @@
         ],
         "synergies": [
           {
-            "locations": ["weapon", "attack"],
+            "locations": ["attack"],
             "detail": "The first ranged or melee attack roll you make on your turn while in the Danger Zone deals Energy instead of Kinetic or Explosive and additionally deals +1d6 Energy bonus damage on a hit."
           }
         ]

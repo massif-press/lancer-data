@@ -193,7 +193,7 @@
         "detail": "1/round, when you successfully Ram or Grapple a mech, you can Ram or Grapple again as a free action."
       },
       {
-        "locations": ["weapon", "improvised_attack"],
+        "locations": ["attack", "improvised_attack"],
         "weapon_types": ["melee"],
         "detail": "When you knock targets back with melee attacks, you knock them back 1 additional space."
       }
