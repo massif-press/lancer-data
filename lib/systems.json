@@ -3053,7 +3053,7 @@
         "save": "agi",
         "add_special": [
           {
-            "condition": "Affected by Flak Launcher",
+            "attribute": "Affected by Flak Launcher",
             "duration": "next_turn_end_target",
             "detail": "You can’t fly until the end of your next turn."
           }

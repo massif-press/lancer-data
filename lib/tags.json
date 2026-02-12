@@ -71,7 +71,8 @@
   {
     "id": "tg_loading_after",
     "name": "Loading (Multiple Uses)",
-    "description": "This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems. The user can choose to reload this weapon at the end of their turn, allowing them to fire it again on the same turn. This is a COMP/CON-specific alias for the LOADING tag, and all rules pertaining to LOADING apply."
+    "description": "This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems. The user can choose to reload this weapon at the end of their turn, allowing them to fire it again on the same turn. This is a COMP/CON-specific alias for the LOADING tag, and all rules pertaining to LOADING apply.",
+    "hidden": true
   },
   {
     "id": "tg_ordnance",
@@ -206,17 +207,20 @@
   {
     "id": "tg_personal_armor",
     "name": "Personal Armor",
-    "description": "This gear offers protection in combat, but it is obvious to observers and usually can’t be hidden. Only one piece of Personal Armor can be worn at a time. Putting on Personal Armor takes 10–20 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they’re expecting to go into a warzone."
+    "description": "This gear offers protection in combat, but it is obvious to observers and usually can’t be hidden. Only one piece of Personal Armor can be worn at a time. Putting on Personal Armor takes 10–20 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they’re expecting to go into a warzone.",
+    "hidden": true
   },
   {
     "id": "tg_pilot_weapon",
     "name": "Pilot Weapon",
-    "description": "On missions, pilots can take up to two weapons. All pilot weapons are pilot-scale and can’t be used by mechs."
+    "description": "On missions, pilots can take up to two weapons. All pilot weapons are pilot-scale and can’t be used by mechs.",
+    "hidden": true
   },
   {
     "id": "tg_gear",
     "name": "Gear",
-    "description": "This is a tool, piece of equipment, or another item. Pilots can have up to three of these at a time."
+    "description": "This is a tool, piece of equipment, or another item. Pilots can have up to three of these at a time.",
+    "hidden": true
   },
   {
     "id": "tg_sidearm",
@@ -263,8 +267,7 @@
   {
     "id": "tg_exotic",
     "name": "Exotic Gear",
-    "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
-    "filter_ignore": true
+    "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system."
   },
   {
     "id": "tg_recharge",

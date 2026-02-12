@@ -287,8 +287,35 @@
     "name": "Jockey",
     "activation": "Full",
     "terse": "Attempt to attack a mech on foot as a pilot.",
-    "detail": "When you JOCKEY, you aggressively attack an enemy mech while on foot. It cannot be emphasized enough how foolhardy and dangerous this is.<br>To JOCKEY, you must be adjacent to a mech. As a full action, make a contested skill check against the mech, using GRIT (or a relevant trigger, at the GM’s discretion). The mech contests with HULL. On a success, you manage to climb onto the mech, sharing its space and moving with it. The mech can attempt to shake you off by succeeding on another contested skill check as a full action; alternatively, you can jump off as part of your movement on your turn.<br>When you successfully JOCKEY, choose one of the following options:<br>• DISTRACT: The mech is IMPAIRED and SLOWED until the end of its next turn.<br>• SHRED: Deal 2 heat to the mech by ripping at wiring, paneling, and so on.<br>• DAMAGE: Deal 4 kinetic damage to the mech by attacking joints, hatches, and so on.<br>On each of your subsequent turns, you can continue to choose from the options above as full actions, as long as you don't stop jockeying (or get thrown off).",
+    "detail": "When you JOCKEY, you aggressively attack an enemy mech while on foot. It cannot be emphasized enough how foolhardy and dangerous this is.<br>To JOCKEY, you must be adjacent to a mech. As a full action, make a contested skill check against the mech, using GRIT (or a relevant trigger, at the GM’s discretion). The mech contests with HULL. On a success, you manage to climb onto the mech, sharing its space and moving with it. The mech can attempt to shake you off by succeeding on another contested skill check as a full action; alternatively, you can jump off as part of your movement on your turn.",
     "pilot": true
+  },
+  {
+    "id": "act_jockey_distract",
+    "name": "Distract",
+    "activation": "Jockey",
+    "terse": "IMPAIR and SLOW a mech until the end of its next turn.",
+    "detail": "IMPAIR and SLOW a mech until the end of its next turn.",
+    "add_status": [
+      { "id": "impaired", "duration": "end_next_turn_target" },
+      { "id": "slow", "duration": "end_next_turn_target" }
+    ]
+  },
+  {
+    "id": "act_jockey_shred",
+    "name": "Shred",
+    "activation": "Jockey",
+    "terse": "Deal 2 Heat",
+    "detail": "Deal 2 heat to the mech by ripping at wiring, paneling, and so on.",
+    "damage": [{ "type": "heat", "val": 2 }]
+  },
+  {
+    "id": "act_jockey_distract",
+    "name": "Damage",
+    "activation": "Jockey",
+    "terse": "Deal 4 Kinetic Damage",
+    "detail": "Deal 4 kinetic damage to the mech by attacking joints, hatches, and so on.",
+    "damage": [{ "type": "kinetic", "val": 4 }]
   },
   {
     "id": "act_brace",

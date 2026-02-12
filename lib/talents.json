@@ -51,7 +51,7 @@
             "detail": "As a quick action on your turn, you may spin up your thrusters. If you end your turn flying, you may nominate a character within a Range equal to your Speed and within line of sight, and gain the Supersonic reaction.",
             "add_special": [
               {
-                "condition": "Supersonic Target"
+                "attribute": "Supersonic Target"
               }
             ]
           },
@@ -82,7 +82,7 @@
             "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy.",
             "add_special": [
               {
-                "condition": "Bondmate",
+                "attribute": "Bondmate",
                 "target": "ally",
                 "detail": "Any mech skill checks and saves either you or your Bondmate makes while you are adjacent gain +1 Accuracy. If both characters have this talent, this increases to +2 Accuracy."
               }
