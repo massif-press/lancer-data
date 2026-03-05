@@ -1,5 +1,18 @@
 [
   {
+    "id": "reserve_sp",
+    "name": "System Point",
+    "type": "Bonus",
+    "label": "Bonus",
+    "description": "Add a System Point to your active mech's Max SP value",
+    "bonuses": [
+      {
+        "id": "sp",
+        "val": 1
+      }
+    ]
+  },
+  {
     "id": "reserve_skill",
     "name": "Skill Point",
     "type": "Bonus",

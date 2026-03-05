@@ -705,7 +705,7 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "data_type": "frame",
+
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_vlad.png",
     "license_id": "mf_vlad"
   },
@@ -867,7 +867,7 @@
       "use": "Encounter",
       "activation": "Protocol"
     },
-    "data_type": "frame",
+
     "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_deaths_head.png",
     "license_id": "mf_deaths_head"
   },
@@ -1784,7 +1784,7 @@
           "frequency": "1/round",
           "condition": "You take heat.",
           "detail": "You may deal 2 AP energy damage to a character within range 3.",
-          "damage": [{ "val": "2", "type": "Energy", "ap": true }],
+          "damage": [{ "val": 2, "type": "Energy", "ap": true }],
           "range": [{ "type": "Range", "val": 3 }]
         }
       ]
@@ -1964,7 +1964,7 @@
           "name": "Fire Omnigun",
           "activation": "Free",
           "frequency": "1/round",
-          "damage": [{ "val": "1", "type": "Kinetic", "ap": true }],
+          "damage": [{ "val": 1, "type": "Kinetic", "ap": true }],
           "range": [{ "type": "Range", "val": 15 }],
           "detail": "1/round, as a free action during your turn, deal 1 AP kinetic damage to a character within Range 15 and line of sight. This doesn’t count as an attack, hits automatically, ignores cover, bypasses Immunity, and its damage can’t be reduced or ignored in any way. No rule supersedes this."
         }
@@ -2131,8 +2131,8 @@
           "condition": "The next time you exceed your Heat Cap this scene",
           "detail": "Clear all heat and vent a burst 3 cloud of burning matter from your mech.<br>Until the start of your next turn, all characters within the affected area count as Invisible to everyone except you, and characters other than you take 2 burn and 2 heat when they start their turn in the area or enter it for the first time in a round. Once this effect ends, characters within the affected area receive soft cover (which you ignore) until the start of your following turn, at which point the cloud disperses.",
           "damage": [
-            { "val": "2", "type": "Burn", "aoe": true },
-            { "val": "2", "type": "Heat", "aoe": true }
+            { "val": 2, "type": "Burn", "aoe": true },
+            { "val": 2, "type": "Heat", "aoe": true }
           ],
           "add_status": [
             {
@@ -2218,7 +2218,7 @@
           "name": "Death Cloud",
           "condition": "Any hostile characters within range 50 make any movement other than their standard move (including involuntary movement).",
           "detail": "For the rest of the scene, when hostile characters make any movement other than their standard move (including involuntary movement), they take 3 AP explosive damage. This effect can trigger any number of times, but only 1/round for each character.",
-          "damage": [{ "val": "3", "type": "Explosive", "ap": true, "aoe": true }]
+          "damage": [{ "val": 3, "type": "Explosive", "ap": true, "aoe": true }]
         }
       ],
       "use": "Encounter",

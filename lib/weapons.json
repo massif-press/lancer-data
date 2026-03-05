@@ -2356,7 +2356,7 @@
     "no_core_bonus": true,
     "mount": "Heavy",
     "type": "Rifle",
-    "damage": [],
+
     "range": [
       {
         "type": "Range",
@@ -2835,7 +2835,7 @@
     "name": "Latch Drone",
     "mount": "Main",
     "type": "Launcher",
-    "damage": [],
+
     "range": [
       {
         "type": "Range",

@@ -74,7 +74,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "2",
+            "val": 2,
             "ap": true,
             "aoe": true
           }

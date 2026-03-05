@@ -64,11 +64,6 @@
     "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
   },
   {
-    "id": "tg_loading",
-    "name": "Loading",
-    "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
-  },
-  {
     "id": "tg_loading_after",
     "name": "Loading (Multiple Uses)",
     "description": "This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems. The user can choose to reload this weapon at the end of their turn, allowing them to fire it again on the same turn. This is a COMP/CON-specific alias for the LOADING tag, and all rules pertaining to LOADING apply.",
@@ -334,5 +329,30 @@
     "name": "Irreducible",
     "description": "Prohibits damage reduction from any source (HIDDEN TAG)",
     "hidden": true
+  },
+  {
+    "id": "tg_npc_system",
+    "name": "NPC System",
+    "description": "This NPC Feature is categorized as a SYSTEM"
+  },
+  {
+    "id": "tg_npc_weapon",
+    "name": "NPC Weapon",
+    "description": "This NPC Feature is categorized as a WEAPON"
+  },
+  {
+    "id": "tg_npc_trait",
+    "name": "NPC Trait",
+    "description": "This NPC Feature is categorized as a TRAIT"
+  },
+  {
+    "id": "tg_npc_reaction",
+    "name": "NPC Reaction",
+    "description": "This NPC Feature is categorized as a REACTION"
+  },
+  {
+    "id": "tg_npc_tech",
+    "name": "NPC Tech Action",
+    "description": "This NPC Feature is categorized as a TECH ACTION"
   }
 ]

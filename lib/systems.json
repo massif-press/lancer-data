@@ -982,7 +982,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "2"
+            "val": 2
           }
         ]
       },
@@ -993,7 +993,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "10",
+            "val": 10,
             "ap": true
           }
         ]
@@ -2745,7 +2745,6 @@
     "name": "Metafold Carver",
     "type": "Tech",
     "sp": 2,
-    "tags": [],
     "source": "HORUS",
     "license": "Minotaur",
     "license_level": 2,

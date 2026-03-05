@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js"
+    "build:dev": "node ./scripts/build.js --dev",
+    "test": "node ./scripts/test.js",
+    "validate": "node ./scripts/validate.js",
+    "audit": "node ./scripts/audit.js"
   },
   "repository": {
     "type": "git",

@@ -143,7 +143,7 @@
           },
           {
             "id": "knockback",
-            "val": "2",
+            "val": 2,
             "weapon_types": ["improvised"]
           }
         ]
@@ -662,7 +662,7 @@
             "name": "Invigorate",
             "activation": "Quick",
             "detail": "Send a pulse of energy to an allied character (including Drones) within Range 3, drawing a Line to them. You may extend the pulse from your target to another allied character, extending the Line to them, as long as they are within Range 3, and you may continue extending the pulse (and Line) like this as long as you don’t target the same character twice. Allied characters who are used as pulse targets or are in the Line’s path gain 4 Overshield; hostile characters in the Line’s path take 2 Energy damage instead.",
-            "damage": [{ "val": "2", "type": "Energy", "aoe": true }],
+            "damage": [{ "val": 2, "type": "Energy", "aoe": true }],
             "add_other": [{ "type": "overshield", "val": 4, "aoe": true }]
           }
         ]
@@ -732,7 +732,7 @@
             "detail": "The first time in a round that you perform a critical hit with a Heavy or Superheavy melee weapon, you deal 3 Kinetic damage to all characters and objects of your choice within Threat, other than the one you just attacked.",
             "condition": "The first time you perform a critical hit with a Heavy or Superheavy melee weapon",
             "frequency": "1/round",
-            "damage": [{ "val": "3", "type": "Kinetic", "aoe": "Within Threat" }]
+            "damage": [{ "val": 3, "type": "Kinetic", "aoe": "Within Threat" }]
           }
         ],
         "synergies": [
@@ -973,7 +973,7 @@
             "name": "SNOW_CRASH",
             "detail": "When you hit with a tech attack that consumes Lock On, your target must choose to either take 2 Heat or be pushed 3 spaces in a direction of your choice.",
             "condition": "You hit with a tech attack that consumes Lock On",
-            "damage": [{ "val": "2", "type": "Heat" }]
+            "damage": [{ "val": 2, "type": "Heat" }]
           }
         ],
         "synergies": [

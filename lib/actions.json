@@ -233,7 +233,7 @@
     "activation": "Full",
     "terse": "Attack with a fist, rifle butt, or improvised weapon in melee.",
     "detail": "The NPC makes a melee attack with a bonus of +1/2/3 and deals 3/4/6 damage, based on their Tier",
-    "damage": { "type": "kinetic", "val": "3", "attack": "melee" },
+    "damage": { "type": "kinetic", "val": 3, "attack": "melee" },
     "hidden": true
   },
   {
@@ -310,7 +310,7 @@
     "damage": [{ "type": "heat", "val": 2 }]
   },
   {
-    "id": "act_jockey_distract",
+    "id": "act_jockey_damage",
     "name": "Damage",
     "activation": "Jockey",
     "terse": "Deal 4 Kinetic Damage",
