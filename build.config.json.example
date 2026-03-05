@@ -1,8 +1,0 @@
-{
-  "skipValidation": false,
-  "skipAudit": false,
-  "generateChecksums": true,
-  "outputDir": "./dist/",
-  "compressionLevel": 6,
-  "_comment": "Build configuration for LANCER data. Set skipValidation/skipAudit to true for faster development builds."
-}
