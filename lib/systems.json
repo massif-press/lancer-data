@@ -3107,7 +3107,7 @@
     "effect": "When you clear all heat or take stress, your mech’s cooling vents open and unleash a burst 1 explosion. Characters within the affected area take 2 heat and 2 burn.",
     "actions": [
       {
-        "activation": "Quick",
+        "activation": "Free",
         "trigger": "You clear all heat or take stress.",
         "detail": "Your mech’s cooling vents open and unleash a burst 1 explosion. Characters within the affected area take 2 heat and 2 burn.",
         "damage": [
