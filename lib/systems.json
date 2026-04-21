@@ -1100,11 +1100,10 @@
         "type": "Deployable",
         "name": "Caltrop Field",
         "activation": "Quick",
-        "size": 1,
-        "hp": 10,
-        "evasion": 5,
+        "size": 3,
         "detail": "The affected area becomes difficult terrain for the rest of the scene, and mechs take 1d3 AP explosive damage when they enter the affected area for the first time in a round or end their turn within it.",
-        "damage": [{ "type": "Explosive", "val": "1d3", "ap": true }]
+        "damage": [{ "type": "Explosive", "val": "1d3", "ap": true }],
+        "tags": [{ "id": "tg_invulnerable" }]
       }
     ],
     "description": "Wicked anti-organic, anti-vehicle systems for proximity denial, caltrop launchers fire either great clouds or long swathes of shimmering metal over an area. IPS-N’s HX-CAL caltrop system includes small, shaped explosives in the mix of hardened pyramids.",
@@ -2107,7 +2106,8 @@
         "name": "Construct Other: Ideal Image",
         "type": "Object",
         "size": 2,
-        "detail": "You create a data construct in a free adjacent space – a Size 2 object that can look like almost anything and that appears real to all systems. The construct provides hard cover, blocks line of sight, and has Immunity to all damage. Characters treat it as an obstruction and so cannot voluntarily move into it; however, if a character attempts to stand on it or is involuntarily moved into its area, it dissipates and is immediately destroyed. It lasts for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a full action. If you create a second construct, the previous one disappears."
+        "detail": "You create a data construct in a free adjacent space – a Size 2 object that can look like almost anything and that appears real to all systems. The construct provides hard cover, blocks line of sight, and has Immunity to all damage. Characters treat it as an obstruction and so cannot voluntarily move into it; however, if a character attempts to stand on it or is involuntarily moved into its area, it dissipates and is immediately destroyed. It lasts for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a full action. If you create a second construct, the previous one disappears.",
+        "tags": [{ "id": "tg_invulnerable" }]
       },
       {
         "name": "Construct Other: False Idol",
