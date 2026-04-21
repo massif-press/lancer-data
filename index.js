@@ -1,11 +1,10 @@
-"use strict"
+'use strict';
 
 const data = {
   actions: require('./lib/actions.json'),
   backgrounds: require('./lib/backgrounds.json'),
   core_bonuses: require('./lib/core_bonuses.json'),
   environments: require('./lib/environments.json'),
-  factions: require('./lib/factions.json'),
   frames: require('./lib/frames.json'),
   glossary: require('./lib/glossary.json'),
   info: require('./lib/info.json'),
@@ -22,9 +21,11 @@ const data = {
   statuses: require('./lib/statuses.json'),
   systems: require('./lib/systems.json'),
   tables: require('./lib/tables.json'),
+  lists: require('./lib/lists.json'),
   tags: require('./lib/tags.json'),
   talents: require('./lib/talents.json'),
   weapons: require('./lib/weapons.json'),
-}
+  downtime_actions: require('./lib/downtime_actions.json'),
+};
 
-module.exports = data
+module.exports = data;

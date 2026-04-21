@@ -1,0 +1,203 @@
+[
+  {
+    "id": "dt_buy_some_time",
+    "name": "Buy Some Time",
+    "terse": "Try and stave off a reckoning or extend your window of opportunity.",
+    "detail": "When you BUY SOME TIME, you try to stave off a reckoning, extend a window of opportunity, or merely buy some time and breathing room for you and your group. You might be trying to dodge some heat, survive stranded in the wilderness, or cause a distraction so another plan can reach its climax. You can use that distraction or bought time as RESERVES for the next mission.",
+    "table": {
+      "detail": "Describe your plan and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "You can only buy a little time, and only if drastic measures are taken right now. Otherwise, whatever you’re trying to stave off catches up to you."
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "You buy enough time, but the situation becomes precarious or desperate. Next time you get this result for the same situation, treat it as 9 or less."
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "You buy as much time as you need, until the next downtime session. Next time you get this result for the same situation, treat it as 10-19."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dt_gather_information",
+    "name": "Gather Information",
+    "terse": "Investigate, do research, or keep an eye on something.",
+    "detail": "When you GATHER INFORMATION, you poke your nose around, perhaps where it doesn’t belong, and investigate something - conducting research, following up on a mystery, tracking a target, or keeping an eye on something. You might head to a library or go undercover to learn what you can. Whatever it involves, you’re trying to GATHER INFORMATION on a subject of your choice. You can use information gained as RESERVES",
+    "table": {
+      "detail": "Describe your subject and method",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "Choose one: <ul><li>You get what you’re looking for, but it gets you into trouble straight away</li><li>You get out now and avoid trouble.</li></ul>"
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "You find what you’re looking for, but choose one:<ul><li>You leave clear evidence of your rummaging.</li><li>You have to dispatch someone or implicate someone innocent to avoid attention.</li></ul>"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "You get what you’re looking for with no complications."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dt_get_a_damn_drink",
+    "name": "Get a Damn Drink",
+    "terse": "Blow off some steam and generally get into trouble.",
+    "detail": "When you GET A DAMN DRINK, you blow off some steam, carouse, and generally get into trouble. You might be trying to make connections, collect gossip, forge a reputation, or even just to forget what happened on the last mission. There’s usually trouble.",
+    "table": {
+      "detail": "State your intention",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "Decide whether you had good time or not; either way, you wake up in a gutter somewhere with only one remaining:<ul><li>Your dignity.</li><li>All of your possessions.</li><li>• Your memory.</li></ul>"
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "On 10–19, gain one as RESERVES and lose one:<ul><li>A good reputation.</li><li>A friend or connection.</li><li>A useful item or piece of information.</li><li>A convenient opportunity.</li></ul>"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "On 20+, gain two from the 10–19 list as RESERVES and don’t lose anything."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dt_get_connected",
+    "name": "Get Connected",
+    "terse": "Make connections, ask for help, or drum up support.",
+    "detail": "When you GET CONNECTED, you make connections, call in favors, ask for help, or drum up support for a course of action. You can use your contacts’ resources or aid as RESERVES for the next mission.<br>To take this action, you need to be within comms range or somewhere you can have a good old-fashioned face-to-face conversation.",
+    "table": {
+      "detail": "Name your contact",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "Your contact will help you, but you’ve got to do a favor or make good on a promise right now. If you don’t, they won’t help you."
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "Your contact will help you, but you’ve got to do a favor or make good on a promise afterwards. If you don’t follow through, treat this result as 9 or less next time you get it for the same organization."
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "Your contact will help you, no strings attached. Treat this result as 10-19 next time you get it for the same organization."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dt_get_creative",
+    "name": "Get Creative",
+    "terse": "Tweak something or attempt to make something new.",
+    "detail": "When you GET CREATIVE, you tweak something or try to make something new - either a physical item, or a piece of software. Once finished, you can use your new creation as RESERVES.<br>Your project doesn’t have to be something from the gear list, but it usually can’t be as impactful as a piece of mech gear.",
+    "table": {
+      "detail": "Describe your project",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "You don’t make any progress on your project. Next time you get this result for the same project, treat it as a 10-19."
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "You make progress on your project, but don’t quite finish it. You can finish it during your next downtime without rolling, but choose the two things you’re going to need:<ul><li>Quality materials.</li><li>Specific knowledge or techniques.</li><li>Specialized tools.</li><li>A good workspace.</li></ul>"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "You finish your project before the next mission. If it’s especially complex, treat this as 10-19, but only choose one."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dt_get_focused",
+    "name": "Get Focused",
+    "terse": "Practice, learn, meditate, or call on a teacher.",
+    "detail": "When you GET FOCUSED, you focus on increasing your own skills, training, and self-improvement. You might practice, learn, meditate, or call on a teacher.<br>Name what you want to learn or improve (e.g., a skill, technique, academic subject, or language). The GM will give your pilot a new +2 trigger based on your practice and training. For example, the trigger could be +2 Playing Chess or +2 Dancing. You can also improve a trigger from +2 to +4 or +4 to +6 by taking this downtime action.<br>This action can be used to learn something like starship piloting, cooking, chess, boxing, history, or etiquette. It should usually be a specific non-martial skill or something personal to your character."
+  },
+  {
+    "id": "dt_get_organized",
+    "name": "Get Organized",
+    "terse": "Start, run, or improve an organization.",
+    "detail": "When you GET ORGANIZED, you start, run, or improve an organization, business, or other venture.<br>State your organization’s purpose or goal, and choose a FOCUS: military, scientific, academic, criminal, humanitarian, industrial, entertainment, or political. It begins with +2 in either EFFICIENCY or INFLUENCE and +0 in the other, with a maximum of +6. <br/>EFFICIENCY determines how effectively your organization conducts activities within its scope (e.g., a military organization with high efficiency would be good at combat). <br/>INFLUENCE is its size, reach, wealth, and reputation.<br>When your organization directly assists with an activity, you may add either its EFFICIENCY or INFLUENCE as a statistic bonus to your skill check. EFFICIENCY is used when performing activities related to your organization’s FOCUS. INFLUENCE is used when acquiring assets, creating opportunities, or swaying public opinion. Advantages gained with the help of your organization can be used as RESERVES.",
+    "table": {
+      "detail": "You must roll for your organization every downtime after starting one, but the roll doesn’t count as a downtime action.",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "Choose one or your organization folds immediately:<ul><li>Your organization loses 2 EFFICIENCY and 2 INFLUENCE, to a minimum of 0. If both are already at 0, you may not choose this.</li><li>Your organization needs to pay debts, make an aggressive move, or get bailed out. You choose which, and the GM decides what that looks like.</li></ul>"
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "Your organization is stable. It gains +2 EFFICIENCY or INFLUENCE, to a maximum of +6."
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "Your organization gains +2 EFFICIENCY and +2 INFLUENCE, to a maximum of +6."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dt_power_at_a_cost",
+    "name": "Power at a Cost",
+    "terse": "Gain rewards, opportunities, or resources.",
+    "detail": "When you seek POWER AT A COST, you're trying to get your hands on something.<br />Name what you want. You can definitely get it, but depending on the outlandishness of the request, the GM chooses one or two: <ul> <li>It's going to take a lot more time than you thought.</li> <li>It's going to be really damn risky.</li> <li>You'll have to have to give something up or leave something behind (e.g., wealth, resources, allies).</li> <li>You're going to piss off someone or something important and powerful.</li> <li>Things are going to go wildly off-plan.</li> <li>You'll need more information to proceed safely.</li> <li>It's going to fall apart damn soon.</li> <li>You'll need more resources, but you know where to find them.</li> <li>You can get something almost right: a lesser version, or less of it.</li> </ul> This is a straightforward way to acquire RESERVES, opportunities, and additional resources. You might want something directly useful for a mission; something more abstract, like time, safety, information, allies, or support; something practical, like a base of operations, materials, shelter, or food; or, even something as simple as a damn pack of cigarettes.<br />You can also use POWER AT A COST during missions for similar effects. Other downtime actions generally can't be used during missions, but your group can adapt them if desired."
+  },
+  {
+    "id": "dt_scrounge_and_barter",
+    "name": "Scrounge and Barter",
+    "terse": "Try and get your hands on some gear or asset.",
+    "detail": "When you SCROUNGE AND BARTER, you try to get your hands on some gear or an asset by dredging the scrapyard, chasing down rumors, bartering in the local market, or hunting around.<br>You might want some better pilot gear, a vehicle, narcotics, goods, or other sundries. It needs to be something physical, but doesn’t necessarily have to be on the gear list. If you get it, you can take it on the next mission as RESERVES.",
+    "table": {
+      "detail": "Name what you want and roll",
+      "die": "1d20",
+      "results": [
+        {
+          "min": 1,
+          "max": 9,
+          "text": "You get what you want, but choose one:<ul><li>It was stolen, probably from someone who’s looking for it.</li><li>It’s degraded, old, filthy, or malfunctioning.</li><li>Someone else has it right now and won’t give it up without force or convincing.</li></ul>"
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "text": "You get what you want, but choose the price you need to pay:<ul><li>Time.</li><li>Dignity.</li><li>Reputation.</li><li>Health, comfort, and wellness.</li></ul>"
+        },
+        {
+          "min": 20,
+          "max": 20,
+          "text": "You get what you’re looking for, no problem."
+        }
+      ]
+    }
+  }
+]

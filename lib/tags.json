@@ -35,8 +35,8 @@
   },
   {
     "id": "tg_accurate",
-    "name": "Accurate",
-    "description": "Attacks made with this weapon receive +1 Accuracy."
+    "name": "Accurate {VAL}",
+    "description": "Attacks made with this weapon receive +{VAL} Accuracy."
   },
   {
     "id": "tg_arcing",
@@ -50,8 +50,8 @@
   },
   {
     "id": "tg_inaccurate",
-    "name": "Inaccurate",
-    "description": "Attacks made with this weapon receive +1 Difficulty."
+    "name": "Inaccurate {VAL}",
+    "description": "Attacks made with this weapon receive +{VAL} Difficulty."
   },
   {
     "id": "tg_knockback",
@@ -64,14 +64,20 @@
     "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
   },
   {
+    "id": "tg_loading_after",
+    "name": "Loading (Multiple Uses)",
+    "description": "This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems. The user can choose to reload this weapon at the end of their turn, allowing them to fire it again on the same turn. This is a COMP/CON-specific alias for the LOADING tag, and all rules pertaining to LOADING apply.",
+    "hidden": true
+  },
+  {
     "id": "tg_ordnance",
     "name": "Ordnance",
     "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
   },
   {
     "id": "tg_overkill",
-    "name": "Overkill",
-    "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+    "name": "Overkill {VAL}",
+    "description": "When rolling for damage with this weapon, any damage dice that land on a {VAL} cause the attacker to take 1 Heat, and are then rerolled. Additional {VAL}s continue to trigger this effect."
   },
   {
     "id": "tg_overshield",
@@ -196,17 +202,20 @@
   {
     "id": "tg_personal_armor",
     "name": "Personal Armor",
-    "description": "This gear offers protection in combat, but it is obvious to observers and usually can’t be hidden. Only one piece of Personal Armor can be worn at a time. Putting on Personal Armor takes 10–20 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they’re expecting to go into a warzone."
+    "description": "This gear offers protection in combat, but it is obvious to observers and usually can’t be hidden. Only one piece of Personal Armor can be worn at a time. Putting on Personal Armor takes 10–20 minutes, and while wearing it, pilots have restricted mobility and dexterity. Nobody wears armor unless they’re expecting to go into a warzone.",
+    "hidden": true
   },
   {
     "id": "tg_pilot_weapon",
     "name": "Pilot Weapon",
-    "description": "On missions, pilots can take up to two weapons. All pilot weapons are pilot-scale and can’t be used by mechs."
+    "description": "On missions, pilots can take up to two weapons. All pilot weapons are pilot-scale and can’t be used by mechs.",
+    "hidden": true
   },
   {
     "id": "tg_gear",
     "name": "Gear",
-    "description": "This is a tool, piece of equipment, or another item. Pilots can have up to three of these at a time."
+    "description": "This is a tool, piece of equipment, or another item. Pilots can have up to three of these at a time.",
+    "hidden": true
   },
   {
     "id": "tg_sidearm",
@@ -253,8 +262,7 @@
   {
     "id": "tg_exotic",
     "name": "Exotic Gear",
-    "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
-    "filter_ignore": true
+    "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system."
   },
   {
     "id": "tg_recharge",
@@ -315,5 +323,36 @@
     "name": "Prevent Cascade",
     "description": "Prohibits an AI system from being recognized as a valid target for Cascading (HIDDEN TAG)",
     "hidden": true
+  },
+  {
+    "id": "tg_irreducible",
+    "name": "Irreducible",
+    "description": "Prohibits damage reduction from any source (HIDDEN TAG)",
+    "hidden": true
+  },
+  {
+    "id": "tg_npc_system",
+    "name": "NPC System",
+    "description": "This NPC Feature is categorized as a SYSTEM"
+  },
+  {
+    "id": "tg_npc_weapon",
+    "name": "NPC Weapon",
+    "description": "This NPC Feature is categorized as a WEAPON"
+  },
+  {
+    "id": "tg_npc_trait",
+    "name": "NPC Trait",
+    "description": "This NPC Feature is categorized as a TRAIT"
+  },
+  {
+    "id": "tg_npc_reaction",
+    "name": "NPC Reaction",
+    "description": "This NPC Feature is categorized as a REACTION"
+  },
+  {
+    "id": "tg_npc_tech",
+    "name": "NPC Tech Action",
+    "description": "This NPC Feature is categorized as a TECH ACTION"
   }
 ]

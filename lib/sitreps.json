@@ -1,7 +1,7 @@
 [
   {
     "id": "sitrep_standardcombat",
-    "name": "Standard Combat",
+    "name": "Basic Combat",
     "pcVictory": "PCs defeat or route all enemy forces",
     "enemyVictory": "PCs are defeated or retreat from battle",
     "description": "A simple affair, with two sides facing off against each other until one of them is broken or destroyed."

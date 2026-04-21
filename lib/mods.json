@@ -1,18 +1,5 @@
 [
   {
-    "id": "missing_weaponmod",
-    "name": "ERR: DATA NOT FOUND",
-    "sp": 1,
-    "allowed_types": ["Melee"],
-    "source": "GMS",
-    "license": "GMS",
-    "license_level": 1,
-    "effect": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
-    "description": "COMP/CON is unable to retrieve the data necessary to furnish this System. This is likely the result of a missing or outdated content pack.",
-    "tags": [],
-    "license_id": ""
-  },
-  {
     "id": "wm_thermal_charge",
     "name": "Thermal Charge",
     "sp": 2,
@@ -21,6 +8,12 @@
     "license": "Nelson",
     "license_level": 2,
     "effect": "On a hit with the weapon this mod is applied to, expend a charge as a free action to activate its detonator and deal +1d6 explosive bonus damage.",
+    "on_hit": {
+      "detail": "On a hit with the weapon this mod is applied to, expend a charge as a free action to activate its detonator and deal +1d6 explosive bonus damage.",
+      "damage": [{ "val": "1d6", "type": "Explosive" }],
+      "activation": "Free"
+    },
+    "cost": 1,
     "description": "One popular modification to the classic war pike involves replacing the long, armor-piercing pike head with a disposable, impact-triggered explosive charge. On penetration, the pike’s head is severed from the shaft – moments later, the embedded pike head detonates in a conical explosion from the point forward. Spare thermal charges are stable, and transported in external tube magazines.<br>IPS-N also makes thermal charges compatible with GMS’s range of blades, hammers, and picks.",
     "tags": [
       {
@@ -29,12 +22,6 @@
       },
       {
         "id": "tg_unique"
-      }
-    ],
-    "added_damage": [
-      {
-        "type": "Explosive",
-        "val": "1d6"
       }
     ],
     "license_id": "mf_nelson"
@@ -48,6 +35,14 @@
     "license": "Raleigh",
     "license_level": 3,
     "effect": "Your UNCLE-class COMP/CON has control of the weapon this mod is applied to and its associated systems.<br>1/turn, you can attack at +2 difficulty with UNCLE’s weapon as a free action. UNCLE can’t use weapons that have already been used this turn, and any weapon UNCLE attacks with can’t be used again until the start of your next turn.<br>UNCLE isn’t a full NHP, so cannot enter cascade.",
+    "actions": [
+      {
+        "name": "UNCLE",
+        "activation": "Free",
+        "frequency": "1/turn",
+        "detail": "1/turn, you can attack at +2 difficulty with UNCLE’s weapon as a free action. UNCLE can’t use weapons that have already been used this turn, and any weapon UNCLE attacks with can’t be used again until the start of your next turn."
+      }
+    ],
     "description": "IPS-N’s UNCLE COMP/CON system is the result of the DARKSTAR-2 program, a temporary project that sought to develop more advanced smart weapons. Early prototypes were hampered by a combination of high power-draw, unstable conditioning, and frustrating single-task orientation that eventually saw the project shuttered.<br>While IPS-N is no longer developing new iterations of UNCLE, they still have a stock of QA-approved legacy systems accessible to qualified pilots.<br>Pilots lucky enough to field test models swear by UNCLE’s task efficiency and parallel-track reasoning, though the outdated COMP/CONs are known for their somewhat unstable personalities.",
     "tags": [
       {
@@ -72,6 +67,20 @@
     "license": "Tortuga",
     "license_level": 3,
     "effect": "When you attack with the weapon this mod is applied to, you may fire a throughbolt round instead of attacking normally. Draw a line 3 path from you, passing through terrain or other obstacles – any characters or objects in the path take 2 AP kinetic damage as the projectile punches through them and out the other side. Range, cover, and line of sight for the attack are then measured from the end of this path, continuing in the same direction.",
+    "actions": [
+      {
+        "name": "Fire Throughbolt Round",
+        "detail": "Instead of this weapon's normal attack, fire a Throughbolt Round. Draw a line 3 path from you, passing through terrain or other obstacles – any characters or objects in the path take 2 AP kinetic damage as the projectile punches through them and out the other side. Range, cover, and line of sight for the attack are then measured from the end of this path, continuing in the same direction.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 2,
+            "ap": true,
+            "aoe": true
+          }
+        ]
+      }
+    ],
     "description": "Throughbolt rounds are a proprietary IPS-N anti-armor invention. When fired, the rounds ignite and project a superheated cone of plasma before them, creating an effect like a miniature lance that easily penetrates multiple targets – even through hard surfaces.",
     "tags": [
       {
@@ -89,13 +98,15 @@
     "license": "Metalmark",
     "license_level": 3,
     "effect": "In addition to its usual damage, 1/round you may activate the wreath as a quick action when you hit a character with the weapon this mod is applied to to cause it to take 1d6 burn. If it already is suffering from burn, it can additionally only draw line of sight to adjacent spaces until the end of its next turn.",
-    "actions": [
-      {
-        "name": "Activate Shock Wreath",
-        "activation": "Quick",
-        "detail": "1/round you may activate your equipped Shock Wreath as a quick action when you hit a character with the weapon it is applied to to cause it to take 1d6 burn. If it already is suffering from burn, it can additionally only draw line of sight to adjacent spaces until the end of its next turn."
-      }
-    ],
+    "actions": {
+      "activation": "Quick",
+      "damage": [
+        {
+          "type": "Burn",
+          "val": "1d6"
+        }
+      ]
+    },
     "description": "A post-fab modification popular among melee combat specialists, Shock Wreathes integrate a bundle of conductive filaments within the blade, point, tip, or surface of a close combat weapon. Paired with a power source – typically in the hilt or lower half of a weapon, but sometimes external – Shock Wreathes give kinetic weapons a thermal edge and a distinctive visual marker: fine lines of white-hot light like filigree, shrouding the modified weapon in shimmering heat.",
     "tags": [
       {
@@ -172,6 +183,9 @@
     "added_tags": [
       {
         "id": "tg_overkill"
+      },
+      {
+        "id": "tg_irreducible"
       }
     ],
     "license_id": "mf_saladin"

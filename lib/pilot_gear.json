@@ -1,18 +1,5 @@
 [
   {
-    "id": "missing_pilotweapon",
-    "name": "ERR: DATA NOT FOUND",
-    "type": "Weapon",
-    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
-    "tags": [
-      {
-        "id": "tg_pilot_weapon"
-      }
-    ],
-    "range": [],
-    "damage": []
-  },
-  {
     "id": "pg_archaic_melee",
     "name": "Archaic Melee",
     "type": "Weapon",
@@ -33,7 +20,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 1
       }
     ]
@@ -59,7 +46,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 1
       }
     ]
@@ -85,7 +72,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 1
       }
     ]
@@ -134,7 +121,7 @@
     ],
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": 3
       }
     ]
@@ -228,17 +215,6 @@
       }
     ],
     "effect": "When a signature weapon is acquired, choose its damage type – Explosive, Energy, or Kinetic."
-  },
-  {
-    "id": "missing_pilotarmor",
-    "name": "ERR: DATA NOT FOUND",
-    "type": "Armor",
-    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
-    "tags": [
-      {
-        "id": "tg_personal_armor"
-      }
-    ]
   },
   {
     "id": "pg_light_hardsuit",
@@ -403,19 +379,7 @@
       {
         "name": "Activate Stealth Hardsuit",
         "activation": "Quick",
-        "detail": "Become Invisible. You will cease to be Invisible if you take any damage.",
-        "pilot": true
-      }
-    ]
-  },
-  {
-    "id": "missing_pilotgear",
-    "name": "ERR: DATA NOT FOUND",
-    "type": "Gear",
-    "description": "COMP/CON is unable to retrieve the data necessary to furnish this Pilot Gear. This is likely the result of a missing or outdated content pack.",
-    "tags": [
-      {
-        "id": "tg_gear"
+        "detail": "Become Invisible. You will cease to be Invisible if you take any damage."
       }
     ]
   },
@@ -429,8 +393,7 @@
       {
         "name": "Use Corrective",
         "activation": "Full",
-        "detail": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP",
-        "pilot": true
+        "detail": "Expend a charge to apply correctives to Down and Out pilots, immediately bringing them back to consciousness at 1 HP"
       }
     ],
     "tags": [
@@ -468,8 +431,7 @@
             "val": 2
           }
         ],
-        "detail": "Throw a grenade within Range 5. Affected characters within a Blast 1 must succeed on an Agility save or take 2 Explosive damage.",
-        "pilot": true
+        "detail": "Throw a grenade within Range 5. Affected characters within a Blast 1 must succeed on an Agility save or take 2 Explosive damage."
       }
     ],
     "tags": [
@@ -495,8 +457,7 @@
       {
         "name": "Use Patch",
         "activation": "Full",
-        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots.",
-        "pilot": true
+        "detail": "Expend a charge to apply a patch to either yourself or an adjacent pilot, restoring half their maximum HP. Patches have no effect on Down and Out pilots."
       }
     ],
     "tags": [
@@ -519,8 +480,7 @@
       {
         "name": "Use Stim",
         "activation": "Quick",
-        "detail": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>",
-        "pilot": true
+        "detail": "Expend a charge for one of the following effects:<ul><li><b>Kick:</b> Keeps a pilot awake and alert for up to 30 hours.</li><li><b>Freeze:</b> Keeps a pilot calm and emotionally stable; deadens fear and other strong reactions.</li><li><b>Juice:</b> Heighten senses and alertness, reduce fatigue, and shorten reaction times. Juice occasionally provokes rage in some users.</li></ul>"
       }
     ],
     "tags": [
@@ -543,13 +503,31 @@
         "name": "Thermite Charge",
         "type": "Mine",
         "detail": "This charge must be remotely detonated as a quick action. Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
-        "pilot": true,
         "actions": [
           {
             "name": "Detonate",
             "activation": "Quick",
-            "detail": "Affected characters must succeed on an Engineering save or take 3 Energy AP. Thermal charges automatically hit objects, dealing 10 Energy AP.",
-            "pilot": true
+            "detail": "Affected characters must succeed on an Engineering save or take 3 Energy AP.",
+            "damage": [
+              {
+                "type": "Energy",
+                "val": 3,
+                "ap": true,
+                "save": "eng"
+              }
+            ]
+          },
+          {
+            "name": "Detonate (vs. Object)",
+            "activation": "Quick",
+            "detail": "Thermal charges automatically hit objects, dealing 10 Energy AP.",
+            "damage": [
+              {
+                "type": "Energy",
+                "val": 10,
+                "ap": true
+              }
+            ]
           }
         ]
       }
