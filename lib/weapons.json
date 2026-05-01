@@ -2559,7 +2559,7 @@
     "actions": [
       {
         "name": "Tachyon Lance Backblast",
-        "activation": "Reaction",
+        "activation": "None",
         "frequency": "1/round",
         "trigger": "You attack with the Tachyon Lance while in the Danger Zone.",
         "detail": "Create a cone 3 backblast of burning plasma in the opposite direction to the attack. Characters within the affected area must succeed on an Engineering save or take 4 burn and 2 heat. Until the start of your next turn, the affected area provides soft cover.",

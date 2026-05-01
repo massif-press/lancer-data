@@ -480,7 +480,8 @@
     "actions": [
       {
         "name": "Grapple Swing",
-        "activation": "Free",
+        "activation": "None",
+        "frequency": "1/turn",
         "detail": "1/turn, when making a standard move, you can fly your Speed in a straight line as long as there is a clear path. This move must end on an object or surface, or else you begin falling. As long as you remain stationary, you can secure yourself to the destination surface or object, even if it’s vertical or overhanging. If you are knocked Prone or knocked back while secured to a surface, you fall."
       },
       {
@@ -946,7 +947,7 @@
     "actions": [
       {
         "name": "Roland Chamber",
-        "activation": "Free",
+        "activation": "None",
         "trigger": "You attack with a Loading weapon after reloading any weapon.",
         "detail": "On hit: This attack deals +1d6 explosive bonus damage, and targets must succeed on a Hull save or be knocked Prone.",
         "add_status": [{ "id": "prone", "save": "hull" }],
@@ -1210,14 +1211,14 @@
         "actions": [
           {
             "name": "Repulse",
-            "activation": "Free",
+            "activation": "None",
             "trigger": "Hostile characters that move onto the PCP",
             "detail": "Must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone.",
             "save": "hull"
           },
           {
             "name": "Attract",
-            "activation": "Free",
+            "activation": "None",
             "trigger": "Characters that move onto the PCP",
             "detail": "Must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed.",
             "add_status": [{ "id": "immobilized", "save": "hull" }]
@@ -1624,7 +1625,7 @@
     "deployables": [
       {
         "name": "Javelin Rocket",
-        "type": "Mine",
+        "type": "Rocket",
         "range": [
           {
             "type": "Burst",
@@ -1818,7 +1819,6 @@
         "activation": "Full Tech",
         "detail": "Make a tech attack against a character within Sensors and line of sight. On a success, they take 2 heat, Lock On, and cannot benefit from soft cover until the Lock On is cleared; additionally, once before the start of your next turn, when an allied character hits your target, you may declare as a reaction that they have hit a weak spot. If it wasn’t already, the attack becomes a critical hit.",
         "attack": "tech",
-        "range": [{ "val": "{sensors}" }],
         "damage": [{ "type": "Heat", "val": 2 }],
         "add_status": [{ "id": "lock_on" }],
         "add_special": [
@@ -2201,6 +2201,7 @@
         "instances": 3,
         "detail": "You create three Size 1 data constructs in free spaces adjacent to your target, but not adjacent to each other. When a character passes through one of the constructs, they take 2 heat and the construct disappears. They last for the rest of the scene or until either they are destroyed, you take this action again, or you delete them as a free action. A construct can be destroyed by an adjacent character with a successful Systems skill check as a quick action.",
         "damage": [{ "type": "Heat", "val": 2 }],
+        "activation": "None",
         "recall": "Free"
       }
     ],
@@ -2278,7 +2279,7 @@
     "actions": [
       {
         "name": "Activate //SCORPION",
-        "activation": "Free",
+        "activation": "None",
         "trigger": "You or an allied character adjacent to you is missed by a tech attack or succeed on a save against a hostile tech action.",
         "detail": "Choose one of the following:<ul><li>The attacker becomes Impaired until the end of their next turn and takes 2 heat.</li><li>The attacker becomes Jammed until the end of their next turn.</li></ul>",
         "add_status": [
@@ -3107,7 +3108,7 @@
     "effect": "When you clear all heat or take stress, your mech’s cooling vents open and unleash a burst 1 explosion. Characters within the affected area take 2 heat and 2 burn.",
     "actions": [
       {
-        "activation": "Free",
+        "activation": "None",
         "trigger": "You clear all heat or take stress.",
         "detail": "Your mech’s cooling vents open and unleash a burst 1 explosion. Characters within the affected area take 2 heat and 2 burn.",
         "damage": [
@@ -3366,7 +3367,8 @@
     "deployables": [
       {
         "name": "Clamp Bombs",
-        "type": "Grenade",
+        "type": "Bomb",
+        "activation": "Quick",
         "detail": "This bomb clamps to a target and detonates at the end of their next turn, dealing 1d6+3 AP explosive damage. All characters adjacent to your target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn.",
         "save": "eng",
         "damage": [{ "type": "Explosive", "val": "1d6+3", "ap": true, "aoe": true }]

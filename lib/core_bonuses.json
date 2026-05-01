@@ -27,7 +27,7 @@
     "actions": [
       {
         "name": "Overpower Caliber",
-        "activation": "Free Action",
+        "activation": "None",
         "frequency": "1/round",
         "trigger": "You hit with an attack from a weapon attached to your Overpowered mount.",
         "detail": "The attack deals +1d6 bonus damage.",
@@ -63,7 +63,7 @@
     "actions": [
       {
         "name": "Integrated Weapon",
-        "activation": "Free Action",
+        "activation": "Free",
         "frequency": "1/round",
         "trigger": "You fire any other weapon on your mech.",
         "detail": "You can fire the weapon in this mount."
@@ -103,7 +103,7 @@
     "actions": [
       {
         "name": "Universal Compatibility",
-        "activation": "Free Action",
+        "activation": "Free",
         "trigger": "You spend CP to activate a Core System.",
         "detail": "Restore all HP, cool all Heat, and roll 1d20: on 20, regain 1 CP."
       }
@@ -339,7 +339,7 @@
     "actions": [
       {
         "name": "The Lesson of the Open Door",
-        "activation": "Free Action",
+        "activation": "Free",
         "frequency": "1/round",
         "trigger": "A character fails a save against you.",
         "detail": "That character takes 2 heat.",

@@ -70,6 +70,7 @@
     "actions": [
       {
         "name": "Fire Throughbolt Round",
+        "activation": "None",
         "detail": "Instead of this weapon's normal attack, fire a Throughbolt Round. Draw a line 3 path from you, passing through terrain or other obstacles – any characters or objects in the path take 2 AP kinetic damage as the projectile punches through them and out the other side. Range, cover, and line of sight for the attack are then measured from the end of this path, continuing in the same direction.",
         "damage": [
           {

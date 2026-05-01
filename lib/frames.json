@@ -435,7 +435,7 @@
         "actions": [
           {
             "name": "Skirmisher",
-            "activation": "Free",
+            "activation": "None",
             "trigger": "Immediately after attacking",
             "detail": "Move 1 space in any direction as long as it isn’t Immobilized or Slowed. This movement ignores engagement and doesn’t provoke reactions."
           }
@@ -450,7 +450,7 @@
       "active_actions": [
         {
           "name": "Empowered Skirmisher",
-          "activation": "Free",
+          "activation": "None",
           "trigger": "Immediately after attacking",
           "detail": "Move 4 spaces in any direction as long as you aren't Immobilized or Slowed. This movement ignores engagement and doesn’t provoke reactions."
         }
@@ -1072,7 +1072,7 @@
         "actions": [
           {
             "name": "Avenger Silo Strike",
-            "activation": "Reaction",
+            "activation": "None",
             "frequency": "1/round",
             "trigger": "You score a critical hit with a ranged weapon",
             "detail": "Deal 3 explosive damage to a different character of your choice within range 15 and line of sight.",
@@ -1730,7 +1730,7 @@
         "actions": [
           {
             "name": "Castigate the Enemies of the Godhead",
-            "activation": "Free",
+            "activation": "None",
             "trigger": "The Manticore has been pushed into an unstable Castigation State during a rest or Full Repair. While in this state it is destroyed due to damage or reactor meltdown.",
             "detail": "The Manticore explodes immediately when destroyed due to damage or reactor meltdown, vaporizing it and instantly killing you and any other passengers. Characters within burst 2 must succeed on an Agility save or take 8d6 explosive. On a success, they take half damage. This only takes place if you are physically present in the Manticore.",
             "damage": [
@@ -2351,7 +2351,7 @@
         "actions": [
           {
             "name": "Warp Shield",
-            "activation": "Reaction",
+            "activation": "None",
             "frequency": "1/round",
             "trigger": "Before an attack roll is made against you or an allied character within Sensors.",
             "detail": "Give +1 difficulty to that attack."
