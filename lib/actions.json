@@ -26,8 +26,7 @@
     "name": "Boost",
     "activation": "Quick",
     "terse": "Take an extra movement of at least 1 space, up to your SPEED.",
-    "detail": "When you BOOST, you move at least 1 space, up to your SPEED. This allows you to make an extra movement, on top of your standard move. Certain talents and systems can only be used when you BOOST, not when you make a standard move.",
-    "pilot": true
+    "detail": "When you BOOST, you move at least 1 space, up to your SPEED. This allows you to make an extra movement, on top of your standard move. Certain talents and systems can only be used when you BOOST, not when you make a standard move."
   },
   {
     "id": "act_ram",

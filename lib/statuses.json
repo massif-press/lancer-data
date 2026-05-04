@@ -88,7 +88,7 @@
     "name": "Jammed",
     "icon": "jammed",
     "type": "Condition",
-    "terse": "JAMMED characters can’t use comms,  make attacks other than IMPROVISED ATTACK, GRAPPLE, and RAM,take reactions, or take or benefit from tech actions",
+    "terse": "JAMMED characters can’t use comms,  make attacks other than IMPROVISED ATTACK, GRAPPLE, and RAM, take reactions, or take or benefit from tech actions",
     "effects": "JAMMED characters can’t:<br>• use comms to talk to other characters;<br>• make attacks, other than IMPROVISED ATTACK, GRAPPLE, and RAM;<br>• take reactions, or take or benefit from tech actions."
   },
   {
