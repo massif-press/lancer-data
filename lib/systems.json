@@ -1096,6 +1096,7 @@
     "source": "IPS-N",
     "license": "Vlad",
     "license_level": 2,
+    "effect": "This system blankets a free Burst 1 area within Range 5 with explosive caltrops. The affected area becomes difficult terrain for the rest of the scene, and mechs take 1d3 AP Energy Damage when they enter the affected area for the first time in a round or end their turn within it.",
     "deployables": [
       {
         "type": "Deployable",

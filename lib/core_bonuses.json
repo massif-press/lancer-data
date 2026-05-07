@@ -339,7 +339,7 @@
     "actions": [
       {
         "name": "The Lesson of the Open Door",
-        "activation": "Free",
+        "activation": "None",
         "frequency": "1/round",
         "trigger": "A character fails a save against you.",
         "detail": "That character takes 2 heat.",
