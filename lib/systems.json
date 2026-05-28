@@ -1634,7 +1634,7 @@
           }
         ],
         "damage": [{ "type": "Kinetic", "val": 3 }],
-        "detail": "This auto-targeting rocket detonates in a Burst 1 area when a character moves adjacent to or over it. Characters within the affected area take 3 kinetic damage."
+        "detail": "When a character moves into or passes above the marked position of this rocket – no more than 10 spaces up – they are hit by a rocket, taking 3 kinetic damage. Each space can be triggered once and then the effect disappears on that space."
       }
     ],
     "description": "“Pralaya was the name of your mother. She who would see the dawn-at-the-end. Her beauty was terrible, and her wrath, and I see it in all of you. My sons, when you hear the sound of thunder – that is your mother’s voice, and the rain of missiles her gift.” — “Notes for Young John”, Ministrations of the Master Teacher",
