@@ -127,7 +127,7 @@
     "name": "Search",
     "activation": "Quick",
     "terse": "Look for a hidden target.",
-    "detail": "When you SEARCH, you attempt to identify hidden characters. To SEARCH in a mech, choose a character within your SENSORS that you suspect is HIDDEN and make a contested SYSTEMS check against their AGILITY."
+    "detail": "When you SEARCH, you attempt to identify hidden characters. To SEARCH in a mech, choose a character within your SENSORS that you suspect is HIDDEN and make a contested SYSTEMS check against their AGILITY.<br>Once a HIDDEN character has been found using SEARCH, they immediately lose HIDDEN and can be located again by any character."
   },
   {
     "id": "act_search_pilot",

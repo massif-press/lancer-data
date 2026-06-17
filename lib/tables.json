@@ -62,5 +62,43 @@
         "result": "The reactor goes critical – your mech suffers a reactor meltdown at the end of your next turn."
       }
     ]
+  },
+  {
+    "id": "core-monstrosity-structure-damage",
+    "title": "Monstrosity Structure Damage",
+    "description": "When a Monstrosity-class NPC is reduced to 0 HP and takes structure damage, it makes a structure damage check. To make a structure damage check, roll 1d6 per point of structure damage marked, including the structure damage that has just been taken. Choose the lowest result and check the structure damage chart to determine the outcome.",
+    "die": 6,
+    "results": [
+      {
+        "min": 5,
+        "max": 6,
+        "title": "Glancing Hit",
+        "result": "The Monstrosity flinches in pain; it’s IMPAIRED until the end of its next turn."
+      },
+      {
+        "min": 3,
+        "max": 4,
+        "title": "Powerful Hit",
+        "result": "The Monstrosity is knocked PRONE by the force of the blow."
+      },
+      {
+        "min": 2,
+        "max": 2,
+        "title": "Dismemberment",
+        "result": "The attack blows a limb or chunk off the Monstrosity; it takes 1d6 Kinetic Damage and becomes SLOWED for the rest of the scene."
+      },
+      {
+        "min": 1,
+        "max": 1,
+        "title": "Direct Hit",
+        "result": "The result depends on the Monstrosity’s remaining STRUCTURE:<br>3+ Structure: The Monstrosity is smacked in the head and STUNNED until the end of its next turn.<br>2 Structure: The Monstrosity must succeed on a HULL save or be destroyed.<br>1 Structure: The Monstrosity is destroyed."
+      },
+      {
+        "min": -1,
+        "max": -1,
+        "title": "Fatal",
+        "result": "The Monstrosity is destroyed."
+      }
+    ]
   }
 ]

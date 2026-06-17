@@ -1171,10 +1171,11 @@
     "license": "Tortuga",
     "license_level": 2,
     "on_crit": {
-      "detail": "Your target becomes Stunned until the end of their next turn.",
+      "detail": "Your target must succeed on a Hull save or become Stunned until the end of their next turn.",
       "add_status": [
         {
           "id": "stunned",
+          "save": "hull",
           "duration": "next_turn_end_target"
         }
       ]
