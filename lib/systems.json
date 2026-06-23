@@ -3370,9 +3370,14 @@
         "name": "Clamp Bombs",
         "type": "Bomb",
         "activation": "Quick",
-        "detail": "This bomb clamps to a target and detonates at the end of their next turn, dealing 1d6+3 AP explosive damage. All characters adjacent to your target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn.",
+        "detail": "Expend a charge to fire a cluster of miniature bombs at a character within Sensors. They must succeed on an Engineering save, or the bombs clamp on. At the end of their next turn, the bombs detonate, dealing 1d6+3 AP Explosive damage. All characters adjacent to the target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn.",
         "save": "eng",
-        "damage": [{ "type": "Explosive", "val": "1d6+3", "ap": true, "aoe": true }]
+        "add_special": [
+          {
+            "attribute": "Clamp Bombs Attached",
+            "detail": "The bombs will detonate at the end of your next turn, dealing 1d6+3 AP Explosive damage. All characters adjacent to you take half damage. You can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of your turn."
+          }
+        ]
       }
     ],
     "description": "Built using similar grapple-head technology to IPS-N’s assault grapples, clamp bombs can affix to designated or proximal targets before detonating, ensuring total target contact. Clamping on soft targets typically results in total termination prior to detonation.",
