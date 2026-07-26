@@ -3373,7 +3373,6 @@
         "type": "Bomb",
         "activation": "Quick",
         "detail": "Expend a charge to fire a cluster of miniature bombs at a character within Sensors. They must succeed on an Engineering save, or the bombs clamp on. At the end of their next turn, the bombs detonate, dealing 1d6+3 AP Explosive damage. All characters adjacent to the target take half damage. The target can disarm and detach the bombs by voluntarily moving at least 4 spaces before the end of their turn.",
-        "save": "eng",
         "add_special": [
           {
             "attribute": "Clamp Bombs Attached",

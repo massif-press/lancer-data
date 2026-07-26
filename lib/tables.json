@@ -9,25 +9,115 @@
         "min": 5,
         "max": 6,
         "title": "Glancing Blow",
-        "result": "Emergency systems kick in and stabilize your mech, but it’s IMPAIRED until the end of your next turn."
+        "result": "Emergency systems kick in and stabilize your mech, but it’s IMPAIRED until the end of your next turn.",
+        "effects": [
+          {
+            "type": "status",
+            "id": "impaired"
+          }
+        ]
       },
       {
         "min": 2,
         "max": 4,
         "title": "System Trauma",
-        "result": "Parts of your mech are torn off by the damage. Roll 1d6. On a 1–3, all weapons on one mount of your choice are destroyed; on a 4–6, a system of your choice is destroyed. LIMITED systems and weapons that are out of charges are not valid choices. If there are no valid choices remaining, it becomes the other result. If there are no valid systems or weapons remaining, this result becomes a DIRECT HIT instead."
+        "result": "Parts of your mech are torn off by the damage. Roll 1d6. On a 1–3, all weapons on one mount of your choice are destroyed; on a 4–6, a system of your choice is destroyed. LIMITED systems and weapons that are out of charges are not valid choices. If there are no valid choices remaining, it becomes the other result. If there are no valid systems or weapons remaining, this result becomes a DIRECT HIT instead.",
+        "effects": [
+          {
+            "type": "sub_roll",
+            "die": 6,
+            "cases": [
+              {
+                "min": 1,
+                "max": 3,
+                "label": "All weapons on one mount are destroyed",
+                "effects": [
+                  {
+                    "type": "destroy_equipment",
+                    "target": "mount"
+                  }
+                ]
+              },
+              {
+                "min": 4,
+                "max": 6,
+                "label": "One system is destroyed",
+                "effects": [
+                  {
+                    "type": "destroy_equipment",
+                    "target": "system"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "min": 1,
         "max": 1,
         "title": "Direct Hit",
-        "result": "This result depends on your mech’s remaining STRUCTURE:<ul><li>3+ Structure: Your mech is STUNNED until the end of your next turn.</li><li>2 Structure: Roll a HULL check. On a success, your mech is STUNNED until the end of your next turn. On a failure, your mech is destroyed.</li><li>1 Structure: Your mech is destroyed.</li></ul>"
+        "result": "This result depends on your mech’s remaining STRUCTURE:<ul><li>3+ Structure: Your mech is STUNNED until the end of your next turn.</li><li>2 Structure: Roll a HULL check. On a success, your mech is STUNNED until the end of your next turn. On a failure, your mech is destroyed.</li><li>1 Structure: Your mech is destroyed.</li></ul>",
+        "effects": [
+          {
+            "type": "branch",
+            "on": "structure",
+            "cases": [
+              {
+                "at_least": 3,
+                "label": "3+ Structure",
+                "effects": [
+                  {
+                    "type": "status",
+                    "id": "stunned",
+                    "note": "until the end of your next turn"
+                  }
+                ]
+              },
+              {
+                "equals": 2,
+                "label": "2 Structure",
+                "effects": [
+                  {
+                    "type": "save",
+                    "check": "hull",
+                    "on_success": [
+                      {
+                        "type": "status",
+                        "id": "stunned"
+                      }
+                    ],
+                    "on_fail": [
+                      {
+                        "type": "destroy"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "at_most": 1,
+                "label": "1 Structure",
+                "effects": [
+                  {
+                    "type": "destroy"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "min": -1,
         "max": -1,
         "title": "Crushing Hit",
-        "result": "Your mech is damaged beyond repair – it is destroyed. You may still exit it as normal."
+        "result": "Your mech is damaged beyond repair – it is destroyed. You may still exit it as normal.",
+        "effects": [
+          {
+            "type": "destroy"
+          }
+        ]
       }
     ]
   },
@@ -41,25 +131,92 @@
         "min": 5,
         "max": 6,
         "title": "Emergency Shunt",
-        "result": "Your mech’s cooling systems manage to contain the increasing heat; however, your mech becomes IMPAIRED until the end of your next turn."
+        "result": "Your mech’s cooling systems manage to contain the increasing heat; however, your mech becomes IMPAIRED until the end of your next turn.",
+        "effects": [
+          {
+            "type": "status",
+            "id": "impaired"
+          }
+        ]
       },
       {
         "min": 2,
         "max": 4,
         "title": "Destabilized Power Plant",
-        "result": "The power plant becomes unstable, beginning to eject jets of plasma. Your mech becomes EXPOSED, taking double Kinetic, Explosive and Energy damage until the status is cleared."
+        "result": "The power plant becomes unstable, beginning to eject jets of plasma. Your mech becomes EXPOSED, taking double Kinetic, Explosive and Energy damage until the status is cleared.",
+        "effects": [
+          {
+            "type": "status",
+            "id": "exposed"
+          }
+        ]
       },
       {
         "min": 1,
         "max": 1,
         "title": "Meltdown",
-        "result": "The result depends on your mech’s remaining STRESS:<br>3+ STRESS: Your mech becomes EXPOSED.<br>2 STRESS: Roll an ENGINEERING check. On a success, your mech is EXPOSED; on a failure, it suffers a reactor meltdown after 1d6 of your turns (rolled by the GM). A reactor meltdown can be prevented by retrying the ENGINEERING check as a free action.<br>1 STRESS: Your mech suffers a reactor meltdown at the end of your next turn."
+        "result": "The result depends on your mech’s remaining STRESS:<br>3+ STRESS: Your mech becomes EXPOSED.<br>2 STRESS: Roll an ENGINEERING check. On a success, your mech is EXPOSED; on a failure, it suffers a reactor meltdown after 1d6 of your turns (rolled by the GM). A reactor meltdown can be prevented by retrying the ENGINEERING check as a free action.<br>1 STRESS: Your mech suffers a reactor meltdown at the end of your next turn.",
+        "effects": [
+          {
+            "type": "branch",
+            "on": "stress",
+            "cases": [
+              {
+                "at_least": 3,
+                "label": "3+ Stress",
+                "effects": [
+                  {
+                    "type": "status",
+                    "id": "exposed"
+                  }
+                ]
+              },
+              {
+                "equals": 2,
+                "label": "2 Stress",
+                "effects": [
+                  {
+                    "type": "save",
+                    "check": "eng",
+                    "on_success": [
+                      {
+                        "type": "status",
+                        "id": "exposed"
+                      }
+                    ],
+                    "on_fail": [
+                      {
+                        "type": "reactor_meltdown",
+                        "note": "after 1d6 turns"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "at_most": 1,
+                "label": "1 Stress",
+                "effects": [
+                  {
+                    "type": "reactor_meltdown",
+                    "note": "at the end of your next turn"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "min": -1,
         "max": -1,
         "title": "Irreversible Meltdown",
-        "result": "The reactor goes critical – your mech suffers a reactor meltdown at the end of your next turn."
+        "result": "The reactor goes critical – your mech suffers a reactor meltdown at the end of your next turn.",
+        "effects": [
+          {
+            "type": "reactor_meltdown"
+          }
+        ]
       }
     ]
   },
@@ -73,31 +230,103 @@
         "min": 5,
         "max": 6,
         "title": "Glancing Hit",
-        "result": "The Monstrosity flinches in pain; it’s IMPAIRED until the end of its next turn."
+        "result": "The Monstrosity flinches in pain; it’s IMPAIRED until the end of its next turn.",
+        "effects": [
+          {
+            "type": "status",
+            "id": "impaired"
+          }
+        ]
       },
       {
         "min": 3,
         "max": 4,
         "title": "Powerful Hit",
-        "result": "The Monstrosity is knocked PRONE by the force of the blow."
+        "result": "The Monstrosity is knocked PRONE by the force of the blow.",
+        "effects": [
+          {
+            "type": "status",
+            "id": "prone"
+          }
+        ]
       },
       {
         "min": 2,
         "max": 2,
         "title": "Dismemberment",
-        "result": "The attack blows a limb or chunk off the Monstrosity; it takes 1d6 Kinetic Damage and becomes SLOWED for the rest of the scene."
+        "result": "The attack blows a limb or chunk off the Monstrosity; it takes 1d6 Kinetic Damage and becomes SLOWED for the rest of the scene.",
+        "effects": [
+          {
+            "type": "status",
+            "id": "slow"
+          },
+          {
+            "type": "damage",
+            "roll": "1d6",
+            "damage_type": "kinetic"
+          }
+        ]
       },
       {
         "min": 1,
         "max": 1,
         "title": "Direct Hit",
-        "result": "The result depends on the Monstrosity’s remaining STRUCTURE:<br>3+ Structure: The Monstrosity is smacked in the head and STUNNED until the end of its next turn.<br>2 Structure: The Monstrosity must succeed on a HULL save or be destroyed.<br>1 Structure: The Monstrosity is destroyed."
+        "result": "The result depends on the Monstrosity’s remaining STRUCTURE:<br>3+ Structure: The Monstrosity is smacked in the head and STUNNED until the end of its next turn.<br>2 Structure: The Monstrosity must succeed on a HULL save or be destroyed.<br>1 Structure: The Monstrosity is destroyed.",
+        "effects": [
+          {
+            "type": "branch",
+            "on": "structure",
+            "cases": [
+              {
+                "at_least": 3,
+                "label": "3+ Structure",
+                "effects": [
+                  {
+                    "type": "status",
+                    "id": "stunned",
+                    "note": "until the end of its next turn"
+                  }
+                ]
+              },
+              {
+                "equals": 2,
+                "label": "2 Structure",
+                "effects": [
+                  {
+                    "type": "save",
+                    "check": "hull",
+                    "on_success": [],
+                    "on_fail": [
+                      {
+                        "type": "destroy"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "at_most": 1,
+                "label": "1 Structure",
+                "effects": [
+                  {
+                    "type": "destroy"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "min": -1,
         "max": -1,
         "title": "Fatal",
-        "result": "The Monstrosity is destroyed."
+        "result": "The Monstrosity is destroyed.",
+        "effects": [
+          {
+            "type": "destroy"
+          }
+        ]
       }
     ]
   }

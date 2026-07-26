@@ -1107,7 +1107,7 @@
             "locations": ["weapon"],
             "weapon_types": ["Melee"],
             "weapon_sizes": ["Auxiliary"],
-            "detail": "This weapon gains Thrown 5 and will return to you at the end if your turn if thrown."
+            "detail": "This weapon gains Thrown 5 and will return to you at the end of your turn if thrown."
           }
         ]
       },
