@@ -38,7 +38,7 @@
         ]
       },
       {
-        "name": "Replaceable parts",
+        "name": "Replaceable Parts",
         "description": "While resting, the Everest can be repaired at a rate of 1 Repair per 1 structure damage, instead of 2 Repairs.",
         "bonuses": [
           {
@@ -579,7 +579,9 @@
       "active_bonuses": [
         {
           "id": "min_range",
-          "val": 3
+          "val": 3,
+          "range_types": ["Threat"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"]
         }
       ],
       "active_effects": [
@@ -1179,7 +1181,7 @@
         "bonuses": [
           {
             "id": "agility",
-            "val": 1
+            "accuracy": 1
           }
         ]
       }
@@ -2041,7 +2043,7 @@
         "bonuses": [
           {
             "id": "agility",
-            "val": -1
+            "accuracy": -1
           }
         ]
       }
@@ -2415,7 +2417,7 @@
         "bonuses": [
           {
             "id": "engineering",
-            "val": 1
+            "accuracy": 1
           }
         ]
       },
@@ -2516,9 +2518,9 @@
             "condition": "You are Exposed.",
             "detail": "Your ranged and melee attacks deal +3 energy bonus damage on hit, all of your weapons that would deal kinetic or explosive damage instead deal energy, ranged weapons gain +5 range and melee weapons gain +1 threat.",
             "bonuses": [
-              { "id": "damage", "val": 3, "damage_types": ["energy"] },
-              { "id": "range", "val": 5, "range_types": ["range"] },
-              { "id": "threat", "val": 1, "weapon_types": ["melee"] }
+              { "id": "damage", "val": 3, "damage_types": ["Energy"] },
+              { "id": "range", "val": 5, "range_types": ["Range"], "condition": "{exposed}" },
+              { "id": "threat", "val": 1, "weapon_types": ["Melee"], "condition": "{exposed}" }
             ]
           }
         ]
@@ -2581,7 +2583,7 @@
       "active_synergies": [
         {
           "locations": ["attack"],
-          "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +1 Threat if they are melee weapons."
+          "detail": "All weapons on your mech that deal any Energy Damage gain +5 Range if they are ranged weapons or gain +2 Threat if they are melee weapons."
         }
       ]
     },

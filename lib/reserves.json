@@ -288,7 +288,7 @@
     "description": "All weapons of your choice can be fired as if they are SMART.",
     "active_effects": [
       {
-        "name": "Smart Ammo",
+        "name": "Smart ammo",
         "detail": "All weapons of your choice can be fired as if they are SMART."
       }
     ]
@@ -313,7 +313,7 @@
     "description": "During this mission your mech can FLY when moving, but must end movement on land.",
     "active_effects": [
       {
-        "name": "Jump Jets",
+        "name": "Jump jets",
         "detail": "Your mech can FLY when moving, but must end movement on land."
       }
     ],

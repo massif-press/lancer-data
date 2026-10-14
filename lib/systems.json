@@ -173,7 +173,7 @@
     "source": "GMS",
     "license": "GMS",
     "license_level": 0,
-    "effect": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
+    "effect": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Both sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
     "deployables": [
       {
         "name": "Jericho Deployable Cover",
@@ -182,7 +182,7 @@
         "size": 1,
         "hp": 10,
         "evasion": 5,
-        "detail": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
+        "detail": "Deploy two sections of Size 1 hard cover in free spaces adjacent to you and to each other. Each section is an object with 5 Evasion and 10 HP that can be targeted and destroyed individually. Both sections of cover can be picked up again as a full action.<br>Repairing the system restores both sections.",
         "recall": "Full",
         "redeploy": "Quick"
       }
@@ -1208,7 +1208,7 @@
         "size": 2,
         "hp": 20,
         "evasion": 5,
-        "detail": "The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed.",
+        "detail": "The plate activates for a character the first time that character enters its space during a round, or if they end their turn there.<br>Upon printing, choose a setting:<ul><li><b>Repulse:</b> Hostile characters that move onto the PCP must succeed on a Hull save or be pushed 3 spaces in the direction of your choice. If this causes them to collide with an obstruction, they are knocked Prone. Allied characters that enter the space may immediately fly 3 spaces in any direction as a free action.</li><li><b>Attract:</b> Characters that move onto the PCP must succeed on a Hull save or become Immobilized. They can clear Immobilized by successfully repeating the save as a quick action; it is also cleared if the PCP is destroyed.</li></ul>",
         "actions": [
           {
             "name": "Repulse",
@@ -2157,7 +2157,7 @@
         "add_special": [
           {
             "attribute": "Hurl into the Duat Target",
-            "detail": "The Gobil controls your standard move next turn."
+            "detail": "The Gobilin controls your standard move next turn."
           }
         ]
       }
@@ -4018,8 +4018,7 @@
         "val": 1
       },
       {
-        "id": "tg_ai",
-        "val": 1
+        "id": "tg_ai"
       }
     ],
     "bonuses": [

@@ -139,12 +139,14 @@
           {
             "id": "damage",
             "val": "2d6+2",
-            "weapon_types": ["improvised"]
+            "weapon_types": ["Improvised"],
+            "overwrite": true,
+            "replace": true
           },
           {
             "id": "knockback",
             "val": 2,
-            "weapon_types": ["improvised"]
+            "weapon_types": ["Improvised"]
           }
         ]
       },
@@ -1256,7 +1258,7 @@
         "synergies": [
           {
             "locations": ["boost"],
-            "detail": "1/round, when you Boost, you may supercharge your mech’s servos. Move your maximum speed in a straight line, take 1d3+3 Heat, and gain the following benefits:<ul><li>You can freely pass through characters the same Size as your mech or smaller; any characters passed through must succeed on a Hull save or be knocked Prone.</li><li>Any terrain, walls, or other stationary obstructions you attempt to pass through receive 20 Kinetic AP damage. If that is enough to destroy them, you pass through; otherwise, your movement ends.</li><li>You ignore difficult terrain.</li><li>Your movement ignores engagement and doesn’t provoke reactions.</li></ul"
+            "detail": "1/round, when you Boost, you may supercharge your mech’s servos. Move your maximum speed in a straight line, take 1d3+3 Heat, and gain the following benefits:<ul><li>You can freely pass through characters the same Size as your mech or smaller; any characters passed through must succeed on a Hull save or be knocked Prone.</li><li>Any terrain, walls, or other stationary obstructions you attempt to pass through receive 20 Kinetic AP damage. If that is enough to destroy them, you pass through; otherwise, your movement ends.</li><li>You ignore difficult terrain.</li><li>Your movement ignores engagement and doesn’t provoke reactions.</li></ul>"
           }
         ]
       }
@@ -1708,7 +1710,7 @@
       },
       {
         "name": "Enlightenment",
-        "description": "Gain the following benefits:<ul><li>AIs installed in your mech cannot enter cascade unless you choose to let them go.</li><li>So long as your custom NHP vouches for you, NHPs that are cascading or unshackled no longer view you with indifference. You are significant to them in a way few others are.</li><li>Replace your mech’s Student-Class NHP with the <b>Enlightenment-Class NHP</b>",
+        "description": "Gain the following benefits:<ul><li>AIs installed in your mech cannot enter cascade unless you choose to let them go.</li><li>So long as your custom NHP vouches for you, NHPs that are cascading or unshackled no longer view you with indifference. You are significant to them in a way few others are.</li><li>Replace your mech’s Student-Class NHP with the <b>Enlightenment-Class NHP</b>.</li></ul>",
         "special_equipment": ["ms_technophile_3"],
         "active_effects": [
           {
